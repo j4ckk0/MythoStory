@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jtools</groupId>
+    <artifactId>mythostory-parent</artifactId>
+    <version>${revision}</version>
+  </parent>
+
+  <artifactId>mythostory-frontend</artifactId>
+  <packaging>jar</packaging>
+
+  <name>MythoStory frontend</name>
+  <description>The Angular page, as a jar of static/ resources the backend serves. Built by npm, which Maven runs: the npm of PATH, external/node's when the scripts run Maven (README: Externals).</description>
+
+  <properties>
+    <!-- the way npm installs the dependencies: "install", or "ci" for exactly package-lock.json (scripts/ci.sh) -->
+    <npm.install>install</npm.install>
+    <skipTests>false</skipTests>
+  </properties>
+
+  <build>
+    <resources>
+      <!-- the Angular build (angular.json: outputPath), served by the backend from the classpath's static/ -->
+      <resource>
+        <directory>target/angular/browser</directory>
+        <targetPath>static</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+          <executable>npm</executable>
+        </configuration>
+        <executions>
+          <execution>
+            <id>npm-install</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <arguments>
+                <argument>${npm.install}</argument>
+                <argument>--no-audit</argument>
+                <argument>--no-fund</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>ng-build</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>ng-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <skip>${skipTests}</skip>
+              <arguments>
+                <argument>test</argument>
+                <argument>--</argument>
+                <argument>--watch=false</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

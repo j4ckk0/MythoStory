@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.jtools</groupId>
+  <artifactId>mythostory-parent</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+
+  <name>MythoStory</name>
+  <description>MythoStory, one application on two platforms: on the desktop, a local server and the browser as its window; on Android, the same server inside the app and a WebView as its window.</description>
+
+  <!-- The modules, each depending only on those above it in this list:
+         core       the domain: the stories and their storage — pure Kotlin, no framework (Android runs it too)
+         frontend   the Angular page, packaged as a jar of static/ resources (built by npm, which Maven runs)
+         backend    the HTTP server: Ktor, the API over core and the page (Android runs it too)
+         desktop    the desktop program: the server's main, the executable jar and the distributions with a JRE
+         android    the Android app (profile "android", on as soon as the Android SDK is there, see below): the
+                    same backend and frontend in an APK, built by Gradle, which Maven runs, from the jars Maven resolved
+       core and backend are compiled for Java 17 (the bytecode Android takes), with JDK 25 like the rest.
+       The version is said once, here (a CI-friendly ${revision}): the modules' <parent> refer to it. -->
+  <modules>
+    <module>core</module>
+    <module>frontend</module>
+    <module>backend</module>
+    <module>desktop</module>
+  </modules>
+
+  <properties>
+    <revision>0.1.0</revision>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+    <kotlin.compiler.jvmTarget>17</kotlin.compiler.jvmTarget>
+    <!-- Kotlin: the version Ktor is built with; android/ reads it from here for its own Kotlin -->
+    <kotlin.version>2.3.21</kotlin.version>
+    <ktor.version>3.6.0</ktor.version>
+    <kotlinx-serialization.version>1.11.0</kotlinx-serialization.version>
+    <kotlinx-coroutines.version>1.11.0</kotlinx-coroutines.version>
+    <logback.version>1.6.5</logback.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.jtools</groupId>
+        <artifactId>mythostory-core</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jtools</groupId>
+        <artifactId>mythostory-frontend</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jtools</groupId>
+        <artifactId>mythostory-backend</artifactId>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-bom</artifactId>
+        <version>${kotlin.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.ktor</groupId>
+        <artifactId>ktor-bom</artifactId>
+        <version>${ktor.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-bom</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-bom</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.jetbrains.kotlin</groupId>
+          <artifactId>kotlin-maven-plugin</artifactId>
+          <version>${kotlin.version}</version>
+          <configuration>
+            <args>
+              <arg>-Xjsr305=strict</arg>
+            </args>
+            <compilerPlugins>
+              <plugin>kotlinx-serialization</plugin>
+            </compilerPlugins>
+          </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.jetbrains.kotlin</groupId>
+              <artifactId>kotlin-maven-serialization</artifactId>
+              <version>${kotlin.version}</version>
+            </dependency>
+          </dependencies>
+          <executions>
+            <execution>
+              <id>compile</id>
+              <goals>
+                <goal>compile</goal>
+              </goals>
+              <configuration>
+                <sourceDirs>
+                  <sourceDir>src/main/kotlin</sourceDir>
+                </sourceDirs>
+              </configuration>
+            </execution>
+            <execution>
+              <id>test-compile</id>
+              <goals>
+                <goal>test-compile</goal>
+              </goals>
+              <configuration>
+                <sourceDirs>
+                  <sourceDir>src/test/kotlin</sourceDir>
+                </sourceDirs>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.6.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.5.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.5.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.16.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.5.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.6.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.11.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.6.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <!--
+      The Android app: on as soon as scripts/setup.sh with its android option has deployed the Android SDK, off otherwise (the
+      desktop builds without it). Off on demand: mvn … -P-android, or the scripts' no-android option.
+    -->
+    <profile>
+      <id>android</id>
+      <activation>
+        <file>
+          <exists>${project.basedir}/external/android-sdk/platforms</exists>
+        </file>
+      </activation>
+      <modules>
+        <module>android</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

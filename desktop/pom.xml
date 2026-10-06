@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jtools</groupId>
+    <artifactId>mythostory-parent</artifactId>
+    <version>${revision}</version>
+  </parent>
+
+  <artifactId>mythostory</artifactId>
+  <packaging>jar</packaging>
+
+  <name>MythoStory desktop</name>
+  <description>The desktop program: starts the server on localhost and opens the browser on it. Its jar, desktop/target/mythostory.jar, embeds everything; the distributions add a JRE.</description>
+
+  <properties>
+    <!-- the desktop runs on the bundled JRE, never on Android: the JDK's own bytecode -->
+    <maven.compiler.release>25</maven.compiler.release>
+    <kotlin.compiler.jvmTarget>25</kotlin.compiler.jvmTarget>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jtools</groupId>
+      <artifactId>mythostory-backend</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jtools</groupId>
+      <artifactId>mythostory-frontend</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>mythostory</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-plugin</artifactId>
+      </plugin>
+      <!-- every dependency joins the jar, so that java -jar mythostory.jar needs nothing else -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>executable-jar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>org.jtools.mythostory.desktop.MainKt</mainClass>
+                </transformer>
+                <!-- Ktor and logback find their parts through ServiceLoader: every jar's services, merged -->
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+              </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>module-info.class</exclude>
+                    <exclude>META-INF/versions/*/module-info.class</exclude>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                    <exclude>META-INF/MANIFEST.MF</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!--
+      mvn package -Pdist
+      Builds the self-contained distributions, each with a bundled JRE
+      (external/jre-windows.zip and external/jre-linux.tar.gz at the root of the repository, deployed by
+      scripts/setup.sh, not tracked) and a launcher script, into releases/ at the root (not tracked, kept by
+      mvn clean; the previous versions' releases are removed there by scripts/package.*):
+        releases/mythostory-<version>-windows.zip    mythostory.bat
+        releases/mythostory-<version>-linux.tar.gz   mythostory.sh
+    -->
+    <profile>
+      <id>dist</id>
+      <properties>
+        <jre.archives>${maven.multiModuleProjectDirectory}/external</jre.archives>
+        <jre.windows>jre-windows.zip</jre.windows>
+        <jre.linux>jre-linux.tar.gz</jre.linux>
+        <jre.unpacked>${project.build.directory}/jre</jre.unpacked>
+        <release.dir>${maven.multiModuleProjectDirectory}/releases</release.dir>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>unpack-jre</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <fail message="no ${jre.archives}/${jre.windows}: run scripts/setup.sh (see README: Externals)">
+                      <condition>
+                        <not><available file="${jre.archives}/${jre.windows}"/></not>
+                      </condition>
+                    </fail>
+                    <fail message="no ${jre.archives}/${jre.linux}: run scripts/setup.sh (see README: Externals)">
+                      <condition>
+                        <not><available file="${jre.archives}/${jre.linux}"/></not>
+                      </condition>
+                    </fail>
+                    <!-- cutdirsmapper strips the archives' top-level "jdk-xx-jre/" directory -->
+                    <unzip dest="${jre.unpacked}/windows">
+                      <fileset dir="${jre.archives}" includes="${jre.windows}"/>
+                      <cutdirsmapper dirs="1"/>
+                    </unzip>
+                    <untar dest="${jre.unpacked}/linux" compression="gzip">
+                      <fileset dir="${jre.archives}" includes="${jre.linux}"/>
+                      <cutdirsmapper dirs="1"/>
+                    </untar>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>dist</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <finalName>${project.artifactId}-${project.version}</finalName>
+                  <appendAssemblyId>true</appendAssemblyId>
+                  <outputDirectory>${release.dir}</outputDirectory>
+                  <descriptors>
+                    <descriptor>src/assembly/windows.xml</descriptor>
+                    <descriptor>src/assembly/linux.xml</descriptor>
+                  </descriptors>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

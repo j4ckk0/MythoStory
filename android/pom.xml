@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jtools</groupId>
+    <artifactId>mythostory-parent</artifactId>
+    <version>${revision}</version>
+  </parent>
+
+  <artifactId>mythostory-android</artifactId>
+  <packaging>pom</packaging>
+
+  <name>MythoStory Android</name>
+  <description>The Android app: the backend and the frontend in an APK, a WebView as the window. Maven resolves its dependencies into target/libs, then runs Gradle (the Android Gradle Plugin: build.gradle.kts) on them; the APK is target/gradle/outputs/apk/release/.</description>
+
+  <properties>
+    <android.sdk>${maven.multiModuleProjectDirectory}/external/android-sdk</android.sdk>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jtools</groupId>
+      <artifactId>mythostory-backend</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jtools</groupId>
+      <artifactId>mythostory-frontend</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Maven manages the dependencies, Gradle only packages them: every runtime jar into target/libs, save the
+           Kotlin standard library, which the Android build's Kotlin brings itself (in the same version: pom.xml's). -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>libs</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/libs</outputDirectory>
+              <includeScope>runtime</includeScope>
+              <!-- by artifact: the plugin matches groups by prefix, and org.jetbrains.kotlin would take kotlinx (coroutines, serialization) along -->
+              <excludeArtifactIds>kotlin-stdlib,kotlin-stdlib-common,kotlin-stdlib-jdk7,kotlin-stdlib-jdk8,annotations</excludeArtifactIds>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>gradle-apk</id>
+            <phase>package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <!-- external/gradle's, first in PATH when the scripts run Maven -->
+              <executable>gradle</executable>
+              <environmentVariables>
+                <ANDROID_HOME>${android.sdk}</ANDROID_HOME>
+              </environmentVariables>
+              <arguments>
+                <argument>--project-dir</argument>
+                <argument>${project.basedir}</argument>
+                <argument>--console=plain</argument>
+                <argument>--warn</argument>
+                <argument>assembleRelease</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!-- mvn package -Pdist: the APK joins the desktop's distributions, as releases/mythostory-<version>-android.apk -->
+    <profile>
+      <id>dist</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>release-apk</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <copy file="${project.build.directory}/gradle/outputs/apk/release/mythostory-android-release.apk"
+                          tofile="${maven.multiModuleProjectDirectory}/releases/mythostory-${project.version}-android.apk"
+                          failonerror="true"/>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

@@ -1,0 +1,23 @@
+/* The page's colours, light and dark after the system's choice: on the desktop's browser and in Android's WebView alike. */
+:root {
+  color-scheme: light dark;
+  --surface: #ffffff;
+  --border: #d0d4da;
+  --muted: #5f6670;
+  --error: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1e2126;
+    --border: #3a3f47;
+    --muted: #9aa1ab;
+    --error: #f2b8b5;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}

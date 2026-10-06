@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Windows distribution: zip with the bundled JRE and a .bat launcher. -->
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.2.0 http://maven.apache.org/xsd/assembly-2.2.0.xsd">
+  <id>windows</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <baseDirectory>${project.artifactId}-${project.version}</baseDirectory>
+
+  <files>
+    <file>
+      <source>${project.build.directory}/${project.build.finalName}.jar</source>
+      <destName>mythostory.jar</destName>
+    </file>
+    <file>
+      <source>src/dist/mythostory.bat</source>
+      <lineEnding>crlf</lineEnding>
+    </file>
+    <file>
+      <source>${maven.multiModuleProjectDirectory}/README.md</source>
+      <lineEnding>crlf</lineEnding>
+    </file>
+  </files>
+
+  <fileSets>
+    <fileSet>
+      <directory>${project.build.directory}/jre/windows</directory>
+      <outputDirectory>jre</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

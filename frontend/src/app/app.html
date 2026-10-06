@@ -1,0 +1,31 @@
+<header>
+  <h1>MythoStory</h1>
+  @if (info(); as info) {
+    <p class="version">{{ info.version }} · {{ info.platform }}</p>
+  }
+</header>
+
+<main>
+  @if (error(); as error) {
+    <p class="error">{{ error }}</p>
+  }
+
+  <form (ngSubmit)="add()">
+    <input name="title" [(ngModel)]="title" placeholder="Title" required />
+    <textarea name="summary" [(ngModel)]="summary" placeholder="Summary" rows="3"></textarea>
+    <button type="submit" [disabled]="!title.trim()">Add the story</button>
+  </form>
+
+  <ul class="stories">
+    @for (story of stories(); track story.id) {
+      <li>
+        <h2>{{ story.title }}</h2>
+        @if (story.summary) {
+          <p>{{ story.summary }}</p>
+        }
+      </li>
+    } @empty {
+      <li class="empty">No story yet.</li>
+    }
+  </ul>
+</main>
