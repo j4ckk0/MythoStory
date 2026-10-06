@@ -1,0 +1,824 @@
+[
+  {
+    "id": "perseus-and-medusa",
+    "title": {
+      "en": "Perseus and Medusa",
+      "fr": "Persée et Méduse"
+    },
+    "summary": {
+      "en": "An oracle had warned Acrisius, king of Argos, that his daughter's son would kill him, so he shut Danaë away in a bronze chamber. Zeus came to her there as a shower of gold, and she bore Perseus. Acrisius had mother and child shut in a chest and cast into the sea; it washed up on the island of Seriphos, where the fisherman Dictys took them in.\n\nYears later Polydectes, king of the island, who wanted Danaë, tricked young Perseus into promising to bring him the head of the Gorgon Medusa, whose gaze turned every living thing to stone. Guided by Hermes and Athena, Perseus went first to the Graeae, three old sisters who shared one eye and one tooth; he seized them until they showed him the way to the nymphs, who gave him winged sandals, a bag for the head and the cap of Hades, which makes its wearer invisible. Hermes gave him a sickle of adamant.\n\nHe found the Gorgons asleep. Looking only at Medusa's reflection in his bronze shield, with Athena guiding his hand, Perseus cut off her head; from her neck sprang the winged horse Pegasus and the warrior Chrysaor. Invisible under the cap, he escaped her immortal sisters. Back on Seriphos, he held up the head before Polydectes and his friends, who were turned to stone, then gave it to Athena, who set it on her aegis. Later, at games in Larissa, a discus thrown by Perseus struck an old man in the crowd: it was Acrisius, and the oracle was fulfilled.",
+      "fr": "Un oracle avait averti Acrisios, roi d’Argos, que le fils de sa fille le tuerait : il enferma donc Danaé dans une chambre de bronze. Zeus l’y rejoignit sous la forme d’une pluie d’or, et elle mit au monde Persée. Acrisios fit enfermer la mère et l’enfant dans un coffre jeté à la mer ; il s’échoua sur l’île de Sériphos, où le pêcheur Dictys les recueillit.\n\nDes années plus tard, Polydectès, roi de l’île, qui convoitait Danaé, amena par la ruse le jeune Persée à promettre de lui rapporter la tête de la Gorgone Méduse, dont le regard changeait en pierre tout être vivant. Guidé par Hermès et Athéna, Persée alla d’abord trouver les Grées, trois vieilles sœurs qui se partageaient un seul œil et une seule dent ; il les tint jusqu’à ce qu’elles lui indiquent le chemin des nymphes, qui lui donnèrent des sandales ailées, une besace pour la tête et le casque d’Hadès, qui rend invisible. Hermès lui remit une faucille d’acier.\n\nIl trouva les Gorgones endormies. Ne regardant que le reflet de Méduse dans son bouclier de bronze, la main guidée par Athéna, Persée lui trancha la tête ; de son cou jaillirent le cheval ailé Pégase et le guerrier Chrysaor. Invisible sous le casque, il échappa à ses sœurs immortelles. De retour à Sériphos, il brandit la tête devant Polydectès et ses amis, qui furent changés en pierre, puis la donna à Athéna, qui la plaça sur son égide. Plus tard, lors de jeux à Larissa, un disque lancé par Persée frappa un vieillard dans la foule : c’était Acrisios, et l’oracle s’accomplit."
+    },
+    "characters": [
+      "perseus",
+      "medusa",
+      "danae",
+      "zeus",
+      "athena",
+      "hermes",
+      "pegasus",
+      "hades"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.4.1–2.4.4",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      },
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "4.765–803",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses4.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_4"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Perseus",
+        "url": "https://en.wikipedia.org/wiki/Perseus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Persée",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Perseus",
+        "url": "https://www.theoi.com/Heros/Perseus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Perseus",
+        "url": "https://www.worldhistory.org/Perseus/"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Medusa",
+        "url": "https://www.worldhistory.org/Medusa/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Persée",
+        "url": "https://mythologica.fr/grec/persee.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Medusa",
+        "url": "https://www.youtube.com/watch?v=O18-FA83BaM"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Méduse contre Persée - Les Aventures de Persée - 2/3 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=qsd4lS6Uo30"
+      }
+    ],
+    "related": [
+      "bellerophon-and-the-chimera"
+    ]
+  },
+  {
+    "id": "perseus-and-andromeda",
+    "title": {
+      "en": "Perseus and Andromeda",
+      "fr": "Persée et Andromède"
+    },
+    "summary": {
+      "en": "Queen Cassiopeia of Ethiopia had boasted that she was more beautiful than the Nereids, the nymphs of the sea. In anger, the Nereids and Poseidon sent a flood and a sea monster to ravage the country. The oracle of Ammon declared that the land would be delivered only if Andromeda, the daughter of Cepheus and Cassiopeia, were given to the monster, and the people forced the king to chain her to a rock by the sea.\n\nFlying home with the head of Medusa, Perseus saw the princess from the sky. At first he took her for a marble statue, until the wind stirred her hair and he saw her tears. He fell in love with her and offered to kill the monster if she would become his wife; her parents promised her to him, and a kingdom besides.\n\nWhen the monster rose from the waves, Perseus swooped down on its back and plunged his sword into it again and again until it died. Ovid adds that when he laid Medusa's head on a bed of seaweed to wash his hands, the plants hardened at its touch: the birth of coral. At the wedding feast Phineus, the king's brother, to whom Andromeda had been promised, burst in with armed men; Perseus held up the Gorgon's head and turned them all to stone.",
+      "fr": "Cassiopée, reine d’Éthiopie, s’était vantée d’être plus belle que les Néréides, les nymphes de la mer. Furieux, les Néréides et Poséidon envoyèrent un déluge et un monstre marin ravager le pays. L’oracle d’Ammon déclara que le pays ne serait délivré que si Andromède, la fille de Céphée et de Cassiopée, était livrée au monstre, et le peuple contraignit le roi à l’enchaîner à un rocher au bord de la mer.\n\nRentrant par les airs avec la tête de Méduse, Persée aperçut la princesse du haut du ciel. Il la prit d’abord pour une statue de marbre, jusqu’à ce que le vent agite ses cheveux et qu’il voie ses larmes. Il s’éprit d’elle et offrit de tuer le monstre si elle devenait son épouse ; ses parents la lui promirent, et un royaume en plus.\n\nQuand le monstre surgit des flots, Persée fondit sur son dos et lui plongea son épée dans le corps encore et encore jusqu’à ce qu’il meure. Ovide ajoute que, lorsqu’il posa la tête de Méduse sur un lit d’algues pour se laver les mains, les plantes durcirent à son contact : ainsi naquit le corail. Au banquet des noces, Phinée, le frère du roi, à qui Andromède avait été promise, fit irruption avec des hommes en armes ; Persée brandit la tête de la Gorgone et les changea tous en pierre."
+    },
+    "characters": [
+      "perseus",
+      "andromeda",
+      "cassiopeia",
+      "cetus",
+      "poseidon",
+      "medusa"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.4.3",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      },
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "4.663–5.235",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses4.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_4"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Andromeda (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Andromeda_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Andromède (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Androm%C3%A8de_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ethiopian Cetus (Ketos Aithiopios)",
+        "url": "https://www.theoi.com/Ther/KetosAithiopios.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Andromède",
+        "url": "https://mythologica.fr/grec/andromede.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Perseus and Andromeda: The Hero, the Monster, and the Princess",
+        "url": "https://www.youtube.com/watch?v=moJADfwD6c8"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Andromède et Persée: Le Tetour à la Maison - Les Aventures de Persée - 3/3 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=msJ-MtIxoMU"
+      }
+    ]
+  },
+  {
+    "id": "bellerophon-and-the-chimera",
+    "title": {
+      "en": "Bellerophon and the Chimera",
+      "fr": "Bellérophon et la Chimère"
+    },
+    "summary": {
+      "en": "Bellerophon, a young prince of Corinth, took refuge at Tiryns with King Proetus. The queen fell in love with him and, rejected, accused him of having tried to seduce her. Proetus did not dare kill a guest, so he sent Bellerophon to his father-in-law Iobates, king of Lycia, with a sealed tablet asking for the bearer's death.\n\nIobates ordered him to kill the Chimera, a monster that was a lion in front, a serpent behind and a goat in the middle, and breathed fire, which was ravaging the country. Bellerophon had tamed the winged horse Pegasus with a golden bridle given by Athena; rising into the air, out of reach of the flames, he shot the monster down with his arrows.\n\nIobates then sent him against the warlike Solymi and the Amazons, and set an ambush for him on his return; Bellerophon overcame every trial and killed every assassin. Recognising that he was protected by the gods, the king showed him the tablet, gave him his daughter in marriage and half his kingdom. But, Pindar says, Bellerophon in his pride tried to fly up to Olympus on Pegasus; the horse threw him, and he ended his days wandering alone.",
+      "fr": "Bellérophon, jeune prince de Corinthe, trouva refuge à Tirynthe auprès du roi Proétos. La reine s’éprit de lui et, repoussée, l’accusa d’avoir voulu la séduire. Proétos n’osant pas tuer un hôte, il envoya Bellérophon chez son beau-père Iobatès, roi de Lycie, avec une tablette scellée qui demandait la mort de son porteur.\n\nIobatès lui ordonna de tuer la Chimère, un monstre qui était lion par-devant, serpent par-derrière et chèvre au milieu, et crachait le feu, qui ravageait le pays. Bellérophon avait dompté le cheval ailé Pégase avec une bride d’or donnée par Athéna ; s’élevant dans les airs, hors de portée des flammes, il abattit le monstre de ses flèches.\n\nIobatès l’envoya ensuite contre les belliqueux Solymes et contre les Amazones, puis lui tendit une embuscade à son retour ; Bellérophon triompha de chaque épreuve et tua tous les assassins. Reconnaissant qu’il était protégé des dieux, le roi lui montra la tablette, lui donna sa fille en mariage et la moitié de son royaume. Mais, dit Pindare, Bellérophon dans son orgueil voulut monter jusqu’à l’Olympe sur Pégase ; le cheval le désarçonna, et il finit ses jours à errer, solitaire."
+    },
+    "characters": [
+      "bellerophon",
+      "pegasus",
+      "chimera",
+      "athena"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "6.152–211",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad6.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_VI"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.3.1–2.3.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bellerophon",
+        "url": "https://en.wikipedia.org/wiki/Bellerophon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Bellérophon",
+        "url": "https://fr.wikipedia.org/wiki/Bell%C3%A9rophon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Bellerophon (Bellerophontes)",
+        "url": "https://www.theoi.com/Heros/Bellerophontes.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Bellerophon",
+        "url": "https://www.worldhistory.org/Bellerophon/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Bellérophon",
+        "url": "https://mythologica.fr/grec/bellerophon.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Pegasus and the chimera - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=BDprlH1sK_Y"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Bellérophon et Pégase: L'homme qui Rêvait d'être un Dieu - Mythologie Grecque en Bande Dessinée",
+        "url": "https://www.youtube.com/watch?v=GctVI96LQMI"
+      }
+    ],
+    "related": [
+      "perseus-and-medusa"
+    ]
+  },
+  {
+    "id": "labours-of-heracles",
+    "title": {
+      "en": "The twelve labours of Heracles",
+      "fr": "Les douze travaux d’Héraclès"
+    },
+    "summary": {
+      "en": "Hera hated Heracles, the son of Zeus and the mortal Alcmene. She drove him mad, and in his frenzy he killed his own children. To atone, the Pythia of Delphi ordered him to serve his cousin Eurystheus, king of Tiryns, for twelve years and to perform the labours he would impose: ten at first, which became twelve, because Eurystheus refused to count two of them.\n\nHe strangled the Nemean lion, whose hide no weapon could pierce, and wore its skin ever after. He killed the Lernaean Hydra, whose heads grew back two for one, with the help of his nephew Iolaus, who seared each neck with a torch. He captured the Ceryneian hind with its golden horns, alive, after hunting it for a year, then the Erymanthian boar — at the sight of which Eurystheus hid in a bronze jar. He cleaned in a single day the stables of King Augeas, unswept for years, by diverting two rivers through them. He drove away the man-eating birds of Lake Stymphalus, brought back the Cretan bull and the man-eating mares of Diomedes, and won the belt of Hippolyte, queen of the Amazons.\n\nThen he went to the edge of the world: he brought back the cattle of the three-bodied giant Geryon, then the golden apples of the Hesperides, which Atlas fetched for him while Heracles held up the sky in his place. Last of all he went down into the underworld and, with the permission of Hades, who forbade him any weapon, overpowered Cerberus with his bare hands, brought him up to show Eurystheus, then took him back to the underworld. At his death, Heracles was taken up to Olympus and became a god.",
+      "fr": "Héra haïssait Héraclès, le fils de Zeus et de la mortelle Alcmène. Elle le frappa de folie, et dans son délire il tua ses propres enfants. Pour expier, la Pythie de Delphes lui ordonna de servir son cousin Eurysthée, roi de Tirynthe, pendant douze ans et d’accomplir les travaux qu’il lui imposerait : dix d’abord, qui devinrent douze, car Eurysthée refusa d’en compter deux.\n\nIl étrangla le lion de Némée, dont aucune arme ne perçait la peau, et porta ensuite sa dépouille. Il tua l’Hydre de Lerne, dont chaque tête tranchée repoussait double, avec l’aide de son neveu Iolaos, qui brûlait chaque cou d’un tison. Il captura vivante la biche de Cérynie aux cornes d’or après l’avoir poursuivie un an, puis le sanglier d’Érymanthe — à sa vue, Eurysthée se cacha dans une jarre de bronze. Il nettoya en un seul jour les écuries du roi Augias, jamais curées depuis des années, en y détournant deux fleuves. Il chassa les oiseaux anthropophages du lac Stymphale, ramena le taureau de Crète et les juments mangeuses d’hommes de Diomède, et conquit la ceinture d’Hippolyte, reine des Amazones.\n\nPuis il partit aux confins du monde : il ramena les bœufs du géant à trois corps Géryon, puis les pommes d’or des Hespérides, qu’Atlas alla cueillir pour lui pendant qu’Héraclès soutenait le ciel à sa place. Enfin, il descendit aux Enfers et, avec la permission d’Hadès, qui lui interdit toute arme, maîtrisa Cerbère à mains nues, le remonta pour le montrer à Eurysthée, puis le ramena aux Enfers. À sa mort, Héraclès fut emporté sur l’Olympe et devint un dieu."
+    },
+    "characters": [
+      "heracles",
+      "eurystheus",
+      "hera",
+      "nemean-lion",
+      "lernaean-hydra",
+      "atlas",
+      "cerberus",
+      "hades",
+      "zeus",
+      "alcmene"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.4.12–2.5.12",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Labours of Hercules",
+        "url": "https://en.wikipedia.org/wiki/Labours_of_Hercules"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Travaux d'Héraclès",
+        "url": "https://fr.wikipedia.org/wiki/Travaux_d'H%C3%A9racl%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Heracles",
+        "url": "https://www.theoi.com/greek-mythology/heracles.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hercules",
+        "url": "https://www.worldhistory.org/Hercules/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Héraclès",
+        "url": "https://mythologica.fr/grec/heracles.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Hercules: 12 labors in 8-bits - Alex Gendler",
+        "url": "https://www.youtube.com/watch?v=nIIjhAuC76g"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le Mythe d’Hercule – Les douze travaux - Alex Gendler",
+        "url": "https://www.youtube.com/watch?v=t65Rxc6HhFc"
+      }
+    ],
+    "related": [
+      "prometheus-fire",
+      "golden-fleece"
+    ]
+  },
+  {
+    "id": "golden-fleece",
+    "title": {
+      "en": "Jason and the Golden Fleece",
+      "fr": "Jason et la Toison d’or"
+    },
+    "summary": {
+      "en": "Pelias had seized the throne of Iolcus, and an oracle had told him to beware of a man wearing a single sandal. One day young Jason, the son of the rightful king, arrived at a sacrifice having lost a sandal crossing a river. To be rid of him, Pelias sent him to fetch the Golden Fleece — the fleece of the flying ram that had once carried Phrixus to Colchis, at the eastern end of the Black Sea, where it hung in the grove of Ares, guarded by a dragon that never slept.\n\nWith the help of Athena, Argus built the ship Argo, and the greatest heroes of Greece joined Jason: Heracles, Orpheus, Castor and Pollux, Peleus and many others — the Argonauts. After many adventures, among them the passage between the Clashing Rocks, they reached Colchis. King Aeetes agreed to give up the Fleece only if Jason, alone in a single day, yoked his two fire-breathing, bronze-footed bulls, ploughed a field with them, sowed it with dragon's teeth and killed the armed men who would spring from them.\n\nHera and Athena had Eros make Aeetes' daughter, the sorceress Medea, fall in love with Jason. She gave him a salve that made him invulnerable to fire and iron; he yoked the bulls and, as the warriors sprang from the furrows, threw a stone among them, and they turned on each other. Then Medea lulled the dragon to sleep with her spells, Jason took down the Fleece, and the Argonauts fled by night with Medea aboard. Back in Iolcus, Medea took revenge on Pelias by persuading his daughters to cut him up and boil him, on the pretext of making him young again.",
+      "fr": "Pélias s’était emparé du trône d’Iolcos, et un oracle lui avait dit de se méfier d’un homme chaussé d’une seule sandale. Un jour, le jeune Jason, fils du roi légitime, arriva à un sacrifice après avoir perdu une sandale en traversant un fleuve. Pour s’en débarrasser, Pélias l’envoya chercher la Toison d’or — la toison du bélier volant qui avait jadis emporté Phrixos en Colchide, au fond de la mer Noire, où elle était suspendue dans le bois sacré d’Arès, gardée par un dragon qui ne dormait jamais.\n\nAvec l’aide d’Athéna, Argos construisit le navire Argo, et les plus grands héros de Grèce rejoignirent Jason : Héraclès, Orphée, Castor et Pollux, Pélée et bien d’autres — les Argonautes. Après bien des aventures, dont le passage entre les roches qui s’entrechoquent, ils atteignirent la Colchide. Le roi Éétès n’accepta de céder la Toison que si Jason, seul et en un seul jour, attelait ses deux taureaux aux pieds de bronze qui soufflaient le feu, labourait un champ, l’ensemençait de dents de dragon et tuait les guerriers en armes qui en naîtraient.\n\nHéra et Athéna obtinrent d’Éros qu’il rende amoureuse de Jason la fille d’Éétès, la magicienne Médée. Elle lui donna un onguent qui le rendait invulnérable au feu et au fer ; il attela les taureaux et, quand les guerriers surgirent des sillons, jeta une pierre au milieu d’eux, et ils s’entretuèrent. Puis Médée endormit le dragon par ses enchantements, Jason décrocha la Toison, et les Argonautes s’enfuirent de nuit avec Médée à leur bord. De retour à Iolcos, Médée se vengea de Pélias en persuadant ses filles de le découper et de le faire bouillir, sous prétexte de le rajeunir."
+    },
+    "characters": [
+      "jason",
+      "medea",
+      "aeetes",
+      "pelias",
+      "colchian-dragon",
+      "hera",
+      "athena",
+      "eros",
+      "heracles",
+      "orpheus",
+      "peleus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollonius of Rhodes",
+          "fr": "Apollonios de Rhodes"
+        },
+        "work": {
+          "en": "Argonautica",
+          "fr": "Argonautiques"
+        },
+        "passage": "1–4",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApolloniusRhodius3.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_Petits_po%C3%A8mes_grecs/Apollonius/Exp%C3%A9dition_des_Argonautes"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.9.16–1.9.27",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Golden Fleece",
+        "url": "https://en.wikipedia.org/wiki/Golden_Fleece"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Toison d'or",
+        "url": "https://fr.wikipedia.org/wiki/Toison_d'or"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argonauts",
+        "url": "https://en.wikipedia.org/wiki/Argonauts"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argonautes",
+        "url": "https://fr.wikipedia.org/wiki/Argonautes"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Colchian Dragon (Drakon Kholkikos)",
+        "url": "https://www.theoi.com/Ther/DrakonKholkikos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Golden Fleece",
+        "url": "https://www.worldhistory.org/Golden_Fleece/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Jason",
+        "url": "https://mythologica.fr/grec/jason.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Jason, Medea, and the Golden Fleece - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=M7cIc7IAN6U"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Jason and the Argonauts - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=peFwikd2-bw"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Saga de Jason et les Argonautes - Complète - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=TgluH_2Na1o"
+      }
+    ],
+    "related": [
+      "orpheus-and-eurydice",
+      "labours-of-heracles"
+    ]
+  },
+  {
+    "id": "theseus-and-the-minotaur",
+    "title": {
+      "en": "Theseus and the Minotaur",
+      "fr": "Thésée et le Minotaure"
+    },
+    "summary": {
+      "en": "Minos, king of Crete, had asked Poseidon for a bull to prove his right to the throne, promising to sacrifice it. But the bull was so beautiful that he kept it. To punish him, Poseidon made the queen, Pasiphaë, fall in love with the animal; from their union, made possible by a hollow wooden cow built by Daedalus, was born the Minotaur, a man with the head of a bull. Minos shut him away in the Labyrinth, a maze of passages built by Daedalus from which no one could find the way out.\n\nMinos's son had been killed in Attica, and in revenge the king imposed a tribute on Athens: seven young men and seven girls to be sent to Crete and fed to the Minotaur. The third time, Theseus, the son of King Aegeus, joined the victims, determined to kill the monster. In Crete, Minos's daughter Ariadne fell in love with him and, on Daedalus's advice, gave him a ball of thread, which he unwound behind him as he went into the Labyrinth.\n\nTheseus killed the Minotaur and followed the thread back to the entrance. He fled by night with Ariadne and the young Athenians, but abandoned the princess asleep on the island of Naxos, where Dionysus found her and made her his wife. Before leaving, Theseus had promised his father to change the ship's black sails for white ones if he came back alive. He forgot: seeing the black sails from the cliff, Aegeus believed his son dead and threw himself to his death — and the sea has borne his name ever since.",
+      "fr": "Minos, roi de Crète, avait demandé à Poséidon un taureau pour prouver son droit au trône, en promettant de le lui sacrifier. Mais le taureau était si beau qu’il le garda. Pour le punir, Poséidon rendit la reine, Pasiphaé, amoureuse de l’animal ; de leur union, rendue possible par une vache de bois creuse construite par Dédale, naquit le Minotaure, un homme à tête de taureau. Minos l’enferma dans le Labyrinthe, un dédale de couloirs construit par Dédale dont personne ne pouvait trouver la sortie.\n\nLe fils de Minos avait été tué en Attique, et pour le venger le roi imposa un tribut à Athènes : sept jeunes gens et sept jeunes filles envoyés en Crète pour être livrés au Minotaure. La troisième fois, Thésée, fils du roi Égée, se joignit aux victimes, décidé à tuer le monstre. En Crète, Ariane, fille de Minos, s’éprit de lui et, sur le conseil de Dédale, lui donna une pelote de fil, qu’il dévida derrière lui en entrant dans le Labyrinthe.\n\nThésée tua le Minotaure et suivit le fil jusqu’à l’entrée. Il s’enfuit de nuit avec Ariane et les jeunes Athéniens, mais abandonna la princesse endormie sur l’île de Naxos, où Dionysos la trouva et en fit son épouse. Avant de partir, Thésée avait promis à son père de remplacer les voiles noires du navire par des voiles blanches s’il revenait vivant. Il oublia : voyant les voiles noires du haut de la falaise, Égée crut son fils mort et se jeta dans le vide — et la mer porte son nom depuis."
+    },
+    "characters": [
+      "theseus",
+      "minotaur",
+      "ariadne",
+      "minos",
+      "pasiphae",
+      "daedalus",
+      "aegeus",
+      "dionysus",
+      "poseidon"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.1.3–3.1.4",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "1.7–1.10",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Plutarch",
+          "fr": "Plutarque"
+        },
+        "work": {
+          "en": "Life of Theseus",
+          "fr": "Vie de Thésée"
+        },
+        "passage": "15–22",
+        "url": {
+          "en": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Theseus*.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Minotaur",
+        "url": "https://en.wikipedia.org/wiki/Minotaur"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Minotaure",
+        "url": "https://fr.wikipedia.org/wiki/Minotaure"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Minotaur (Minotauros)",
+        "url": "https://www.theoi.com/Ther/Minotauros.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Theseus",
+        "url": "https://www.worldhistory.org/Theseus/"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Minotaur",
+        "url": "https://www.worldhistory.org/Minotaur/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Minotaure",
+        "url": "https://mythologica.fr/grec/minotaure.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "Overly Sarcastic Productions — Miscellaneous Myths: The Minotaur",
+        "url": "https://www.youtube.com/watch?v=X_1s_UZfs5c"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Theseus in the Minotaur's Labyrinth - 3/3 - Greek Mythology in Comics - See U in History",
+        "url": "https://www.youtube.com/watch?v=BzQ9yZwE7jc"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Thésée dans le Labyrinthe du Minotaure - 3/3 - Mythologie Grecque - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=4JMmBsZCOig"
+      }
+    ],
+    "related": [
+      "daedalus-and-icarus",
+      "europa-and-the-bull"
+    ]
+  },
+  {
+    "id": "daedalus-and-icarus",
+    "title": {
+      "en": "Daedalus and Icarus",
+      "fr": "Dédale et Icare"
+    },
+    "summary": {
+      "en": "Daedalus, the Athenian craftsman who had built the Labyrinth, was kept prisoner in Crete by King Minos with his young son Icarus — for having helped Theseus, Apollodorus says. Minos ruled the land and the sea, \"but the sky is open\", thought Daedalus. He gathered feathers, arranged them in order of size, bound them with thread in the middle and wax at the base, and curved them gently like the wings of real birds.\n\nIcarus played beside him, chasing the feathers the wind blew away and softening the wax with his thumb. When the wings were ready, Daedalus fitted them to his son's shoulders and warned him: \"Fly midway between the sea and the sky: too low, the spray will weigh down your wings; too high, the sun will burn them.\" Then, with tears on his cheeks, he kissed him and took flight ahead of him, like a bird leading its fledgling out of the nest.\n\nA fisherman, a shepherd and a ploughman looked up in amazement and took them for gods. But Icarus, delighting in flight, left his guide and climbed higher and higher toward the sky. The heat of the sun softened the wax; the feathers came loose; he beat his bare arms in vain and fell, calling his father's name, into the sea that has since been called the Icarian Sea. Daedalus found the feathers on the waves, cursed his own skill, and buried his son on the island that bears his name, Icaria.",
+      "fr": "Dédale, l’artisan athénien qui avait construit le Labyrinthe, était retenu prisonnier en Crète par le roi Minos avec son jeune fils Icare — pour avoir aidé Thésée, dit Apollodore. Minos régnait sur la terre et la mer, « mais le ciel est ouvert », pensa Dédale. Il rassembla des plumes, les rangea par taille, les lia de fil au milieu et de cire à la base, et les courba doucement comme les ailes des vrais oiseaux.\n\nIcare jouait près de lui, courant après les plumes que le vent emportait et pétrissant la cire du pouce. Quand les ailes furent prêtes, Dédale les ajusta aux épaules de son fils et l’avertit : « Vole à mi-hauteur entre la mer et le ciel : trop bas, l’écume alourdira tes ailes ; trop haut, le soleil les brûlera. » Puis, les joues baignées de larmes, il l’embrassa et prit son envol devant lui, comme l’oiseau qui guide son petit hors du nid.\n\nUn pêcheur, un berger et un laboureur levèrent les yeux, stupéfaits, et les prirent pour des dieux. Mais Icare, grisé par le vol, quitta son guide et monta de plus en plus haut vers le ciel. La chaleur du soleil amollit la cire ; les plumes se détachèrent ; il agita en vain ses bras nus et tomba, appelant son père, dans la mer qu’on appelle depuis la mer Icarienne. Dédale trouva les plumes sur les flots, maudit son art et ensevelit son fils sur l’île qui porte son nom, Icarie."
+    },
+    "characters": [
+      "daedalus",
+      "icarus",
+      "minos"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "8.183–235",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses8.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_8"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "1.12–1.13",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Icarus",
+        "url": "https://en.wikipedia.org/wiki/Icarus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Icare",
+        "url": "https://fr.wikipedia.org/wiki/Icare"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Daedalus",
+        "url": "https://www.worldhistory.org/Daedalus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Dédale et Icare",
+        "url": "https://mythologica.fr/grec/dedale.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Icarus and Daedalus - Amy Adkins",
+        "url": "https://www.youtube.com/watch?v=3s2QPQnuaGk"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe d’Icare et de Dédale - Amy Adkins",
+        "url": "https://www.youtube.com/watch?v=iWPnkJuZILs"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "TV5MONDE — Le mythe de Dédale et Icare : Légendes mythologiques",
+        "url": "https://www.youtube.com/watch?v=6I8GIEY4wEU"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Dédale et Icare - Mythologie Grecque en Bande Dessinée  - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=jkXDoAxzEWM"
+      }
+    ],
+    "related": [
+      "theseus-and-the-minotaur",
+      "phaethon"
+    ]
+  },
+  {
+    "id": "orpheus-and-eurydice",
+    "title": {
+      "en": "Orpheus and Eurydice",
+      "fr": "Orphée et Eurydice"
+    },
+    "summary": {
+      "en": "Orpheus, the son of the Muse Calliope, sang and played the lyre so beautifully that wild beasts followed him, trees moved and rivers stopped to listen. Shortly after their wedding, his young wife Eurydice was bitten on the ankle by a snake hidden in the grass, and died.\n\nOrpheus mourned her until, unable to bear it, he dared to go down to the land of the dead through the gate of Taenarus. Before Hades and Persephone he sang his grief. The bloodless shades wept; Tantalus forgot his thirst, Ixion's wheel stood still, Sisyphus sat down on his rock, the Furies' cheeks were wet with tears for the first time, and Cerberus held his three mouths open without barking. The king and queen of the dead could not refuse him: Eurydice would follow him back to the light, on one condition — that he not look back at her before leaving the valleys of the underworld.\n\nThey climbed in silence up a steep, dark path. They were almost at the surface when Orpheus, afraid she was no longer following and longing to see her, turned around. At once Eurydice slipped back into the depths; reaching out his arms, he caught only air. She did not complain — what could she complain of, except of being loved? — and said a last farewell. Orpheus wandered, inconsolable, until the women of Thrace, whom he scorned, tore him to pieces; his head, carried down the river Hebrus, still murmured Eurydice's name.",
+      "fr": "Orphée, fils de la Muse Calliope, chantait et jouait de la lyre si merveilleusement que les bêtes sauvages le suivaient, que les arbres se déplaçaient et que les fleuves s’arrêtaient pour l’écouter. Peu après leurs noces, sa jeune épouse Eurydice fut mordue à la cheville par un serpent caché dans l’herbe, et mourut.\n\nOrphée la pleura, puis, n’y tenant plus, osa descendre au pays des morts par la porte du Ténare. Devant Hadès et Perséphone, il chanta sa douleur. Les ombres exsangues pleuraient ; Tantale oublia sa soif, la roue d’Ixion s’arrêta, Sisyphe s’assit sur son rocher, les joues des Érinyes se mouillèrent de larmes pour la première fois, et Cerbère tint ses trois gueules ouvertes sans aboyer. Le roi et la reine des morts ne purent le lui refuser : Eurydice le suivrait jusqu’à la lumière, à une condition — qu’il ne se retourne pas vers elle avant d’avoir quitté les vallées infernales.\n\nIls montèrent en silence par un sentier escarpé et obscur. Ils touchaient presque à la surface quand Orphée, craignant qu’elle ne le suive plus et avide de la voir, se retourna. Aussitôt Eurydice glissa de nouveau vers les profondeurs ; tendant les bras, il n’étreignit que l’air. Elle ne se plaignit pas — de quoi se serait-elle plainte, sinon d’être aimée ? — et lui dit un dernier adieu. Orphée erra, inconsolable, jusqu’à ce que les femmes de Thrace, qu’il dédaignait, le mettent en pièces ; sa tête, emportée par le fleuve Hèbre, murmurait encore le nom d’Eurydice."
+    },
+    "characters": [
+      "orpheus",
+      "eurydice",
+      "hades",
+      "persephone",
+      "calliope",
+      "cerberus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Virgil",
+          "fr": "Virgile"
+        },
+        "work": {
+          "en": "Georgics",
+          "fr": "Géorgiques"
+        },
+        "passage": "4.453–527",
+        "url": {
+          "en": "https://classics.mit.edu/Virgil/georgics.4.iv.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_G%C3%A9orgiques_(trad._Nisard)"
+        }
+      },
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "10.1–85",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses10.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_10"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Orpheus and Eurydice",
+        "url": "https://en.wikipedia.org/wiki/Orpheus_and_Eurydice"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurydice",
+        "url": "https://fr.wikipedia.org/wiki/Eurydice"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Orpheus",
+        "url": "https://www.worldhistory.org/Orpheus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Orphée et Eurydice",
+        "url": "https://mythologica.fr/grec/orphee.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The tragic myth of Orpheus and Eurydice - Brendan Pelsue",
+        "url": "https://www.youtube.com/watch?v=RhaepLsP5eg"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe tragique d'Orphée et Eurydice - Brendan Pelsue",
+        "url": "https://www.youtube.com/watch?v=BQJFBXq_few"
+      }
+    ],
+    "related": [
+      "abduction-of-persephone",
+      "golden-fleece"
+    ]
+  }
+]

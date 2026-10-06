@@ -1,0 +1,540 @@
+[
+  {
+    "id": "heracles",
+    "name": {
+      "en": "Heracles",
+      "fr": "Héraclès"
+    },
+    "kind": "hero",
+    "wikidata": "Q122248",
+    "description": {
+      "en": "The strongest of the heroes, son of Zeus, famous for his twelve labours; made a god at his death.",
+      "fr": "Le plus fort des héros, fils de Zeus, célèbre pour ses douze travaux ; devenu dieu à sa mort."
+    },
+    "greek": "Ἡρακλῆς",
+    "roman": {
+      "en": "Hercules",
+      "fr": "Hercule"
+    },
+    "parents": [
+      "zeus",
+      "alcmene"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Heracles",
+        "url": "https://en.wikipedia.org/wiki/Heracles"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Héraclès",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9racl%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Heracles",
+        "url": "https://www.theoi.com/greek-mythology/heracles.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hercules",
+        "url": "https://www.worldhistory.org/Hercules/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Héraclès",
+        "url": "https://mythologica.fr/grec/heracles.htm"
+      }
+    ]
+  },
+  {
+    "id": "perseus",
+    "name": {
+      "en": "Perseus",
+      "fr": "Persée"
+    },
+    "kind": "hero",
+    "wikidata": "Q130832",
+    "description": {
+      "en": "Son of Zeus and Danaë, who beheaded the Gorgon Medusa and rescued Andromeda.",
+      "fr": "Fils de Zeus et de Danaé, qui trancha la tête de la Gorgone Méduse et délivra Andromède."
+    },
+    "greek": "Περσεύς",
+    "parents": [
+      "zeus",
+      "danae"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Perseus",
+        "url": "https://en.wikipedia.org/wiki/Perseus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Persée",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Perseus",
+        "url": "https://www.theoi.com/Heros/Perseus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Perseus",
+        "url": "https://www.worldhistory.org/Perseus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Persée",
+        "url": "https://mythologica.fr/grec/persee.htm"
+      }
+    ]
+  },
+  {
+    "id": "theseus",
+    "name": {
+      "en": "Theseus",
+      "fr": "Thésée"
+    },
+    "kind": "hero",
+    "wikidata": "Q1320718",
+    "description": {
+      "en": "Hero and king of Athens, who killed the Minotaur in the Labyrinth.",
+      "fr": "Héros et roi d’Athènes, qui tua le Minotaure dans le Labyrinthe."
+    },
+    "greek": "Θησεύς",
+    "parents": [
+      "aegeus",
+      "aethra"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Theseus",
+        "url": "https://en.wikipedia.org/wiki/Theseus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thésée",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9s%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Theseus",
+        "url": "https://www.worldhistory.org/Theseus/"
+      }
+    ]
+  },
+  {
+    "id": "jason",
+    "name": {
+      "en": "Jason",
+      "fr": "Jason"
+    },
+    "kind": "hero",
+    "wikidata": "Q176758",
+    "description": {
+      "en": "Leader of the Argonauts, who brought back the Golden Fleece from Colchis.",
+      "fr": "Chef des Argonautes, qui rapporta la Toison d’or de Colchide."
+    },
+    "greek": "Ἰάσων",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Jason",
+        "url": "https://en.wikipedia.org/wiki/Jason"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Jason",
+        "url": "https://fr.wikipedia.org/wiki/Jason"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Jason and the Argonauts",
+        "url": "https://www.worldhistory.org/Jason_and_the_Argonauts/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Jason",
+        "url": "https://mythologica.fr/grec/jason.htm"
+      }
+    ]
+  },
+  {
+    "id": "bellerophon",
+    "name": {
+      "en": "Bellerophon",
+      "fr": "Bellérophon"
+    },
+    "kind": "hero",
+    "wikidata": "Q189872",
+    "description": {
+      "en": "Corinthian hero who tamed the winged horse Pegasus and killed the Chimera.",
+      "fr": "Héros corinthien qui dompta le cheval ailé Pégase et tua la Chimère."
+    },
+    "greek": "Βελλεροφῶν",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bellerophon",
+        "url": "https://en.wikipedia.org/wiki/Bellerophon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Bellérophon",
+        "url": "https://fr.wikipedia.org/wiki/Bell%C3%A9rophon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Bellerophon (Bellerophontes)",
+        "url": "https://www.theoi.com/Heros/Bellerophontes.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Bellerophon",
+        "url": "https://www.worldhistory.org/Bellerophon/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Bellérophon",
+        "url": "https://mythologica.fr/grec/bellerophon.htm"
+      }
+    ]
+  },
+  {
+    "id": "achilles",
+    "name": {
+      "en": "Achilles",
+      "fr": "Achille"
+    },
+    "kind": "hero",
+    "wikidata": "Q41746",
+    "description": {
+      "en": "The greatest warrior of the Greeks at Troy, son of the sea nymph Thetis.",
+      "fr": "Le plus grand guerrier des Grecs devant Troie, fils de la nymphe marine Thétis."
+    },
+    "greek": "Ἀχιλλεύς",
+    "parents": [
+      "peleus",
+      "thetis"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Achilles",
+        "url": "https://en.wikipedia.org/wiki/Achilles"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Achille",
+        "url": "https://fr.wikipedia.org/wiki/Achille"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Achilles",
+        "url": "https://www.worldhistory.org/Achilles/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Achille",
+        "url": "https://mythologica.fr/grec/achille.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Quelle Histoire — Achille, l'invincible guerrier",
+        "url": "https://www.youtube.com/watch?v=6DmIzpQuNi4"
+      }
+    ]
+  },
+  {
+    "id": "odysseus",
+    "name": {
+      "en": "Odysseus",
+      "fr": "Ulysse"
+    },
+    "kind": "hero",
+    "wikidata": "Q47231",
+    "description": {
+      "en": "King of Ithaca, the cunning hero of the Trojan horse, who wandered ten years before coming home.",
+      "fr": "Roi d’Ithaque, le héros rusé du cheval de Troie, qui erra dix ans avant de rentrer chez lui."
+    },
+    "greek": "Ὀδυσσεύς",
+    "roman": {
+      "en": "Ulysses",
+      "fr": "Ulysse"
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Odysseus",
+        "url": "https://en.wikipedia.org/wiki/Odysseus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ulysse",
+        "url": "https://fr.wikipedia.org/wiki/Ulysse"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Odysseus",
+        "url": "https://www.worldhistory.org/Odysseus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ulysse",
+        "url": "https://mythologica.fr/grec/ulysse.htm"
+      }
+    ]
+  },
+  {
+    "id": "orpheus",
+    "name": {
+      "en": "Orpheus",
+      "fr": "Orphée"
+    },
+    "kind": "hero",
+    "wikidata": "Q174353",
+    "description": {
+      "en": "Thracian poet and musician whose song charmed beasts, trees and stones, and even the gods of the dead.",
+      "fr": "Poète et musicien thrace dont le chant charmait les bêtes, les arbres et les pierres, et jusqu’aux dieux des morts."
+    },
+    "greek": "Ὀρφεύς",
+    "parents": [
+      "calliope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Orpheus",
+        "url": "https://en.wikipedia.org/wiki/Orpheus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Orphée",
+        "url": "https://fr.wikipedia.org/wiki/Orph%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Orpheus",
+        "url": "https://www.worldhistory.org/Orpheus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Orphée et Eurydice",
+        "url": "https://mythologica.fr/grec/orphee.htm"
+      }
+    ]
+  },
+  {
+    "id": "hector",
+    "name": {
+      "en": "Hector",
+      "fr": "Hector"
+    },
+    "kind": "hero",
+    "wikidata": "Q159666",
+    "description": {
+      "en": "Eldest son of Priam and champion of Troy, killed by Achilles.",
+      "fr": "Fils aîné de Priam et champion de Troie, tué par Achille."
+    },
+    "greek": "Ἕκτωρ",
+    "parents": [
+      "priam"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hector",
+        "url": "https://en.wikipedia.org/wiki/Hector"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hector",
+        "url": "https://fr.wikipedia.org/wiki/Hector"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hector",
+        "url": "https://mythologica.fr/grec/hector.htm"
+      }
+    ]
+  },
+  {
+    "id": "patroclus",
+    "name": {
+      "en": "Patroclus",
+      "fr": "Patrocle"
+    },
+    "kind": "hero",
+    "wikidata": "Q186271",
+    "description": {
+      "en": "Achilles’ dearest companion, killed by Hector while wearing Achilles’ armour.",
+      "fr": "Le plus cher compagnon d’Achille, tué par Hector alors qu’il portait les armes d’Achille."
+    },
+    "greek": "Πάτροκλος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Patroclus",
+        "url": "https://en.wikipedia.org/wiki/Patroclus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Patrocle",
+        "url": "https://fr.wikipedia.org/wiki/Patrocle"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Patrocle",
+        "url": "https://mythologica.fr/grec/patrocle.htm"
+      }
+    ]
+  },
+  {
+    "id": "peleus",
+    "name": {
+      "en": "Peleus",
+      "fr": "Pélée"
+    },
+    "kind": "hero",
+    "wikidata": "Q178641",
+    "description": {
+      "en": "King of the Myrmidons, Argonaut, husband of Thetis and father of Achilles.",
+      "fr": "Roi des Myrmidons, Argonaute, époux de Thétis et père d’Achille."
+    },
+    "greek": "Πηλεύς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Peleus",
+        "url": "https://en.wikipedia.org/wiki/Peleus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pélée",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9l%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pélée",
+        "url": "https://mythologica.fr/grec/pelee.htm"
+      }
+    ]
+  },
+  {
+    "id": "menelaus",
+    "name": {
+      "en": "Menelaus",
+      "fr": "Ménélas"
+    },
+    "kind": "hero",
+    "wikidata": "Q171839",
+    "description": {
+      "en": "King of Sparta, husband of Helen, whose abduction caused the Trojan War.",
+      "fr": "Roi de Sparte, époux d’Hélène, dont l’enlèvement causa la guerre de Troie."
+    },
+    "greek": "Μενέλαος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Menelaus",
+        "url": "https://en.wikipedia.org/wiki/Menelaus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ménélas",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9n%C3%A9las"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ménélas",
+        "url": "https://mythologica.fr/grec/menelas.htm"
+      }
+    ]
+  },
+  {
+    "id": "agamemnon",
+    "name": {
+      "en": "Agamemnon",
+      "fr": "Agamemnon"
+    },
+    "kind": "hero",
+    "wikidata": "Q128176",
+    "description": {
+      "en": "King of Mycenae, brother of Menelaus and commander of the Greek army before Troy.",
+      "fr": "Roi de Mycènes, frère de Ménélas et chef de l’armée grecque devant Troie."
+    },
+    "greek": "Ἀγαμέμνων",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Agamemnon",
+        "url": "https://en.wikipedia.org/wiki/Agamemnon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Agamemnon",
+        "url": "https://fr.wikipedia.org/wiki/Agamemnon"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Agamemnon",
+        "url": "https://mythologica.fr/grec/agamemnon.htm"
+      }
+    ]
+  }
+]

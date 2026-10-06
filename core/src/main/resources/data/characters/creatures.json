@@ -1,0 +1,599 @@
+[
+  {
+    "id": "typhon",
+    "name": {
+      "en": "Typhon",
+      "fr": "Typhon"
+    },
+    "kind": "creature",
+    "wikidata": "Q180237",
+    "description": {
+      "en": "The most terrible of monsters, with a hundred serpent heads, who challenged Zeus for the rule of the world.",
+      "fr": "Le plus terrible des monstres, aux cent têtes de serpent, qui disputa à Zeus l’empire du monde."
+    },
+    "greek": "Τυφῶν",
+    "parents": [
+      "gaia",
+      "tartarus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Typhon",
+        "url": "https://en.wikipedia.org/wiki/Typhon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Typhon (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Typhon_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Typhoeus (Typhon)",
+        "url": "https://www.theoi.com/Gigante/Typhoeus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Typhon",
+        "url": "https://www.worldhistory.org/Typhon/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Typhon",
+        "url": "https://mythologica.fr/grec/typhon.htm"
+      }
+    ]
+  },
+  {
+    "id": "hecatoncheires",
+    "name": {
+      "en": "Hecatoncheires",
+      "fr": "Hécatonchires"
+    },
+    "kind": "creature",
+    "wikidata": "Q175255",
+    "description": {
+      "en": "The three Hundred-Handed giants, Briareus, Cottus and Gyges, who fought for Zeus against the Titans.",
+      "fr": "Les trois géants aux cent bras, Briarée, Cottos et Gygès, qui combattirent pour Zeus contre les Titans."
+    },
+    "greek": "Ἑκατόγχειρες",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hecatoncheires",
+        "url": "https://en.wikipedia.org/wiki/Hecatoncheires"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hécatonchires",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9catonchires"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hecatoncheires (Hekatonkheires)",
+        "url": "https://www.theoi.com/Titan/Hekatonkheires.html"
+      }
+    ]
+  },
+  {
+    "id": "cyclopes",
+    "name": {
+      "en": "Cyclopes",
+      "fr": "Cyclopes"
+    },
+    "kind": "creature",
+    "wikidata": "Q128430",
+    "description": {
+      "en": "One-eyed giants; the first of them forged the thunderbolt of Zeus.",
+      "fr": "Géants à l’œil unique ; les premiers d’entre eux forgèrent la foudre de Zeus."
+    },
+    "greek": "Κύκλωπες",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cyclopes",
+        "url": "https://en.wikipedia.org/wiki/Cyclopes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cyclope",
+        "url": "https://fr.wikipedia.org/wiki/Cyclope"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cyclopes (Kyklopes)",
+        "url": "https://www.theoi.com/Titan/Kyklopes.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Les Cyclopes",
+        "url": "https://mythologica.fr/grec/cyclope.htm"
+      }
+    ]
+  },
+  {
+    "id": "medusa",
+    "name": {
+      "en": "Medusa",
+      "fr": "Méduse"
+    },
+    "kind": "creature",
+    "wikidata": "Q160730",
+    "description": {
+      "en": "The mortal one of the three Gorgons, with snakes for hair, whose gaze turned onlookers to stone.",
+      "fr": "La seule mortelle des trois Gorgones, aux cheveux de serpents, dont le regard changeait en pierre."
+    },
+    "greek": "Μέδουσα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Medusa",
+        "url": "https://en.wikipedia.org/wiki/Medusa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Méduse (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9duse_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Medusa & Gorgons (Medousa & Gorgones)",
+        "url": "https://www.theoi.com/Pontios/Gorgones.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Medusa",
+        "url": "https://www.worldhistory.org/Medusa/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Les Gorgones",
+        "url": "https://mythologica.fr/grec/gorgone.htm"
+      }
+    ]
+  },
+  {
+    "id": "pegasus",
+    "name": {
+      "en": "Pegasus",
+      "fr": "Pégase"
+    },
+    "kind": "creature",
+    "wikidata": "Q162797",
+    "description": {
+      "en": "The winged horse, sprung from the neck of Medusa when Perseus beheaded her.",
+      "fr": "Le cheval ailé, jailli du cou de Méduse quand Persée la décapita."
+    },
+    "greek": "Πήγασος",
+    "parents": [
+      "poseidon",
+      "medusa"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pegasus",
+        "url": "https://en.wikipedia.org/wiki/Pegasus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pégase",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9gase"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pegasus (Pegasos)",
+        "url": "https://www.theoi.com/Ther/HipposPegasos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Pegasus",
+        "url": "https://www.worldhistory.org/Pegasus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pégase",
+        "url": "https://mythologica.fr/grec/pegase.htm"
+      }
+    ]
+  },
+  {
+    "id": "chimera",
+    "name": {
+      "en": "Chimera",
+      "fr": "Chimère"
+    },
+    "kind": "creature",
+    "wikidata": "Q182790",
+    "description": {
+      "en": "Fire-breathing monster of Lycia, lion in front, serpent behind and goat in the middle.",
+      "fr": "Monstre de Lycie crachant le feu, lion par-devant, serpent par-derrière et chèvre au milieu."
+    },
+    "greek": "Χίμαιρα",
+    "parents": [
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chimera (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Chimera_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chimère (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Chim%C3%A8re_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chimera (Khimaira)",
+        "url": "https://www.theoi.com/Ther/Khimaira.html"
+      }
+    ]
+  },
+  {
+    "id": "cetus",
+    "name": {
+      "en": "Cetus",
+      "fr": "Kétos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3269950",
+    "description": {
+      "en": "The sea monster sent by Poseidon against Ethiopia, killed by Perseus.",
+      "fr": "Le monstre marin envoyé par Poséidon contre l’Éthiopie, tué par Persée."
+    },
+    "greek": "Κῆτος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cetus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Cetus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cète",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A8te"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ethiopian Cetus (Ketos Aithiopios)",
+        "url": "https://www.theoi.com/Ther/KetosAithiopios.html"
+      }
+    ]
+  },
+  {
+    "id": "minotaur",
+    "name": {
+      "en": "Minotaur",
+      "fr": "Minotaure"
+    },
+    "kind": "creature",
+    "wikidata": "Q129866",
+    "description": {
+      "en": "Bull-headed son of Pasiphaë, shut in the Labyrinth and fed on young Athenians.",
+      "fr": "Fils à tête de taureau de Pasiphaé, enfermé dans le Labyrinthe et nourri de jeunes Athéniens."
+    },
+    "greek": "Μινώταυρος",
+    "parents": [
+      "pasiphae"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Minotaur",
+        "url": "https://en.wikipedia.org/wiki/Minotaur"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Minotaure",
+        "url": "https://fr.wikipedia.org/wiki/Minotaure"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Minotaur (Minotauros)",
+        "url": "https://www.theoi.com/Ther/Minotauros.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Minotaur",
+        "url": "https://www.worldhistory.org/Minotaur/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Minotaure",
+        "url": "https://mythologica.fr/grec/minotaure.htm"
+      }
+    ]
+  },
+  {
+    "id": "nemean-lion",
+    "name": {
+      "en": "Nemean lion",
+      "fr": "Lion de Némée"
+    },
+    "kind": "creature",
+    "wikidata": "Q199438",
+    "description": {
+      "en": "Lion whose hide no weapon could pierce, strangled by Heracles in his first labour.",
+      "fr": "Lion à la peau invulnérable, étranglé par Héraclès lors de son premier travail."
+    },
+    "greek": "Λέων τῆς Νεμέας",
+    "parents": [
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nemean lion",
+        "url": "https://en.wikipedia.org/wiki/Nemean_lion"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lion de Némée",
+        "url": "https://fr.wikipedia.org/wiki/Lion_de_N%C3%A9m%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nemean Lion (Leon Nemeios)",
+        "url": "https://www.theoi.com/Ther/LeonNemeios.html"
+      }
+    ]
+  },
+  {
+    "id": "lernaean-hydra",
+    "name": {
+      "en": "Lernaean Hydra",
+      "fr": "Hydre de Lerne"
+    },
+    "kind": "creature",
+    "wikidata": "Q170379",
+    "description": {
+      "en": "Many-headed water serpent whose heads grew back when cut off, killed by Heracles.",
+      "fr": "Serpent d’eau aux têtes multiples qui repoussaient quand on les tranchait, tué par Héraclès."
+    },
+    "greek": "Λερναία Ὕδρα",
+    "parents": [
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lernaean Hydra",
+        "url": "https://en.wikipedia.org/wiki/Lernaean_Hydra"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hydre de Lerne",
+        "url": "https://fr.wikipedia.org/wiki/Hydre_de_Lerne"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lernaean Hydra",
+        "url": "https://www.theoi.com/Ther/DrakonHydra.html"
+      }
+    ]
+  },
+  {
+    "id": "cerberus",
+    "name": {
+      "en": "Cerberus",
+      "fr": "Cerbère"
+    },
+    "kind": "creature",
+    "wikidata": "Q83496",
+    "description": {
+      "en": "The three-headed hound guarding the gates of the underworld.",
+      "fr": "Le chien à trois têtes qui garde les portes des Enfers."
+    },
+    "greek": "Κέρβερος",
+    "parents": [
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cerberus",
+        "url": "https://en.wikipedia.org/wiki/Cerberus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cerbère",
+        "url": "https://fr.wikipedia.org/wiki/Cerb%C3%A8re"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cerberus (Kerberos)",
+        "url": "https://www.theoi.com/Ther/KuonKerberos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Cerberus",
+        "url": "https://www.worldhistory.org/Cerberus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Cerbère",
+        "url": "https://mythologica.fr/grec/cerbere.htm"
+      }
+    ]
+  },
+  {
+    "id": "colchian-dragon",
+    "name": {
+      "en": "Colchian dragon",
+      "fr": "Dragon de Colchide"
+    },
+    "kind": "creature",
+    "wikidata": "Q4228783",
+    "description": {
+      "en": "The sleepless serpent guarding the Golden Fleece in the grove of Ares.",
+      "fr": "Le serpent qui ne dort jamais, gardien de la Toison d’or dans le bois sacré d’Arès."
+    },
+    "greek": "Δράκων Κολχικός",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dragons in Greek mythology",
+        "url": "https://en.wikipedia.org/wiki/Dragons_in_Greek_mythology"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dragons dans la mythologie grecque",
+        "url": "https://fr.wikipedia.org/wiki/Dragons_dans_la_mythologie_grecque"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Colchian Dragon (Drakon Kholkikos)",
+        "url": "https://www.theoi.com/Ther/DrakonKholkikos.html"
+      }
+    ]
+  },
+  {
+    "id": "sphinx",
+    "name": {
+      "en": "Sphinx",
+      "fr": "Sphinx"
+    },
+    "kind": "creature",
+    "wikidata": "Q151480",
+    "description": {
+      "en": "Winged lioness with a woman’s head who devoured the Thebans unable to answer her riddle.",
+      "fr": "Lionne ailée à tête de femme qui dévorait les Thébains incapables de résoudre son énigme."
+    },
+    "greek": "Σφίγξ",
+    "parents": [
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sphinx",
+        "url": "https://en.wikipedia.org/wiki/Sphinx"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sphinx",
+        "url": "https://fr.wikipedia.org/wiki/Sphinx"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Sphinx",
+        "url": "https://www.theoi.com/Ther/Sphinx.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Sphinx",
+        "url": "https://www.worldhistory.org/Sphinx/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Sphinx",
+        "url": "https://mythologica.fr/grec/sphinx.htm"
+      }
+    ]
+  },
+  {
+    "id": "polyphemus",
+    "name": {
+      "en": "Polyphemus",
+      "fr": "Polyphème"
+    },
+    "kind": "creature",
+    "wikidata": "Q193567",
+    "description": {
+      "en": "Man-eating Cyclops, son of Poseidon, blinded by Odysseus.",
+      "fr": "Cyclope anthropophage, fils de Poséidon, aveuglé par Ulysse."
+    },
+    "greek": "Πολύφημος",
+    "parents": [
+      "poseidon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Polyphemus",
+        "url": "https://en.wikipedia.org/wiki/Polyphemus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polyphème",
+        "url": "https://fr.wikipedia.org/wiki/Polyph%C3%A8me"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Polyphemus (Polyphemos)",
+        "url": "https://www.theoi.com/Gigante/GigantePolyphemos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Polyphème",
+        "url": "https://mythologica.fr/grec/polypheme.htm"
+      }
+    ]
+  }
+]

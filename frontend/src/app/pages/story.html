@@ -1,0 +1,63 @@
+@if (story(); as s) {
+  @for (place of cycles(); track place.cycle.id) {
+    <nav class="cycle-nav">
+      <a class="cycle-title" [routerLink]="['/stories']" [fragment]="place.cycle.id">{{ place.cycle.title | i18nText }}</a>
+      <span class="muted">{{ 'story.cycle' | i18n: { position: place.position, count: place.cycle.stories.length } }}</span>
+      <span class="prev-next">
+        @if (place.previous; as previous) {
+          <a [routerLink]="['/stories', previous.id]" rel="prev">← {{ previous.title | i18nText }}</a>
+        }
+        @if (place.next; as next) {
+          <a [routerLink]="['/stories', next.id]" rel="next">{{ next.title | i18nText }} →</a>
+        }
+      </span>
+    </nav>
+  }
+
+  <h1>{{ s.title | i18nText }}</h1>
+  <div class="chips">
+    @for (character of characters(); track character.id) {
+      <app-character-chip [character]="character" />
+    }
+  </div>
+
+  <article class="summary">
+    @for (paragraph of paragraphs(); track $index) {
+      <p>{{ paragraph }}</p>
+    }
+  </article>
+
+  <h2>{{ 'story.sources' | i18n }}</h2>
+  <ul class="sources">
+    @for (source of s.sources; track $index) {
+      <li>
+        <span class="author">{{ source.author | i18nText }}</span>, <cite>{{ source.work | i18nText }}</cite>
+        @if (source.passage) {
+          <span class="passage">{{ source.passage }}</span>
+        }
+        @if (reading(source); as read) {
+          — <a [href]="read.url" target="_blank" rel="noopener">{{ 'story.read' | i18n }}</a>
+          @if (read.lang !== i18n.language()) {
+            <span class="lang" [title]="'i18n.name.' + read.lang | i18n">{{ read.lang }}</span>
+          }
+        }
+      </li>
+    }
+  </ul>
+
+  @if (s.links?.length) {
+    <h2>{{ 'links.title' | i18n }}</h2>
+    <app-links [links]="s.links ?? []" />
+  }
+
+  @if (related().length) {
+    <h2>{{ 'story.related' | i18n }}</h2>
+    <ul class="entries">
+      @for (other of related(); track other.id) {
+        <li><a [routerLink]="['/stories', other.id]">{{ other.title | i18nText }}</a></li>
+      }
+    </ul>
+  }
+} @else if (loaded()) {
+  <p class="muted">{{ 'story.notFound' | i18n }}</p>
+}

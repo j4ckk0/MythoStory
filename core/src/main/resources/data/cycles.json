@@ -1,0 +1,121 @@
+[
+  {
+    "id": "theogony",
+    "title": {
+      "en": "The birth of the gods",
+      "fr": "La naissance des dieux"
+    },
+    "description": {
+      "en": "From Chaos to the reign of Zeus: how the world and the gods came to be, as Hesiod tells it.",
+      "fr": "Du Chaos au règne de Zeus : comment naquirent le monde et les dieux, selon le récit d’Hésiode."
+    },
+    "stories": [
+      "castration-of-uranus",
+      "birth-of-aphrodite",
+      "birth-of-zeus",
+      "titanomachy",
+      "typhon"
+    ]
+  },
+  {
+    "id": "prometheus",
+    "title": {
+      "en": "Prometheus and the first humans",
+      "fr": "Prométhée et les premiers hommes"
+    },
+    "description": {
+      "en": "The fire stolen from the gods, the first woman and the great flood: the fate of mankind.",
+      "fr": "Le feu volé aux dieux, la première femme et le grand déluge : le destin des hommes."
+    },
+    "stories": [
+      "prometheus-fire",
+      "pandora",
+      "deucalion-flood"
+    ]
+  },
+  {
+    "id": "gods-and-mortals",
+    "title": {
+      "en": "Gods among mortals",
+      "fr": "Les dieux parmi les mortels"
+    },
+    "description": {
+      "en": "Loves, abductions, rivalries and punishments: when the gods meddle in human lives.",
+      "fr": "Amours, enlèvements, rivalités et châtiments : quand les dieux se mêlent de la vie des hommes."
+    },
+    "stories": [
+      "abduction-of-persephone",
+      "europa-and-the-bull",
+      "apollo-and-daphne",
+      "echo-and-narcissus",
+      "phaethon",
+      "arachne",
+      "midas-golden-touch"
+    ]
+  },
+  {
+    "id": "heroes",
+    "title": {
+      "en": "The age of heroes",
+      "fr": "L’âge des héros"
+    },
+    "description": {
+      "en": "The great deeds of the heroes, from Perseus to the Argonauts, in the generations before the Trojan War.",
+      "fr": "Les exploits des héros, de Persée aux Argonautes, dans les générations qui précèdent la guerre de Troie."
+    },
+    "stories": [
+      "perseus-and-medusa",
+      "perseus-and-andromeda",
+      "bellerophon-and-the-chimera",
+      "labours-of-heracles",
+      "golden-fleece",
+      "theseus-and-the-minotaur",
+      "daedalus-and-icarus",
+      "orpheus-and-eurydice"
+    ]
+  },
+  {
+    "id": "thebes",
+    "title": {
+      "en": "The Theban cycle",
+      "fr": "Le cycle thébain"
+    },
+    "description": {
+      "en": "The cursed royal house of Thebes.",
+      "fr": "La maison royale maudite de Thèbes."
+    },
+    "stories": [
+      "oedipus"
+    ]
+  },
+  {
+    "id": "trojan-war",
+    "title": {
+      "en": "The Trojan War",
+      "fr": "La guerre de Troie"
+    },
+    "description": {
+      "en": "From the golden apple to the fall of Troy.",
+      "fr": "De la pomme d’or à la chute de Troie."
+    },
+    "stories": [
+      "judgement-of-paris",
+      "wrath-of-achilles",
+      "trojan-horse"
+    ]
+  },
+  {
+    "id": "odyssey",
+    "title": {
+      "en": "The Odyssey",
+      "fr": "L’Odyssée"
+    },
+    "description": {
+      "en": "Odysseus's ten-year journey home to Ithaca.",
+      "fr": "Le voyage de dix ans d’Ulysse pour rentrer à Ithaque."
+    },
+    "stories": [
+      "odysseus-and-polyphemus"
+    ]
+  }
+]

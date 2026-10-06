@@ -1,0 +1,40 @@
+[
+  {
+    "id": "hebe",
+    "name": {
+      "en": "Hebe",
+      "fr": "Hébé"
+    },
+    "kind": "olympian",
+    "wikidata": "Q131125",
+    "description": {
+      "en": "Ancient Greek goddess of youth.",
+      "fr": "Déesse personnifiant la jeunesse, la vitalité et la vigueur, mythologie grecque."
+    },
+    "greek": "Ἥβη , Hēbē",
+    "parents": [
+      "hera",
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hebe (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Hebe_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hébé",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9b%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hebe",
+        "url": "https://www.theoi.com/Ouranios/Hebe.html"
+      }
+    ]
+  }
+]

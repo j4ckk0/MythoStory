@@ -1,0 +1,70 @@
+import { I18nKey } from './en';
+
+/** The UI's French messages: every i18n key of en.ts, the compiler checks it. */
+export const fr: Record<I18nKey, string> = {
+  'app.title': 'MythoStory',
+  'app.tagline': 'Les mythes de la Grèce antique : leurs personnages, leurs histoires, et où les lire.',
+  'app.loading': 'Chargement des mythes…',
+  'app.unreachable': 'Le serveur MythoStory ne répond pas.',
+  'app.version': 'Version {version} · {platform}',
+
+  'nav.home': 'Accueil',
+  'nav.characters': 'Personnages',
+  'nav.stories': 'Histoires',
+  'nav.search': 'Rechercher',
+  'nav.search.placeholder': 'Rechercher un personnage ou une histoire',
+
+  'i18n.language': 'Langue',
+  'i18n.switch': 'Read in English',
+  'i18n.name.en': 'En anglais',
+  'i18n.name.fr': 'En français',
+
+  'kind.primordial': 'Divinités primordiales',
+  'kind.titan': 'Titans',
+  'kind.olympian': 'Olympiens',
+  'kind.deity': 'Autres divinités',
+  'kind.nymph': 'Nymphes',
+  'kind.hero': 'Héros et demi-dieux',
+  'kind.mortal': 'Mortels',
+  'kind.creature': 'Créatures et monstres',
+  'kind.all': 'Tous',
+
+  'home.characters': 'Les personnages',
+  'home.cycles': 'Les histoires',
+  'home.counts': '{characters} personnages · {stories} histoires',
+
+  'characters.title': 'Personnages',
+  'characters.count': '{count} personnages',
+  'characters.allLetters': 'Toutes',
+  'characters.letters': 'Par lettre',
+
+  'character.greek': 'En grec',
+  'character.roman': 'Chez les Romains',
+  'character.parents': 'Parents',
+  'character.children': 'Enfants',
+  'character.stories': 'Histoires',
+  'character.noStories': 'Aucune histoire ne parle encore de ce personnage.',
+  'character.notFound': 'Aucun personnage ici.',
+  'character.wikidata': 'Wikidata',
+
+  'stories.title': 'Histoires',
+
+  'story.characters': 'Personnages',
+  'story.sources': 'Sources antiques',
+  'story.read': 'Lire',
+  'story.related': 'Voir aussi',
+  'story.previous': 'Précédente',
+  'story.next': 'Suivante',
+  'story.notFound': 'Aucune histoire ici.',
+  'story.cycle': 'Épisode {position} sur {count}',
+
+  'links.title': 'Pour aller plus loin',
+  'links.wikipedia': 'Wikipédia',
+  'links.article': 'Articles',
+  'links.video': 'Vidéos',
+
+  'search.title': 'Recherche',
+  'search.none': 'Rien ne correspond à « {query} ».',
+  'search.more': '…et {count} autres : précisez votre recherche.',
+  'search.hint': 'Tapez un nom — Zeus, Héraclès, Méduse — ou le titre d’une histoire.',
+};

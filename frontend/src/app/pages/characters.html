@@ -1,0 +1,33 @@
+<h1>{{ 'characters.title' | i18n }}</h1>
+<nav class="filters">
+  <a [routerLink]="['/characters']" [class.active]="!kind()">{{ 'kind.all' | i18n }}</a>
+  @for (k of kinds; track k) {
+    <a [routerLink]="['/characters']" [queryParams]="{ kind: k }" [class.active]="kind() === k" [attr.data-kind]="k">{{
+      'kind.' + k | i18n
+    }}</a>
+  }
+</nav>
+<p class="muted">{{ 'characters.count' | i18n: { count: count() } }}</p>
+
+<nav class="letters" [attr.aria-label]="'characters.letters' | i18n">
+  @for (l of letters(); track l) {
+    <a [routerLink]="['/characters']" [queryParams]="{ kind: kind() ?? null, letter: l }" [class.active]="currentLetter() === l">{{ l }}</a>
+  }
+  <a [routerLink]="['/characters']" [queryParams]="{ kind: kind() ?? null, letter: 'all' }" [class.active]="currentLetter() === 'all'">{{
+    'characters.allLetters' | i18n
+  }}</a>
+</nav>
+
+@for (group of groups(); track group.kind) {
+  <section>
+    <h2 [attr.data-kind]="group.kind">{{ 'kind.' + group.kind | i18n }}</h2>
+    <ul class="entries">
+      @for (character of group.characters; track character.id) {
+        <li>
+          <a [routerLink]="['/characters', character.id]">{{ character.name | i18nText }}</a>
+          <span class="muted"> — {{ character.description | i18nText }}</span>
+        </li>
+      }
+    </ul>
+  </section>
+}

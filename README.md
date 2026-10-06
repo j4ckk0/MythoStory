@@ -1,11 +1,17 @@
 # MythoStory
 
+The myths of ancient Greece, to read and to wander through: **the characters** — gods, Titans, nymphs,
+heroes, mortals, monsters — and **the stories** they appear in. Every story is summarised, **sourced**
+from the ancient texts (with a link to read them online) and linked to **Wikipedia, articles and
+videos**. One click leads from a story to its characters, from a character to their family and their
+other stories, and from one episode of a cycle to the next. **In French and in English.**
+
 One application, two platforms:
 
 - **Desktop**: a local server (`mythostory.jar`, with a bundled JRE) serves the page on
   `http://127.0.0.1:8080/` and opens the browser on it. The browser is the window.
 - **Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the
-  **same page**. Everything stays on the phone and works offline.
+  **same page**. Everything stays on the phone and works offline (the links lead to the web).
 
 ## Architecture
 
@@ -26,11 +32,12 @@ One application, two platforms:
 
 | Module      | What it is                                                                                        | Built by |
 |-------------|---------------------------------------------------------------------------------------------------|----------|
-| `core/`     | the domain: stories, their storage (a JSON file). No framework, Java 17 bytecode: Android runs it. | Maven |
+| `core/`     | the catalog: its model, its data files, their validation. No framework, Java 17 bytecode: Android runs it. | Maven |
 | `frontend/` | the Angular page, packaged as a jar of `static/` resources.                                        | npm, run by Maven |
 | `backend/`  | the HTTP server: Ktor on its CIO engine (pure Kotlin, so it runs on Android too); `/api` + the page. | Maven |
 | `desktop/`  | the desktop program: `main`, the executable jar `desktop/target/mythostory.jar`, the distributions. | Maven |
 | `android/`  | the Android app: starts the backend, shows the page in a WebView.                                  | Gradle (AGP), run by Maven |
+| `importer/` | the characters imported from Wikidata into `core`'s data files: a tool, never shipped.             | Maven |
 
 The choices behind this layout:
 
@@ -45,13 +52,129 @@ The choices behind this layout:
 
 ### The API
 
-| Method | Path           | Body / answer                                              |
-|--------|----------------|------------------------------------------------------------|
-| GET    | `/api/info`    | `{name, version, platform}`, where platform is `desktop` or `android` |
-| GET    | `/api/stories` | `[{id, title, summary}]`                                   |
-| POST   | `/api/stories` | `{title, summary}` → 201 and the story; 400 on a blank title |
+| Method | Path           | Answer                                                                            |
+|--------|----------------|-----------------------------------------------------------------------------------|
+| GET    | `/api/info`    | `{name, version, platform, languages}`: platform is `desktop` or `android`         |
+| GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, stories, cycles}`           |
 
-Any other path serves the page (`index.html` for the Angular routes).
+The catalog is small (a few hundred kilobytes) and read-only: the page loads it once, builds its own
+indexes (a character's stories and children, a story's cycles and neighbours) and switches language
+without asking the server again. Any other path serves the page (`index.html` for the Angular routes).
+
+## The catalog
+
+The data lives in `core/src/main/resources/data/`, in the core jar — so on the desktop and on
+Android alike:
+
+```
+data/index.json               the files below, in order (CatalogTest fails on a file it does not list)
+data/characters/<kind>.json   the curated characters, one file per kind: primordials, titans, olympians,
+                              deities, nymphs, heroes, mortals, creatures
+data/characters/wikidata/     the characters imported from Wikidata, one file per kind: never edited by hand,
+                              scripts/import-characters.sh rewrites them (below)
+data/stories/<cycle>.json     the stories, one file per cycle
+data/cycles.json              the cycles: sequences of stories, in their order
+```
+
+The records refer to each other by **id**, a slug (`zeus`, `labours-of-heracles`), which is also the
+page's URL (`/characters/zeus`). Each relation is said **once** — a character's `parents`, a story's
+`characters`, a cycle's `stories`, a story's `related` — and everything else is derived: children,
+a character's stories, the previous and next story of a cycle.
+
+```jsonc
+// a character
+{ "id": "perseus", "name": {"en": "Perseus", "fr": "Persée"}, "kind": "hero", "wikidata": "Q130832",
+  "description": {"en": "…", "fr": "…"}, "greek": "Περσεύς", "roman": null,
+  "parents": ["zeus", "danae"],
+  "links": [{"kind": "wikipedia", "lang": "en", "title": "Wikipedia — Perseus", "url": "https://en.wikipedia.org/wiki/Perseus"}] }
+
+// a story: its summary in our own words (paragraphs separated by a blank line), at least one ancient source
+{ "id": "perseus-and-medusa", "title": {"en": "…", "fr": "…"}, "summary": {"en": "…", "fr": "…"},
+  "characters": ["perseus", "medusa"],
+  "sources": [{"author": {"en": "Apollodorus", "fr": "Apollodore"}, "work": {"en": "Library", "fr": "Bibliothèque"},
+               "passage": "2.4.1–2.4.4",
+               "url": {"en": "https://www.theoi.com/Text/Apollodorus2.html", "fr": "https://fr.wikisource.org/wiki/…"}}],
+  "links": [{"kind": "video", "lang": "en", "title": "TED-Ed — The myth of Medusa", "url": "https://www.youtube.com/watch?v=O18-FA83BaM"}],
+  "related": ["bellerophon-and-the-chimera"] }
+```
+
+Link kinds: `wikipedia`, `article`, `video`. Each link says its **language**; the page shows the
+reader's language first and marks the others.
+
+**Checks.** `Catalog.problems()` refuses a catalog with a duplicate id, a dangling reference, a story
+without a source or a character, a text missing one of the languages, or a link in an unknown
+language; the build runs it (`CatalogTest`), and the server would not start. **The links** are
+checked by `scripts/check-links.sh` (`scripts\check-links.bat`): every URL must answer — the videos
+through YouTube's oEmbed, which answers only for videos that exist, the Wikipedia articles through
+Wikipedia's API, fifty to a request. It needs the network, so the build
+never runs it: run it after editing the data, and now and then, since pages move.
+
+**Adding** a character or a story: edit the JSON of its kind or cycle (a new file: add it to
+`index.json`), with every text in English and French, then `scripts/build.sh` (the checks) and
+`scripts/check-links.sh`. Summaries are written in our own words, never copied: the sources are
+cited, with the passage.
+
+### The characters from Wikidata
+
+`scripts/import-characters.sh` (`.bat`) imports **every character of Greek mythology Wikidata knows
+with a Wikipedia article in English or French** — the instances of "mythological Greek character"
+(Q22988604) and its subclasses —, `--all` even those without (names, little else). It needs the
+network, takes half a minute, and rewrites `data/characters/wikidata/` whole; the curated characters
+are never touched, and a Wikidata item one of them already is (their `wikidata` field) is not imported.
+Each imported character gets:
+
+- **its names** in English and French from Wikidata's labels (one language standing in for the
+  other when Wikidata has only one), and its **Greek** name;
+- **its kind**, from its Wikidata classes (`Kinds.kt`: primordial deity, Titan, Olympian, nymph,
+  centaur, Giant…, deity, demigod, mythical creature — the most specific first); a character with no
+  such class is a **demigod** when one parent is a god and the other is not, a **deity** when both are,
+  else a **mortal**;
+- **its parents** (Wikidata's father and mother) among the catalog's characters, so that the curated
+  ones gain their children too (Zeus: about a hundred);
+- **a description**: Wikidata's, unless it says no more than "Greek mythological figure", in which case
+  one made from the parents — "Daughter of Salmoneus and Alcidice in Greek mythology." /
+  « Fille de Salmonée et d’Alcidice dans la mythologie grecque. »;
+- **links**: Wikipedia in both languages when the articles exist, and the **Theoi Project**'s page
+  Wikidata names, once the importer has checked that it answers (some ids predate Theoi's
+  reorganisation).
+
+The catalog must be sound with what is imported before anything is written. Then
+`scripts/check-links.sh` and `scripts/build.sh`. Many characters share a name (four Clymenes, two
+Thalias…): their ids then carry their Wikidata item (`clymene-q2980439`), their descriptions tell them
+apart, and so does the description shown when hovering their name.
+
+Wikidata's data is CC0: no attribution required — each imported character links to its Wikidata item.
+
+### The catalog today
+
+**3,031 characters** — 99 curated, 2,932 from Wikidata — and **28 stories** in 7 cycles (the birth of
+the gods, Prometheus and the first humans, gods among mortals, the age of heroes, Thebes, the Trojan
+War, the Odyssey); **5,267 links**, all checked. The catalog weighs 1.6 MB, 270 kB gzipped as the
+server sends it. English translations of the sources come from the Theoi Classical Texts Library, the
+MIT Internet Classics Archive and the University of Chicago's LacusCurtius; French ones from
+Wikisource (Leconte de Lisle, Nisard, Clavier).
+
+The page lists the characters by kind and, when there are more than 150, one initial at a time
+(`/characters?kind=mortal&letter=t`); the search shows the first hundred matches, names starting with
+the query first.
+
+## i18n
+
+French and English, everywhere: everything about it is named **i18n**.
+
+- **The catalog's texts** are `I18nText` — `{"en": …, "fr": …}` — and the languages are
+  `I18n.LANGUAGES` in `core` (`I18n.kt`), which the checks require in every text.
+- **The page's texts** are i18n messages: `frontend/src/app/i18n/en.ts` holds every key,
+  `fr.ts` must hold the same (the compiler checks it), shown by the `i18n` pipe
+  (`{{ 'nav.characters' | i18n }}`); catalog texts by the `i18nText` pipe
+  (`{{ character.name | i18nText }}`). `I18nService` holds the language: the reader's last
+  choice, else the browser's (the phone's on Android), else English; the header's button switches it,
+  instantly.
+- **The Android app's own strings** (its name, its error) are Android resources: `res/values/`
+  (English) and `res/values-fr/`.
+
+Adding a language: add it to `I18n.LANGUAGES` and `I18N_LANGUAGES` (`i18n.service.ts`), write its
+messages file, and its texts in every data file — the checks list what is missing.
 
 ## Quick start
 
@@ -108,6 +231,8 @@ scripts/build.sh                  # clean build, every test: desktop/target/myth
 scripts/build.sh -DskipTests      # extra arguments are passed to mvn
 scripts/build.sh --no-android     # the desktop alone, even with the Android SDK there
 scripts/ci.sh                     # the CI: quiet, npm ci (exactly package-lock.json)
+scripts/check-links.sh            # every URL of the catalog answers (network; not part of the build)
+scripts/import-characters.sh      # the characters from Wikidata (network; see "The characters from Wikidata")
 ```
 
 The Android app is built **as soon as `scripts/setup.sh --android` has run**: Maven's `android`
@@ -118,14 +243,12 @@ the same; `mvn package -P-android` leaves it out.
 
 ```bash
 scripts/run.sh                                  # build if a source is newer than the jar, then run
-scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --data, --no-browser, --help
+scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --help
 scripts/run.sh --rebuild
 scripts/run.sh --android                        # install and start the app on the device or emulator adb sees
 ```
 
-The desktop keeps its stories in `~/.mythostory/stories.json` (`--data DIR` elsewhere), and listens
-on `127.0.0.1` only (`--host 0.0.0.0` for the network). The Android app keeps them in its private
-storage.
+The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network).
 
 ### Working on the frontend
 

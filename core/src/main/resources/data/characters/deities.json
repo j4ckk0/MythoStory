@@ -1,0 +1,354 @@
+[
+  {
+    "id": "hades",
+    "name": {
+      "en": "Hades",
+      "fr": "Hadès"
+    },
+    "kind": "deity",
+    "wikidata": "Q41410",
+    "description": {
+      "en": "Brother of Zeus, king of the underworld and of the dead.",
+      "fr": "Frère de Zeus, roi des Enfers et des morts."
+    },
+    "greek": "ᾍδης",
+    "roman": {
+      "en": "Pluto",
+      "fr": "Pluton"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hades",
+        "url": "https://en.wikipedia.org/wiki/Hades"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hadès",
+        "url": "https://fr.wikipedia.org/wiki/Had%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hades (Haides)",
+        "url": "https://www.theoi.com/Khthonios/Haides.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hades",
+        "url": "https://www.worldhistory.org/Hades/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hadès",
+        "url": "https://mythologica.fr/grec/hades.htm"
+      }
+    ]
+  },
+  {
+    "id": "persephone",
+    "name": {
+      "en": "Persephone",
+      "fr": "Perséphone"
+    },
+    "kind": "deity",
+    "wikidata": "Q45967",
+    "description": {
+      "en": "Daughter of Demeter, carried off by Hades to be queen of the underworld.",
+      "fr": "Fille de Déméter, enlevée par Hadès pour devenir reine des Enfers."
+    },
+    "greek": "Περσεφόνη",
+    "roman": {
+      "en": "Proserpina",
+      "fr": "Proserpine"
+    },
+    "parents": [
+      "zeus",
+      "demeter"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Persephone",
+        "url": "https://en.wikipedia.org/wiki/Persephone"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Perséphone",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9phone"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Persephone",
+        "url": "https://www.theoi.com/Khthonios/Persephone.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Persephone",
+        "url": "https://www.worldhistory.org/Persephone/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Perséphone",
+        "url": "https://mythologica.fr/grec/persephone.htm"
+      }
+    ]
+  },
+  {
+    "id": "hecate",
+    "name": {
+      "en": "Hecate",
+      "fr": "Hécate"
+    },
+    "kind": "deity",
+    "wikidata": "Q131575",
+    "description": {
+      "en": "Goddess of crossroads, torches, magic and ghosts.",
+      "fr": "Déesse des carrefours, des torches, de la magie et des spectres."
+    },
+    "greek": "Ἑκάτη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hecate",
+        "url": "https://en.wikipedia.org/wiki/Hecate"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hécate",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9cate"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hecate (Hekate)",
+        "url": "https://www.theoi.com/Khthonios/Hekate.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hécate",
+        "url": "https://mythologica.fr/grec/hecate.htm"
+      }
+    ]
+  },
+  {
+    "id": "nemesis",
+    "name": {
+      "en": "Nemesis",
+      "fr": "Némésis"
+    },
+    "kind": "deity",
+    "wikidata": "Q185747",
+    "description": {
+      "en": "Goddess of retribution, who punishes arrogance and excess.",
+      "fr": "Déesse de la juste rétribution, qui punit l’orgueil et la démesure."
+    },
+    "greek": "Νέμεσις",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nemesis",
+        "url": "https://en.wikipedia.org/wiki/Nemesis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Némésis",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9m%C3%A9sis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nemesis",
+        "url": "https://www.theoi.com/Daimon/Nemesis.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Némésis",
+        "url": "https://mythologica.fr/grec/nemesis.htm"
+      }
+    ]
+  },
+  {
+    "id": "eris",
+    "name": {
+      "en": "Eris",
+      "fr": "Éris"
+    },
+    "kind": "deity",
+    "wikidata": "Q140001",
+    "description": {
+      "en": "Goddess of strife, who threw the golden apple among the goddesses.",
+      "fr": "Déesse de la discorde, qui lança la pomme d’or parmi les déesses."
+    },
+    "greek": "Ἔρις",
+    "roman": {
+      "en": "Discordia",
+      "fr": "Discorde"
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eris (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Eris_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éris",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ris"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eris",
+        "url": "https://www.theoi.com/Daimon/Eris.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Éris",
+        "url": "https://mythologica.fr/grec/eris.htm"
+      }
+    ]
+  },
+  {
+    "id": "peneus",
+    "name": {
+      "en": "Peneus",
+      "fr": "Pénée"
+    },
+    "kind": "deity",
+    "wikidata": "Q1364612",
+    "description": {
+      "en": "River god of Thessaly, father of the nymph Daphne.",
+      "fr": "Dieu-fleuve de Thessalie, père de la nymphe Daphné."
+    },
+    "greek": "Πηνειός",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Peneus",
+        "url": "https://en.wikipedia.org/wiki/Peneus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pénée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Peneus (Peneios)",
+        "url": "https://www.theoi.com/Potamos/PotamosPeneios.html"
+      }
+    ]
+  },
+  {
+    "id": "calliope",
+    "name": {
+      "en": "Calliope",
+      "fr": "Calliope"
+    },
+    "kind": "deity",
+    "wikidata": "Q103975",
+    "description": {
+      "en": "Muse of epic poetry, mother of Orpheus.",
+      "fr": "Muse de la poésie épique, mère d’Orphée."
+    },
+    "greek": "Καλλιόπη",
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calliope",
+        "url": "https://en.wikipedia.org/wiki/Calliope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calliope",
+        "url": "https://fr.wikipedia.org/wiki/Calliope"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Calliope (Kalliope)",
+        "url": "https://www.theoi.com/Ouranios/MousaKalliope.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Les Muses",
+        "url": "https://mythologica.fr/grec/muses2.htm"
+      }
+    ]
+  },
+  {
+    "id": "silenus",
+    "name": {
+      "en": "Silenus",
+      "fr": "Silène"
+    },
+    "kind": "deity",
+    "wikidata": "Q464091",
+    "description": {
+      "en": "Old satyr, tutor and drunken companion of Dionysus.",
+      "fr": "Vieux satyre, précepteur et compagnon ivre de Dionysos."
+    },
+    "greek": "Σιληνός",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Silenus",
+        "url": "https://en.wikipedia.org/wiki/Silenus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Silène (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Sil%C3%A8ne_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Silenus (Seilenos)",
+        "url": "https://www.theoi.com/Georgikos/Seilenos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Silène",
+        "url": "https://mythologica.fr/grec/silene.htm"
+      }
+    ]
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "anytos",
+    "name": {
+      "en": "Anytos",
+      "fr": "Anytos"
+    },
+    "kind": "titan",
+    "wikidata": "Q614030",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Divinité grecque."
+    },
+    "greek": "Άνυτος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anytos",
+        "url": "https://en.wikipedia.org/wiki/Anytos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anytos (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Anytos_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anytus (Anytos)",
+        "url": "https://www.theoi.com/Georgikos/KoureteAnytos.html"
+      }
+    ]
+  },
+  {
+    "id": "asteria",
+    "name": {
+      "en": "Asteria",
+      "fr": "Astérie"
+    },
+    "kind": "titan",
+    "wikidata": "Q18642285",
+    "description": {
+      "en": "Daughter of the Titans Coeus and Phoebe and sister of Leto.",
+      "fr": "Divinité primordiale de la mythologie grecque."
+    },
+    "greek": "Ἀστερία",
+    "parents": [
+      "phoebe-q183281",
+      "coeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Asteria",
+        "url": "https://en.wikipedia.org/wiki/Asteria"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astéria",
+        "url": "https://fr.wikipedia.org/wiki/Ast%C3%A9ria"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Asteria",
+        "url": "https://www.theoi.com/Titan/TitanisAsteria.html"
+      }
+    ]
+  },
+  {
+    "id": "astraeus",
+    "name": {
+      "en": "Astraeus",
+      "fr": "Astréos"
+    },
+    "kind": "titan",
+    "wikidata": "Q250588",
+    "description": {
+      "en": "Greek astrological god associated with winds.",
+      "fr": "Titan de la mythologie grecque."
+    },
+    "greek": "Ἀστραῖος , Astraios",
+    "parents": [
+      "eurybia-q506285",
+      "kreios"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Astraeus",
+        "url": "https://en.wikipedia.org/wiki/Astraeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astréos",
+        "url": "https://fr.wikipedia.org/wiki/Astr%C3%A9os"
+      }
+    ]
+  },
+  {
+    "id": "coeus",
+    "name": {
+      "en": "Coeus",
+      "fr": "Coéos"
+    },
+    "kind": "titan",
+    "wikidata": "Q182837",
+    "description": {
+      "en": "Titan in Greek mythology, one of the twelve titans.",
+      "fr": "Titan dans la mythologie grecque."
+    },
+    "greek": "Κοῖος , Koios",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Coeus",
+        "url": "https://en.wikipedia.org/wiki/Coeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Céos (Titan)",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9os_(Titan)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Coeus (Koios)",
+        "url": "https://www.theoi.com/Titan/TitanKoios.html"
+      }
+    ]
+  },
+  {
+    "id": "dione-q199923",
+    "name": {
+      "en": "Dione",
+      "fr": "Dioné"
+    },
+    "kind": "titan",
+    "wikidata": "Q199923",
+    "description": {
+      "en": "Greek goddess, mother of Aphrodite.",
+      "fr": "Divinité grecque archaïque, mère d'Aphrodite."
+    },
+    "greek": "Διώνη",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dione (Titaness)",
+        "url": "https://en.wikipedia.org/wiki/Dione_(Titaness)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dioné (mère d'Aphrodite)",
+        "url": "https://fr.wikipedia.org/wiki/Dion%C3%A9_(m%C3%A8re_d'Aphrodite)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Dione",
+        "url": "https://www.theoi.com/Titan/TitanisDione.html"
+      }
+    ]
+  },
+  {
+    "id": "kreios",
+    "name": {
+      "en": "Kreios",
+      "fr": "Crios"
+    },
+    "kind": "titan",
+    "wikidata": "Q192136",
+    "description": {
+      "en": "Titan in Greek mythology, name that means ram.",
+      "fr": "Titan de la mythologie grecque."
+    },
+    "greek": "Κρίος",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Crius",
+        "url": "https://en.wikipedia.org/wiki/Crius"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Crios",
+        "url": "https://fr.wikipedia.org/wiki/Crios"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Crius (Krios)",
+        "url": "https://www.theoi.com/Titan/TitanKrios.html"
+      }
+    ]
+  },
+  {
+    "id": "lelantos",
+    "name": {
+      "en": "Lelantos",
+      "fr": "Lélantos"
+    },
+    "kind": "titan",
+    "wikidata": "Q3270327",
+    "description": {
+      "en": "Minor character in the Dionysiaca, father of Aura.",
+      "fr": "Fils de Phébé et de Coéos dans la mythologie grecque."
+    },
+    "parents": [
+      "phoebe-q183281",
+      "coeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lelantos",
+        "url": "https://en.wikipedia.org/wiki/Lelantos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lélantos",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9lantos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lelantus (Lelantos)",
+        "url": "https://www.theoi.com/Titan/TitanLelantos.html"
+      }
+    ]
+  },
+  {
+    "id": "leto",
+    "name": {
+      "en": "Leto",
+      "fr": "Léto"
+    },
+    "kind": "titan",
+    "wikidata": "Q103107",
+    "description": {
+      "en": "Greek mythological figure and mother of Apollo and Artemis.",
+      "fr": "Personnage de la mythologie grecque, maîtresse de Zeus et mère d'Artémis et Apollon."
+    },
+    "greek": "Λητώ",
+    "parents": [
+      "phoebe-q183281",
+      "coeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Leto",
+        "url": "https://en.wikipedia.org/wiki/Leto"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Léto",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9to"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Leto",
+        "url": "https://www.theoi.com/Titan/TitanisLeto.html"
+      }
+    ]
+  },
+  {
+    "id": "menoetius-q8140979",
+    "name": {
+      "en": "Menoetius",
+      "fr": "Ménétios"
+    },
+    "kind": "titan",
+    "wikidata": "Q8140979",
+    "description": {
+      "en": "Titan in Greek mythology.",
+      "fr": "Fils de Thémis, de Clyméné et de Japet dans la mythologie grecque."
+    },
+    "greek": "Μενοίτιος",
+    "parents": [
+      "themis",
+      "klymene",
+      "iapetus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Menoetius (Greek mythology)",
+        "url": "https://en.wikipedia.org/wiki/Menoetius_(Greek_mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ménétios (Titan)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9n%C3%A9tios_(Titan)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Menoetius (Menoitios)",
+        "url": "https://www.theoi.com/Titan/TitanMenoitios.html"
+      }
+    ]
+  },
+  {
+    "id": "mnemosyne",
+    "name": {
+      "en": "Mnemosyne",
+      "fr": "Mnémosyne"
+    },
+    "kind": "titan",
+    "wikidata": "Q102884",
+    "description": {
+      "en": "Personification of memory in Greek mythology, mother of the nine muses.",
+      "fr": "Titanide de la mémoire dans la mythologie grecque."
+    },
+    "greek": "Μνημοσύνη",
+    "parents": [
+      "gaia",
+      "clymene-q2344103",
+      "zeus",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Mnemosyne",
+        "url": "https://en.wikipedia.org/wiki/Mnemosyne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mnémosyne",
+        "url": "https://fr.wikipedia.org/wiki/Mn%C3%A9mosyne"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Mnemosyne",
+        "url": "https://www.theoi.com/Titan/TitanisMnemosyne.html"
+      }
+    ]
+  },
+  {
+    "id": "pallas-q457294",
+    "name": {
+      "en": "Pallas",
+      "fr": "Pallas"
+    },
+    "kind": "titan",
+    "wikidata": "Q457294",
+    "description": {
+      "en": "Titan in Greek mythology.",
+      "fr": "Titan de la mythologie grecque."
+    },
+    "greek": "Πάλλαντας",
+    "parents": [
+      "eurybia-q506285",
+      "kreios"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pallas (Titan)",
+        "url": "https://en.wikipedia.org/wiki/Pallas_(Titan)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pallas (Titan)",
+        "url": "https://fr.wikipedia.org/wiki/Pallas_(Titan)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pallas",
+        "url": "https://www.theoi.com/Titan/TitanPallas.html"
+      }
+    ]
+  },
+  {
+    "id": "perses-q660924",
+    "name": {
+      "en": "Perses",
+      "fr": "Persès"
+    },
+    "kind": "titan",
+    "wikidata": "Q660924",
+    "description": {
+      "en": "Ancient Greek mythological Titan.",
+      "fr": "Fils d’Eurybie et de Crios dans la mythologie grecque."
+    },
+    "greek": "Πέρσης , Persēs",
+    "parents": [
+      "eurybia-q506285",
+      "kreios"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Perses (son of Crius)",
+        "url": "https://en.wikipedia.org/wiki/Perses_(son_of_Crius)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Persès (Titan)",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A8s_(Titan)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Perses",
+        "url": "https://www.theoi.com/Titan/TitanPerses.html"
+      }
+    ]
+  },
+  {
+    "id": "phoebe-q183281",
+    "name": {
+      "en": "Phoebe",
+      "fr": "Phébé"
+    },
+    "kind": "titan",
+    "wikidata": "Q183281",
+    "description": {
+      "en": "Titaness in Greek mythology.",
+      "fr": "Divinité primordiale de la mythologie grecque."
+    },
+    "greek": "Φοίβη",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phoebe (Titaness)",
+        "url": "https://en.wikipedia.org/wiki/Phoebe_(Titaness)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Phébé (Titanide)",
+        "url": "https://fr.wikipedia.org/wiki/Ph%C3%A9b%C3%A9_(Titanide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Phoebe (Phoibe)",
+        "url": "https://www.theoi.com/Titan/TitanisPhoibe.html"
+      }
+    ]
+  },
+  {
+    "id": "stilbon",
+    "name": {
+      "en": "Stilbon",
+      "fr": "Stilbon"
+    },
+    "kind": "titan",
+    "wikidata": "Q7616947",
+    "description": {
+      "en": "Sky god.",
+      "fr": "Fils d’Éos et d’Astréos dans la mythologie grecque."
+    },
+    "greek": "Στίλβων",
+    "parents": [
+      "eos",
+      "astraeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Stilbon (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Stilbon_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Stilbon",
+        "url": "https://fr.wikipedia.org/wiki/Stilbon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Stilbon",
+        "url": "https://www.theoi.com/Titan/AsterStilbon.html"
+      }
+    ]
+  },
+  {
+    "id": "tethys",
+    "name": {
+      "en": "Tethys",
+      "fr": "Téthys"
+    },
+    "kind": "titan",
+    "wikidata": "Q184216",
+    "description": {
+      "en": "Ancient Greek mythological figure; mother of the river gods and the Oceanids.",
+      "fr": "Fille de Gaïa et d’Ouranos dans la mythologie grecque."
+    },
+    "greek": "Τηθύς , Tēthȳs",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tethys (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Tethys_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Téthys (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/T%C3%A9thys_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tethys",
+        "url": "https://www.theoi.com/Titan/TitanisTethys.html"
+      }
+    ]
+  },
+  {
+    "id": "theia-q184232",
+    "name": {
+      "en": "Theia",
+      "fr": "Théia"
+    },
+    "kind": "titan",
+    "wikidata": "Q184232",
+    "description": {
+      "en": "Female Titan in Greek mythology; mother of Helios, Selene and Eos.",
+      "fr": "Titanide dans la mythologie grecque."
+    },
+    "greek": "Θεία",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Theia",
+        "url": "https://en.wikipedia.org/wiki/Theia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Théia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9ia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Theia",
+        "url": "https://www.theoi.com/Titan/TitanisTheia.html"
+      }
+    ]
+  }
+]

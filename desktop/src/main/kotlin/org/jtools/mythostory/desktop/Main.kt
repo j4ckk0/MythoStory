@@ -4,38 +4,34 @@ import kotlinx.coroutines.runBlocking
 import org.jtools.mythostory.backend.Platform
 import org.jtools.mythostory.backend.startServer
 import java.awt.Desktop
-import java.io.File
 import java.net.URI
 import kotlin.system.exitProcess
 
-private const val USAGE = """Usage: mythostory [--port N] [--host H] [--data DIR] [--no-browser]
+private const val USAGE = """Usage: mythostory [--port N] [--host H] [--no-browser]
   --port N       the port to serve on (default 8080; 0 for any free one)
   --host H       the interface to listen on (default 127.0.0.1: this computer only)
-  --data DIR     where the stories are kept (default ~/.mythostory)
   --no-browser   do not open the browser on the page"""
 
 /** The desktop program: the server on localhost, the browser as its window. */
 fun main(args: Array<String>) {
     var port = 8080
     var host = "127.0.0.1"
-    var dataDir = File(System.getProperty("user.home"), ".mythostory")
     var browser = true
     val rest = args.iterator()
     while (rest.hasNext()) {
         when (val arg = rest.next()) {
             "--port" -> port = rest.valueOf(arg).toIntOrNull() ?: usage("--port takes a number")
             "--host" -> host = rest.valueOf(arg)
-            "--data" -> dataDir = File(rest.valueOf(arg))
             "--no-browser" -> browser = false
             "--help", "-h" -> { println(USAGE); return }
             else -> usage("unknown argument: $arg")
         }
     }
 
-    val server = startServer(host, port, dataDir, Platform.DESKTOP)
+    val server = startServer(host, port, Platform.DESKTOP)
     val actualPort = runBlocking { server.engine.resolvedConnectors().first().port }
     val url = "http://${if (host == "0.0.0.0") "localhost" else host}:$actualPort/"
-    println("MythoStory is ready on $url (stories in $dataDir); Ctrl+C to stop")
+    println("MythoStory is ready on $url; Ctrl+C to stop")
     if (browser && Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
         Desktop.getDesktop().browse(URI(url))
     }

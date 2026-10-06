@@ -17,6 +17,7 @@
          frontend   the Angular page, packaged as a jar of static/ resources (built by npm, which Maven runs)
          backend    the HTTP server: Ktor, the API over core and the page (Android runs it too)
          desktop    the desktop program: the server's main, the executable jar and the distributions with a JRE
+         importer   the characters imported from Wikidata into core's data files: a tool, never shipped
          android    the Android app (profile "android", on as soon as the Android SDK is there, see below): the
                     same backend and frontend in an APK, built by Gradle, which Maven runs, from the jars Maven resolved
        core and backend are compiled for Java 17 (the bytecode Android takes), with JDK 25 like the rest.
@@ -26,6 +27,7 @@
     <module>frontend</module>
     <module>backend</module>
     <module>desktop</module>
+    <module>importer</module>
   </modules>
 
   <properties>

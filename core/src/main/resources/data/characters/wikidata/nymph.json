@@ -1,0 +1,7467 @@
+[
+  {
+    "id": "aba",
+    "name": {
+      "en": "Aba",
+      "fr": "Aba"
+    },
+    "kind": "nymph",
+    "wikidata": "Q304227",
+    "description": {
+      "en": "Najad in Greek mythology.",
+      "fr": "Nymphe grecque."
+    },
+    "greek": "Άβα (μυθολογία)",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aba (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Aba_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aba (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Aba_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aba",
+        "url": "https://www.theoi.com/Nymphe/NympheAba.html"
+      }
+    ]
+  },
+  {
+    "id": "abarbarea-q279782",
+    "name": {
+      "en": "Abarbarea",
+      "fr": "Abarbarée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q279782",
+    "description": {
+      "en": "Naiad.",
+      "fr": "Naïade de la mythologie grecque, mère d'Ésèpe et de Pédase."
+    },
+    "greek": "Αβαρβαρέα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Abarbarea (lover of Bucolion)",
+        "url": "https://en.wikipedia.org/wiki/Abarbarea_(lover_of_Bucolion)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Abarbarée (Troade)",
+        "url": "https://fr.wikipedia.org/wiki/Abarbar%C3%A9e_(Troade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Abarbarea (Abarbaree)",
+        "url": "https://www.theoi.com/Nymphe/NympheAbarbaree.html"
+      }
+    ]
+  },
+  {
+    "id": "abarbarea-q305548",
+    "name": {
+      "en": "Abarbarea",
+      "fr": "Abarbarée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q305548",
+    "description": {
+      "en": "Naiad nymph and one of the three ancestors of the Tyrians, along with Callirrhoe and Drosera.",
+      "fr": "Naïade, mère de Callirhoé."
+    },
+    "greek": "Ἀβαρβαρέη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Abarbarea (ancestor of the Tyrians)",
+        "url": "https://en.wikipedia.org/wiki/Abarbarea_(ancestor_of_the_Tyrians)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Abarbarée (Tyr)",
+        "url": "https://fr.wikipedia.org/wiki/Abarbar%C3%A9e_(Tyr)"
+      }
+    ]
+  },
+  {
+    "id": "acantha",
+    "name": {
+      "en": "Acantha",
+      "fr": "Acanthe"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2370052",
+    "description": {
+      "en": "Fakleloric figure supposedly from Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Acantha",
+        "url": "https://en.wikipedia.org/wiki/Acantha"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Acanthe (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Acanthe_(nymphe)"
+      }
+    ]
+  },
+  {
+    "id": "acaste-q4668463",
+    "name": {
+      "en": "Acaste",
+      "fr": "Acaste"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4668463",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Acaste (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Acaste_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Acaste (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Acaste_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "adamanthea",
+    "name": {
+      "en": "Adamanthea",
+      "fr": "Adamanthéa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2718640",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque, nourrice de Zeus."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Adamanthea",
+        "url": "https://en.wikipedia.org/wiki/Adamanthea"
+      }
+    ]
+  },
+  {
+    "id": "admete-q4679171",
+    "name": {
+      "en": "Admete",
+      "fr": "Admète"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4679171",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Αδμήτη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Admete (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Admete_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Admète (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Adm%C3%A8te_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "adrasteia-q4057954",
+    "name": {
+      "en": "Adrasteia",
+      "fr": "Adrastée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4057954",
+    "description": {
+      "en": "Daughter of Oceanus, Melissus of Crete and Amalthea in Greek mythology.",
+      "fr": "Fille d’Océan, de Mélissé et d’Amalthée dans la mythologie grecque."
+    },
+    "greek": "Αδράστεια",
+    "parents": [
+      "oceanus",
+      "melissus-of-crete",
+      "amalthea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Adrastée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Adrast%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ida & Adrasteia",
+        "url": "https://www.theoi.com/Nymphe/NymphaiIdaiai.html"
+      }
+    ]
+  },
+  {
+    "id": "aea",
+    "name": {
+      "en": "Aea",
+      "fr": "Éa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10403775",
+    "description": {
+      "en": "Nymph (Naiad) in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Aea_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aea (Aia)",
+        "url": "https://www.theoi.com/Nymphe/NympheAia.html"
+      }
+    ]
+  },
+  {
+    "id": "aegiale-q404396",
+    "name": {
+      "en": "Aegiale",
+      "fr": "Églé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q404396",
+    "description": {
+      "en": "In Greek mythology, daughter of Helios and Clymene.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Hélios et de Clymène."
+    },
+    "greek": "Αιγιάλη",
+    "parents": [
+      "helios",
+      "klymene"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aegiale (mother of Alcyone)",
+        "url": "https://en.wikipedia.org/wiki/Aegiale_(mother_of_Alcyone)"
+      }
+    ]
+  },
+  {
+    "id": "aegina",
+    "name": {
+      "en": "Aegina",
+      "fr": "Égine"
+    },
+    "kind": "nymph",
+    "wikidata": "Q321298",
+    "description": {
+      "en": "Nymph, eponym of the island Aegina.",
+      "fr": "Fille d’Asopos et de Métope dans la mythologie grecque."
+    },
+    "greek": "Αἴγινα",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aegina (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Aegina_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Égine (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89gine_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aegina (Aigina)",
+        "url": "https://www.theoi.com/Nymphe/NympheAigina.html"
+      }
+    ]
+  },
+  {
+    "id": "aethra-q410531",
+    "name": {
+      "en": "Aethra",
+      "fr": "Éthra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q410531",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide."
+    },
+    "greek": "Αίθρα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éthra (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89thra_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "aetna",
+    "name": {
+      "en": "Aetna",
+      "fr": "Etna"
+    },
+    "kind": "nymph",
+    "wikidata": "Q634575",
+    "description": {
+      "en": "Sicilian nymph, connected to Mount Etna.",
+      "fr": "Nymphe grecque."
+    },
+    "greek": "Αίτνα",
+    "parents": [
+      "uranus",
+      "briareus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aetna (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Aetna_(nymph)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aetna (Aitna)",
+        "url": "https://www.theoi.com/Georgikos/OrosAitna.html"
+      }
+    ]
+  },
+  {
+    "id": "aganippe",
+    "name": {
+      "en": "Aganippe",
+      "fr": "Aganippé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q390448",
+    "description": {
+      "en": "Nymph of a spring near Mt. Helicon.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Αγανίππη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aganippe (naiad)",
+        "url": "https://en.wikipedia.org/wiki/Aganippe_(naiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aganippe (Béotie)",
+        "url": "https://fr.wikipedia.org/wiki/Aganippe_(B%C3%A9otie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aganippe",
+        "url": "https://www.theoi.com/Nymphe/NympheAganippe.html"
+      }
+    ]
+  },
+  {
+    "id": "alcyone-q763268",
+    "name": {
+      "en": "Alcyone",
+      "fr": "Alcyoné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q763268",
+    "description": {
+      "en": "Greek mythological figure; one of the Pleiades, daughters of Atlas.",
+      "fr": "Personnage de la mythologie grecque, fille d'Atlas et de Pléione."
+    },
+    "greek": "Αλκυόνη",
+    "parents": [
+      "atlas",
+      "pleione"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Alcyone (Pleiad)",
+        "url": "https://en.wikipedia.org/wiki/Alcyone_(Pleiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alcyone (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/Alcyone_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Alcyone (Alkyone)",
+        "url": "https://www.theoi.com/Nymphe/NympheAlkyone.html"
+      }
+    ]
+  },
+  {
+    "id": "alexirrhoe",
+    "name": {
+      "en": "Alexirrhoe",
+      "fr": "Alexirrhoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3510841",
+    "description": {
+      "en": "Greek mythical character, mother of Aesacus.",
+      "fr": "Personnage de la mythologie grecque, fille de Granicos."
+    },
+    "greek": "Αλεξιρρόη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alexirhoé",
+        "url": "https://fr.wikipedia.org/wiki/Alexirho%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Alexiroe (Alexirhoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheAlexirhoe.html"
+      }
+    ]
+  },
+  {
+    "id": "amalthea",
+    "name": {
+      "en": "Amalthea",
+      "fr": "Amalthée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q107785",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Ἀμάλθεια , Amaltheia",
+    "parents": [
+      "helios",
+      "oceanus",
+      "melissus-of-crete",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Amalthea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Amalthea_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Amalthée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Amalth%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Amalthea (Amaltheia)",
+        "url": "https://www.theoi.com/Ther/AixAmaltheia.html"
+      }
+    ]
+  },
+  {
+    "id": "amphiro",
+    "name": {
+      "en": "Amphiro",
+      "fr": "Amphiro"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2197827",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Amphirho",
+        "url": "https://en.wikipedia.org/wiki/Amphirho"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Amphiro",
+        "url": "https://fr.wikipedia.org/wiki/Amphiro"
+      }
+    ]
+  },
+  {
+    "id": "amphitrite",
+    "name": {
+      "en": "Amphitrite",
+      "fr": "Amphitrite"
+    },
+    "kind": "nymph",
+    "wikidata": "Q180222",
+    "description": {
+      "en": "Oceanid or Nereid of Greek mythology.",
+      "fr": "Océanide ou Néréide de la mythologie grecque."
+    },
+    "greek": "Ἀμφιτρίτη",
+    "parents": [
+      "nereus",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Amphitrite",
+        "url": "https://en.wikipedia.org/wiki/Amphitrite"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Amphitrite",
+        "url": "https://fr.wikipedia.org/wiki/Amphitrite"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Amphitrite",
+        "url": "https://www.theoi.com/Pontios/Amphitrite.html"
+      }
+    ]
+  },
+  {
+    "id": "anchiale",
+    "name": {
+      "en": "Anchiale",
+      "fr": "Anchiale"
+    },
+    "kind": "nymph",
+    "wikidata": "Q489104",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anchiale",
+        "url": "https://fr.wikipedia.org/wiki/Anchiale"
+      }
+    ]
+  },
+  {
+    "id": "anchiroe-q29654988",
+    "name": {
+      "en": "Anchiroe",
+      "fr": "Anchiroé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q29654988",
+    "description": {
+      "en": "Wife of Sithon in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, épouse de Sithon."
+    },
+    "greek": "Αγχιρόη της Θράκης",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anchiroe of Thrace",
+        "url": "https://en.wikipedia.org/wiki/Anchiroe_of_Thrace"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anchiroe (Ankhiroe)",
+        "url": "https://www.theoi.com/Nymphe/NympheAnkhiroe1.html"
+      }
+    ]
+  },
+  {
+    "id": "anchiroe-q3615214",
+    "name": {
+      "en": "Anchiroe",
+      "fr": "Anchinoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3615214",
+    "description": {
+      "en": "Naiad in Greek mythology.",
+      "fr": "Fille de Nil dans la mythologie grecque."
+    },
+    "greek": "Ἀγχινόη",
+    "parents": [
+      "nilus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Achiroe",
+        "url": "https://en.wikipedia.org/wiki/Achiroe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anchinoé",
+        "url": "https://fr.wikipedia.org/wiki/Anchino%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anchinoe (Ankhinoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheAnkhinoe.html"
+      }
+    ]
+  },
+  {
+    "id": "anippe",
+    "name": {
+      "en": "Anippe",
+      "fr": "Anippé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10411954",
+    "description": {
+      "en": "Naiad of Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque, fille de Nil."
+    },
+    "greek": "Ανίππη",
+    "parents": [
+      "nilus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anippe",
+        "url": "https://en.wikipedia.org/wiki/Anippe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anippé",
+        "url": "https://fr.wikipedia.org/wiki/Anipp%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anippe",
+        "url": "https://www.theoi.com/Nymphe/NympheAnippe.html"
+      }
+    ]
+  },
+  {
+    "id": "anthracia",
+    "name": {
+      "en": "Anthracia",
+      "fr": "Anthracie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q29686726",
+    "description": {
+      "en": "Arcadian nymph in Greek mythology.",
+      "fr": "Nymphe arcadienne."
+    },
+    "greek": "Ἀνθρακία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anthracia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Anthracia_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anthracia (Anthrakia)",
+        "url": "https://www.theoi.com/Nymphe/NympheAnthrakia.html"
+      }
+    ]
+  },
+  {
+    "id": "antianeira-q574828",
+    "name": {
+      "en": "Antianeira",
+      "fr": "Antianire"
+    },
+    "kind": "nymph",
+    "wikidata": "Q574828",
+    "description": {
+      "en": "Mythical character, nymph, daughter of Pheres.",
+      "fr": "Personnage de la mythologie grecque, fille de Phérès."
+    },
+    "greek": "Αντιάνειρα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Antianeira of Argos",
+        "url": "https://en.wikipedia.org/wiki/Antianeira_of_Argos"
+      }
+    ]
+  },
+  {
+    "id": "arethusa-q643456",
+    "name": {
+      "en": "Arethusa",
+      "fr": "Aréthuse"
+    },
+    "kind": "nymph",
+    "wikidata": "Q643456",
+    "description": {
+      "en": "Nymph in Greek mythology who fled from the river god Alpheus.",
+      "fr": "Néréide de la mythologie grecque."
+    },
+    "greek": "Ἀρέθουσα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Arethusa (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Arethusa_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aréthuse (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Ar%C3%A9thuse_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Arethusa (Arethousa)",
+        "url": "https://www.theoi.com/Nymphe/NympheArethousa.html"
+      }
+    ]
+  },
+  {
+    "id": "argeia",
+    "name": {
+      "en": "Argeia",
+      "fr": "Argie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q644354",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Αργεία",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argie (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Argie_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "argyra",
+    "name": {
+      "en": "Argyra",
+      "fr": "Argyra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3560453",
+    "description": {
+      "en": "Greek nymph, one of the Naiads.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Αργυρά",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argyra (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Argyra_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Argyra",
+        "url": "https://www.theoi.com/Nymphe/NympheArgyra.html"
+      }
+    ]
+  },
+  {
+    "id": "asia-q605744",
+    "name": {
+      "en": "Asia",
+      "fr": "Asia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q605744",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Ἀσία",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Asia (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Asia_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Asia (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Asia_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Asia (Asie)",
+        "url": "https://www.theoi.com/Nymphe/NympheAsie.html"
+      }
+    ]
+  },
+  {
+    "id": "asopis",
+    "name": {
+      "en": "Asopis",
+      "fr": "Asopis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q30058278",
+    "description": {
+      "en": "Naiad in greek mythology, daughter of river god Asopos.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Asope."
+    },
+    "greek": "Ασωπίδα",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Asopis",
+        "url": "https://fr.wikipedia.org/wiki/Asopis"
+      }
+    ]
+  },
+  {
+    "id": "asterodeia-q748574",
+    "name": {
+      "en": "Asterodeia",
+      "fr": "Astérodie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q748574",
+    "description": {
+      "en": "Nymph, mother of Apsyrtus with Aeetes.",
+      "fr": "Nymphe de la mythologie grecque, épouse d'Éétès."
+    },
+    "greek": "Αστερόδεια",
+    "parents": [
+      "oceanus",
+      "phasis",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astérodia (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Ast%C3%A9rodia_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Asterodeia",
+        "url": "https://www.theoi.com/Nymphe/NympheAsterodeia.html"
+      }
+    ]
+  },
+  {
+    "id": "astris",
+    "name": {
+      "en": "Astris",
+      "fr": "Astris"
+    },
+    "kind": "nymph",
+    "wikidata": "Q8193547",
+    "description": {
+      "en": "In Greek mythology, one of the Heliades.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Hélios."
+    },
+    "parents": [
+      "helios",
+      "klymene",
+      "ceto-q5065673"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Astris",
+        "url": "https://en.wikipedia.org/wiki/Astris"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Astris",
+        "url": "https://www.theoi.com/Nymphe/NympheAstris.html"
+      }
+    ]
+  },
+  {
+    "id": "astyoche-q752353",
+    "name": {
+      "en": "Astyoche",
+      "fr": "Astyoché"
+    },
+    "kind": "nymph",
+    "wikidata": "Q752353",
+    "description": {
+      "en": "Daughter of Simoeis in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, fille de Simoïs."
+    },
+    "greek": "Αστυόχη",
+    "parents": [
+      "simoeis"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astyoché fille de Simoïs",
+        "url": "https://fr.wikipedia.org/wiki/Astyoch%C3%A9_fille_de_Simo%C3%AFs"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Astyoche (Astyokhe)",
+        "url": "https://www.theoi.com/Nymphe/NympheAstyokhe.html"
+      }
+    ]
+  },
+  {
+    "id": "atlantia",
+    "name": {
+      "en": "Atlantia",
+      "fr": "Atlantie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3626277",
+    "description": {
+      "en": "Hamadryad, wife of Danaus.",
+      "fr": "Hamadryade."
+    },
+    "greek": "Ατλάντεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Atlanteia",
+        "url": "https://en.wikipedia.org/wiki/Atlanteia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Atlanteia & Phoebe (Phoibe)",
+        "url": "https://www.theoi.com/Nymphe/NympheAtlanteiaPhoibe.html"
+      }
+    ]
+  },
+  {
+    "id": "aura",
+    "name": {
+      "en": "Aura",
+      "fr": "Aura"
+    },
+    "kind": "nymph",
+    "wikidata": "Q774101",
+    "description": {
+      "en": "Divine personification of the breeze in Greek and Roman mythology.",
+      "fr": "Fille de Lélantos et de Péribée dans la mythologie grecque."
+    },
+    "greek": "Άβρα (θεά)",
+    "parents": [
+      "lelantos",
+      "periboea-q3411899"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aura (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Aura_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aura (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Aura_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aura",
+        "url": "https://www.theoi.com/Titan/Aura.html"
+      }
+    ]
+  },
+  {
+    "id": "axioche",
+    "name": {
+      "en": "Axioche",
+      "fr": "Axioché"
+    },
+    "kind": "nymph",
+    "wikidata": "Q931321",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Αξιόχη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Axioche",
+        "url": "https://en.wikipedia.org/wiki/Axioche"
+      }
+    ]
+  },
+  {
+    "id": "beroe-q2930007",
+    "name": {
+      "en": "Beroe",
+      "fr": "Béroé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2930007",
+    "description": {
+      "en": "Daughter of Adonis and Aphrodite in Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Aphrodite."
+    },
+    "greek": "Βερόη",
+    "parents": [
+      "adonis",
+      "aphrodite"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Beroe (Beirut nymph)",
+        "url": "https://en.wikipedia.org/wiki/Beroe_(Beirut_nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Béroé fille d'Aphrodite",
+        "url": "https://fr.wikipedia.org/wiki/B%C3%A9ro%C3%A9_fille_d'Aphrodite"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Beroe",
+        "url": "https://www.theoi.com/Nymphe/NympheBeroe.html"
+      }
+    ]
+  },
+  {
+    "id": "beroe-q826973",
+    "name": {
+      "en": "Beroe",
+      "fr": "Béroé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q826973",
+    "description": {
+      "en": "Nereid or Oceanid of Greek mythology.",
+      "fr": "Néréide ou Océanide de la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "nereus",
+      "tethys",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Béroé (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/B%C3%A9ro%C3%A9_(N%C3%A9r%C3%A9ide)"
+      }
+    ]
+  },
+  {
+    "id": "bistonis",
+    "name": {
+      "en": "Bistonis",
+      "fr": "Bistonis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q11909453",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Βιστωνίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bistonis",
+        "url": "https://en.wikipedia.org/wiki/Bistonis"
+      }
+    ]
+  },
+  {
+    "id": "bolbe",
+    "name": {
+      "en": "Bolbe",
+      "fr": "Bolbé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4810860",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Βόλβη",
+    "parents": [
+      "tethys",
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bolbe",
+        "url": "https://en.wikipedia.org/wiki/Bolbe"
+      }
+    ]
+  },
+  {
+    "id": "bolina",
+    "name": {
+      "en": "Bolina",
+      "fr": "Bolina"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4939448",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Βολίνα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bolina",
+        "url": "https://en.wikipedia.org/wiki/Bolina"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Bolina",
+        "url": "https://fr.wikipedia.org/wiki/Bolina"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Bolina",
+        "url": "https://www.theoi.com/Nymphe/NympheBolina.html"
+      }
+    ]
+  },
+  {
+    "id": "brettia",
+    "name": {
+      "en": "Brettia",
+      "fr": "Brettia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q56152568",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Brettia",
+        "url": "https://en.wikipedia.org/wiki/Brettia"
+      }
+    ]
+  },
+  {
+    "id": "cabeiro",
+    "name": {
+      "en": "Cabeiro",
+      "fr": "Cabeiro"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3649172",
+    "description": {
+      "en": "Sea nymph in Greek mythology.",
+      "fr": "Fille de Protée dans la mythologie grecque."
+    },
+    "greek": "Καβειρώ",
+    "parents": [
+      "proteus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cabeiro",
+        "url": "https://en.wikipedia.org/wiki/Cabeiro"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cabeiro",
+        "url": "https://fr.wikipedia.org/wiki/Cabeiro"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cabeiro (Kabeiro)",
+        "url": "https://www.theoi.com/Nymphe/NympheKabeiro.html"
+      }
+    ]
+  },
+  {
+    "id": "caissa",
+    "name": {
+      "en": "Caïssa",
+      "fr": "Caïssa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q580309",
+    "description": {
+      "en": "Goddess of chess.",
+      "fr": "Déesse du jeu d'échecs."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Caïssa",
+        "url": "https://en.wikipedia.org/wiki/Ca%C3%AFssa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Caïssa",
+        "url": "https://fr.wikipedia.org/wiki/Ca%C3%AFssa"
+      }
+    ]
+  },
+  {
+    "id": "caliadne",
+    "name": {
+      "en": "Caliadne",
+      "fr": "Caliadne"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2559167",
+    "description": {
+      "en": "Naiad, wife of Aegyptus.",
+      "fr": "Naïade."
+    },
+    "greek": "Καλιάδνη",
+    "parents": [
+      "nilus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Caliadne",
+        "url": "https://en.wikipedia.org/wiki/Caliadne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Caliadne",
+        "url": "https://fr.wikipedia.org/wiki/Caliadne"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Caliadne (Kaliadne)",
+        "url": "https://www.theoi.com/Nymphe/NympheKaliadne.html"
+      }
+    ]
+  },
+  {
+    "id": "callichore",
+    "name": {
+      "en": "Callichore",
+      "fr": "Callichoré"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1246343",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Callichore",
+        "url": "https://en.wikipedia.org/wiki/Callichore"
+      }
+    ]
+  },
+  {
+    "id": "calliphaea",
+    "name": {
+      "en": "Calliphaea",
+      "fr": "Calliphäéa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q56451615",
+    "description": {
+      "en": "Greek mythological character, one of the Ionides nymphs whose spring waters were believed to cure diseases.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calliphaea",
+        "url": "https://en.wikipedia.org/wiki/Calliphaea"
+      }
+    ]
+  },
+  {
+    "id": "callirhoe-q1722503",
+    "name": {
+      "en": "Callirhoe",
+      "fr": "Callirrhoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1722503",
+    "description": {
+      "en": "Daughter of Achelous in Greek mythology.",
+      "fr": "Fille d'Achéloos."
+    },
+    "greek": "Καλλιρόη",
+    "parents": [
+      "achelous"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Callirhoe (daughter of Achelous)",
+        "url": "https://en.wikipedia.org/wiki/Callirhoe_(daughter_of_Achelous)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Callirrhoé fille d'Achéloos",
+        "url": "https://fr.wikipedia.org/wiki/Callirrho%C3%A9_fille_d'Ach%C3%A9loos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Callirhoe (Kallirhoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheKallirhoe2.html"
+      }
+    ]
+  },
+  {
+    "id": "callirhoe-q913161",
+    "name": {
+      "en": "Callirhoe",
+      "fr": "Callirrhoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q913161",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Καλλιρρόη (Ωκεανίδα)",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Callirhoe (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Callirhoe_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Callirrhoé (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Callirrho%C3%A9_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Callirhoe (Kallirhoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheKallirhoe1.html"
+      }
+    ]
+  },
+  {
+    "id": "callisto",
+    "name": {
+      "en": "Callisto",
+      "fr": "Callisto"
+    },
+    "kind": "nymph",
+    "wikidata": "Q203673",
+    "description": {
+      "en": "Daughter of Lycaon in Greek mythology.",
+      "fr": "Fille de Lycaon dans la mythologie grecque."
+    },
+    "greek": "Καλλιστώ",
+    "parents": [
+      "lycaon-q501667"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Callisto (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Callisto_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Callisto (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Callisto_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Callisto (Kallisto)",
+        "url": "https://www.theoi.com/Heroine/Kallisto.html"
+      }
+    ]
+  },
+  {
+    "id": "calybe",
+    "name": {
+      "en": "Calybe",
+      "fr": "Calybé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2934546",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Καλύβη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calybe",
+        "url": "https://en.wikipedia.org/wiki/Calybe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calybé",
+        "url": "https://fr.wikipedia.org/wiki/Calyb%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Calybe (Kalybe)",
+        "url": "https://www.theoi.com/Nymphe/NympheKalybe.html"
+      }
+    ]
+  },
+  {
+    "id": "calypso",
+    "name": {
+      "en": "Calypso",
+      "fr": "Calypso"
+    },
+    "kind": "nymph",
+    "wikidata": "Q48961",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Καλυψώ",
+    "parents": [
+      "atlas",
+      "nereus",
+      "tethys",
+      "pleione",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calypso (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calypso",
+        "url": "https://fr.wikipedia.org/wiki/Calypso"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Calypso (Kalypso)",
+        "url": "https://www.theoi.com/Nymphe/NympheKalypso.html"
+      }
+    ]
+  },
+  {
+    "id": "camarina",
+    "name": {
+      "en": "Camarina",
+      "fr": "Camarine"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12752525",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Camarina (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Camarina_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "capheira",
+    "name": {
+      "en": "Capheira",
+      "fr": "Caphira"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2937275",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+    },
+    "greek": "Καφείρα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Capheira",
+        "url": "https://en.wikipedia.org/wiki/Capheira"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Caphira",
+        "url": "https://fr.wikipedia.org/wiki/Caphira"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Capheira (Kapheira)",
+        "url": "https://www.theoi.com/Nymphe/NympheKapheira.html"
+      }
+    ]
+  },
+  {
+    "id": "carme",
+    "name": {
+      "en": "Carme",
+      "fr": "Carme"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1734053",
+    "description": {
+      "en": "Daughter of Phoenix, Eubuleus and Cassiopeia in Greek mythology.",
+      "fr": "Fille de Phénix, d’Eubouleus et de Cassiopée dans la mythologie grecque."
+    },
+    "greek": "Κάρμη",
+    "parents": [
+      "phoenix-q1145956",
+      "eubuleus",
+      "cassiopeia-q18481886"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Carme (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Carme_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Carmé (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Carm%C3%A9_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Carme (Karme)",
+        "url": "https://www.theoi.com/Georgikos/Karme.html"
+      }
+    ]
+  },
+  {
+    "id": "cassotis",
+    "name": {
+      "en": "Cassotis",
+      "fr": "Cassotis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1735272",
+    "description": {
+      "en": "Nymph of Mt. Parnassus associated with a water source at Delphi.",
+      "fr": "Naïade."
+    },
+    "greek": "Κασσοτίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cassotis",
+        "url": "https://en.wikipedia.org/wiki/Cassotis"
+      }
+    ]
+  },
+  {
+    "id": "castalia",
+    "name": {
+      "en": "Castalia",
+      "fr": "Castalie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q170053",
+    "description": {
+      "en": "Water deity.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Κασταλία",
+    "parents": [
+      "achelous"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Castalia",
+        "url": "https://en.wikipedia.org/wiki/Castalia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Castalie",
+        "url": "https://fr.wikipedia.org/wiki/Castalie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Castalia (Kastalia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKastalia.html"
+      }
+    ]
+  },
+  {
+    "id": "celaeno",
+    "name": {
+      "en": "Celaeno",
+      "fr": "Céléno"
+    },
+    "kind": "nymph",
+    "wikidata": "Q686174",
+    "description": {
+      "en": "One of the Pleiades in Greek mythology.",
+      "fr": "Fille d’Atlas, d’Ergéos et de Pléione dans la mythologie grecque."
+    },
+    "greek": "Κελαινώ",
+    "parents": [
+      "atlas",
+      "ergeus",
+      "pleione"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Celaeno (Pleiad)",
+        "url": "https://en.wikipedia.org/wiki/Celaeno_(Pleiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Céléno (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9l%C3%A9no_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Celaeno (Kelaino)",
+        "url": "https://www.theoi.com/Nymphe/NympheKelaino.html"
+      }
+    ]
+  },
+  {
+    "id": "celusa",
+    "name": {
+      "en": "Celusa",
+      "fr": "Célousa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q57157139",
+    "description": {
+      "en": "Mythical mother of Asopus.",
+      "fr": "Nymphe de la mythologie grecque et mère d'Asopos."
+    },
+    "greek": "Κήλουση",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Celusa",
+        "url": "https://en.wikipedia.org/wiki/Celusa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Célousa",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9lousa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pero Celusa (Kelouse)",
+        "url": "https://www.theoi.com/Nymphe/NympheKelouse.html"
+      }
+    ]
+  },
+  {
+    "id": "cerceis",
+    "name": {
+      "en": "Cerceis",
+      "fr": "Cercéis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12879053",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "greek": "Κερκηίδα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cerceis",
+        "url": "https://en.wikipedia.org/wiki/Cerceis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cercéis",
+        "url": "https://fr.wikipedia.org/wiki/Cerc%C3%A9is"
+      }
+    ]
+  },
+  {
+    "id": "ceroessa",
+    "name": {
+      "en": "Ceroessa",
+      "fr": "Céroessa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2723170",
+    "description": {
+      "en": "Mythical daughter of Io and mother of Byzas.",
+      "fr": "Fille de Zeus et d’Io dans la mythologie grecque."
+    },
+    "greek": "Κερόεσσα",
+    "parents": [
+      "zeus",
+      "io"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ceroessa",
+        "url": "https://en.wikipedia.org/wiki/Ceroessa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Céroessa",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9roessa"
+      }
+    ]
+  },
+  {
+    "id": "ceto-q5065673",
+    "name": {
+      "en": "Ceto",
+      "fr": "Céto"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5065673",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Κητώ",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ceto (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ceto_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Céto (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9to_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ceto (Keto)",
+        "url": "https://www.theoi.com/Nymphe/NympheKeto.html"
+      }
+    ]
+  },
+  {
+    "id": "chalcis",
+    "name": {
+      "en": "Chalcis",
+      "fr": "Chalcis (naïade)"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5739811",
+    "description": {
+      "en": "Daughter of Asopus and Metope in Greek mythology.",
+      "fr": "Fille d’Asopos et de Métope dans la mythologie grecque."
+    },
+    "greek": "Χαλκίς",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chalcis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Chalcis_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chalcis (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Chalcis_(na%C3%AFade)"
+      }
+    ]
+  },
+  {
+    "id": "chariclo-q4358140",
+    "name": {
+      "en": "Chariclo",
+      "fr": "Chariclo"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4358140",
+    "description": {
+      "en": "Tiresias’ mother.",
+      "fr": "Personnage de la mythologie grecque, femme d'Évère."
+    },
+    "greek": "Χαρικλώ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chariclo (mère de Tirésias)",
+        "url": "https://fr.wikipedia.org/wiki/Chariclo_(m%C3%A8re_de_Tir%C3%A9sias)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chariclo (Khariklo)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhariklo2.html"
+      }
+    ]
+  },
+  {
+    "id": "chariclo-q912408",
+    "name": {
+      "en": "Chariclo",
+      "fr": "Chariclo"
+    },
+    "kind": "nymph",
+    "wikidata": "Q912408",
+    "description": {
+      "en": "Chiron’s wife.",
+      "fr": "Naïade."
+    },
+    "greek": "Χαρικλώ",
+    "parents": [
+      "apollo",
+      "oceanus",
+      "perses-q660924",
+      "stilbe"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chariclo (épouse de Chiron)",
+        "url": "https://fr.wikipedia.org/wiki/Chariclo_(%C3%A9pouse_de_Chiron)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chariclo (Khariklo)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhariklo1.html"
+      }
+    ]
+  },
+  {
+    "id": "chelone",
+    "name": {
+      "en": "Chelone",
+      "fr": "Chélone"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1069104",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Χελώνη (μυθολογία)",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chelone (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Chelone_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chéloné",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A9lon%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chelone (Khelone)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhelone.html"
+      }
+    ]
+  },
+  {
+    "id": "chesias",
+    "name": {
+      "en": "Chesias",
+      "fr": "Chesias"
+    },
+    "kind": "nymph",
+    "wikidata": "Q57384730",
+    "description": {
+      "en": "Nymph, mother of Ocyrhoe.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chesias (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Chesias_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "chione-q5101421",
+    "name": {
+      "en": "Chione",
+      "fr": "Chioné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5101421",
+    "description": {
+      "en": "Who was changed into a snow cloud.",
+      "fr": "Personnage de la mythologie grecque, fille de Nil et de Callirhoé."
+    },
+    "greek": "Χιονη",
+    "parents": [
+      "nilus",
+      "callirhoe-q913161"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chione (daughter of Callirrhoe)",
+        "url": "https://en.wikipedia.org/wiki/Chione_(daughter_of_Callirrhoe)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chioné (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Chion%C3%A9_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chione (Khione)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhione3.html"
+      }
+    ]
+  },
+  {
+    "id": "chlidanope",
+    "name": {
+      "en": "Chlidanope",
+      "fr": "Chlidanopé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q18643251",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chlidanope",
+        "url": "https://en.wikipedia.org/wiki/Chlidanope"
+      }
+    ]
+  },
+  {
+    "id": "chloris-q1075258",
+    "name": {
+      "en": "Chloris",
+      "fr": "Chloris"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1075258",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Χλωρίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chloris (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Chloris_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chloris (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Chloris_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chloris (Khloris)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhloris.html"
+      }
+    ]
+  },
+  {
+    "id": "chryseis-q57424690",
+    "name": {
+      "en": "Chryseis",
+      "fr": "Chryséis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q57424690",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Unes des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chryséis (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Chrys%C3%A9is_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "chrysopeleia",
+    "name": {
+      "en": "Chrysopeleia",
+      "fr": "Chrysopéléia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3697327",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Hamadryade de la mythologie grecque."
+    },
+    "greek": "Χρυσοπέλεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chrysopeleia",
+        "url": "https://en.wikipedia.org/wiki/Chrysopeleia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chrysopélie",
+        "url": "https://fr.wikipedia.org/wiki/Chrysop%C3%A9lie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chrysopeleia (Khrysopeleia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKhrysopeleia.html"
+      }
+    ]
+  },
+  {
+    "id": "claea",
+    "name": {
+      "en": "Claea",
+      "fr": "Claea"
+    },
+    "kind": "nymph",
+    "wikidata": "Q15823677",
+    "description": {
+      "en": "Mythological figure worshipped at Gerenia.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Claea (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Claea_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "cleocharia",
+    "name": {
+      "en": "Cleocharia",
+      "fr": "Cléocharie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2980753",
+    "description": {
+      "en": "Mythologic queen of Laconia in Greek mythology.",
+      "fr": "Reine mythique de Laconie dans la mythologie grecque."
+    },
+    "greek": "Κλεοχάρεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cleocharia",
+        "url": "https://en.wikipedia.org/wiki/Cleocharia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cléocharie",
+        "url": "https://fr.wikipedia.org/wiki/Cl%C3%A9ocharie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cleochareia (Kleokhareia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKleokhareia.html"
+      }
+    ]
+  },
+  {
+    "id": "cleone",
+    "name": {
+      "en": "Cleone",
+      "fr": "Cléoné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2754601",
+    "description": {
+      "en": "Mythical daughter of Asopus.",
+      "fr": "Personnage de la mythologie grecque, fille d'Asopos et de Métope."
+    },
+    "greek": "Κλεώνη",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cleone (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Cleone_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cléoné",
+        "url": "https://fr.wikipedia.org/wiki/Cl%C3%A9on%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cleone (Kleone)",
+        "url": "https://www.theoi.com/Nymphe/NympheKleone.html"
+      }
+    ]
+  },
+  {
+    "id": "clonia",
+    "name": {
+      "en": "Clonia",
+      "fr": "Clonia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3680908",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Clonia (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Clonia_(nymph)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Clonia (Klonie)",
+        "url": "https://www.theoi.com/Nymphe/NympheKlonie.html"
+      }
+    ]
+  },
+  {
+    "id": "clytie",
+    "name": {
+      "en": "Clytie",
+      "fr": "Clytie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q866674",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque, amante d'Apollon."
+    },
+    "greek": "Κλυτία",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Clytie (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Clytie_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Clytie (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Clytie_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Clytie (Klytie)",
+        "url": "https://www.theoi.com/Nymphe/NympheKlytie.html"
+      }
+    ]
+  },
+  {
+    "id": "cnossia",
+    "name": {
+      "en": "Cnossia",
+      "fr": "Cnossia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10546716",
+    "description": {
+      "en": "Misstress of Menelaus in Greek myth.",
+      "fr": "Naïade."
+    },
+    "greek": "Κνωσσία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cnossia",
+        "url": "https://en.wikipedia.org/wiki/Cnossia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cnossia (Knossia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKnossia.html"
+      }
+    ]
+  },
+  {
+    "id": "combe",
+    "name": {
+      "en": "Combe",
+      "fr": "Combé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3684005",
+    "description": {
+      "en": "Minor Greek river divinity, daughter of Asopus.",
+      "fr": "Fille d’Asopos dans la mythologie grecque."
+    },
+    "greek": "Κόμβη",
+    "parents": [
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Combe (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Combe_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Combe (Kombe)",
+        "url": "https://www.theoi.com/Nymphe/NympheKombe.html"
+      }
+    ]
+  },
+  {
+    "id": "corcyra",
+    "name": {
+      "en": "Corcyra",
+      "fr": "Corcyre"
+    },
+    "kind": "nymph",
+    "wikidata": "Q644692",
+    "description": {
+      "en": "Daughter of the Asopos river and the nymph Metope.",
+      "fr": "Fille d’Asopos et de Métope dans la mythologie grecque."
+    },
+    "greek": "Κόρκυρα",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Corcyra (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Corcyra_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Corcyre (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Corcyre_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Corcyra (Korkyra)",
+        "url": "https://www.theoi.com/Nymphe/NympheKorkyra.html"
+      }
+    ]
+  },
+  {
+    "id": "coronis-q10854746",
+    "name": {
+      "en": "Coronis",
+      "fr": "Coronis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10854746",
+    "description": {
+      "en": "One of the Hyades.",
+      "fr": "Personnage de la mythologie grecque, fille d'Atlas."
+    },
+    "parents": [
+      "atlas",
+      "aethra-q410531"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Coronis (Hyade)",
+        "url": "https://fr.wikipedia.org/wiki/Coronis_(Hyade)"
+      }
+    ]
+  },
+  {
+    "id": "corycia",
+    "name": {
+      "en": "Corycia",
+      "fr": "Corycie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q520551",
+    "description": {
+      "en": "Naiad in Greek mythology.",
+      "fr": "Fille de Pleistos (dieu fleuve) dans la mythologie grecque."
+    },
+    "parents": [
+      "pleistos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Corycia",
+        "url": "https://en.wikipedia.org/wiki/Corycia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Corycie",
+        "url": "https://fr.wikipedia.org/wiki/Corycie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Corycia (Korykia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKorykia.html"
+      }
+    ]
+  },
+  {
+    "id": "coryphe",
+    "name": {
+      "en": "Coryphe",
+      "fr": "Coryphe"
+    },
+    "kind": "nymph",
+    "wikidata": "Q58818193",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+    },
+    "greek": "Κορυφή",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Coryphe",
+        "url": "https://en.wikipedia.org/wiki/Coryphe"
+      }
+    ]
+  },
+  {
+    "id": "crataeis",
+    "name": {
+      "en": "Crataeis",
+      "fr": "Cratéis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12725881",
+    "description": {
+      "en": "The mother of Scylla.",
+      "fr": "Personnage de la mythologie grecque, mère de Scylla."
+    },
+    "greek": "Κραταιίς",
+    "parents": [
+      "triton",
+      "hecate"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Crataeis",
+        "url": "https://en.wikipedia.org/wiki/Crataeis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cratéis",
+        "url": "https://fr.wikipedia.org/wiki/Crat%C3%A9is"
+      }
+    ]
+  },
+  {
+    "id": "creusa-q1232622",
+    "name": {
+      "en": "Creusa",
+      "fr": "Créuse"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1232622",
+    "description": {
+      "en": "Naiad, mother of Hypseus.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Κρέουσα",
+    "parents": [
+      "gaia",
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Creusa (naiad)",
+        "url": "https://en.wikipedia.org/wiki/Creusa_(naiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Créuse (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Cr%C3%A9use_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Creusa (Kreousa)",
+        "url": "https://www.theoi.com/Nymphe/NympheKreousa.html"
+      }
+    ]
+  },
+  {
+    "id": "crocale",
+    "name": {
+      "en": "Crocale",
+      "fr": "Crocale"
+    },
+    "kind": "nymph",
+    "wikidata": "Q122067349",
+    "description": {
+      "en": "Naiad in Greek mythology, huntress with Artemis.",
+      "fr": "Fille d’Ismène dans la mythologie grecque."
+    },
+    "parents": [
+      "ismenus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Crocale",
+        "url": "https://en.wikipedia.org/wiki/Crocale"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Crocale",
+        "url": "https://fr.wikipedia.org/wiki/Crocale"
+      }
+    ]
+  },
+  {
+    "id": "cyane",
+    "name": {
+      "en": "Cyane",
+      "fr": "Cyané"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1423058",
+    "description": {
+      "en": "Sicilian nymph in Greek mythology.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Κυάνη",
+    "parents": [
+      "anapos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cyane",
+        "url": "https://en.wikipedia.org/wiki/Cyane"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cyané (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Cyan%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cyane (Kyane)",
+        "url": "https://www.theoi.com/Nymphe/NympheKyane.html"
+      }
+    ]
+  },
+  {
+    "id": "cyllene",
+    "name": {
+      "en": "Cyllene",
+      "fr": "Cyllène"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7595427",
+    "description": {
+      "en": "Naiad from Greek mythology.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Κυλλήνη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cyllene (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Cyllene_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cyllène (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Cyll%C3%A8ne_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cyllene (Kyllene) -Arcadian Oread Nymph of Greek Mythology",
+        "url": "https://www.theoi.com/Nymphe/NympheKyllene.html"
+      }
+    ]
+  },
+  {
+    "id": "cymopoleia",
+    "name": {
+      "en": "Cymopoleia",
+      "fr": "Cymopolée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q844867",
+    "description": {
+      "en": "Daughter of Poseidon.",
+      "fr": "Dessesse des tempête maritime."
+    },
+    "greek": "Κυμοπόλεια",
+    "parents": [
+      "poseidon",
+      "amphitrite"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Kymopoleia",
+        "url": "https://en.wikipedia.org/wiki/Kymopoleia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cymopolée",
+        "url": "https://fr.wikipedia.org/wiki/Cymopol%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cymopoleia (Kymopoleia)",
+        "url": "https://www.theoi.com/Nymphe/NympheKymopoleia.html"
+      }
+    ]
+  },
+  {
+    "id": "daeira",
+    "name": {
+      "en": "Daeira",
+      "fr": "Daïra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4154083",
+    "description": {
+      "en": "Oceanid, mother of Eleusis by Hermes.",
+      "fr": "Une des Océanides."
+    },
+    "greek": "Δάειρα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Daeira",
+        "url": "https://en.wikipedia.org/wiki/Daeira"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Daïra (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Da%C3%AFra_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Daeira",
+        "url": "https://www.theoi.com/Nymphe/NympheDaeira.html"
+      }
+    ]
+  },
+  {
+    "id": "danais",
+    "name": {
+      "en": "Danais",
+      "fr": "Danaïs"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10466497",
+    "description": {
+      "en": "Daughter of Alpheus in Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque et romaine."
+    },
+    "greek": "Δαναΐς",
+    "parents": [
+      "alpheus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Danaïs",
+        "url": "https://fr.wikipedia.org/wiki/Dana%C3%AFs"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Danais",
+        "url": "https://www.theoi.com/Nymphe/NympheDanais.html"
+      }
+    ]
+  },
+  {
+    "id": "daulis",
+    "name": {
+      "en": "Daulis",
+      "fr": "Daulis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q17461398",
+    "description": {
+      "en": "Mythical daughter of Cephisos.",
+      "fr": "Naïade, fille du dieu fleuve Céphise."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Daulis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Daulis_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Daulis (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Daulis_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Daulis",
+        "url": "https://www.theoi.com/Nymphe/NympheDaulis.html"
+      }
+    ]
+  },
+  {
+    "id": "deiopea",
+    "name": {
+      "en": "Deiopea",
+      "fr": "Déiopée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q59661541",
+    "description": {
+      "en": "Nereid.",
+      "fr": "Néréide."
+    },
+    "parents": [
+      "doris-q726279",
+      "nereus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Déiopée (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9iop%C3%A9e_(N%C3%A9r%C3%A9ide)"
+      }
+    ]
+  },
+  {
+    "id": "dercetis",
+    "name": {
+      "en": "Dercetis",
+      "fr": "Dercetis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5261718",
+    "description": {
+      "en": "Nymph mentioned by Statius.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dercetis",
+        "url": "https://en.wikipedia.org/wiki/Dercetis"
+      }
+    ]
+  },
+  {
+    "id": "dione-q1226931",
+    "name": {
+      "en": "Dioné",
+      "fr": "Dioné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1226931",
+    "description": {
+      "en": "One of the Hyades, daughters of Atlas.",
+      "fr": "Personnage de la mythologie grecque, fille d'Atlas."
+    },
+    "greek": "Διώνη",
+    "parents": [
+      "atlas",
+      "aethra-q410531"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dioné (Hyade)",
+        "url": "https://fr.wikipedia.org/wiki/Dion%C3%A9_(Hyade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Dione",
+        "url": "https://www.theoi.com/Nymphe/NympheDione.html"
+      }
+    ]
+  },
+  {
+    "id": "diopatra",
+    "name": {
+      "en": "Diopatra",
+      "fr": "Diopatra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12750909",
+    "description": {
+      "en": "Nymph pursued by Poseidon.",
+      "fr": "Fille de Sperchios dans la mythologie grecque."
+    },
+    "parents": [
+      "spercheus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Diopatra (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Diopatra_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Diopatra (Diopatre)",
+        "url": "https://www.theoi.com/Nymphe/NympheDiopatre.html"
+      }
+    ]
+  },
+  {
+    "id": "doris-q726279",
+    "name": {
+      "en": "Doris",
+      "fr": "Doris"
+    },
+    "kind": "nymph",
+    "wikidata": "Q726279",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Δωρίς",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Doris (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Doris_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Doris (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Doris_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Doris",
+        "url": "https://www.theoi.com/Nymphe/NympheDoris.html"
+      }
+    ]
+  },
+  {
+    "id": "drosera",
+    "name": {
+      "en": "Drosera",
+      "fr": "Drosera"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5308511",
+    "description": {
+      "en": "Naiad in Greek mythology.",
+      "fr": "Naïade."
+    },
+    "greek": "Δροσερά (ναϊάδα)",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Drosera (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Drosera_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "dryope-q910403",
+    "name": {
+      "en": "Dryope",
+      "fr": "Dryope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q910403",
+    "description": {
+      "en": "Daughter of Dryops, Eyrypylus, or Eurytus, mother of Amphissus.",
+      "fr": "Fille d’Eurytos et de Dryops dans la mythologie grecque."
+    },
+    "greek": "Δρυόπη",
+    "parents": [
+      "eurytus-q939149",
+      "dryops-q3040215"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dryope (daughter of Dryops)",
+        "url": "https://en.wikipedia.org/wiki/Dryope_(daughter_of_Dryops)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dryope (Thessalie)",
+        "url": "https://fr.wikipedia.org/wiki/Dryope_(Thessalie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Dryope",
+        "url": "https://www.theoi.com/Nymphe/NympheDryope.html"
+      }
+    ]
+  },
+  {
+    "id": "echemeia",
+    "name": {
+      "en": "Echemeia",
+      "fr": "Echemeia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1280292",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Εχέμεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Echemeia",
+        "url": "https://en.wikipedia.org/wiki/Echemeia"
+      }
+    ]
+  },
+  {
+    "id": "eidyia",
+    "name": {
+      "en": "Eidyia",
+      "fr": "Idyie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2293877",
+    "description": {
+      "en": "Oceanid of Greek mythology, spouse of Aeetes.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Εἰδυῖα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Idyia",
+        "url": "https://en.wikipedia.org/wiki/Idyia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Idyie",
+        "url": "https://fr.wikipedia.org/wiki/Idyie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eidyia",
+        "url": "https://www.theoi.com/Nymphe/NympheEidyia.html"
+      }
+    ]
+  },
+  {
+    "id": "electra-q1438693",
+    "name": {
+      "en": "Electra",
+      "fr": "Électre"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1438693",
+    "description": {
+      "en": "One of the Oceanids; daughter of Oceanus and Tethys.",
+      "fr": "Océanide."
+    },
+    "greek": "Ηλέκτρα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Electra (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Electra_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Électre (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89lectre_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Electra (Elektra)",
+        "url": "https://www.theoi.com/Nymphe/NympheElektra1.html"
+      }
+    ]
+  },
+  {
+    "id": "electra-q858663",
+    "name": {
+      "en": "Electra",
+      "fr": "Électre"
+    },
+    "kind": "nymph",
+    "wikidata": "Q858663",
+    "description": {
+      "en": "One of the Pleiades in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, une des Pléiades."
+    },
+    "greek": "Ηλέκτρα",
+    "parents": [
+      "pleione",
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Electra (Pleiad)",
+        "url": "https://en.wikipedia.org/wiki/Electra_(Pleiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Électre (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89lectre_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Electra (Elektra)",
+        "url": "https://www.theoi.com/Nymphe/NympheElektra2.html"
+      }
+    ]
+  },
+  {
+    "id": "ephyra",
+    "name": {
+      "en": "Ephyra",
+      "fr": "Éphyra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12751671",
+    "description": {
+      "en": "Nereid of Greek mythology.",
+      "fr": "Fille d’Océan, de Nérée, de Téthys et de Doris dans la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "nereus",
+      "tethys",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éphyra (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89phyra_(N%C3%A9r%C3%A9ide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ephyra",
+        "url": "https://www.theoi.com/Nymphe/NympheEphyra.html"
+      }
+    ]
+  },
+  {
+    "id": "erato-q782764",
+    "name": {
+      "en": "Erato",
+      "fr": "Érato"
+    },
+    "kind": "nymph",
+    "wikidata": "Q782764",
+    "description": {
+      "en": "Greek mythological figure, wife of Arcas.",
+      "fr": "Dryade de la mythologie grecque."
+    },
+    "greek": "Ερατώ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Erato (dryad)",
+        "url": "https://en.wikipedia.org/wiki/Erato_(dryad)"
+      }
+    ]
+  },
+  {
+    "id": "euboea-q1372109",
+    "name": {
+      "en": "Euboea",
+      "fr": "Eubée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1372109",
+    "description": {
+      "en": "Daughter of Asopus.",
+      "fr": "Naïade, fille d'Asopos."
+    },
+    "greek": "Εύβοια",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eubée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Eub%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Euboea Chalcis (Euboia Khalkis)",
+        "url": "https://www.theoi.com/Nymphe/NympheEuboia.html"
+      }
+    ]
+  },
+  {
+    "id": "eudore-q60691484",
+    "name": {
+      "en": "Eudore",
+      "fr": "Eudoré"
+    },
+    "kind": "nymph",
+    "wikidata": "Q60691484",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eudore (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Eudore_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "eupheme-q10490777",
+    "name": {
+      "en": "Eupheme",
+      "fr": "Euphémé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10490777",
+    "description": {
+      "en": "Ancient Greek nymph, nurse of the Muses.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ευφήμη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Euphémé (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Euph%C3%A9m%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eupheme",
+        "url": "https://www.theoi.com/Nymphe/NympheEupheme.html"
+      }
+    ]
+  },
+  {
+    "id": "eurryroe",
+    "name": {
+      "en": "Eurryroe",
+      "fr": "Eurryroé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106795677",
+    "description": {
+      "en": "Daughter of the Egyptian river-god Nilus.",
+      "fr": "Personnage de la mythologie grecque, fille de Nil."
+    },
+    "greek": "Ευρυρρόη",
+    "parents": [
+      "nilus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eurryroe",
+        "url": "https://en.wikipedia.org/wiki/Eurryroe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurryroé",
+        "url": "https://fr.wikipedia.org/wiki/Eurryro%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "eurynome-q548099",
+    "name": {
+      "en": "Eurynome",
+      "fr": "Eurynomé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q548099",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Εὐρυνόμη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eurynome (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Eurynome_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurynomé (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Eurynom%C3%A9_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eurynome",
+        "url": "https://www.theoi.com/Titan/TitanisEurynome.html"
+      }
+    ]
+  },
+  {
+    "id": "euryte-q19681430",
+    "name": {
+      "en": "Euryte",
+      "fr": "Euryté"
+    },
+    "kind": "nymph",
+    "wikidata": "Q19681430",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Euryte (mother of Halirrhothius)",
+        "url": "https://en.wikipedia.org/wiki/Euryte_(mother_of_Halirrhothius)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Euryté (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Euryt%C3%A9_(nymphe)"
+      }
+    ]
+  },
+  {
+    "id": "evadne-q1259960",
+    "name": {
+      "en": "Evadne",
+      "fr": "Évadné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1259960",
+    "description": {
+      "en": "Daughter of Strymon.",
+      "fr": "Personnage de la mythologie grecque, fille de Strymon."
+    },
+    "greek": "Ευάδνη",
+    "parents": [
+      "strymon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Évadné fille de Strymon",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89vadn%C3%A9_fille_de_Strymon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Evadne (Euadne)",
+        "url": "https://www.theoi.com/Nymphe/NympheEuadne.html"
+      }
+    ]
+  },
+  {
+    "id": "galaxaura",
+    "name": {
+      "en": "Galaxaura",
+      "fr": "Galaxaure"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3567491",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Océanide."
+    },
+    "greek": "Γαλαξαύρη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Galaxaura (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Galaxaura_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Galaxaure",
+        "url": "https://fr.wikipedia.org/wiki/Galaxaure"
+      }
+    ]
+  },
+  {
+    "id": "glaucia",
+    "name": {
+      "en": "Glaucia",
+      "fr": "Glaucia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5567263",
+    "description": {
+      "en": "Daughter of Scamander in Greek mythology.",
+      "fr": "Fille de Scamandre dans la mythologie grecque."
+    },
+    "greek": "Γλαυκία",
+    "parents": [
+      "scamander-q1134694"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Glaucia",
+        "url": "https://en.wikipedia.org/wiki/Glaucia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Glaucia",
+        "url": "https://fr.wikipedia.org/wiki/Glaucia"
+      }
+    ]
+  },
+  {
+    "id": "hagno",
+    "name": {
+      "en": "Hagno",
+      "fr": "Hagno"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3606663",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Αγνώ (μυθολογία)",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hagno (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Hagno_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hagno",
+        "url": "https://fr.wikipedia.org/wiki/Hagno"
+      }
+    ]
+  },
+  {
+    "id": "halie-q3611629",
+    "name": {
+      "en": "Halie",
+      "fr": "Halie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3611629",
+    "description": {
+      "en": "Daughter of Thalassa and Pontus in Greek mythology.",
+      "fr": "Fille de Thalassa et de Pontos dans la mythologie grecque."
+    },
+    "greek": "Αλία",
+    "parents": [
+      "thalassa",
+      "pontus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Halia of Rhodes",
+        "url": "https://en.wikipedia.org/wiki/Halia_of_Rhodes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Halia",
+        "url": "https://fr.wikipedia.org/wiki/Halia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Halia",
+        "url": "https://www.theoi.com/Nymphe/NympheHalia.html"
+      }
+    ]
+  },
+  {
+    "id": "hamadryas",
+    "name": {
+      "en": "Hamadryas",
+      "fr": "Hamadryas"
+    },
+    "kind": "nymph",
+    "wikidata": "Q18450783",
+    "description": {
+      "en": "Daughter of Orius, mother of the Hamadryads.",
+      "fr": "Personnage de la mythologie grecque, fille d'Orios."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hamadryas (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Hamadryas_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hamadryas (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Hamadryas_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hamadryas",
+        "url": "https://www.theoi.com/Nymphe/NympheHamadryas.html"
+      }
+    ]
+  },
+  {
+    "id": "harmonia-q9286479",
+    "name": {
+      "en": "Harmonia",
+      "fr": "Harmonie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q9286479",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Αρμονία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Harmonia (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Harmonia_(nymph)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Harmonia",
+        "url": "https://www.theoi.com/Nymphe/NympheHarmonia.html"
+      }
+    ]
+  },
+  {
+    "id": "harpina",
+    "name": {
+      "en": "Harpina",
+      "fr": "Harpina"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3200444",
+    "description": {
+      "en": "Naiad nymph, daughter of Phliasian Asopus and Metrope.",
+      "fr": "Fille d’Asopos et de Métope dans la mythologie grecque."
+    },
+    "greek": "Άρπιννα",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Harpina",
+        "url": "https://en.wikipedia.org/wiki/Harpina"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Harpina (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Harpina_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Harpina",
+        "url": "https://www.theoi.com/Nymphe/NympheHarpina.html"
+      }
+    ]
+  },
+  {
+    "id": "hegetoria",
+    "name": {
+      "en": "Hegetoria",
+      "fr": "Hegetoria"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2188311",
+    "description": {
+      "en": "Nymph of Rhodes, wife of Ochimus.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ηγετορία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hegetoria",
+        "url": "https://en.wikipedia.org/wiki/Hegetoria"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hegetoria",
+        "url": "https://www.theoi.com/Nymphe/NympheHegetoria.html"
+      }
+    ]
+  },
+  {
+    "id": "hercyna",
+    "name": {
+      "en": "Hercyna",
+      "fr": "Hercyna"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3731168",
+    "description": {
+      "en": "Nymph from Boeotia.",
+      "fr": "Nymphe de Béotie."
+    },
+    "greek": "Έρκυνα",
+    "parents": [
+      "trophonius"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hercyna (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Hercyna_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hercyna (Herkyna)",
+        "url": "https://www.theoi.com/Nymphe/NympheHerkyna.html"
+      }
+    ]
+  },
+  {
+    "id": "hesione-q669635",
+    "name": {
+      "en": "Hesione",
+      "fr": "Hésione"
+    },
+    "kind": "nymph",
+    "wikidata": "Q669635",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Ἡσιόνη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hesione (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Hesione_(Oceanid)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hesione Pronoea (Pronoia)",
+        "url": "https://www.theoi.com/Nymphe/NymphePronoia.html"
+      }
+    ]
+  },
+  {
+    "id": "hesperia",
+    "name": {
+      "en": "Hesperia",
+      "fr": "Hespérie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1615646",
+    "description": {
+      "en": "Nymph, Cebren's daughter.",
+      "fr": "Nymphe de la mythologie grecque, fille de Cébren."
+    },
+    "greek": "Εσπερία",
+    "parents": [
+      "cebren"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hespérie fille de Cébren",
+        "url": "https://fr.wikipedia.org/wiki/Hesp%C3%A9rie_fille_de_C%C3%A9bren"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Asterope Hesperia",
+        "url": "https://www.theoi.com/Nymphe/NympheAsterope.html"
+      }
+    ]
+  },
+  {
+    "id": "heuresis",
+    "name": {
+      "en": "Heuresis",
+      "fr": "Euresis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q538694",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe dans la mythologie grecque connue comme la déesse de l'invention."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Euresis",
+        "url": "https://fr.wikipedia.org/wiki/Euresis"
+      }
+    ]
+  },
+  {
+    "id": "himalia",
+    "name": {
+      "en": "Himalia",
+      "fr": "Himalia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q764777",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ἱμαλία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Himalia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Himalia_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Himalia (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Himalia_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Himalia",
+        "url": "https://www.theoi.com/Nymphe/NympheHimalia.html"
+      }
+    ]
+  },
+  {
+    "id": "hippo",
+    "name": {
+      "en": "Hippo",
+      "fr": "Hippo"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2171892",
+    "description": {
+      "en": "Oceanid.",
+      "fr": "Océanide."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hippo (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Hippo_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "ianire",
+    "name": {
+      "en": "Ianire",
+      "fr": "Ianire"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106076553",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ianire",
+        "url": "https://fr.wikipedia.org/wiki/Ianire"
+      }
+    ]
+  },
+  {
+    "id": "ianthe-q106620096",
+    "name": {
+      "en": "Ianthe",
+      "fr": "Ianthé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106620096",
+    "description": {
+      "en": "One of the Oceanids, daughter of Oceanus and Tethys.",
+      "fr": "Océanide."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ianthe (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ianthe_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ianthé (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Ianth%C3%A9_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "ida",
+    "name": {
+      "en": "Ida",
+      "fr": "Ida"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3147753",
+    "description": {
+      "en": "Greek nymph, nurse of Zeus.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ίδη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ida (nurse of Zeus)",
+        "url": "https://en.wikipedia.org/wiki/Ida_(nurse_of_Zeus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ida (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Ida_(nymphe)"
+      }
+    ]
+  },
+  {
+    "id": "idaea-q2007963",
+    "name": {
+      "en": "Idaea",
+      "fr": "Idéa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2007963",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ιδαία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Idaea (mother of King Teucer)",
+        "url": "https://en.wikipedia.org/wiki/Idaea_(mother_of_King_Teucer)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Idéa (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Id%C3%A9a_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Idaea (Idaia)",
+        "url": "https://www.theoi.com/Nymphe/NympheIdaia.html"
+      }
+    ]
+  },
+  {
+    "id": "io",
+    "name": {
+      "en": "Io",
+      "fr": "Io"
+    },
+    "kind": "nymph",
+    "wikidata": "Q179014",
+    "description": {
+      "en": "Nymph seduced by Zeus in Greek mythology.",
+      "fr": "Fille d’Inachos, d’Iasos et de Piras dans la mythologie grecque."
+    },
+    "greek": "Ἰώ",
+    "parents": [
+      "inachus",
+      "iasus",
+      "peirasus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Io (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Io_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Io (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Io_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "ismenis",
+    "name": {
+      "en": "Ismenis",
+      "fr": "Isménis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q6085037",
+    "description": {
+      "en": "Daughter of Ismenus in Greek mythology.",
+      "fr": "Fille d’Ismène dans la mythologie grecque."
+    },
+    "greek": "Ισμηνίδα",
+    "parents": [
+      "ismenus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ismenis",
+        "url": "https://en.wikipedia.org/wiki/Ismenis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Isménis",
+        "url": "https://fr.wikipedia.org/wiki/Ism%C3%A9nis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ismenis",
+        "url": "https://www.theoi.com/Nymphe/NympheIsmenis.html"
+      }
+    ]
+  },
+  {
+    "id": "ithome",
+    "name": {
+      "en": "Ithome",
+      "fr": "Ithomé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3804539",
+    "description": {
+      "en": "Nymph in Greek mythology, nurse of Zeus.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ιθώμη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ithome (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ithome_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "klymene",
+    "name": {
+      "en": "Klymene",
+      "fr": "Clyméné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q836792",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+    },
+    "greek": "Κλυμένη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Clymene (wife of Iapetus)",
+        "url": "https://en.wikipedia.org/wiki/Clymene_(wife_of_Iapetus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Clymène (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Clym%C3%A8ne_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Clymene (Klymene)",
+        "url": "https://www.theoi.com/Nymphe/NympheKlymene.html"
+      }
+    ]
+  },
+  {
+    "id": "lampetia",
+    "name": {
+      "en": "Lampetia",
+      "fr": "Lampétie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1638536",
+    "description": {
+      "en": "Daughter of Helius in Greek myth.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Hélios."
+    },
+    "greek": "Λαμπετίη",
+    "parents": [
+      "helios",
+      "klymene",
+      "neaera-q1375640"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lampetia",
+        "url": "https://en.wikipedia.org/wiki/Lampetia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lampétie et Phaéthuse",
+        "url": "https://fr.wikipedia.org/wiki/Lamp%C3%A9tie_et_Pha%C3%A9thuse"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lampetia & Phaethusa",
+        "url": "https://www.theoi.com/Nymphe/NymphaiNeaireides.html"
+      }
+    ]
+  },
+  {
+    "id": "larissa-q1275070",
+    "name": {
+      "en": "Larissa",
+      "fr": "Larissa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1275070",
+    "description": {
+      "en": "Daughter or mother of Pelasgus in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Λάρισα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Larissa (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Larissa_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "leuce",
+    "name": {
+      "en": "Leuce",
+      "fr": "Leucé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q582643",
+    "description": {
+      "en": "Daughter of Oceanus in Greek mythology.",
+      "fr": "Plus belle des nymphes de la mythologie grecque."
+    },
+    "greek": "Λεύκη , Leukē",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Leuce (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Leuce_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Leucé",
+        "url": "https://fr.wikipedia.org/wiki/Leuc%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Leuce (Leuke)",
+        "url": "https://www.theoi.com/Nymphe/NympheLeuke.html"
+      }
+    ]
+  },
+  {
+    "id": "lilaea",
+    "name": {
+      "en": "Lilaea",
+      "fr": "Lilaea"
+    },
+    "kind": "nymph",
+    "wikidata": "Q460094",
+    "description": {
+      "en": "Water deity, daughter of Cephisos.",
+      "fr": "Naïade et fille de Céphise."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lilaea",
+        "url": "https://en.wikipedia.org/wiki/Lilaea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lilaea fille de Céphise",
+        "url": "https://fr.wikipedia.org/wiki/Lilaea_fille_de_C%C3%A9phise"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lilaea (Lilaia)",
+        "url": "https://www.theoi.com/Nymphe/NympheLilaia.html"
+      }
+    ]
+  },
+  {
+    "id": "limnaee",
+    "name": {
+      "en": "Limnaee",
+      "fr": "Limnate"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1825523",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe du Gange."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Limnée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Limn%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Limnaee (Limnaie)",
+        "url": "https://www.theoi.com/Nymphe/NympheLimnaee.html"
+      }
+    ]
+  },
+  {
+    "id": "liriope",
+    "name": {
+      "en": "Liriope",
+      "fr": "Liriope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1815682",
+    "description": {
+      "en": "Water nymph, mother of Narcissus.",
+      "fr": "Naïade, mère de Narcisse."
+    },
+    "greek": "Λιριόπη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Liriope (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Liriope_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Liriope (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Liriope_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Liriope",
+        "url": "https://www.theoi.com/Nymphe/NympheLiriope.html"
+      }
+    ]
+  },
+  {
+    "id": "lotis",
+    "name": {
+      "en": "Lotis",
+      "fr": "Lotis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2465677",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Naïade."
+    },
+    "greek": "Λωτίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lotis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Lotis_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lotis (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Lotis_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lotis",
+        "url": "https://www.theoi.com/Nymphe/NympheLotis.html"
+      }
+    ]
+  },
+  {
+    "id": "lysithea",
+    "name": {
+      "en": "Lysithea",
+      "fr": "Lysithée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1244430",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Λυσιθέα",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lysithea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Lysithea_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "macris",
+    "name": {
+      "en": "Macris",
+      "fr": "Macris"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1301614",
+    "description": {
+      "en": "Daughter of Aristaeus in Greek mythology.",
+      "fr": "Fille d’Aristée dans la mythologie grecque."
+    },
+    "greek": "Μάκρις",
+    "parents": [
+      "aristaeus-q392435"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Macris",
+        "url": "https://en.wikipedia.org/wiki/Macris"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Macris",
+        "url": "https://fr.wikipedia.org/wiki/Macris"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Macris (Makris)",
+        "url": "https://www.theoi.com/Nymphe/NympheMakris.html"
+      }
+    ]
+  },
+  {
+    "id": "maia",
+    "name": {
+      "en": "Maia",
+      "fr": "Maïa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q205233",
+    "description": {
+      "en": "Pleiad and mother of Hermes.",
+      "fr": "Fille de Pléione et d’Atlas dans la mythologie grecque."
+    },
+    "greek": "Μαῖα",
+    "parents": [
+      "pleione",
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Maia",
+        "url": "https://en.wikipedia.org/wiki/Maia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Maïa (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/Ma%C3%AFa_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Maia",
+        "url": "https://www.theoi.com/Nymphe/NympheMaia.html"
+      }
+    ]
+  },
+  {
+    "id": "melaena",
+    "name": {
+      "en": "Melaena",
+      "fr": "Mélaïna"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2659035",
+    "description": {
+      "en": "Greek nymph, lover of Apollo.",
+      "fr": "Fille de Pleistos (dieu fleuve) dans la mythologie grecque."
+    },
+    "greek": "Μέλαινα",
+    "parents": [
+      "pleistos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Melaina",
+        "url": "https://en.wikipedia.org/wiki/Melaina"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mélaïna",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9la%C3%AFna"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Melaena (Melaine)",
+        "url": "https://www.theoi.com/Nymphe/NympheMelaine.html"
+      }
+    ]
+  },
+  {
+    "id": "melia-q59554817",
+    "name": {
+      "en": "Melia",
+      "fr": "Mélia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q59554817",
+    "description": {
+      "en": "Nymph in Greek mythology, mother of Phoroneus and Aegialeus, consort of Inachus.",
+      "fr": "Consort du dieu fleuve Inachos."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Melia (consort of Inachus)",
+        "url": "https://en.wikipedia.org/wiki/Melia_(consort_of_Inachus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mélia (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9lia_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Melia Argia",
+        "url": "https://www.theoi.com/Nymphe/NympheMelia1.html"
+      }
+    ]
+  },
+  {
+    "id": "melia-q785598",
+    "name": {
+      "en": "Melia",
+      "fr": "Melia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q785598",
+    "description": {
+      "en": "Greek mythologial figure, daughter of the Titan Oceanus and consort of Apollo.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Μελία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Melia (consort of Apollo)",
+        "url": "https://en.wikipedia.org/wiki/Melia_(consort_of_Apollo)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Melia",
+        "url": "https://www.theoi.com/Nymphe/NympheMelia2.html"
+      }
+    ]
+  },
+  {
+    "id": "meliboea-q2602177",
+    "name": {
+      "en": "Meliboea",
+      "fr": "Mélibée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2602177",
+    "description": {
+      "en": "Deity from Greek mythology (Oceanid).",
+      "fr": "Océanide."
+    },
+    "greek": "Μελίβοια",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mélibée (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9lib%C3%A9e_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Meliboea (Meliboia)",
+        "url": "https://www.theoi.com/Nymphe/NympheMeliboia1.html"
+      }
+    ]
+  },
+  {
+    "id": "melite-q16933131",
+    "name": {
+      "en": "Melite",
+      "fr": "Mélité"
+    },
+    "kind": "nymph",
+    "wikidata": "Q16933131",
+    "description": {
+      "en": "Naiad of Greek mythology.",
+      "fr": "Naïade."
+    },
+    "greek": "Μελίτη",
+    "parents": [
+      "aegaeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Melite (naiad)",
+        "url": "https://en.wikipedia.org/wiki/Melite_(naiad)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Melite",
+        "url": "https://www.theoi.com/Nymphe/NympheMelite.html"
+      }
+    ]
+  },
+  {
+    "id": "melobosis",
+    "name": {
+      "en": "Melobosis",
+      "fr": "Mélobosis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106079953",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Melobosis",
+        "url": "https://en.wikipedia.org/wiki/Melobosis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mélobosis",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9lobosis"
+      }
+    ]
+  },
+  {
+    "id": "menestho",
+    "name": {
+      "en": "Menestho",
+      "fr": "Ménestho"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106079915",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Menestho (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Menestho_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "menodice",
+    "name": {
+      "en": "Menodice",
+      "fr": "Ménodicé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q40196079",
+    "description": {
+      "en": "Nymph, mother of Hylas.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Μενοδίκη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Menodice",
+        "url": "https://en.wikipedia.org/wiki/Menodice"
+      }
+    ]
+  },
+  {
+    "id": "merope-q735518",
+    "name": {
+      "en": "Merope",
+      "fr": "Mérope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q735518",
+    "description": {
+      "en": "One of the Pleiades in Greek mythology: wife of Sisyphus.",
+      "fr": "Pléiade de la mythologie grecque."
+    },
+    "greek": "Μερόπη",
+    "parents": [
+      "pleione",
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Merope (Pleiad)",
+        "url": "https://en.wikipedia.org/wiki/Merope_(Pleiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mérope (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9rope_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Merope",
+        "url": "https://www.theoi.com/Nymphe/NympheMerope.html"
+      }
+    ]
+  },
+  {
+    "id": "messeis",
+    "name": {
+      "en": "Messeis",
+      "fr": "Mésséis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q107313059",
+    "description": {
+      "en": "Nymph of a spring.",
+      "fr": "Une naïade, fille du dieu fleuve Inachos."
+    },
+    "parents": [
+      "inachus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Messeis",
+        "url": "https://en.wikipedia.org/wiki/Messeis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mésséis",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9ss%C3%A9is"
+      }
+    ]
+  },
+  {
+    "id": "methe",
+    "name": {
+      "en": "Methe",
+      "fr": "Méta"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2391464",
+    "description": {
+      "en": "Greek mythological personification of drunkenness.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Methe",
+        "url": "https://en.wikipedia.org/wiki/Methe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Méthé",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9th%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Methe",
+        "url": "https://www.theoi.com/Nymphe/NympheMethe.html"
+      }
+    ]
+  },
+  {
+    "id": "metis",
+    "name": {
+      "en": "Metis",
+      "fr": "Métis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q190565",
+    "description": {
+      "en": "Oceanid of Greek mythology, goddess of wisdom, daughter of Oceanid and Tethys.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Μῆτις",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Metis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Metis_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Métis (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9tis_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Metis",
+        "url": "https://www.theoi.com/Titan/TitanisMetis.html"
+      }
+    ]
+  },
+  {
+    "id": "metope",
+    "name": {
+      "en": "Metope",
+      "fr": "Métope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1237258",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Naïade de la mythologie grecque."
+    },
+    "greek": "Μετώπη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Metope (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Metope_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Métope (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9tope_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Metope",
+        "url": "https://www.theoi.com/Nymphe/NympheMetope.html"
+      }
+    ]
+  },
+  {
+    "id": "minthe",
+    "name": {
+      "en": "Minthe",
+      "fr": "Menthé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1546353",
+    "description": {
+      "en": "Water nymph, consort of Hades.",
+      "fr": "Nymphe amante d'Hadès et fille du Cocyte."
+    },
+    "greek": "Μένθη , Menthē",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Minthe",
+        "url": "https://en.wikipedia.org/wiki/Minthe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Menthé",
+        "url": "https://fr.wikipedia.org/wiki/Menth%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Minthe",
+        "url": "https://www.theoi.com/Nymphe/NympheMinthe.html"
+      }
+    ]
+  },
+  {
+    "id": "moria",
+    "name": {
+      "en": "Moria",
+      "fr": "Moria"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1947806",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Moria (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Moria_(nymph)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Moria",
+        "url": "https://www.theoi.com/Nymphe/NympheMoria.html"
+      }
+    ]
+  },
+  {
+    "id": "myrtoessa",
+    "name": {
+      "en": "Myrtoessa",
+      "fr": "Myrtoessa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10592638",
+    "description": {
+      "en": "Arcadian nymph.",
+      "fr": "Fille d’Alphée dans la mythologie grecque."
+    },
+    "greek": "Μυρτώεσσα",
+    "parents": [
+      "alpheus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Myrtoessa",
+        "url": "https://en.wikipedia.org/wiki/Myrtoessa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Myrtoessa",
+        "url": "https://www.theoi.com/Nymphe/NympheMyrtoessa.html"
+      }
+    ]
+  },
+  {
+    "id": "nana",
+    "name": {
+      "en": "Nana",
+      "fr": "Nana"
+    },
+    "kind": "nymph",
+    "wikidata": "Q761106",
+    "description": {
+      "en": "Daughter of the Phrygian river-god Sangarius in Greek mythology.",
+      "fr": "Fille du dieu fleuve Sangarios."
+    },
+    "greek": "Νάνα",
+    "parents": [
+      "sangarius"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nana (Greek mythology)",
+        "url": "https://en.wikipedia.org/wiki/Nana_(Greek_mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nana (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Nana_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nana",
+        "url": "https://www.theoi.com/Nymphe/NympheNana.html"
+      }
+    ]
+  },
+  {
+    "id": "neaera-q1375640",
+    "name": {
+      "en": "Neaera",
+      "fr": "Néère"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1375640",
+    "description": {
+      "en": "Nymph in Greek mythology, loved by Helios.",
+      "fr": "Néréide."
+    },
+    "greek": "Νέαιρα",
+    "parents": [
+      "doris-q726279",
+      "nereus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Neaera (consort of Helios)",
+        "url": "https://en.wikipedia.org/wiki/Neaera_(consort_of_Helios)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Néère (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9%C3%A8re_(N%C3%A9r%C3%A9ide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Neaera (Neaira)",
+        "url": "https://www.theoi.com/Nymphe/NympheNeaira1.html"
+      }
+    ]
+  },
+  {
+    "id": "necile",
+    "name": {
+      "en": "Necile",
+      "fr": "Necile"
+    },
+    "kind": "nymph",
+    "wikidata": "Q28007307",
+    "description": {
+      "en": "Wood nymph who becomes the adoptive mother of Santa Claus in the 1902 novel The Life and Adventures of Santa Claus.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Necile",
+        "url": "https://en.wikipedia.org/wiki/Necile"
+      }
+    ]
+  },
+  {
+    "id": "nemea",
+    "name": {
+      "en": "Nemea",
+      "fr": "Némée (naïade)"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1977078",
+    "description": {
+      "en": "Naiad, mythical daughter of Asopus or Zeus.",
+      "fr": "Fille de Séléné et d’Asopos dans la mythologie grecque."
+    },
+    "greek": "Νεμέα",
+    "parents": [
+      "selene",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nemea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Nemea_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Némée (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9m%C3%A9e_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nemea",
+        "url": "https://www.theoi.com/Nymphe/NympheNemea.html"
+      }
+    ]
+  },
+  {
+    "id": "nephele-q624551",
+    "name": {
+      "en": "Nephele",
+      "fr": "Néphélé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q624551",
+    "description": {
+      "en": "Cloud goddess, wife of Athamas and mother of Phrixus and Helle.",
+      "fr": "Fille d’Océan dans la mythologie grecque."
+    },
+    "greek": "Νεφέλη",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nephele",
+        "url": "https://en.wikipedia.org/wiki/Nephele"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Néphélé (épouse d'Athamas)",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9ph%C3%A9l%C3%A9_(%C3%A9pouse_d'Athamas)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nephele",
+        "url": "https://www.theoi.com/Nymphe/NympheNephele2.html"
+      }
+    ]
+  },
+  {
+    "id": "nomia",
+    "name": {
+      "en": "Nomia",
+      "fr": "Nomia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3621995",
+    "description": {
+      "en": "Nymph of ancient Arcadia.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nomia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Nomia_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nomia",
+        "url": "https://www.theoi.com/Nymphe/NympheNomia.html"
+      }
+    ]
+  },
+  {
+    "id": "ocyrhoe-q3349027",
+    "name": {
+      "en": "Ocyrhoe",
+      "fr": "Ocyrhoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3349027",
+    "description": {
+      "en": "Mother, by Hippasus, of Hippomedon.",
+      "fr": "Fille de Sangarios dans la mythologie grecque."
+    },
+    "parents": [
+      "sangarius"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ocyrhoé (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Ocyrho%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ocyrhoe (Okyrhoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheOkyrhoe2.html"
+      }
+    ]
+  },
+  {
+    "id": "ocyrhoe-q6048797",
+    "name": {
+      "en": "Ocyrhoe",
+      "fr": "Ocyrhoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q6048797",
+    "description": {
+      "en": "Oceanid, Phasis’ mother.",
+      "fr": "Océanide."
+    },
+    "greek": "Ωκυρόη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ocyrhoé (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Ocyrho%C3%A9_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ocyrhoe (Okyrhoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheOkyrhoe3.html"
+      }
+    ]
+  },
+  {
+    "id": "oenoe",
+    "name": {
+      "en": "Oenoe",
+      "fr": "Œnoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q19828218",
+    "description": {
+      "en": "Nymph in mythology, wife of Thoas.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Œnoé (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/%C5%92no%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Oenoe (Oinoe)",
+        "url": "https://www.theoi.com/Nymphe/NympheOinoe.html"
+      }
+    ]
+  },
+  {
+    "id": "oenone",
+    "name": {
+      "en": "Oenone",
+      "fr": "Œnone"
+    },
+    "kind": "nymph",
+    "wikidata": "Q858671",
+    "description": {
+      "en": "Nymph of Greek mythology, wife of Paris.",
+      "fr": "Nymphe de la mythologie grecque, fille de Cébren."
+    },
+    "greek": "Οἰνώνη",
+    "parents": [
+      "cebren"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oenone",
+        "url": "https://en.wikipedia.org/wiki/Oenone"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Œnone",
+        "url": "https://fr.wikipedia.org/wiki/%C5%92none"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Oenone (Oinone)",
+        "url": "https://www.theoi.com/Nymphe/NympheOinone.html"
+      }
+    ]
+  },
+  {
+    "id": "oeroe",
+    "name": {
+      "en": "Oeroe",
+      "fr": "Oéroe"
+    },
+    "kind": "nymph",
+    "wikidata": "Q5837114",
+    "description": {
+      "en": "River goddess of Boeotia, daughter of Asopos.",
+      "fr": "Naïade et déesse de rivière en Béotie, fille d'Asopos."
+    },
+    "greek": "Ωερόη",
+    "parents": [
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Oéroe",
+        "url": "https://fr.wikipedia.org/wiki/O%C3%A9roe"
+      }
+    ]
+  },
+  {
+    "id": "orithyia-q12901309",
+    "name": {
+      "en": "Orithyia",
+      "fr": "Orithye"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12901309",
+    "description": {
+      "en": "Nereid of Greek mythology.",
+      "fr": "Néréide de la mythologie grecque."
+    },
+    "parents": [
+      "nereus",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Orithye (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/Orithye_(N%C3%A9r%C3%A9ide)"
+      }
+    ]
+  },
+  {
+    "id": "ornea",
+    "name": {
+      "en": "Ornea",
+      "fr": "Ornée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q6053186",
+    "description": {
+      "en": "Daughter of Asopus in Greek mythology.",
+      "fr": "Fille du dieu fleuve Asopos dans la mythologie grecque."
+    },
+    "greek": "Ορνέα",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ornea",
+        "url": "https://en.wikipedia.org/wiki/Ornea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ornée",
+        "url": "https://fr.wikipedia.org/wiki/Orn%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ornia",
+        "url": "https://www.theoi.com/Nymphe/NympheOrnea.html"
+      }
+    ]
+  },
+  {
+    "id": "orphne",
+    "name": {
+      "en": "Orphne",
+      "fr": "Orphné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1538275",
+    "description": {
+      "en": "Ancient Greek nymph.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Orphne",
+        "url": "https://en.wikipedia.org/wiki/Orphne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Orphné",
+        "url": "https://fr.wikipedia.org/wiki/Orphn%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "orseis",
+    "name": {
+      "en": "Orseis",
+      "fr": "Orséis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q979627",
+    "description": {
+      "en": "Water deity.",
+      "fr": "Naïade de Thessalie, et ancêtre mythique des Grecs."
+    },
+    "greek": "Ορσηίδα",
+    "parents": [
+      "oceanus",
+      "peneus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Orseis",
+        "url": "https://en.wikipedia.org/wiki/Orseis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Orséis",
+        "url": "https://fr.wikipedia.org/wiki/Ors%C3%A9is"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Orseis",
+        "url": "https://www.theoi.com/Nymphe/NympheOrseis.html"
+      }
+    ]
+  },
+  {
+    "id": "othreis",
+    "name": {
+      "en": "Othreis",
+      "fr": "Othréis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3357642",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Οθρήις",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Othreis",
+        "url": "https://en.wikipedia.org/wiki/Othreis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Othréis",
+        "url": "https://fr.wikipedia.org/wiki/Othr%C3%A9is"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Othreis",
+        "url": "https://www.theoi.com/Nymphe/NympheOthreis.html"
+      }
+    ]
+  },
+  {
+    "id": "pasithoe",
+    "name": {
+      "en": "Pasithoe",
+      "fr": "Pasithoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2859285",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pasithoe",
+        "url": "https://en.wikipedia.org/wiki/Pasithoe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pasithoé",
+        "url": "https://fr.wikipedia.org/wiki/Pasitho%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "pegasis",
+    "name": {
+      "en": "Pegasis",
+      "fr": "Pegasis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10622216",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pegasis",
+        "url": "https://en.wikipedia.org/wiki/Pegasis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pegasis",
+        "url": "https://www.theoi.com/Nymphe/NymphePegasis.html"
+      }
+    ]
+  },
+  {
+    "id": "peitho",
+    "name": {
+      "en": "Peitho",
+      "fr": "Péitho"
+    },
+    "kind": "nymph",
+    "wikidata": "Q611171",
+    "description": {
+      "en": "Personification of Persuasion or winning eloquence in Greek mythology.",
+      "fr": "Personnification de la Persuasion de la mythologie grecque, souvent vue comme une Océanide."
+    },
+    "greek": "ΠειΘω",
+    "parents": [
+      "oceanus",
+      "aphrodite",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Peitho",
+        "url": "https://en.wikipedia.org/wiki/Peitho"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Péitho",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9itho"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Peitho",
+        "url": "https://www.theoi.com/Daimon/Peitho.html"
+      }
+    ]
+  },
+  {
+    "id": "penelope-q3411841",
+    "name": {
+      "en": "Penelope",
+      "fr": "Pénélope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3411841",
+    "description": {
+      "en": "Dryad.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Πηνελόπη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Penelope (mother of Pan)",
+        "url": "https://en.wikipedia.org/wiki/Penelope_(mother_of_Pan)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pénélope (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9lope_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Penelope (Penelopeia)",
+        "url": "https://www.theoi.com/Nymphe/NymphePenelopeia.html"
+      }
+    ]
+  },
+  {
+    "id": "periboea-q3411899",
+    "name": {
+      "en": "Periboea",
+      "fr": "Péribée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3411899",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Péribée (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9rib%C3%A9e_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Periboea (Periboia)",
+        "url": "https://www.theoi.com/Nymphe/NymphePeriboia1.html"
+      }
+    ]
+  },
+  {
+    "id": "perse",
+    "name": {
+      "en": "Perse",
+      "fr": "Persé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1333108",
+    "description": {
+      "en": "Oceanid (one of the three thousand daughters of the Titans Oceanus and Tethys), and the wife of the Sun god, Helios.",
+      "fr": "Fille d’Océan dans la mythologie grecque."
+    },
+    "greek": "Πέρσηΐς",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Perse (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Perse_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Persé",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Perseis",
+        "url": "https://www.theoi.com/Nymphe/NymphePerseis.html"
+      }
+    ]
+  },
+  {
+    "id": "phaeno",
+    "name": {
+      "en": "Phaeno",
+      "fr": "Phaeno"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2495582",
+    "description": {
+      "en": "Oceanid in Greek mythology.",
+      "fr": "Fille d’Océan dans la mythologie grecque."
+    },
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phaeno (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Phaeno_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "phaethusa",
+    "name": {
+      "en": "Phaethusa",
+      "fr": "Phaéthuse"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1119537",
+    "description": {
+      "en": "Daughter of Helios and Neaera, in Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Hélios."
+    },
+    "greek": "Φαέθουσα",
+    "parents": [
+      "helios",
+      "klymene",
+      "neaera-q1375640"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phaethusa",
+        "url": "https://en.wikipedia.org/wiki/Phaethusa"
+      }
+    ]
+  },
+  {
+    "id": "philyra-q109314110",
+    "name": {
+      "en": "Philyra",
+      "fr": "Philyra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q109314110",
+    "description": {
+      "en": "Naïad daughter of river god Asopos.",
+      "fr": "Naïade et fille du dieu fleuve Asopos."
+    },
+    "greek": "Φιλύρα",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Philyra (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Philyra_(na%C3%AFade)"
+      }
+    ]
+  },
+  {
+    "id": "philyra-q398524",
+    "name": {
+      "en": "Philyra",
+      "fr": "Philyra"
+    },
+    "kind": "nymph",
+    "wikidata": "Q398524",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Φιλύρā",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Philyra (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Philyra_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Philyra (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Philyra_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Philyra (Philyre)",
+        "url": "https://www.theoi.com/Nymphe/NymphePhilyre.html"
+      }
+    ]
+  },
+  {
+    "id": "phoenissa",
+    "name": {
+      "en": "Phoenissa",
+      "fr": "Phénissa (naïade)"
+    },
+    "kind": "nymph",
+    "wikidata": "Q106808293",
+    "description": {
+      "en": "Daughter of Alpheus in Greek mythology.",
+      "fr": "Fille d’Alphée dans la mythologie grecque."
+    },
+    "greek": "Φοίνισσα",
+    "parents": [
+      "alpheus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phoenissa (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Phoenissa_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Phénissa (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Ph%C3%A9nissa_(na%C3%AFade)"
+      }
+    ]
+  },
+  {
+    "id": "pirene",
+    "name": {
+      "en": "Pirene",
+      "fr": "Pirène"
+    },
+    "kind": "nymph",
+    "wikidata": "Q4843985",
+    "description": {
+      "en": "Daughter of Metope and Asopus in Greek mythology.",
+      "fr": "Nymphe."
+    },
+    "greek": "Πειρήνη",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pirene (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Pirene_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pirène (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Pir%C3%A8ne_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Peirene",
+        "url": "https://www.theoi.com/Nymphe/NymphePeirene.html"
+      }
+    ]
+  },
+  {
+    "id": "pitane",
+    "name": {
+      "en": "Pitane",
+      "fr": "Pitané"
+    },
+    "kind": "nymph",
+    "wikidata": "Q85793450",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe de la mythologie grecque, éponyme de Pitane."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pitane (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Pitane_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pitane (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Pitane_(nymphe)"
+      }
+    ]
+  },
+  {
+    "id": "pitys",
+    "name": {
+      "en": "Pitys",
+      "fr": "Pitys"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3493090",
+    "description": {
+      "en": "In Greek mythology an Oread nymph who was pursued by Pan.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Πίτυς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pitys (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Pitys_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pitys (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Pitys_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pitys",
+        "url": "https://www.theoi.com/Nymphe/NymphePitys.html"
+      }
+    ]
+  },
+  {
+    "id": "plataea",
+    "name": {
+      "en": "Plataea",
+      "fr": "Platée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q6078094",
+    "description": {
+      "en": "Nymph, daughter of Asopos.",
+      "fr": "Nymphe, fille du dieu fleuve Asopos."
+    },
+    "greek": "Πλατεία",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Plataea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Plataea_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Platée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Plat%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Plataea (Plataia)",
+        "url": "https://www.theoi.com/Nymphe/NymphePlataia.html"
+      }
+    ]
+  },
+  {
+    "id": "pleione",
+    "name": {
+      "en": "Pleione",
+      "fr": "Pléione"
+    },
+    "kind": "nymph",
+    "wikidata": "Q463865",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Πληϊόνη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pleione (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Pleione_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pléioné",
+        "url": "https://fr.wikipedia.org/wiki/Pl%C3%A9ion%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pleione",
+        "url": "https://www.theoi.com/Nymphe/NymphePleione.html"
+      }
+    ]
+  },
+  {
+    "id": "plexaure-q105348967",
+    "name": {
+      "en": "Plexaure",
+      "fr": "Plexaure"
+    },
+    "kind": "nymph",
+    "wikidata": "Q105348967",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Plexaure",
+        "url": "https://fr.wikipedia.org/wiki/Plexaure"
+      }
+    ]
+  },
+  {
+    "id": "plouto",
+    "name": {
+      "en": "Plouto",
+      "fr": "Plouto"
+    },
+    "kind": "nymph",
+    "wikidata": "Q662968",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Πλουτώ",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pluto (Oceanid)",
+        "url": "https://en.wikipedia.org/wiki/Pluto_(Oceanid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Plouto (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Plouto_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pluto (Plouto)",
+        "url": "https://www.theoi.com/Nymphe/NymphePlouto.html"
+      }
+    ]
+  },
+  {
+    "id": "polyxo-q2103187",
+    "name": {
+      "en": "Polyxo",
+      "fr": "Polyxo"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2103187",
+    "description": {
+      "en": "Naiad, wife of Danaus.",
+      "fr": "Naïade, épouse de Danaos."
+    },
+    "greek": "Πολυξώ",
+    "parents": [
+      "nilus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polyxo (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Polyxo_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Polyxo",
+        "url": "https://www.theoi.com/Nymphe/NymphePolyxo.html"
+      }
+    ]
+  },
+  {
+    "id": "praxithea-q13058657",
+    "name": {
+      "en": "Praxithea",
+      "fr": "Praxithée"
+    },
+    "kind": "nymph",
+    "wikidata": "Q13058657",
+    "description": {
+      "en": "Naiad, spouse of Erichthonius of Athens.",
+      "fr": "Naïade de la mythologie grecque, épouse d'Érichthonios."
+    },
+    "greek": "Πραξιθέα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Praxithée (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Praxith%C3%A9e_(na%C3%AFade)"
+      }
+    ]
+  },
+  {
+    "id": "pronoia",
+    "name": {
+      "en": "Pronoia",
+      "fr": "Pronoia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3407456",
+    "description": {
+      "en": "Oceanid nymph.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pronoia (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Pronoia_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "prymno",
+    "name": {
+      "en": "Prymno",
+      "fr": "Prymno"
+    },
+    "kind": "nymph",
+    "wikidata": "Q910061",
+    "description": {
+      "en": "Onr of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Prymno",
+        "url": "https://en.wikipedia.org/wiki/Prymno"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Prymno",
+        "url": "https://fr.wikipedia.org/wiki/Prymno"
+      }
+    ]
+  },
+  {
+    "id": "psalacantha",
+    "name": {
+      "en": "Psalacantha",
+      "fr": "Psalacantha"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7253905",
+    "description": {
+      "en": "Mythical character enamored of Dionysos.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Psalacantha",
+        "url": "https://en.wikipedia.org/wiki/Psalacantha"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Psalacantha (Psalakantha)",
+        "url": "https://www.theoi.com/Nymphe/NymphePsalakantha.html"
+      }
+    ]
+  },
+  {
+    "id": "ptelea",
+    "name": {
+      "en": "Ptelea",
+      "fr": "Ptelea"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3410251",
+    "description": {
+      "en": "Ancient Greek mythological figure.",
+      "fr": "Hamadryade de la mythologie grecque, fille d'Hamadryas et d'Oxylos."
+    },
+    "parents": [
+      "hamadryas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ptéléa (hamadryade)",
+        "url": "https://fr.wikipedia.org/wiki/Pt%C3%A9l%C3%A9a_(hamadryade)"
+      }
+    ]
+  },
+  {
+    "id": "rhene",
+    "name": {
+      "en": "Rhene",
+      "fr": "Rhéné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7320391",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, mère de Médon."
+    },
+    "greek": "Ρήνη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Rhene (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Rhene_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Rhene",
+        "url": "https://www.theoi.com/Nymphe/NympheRhene.html"
+      }
+    ]
+  },
+  {
+    "id": "rhodos",
+    "name": {
+      "en": "Rhodos",
+      "fr": "Rhode"
+    },
+    "kind": "nymph",
+    "wikidata": "Q641286",
+    "description": {
+      "en": "Goddess of Rhodes in Greek mythology.",
+      "fr": "Déesse de Rhodes dans la mythologie grecque."
+    },
+    "greek": "Ρόδη",
+    "parents": [
+      "poseidon",
+      "oceanus",
+      "asopus",
+      "aphrodite",
+      "amphitrite",
+      "tethys",
+      "halie-q3611629"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Rhodos",
+        "url": "https://en.wikipedia.org/wiki/Rhodos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Rhodé",
+        "url": "https://fr.wikipedia.org/wiki/Rhod%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Rhode",
+        "url": "https://www.theoi.com/Nymphe/NympheRhode.html"
+      }
+    ]
+  },
+  {
+    "id": "salamis",
+    "name": {
+      "en": "Salamis",
+      "fr": "Salamis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2349443",
+    "description": {
+      "en": "Daughter of Asopus and Metope in Greek mythology.",
+      "fr": "Fille d’Asopos et de Métope dans la mythologie grecque."
+    },
+    "greek": "Σαλαμίς",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Salamis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Salamis_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Salamis (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Salamis_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Salamis",
+        "url": "https://www.theoi.com/Nymphe/NympheSalamis.html"
+      }
+    ]
+  },
+  {
+    "id": "salmacis",
+    "name": {
+      "en": "Salmacis",
+      "fr": "Salmacis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q828579",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Naïade."
+    },
+    "greek": "Σάλμακις , Salmakis",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Salmacis",
+        "url": "https://en.wikipedia.org/wiki/Salmacis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Salmacis",
+        "url": "https://fr.wikipedia.org/wiki/Salmacis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Salmacis (Salmacis)",
+        "url": "https://www.theoi.com/Nymphe/NympheSalmakis.html"
+      }
+    ]
+  },
+  {
+    "id": "samia",
+    "name": {
+      "en": "Samia",
+      "fr": "Samia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12884308",
+    "description": {
+      "en": "Daughter of Maeandrus, wife of Ancaeus in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, fille de Méandre."
+    },
+    "greek": "Σαμία",
+    "parents": [
+      "meander"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Samia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Samia_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Samia (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Samia_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Samia",
+        "url": "https://www.theoi.com/Nymphe/NympheSamia.html"
+      }
+    ]
+  },
+  {
+    "id": "satyrion",
+    "name": {
+      "en": "Satyrion",
+      "fr": "Satyrion"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7426963",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Σατυρίον",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Satyrion",
+        "url": "https://en.wikipedia.org/wiki/Satyrion"
+      }
+    ]
+  },
+  {
+    "id": "semystra",
+    "name": {
+      "en": "Semystra",
+      "fr": "Sémystre"
+    },
+    "kind": "nymph",
+    "wikidata": "Q96405273",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Semystra (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Semystra_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sémystra",
+        "url": "https://fr.wikipedia.org/wiki/S%C3%A9mystra"
+      }
+    ]
+  },
+  {
+    "id": "sinope",
+    "name": {
+      "en": "Sinope",
+      "fr": "Sinopé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1539539",
+    "description": {
+      "en": "Daughter of Metope and Asopus in Greek mythology.",
+      "fr": "Fille de Métope et d’Asopos dans la mythologie grecque."
+    },
+    "greek": "Σινώπη , Sinōpē",
+    "parents": [
+      "metope",
+      "asopus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sinope (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Sinope_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sinopé (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Sinop%C3%A9_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Sinope",
+        "url": "https://www.theoi.com/Nymphe/NympheSinope.html"
+      }
+    ]
+  },
+  {
+    "id": "smilax",
+    "name": {
+      "en": "Smilax",
+      "fr": "Smilax"
+    },
+    "kind": "nymph",
+    "wikidata": "Q9338656",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Smilax (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Smilax_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "sparta",
+    "name": {
+      "en": "Sparta",
+      "fr": "Sparta"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2296243",
+    "description": {
+      "en": "Daughter of Eurotas, in Greek mythology.",
+      "fr": "Fille d’Eurotas dans la mythologie grecque."
+    },
+    "greek": "Σπάρτα",
+    "parents": [
+      "eurotas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sparta (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Sparta_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sparta (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Sparta_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Sparta (Sparte)",
+        "url": "https://www.theoi.com/Nymphe/NympheSparta.html"
+      }
+    ]
+  },
+  {
+    "id": "sterope-q748963",
+    "name": {
+      "en": "Sterope",
+      "fr": "Astérope"
+    },
+    "kind": "nymph",
+    "wikidata": "Q748963",
+    "description": {
+      "en": "One of the Pleiades in Greek mythology.",
+      "fr": "Pléiade."
+    },
+    "greek": "Στερόπη",
+    "parents": [
+      "pleione",
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sterope (Pleiad)",
+        "url": "https://en.wikipedia.org/wiki/Sterope_(Pleiad)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astérope (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/Ast%C3%A9rope_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Sterope",
+        "url": "https://www.theoi.com/Nymphe/NympheSterope.html"
+      }
+    ]
+  },
+  {
+    "id": "stilbe",
+    "name": {
+      "en": "Stilbe",
+      "fr": "Stilbe"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1576404",
+    "description": {
+      "en": "Child of Creusa and Peneus in Greek mythology.",
+      "fr": "Figure mythologique."
+    },
+    "greek": "Στίλβη",
+    "parents": [
+      "creusa-q1232622",
+      "peneus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Stilbe",
+        "url": "https://en.wikipedia.org/wiki/Stilbe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Stilbé",
+        "url": "https://fr.wikipedia.org/wiki/Stilb%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Stilbe",
+        "url": "https://www.theoi.com/Nymphe/NympheStilbe.html"
+      }
+    ]
+  },
+  {
+    "id": "strophia",
+    "name": {
+      "en": "Strophia",
+      "fr": "Strophia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3661549",
+    "description": {
+      "en": "Naiad in Greek mythology.",
+      "fr": "Fille d’Ismène dans la mythologie grecque."
+    },
+    "parents": [
+      "ismenus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Strophia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Strophia_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Strophie",
+        "url": "https://fr.wikipedia.org/wiki/Strophie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Strophia",
+        "url": "https://www.theoi.com/Nymphe/NympheStrophia.html"
+      }
+    ]
+  },
+  {
+    "id": "styx",
+    "name": {
+      "en": "Styx",
+      "fr": "Styx"
+    },
+    "kind": "nymph",
+    "wikidata": "Q542758",
+    "description": {
+      "en": "Greek divinity of the river Styx.",
+      "fr": "Fille de Téthys et d’Océan dans la mythologie grecque."
+    },
+    "greek": "Στύξ",
+    "parents": [
+      "tethys",
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Styx",
+        "url": "https://en.wikipedia.org/wiki/Styx"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Styx",
+        "url": "https://fr.wikipedia.org/wiki/Styx"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Styx",
+        "url": "https://www.theoi.com/Khthonios/PotamosStyx.html"
+      }
+    ]
+  },
+  {
+    "id": "syllis",
+    "name": {
+      "en": "Syllis",
+      "fr": "Syllis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q12777065",
+    "description": {
+      "en": "Nymph, mother of Zeuxippus with Apollo.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Συλλίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Syllis (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Syllis_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Syllis",
+        "url": "https://www.theoi.com/Nymphe/NympheSyllis.html"
+      }
+    ]
+  },
+  {
+    "id": "syrinx",
+    "name": {
+      "en": "Syrinx",
+      "fr": "Syrinx"
+    },
+    "kind": "nymph",
+    "wikidata": "Q846129",
+    "description": {
+      "en": "Nymph transformed into hollow water reeds in Greek mythology.",
+      "fr": "Nymphe transformée en roseaux dans la mythologie grecque."
+    },
+    "greek": "Σύριγξ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Syrinx",
+        "url": "https://en.wikipedia.org/wiki/Syrinx"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Syrinx (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Syrinx_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Syrinx",
+        "url": "https://www.theoi.com/Nymphe/NympheSyrinx.html"
+      }
+    ]
+  },
+  {
+    "id": "taygete",
+    "name": {
+      "en": "Taygete",
+      "fr": "Taygète"
+    },
+    "kind": "nymph",
+    "wikidata": "Q112001",
+    "description": {
+      "en": "One of the Pleiades in Greek mythology.",
+      "fr": "Fille de Pléione et d’Atlas dans la mythologie grecque."
+    },
+    "greek": "Ταυγέτη",
+    "parents": [
+      "pleione",
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Taygete",
+        "url": "https://en.wikipedia.org/wiki/Taygete"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Taygète (Pléiade)",
+        "url": "https://fr.wikipedia.org/wiki/Tayg%C3%A8te_(Pl%C3%A9iade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Taygete",
+        "url": "https://www.theoi.com/Nymphe/NympheTaygete.html"
+      }
+    ]
+  },
+  {
+    "id": "teledice",
+    "name": {
+      "en": "Teledice",
+      "fr": "Télédice"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3564956",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Τηλεδίκη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Teledice",
+        "url": "https://en.wikipedia.org/wiki/Teledice"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Teledice (Teledike)",
+        "url": "https://www.theoi.com/Nymphe/NympheTeledike.html"
+      }
+    ]
+  },
+  {
+    "id": "telesto",
+    "name": {
+      "en": "Telesto",
+      "fr": "Télesto"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1267349",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Τελεστώ",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Telesto (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Telesto_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "thaleia",
+    "name": {
+      "en": "Thaleia",
+      "fr": "Thalie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1241338",
+    "description": {
+      "en": "Nereid of Greek mythology.",
+      "fr": "Néréide de la mythologie grecque."
+    },
+    "greek": "Θάλεια",
+    "parents": [
+      "nereus",
+      "doris-q726279"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thalia (Nereid)",
+        "url": "https://en.wikipedia.org/wiki/Thalia_(Nereid)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thalie (Néréide)",
+        "url": "https://fr.wikipedia.org/wiki/Thalie_(N%C3%A9r%C3%A9ide)"
+      }
+    ]
+  },
+  {
+    "id": "thalia-q3086495",
+    "name": {
+      "en": "Thalia",
+      "fr": "Thalie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q3086495",
+    "description": {
+      "en": "Nymph, daughter of Hephaestus.",
+      "fr": "Nymphe de la mythologie grecque, fille d'Héphaïstos."
+    },
+    "greek": "Θάλεια",
+    "parents": [
+      "hephaestus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thalia (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Thalia_(nymph)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thalie (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Thalie_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thaleia",
+        "url": "https://www.theoi.com/Nymphe/NympheThaleia.html"
+      }
+    ]
+  },
+  {
+    "id": "thelpusa",
+    "name": {
+      "en": "Thelpusa",
+      "fr": "Thelpusa (naïade)"
+    },
+    "kind": "nymph",
+    "wikidata": "Q1702894",
+    "description": {
+      "en": "Nymph, daughter of Ladon in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thelpusa (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Thelpusa_(na%C3%AFade)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thelpusa (Thelpousa)",
+        "url": "https://www.theoi.com/Nymphe/NympheThelpousa.html"
+      }
+    ]
+  },
+  {
+    "id": "thespia",
+    "name": {
+      "en": "Thespia",
+      "fr": "Thespia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q6143496",
+    "description": {
+      "en": "Daughter of Asopus in Greek mythology.",
+      "fr": "Fille d'Asope dans la mythologie grecque."
+    },
+    "greek": "Θέσπια",
+    "parents": [
+      "asopus",
+      "metope"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thespia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Thespia_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thespia",
+        "url": "https://fr.wikipedia.org/wiki/Thespia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thespia (Thespeia)",
+        "url": "https://www.theoi.com/Nymphe/NympheThespia.html"
+      }
+    ]
+  },
+  {
+    "id": "thisbe",
+    "name": {
+      "en": "Thisbe",
+      "fr": "Thisbé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10696861",
+    "description": {
+      "en": "Daughter of Termessus in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Θίσβη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thisbe (nymph)",
+        "url": "https://en.wikipedia.org/wiki/Thisbe_(nymph)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thisbe",
+        "url": "https://www.theoi.com/Nymphe/NympheThisbe.html"
+      }
+    ]
+  },
+  {
+    "id": "thoe-q2163700",
+    "name": {
+      "en": "Thoe",
+      "fr": "Thoé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2163700",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Une des Océanides."
+    },
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thoé (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Tho%C3%A9_(Oc%C3%A9anide)"
+      }
+    ]
+  },
+  {
+    "id": "thoosa",
+    "name": {
+      "en": "Thoosa",
+      "fr": "Thoosa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q843514",
+    "description": {
+      "en": "Water deity.",
+      "fr": "Fille de Phorcys et de Céto dans la mythologie grecque."
+    },
+    "greek": "Θόωσα",
+    "parents": [
+      "phorcys-q200382",
+      "ceto-q209489"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thoosa",
+        "url": "https://en.wikipedia.org/wiki/Thoosa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thoôsa",
+        "url": "https://fr.wikipedia.org/wiki/Tho%C3%B4sa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thoosa",
+        "url": "https://www.theoi.com/Nymphe/NympheThoosa.html"
+      }
+    ]
+  },
+  {
+    "id": "thrace",
+    "name": {
+      "en": "Thrace",
+      "fr": "Thracé"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7797097",
+    "description": {
+      "en": "Daughter of Oceanus in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque, fille d'Océan."
+    },
+    "greek": "Θράκη",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thrace (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Thrace_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thrace (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Thrace_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "thrassa",
+    "name": {
+      "en": "Thrassa",
+      "fr": "Thrassa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q764932",
+    "description": {
+      "en": "Daughter of Ares in Greek mythology.",
+      "fr": "Fille d’Arès dans la mythologie grecque."
+    },
+    "greek": "Θράσσα",
+    "parents": [
+      "ares"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thrassa",
+        "url": "https://en.wikipedia.org/wiki/Thrassa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thrassa",
+        "url": "https://www.theoi.com/Nymphe/NympheThrassa.html"
+      }
+    ]
+  },
+  {
+    "id": "thronia",
+    "name": {
+      "en": "Thronia",
+      "fr": "Thronia (mère d'Abdère)"
+    },
+    "kind": "nymph",
+    "wikidata": "Q135921774",
+    "description": {
+      "en": "Mother of Abderus.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thronia (mère d'Abdère)",
+        "url": "https://fr.wikipedia.org/wiki/Thronia_(m%C3%A8re_d'Abd%C3%A8re)"
+      }
+    ]
+  },
+  {
+    "id": "thyia-q949266",
+    "name": {
+      "en": "Thyia",
+      "fr": "Thyia"
+    },
+    "kind": "nymph",
+    "wikidata": "Q949266",
+    "description": {
+      "en": "Water deity.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Θυία",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thyia (naiad)",
+        "url": "https://en.wikipedia.org/wiki/Thyia_(naiad)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thyia",
+        "url": "https://www.theoi.com/Nymphe/NympheThyia.html"
+      }
+    ]
+  },
+  {
+    "id": "thysa",
+    "name": {
+      "en": "Thysa",
+      "fr": "Thysa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q126924584",
+    "description": {
+      "en": "Rustic god, nymph (Nymphe).",
+      "fr": "Fille de Dionysos dans la mythologie grecque."
+    },
+    "parents": [
+      "dionysus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thysa",
+        "url": "https://fr.wikipedia.org/wiki/Thysa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thysa",
+        "url": "https://www.theoi.com/Nymphe/NympheThysa.html"
+      }
+    ]
+  },
+  {
+    "id": "tiasa",
+    "name": {
+      "en": "Tiasa",
+      "fr": "Tiasa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q7800294",
+    "description": {
+      "en": "Personification of Tiasa river in Laconia.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tiasa",
+        "url": "https://en.wikipedia.org/wiki/Tiasa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tiasa",
+        "url": "https://www.theoi.com/Nymphe/NympheTiasa.html"
+      }
+    ]
+  },
+  {
+    "id": "tithorea",
+    "name": {
+      "en": "Tithorea",
+      "fr": "Tithoréa"
+    },
+    "kind": "nymph",
+    "wikidata": "Q21616165",
+    "description": {
+      "en": "Nymph for whom Tithorea polis named.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tithorea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Tithorea_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tithorea",
+        "url": "https://www.theoi.com/Nymphe/NympheTithorea.html"
+      }
+    ]
+  },
+  {
+    "id": "tricca",
+    "name": {
+      "en": "Tricca",
+      "fr": "Tricca"
+    },
+    "kind": "nymph",
+    "wikidata": "Q13553691",
+    "description": {
+      "en": "Daughter of Peneus in Greek mythology.",
+      "fr": "Fille de Pénée dans la mythologie grecque."
+    },
+    "greek": "Τρίκκη",
+    "parents": [
+      "peneus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tricca (naïade)",
+        "url": "https://fr.wikipedia.org/wiki/Tricca_(na%C3%AFade)"
+      }
+    ]
+  },
+  {
+    "id": "tritonis",
+    "name": {
+      "en": "Tritonis",
+      "fr": "Tritonis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q10384895",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Nymphe du lac Triton dans la mythologie grecque."
+    },
+    "greek": "Τριτωνίς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tritonis (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Tritonis_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tritonis",
+        "url": "https://www.theoi.com/Nymphe/NympheTritonis.html"
+      }
+    ]
+  },
+  {
+    "id": "tyche",
+    "name": {
+      "en": "Tyche",
+      "fr": "Tyché"
+    },
+    "kind": "nymph",
+    "wikidata": "Q213440",
+    "description": {
+      "en": "Greek goddess of fortune.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Τύχη",
+    "parents": [
+      "zeus",
+      "hermes",
+      "oceanus",
+      "aphrodite",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tyche",
+        "url": "https://en.wikipedia.org/wiki/Tyche"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tyché",
+        "url": "https://fr.wikipedia.org/wiki/Tych%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tyche (Tykhe)",
+        "url": "https://www.theoi.com/Daimon/Tykhe.html"
+      }
+    ]
+  },
+  {
+    "id": "xanthe",
+    "name": {
+      "en": "Xanthe",
+      "fr": "Xanthe"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2597703",
+    "description": {
+      "en": "One of the Oceanids.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Ξάνθη (μυθολογία)",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Xanthé",
+        "url": "https://fr.wikipedia.org/wiki/Xanth%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "zeuxo",
+    "name": {
+      "en": "Zeuxo",
+      "fr": "Zeuxo"
+    },
+    "kind": "nymph",
+    "wikidata": "Q197039",
+    "description": {
+      "en": "Oceanid of Greek mythology.",
+      "fr": "Océanide de la mythologie grecque."
+    },
+    "greek": "Ζευξώ",
+    "parents": [
+      "oceanus",
+      "tethys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Zeuxo (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Zeuxo_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Zeuxo",
+        "url": "https://fr.wikipedia.org/wiki/Zeuxo"
+      }
+    ]
+  }
+]

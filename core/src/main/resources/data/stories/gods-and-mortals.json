@@ -1,0 +1,570 @@
+[
+  {
+    "id": "abduction-of-persephone",
+    "title": {
+      "en": "The abduction of Persephone",
+      "fr": "L’enlèvement de Perséphone"
+    },
+    "summary": {
+      "en": "Persephone, the daughter of Demeter, was gathering flowers in a meadow with the daughters of Ocean. To lure her, Gaia — by the will of Zeus — made a wondrous narcissus bloom. As the girl reached out for it, the earth gaped open and Hades, lord of the dead, sprang out on his golden chariot and carried her off, crying out, to his kingdom below.\n\nFor nine days Demeter wandered the earth with burning torches in her hands, without eating or bathing. On the tenth, Hecate came to her, and Helios, who sees everything, told her the truth: Hades had taken her daughter with the consent of Zeus. In her grief and anger the goddess left Olympus and wandered among men, disguised as an old woman; at Eleusis she was taken in by the king's family, and there her worship was founded.\n\nThen Demeter stopped the seeds from growing. For a whole year nothing grew, and mankind would have died of hunger — and the gods lost their offerings — had Zeus not sent Hermes to bring Persephone back. But before letting her go, Hades had given her a pomegranate seed to eat, and whoever has tasted the food of the dead must return to them. Since then Persephone spends part of the year below with her husband — a third in the Hymn, half in Ovid — and the rest with her mother: when she comes back up, the earth bursts into flower.",
+      "fr": "Perséphone, la fille de Déméter, cueillait des fleurs dans une prairie avec les filles d’Océan. Pour l’attirer, Gaïa — selon la volonté de Zeus — fit éclore un narcisse merveilleux. Comme la jeune fille tendait la main vers lui, la terre s’ouvrit et Hadès, le maître des morts, surgit sur son char d’or et l’emporta, criant, vers son royaume souterrain.\n\nNeuf jours durant, Déméter erra sur la terre, des torches enflammées dans les mains, sans manger ni se baigner. Le dixième, Hécate vint à elle, et Hélios, qui voit tout, lui révéla la vérité : Hadès avait pris sa fille avec l’accord de Zeus. Dans sa douleur et sa colère, la déesse quitta l’Olympe et erra parmi les hommes sous les traits d’une vieille femme ; à Éleusis, elle fut accueillie par la famille du roi, et là fut fondé son culte.\n\nAlors Déméter empêcha les semences de germer. Une année entière, rien ne poussa, et l’humanité serait morte de faim — et les dieux auraient perdu leurs offrandes — si Zeus n’avait envoyé Hermès ramener Perséphone. Mais avant de la laisser partir, Hadès lui avait fait manger un pépin de grenade, et qui a goûté la nourriture des morts doit leur revenir. Depuis, Perséphone passe une partie de l’année sous terre avec son époux — un tiers dans l’Hymne, la moitié chez Ovide — et le reste auprès de sa mère : quand elle remonte, la terre se couvre de fleurs."
+    },
+    "characters": [
+      "persephone",
+      "hades",
+      "demeter",
+      "zeus",
+      "hecate",
+      "helios",
+      "hermes",
+      "gaia"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homeric Hymns",
+          "fr": "Hymnes homériques"
+        },
+        "work": {
+          "en": "Hymn to Demeter",
+          "fr": "Hymne à Déméter"
+        },
+        "passage": "2",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomericHymns1.html",
+          "fr": "https://fr.wikisource.org/wiki/Hymnes_hom%C3%A9riques/%C3%80_D%C3%A8m%C3%A8t%C3%A8r"
+        }
+      },
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "5.341–571",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses5.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_5"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Rape of Persephone",
+        "url": "https://en.wikipedia.org/wiki/Rape_of_Persephone"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Rapt de Perséphone",
+        "url": "https://fr.wikipedia.org/wiki/Rapt_de_Pers%C3%A9phone"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Persephone",
+        "url": "https://www.theoi.com/Khthonios/Persephone.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Persephone",
+        "url": "https://www.worldhistory.org/Persephone/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Perséphone",
+        "url": "https://mythologica.fr/grec/persephone.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Hades and Persephone - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=zLAYGZeVTPQ"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Hadès et Perséphone: le Mythe des Saisons - Mythologie grecque en BD - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=qlQs6HFkLVA"
+      }
+    ],
+    "related": [
+      "orpheus-and-eurydice"
+    ]
+  },
+  {
+    "id": "europa-and-the-bull",
+    "title": {
+      "en": "Europa and the bull",
+      "fr": "Europe et le taureau"
+    },
+    "summary": {
+      "en": "Zeus fell in love with Europa, the daughter of the king of Phoenicia. He sent Hermes to drive the royal herds down to the shore where the princess played with her companions, then mingled with the cattle in the shape of a bull — a magnificent white bull with small, gleaming horns and a gentle look.\n\nEuropa was at first afraid to touch him, then fed him flowers, stroked his chest and garlanded his horns, and finally dared to sit on his back. Little by little the bull moved down to the water, then walked into the waves and swam out to sea. Terrified, the princess clung to one horn with her right hand, her robe fluttering in the wind, as the shore vanished behind her.\n\nThe bull carried her to Crete, where Zeus took back his own shape. Europa bore him three sons: Minos, who became king of Crete, Rhadamanthys and Sarpedon. Her brothers, sent by their father to find her, never came back — one of them, Cadmus, founded Thebes instead. And the continent took her name.",
+      "fr": "Zeus s’éprit d’Europe, la fille du roi de Phénicie. Il envoya Hermès pousser les troupeaux royaux vers le rivage où la princesse jouait avec ses compagnes, puis se mêla au bétail sous la forme d’un taureau — un magnifique taureau blanc aux petites cornes luisantes et au regard paisible.\n\nEurope eut d’abord peur de le toucher, puis lui donna des fleurs, caressa son poitrail et couronna ses cornes de guirlandes, et osa enfin s’asseoir sur son dos. Peu à peu, le taureau descendit vers l’eau, puis entra dans les vagues et gagna le large. Terrifiée, la princesse s’agrippait d’une main à une corne, sa robe flottant au vent, tandis que le rivage disparaissait derrière elle.\n\nLe taureau l’emporta jusqu’en Crète, où Zeus reprit sa forme. Europe lui donna trois fils : Minos, qui devint roi de Crète, Rhadamanthe et Sarpédon. Ses frères, envoyés par leur père à sa recherche, ne revinrent jamais — l’un d’eux, Cadmos, fonda Thèbes à la place. Et le continent prit son nom."
+    },
+    "characters": [
+      "europa",
+      "zeus",
+      "hermes",
+      "minos"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "2.833–875",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses2.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_2"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.1.1",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Europa (consort of Zeus)",
+        "url": "https://en.wikipedia.org/wiki/Europa_(consort_of_Zeus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Europe (fille d'Agénor)",
+        "url": "https://fr.wikipedia.org/wiki/Europe_(fille_d'Ag%C3%A9nor)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Europa",
+        "url": "https://www.worldhistory.org/Europa/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Europe",
+        "url": "https://mythologica.fr/grec/europe.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Europa and Zeus: The Abduction of Europa - Greek Mythology Stories - See U in History",
+        "url": "https://www.youtube.com/watch?v=BFyT2dH6QIY"
+      }
+    ],
+    "related": [
+      "theseus-and-the-minotaur"
+    ]
+  },
+  {
+    "id": "apollo-and-daphne",
+    "title": {
+      "en": "Apollo and Daphne",
+      "fr": "Apollon et Daphné"
+    },
+    "summary": {
+      "en": "Proud of having just killed the serpent Python with his arrows, Apollo mocked the young Cupid — Eros — for playing with a bow that suited only a warrior. Stung, Cupid flew up to the top of Mount Parnassus and drew two arrows from his quiver: a golden one, sharp-pointed, that kindles love, and a blunt one tipped with lead, that drives love away. He shot the first into Apollo's heart and the second into Daphne, the daughter of the river god Peneus.\n\nAt once Apollo burned with love, while Daphne fled the very word. A huntress devoted to Diana, she had begged her father to let her remain unmarried like the goddess. Apollo pursued her through the woods, pleading and praising himself as he ran — he, the god of Delphi, of music and of medicine, who could not heal his own wound.\n\nLove lent him wings; the nymph's strength was failing. Reaching her father's waters, she cried out to Peneus to destroy the beauty that had brought her misfortune. Her limbs grew heavy, bark closed over her breast, her hair turned to leaves, her arms to branches: she had become a laurel. Apollo embraced the tree and felt her heart still beating under the bark. \"Since you cannot be my wife,\" he said, \"you shall be my tree\": the laurel crowns the victors and the poets, and its leaves never wither.",
+      "fr": "Fier d’avoir tué de ses flèches le serpent Python, Apollon se moqua du jeune Cupidon — Éros — qui jouait avec un arc digne seulement d’un guerrier. Piqué au vif, Cupidon s’envola au sommet du Parnasse et tira de son carquois deux flèches : l’une d’or, à la pointe acérée, qui fait naître l’amour, l’autre émoussée, à la pointe de plomb, qui le chasse. Il planta la première dans le cœur d’Apollon et la seconde dans celui de Daphné, la fille du dieu-fleuve Pénée.\n\nAussitôt Apollon brûla d’amour, tandis que Daphné fuyait jusqu’au nom même de l’amour. Chasseresse vouée à Diane, elle avait supplié son père de la laisser, comme la déesse, sans époux. Apollon la poursuivit à travers les bois, l’implorant et se vantant tout en courant — lui, le dieu de Delphes, de la musique et de la médecine, qui ne pouvait guérir sa propre blessure.\n\nL’amour lui donnait des ailes ; les forces de la nymphe s’épuisaient. Parvenue aux eaux de son père, elle supplia Pénée de détruire cette beauté qui avait causé son malheur. Ses membres s’alourdirent, une écorce enserra sa poitrine, ses cheveux devinrent feuillage, ses bras rameaux : elle était devenue laurier. Apollon enlaça l’arbre et sentit son cœur battre encore sous l’écorce. « Puisque tu ne peux être mon épouse, dit-il, tu seras mon arbre » : le laurier couronne les vainqueurs et les poètes, et son feuillage ne se flétrit jamais."
+    },
+    "characters": [
+      "apollo",
+      "daphne",
+      "eros",
+      "peneus",
+      "artemis"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "1.452–567",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses1.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_1"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Apollo and Daphne",
+        "url": "https://en.wikipedia.org/wiki/Apollo_and_Daphne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Daphné (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Daphn%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Daphne",
+        "url": "https://www.theoi.com/Nymphe/NympheDaphne.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Daphné",
+        "url": "https://mythologica.fr/grec/daphne.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Apollo and Daphne - Greek Mythology - See U in History",
+        "url": "https://www.youtube.com/watch?v=0yK7x9ju1ZU"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Daphné et Apollon - Amour non partagé - Mythologie Grecque - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=AudarwFEGg4"
+      }
+    ]
+  },
+  {
+    "id": "echo-and-narcissus",
+    "title": {
+      "en": "Echo and Narcissus",
+      "fr": "Écho et Narcisse"
+    },
+    "summary": {
+      "en": "When Narcissus was born, son of the river Cephisus and the nymph Liriope, the seer Tiresias foretold that he would live to old age \"if he never knows himself\". At sixteen he was so beautiful that young men and girls alike desired him, but in his pride he spurned them all.\n\nThe nymph Echo saw him and fell in love. Once she had been talkative, but Juno had punished her for holding the goddess back with long stories while the nymphs who had been with Jupiter slipped away: since then she could only repeat the last words she heard. She followed Narcissus without being able to speak first, and when at last she came out of the woods to throw her arms around him, he fled, crying that he would rather die than be hers. Ashamed, Echo hid in caves and wasted away until only her bones and her voice were left; the bones became stone, and the voice still answers in the mountains.\n\nOne of the youths Narcissus had scorned prayed that he too might love without obtaining, and Nemesis heard the prayer. Bending over a clear spring to drink, Narcissus fell in love with the reflection he saw there. He wept, reached out his arms, understood at last that he loved himself, and could not tear himself away. He wasted away at the water's edge; even in the underworld he still gazes at himself in the waters of the Styx. Where his body had lain, the nymphs found only a flower, yellow at the heart and ringed with white petals: the narcissus.",
+      "fr": "À la naissance de Narcisse, fils du fleuve Céphise et de la nymphe Liriope, le devin Tirésias prédit qu’il vivrait jusqu’à la vieillesse « s’il ne se connaît pas ». À seize ans, il était si beau que jeunes gens et jeunes filles le désiraient, mais dans son orgueil il les repoussait tous.\n\nLa nymphe Écho le vit et s’éprit de lui. Autrefois bavarde, elle avait été punie par Junon pour avoir retenu la déesse par de longs récits pendant que s’enfuyaient les nymphes qui avaient été avec Jupiter : depuis, elle ne pouvait que répéter les derniers mots qu’elle entendait. Elle suivit Narcisse sans pouvoir lui parler la première, et quand enfin elle sortit des bois pour se jeter à son cou, il s’enfuit en criant qu’il mourrait plutôt que d’être à elle. Honteuse, Écho se cacha dans les grottes et dépérit jusqu’à ce qu’il ne reste d’elle que ses os et sa voix ; les os devinrent pierre, et la voix répond encore dans les montagnes.\n\nL’un des jeunes gens dédaignés par Narcisse pria pour qu’il aime à son tour sans rien obtenir, et Némésis entendit sa prière. Penché sur une source limpide pour y boire, Narcisse s’éprit du reflet qu’il y voyait. Il pleura, tendit les bras, comprit enfin qu’il s’aimait lui-même, et ne put s’arracher à son image. Il dépérit au bord de l’eau ; aux Enfers encore, il se contemple dans les eaux du Styx. Là où son corps avait reposé, les nymphes ne trouvèrent qu’une fleur, jaune au cœur et cerclée de pétales blancs : le narcisse."
+    },
+    "characters": [
+      "narcissus",
+      "echo",
+      "hera",
+      "nemesis",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "3.339–510",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses3.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_3"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Narcissus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Narcissus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Narcisse (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Narcisse_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Narcissus (Narkissos)",
+        "url": "https://www.theoi.com/Heros/Narkissos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Narcissus",
+        "url": "https://www.worldhistory.org/Narcissus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Narcisse",
+        "url": "https://mythologica.fr/grec/narcisse.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Narcissus and Echo - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=c5N8hRyHYB0"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Écho et Narcisse: L'Histoire de l'homme qui est Tombé Amoureux de lui-même -  Histoire et Mythologie",
+        "url": "https://www.youtube.com/watch?v=FGc1dCjaLmI"
+      }
+    ]
+  },
+  {
+    "id": "phaethon",
+    "title": {
+      "en": "Phaethon",
+      "fr": "Phaéton"
+    },
+    "summary": {
+      "en": "Phaethon was the son of the Sun and of the Oceanid Clymene. When a companion mocked him for believing such a tale, he set out to find his father at the far end of the east. In his palace of gold and ivory, the Sun received him, called him his son and, to dispel his doubts, swore by the river Styx to grant him whatever he asked. Phaethon asked to drive the chariot of the Sun for one day.\n\nThe god at once regretted his oath. Not even Jupiter, he said, could hold the fire-breathing horses on that steep road. But an oath sworn by the Styx cannot be taken back, and the boy would not give way. At dawn Phaethon set off; the horses felt how light their load was and bolted from the track. Terrified, the young driver dropped the reins: the chariot climbed so high that it scorched the stars, then plunged so low that it set the earth ablaze. Mountains burned, rivers dried up, the Libyan sands became a desert, and the Ethiopians, Ovid says, took on their dark skin.\n\nThe Earth herself cried out to Jupiter to save the world. The king of the gods hurled his thunderbolt: Phaethon fell like a shooting star into the river Eridanus, where the nymphs buried him. His sisters, the Heliades, wept over his tomb until they were changed into poplars, and their tears, hardened by the sun, became amber.",
+      "fr": "Phaéton était le fils du Soleil et de l’Océanide Clymène. Comme un camarade se moquait de lui parce qu’il croyait à cette histoire, il partit trouver son père aux confins de l’Orient. Dans son palais d’or et d’ivoire, le Soleil l’accueillit, l’appela son fils et, pour dissiper ses doutes, jura par le Styx de lui accorder ce qu’il demanderait. Phaéton demanda à conduire le char du Soleil pendant un jour.\n\nLe dieu regretta aussitôt son serment. Pas même Jupiter, dit-il, ne saurait tenir sur cette route escarpée les chevaux qui soufflent le feu. Mais un serment prononcé par le Styx ne se reprend pas, et l’enfant ne céda pas. À l’aube, Phaéton partit ; les chevaux sentirent combien leur charge était légère et quittèrent la route. Terrifié, le jeune cocher lâcha les rênes : le char monta si haut qu’il brûla les étoiles, puis plongea si bas qu’il embrasa la terre. Les montagnes brûlèrent, les fleuves s’asséchèrent, les sables de Libye devinrent désert, et les Éthiopiens, dit Ovide, prirent leur peau sombre.\n\nLa Terre elle-même implora Jupiter de sauver le monde. Le roi des dieux lança sa foudre : Phaéton tomba comme une étoile filante dans le fleuve Éridan, où les nymphes l’ensevelirent. Ses sœurs, les Héliades, pleurèrent sur sa tombe jusqu’à être changées en peupliers, et leurs larmes, durcies au soleil, devinrent l’ambre."
+    },
+    "characters": [
+      "phaethon",
+      "helios",
+      "clymene",
+      "zeus",
+      "gaia"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "1.750–2.400",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses2.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_2"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phaethon",
+        "url": "https://en.wikipedia.org/wiki/Phaethon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Phaéton",
+        "url": "https://fr.wikipedia.org/wiki/Pha%C3%A9ton"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Phaéton",
+        "url": "https://mythologica.fr/grec/phaeton.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The tragic myth of the Sun God's son - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=zAxfrI8zHU4"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe tragique du fils du Dieu Soleil - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=-53iWe5bLhY"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Jeune Homme qui Osa Monter sur le Char Solaire (Phaéton) - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=y8_rV5f9JrI"
+      }
+    ],
+    "related": [
+      "daedalus-and-icarus"
+    ]
+  },
+  {
+    "id": "arachne",
+    "title": {
+      "en": "Arachne",
+      "fr": "Arachné"
+    },
+    "summary": {
+      "en": "Arachne, a girl of humble birth from Lydia, was so skilled at weaving that the nymphs left their vines and rivers to watch her work. Anyone could see that Minerva — Athena — had taught her, but Arachne denied it, and even challenged the goddess to compete with her.\n\nMinerva came to her in the guise of an old woman and advised her to beg the goddess's forgiveness. Arachne answered rudely. Then the goddess revealed herself, and the contest began. On her loom Minerva wove the Acropolis of Athens, the twelve gods in their majesty and, in the corners, mortals punished for having challenged the gods. Arachne wove the gods' deceptions: Europa carried off by the bull, Leda and the swan, Danaë and the shower of gold, and many more.\n\nNeither Envy nor the goddess herself could find a flaw in Arachne's work. Furious, Minerva tore the tapestry with its tales of the gods' misdeeds and struck the girl with her shuttle. Arachne, unable to bear it, hanged herself. Minerva, taking pity, lifted her up: \"Live, then, but hang,\" she said, and sprinkled her with the juice of Hecate's herbs. Arachne's hair fell out, her body shrank, her fingers became legs: she was a spider, still spinning her thread.",
+      "fr": "Arachné, une jeune fille d’humble naissance de Lydie, tissait si bien que les nymphes quittaient leurs vignes et leurs rivières pour la regarder travailler. Chacun voyait que Minerve — Athéna — avait été son maître, mais Arachné le niait, et défiait même la déesse de se mesurer à elle.\n\nMinerve vint la trouver sous les traits d’une vieille femme et lui conseilla d’implorer le pardon de la déesse. Arachné répondit avec insolence. La déesse se révéla alors, et le concours commença. Sur son métier, Minerve tissa l’Acropole d’Athènes, les douze dieux dans leur majesté et, dans les coins, des mortels punis pour avoir défié les dieux. Arachné tissa les tromperies des dieux : Europe enlevée par le taureau, Léda et le cygne, Danaé et la pluie d’or, et bien d’autres.\n\nNi l’Envie ni la déesse elle-même ne purent trouver de défaut à l’ouvrage d’Arachné. Furieuse, Minerve déchira la tapisserie qui contait les fautes des dieux et frappa la jeune fille de sa navette. Arachné, ne pouvant le supporter, se pendit. Prise de pitié, Minerve la soutint : « Vis donc, mais reste suspendue », dit-elle, et elle l’aspergea du suc des herbes d’Hécate. Les cheveux d’Arachné tombèrent, son corps rapetissa, ses doigts devinrent des pattes : elle était araignée, et file encore son fil."
+    },
+    "characters": [
+      "arachne",
+      "athena"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "6.1–145",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses6.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_6"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Arachne",
+        "url": "https://en.wikipedia.org/wiki/Arachne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Arachné",
+        "url": "https://fr.wikipedia.org/wiki/Arachn%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Arachne",
+        "url": "https://www.worldhistory.org/Arachne/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Arachné",
+        "url": "https://mythologica.fr/grec/arachne.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Arachne  - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=XvUHcsZOhJ8"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe d'Arachné et Athéna - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=6nxWAI8I4Ys"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Athéna et Arachné: La Fille qui a Défié les Dieux - Mythologie Grecque -Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=VvmA0DYRbhg"
+      }
+    ],
+    "related": [
+      "europa-and-the-bull"
+    ]
+  },
+  {
+    "id": "midas-golden-touch",
+    "title": {
+      "en": "Midas and the golden touch",
+      "fr": "Midas et le toucher d’or"
+    },
+    "summary": {
+      "en": "Old Silenus, the tutor of Bacchus — Dionysus — had wandered off drunk and was found by Phrygian peasants, who tied him up with garlands and brought him to their king, Midas. Midas, who had been initiated into the god's mysteries, recognised him, feasted him for ten days and nights, then brought him back to Bacchus.\n\nDelighted to have his foster-father back, the god offered Midas any reward he wished. Midas asked that everything he touched should turn to gold. Bacchus granted the wish, though he was sorry Midas had not asked for something better. The king went away overjoyed: a twig, a stone, a clod of earth, ears of corn and an apple all turned to gold in his hands.\n\nBut when he sat down to eat, the bread grew hard under his teeth and the wine flowed down his throat as liquid gold. Rich and wretched, dying of hunger and thirst, Midas raised his gleaming arms to heaven and begged Bacchus to forgive him. The god told him to go and bathe at the source of the river Pactolus, near Sardis. The power passed from his body into the water, and since then the river's sands have glittered with gold.",
+      "fr": "Le vieux Silène, le précepteur de Bacchus — Dionysos —, s’était égaré, ivre, et fut trouvé par des paysans phrygiens, qui le lièrent de guirlandes et le conduisirent à leur roi, Midas. Midas, initié aux mystères du dieu, le reconnut, le fêta dix jours et dix nuits, puis le ramena à Bacchus.\n\nHeureux de retrouver son père nourricier, le dieu offrit à Midas la récompense de son choix. Midas demanda que tout ce qu’il toucherait se change en or. Bacchus exauça son vœu, regrettant qu’il n’ait pas demandé mieux. Le roi s’en alla, ravi : une branche, une pierre, une motte de terre, des épis et une pomme devinrent or entre ses mains.\n\nMais quand il se mit à table, le pain durcit sous ses dents et le vin coula dans sa gorge en or liquide. Riche et misérable, mourant de faim et de soif, Midas leva au ciel ses bras étincelants et implora le pardon de Bacchus. Le dieu lui ordonna d’aller se baigner à la source du fleuve Pactole, près de Sardes. Le pouvoir passa de son corps dans l’eau, et depuis, les sables du fleuve brillent de paillettes d’or."
+    },
+    "characters": [
+      "midas",
+      "dionysus",
+      "silenus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "11.85–145",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses11.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_11"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Midas",
+        "url": "https://en.wikipedia.org/wiki/Midas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Midas",
+        "url": "https://fr.wikipedia.org/wiki/Midas"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Midas",
+        "url": "https://www.theoi.com/Heros/Midas.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Midas",
+        "url": "https://www.worldhistory.org/Midas/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Midas",
+        "url": "https://mythologica.fr/grec/midas.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of King Midas and his golden touch - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=nn8YGPZdCvA"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe du roi Midas et ses mains d'or - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=Npz3l0TZxzQ"
+      }
+    ]
+  }
+]

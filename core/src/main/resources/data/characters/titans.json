@@ -1,0 +1,462 @@
+[
+  {
+    "id": "cronus",
+    "name": {
+      "en": "Cronus",
+      "fr": "Cronos"
+    },
+    "kind": "titan",
+    "wikidata": "Q44204",
+    "description": {
+      "en": "The youngest Titan, who overthrew his father Uranus and swallowed his own children.",
+      "fr": "Le plus jeune des Titans, qui renversa son père Ouranos et avala ses propres enfants."
+    },
+    "greek": "Κρόνος",
+    "roman": {
+      "en": "Saturn",
+      "fr": "Saturne"
+    },
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cronus",
+        "url": "https://en.wikipedia.org/wiki/Cronus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cronos",
+        "url": "https://fr.wikipedia.org/wiki/Cronos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cronus (Kronos)",
+        "url": "https://www.theoi.com/Titan/TitanKronos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Cronos",
+        "url": "https://mythologica.fr/grec/cronos.htm"
+      }
+    ]
+  },
+  {
+    "id": "rhea",
+    "name": {
+      "en": "Rhea",
+      "fr": "Rhéa"
+    },
+    "kind": "titan",
+    "wikidata": "Q108419",
+    "description": {
+      "en": "Titaness, wife of Cronus and mother of the first Olympians, who saved Zeus from his father.",
+      "fr": "Titanide, épouse de Cronos et mère des premiers Olympiens, qui sauva Zeus de son père."
+    },
+    "greek": "Ῥέα",
+    "roman": {
+      "en": "Ops",
+      "fr": "Ops"
+    },
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Rhea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Rhea_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Rhéa (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Rh%C3%A9a_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Rhea (Rheia)",
+        "url": "https://www.theoi.com/Titan/TitanisRhea.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Rhéa",
+        "url": "https://mythologica.fr/grec/rhea.htm"
+      }
+    ]
+  },
+  {
+    "id": "oceanus",
+    "name": {
+      "en": "Oceanus",
+      "fr": "Océan"
+    },
+    "kind": "titan",
+    "wikidata": "Q161419",
+    "description": {
+      "en": "The Titan of the great river encircling the world, father of the rivers and of the Oceanid nymphs.",
+      "fr": "Le Titan du grand fleuve qui entoure le monde, père des fleuves et des nymphes Océanides."
+    },
+    "greek": "Ὠκεανός",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oceanus",
+        "url": "https://en.wikipedia.org/wiki/Oceanus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Océan (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Oc%C3%A9an_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Oceanus (Okeanos)",
+        "url": "https://www.theoi.com/Titan/TitanOkeanos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Océan",
+        "url": "https://mythologica.fr/grec/ocean.htm"
+      }
+    ]
+  },
+  {
+    "id": "hyperion",
+    "name": {
+      "en": "Hyperion",
+      "fr": "Hypérion"
+    },
+    "kind": "titan",
+    "wikidata": "Q179209",
+    "description": {
+      "en": "The Titan of heavenly light, father of the Sun, the Moon and the Dawn.",
+      "fr": "Le Titan de la lumière céleste, père du Soleil, de la Lune et de l’Aurore."
+    },
+    "greek": "Ὑπερίων",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hyperion (Titan)",
+        "url": "https://en.wikipedia.org/wiki/Hyperion_(Titan)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hypérion (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Hyp%C3%A9rion_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hyperion",
+        "url": "https://www.theoi.com/Titan/TitanHyperion.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hypérion et Théia",
+        "url": "https://mythologica.fr/grec/hyperion.htm"
+      }
+    ]
+  },
+  {
+    "id": "iapetus",
+    "name": {
+      "en": "Iapetus",
+      "fr": "Japet"
+    },
+    "kind": "titan",
+    "wikidata": "Q179543",
+    "description": {
+      "en": "Titan, father of Atlas, Prometheus and Epimetheus.",
+      "fr": "Titan, père d’Atlas, de Prométhée et d’Épiméthée."
+    },
+    "greek": "Ἰαπετός",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Iapetus",
+        "url": "https://en.wikipedia.org/wiki/Iapetus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Japet (Titan)",
+        "url": "https://fr.wikipedia.org/wiki/Japet_(Titan)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Iapetus (Iapetos)",
+        "url": "https://www.theoi.com/Titan/TitanIapetos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Japet et Clymène",
+        "url": "https://mythologica.fr/grec/japet.htm"
+      }
+    ]
+  },
+  {
+    "id": "themis",
+    "name": {
+      "en": "Themis",
+      "fr": "Thémis"
+    },
+    "kind": "titan",
+    "wikidata": "Q159168",
+    "description": {
+      "en": "Titaness of divine law and order, who kept the oracle of Delphi before Apollo.",
+      "fr": "Titanide de la loi divine et de l’ordre, qui tint l’oracle de Delphes avant Apollon."
+    },
+    "greek": "Θέμις",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Themis",
+        "url": "https://en.wikipedia.org/wiki/Themis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thémis",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9mis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Themis",
+        "url": "https://www.theoi.com/Titan/TitanisThemis.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Thémis",
+        "url": "https://mythologica.fr/grec/themis.htm"
+      }
+    ]
+  },
+  {
+    "id": "prometheus",
+    "name": {
+      "en": "Prometheus",
+      "fr": "Prométhée"
+    },
+    "kind": "titan",
+    "wikidata": "Q83160",
+    "description": {
+      "en": "“Forethought”: the Titan who stole fire from the gods for mankind and was chained to a rock for it.",
+      "fr": "« Celui qui réfléchit avant » : le Titan qui vola le feu aux dieux pour les hommes et fut enchaîné à un rocher pour cela."
+    },
+    "greek": "Προμηθεύς",
+    "parents": [
+      "iapetus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Prometheus",
+        "url": "https://en.wikipedia.org/wiki/Prometheus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Prométhée",
+        "url": "https://fr.wikipedia.org/wiki/Prom%C3%A9th%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Prometheus",
+        "url": "https://www.theoi.com/Titan/TitanPrometheus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Prometheus",
+        "url": "https://www.worldhistory.org/Prometheus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Prométhée",
+        "url": "https://mythologica.fr/grec/promethee.htm"
+      }
+    ]
+  },
+  {
+    "id": "epimetheus",
+    "name": {
+      "en": "Epimetheus",
+      "fr": "Épiméthée"
+    },
+    "kind": "titan",
+    "wikidata": "Q41054",
+    "description": {
+      "en": "“Afterthought”: the brother of Prometheus, who accepted Pandora from the gods.",
+      "fr": "« Celui qui réfléchit après » : le frère de Prométhée, qui accepta Pandore des mains des dieux."
+    },
+    "greek": "Ἐπιμηθεύς",
+    "parents": [
+      "iapetus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Epimetheus",
+        "url": "https://en.wikipedia.org/wiki/Epimetheus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Épiméthée",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89pim%C3%A9th%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Epimetheus",
+        "url": "https://www.theoi.com/Titan/TitanEpimetheus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Epiméthée",
+        "url": "https://mythologica.fr/grec/epimethee.htm"
+      }
+    ]
+  },
+  {
+    "id": "atlas",
+    "name": {
+      "en": "Atlas",
+      "fr": "Atlas"
+    },
+    "kind": "titan",
+    "wikidata": "Q130818",
+    "description": {
+      "en": "Titan condemned by Zeus to hold up the sky at the western edge of the world.",
+      "fr": "Titan condamné par Zeus à soutenir le ciel aux confins occidentaux du monde."
+    },
+    "greek": "Ἄτλας",
+    "parents": [
+      "iapetus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Atlas (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Atlas_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Atlas (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Atlas_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Atlas",
+        "url": "https://www.theoi.com/Titan/TitanAtlas.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Atlas",
+        "url": "https://www.worldhistory.org/Atlas/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Atlas",
+        "url": "https://mythologica.fr/grec/atlas.htm"
+      }
+    ]
+  },
+  {
+    "id": "helios",
+    "name": {
+      "en": "Helios",
+      "fr": "Hélios"
+    },
+    "kind": "titan",
+    "wikidata": "Q134270",
+    "description": {
+      "en": "The Sun, who drives his chariot across the sky every day and sees all that happens on earth.",
+      "fr": "Le Soleil, qui mène chaque jour son char à travers le ciel et voit tout ce qui se passe sur terre."
+    },
+    "greek": "Ἥλιος",
+    "roman": {
+      "en": "Sol",
+      "fr": "Sol"
+    },
+    "parents": [
+      "hyperion"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Helios",
+        "url": "https://en.wikipedia.org/wiki/Helios"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hélios",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9lios"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Helius (Helios)",
+        "url": "https://www.theoi.com/Titan/Helios.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hélios",
+        "url": "https://mythologica.fr/grec/helios.htm"
+      }
+    ]
+  }
+]

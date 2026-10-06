@@ -1,0 +1,31 @@
+<p class="tagline">{{ 'app.tagline' | i18n }}</p>
+@if (catalog.catalog(); as data) {
+  <p class="counts">{{ 'home.counts' | i18n: { characters: data.characters.length, stories: data.stories.length } }}</p>
+
+  <h2>{{ 'home.characters' | i18n }}</h2>
+  <ul class="tiles">
+    @for (k of kinds(); track k.kind) {
+      <li>
+        <a class="tile" [routerLink]="['/characters']" [queryParams]="{ kind: k.kind }" [attr.data-kind]="k.kind">
+          <span class="tile-title">{{ 'kind.' + k.kind | i18n }}</span>
+          <span class="tile-count">{{ k.count }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+
+  <h2>{{ 'home.cycles' | i18n }}</h2>
+  @for (cycle of data.cycles; track cycle.id) {
+    <section class="cycle">
+      <h3>{{ cycle.title | i18nText }}</h3>
+      <p class="muted">{{ cycle.description | i18nText }}</p>
+      <ol>
+        @for (id of cycle.stories; track id) {
+          @if (catalog.storyById().get(id); as story) {
+            <li><a [routerLink]="['/stories', story.id]">{{ story.title | i18nText }}</a></li>
+          }
+        }
+      </ol>
+    </section>
+  }
+}

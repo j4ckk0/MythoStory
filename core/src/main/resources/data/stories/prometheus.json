@@ -1,0 +1,317 @@
+[
+  {
+    "id": "prometheus-fire",
+    "title": {
+      "en": "Prometheus steals fire",
+      "fr": "Prométhée vole le feu"
+    },
+    "summary": {
+      "en": "At Mecone, when gods and mortals came to settle their shares, Prometheus cut up a great ox and laid out two portions: in one he hid the meat and the rich innards under the ox's stomach; in the other he wrapped the bare bones in glistening fat. Zeus chose the fat — and ever since, mortals burn the bones for the gods on their altars and keep the meat for themselves.\n\nIn his anger, Zeus withheld fire from mankind. But Prometheus stole the far-seen gleam of unwearying fire and brought it to men hidden in a hollow fennel stalk. Fire became the beginning of every craft and art.\n\nZeus's punishment was terrible. By his order Prometheus was chained to a crag — in the Caucasus, according to Apollodorus — and an eagle came every day to devour his liver, which grew back each night. Aeschylus shows him defiant on his rock, refusing to reveal to Zeus the secret that threatens his reign. Generations later Heracles killed the eagle with an arrow and freed the Titan, with the consent of Zeus, who wished to add to his son's glory.",
+      "fr": "À Mécôné, quand dieux et mortels vinrent régler leurs parts, Prométhée découpa un grand bœuf et disposa deux portions : dans l’une, il cacha la viande et les entrailles grasses sous la panse du bœuf ; dans l’autre, il enveloppa les os nus d’une graisse brillante. Zeus choisit la graisse — et depuis lors, les mortels brûlent les os pour les dieux sur les autels et gardent la viande pour eux.\n\nFurieux, Zeus refusa le feu aux hommes. Mais Prométhée déroba l’éclat du feu infatigable, visible de loin, et l’apporta aux hommes caché dans une tige creuse de férule. Le feu devint le principe de tous les métiers et de tous les arts.\n\nLe châtiment de Zeus fut terrible. Sur son ordre, Prométhée fut enchaîné à un rocher — dans le Caucase, selon Apollodore — et un aigle venait chaque jour lui dévorer le foie, qui repoussait chaque nuit. Eschyle le montre insoumis sur son rocher, refusant de révéler à Zeus le secret qui menace son règne. Des générations plus tard, Héraclès tua l’aigle d’une flèche et délivra le Titan, avec l’accord de Zeus, qui voulait accroître la gloire de son fils."
+    },
+    "characters": [
+      "prometheus",
+      "zeus",
+      "hephaestus",
+      "heracles"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "passage": "507–616",
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        }
+      },
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Works and Days",
+          "fr": "Les Travaux et les Jours"
+        },
+        "passage": "42–58",
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodWorksDays.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_Travaux_et_les_Jours"
+        }
+      },
+      {
+        "author": {
+          "en": "Aeschylus",
+          "fr": "Eschyle"
+        },
+        "work": {
+          "en": "Prometheus Bound",
+          "fr": "Prométhée enchaîné"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://www.theoi.com/Text/AeschylusPrometheus.html",
+          "fr": "https://fr.wikisource.org/wiki/Prom%C3%A9th%C3%A9e_encha%C3%AEn%C3%A9"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.7.1",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Prometheus",
+        "url": "https://en.wikipedia.org/wiki/Prometheus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Prométhée",
+        "url": "https://fr.wikipedia.org/wiki/Prom%C3%A9th%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Prometheus",
+        "url": "https://www.theoi.com/Titan/TitanPrometheus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Prometheus",
+        "url": "https://www.worldhistory.org/Prometheus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Prométhée",
+        "url": "https://mythologica.fr/grec/promethee.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Prometheus - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=U_u91SjrEOE"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe de Prométhée - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=S5bcoPzzp0w"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "TV5MONDE — Le mythe de Prométhée : Légendes mythologiques",
+        "url": "https://www.youtube.com/watch?v=_CDQqn4H7zY"
+      }
+    ],
+    "related": [
+      "labours-of-heracles"
+    ]
+  },
+  {
+    "id": "pandora",
+    "title": {
+      "en": "Pandora",
+      "fr": "Pandore"
+    },
+    "summary": {
+      "en": "To punish men for the stolen fire, Zeus prepared them an evil in which they would all delight. He ordered Hephaestus to mix earth and water and shape from it a lovely maiden, like the immortal goddesses. Athena taught her weaving and dressed her; Aphrodite poured grace about her head; the Graces and Persuasion hung golden necklaces on her; and Hermes put lies, wheedling words and a sly nature in her heart. Because every god of Olympus gave her a gift, she was named Pandora, \"all gifts\".\n\nHermes led her to Epimetheus. Prometheus had warned his brother never to accept a gift from Zeus, but Epimetheus took her in, and understood the evil only once he had it.\n\nUntil then men had lived on earth free from toil and sickness. Pandora lifted the great lid of the jar and scattered its contents: countless sorrows spread among mankind, and diseases came to men by day and by night, silently, for Zeus had taken away their voice. Hope alone stayed inside, under the lip of the jar, for Pandora put the lid back first. (The jar — pithos — became a \"box\" through a sixteenth-century mistranslation.)",
+      "fr": "Pour punir les hommes du feu volé, Zeus leur prépara un mal dont tous se réjouiraient. Il ordonna à Héphaïstos de mêler de la terre et de l’eau et d’en modeler une belle jeune fille, semblable aux déesses immortelles. Athéna lui apprit le tissage et la para ; Aphrodite répandit la grâce autour de sa tête ; les Charites et Persuasion la couvrirent de colliers d’or ; et Hermès mit dans son cœur le mensonge, les paroles trompeuses et un esprit rusé. Parce que chaque dieu de l’Olympe lui fit un présent, on l’appela Pandore, « tous les dons ».\n\nHermès la conduisit à Épiméthée. Prométhée avait averti son frère de ne jamais accepter un présent de Zeus, mais Épiméthée l’accueillit, et ne comprit le malheur qu’une fois qu’il l’eut.\n\nJusque-là, les hommes vivaient sur terre à l’abri de la peine et des maladies. Pandore souleva le grand couvercle de la jarre et en dispersa le contenu : des maux sans nombre se répandirent parmi les hommes, et les maladies vinrent à eux jour et nuit, en silence, car Zeus leur avait ôté la voix. Seule l’Espérance resta à l’intérieur, sous le rebord de la jarre, car Pandore remit le couvercle avant. (La jarre — pithos — devint une « boîte » par une erreur de traduction du XVIᵉ siècle.)"
+    },
+    "characters": [
+      "pandora",
+      "epimetheus",
+      "prometheus",
+      "zeus",
+      "hephaestus",
+      "athena",
+      "aphrodite",
+      "hermes"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Works and Days",
+          "fr": "Les Travaux et les Jours"
+        },
+        "passage": "42–105",
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodWorksDays.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_Travaux_et_les_Jours"
+        }
+      },
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "passage": "570–612",
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pandora's box",
+        "url": "https://en.wikipedia.org/wiki/Pandora's_box"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Boîte de Pandore",
+        "url": "https://fr.wikipedia.org/wiki/Bo%C3%AEte_de_Pandore"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Pandora",
+        "url": "https://www.worldhistory.org/Pandora/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Epiméthée et Pandore",
+        "url": "https://mythologica.fr/grec/pandore.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The myth of Pandora’s box - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=pMdJxVjZMRI"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Restons Curieux — TED-Ed — Le mythe de la boîte de Pandore - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=iJrHpIhi8Vo"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "TV5MONDE — Le mythe de Pandore : Légendes mythologiques",
+        "url": "https://www.youtube.com/watch?v=Dy3qENV8XEA"
+      }
+    ]
+  },
+  {
+    "id": "deucalion-flood",
+    "title": {
+      "en": "The flood of Deucalion",
+      "fr": "Le déluge de Deucalion"
+    },
+    "summary": {
+      "en": "Zeus resolved to wipe out the men of the bronze age, whose wickedness — and, in Ovid, the crime of King Lycaon, who served him human flesh — had exhausted his patience. He sent torrents of rain, and Poseidon let loose the rivers and shook the earth, until the whole of Greece lay under the waters.\n\nWarned by his father Prometheus, Deucalion had built a chest and filled it with provisions. With his wife Pyrrha, daughter of Epimetheus and Pandora, he floated for nine days and nine nights before coming to rest on Mount Parnassus. They alone survived, for they alone had been just and pious.\n\nAlone in a deserted world, the couple consulted the oracle of Themis. The goddess told them to cover their heads and throw behind them \"the bones of their great mother\". Pyrrha recoiled in horror, but Deucalion understood: their great mother is the Earth, and her bones are the stones. The stones thrown by Deucalion became men, those thrown by Pyrrha became women — which is why, Ovid says, humankind is a hard race, used to toil.",
+      "fr": "Zeus résolut d’anéantir les hommes de l’âge de bronze, dont la méchanceté — et, chez Ovide, le crime du roi Lycaon, qui lui avait servi de la chair humaine — avait épuisé sa patience. Il fit tomber des pluies torrentielles, et Poséidon déchaîna les fleuves et ébranla la terre, jusqu’à ce que toute la Grèce disparaisse sous les eaux.\n\nAverti par son père Prométhée, Deucalion avait construit un coffre et l’avait rempli de vivres. Avec son épouse Pyrrha, fille d’Épiméthée et de Pandore, il flotta neuf jours et neuf nuits avant de s’échouer sur le mont Parnasse. Eux seuls survécurent, car eux seuls avaient été justes et pieux.\n\nSeuls dans un monde désert, les deux époux consultèrent l’oracle de Thémis. La déesse leur ordonna de se voiler la tête et de jeter derrière eux « les os de leur grande mère ». Pyrrha recula d’horreur, mais Deucalion comprit : leur grande mère est la Terre, et ses os sont les pierres. Les pierres lancées par Deucalion devinrent des hommes, celles lancées par Pyrrha des femmes — voilà pourquoi, dit Ovide, l’humanité est une race dure, faite pour la peine."
+    },
+    "characters": [
+      "deucalion",
+      "pyrrha",
+      "zeus",
+      "prometheus",
+      "themis",
+      "poseidon"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.7.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      },
+      {
+        "author": {
+          "en": "Ovid",
+          "fr": "Ovide"
+        },
+        "work": {
+          "en": "Metamorphoses",
+          "fr": "Métamorphoses"
+        },
+        "passage": "1.253–415",
+        "url": {
+          "en": "https://www.theoi.com/Text/OvidMetamorphoses1.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_M%C3%A9tamorphoses_(Ovide,_Nisard)/Livre_1"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Deucalion",
+        "url": "https://en.wikipedia.org/wiki/Deucalion"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Deucalion (fils de Prométhée)",
+        "url": "https://fr.wikipedia.org/wiki/Deucalion_(fils_de_Prom%C3%A9th%C3%A9e)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Deucalion (Deukalion)",
+        "url": "https://www.theoi.com/Heros/Deukalion.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Deucalion",
+        "url": "https://mythologica.fr/grec/deucalion.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Great Flood of Greek Mythology - Greek Mythology in Comics - See U in History",
+        "url": "https://www.youtube.com/watch?v=_2vrdAp4mWs"
+      }
+    ],
+    "related": [
+      "pandora"
+    ]
+  }
+]

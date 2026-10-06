@@ -1,0 +1,2284 @@
+[
+  {
+    "id": "agathodaemon",
+    "name": {
+      "en": "Agathodaemon",
+      "fr": "Agathodémon"
+    },
+    "kind": "creature",
+    "wikidata": "Q391553",
+    "description": {
+      "en": "Mythological serpent.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ἀγαθοδαίμων , Agathodaimōn",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Agathodaemon",
+        "url": "https://en.wikipedia.org/wiki/Agathodaemon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Agathodémon",
+        "url": "https://fr.wikipedia.org/wiki/Agathod%C3%A9mon"
+      }
+    ]
+  },
+  {
+    "id": "aglaope",
+    "name": {
+      "en": "Aglaope",
+      "fr": "Aglaopé"
+    },
+    "kind": "creature",
+    "wikidata": "Q3361417",
+    "description": {
+      "en": "One of the Sirens in Greek mythology.",
+      "fr": "Sirène de la mythologie grecque."
+    },
+    "greek": "Αγλαόπη",
+    "parents": [
+      "melpomene",
+      "achelous"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aglaope",
+        "url": "https://en.wikipedia.org/wiki/Aglaope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aglaopé (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Aglaop%C3%A9_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "alarabi",
+    "name": {
+      "en": "Alarabi",
+      "fr": "Alarabi"
+    },
+    "kind": "creature",
+    "wikidata": "Q773820",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alarabi",
+        "url": "https://fr.wikipedia.org/wiki/Alarabi"
+      }
+    ]
+  },
+  {
+    "id": "alcyoneus-q653681",
+    "name": {
+      "en": "Alcyoneus",
+      "fr": "Alcyonée"
+    },
+    "kind": "creature",
+    "wikidata": "Q653681",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Αλκυονέας",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Alcyoneus",
+        "url": "https://en.wikipedia.org/wiki/Alcyoneus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alcyonée",
+        "url": "https://fr.wikipedia.org/wiki/Alcyon%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Alcyoneus (Alcyoneus)",
+        "url": "https://www.theoi.com/Gigante/GiganteAlkyoneus.html"
+      }
+    ]
+  },
+  {
+    "id": "alpos",
+    "name": {
+      "en": "Alpos",
+      "fr": "Alpos"
+    },
+    "kind": "creature",
+    "wikidata": "Q926123",
+    "description": {
+      "en": "Giant in Greek mythology, son of Uranus and Gaea.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Άλπος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Alpos",
+        "url": "https://en.wikipedia.org/wiki/Alpos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alpos",
+        "url": "https://fr.wikipedia.org/wiki/Alpos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Alpos",
+        "url": "https://www.theoi.com/Gigante/GiganteAlpos.html"
+      }
+    ]
+  },
+  {
+    "id": "ampelos",
+    "name": {
+      "en": "Ampelos",
+      "fr": "Ampelos"
+    },
+    "kind": "creature",
+    "wikidata": "Q474474",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ampelos",
+        "url": "https://en.wikipedia.org/wiki/Ampelos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ampélos",
+        "url": "https://fr.wikipedia.org/wiki/Amp%C3%A9los"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ampelos",
+        "url": "https://www.theoi.com/Georgikos/SatyrosAmpelos.html"
+      }
+    ]
+  },
+  {
+    "id": "amycus-q4749481",
+    "name": {
+      "en": "Amycus",
+      "fr": "Amycos"
+    },
+    "kind": "creature",
+    "wikidata": "Q4749481",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "greek": "Ἄμυκος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Amycus (centaur)",
+        "url": "https://en.wikipedia.org/wiki/Amycus_(centaur)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Amycos (centaure)",
+        "url": "https://fr.wikipedia.org/wiki/Amycos_(centaure)"
+      }
+    ]
+  },
+  {
+    "id": "anax",
+    "name": {
+      "en": "Anax",
+      "fr": "Anax"
+    },
+    "kind": "creature",
+    "wikidata": "Q2303713",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Άναξ",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anax (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Anax_(mythology)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Anax & Asterius",
+        "url": "https://www.theoi.com/Gigante/GiganteAnaxAsterios.html"
+      }
+    ]
+  },
+  {
+    "id": "antaeus",
+    "name": {
+      "en": "Antaeus",
+      "fr": "Antée"
+    },
+    "kind": "creature",
+    "wikidata": "Q272006",
+    "description": {
+      "en": "Giant in Greek and Amazigh (Berber) mythology.",
+      "fr": "Personnage légendaire des mythologies grecque et berbère."
+    },
+    "greek": "Ἀνταῖος",
+    "parents": [
+      "gaia",
+      "poseidon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Antaeus",
+        "url": "https://en.wikipedia.org/wiki/Antaeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Antée",
+        "url": "https://fr.wikipedia.org/wiki/Ant%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Antaeus (Antaios)",
+        "url": "https://www.theoi.com/Gigante/GiganteAntaios.html"
+      }
+    ]
+  },
+  {
+    "id": "arctus-q4792057",
+    "name": {
+      "en": "Arctus",
+      "fr": "Arctos"
+    },
+    "kind": "creature",
+    "wikidata": "Q4792057",
+    "description": {
+      "en": "Arktos (meaning : Bears) , Ancient Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Arctus (centaur)",
+        "url": "https://en.wikipedia.org/wiki/Arctus_(centaur)"
+      }
+    ]
+  },
+  {
+    "id": "arges",
+    "name": {
+      "en": "Arges",
+      "fr": "Argès"
+    },
+    "kind": "creature",
+    "wikidata": "Q420269",
+    "description": {
+      "en": "Cyclops in Greek mythology.",
+      "fr": "Cyclope de la mythologie grecque."
+    },
+    "greek": "Άργης",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Arges (Cyclops)",
+        "url": "https://en.wikipedia.org/wiki/Arges_(Cyclops)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argès (cyclope)",
+        "url": "https://fr.wikipedia.org/wiki/Arg%C3%A8s_(cyclope)"
+      }
+    ]
+  },
+  {
+    "id": "argus-panoptes",
+    "name": {
+      "en": "Argus Panoptes",
+      "fr": "Argos"
+    },
+    "kind": "creature",
+    "wikidata": "Q189821",
+    "description": {
+      "en": "Giant with hundred eyes in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ἄργος , Argos",
+    "parents": [
+      "agenor-q429064",
+      "inachus",
+      "arestor"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argus Panoptes",
+        "url": "https://en.wikipedia.org/wiki/Argus_Panoptes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argos (Panoptès)",
+        "url": "https://fr.wikipedia.org/wiki/Argos_(Panopt%C3%A8s)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Argus Panoptes (Argos)",
+        "url": "https://www.theoi.com/Gigante/GiganteArgosPanoptes.html"
+      }
+    ]
+  },
+  {
+    "id": "aristaeus-q2861418",
+    "name": {
+      "en": "Aristaeus",
+      "fr": "Aristée"
+    },
+    "kind": "creature",
+    "wikidata": "Q2861418",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Αρισταίος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aristée (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Arist%C3%A9e_(G%C3%A9ant)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aristaeus (Aristaios)",
+        "url": "https://www.theoi.com/Gigante/GiganteAristaios.html"
+      }
+    ]
+  },
+  {
+    "id": "asbolus",
+    "name": {
+      "en": "Asbolus",
+      "fr": "Asbole"
+    },
+    "kind": "creature",
+    "wikidata": "Q74055",
+    "description": {
+      "en": "Centaur of Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "greek": "Άσβολος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Asbolus",
+        "url": "https://en.wikipedia.org/wiki/Asbolus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Asbolos",
+        "url": "https://fr.wikipedia.org/wiki/Asbolos"
+      }
+    ]
+  },
+  {
+    "id": "ascus",
+    "name": {
+      "en": "Ascus",
+      "fr": "Ascos"
+    },
+    "kind": "creature",
+    "wikidata": "Q55777963",
+    "description": {
+      "en": "Mythical giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ασκός",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ascus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ascus_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "asterius",
+    "name": {
+      "en": "Asterius",
+      "fr": "Astérios"
+    },
+    "kind": "creature",
+    "wikidata": "Q10420712",
+    "description": {
+      "en": "Mythical figure of Miletus.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "parents": [
+      "anax"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Asterius (giant)",
+        "url": "https://en.wikipedia.org/wiki/Asterius_(giant)"
+      }
+    ]
+  },
+  {
+    "id": "atabyrius",
+    "name": {
+      "en": "Atabyrius",
+      "fr": "Atabyrios"
+    },
+    "kind": "creature",
+    "wikidata": "Q5710243",
+    "description": {
+      "en": "Divinity of Rhodes, epithet of Zeus.",
+      "fr": "Divinité grecque et épiclèse de Zeus."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Atabyrius",
+        "url": "https://en.wikipedia.org/wiki/Atabyrius"
+      }
+    ]
+  },
+  {
+    "id": "athos",
+    "name": {
+      "en": "Athos",
+      "fr": "Athos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3314441",
+    "description": {
+      "en": "Mythical giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Άθως",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Athos (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Athos_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "babys",
+    "name": {
+      "en": "Babys",
+      "fr": "Babys"
+    },
+    "kind": "creature",
+    "wikidata": "Q2878101",
+    "description": {
+      "en": "Satyr in Greek mythology.",
+      "fr": "Satyre."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Babys (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Babys_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Babys",
+        "url": "https://fr.wikipedia.org/wiki/Babys"
+      }
+    ]
+  },
+  {
+    "id": "becut",
+    "name": {
+      "en": "Bécut",
+      "fr": "Bécut"
+    },
+    "kind": "creature",
+    "wikidata": "Q2929714",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Bécut",
+        "url": "https://fr.wikipedia.org/wiki/B%C3%A9cut"
+      }
+    ]
+  },
+  {
+    "id": "briareus",
+    "name": {
+      "en": "Briareus",
+      "fr": "Briarée"
+    },
+    "kind": "creature",
+    "wikidata": "Q849647",
+    "description": {
+      "en": "One of the Hundred-Handers.",
+      "fr": "Un des Hécatonchires de la mythologie grecque."
+    },
+    "greek": "Βριάρεως",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Briareus",
+        "url": "https://en.wikipedia.org/wiki/Briareus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Briarée",
+        "url": "https://fr.wikipedia.org/wiki/Briar%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Briareus (Briareos)",
+        "url": "https://www.theoi.com/Titan/HekatonkheirBriareos.html"
+      }
+    ]
+  },
+  {
+    "id": "bromus",
+    "name": {
+      "en": "Bromus",
+      "fr": "Brome"
+    },
+    "kind": "creature",
+    "wikidata": "Q56161204",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Bromus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Bromus_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "brontes",
+    "name": {
+      "en": "Brontes",
+      "fr": "Brontès"
+    },
+    "kind": "creature",
+    "wikidata": "Q2291710",
+    "description": {
+      "en": "Cyclop (\"thunderer\").",
+      "fr": "Cyclope de la mythologie grecque."
+    },
+    "greek": "Βρόντης",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Brontes (Cyclops)",
+        "url": "https://en.wikipedia.org/wiki/Brontes_(Cyclops)"
+      }
+    ]
+  },
+  {
+    "id": "cacus",
+    "name": {
+      "en": "Cacus",
+      "fr": "Cacus"
+    },
+    "kind": "creature",
+    "wikidata": "Q754686",
+    "description": {
+      "en": "Fire breathing giant in Roman mythology.",
+      "fr": "Fils de Vulcain, Géant qui vomit des tourbillons de flamme et de fumée."
+    },
+    "greek": "Κάκος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cacus",
+        "url": "https://en.wikipedia.org/wiki/Cacus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cacus",
+        "url": "https://fr.wikipedia.org/wiki/Cacus"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cacus (Kakos)",
+        "url": "https://www.theoi.com/Gigante/GiganteKakos.html"
+      }
+    ]
+  },
+  {
+    "id": "campe",
+    "name": {
+      "en": "Campe",
+      "fr": "Campé"
+    },
+    "kind": "creature",
+    "wikidata": "Q176130",
+    "description": {
+      "en": "Water deity.",
+      "fr": "Monstre de la mythologie grecque."
+    },
+    "greek": "Κάμπη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Campe",
+        "url": "https://en.wikipedia.org/wiki/Campe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Campé",
+        "url": "https://fr.wikipedia.org/wiki/Camp%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Campe (Kampe)",
+        "url": "https://www.theoi.com/Ther/DrakainaKampe.html"
+      }
+    ]
+  },
+  {
+    "id": "ceryneian-hind",
+    "name": {
+      "en": "Ceryneian Hind",
+      "fr": "Biche de Cérynie"
+    },
+    "kind": "creature",
+    "wikidata": "Q466882",
+    "description": {
+      "en": "Animal from Greek mythology.",
+      "fr": "Créature fantastique de la mythologie grecque de la stature d'un taureau."
+    },
+    "greek": "Κερυνίτιδα Έλαφος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ceryneian Hind",
+        "url": "https://en.wikipedia.org/wiki/Ceryneian_Hind"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Biche de Cérynie",
+        "url": "https://fr.wikipedia.org/wiki/Biche_de_C%C3%A9rynie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Cerynitian Hind (Elaphos Kerynitis)",
+        "url": "https://www.theoi.com/Ther/ElaphosKerynitis.html"
+      }
+    ]
+  },
+  {
+    "id": "chiron",
+    "name": {
+      "en": "Chiron",
+      "fr": "Chiron"
+    },
+    "kind": "creature",
+    "wikidata": "Q183417",
+    "description": {
+      "en": "Centaur, figure from Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "greek": "Χείρων , Cheirōn",
+    "parents": [
+      "philyra-q398524",
+      "cronus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chiron",
+        "url": "https://en.wikipedia.org/wiki/Chiron"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chiron (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Chiron_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chiron (Kheiron)",
+        "url": "https://www.theoi.com/Georgikos/KentaurosKheiron.html"
+      }
+    ]
+  },
+  {
+    "id": "clytius-q1206054",
+    "name": {
+      "en": "Clytius",
+      "fr": "Clytios"
+    },
+    "kind": "creature",
+    "wikidata": "Q1206054",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Κλυτίος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Clytios (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Clytios_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "cottus",
+    "name": {
+      "en": "Cottus",
+      "fr": "Cottos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3318918",
+    "description": {
+      "en": "One of the Hundred-Handers.",
+      "fr": "Un des Hécatonchires de la mythologie grecque."
+    },
+    "greek": "Κότος",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cottos",
+        "url": "https://fr.wikipedia.org/wiki/Cottos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hecatoncheires (Hekatonkheires)",
+        "url": "https://www.theoi.com/Titan/Hekatonkheires.html"
+      }
+    ]
+  },
+  {
+    "id": "cyllarus",
+    "name": {
+      "en": "Cyllarus",
+      "fr": "Cyllare"
+    },
+    "kind": "creature",
+    "wikidata": "Q3676711",
+    "description": {
+      "en": "Centaur.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Κύλλαρος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cyllarus",
+        "url": "https://en.wikipedia.org/wiki/Cyllarus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cyllare (centaure)",
+        "url": "https://fr.wikipedia.org/wiki/Cyllare_(centaure)"
+      }
+    ]
+  },
+  {
+    "id": "damasen",
+    "name": {
+      "en": "Damasen",
+      "fr": "Damasène"
+    },
+    "kind": "creature",
+    "wikidata": "Q3012621",
+    "description": {
+      "en": "Greek mythological creature.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Δαμάσης",
+    "parents": [
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Damasen",
+        "url": "https://en.wikipedia.org/wiki/Damasen"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Damasène",
+        "url": "https://fr.wikipedia.org/wiki/Damas%C3%A8ne"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Damasen",
+        "url": "https://www.theoi.com/Gigante/GiganteDamasen.html"
+      }
+    ]
+  },
+  {
+    "id": "damysos",
+    "name": {
+      "en": "Damysos",
+      "fr": "Damysos"
+    },
+    "kind": "creature",
+    "wikidata": "Q901487",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Δάμυσος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Damysus (Giant)",
+        "url": "https://en.wikipedia.org/wiki/Damysus_(Giant)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Damysos",
+        "url": "https://fr.wikipedia.org/wiki/Damysos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Damysus (Damysos)",
+        "url": "https://www.theoi.com/Gigante/GiganteDamysos.html"
+      }
+    ]
+  },
+  {
+    "id": "dexithea",
+    "name": {
+      "en": "Dexithea",
+      "fr": "Dexithea"
+    },
+    "kind": "creature",
+    "wikidata": "Q4157003",
+    "description": {
+      "en": "Mythical consort of Minos.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Δεξιθέα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dexithea (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Dexithea_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "dryalus",
+    "name": {
+      "en": "Dryalus",
+      "fr": "Dryale"
+    },
+    "kind": "creature",
+    "wikidata": "Q60195974",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dryalus",
+        "url": "https://en.wikipedia.org/wiki/Dryalus"
+      }
+    ]
+  },
+  {
+    "id": "echeclus-q113698980",
+    "name": {
+      "en": "Echeclus",
+      "fr": "Échéclos"
+    },
+    "kind": "creature",
+    "wikidata": "Q113698980",
+    "description": {
+      "en": "Centaur.",
+      "fr": "Centaure."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Échéclos (centaure)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ch%C3%A9clos_(centaure)"
+      }
+    ]
+  },
+  {
+    "id": "enceladus-q845112",
+    "name": {
+      "en": "Enceladus",
+      "fr": "Encelade"
+    },
+    "kind": "creature",
+    "wikidata": "Q845112",
+    "description": {
+      "en": "Mythological giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ἐγκέλαδος , Enkelados",
+    "parents": [
+      "uranus",
+      "tartarus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Enceladus (Giant)",
+        "url": "https://en.wikipedia.org/wiki/Enceladus_(Giant)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Encelade (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Encelade_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Enceladus (Enkelados)",
+        "url": "https://www.theoi.com/Gigante/GiganteEnkelados.html"
+      }
+    ]
+  },
+  {
+    "id": "ephialtes",
+    "name": {
+      "en": "Ephialtes",
+      "fr": "Éphialtès"
+    },
+    "kind": "creature",
+    "wikidata": "Q1249106",
+    "description": {
+      "en": "Giant, son of Uranus.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ἐφιάλτης , Ephialtēs",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éphialtès (fils de Gaïa)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89phialt%C3%A8s_(fils_de_Ga%C3%AFa)"
+      }
+    ]
+  },
+  {
+    "id": "erymanthian-boar",
+    "name": {
+      "en": "Erymanthian Boar",
+      "fr": "Sanglier d'Érymanthe"
+    },
+    "kind": "creature",
+    "wikidata": "Q334456",
+    "description": {
+      "en": "Mythological boar.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ερυμάνθιος Κάπρος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Erymanthian boar",
+        "url": "https://en.wikipedia.org/wiki/Erymanthian_boar"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sanglier d'Érymanthe",
+        "url": "https://fr.wikipedia.org/wiki/Sanglier_d'%C3%89rymanthe"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Erymanthian Boar (Hus Erymanthios)",
+        "url": "https://www.theoi.com/Ther/HusErymanthios.html"
+      }
+    ]
+  },
+  {
+    "id": "eurymedon",
+    "name": {
+      "en": "Eurymedon",
+      "fr": "Eurymédon"
+    },
+    "kind": "creature",
+    "wikidata": "Q143457",
+    "description": {
+      "en": "Greek mythological giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Εὐρυμέδων",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurymédon (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Eurym%C3%A9don_(G%C3%A9ant)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eurymedon",
+        "url": "https://www.theoi.com/Gigante/GiganteEurymedon.html"
+      }
+    ]
+  },
+  {
+    "id": "eurytion-q540468",
+    "name": {
+      "en": "Eurytion",
+      "fr": "Eurytion"
+    },
+    "kind": "creature",
+    "wikidata": "Q540468",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure dans la mythologie grecque, originaire de Thessalie."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurytion (centaure)",
+        "url": "https://fr.wikipedia.org/wiki/Eurytion_(centaure)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eurytion",
+        "url": "https://www.theoi.com/Georgikos/KentaurosEurytion1.html"
+      }
+    ]
+  },
+  {
+    "id": "eurytos",
+    "name": {
+      "en": "Eurytos",
+      "fr": "Eurytos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3060927",
+    "description": {
+      "en": "Greek mythological giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Εύρυτος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurytos (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Eurytos_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "gration",
+    "name": {
+      "en": "Gration",
+      "fr": "Gration"
+    },
+    "kind": "creature",
+    "wikidata": "Q1543617",
+    "description": {
+      "en": "Greek mythological giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Γρατίων",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Gration",
+        "url": "https://fr.wikipedia.org/wiki/Gration"
+      }
+    ]
+  },
+  {
+    "id": "gyges",
+    "name": {
+      "en": "Gyges",
+      "fr": "Gygès"
+    },
+    "kind": "creature",
+    "wikidata": "Q1187298",
+    "description": {
+      "en": "One of the Hundred-Handers, or hekatonkheires.",
+      "fr": "Un des Hécatonchires de la mythologie grecque."
+    },
+    "greek": "Γύγης",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Gygès (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Gyg%C3%A8s_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "hippolytos",
+    "name": {
+      "en": "Hippolytos",
+      "fr": "Hippolyte"
+    },
+    "kind": "creature",
+    "wikidata": "Q1620048",
+    "description": {
+      "en": "Greek mythological giant.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ιππόλυτος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hippolyte (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Hippolyte_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "hoplodamus",
+    "name": {
+      "en": "Hoplodamus",
+      "fr": "Hoplodamos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3140400",
+    "description": {
+      "en": "Giant of Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Οπλάδαμος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hoplodamos",
+        "url": "https://fr.wikipedia.org/wiki/Hoplodamos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hoplodamus (Hoplodamos)",
+        "url": "https://www.theoi.com/Georgikos/KoureteHoplodamos.html"
+      }
+    ]
+  },
+  {
+    "id": "hylonome",
+    "name": {
+      "en": "Hylonome",
+      "fr": "Hylonomé"
+    },
+    "kind": "creature",
+    "wikidata": "Q391070",
+    "description": {
+      "en": "Centauride in Greek mythology.",
+      "fr": "Centauresse de la mythologie grecque."
+    },
+    "greek": "Ὑλονόμη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hylonome",
+        "url": "https://en.wikipedia.org/wiki/Hylonome"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hylonomé (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Hylonom%C3%A9_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hylonome",
+        "url": "https://www.theoi.com/Georgikos/KentaurisHylonome.html"
+      }
+    ]
+  },
+  {
+    "id": "ladon",
+    "name": {
+      "en": "Ladon",
+      "fr": "Ladon"
+    },
+    "kind": "creature",
+    "wikidata": "Q274600",
+    "description": {
+      "en": "Greek mythological serpent.",
+      "fr": "Dragon de la mythologie grecque."
+    },
+    "greek": "Λάδων , Lādōn",
+    "parents": [
+      "echidna",
+      "ceto-q209489",
+      "typhon",
+      "phorcys-q200382"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ladon (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ladon_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ladon (créature fantastique)",
+        "url": "https://fr.wikipedia.org/wiki/Ladon_(cr%C3%A9ature_fantastique)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hesperian Dragon (Drakon Hesperios)",
+        "url": "https://www.theoi.com/Ther/DrakonHesperios.html"
+      }
+    ]
+  },
+  {
+    "id": "lamia-q200073",
+    "name": {
+      "en": "Lamia",
+      "fr": "Lamia"
+    },
+    "kind": "creature",
+    "wikidata": "Q200073",
+    "description": {
+      "en": "A female daemon who devoured children, usually described as having the upper body of a woman and lower half of a serpent.",
+      "fr": "Fille de Libye, de Poséidon et de Bélos dans la mythologie grecque."
+    },
+    "greek": "Λαμία , Lamiā",
+    "parents": [
+      "libya",
+      "poseidon",
+      "belus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lamia",
+        "url": "https://en.wikipedia.org/wiki/Lamia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lamia (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Lamia_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Lamia",
+        "url": "https://www.theoi.com/Ther/Lamia.html"
+      }
+    ]
+  },
+  {
+    "id": "leucosia",
+    "name": {
+      "en": "Leucosia",
+      "fr": "Leucosie"
+    },
+    "kind": "creature",
+    "wikidata": "Q669495",
+    "description": {
+      "en": "One of the Sirens in Greek mythology.",
+      "fr": "Personnage mythologique."
+    },
+    "greek": "Λευκωσία",
+    "parents": [
+      "achelous",
+      "melpomene"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Leucosia (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Leucosia_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Leucosie",
+        "url": "https://fr.wikipedia.org/wiki/Leucosie"
+      }
+    ]
+  },
+  {
+    "id": "macelo",
+    "name": {
+      "en": "Macelo",
+      "fr": "Macélo"
+    },
+    "kind": "creature",
+    "wikidata": "Q4275700",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Macelo",
+        "url": "https://en.wikipedia.org/wiki/Macelo"
+      }
+    ]
+  },
+  {
+    "id": "maera-q1250023",
+    "name": {
+      "en": "Maera",
+      "fr": "Maera"
+    },
+    "kind": "creature",
+    "wikidata": "Q1250023",
+    "description": {
+      "en": "Mythical dog of Icarius of Attica.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Maera (hound)",
+        "url": "https://en.wikipedia.org/wiki/Maera_(hound)"
+      }
+    ]
+  },
+  {
+    "id": "marsyas",
+    "name": {
+      "en": "Marsyas",
+      "fr": "Marsyas"
+    },
+    "kind": "creature",
+    "wikidata": "Q599737",
+    "description": {
+      "en": "Satyr musician in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Μαρσύας , Marsyās",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Marsyas",
+        "url": "https://en.wikipedia.org/wiki/Marsyas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Marsyas",
+        "url": "https://fr.wikipedia.org/wiki/Marsyas"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Marsyas",
+        "url": "https://www.theoi.com/Georgikos/SatyrosMarsyas.html"
+      }
+    ]
+  },
+  {
+    "id": "mimas-q1045732",
+    "name": {
+      "en": "Mimas",
+      "fr": "Mimas"
+    },
+    "kind": "creature",
+    "wikidata": "Q1045732",
+    "description": {
+      "en": "Giant (Greek mythology).",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Μίμας , Mimās",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Mimas (Giant)",
+        "url": "https://en.wikipedia.org/wiki/Mimas_(Giant)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Mimas (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Mimas_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "miming",
+    "name": {
+      "en": "Miming",
+      "fr": "Miming"
+    },
+    "kind": "creature",
+    "wikidata": "Q3566604",
+    "description": {
+      "en": "Norse or Germanic legendary character.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Μίμινγκ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Mimingus",
+        "url": "https://en.wikipedia.org/wiki/Mimingus"
+      }
+    ]
+  },
+  {
+    "id": "mormo",
+    "name": {
+      "en": "Mormo",
+      "fr": "Mormo"
+    },
+    "kind": "creature",
+    "wikidata": "Q528869",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Μορμώ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Mormo",
+        "url": "https://en.wikipedia.org/wiki/Mormo"
+      }
+    ]
+  },
+  {
+    "id": "nessus",
+    "name": {
+      "en": "Nessus",
+      "fr": "Nessos"
+    },
+    "kind": "creature",
+    "wikidata": "Q466866",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure dans la mythologie grecque."
+    },
+    "greek": "Νέσσος , Nessos",
+    "parents": [
+      "nephele-q624551",
+      "ixion"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nessus (centaur)",
+        "url": "https://en.wikipedia.org/wiki/Nessus_(centaur)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nessos",
+        "url": "https://fr.wikipedia.org/wiki/Nessos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nessus (Nessos)",
+        "url": "https://www.theoi.com/Georgikos/KentaurosNessos.html"
+      }
+    ]
+  },
+  {
+    "id": "ophion",
+    "name": {
+      "en": "Ophion",
+      "fr": "Ophion"
+    },
+    "kind": "creature",
+    "wikidata": "Q1053307",
+    "description": {
+      "en": "Primordial Greek creator deity.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ὀφίων",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ophion (god)",
+        "url": "https://en.wikipedia.org/wiki/Ophion_(god)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ophion (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Ophion_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ophion",
+        "url": "https://www.theoi.com/Titan/TitanOphion.html"
+      }
+    ]
+  },
+  {
+    "id": "ophiotaurus",
+    "name": {
+      "en": "Ophiotaurus",
+      "fr": "Ophiotauros"
+    },
+    "kind": "creature",
+    "wikidata": "Q3243942",
+    "description": {
+      "en": "Legendary creature, part bull and part serpent, in Greek mythology.",
+      "fr": "Créature légendaire hybride, moitié taureau moitié serpent."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ophiotaurus",
+        "url": "https://en.wikipedia.org/wiki/Ophiotaurus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ophiotauros",
+        "url": "https://fr.wikipedia.org/wiki/Ophiotauros"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ophiotaurus (Ophiotauros)",
+        "url": "https://www.theoi.com/Ther/TaurosOphis.html"
+      }
+    ]
+  },
+  {
+    "id": "orthrus",
+    "name": {
+      "en": "Orthrus",
+      "fr": "Orthos"
+    },
+    "kind": "creature",
+    "wikidata": "Q336230",
+    "description": {
+      "en": "Mythical dog of Geryon.",
+      "fr": "Chien bicéphale de la mythologie grecque."
+    },
+    "greek": "Ὄρθρος",
+    "parents": [
+      "echidna",
+      "typhon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Orthrus",
+        "url": "https://en.wikipedia.org/wiki/Orthrus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Orthos",
+        "url": "https://fr.wikipedia.org/wiki/Orthos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Orthrus (Orthros)",
+        "url": "https://www.theoi.com/Ther/KuonOrthros.html"
+      }
+    ]
+  },
+  {
+    "id": "otus",
+    "name": {
+      "en": "Otus",
+      "fr": "Otos"
+    },
+    "kind": "creature",
+    "wikidata": "Q3357697",
+    "description": {
+      "en": "Son of Gaia in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Ότος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Otos (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Otos_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "pallas-q2463695",
+    "name": {
+      "en": "Pallas",
+      "fr": "Pallas"
+    },
+    "kind": "creature",
+    "wikidata": "Q2463695",
+    "description": {
+      "en": "Son of Uranus and Gaia, killed and flayed by Athena.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Πάλλας",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pallas (Giant)",
+        "url": "https://en.wikipedia.org/wiki/Pallas_(Giant)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pallas (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Pallas_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "peloreus",
+    "name": {
+      "en": "Peloreus",
+      "fr": "Pélorée"
+    },
+    "kind": "creature",
+    "wikidata": "Q3411759",
+    "description": {
+      "en": "Gigant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Πέλορος",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Peloreus",
+        "url": "https://en.wikipedia.org/wiki/Peloreus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pélorée",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9lor%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "pholus",
+    "name": {
+      "en": "Pholus",
+      "fr": "Pholos"
+    },
+    "kind": "creature",
+    "wikidata": "Q1135152",
+    "description": {
+      "en": "Centaur in Greek mythology.",
+      "fr": "Centaure, dont la légende est associée à celle d'Héraclès."
+    },
+    "greek": "Φόλος , Pholos",
+    "parents": [
+      "silenus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pholus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Pholus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pholos",
+        "url": "https://fr.wikipedia.org/wiki/Pholos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pholus (Pholos)",
+        "url": "https://www.theoi.com/Georgikos/KentaurosPholos.html"
+      }
+    ]
+  },
+  {
+    "id": "poemenius",
+    "name": {
+      "en": "Poemenius",
+      "fr": "Poemenius"
+    },
+    "kind": "creature",
+    "wikidata": "Q106981846",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Poemenius (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Poemenius_(mythology)"
+      }
+    ]
+  },
+  {
+    "id": "polkan",
+    "name": {
+      "en": "Polkan",
+      "fr": "Polkan"
+    },
+    "kind": "creature",
+    "wikidata": "Q1990860",
+    "description": {
+      "en": "Centaur-like (half man, half dog) character in Russian folklore.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Polkan",
+        "url": "https://en.wikipedia.org/wiki/Polkan"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polkan",
+        "url": "https://fr.wikipedia.org/wiki/Polkan"
+      }
+    ]
+  },
+  {
+    "id": "polybotes",
+    "name": {
+      "en": "Polybotes",
+      "fr": "Polybotès"
+    },
+    "kind": "creature",
+    "wikidata": "Q1233841",
+    "description": {
+      "en": "One of the Giants of Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Πολυβώτης , Polybōtēs",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Polybotes",
+        "url": "https://en.wikipedia.org/wiki/Polybotes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polybotès",
+        "url": "https://fr.wikipedia.org/wiki/Polybot%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Polybotes",
+        "url": "https://www.theoi.com/Gigante/GigantePolybotes.html"
+      }
+    ]
+  },
+  {
+    "id": "porphyrion",
+    "name": {
+      "en": "Porphyrion",
+      "fr": "Porphyrion"
+    },
+    "kind": "creature",
+    "wikidata": "Q1421201",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Πορφυρίων",
+    "parents": [
+      "uranus",
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Porphyrion",
+        "url": "https://en.wikipedia.org/wiki/Porphyrion"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Porphyrion",
+        "url": "https://fr.wikipedia.org/wiki/Porphyrion"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Porphyrion",
+        "url": "https://www.theoi.com/Gigante/GigantePorphyrion.html"
+      }
+    ]
+  },
+  {
+    "id": "python",
+    "name": {
+      "en": "Python",
+      "fr": "Python"
+    },
+    "kind": "creature",
+    "wikidata": "Q15721",
+    "description": {
+      "en": "Dragon of Delphi killed by the god Apollo.",
+      "fr": "Serpent monstrueux de la mythologie grecque."
+    },
+    "greek": "Πύθων",
+    "parents": [
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Python (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Python_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Python (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Python_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Python Delpyne",
+        "url": "https://www.theoi.com/Ther/DrakainaPython.html"
+      }
+    ]
+  },
+  {
+    "id": "steropes",
+    "name": {
+      "en": "Steropes",
+      "fr": "Steropès"
+    },
+    "kind": "creature",
+    "wikidata": "Q3553687",
+    "description": {
+      "en": "Cyclops in Greek mythology (\"lightning\").",
+      "fr": "Fils de Gaïa et d’Ouranos dans la mythologie grecque."
+    },
+    "greek": "Στερόπης",
+    "parents": [
+      "gaia",
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Steropes",
+        "url": "https://en.wikipedia.org/wiki/Steropes"
+      }
+    ]
+  },
+  {
+    "id": "styphelus",
+    "name": {
+      "en": "Styphelus",
+      "fr": "Styphèle"
+    },
+    "kind": "creature",
+    "wikidata": "Q125377972",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Centaure de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Styphelus",
+        "url": "https://en.wikipedia.org/wiki/Styphelus"
+      }
+    ]
+  },
+  {
+    "id": "talos-q657174",
+    "name": {
+      "en": "Talos",
+      "fr": "Talos"
+    },
+    "kind": "creature",
+    "wikidata": "Q657174",
+    "description": {
+      "en": "Mythological bronze automaton guarding Crete.",
+      "fr": "Fils de Crès dans la mythologie grecque."
+    },
+    "greek": "Τάλως , Talōs",
+    "parents": [
+      "cres"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Talos",
+        "url": "https://en.wikipedia.org/wiki/Talos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Talos (Crète)",
+        "url": "https://fr.wikipedia.org/wiki/Talos_(Cr%C3%A8te)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Talos",
+        "url": "https://www.theoi.com/Gigante/GiganteTalos.html"
+      }
+    ]
+  },
+  {
+    "id": "tartalo",
+    "name": {
+      "en": "Tartalo",
+      "fr": "Tartaro"
+    },
+    "kind": "creature",
+    "wikidata": "Q2743322",
+    "description": {
+      "en": "Basque mythological figure.",
+      "fr": "Personnage de la mythologie basque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tartalo",
+        "url": "https://en.wikipedia.org/wiki/Tartalo"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tartalo",
+        "url": "https://fr.wikipedia.org/wiki/Tartalo"
+      }
+    ]
+  },
+  {
+    "id": "theban-sphinx",
+    "name": {
+      "en": "Theban Sphinx",
+      "fr": "Sphinge"
+    },
+    "kind": "creature",
+    "wikidata": "Q48745962",
+    "description": {
+      "en": "Riddling creature in Greek mythology, defeated by Oedipus.",
+      "fr": "Figure du mythe d'Œdipe."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Theban Sphinx",
+        "url": "https://en.wikipedia.org/wiki/Theban_Sphinx"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sphinge",
+        "url": "https://fr.wikipedia.org/wiki/Sphinge"
+      }
+    ]
+  },
+  {
+    "id": "theodamas",
+    "name": {
+      "en": "Theodamas",
+      "fr": "Théodamas"
+    },
+    "kind": "creature",
+    "wikidata": "Q2417141",
+    "description": {
+      "en": "Giant in Greek mythology.",
+      "fr": "Géant de la mythologie grecque."
+    },
+    "greek": "Θεοδάμας",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Théodamas (Géant)",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9odamas_(G%C3%A9ant)"
+      }
+    ]
+  },
+  {
+    "id": "thereus",
+    "name": {
+      "en": "Thereus",
+      "fr": "Thérée"
+    },
+    "kind": "creature",
+    "wikidata": "Q16680068",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Centaure, personnage de la mythologie grecque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thérée",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9r%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "ujanko",
+    "name": {
+      "en": "Ujanko",
+      "fr": "Ujanko"
+    },
+    "kind": "creature",
+    "wikidata": "Q109331165",
+    "description": {
+      "en": "Figure of Greek mythology.",
+      "fr": "Personnage dans la mythologie basque."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ujanko",
+        "url": "https://fr.wikipedia.org/wiki/Ujanko"
+      }
+    ]
+  },
+  {
+    "id": "wendigo",
+    "name": {
+      "en": "Wendigo",
+      "fr": "Wendigo"
+    },
+    "kind": "creature",
+    "wikidata": "Q370801",
+    "description": {
+      "en": "Mythical creature.",
+      "fr": "Créature mystique amérindienne."
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Wendigo",
+        "url": "https://en.wikipedia.org/wiki/Wendigo"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Wendigo",
+        "url": "https://fr.wikipedia.org/wiki/Wendigo"
+      }
+    ]
+  }
+]

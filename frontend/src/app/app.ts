@@ -1,41 +1,24 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Info, Story, StoryService } from './story';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { CatalogService } from './catalog/catalog';
+import { I18nPipe } from './i18n/i18n.pipe';
+import { I18nService } from './i18n/i18n.service';
 
+/** The frame of every page: the header — navigation, search, i18n switch — and the footer. */
 @Component({
-  imports: [FormsModule],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, FormsModule, I18nPipe],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
-  private readonly stories$ = inject(StoryService);
+  protected readonly catalog = inject(CatalogService);
+  protected readonly i18n = inject(I18nService);
+  private readonly router = inject(Router);
+  protected query = '';
 
-  protected readonly info = signal<Info | null>(null);
-  protected readonly stories = signal<Story[]>([]);
-  protected readonly error = signal<string | null>(null);
-  protected title = '';
-  protected summary = '';
-
-  constructor() {
-    this.stories$.info().subscribe({ next: (info) => this.info.set(info), error: () => this.unreachable() });
-    this.stories$.list().subscribe({ next: (stories) => this.stories.set(stories), error: () => this.unreachable() });
-  }
-
-  protected add(): void {
-    const title = this.title.trim();
-    if (!title) return;
-    this.stories$.create(title, this.summary.trim()).subscribe({
-      next: (story) => {
-        this.stories.update((stories) => [...stories, story]);
-        this.title = '';
-        this.summary = '';
-      },
-      error: () => this.unreachable(),
-    });
-  }
-
-  private unreachable(): void {
-    this.error.set('The MythoStory backend does not answer.');
+  protected search(): void {
+    this.router.navigate(['/search'], { queryParams: { q: this.query.trim() || null } });
   }
 }

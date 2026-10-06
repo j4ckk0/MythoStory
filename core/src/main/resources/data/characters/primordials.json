@@ -1,0 +1,217 @@
+[
+  {
+    "id": "chaos",
+    "name": {
+      "en": "Chaos",
+      "fr": "Chaos"
+    },
+    "kind": "primordial",
+    "wikidata": "Q131090",
+    "description": {
+      "en": "The yawning void that came first of all, before the Earth and the Sky.",
+      "fr": "Le vide béant, apparu le tout premier, avant la Terre et le Ciel."
+    },
+    "greek": "Χάος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chaos (cosmogony)",
+        "url": "https://en.wikipedia.org/wiki/Chaos_(cosmogony)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chaos (cosmogonie)",
+        "url": "https://fr.wikipedia.org/wiki/Chaos_(cosmogonie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Chaos (Khaos)",
+        "url": "https://www.theoi.com/Protogenos/Khaos.html"
+      }
+    ]
+  },
+  {
+    "id": "gaia",
+    "name": {
+      "en": "Gaia",
+      "fr": "Gaïa"
+    },
+    "kind": "primordial",
+    "wikidata": "Q93172",
+    "description": {
+      "en": "The Earth, mother of the Sky, the Titans and countless monsters.",
+      "fr": "La Terre, mère du Ciel, des Titans et d’innombrables monstres."
+    },
+    "greek": "Γαῖα",
+    "roman": {
+      "en": "Terra",
+      "fr": "Terra"
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Gaia",
+        "url": "https://en.wikipedia.org/wiki/Gaia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Gaïa",
+        "url": "https://fr.wikipedia.org/wiki/Ga%C3%AFa"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Gaea (Gaia)",
+        "url": "https://www.theoi.com/Protogenos/Gaia.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Gaia",
+        "url": "https://www.worldhistory.org/Gaia/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Gaïa",
+        "url": "https://mythologica.fr/grec/gaia.htm"
+      }
+    ]
+  },
+  {
+    "id": "uranus",
+    "name": {
+      "en": "Uranus",
+      "fr": "Ouranos"
+    },
+    "kind": "primordial",
+    "wikidata": "Q79999",
+    "description": {
+      "en": "The starry Sky, son and husband of Gaia, overthrown by his son Cronus.",
+      "fr": "Le Ciel étoilé, fils et époux de Gaïa, renversé par son fils Cronos."
+    },
+    "greek": "Οὐρανός",
+    "roman": {
+      "en": "Caelus",
+      "fr": "Caelus"
+    },
+    "parents": [
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Uranus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Uranus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ouranos",
+        "url": "https://fr.wikipedia.org/wiki/Ouranos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Uranus (Ouranos)",
+        "url": "https://www.theoi.com/Protogenos/Ouranos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ouranos",
+        "url": "https://mythologica.fr/grec/ouranos.htm"
+      }
+    ]
+  },
+  {
+    "id": "tartarus",
+    "name": {
+      "en": "Tartarus",
+      "fr": "Tartare"
+    },
+    "kind": "primordial",
+    "wikidata": "Q101322",
+    "description": {
+      "en": "The deepest pit beneath the world, where the defeated Titans are imprisoned — and the god who is that pit.",
+      "fr": "L’abîme le plus profond sous le monde, où sont enfermés les Titans vaincus — et le dieu qui est cet abîme."
+    },
+    "greek": "Τάρταρος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tartarus",
+        "url": "https://en.wikipedia.org/wiki/Tartarus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tartare (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Tartare_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Tartarus (Tartaros)",
+        "url": "https://www.theoi.com/Protogenos/Tartaros.html"
+      }
+    ]
+  },
+  {
+    "id": "eros",
+    "name": {
+      "en": "Eros",
+      "fr": "Éros"
+    },
+    "kind": "primordial",
+    "wikidata": "Q121973",
+    "description": {
+      "en": "Love, among the first powers of the world; later the winged archer, son of Aphrodite.",
+      "fr": "L’Amour, l’une des premières puissances du monde ; plus tard l’archer ailé, fils d’Aphrodite."
+    },
+    "greek": "Ἔρως",
+    "roman": {
+      "en": "Cupid",
+      "fr": "Cupidon"
+    },
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eros",
+        "url": "https://en.wikipedia.org/wiki/Eros"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éros",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ros"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eros",
+        "url": "https://www.theoi.com/Ouranios/Eros.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Eros",
+        "url": "https://www.worldhistory.org/Eros/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Éros",
+        "url": "https://mythologica.fr/grec/eros.htm"
+      }
+    ]
+  }
+]

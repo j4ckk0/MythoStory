@@ -1,53 +1,46 @@
 package org.jtools.mythostory.backend
 
 import io.ktor.client.request.get
-import io.ktor.client.request.post
-import io.ktor.client.request.setBody
 import io.ktor.client.statement.bodyAsText
-import io.ktor.http.ContentType
+import io.ktor.client.request.header
+import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
-import io.ktor.http.contentType
+import io.ktor.server.testing.ApplicationTestBuilder
 import io.ktor.server.testing.testApplication
-import org.jtools.mythostory.core.JsonFileStoryRepository
-import org.junit.jupiter.api.io.TempDir
-import java.io.File
+import org.jtools.mythostory.core.Catalog
 import kotlin.test.Test
 import kotlin.test.assertContains
 import kotlin.test.assertEquals
 
 class MythoStoryServerTest {
-    @TempDir
-    lateinit var dir: File
-
-    private fun test(block: suspend io.ktor.server.testing.ApplicationTestBuilder.() -> Unit) = testApplication {
-        application { mythoStory(JsonFileStoryRepository(File(dir, "stories.json")), Platform.ANDROID) }
+    private fun test(block: suspend ApplicationTestBuilder.() -> Unit) = testApplication {
+        application { mythoStory(Catalog.load(), Platform.ANDROID) }
         block()
     }
 
     @Test
-    fun `the info names the version Maven built and the platform`() = test {
+    fun `the info names the version Maven built, the platform and the i18n languages`() = test {
         val body = client.get("/api/info").bodyAsText()
         assertContains(body, "\"name\":\"MythoStory\"")
         assertContains(body, "\"platform\":\"android\"")
+        assertContains(body, "\"languages\":[\"en\",\"fr\"]")
         assertContains(body, "\"version\":\"0.") // filtered from the pom, never the placeholder
     }
 
     @Test
-    fun `a story posted is listed`() = test {
-        val created = client.post("/api/stories") {
-            contentType(ContentType.Application.Json)
-            setBody("""{"title":"The Iliad","summary":"Wrath"}""")
-        }
-        assertEquals(HttpStatusCode.Created, created.status)
-        assertContains(client.get("/api/stories").bodyAsText(), "\"title\":\"The Iliad\"")
+    fun `the catalog is served whole, in every language`() = test {
+        val response = client.get("/api/catalog")
+        assertEquals(HttpStatusCode.OK, response.status)
+        val body = response.bodyAsText()
+        assertContains(body, "\"id\":\"heracles\"")
+        assertContains(body, "\"fr\":\"Héraclès\"")
+        assertContains(body, "\"id\":\"labours-of-heracles\"")
+        assertContains(body, "\"kind\":\"creature\"")
     }
 
     @Test
-    fun `a story without a title is a bad request`() = test {
-        val response = client.post("/api/stories") {
-            contentType(ContentType.Application.Json)
-            setBody("""{"title":"  "}""")
-        }
-        assertEquals(HttpStatusCode.BadRequest, response.status)
+    fun `the catalog is gzipped for whoever accepts it`() = test {
+        val response = client.get("/api/catalog") { header(HttpHeaders.AcceptEncoding, "gzip") }
+        assertEquals("gzip", response.headers[HttpHeaders.ContentEncoding])
     }
 }

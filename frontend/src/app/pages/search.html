@@ -1,0 +1,29 @@
+<h1>{{ 'search.title' | i18n }}</h1>
+@if (!query()) {
+  <p class="muted">{{ 'search.hint' | i18n }}</p>
+} @else if (!characters().length && !stories().length) {
+  <p class="muted">{{ 'search.none' | i18n: { query: q() } }}</p>
+} @else {
+  @if (characters().length) {
+    <h2>{{ 'nav.characters' | i18n }}</h2>
+    <ul class="entries">
+      @for (character of characters(); track character.id) {
+        <li>
+          <a [routerLink]="['/characters', character.id]">{{ character.name | i18nText }}</a>
+          <span class="muted"> — {{ 'kind.' + character.kind | i18n }} · {{ character.description | i18nText }}</span>
+        </li>
+      }
+    </ul>
+    @if (more()) {
+      <p class="muted">{{ 'search.more' | i18n: { count: more() } }}</p>
+    }
+  }
+  @if (stories().length) {
+    <h2>{{ 'nav.stories' | i18n }}</h2>
+    <ul class="entries">
+      @for (story of stories(); track story.id) {
+        <li><a [routerLink]="['/stories', story.id]">{{ story.title | i18nText }}</a></li>
+      }
+    </ul>
+  }
+}

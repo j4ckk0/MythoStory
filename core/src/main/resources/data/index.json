@@ -1,0 +1,30 @@
+{
+  "characters": [
+    "characters/primordials.json",
+    "characters/titans.json",
+    "characters/olympians.json",
+    "characters/deities.json",
+    "characters/nymphs.json",
+    "characters/heroes.json",
+    "characters/mortals.json",
+    "characters/creatures.json",
+    "characters/wikidata/primordial.json",
+    "characters/wikidata/titan.json",
+    "characters/wikidata/olympian.json",
+    "characters/wikidata/deity.json",
+    "characters/wikidata/nymph.json",
+    "characters/wikidata/hero.json",
+    "characters/wikidata/mortal.json",
+    "characters/wikidata/creature.json"
+  ],
+  "stories": [
+    "stories/theogony.json",
+    "stories/prometheus.json",
+    "stories/gods-and-mortals.json",
+    "stories/heroes.json",
+    "stories/thebes.json",
+    "stories/trojan-war.json",
+    "stories/odyssey.json"
+  ],
+  "cycles": "cycles.json"
+}

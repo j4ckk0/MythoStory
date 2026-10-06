@@ -1,0 +1,360 @@
+[
+  {
+    "id": "achlys",
+    "name": {
+      "en": "Achlys",
+      "fr": "Achlys"
+    },
+    "kind": "primordial",
+    "wikidata": "Q340545",
+    "description": {
+      "en": "Primordial deity in Greek mythology.",
+      "fr": "Fille de Nyx dans la mythologie grecque."
+    },
+    "greek": "Ἀχλύς",
+    "parents": [
+      "nyx"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Achlys",
+        "url": "https://en.wikipedia.org/wiki/Achlys"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Achlys",
+        "url": "https://fr.wikipedia.org/wiki/Achlys"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Achlys (Akhlys)",
+        "url": "https://www.theoi.com/Daimon/Akhlys.html"
+      }
+    ]
+  },
+  {
+    "id": "aether",
+    "name": {
+      "en": "Aether",
+      "fr": "Éther"
+    },
+    "kind": "primordial",
+    "wikidata": "Q189175",
+    "description": {
+      "en": "Primordial Greek deity, personification of the upper air.",
+      "fr": "Dieu primordial grec."
+    },
+    "greek": "Αἰθήρ",
+    "parents": [
+      "nyx",
+      "erebos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aether (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Aether_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éther (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aether (Aither)",
+        "url": "https://www.theoi.com/Protogenos/Aither.html"
+      }
+    ]
+  },
+  {
+    "id": "ananke",
+    "name": {
+      "en": "Ananke",
+      "fr": "Ananké"
+    },
+    "kind": "primordial",
+    "wikidata": "Q332246",
+    "description": {
+      "en": "Personification of inevitability, compulsion and necessity in Greek mythology.",
+      "fr": "Concept de philosophie métaphysique."
+    },
+    "greek": "Ἀνάγκη",
+    "parents": [
+      "chronos",
+      "hydros"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ananke",
+        "url": "https://en.wikipedia.org/wiki/Ananke"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ananké (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Anank%C3%A9_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ananke",
+        "url": "https://www.theoi.com/Protogenos/Ananke.html"
+      }
+    ]
+  },
+  {
+    "id": "chronos",
+    "name": {
+      "en": "Chronos",
+      "fr": "Chronos"
+    },
+    "kind": "primordial",
+    "wikidata": "Q272918",
+    "description": {
+      "en": "Personification of Time in ancient Greek religion.",
+      "fr": "Dieu grec primordial personnifiant le Temps et la Destinée."
+    },
+    "greek": "Χρόνος",
+    "parents": [
+      "hydros"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chronos",
+        "url": "https://en.wikipedia.org/wiki/Chronos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chronos",
+        "url": "https://fr.wikipedia.org/wiki/Chronos"
+      }
+    ]
+  },
+  {
+    "id": "erebos",
+    "name": {
+      "en": "Erebos",
+      "fr": "Érèbe"
+    },
+    "kind": "primordial",
+    "wikidata": "Q131122",
+    "description": {
+      "en": "Primordial deity in Greek mythology.",
+      "fr": "Déité primordiale dans la mythologie grecque."
+    },
+    "greek": "Ἔρεβος , Erebos",
+    "parents": [
+      "chaos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Erebus",
+        "url": "https://en.wikipedia.org/wiki/Erebus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Érèbe",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89r%C3%A8be"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Erebus (Erebos)",
+        "url": "https://www.theoi.com/Protogenos/Erebos.html"
+      }
+    ]
+  },
+  {
+    "id": "hydros",
+    "name": {
+      "en": "Hydros",
+      "fr": "Hydros (mythologie)"
+    },
+    "kind": "primordial",
+    "wikidata": "Q12656482",
+    "description": {
+      "en": "Supposed non-attested primordial god of water in Greek mythology.",
+      "fr": "Personnage de la mythologie grecque."
+    },
+    "greek": "Ύδρος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hydros (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Hydros_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hydros",
+        "url": "https://www.theoi.com/Protogenos/Hydros.html"
+      }
+    ]
+  },
+  {
+    "id": "nyx",
+    "name": {
+      "en": "Nyx",
+      "fr": "Nyx"
+    },
+    "kind": "primordial",
+    "wikidata": "Q131203",
+    "description": {
+      "en": "Greek goddess of the night.",
+      "fr": "Déesse grecque de la nuit."
+    },
+    "greek": "Νύξ , Nýx",
+    "parents": [
+      "chaos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nyx",
+        "url": "https://en.wikipedia.org/wiki/Nyx"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nyx",
+        "url": "https://fr.wikipedia.org/wiki/Nyx"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Nyx",
+        "url": "https://www.theoi.com/Protogenos/Nyx.html"
+      }
+    ]
+  },
+  {
+    "id": "ourea",
+    "name": {
+      "en": "Ourea",
+      "fr": "Ouréa"
+    },
+    "kind": "primordial",
+    "wikidata": "Q1191947",
+    "description": {
+      "en": "Greek mountain deities.",
+      "fr": "Divinités de la mythologie grecque."
+    },
+    "greek": "Oὔρεα",
+    "parents": [
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ourea",
+        "url": "https://en.wikipedia.org/wiki/Ourea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ouréa",
+        "url": "https://fr.wikipedia.org/wiki/Our%C3%A9a"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ourea",
+        "url": "https://www.theoi.com/Protogenos/Ourea.html"
+      }
+    ]
+  },
+  {
+    "id": "pontus",
+    "name": {
+      "en": "Pontus",
+      "fr": "Pontos"
+    },
+    "kind": "primordial",
+    "wikidata": "Q190563",
+    "description": {
+      "en": "Sea god of Greek mythology.",
+      "fr": "Fils de Gaïa dans la mythologie grecque."
+    },
+    "greek": "Πόντος , Pontos",
+    "parents": [
+      "gaia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pontus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Pontus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pontos",
+        "url": "https://fr.wikipedia.org/wiki/Pontos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Pontus (Pontos)",
+        "url": "https://www.theoi.com/Protogenos/Pontos.html"
+      }
+    ]
+  },
+  {
+    "id": "thalassa",
+    "name": {
+      "en": "Thalassa",
+      "fr": "Thalassa"
+    },
+    "kind": "primordial",
+    "wikidata": "Q659437",
+    "description": {
+      "en": "Primordial sea goddess in Greek mythology, daughter of Aether and Hemera.",
+      "fr": "Divinité primordiale incarnant la mer dans la mythologie Grecque, fille d'Éther et d'Héméra."
+    },
+    "greek": "Θάλασσα , Talassa",
+    "parents": [
+      "hemera",
+      "aether"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thalassa",
+        "url": "https://en.wikipedia.org/wiki/Thalassa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thalassa (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Thalassa_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thalassa",
+        "url": "https://www.theoi.com/Protogenos/Thalassa.html"
+      }
+    ]
+  }
+]

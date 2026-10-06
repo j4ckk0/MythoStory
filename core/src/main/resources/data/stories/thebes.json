@@ -1,0 +1,107 @@
+[
+  {
+    "id": "oedipus",
+    "title": {
+      "en": "Oedipus",
+      "fr": "Œdipe"
+    },
+    "summary": {
+      "en": "The oracle of Apollo had warned Laius, king of Thebes, that he would be killed by his own son. So when Jocasta gave birth to a boy, Laius pierced the infant's ankles and had him left to die on Mount Cithaeron. But the shepherd who was to abandon him took pity on him, and the child was raised by the king and queen of Corinth, who had none of their own. Because of his swollen feet he was named Oedipus.\n\nAs a young man, troubled by rumours that he was not their son, Oedipus went to consult the oracle of Delphi. It did not answer his question, but foretold that he would kill his father and marry his mother. To escape his fate, he resolved never to return to Corinth. On the road, at a place where three roads met, an old man in a chariot ordered him roughly out of the way and struck him; Oedipus killed him and his attendants. It was Laius.\n\nThebes was then terrorised by the Sphinx, a winged monster who devoured anyone who could not solve her riddle: \"What has one voice, and becomes four-footed, two-footed and three-footed?\" Oedipus answered: \"Man\", who crawls on all fours as a baby, walks on two feet as an adult and leans on a stick in old age. The Sphinx threw herself from her rock, and Thebes gave its saviour the throne and the widowed queen, Jocasta. Years later, a plague struck the city; the oracle demanded that Laius's murderer be driven out. Oedipus led the inquiry himself and discovered the truth: Jocasta hanged herself, and Oedipus put out his own eyes and went into exile.",
+      "fr": "L’oracle d’Apollon avait averti Laïos, roi de Thèbes, qu’il serait tué par son propre fils. Aussi, quand Jocaste mit au monde un garçon, Laïos fit percer les chevilles du nouveau-né et le fit abandonner sur le mont Cithéron. Mais le berger chargé de l’exposer eut pitié de lui, et l’enfant fut élevé par le roi et la reine de Corinthe, qui n’en avaient pas. À cause de ses pieds enflés, on l’appela Œdipe.\n\nDevenu jeune homme, troublé par des rumeurs selon lesquelles il n’était pas leur fils, Œdipe alla consulter l’oracle de Delphes. Celui-ci ne répondit pas à sa question, mais lui prédit qu’il tuerait son père et épouserait sa mère. Pour échapper à son destin, il résolut de ne jamais retourner à Corinthe. En chemin, à un carrefour de trois routes, un vieillard sur un char lui ordonna brutalement de céder le passage et le frappa ; Œdipe le tua, lui et ses serviteurs. C’était Laïos.\n\nThèbes était alors terrorisée par le Sphinx, un monstre ailé qui dévorait quiconque ne résolvait pas son énigme : « Quel être, doué d’une seule voix, a d’abord quatre pieds, puis deux, puis trois ? » Œdipe répondit : « L’homme », qui marche à quatre pattes petit enfant, sur deux pieds adulte et s’appuie sur un bâton dans sa vieillesse. Le Sphinx se jeta du haut de son rocher, et Thèbes donna à son sauveur le trône et la reine veuve, Jocaste. Des années plus tard, une peste frappa la ville ; l’oracle exigea que le meurtrier de Laïos soit chassé. Œdipe mena lui-même l’enquête et découvrit la vérité : Jocaste se pendit, et Œdipe se creva les yeux et partit en exil."
+    },
+    "characters": [
+      "oedipus",
+      "laius",
+      "jocasta",
+      "sphinx",
+      "apollo"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Sophocles",
+          "fr": "Sophocle"
+        },
+        "work": {
+          "en": "Oedipus the King",
+          "fr": "Œdipe roi"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://classics.mit.edu/Sophocles/oedipus.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.5.7–3.5.9",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oedipus",
+        "url": "https://en.wikipedia.org/wiki/Oedipus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Œdipe",
+        "url": "https://fr.wikipedia.org/wiki/%C5%92dipe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oedipus Rex",
+        "url": "https://en.wikipedia.org/wiki/Oedipus_Rex"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Œdipe roi",
+        "url": "https://fr.wikipedia.org/wiki/%C5%92dipe_roi"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Sphinx",
+        "url": "https://www.theoi.com/Ther/Sphinx.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Oedipus the King",
+        "url": "https://www.worldhistory.org/Oedipus_the_King/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Oedipe",
+        "url": "https://mythologica.fr/grec/oedipe.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — What really happened to Oedipus? - Stephen Esposito",
+        "url": "https://www.youtube.com/watch?v=0a9Wuz7MvUE"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — L'Histoire d'Œdipe (complète) - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=zEbyEiKvJpE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+@if (character(); as c) {
+  <p class="kind" [attr.data-kind]="c.kind">
+    <a [routerLink]="['/characters']" [queryParams]="{ kind: c.kind }">{{ 'kind.' + c.kind | i18n }}</a>
+  </p>
+  <h1>{{ c.name | i18nText }}</h1>
+  <p class="lead">{{ c.description | i18nText }}</p>
+  <dl class="facts">
+    @if (c.greek) {
+      <dt>{{ 'character.greek' | i18n }}</dt>
+      <dd lang="grc">{{ c.greek }}</dd>
+    }
+    @if (c.roman) {
+      <dt>{{ 'character.roman' | i18n }}</dt>
+      <dd>{{ c.roman | i18nText }}</dd>
+    }
+    @if (parents().length) {
+      <dt>{{ 'character.parents' | i18n }}</dt>
+      <dd class="chips">
+        @for (parent of parents(); track parent.id) {
+          <app-character-chip [character]="parent" />
+        }
+      </dd>
+    }
+    @if (c.wikidata) {
+      <dt>{{ 'character.wikidata' | i18n }}</dt>
+      <dd><a [href]="'https://www.wikidata.org/wiki/' + c.wikidata" target="_blank" rel="noopener">{{ c.wikidata }}</a></dd>
+    }
+    @if (children().length) {
+      <dt>{{ 'character.children' | i18n }}</dt>
+      <dd class="chips">
+        @for (child of children(); track child.id) {
+          <app-character-chip [character]="child" />
+        }
+      </dd>
+    }
+  </dl>
+
+  <h2>{{ 'character.stories' | i18n }}</h2>
+  @if (stories().length) {
+    <ul class="entries">
+      @for (story of stories(); track story.id) {
+        <li><a [routerLink]="['/stories', story.id]">{{ story.title | i18nText }}</a></li>
+      }
+    </ul>
+  } @else {
+    <p class="muted">{{ 'character.noStories' | i18n }}</p>
+  }
+
+  @if (c.links?.length) {
+    <h2>{{ 'links.title' | i18n }}</h2>
+    <app-links [links]="c.links ?? []" />
+  }
+} @else if (loaded()) {
+  <p class="muted">{{ 'character.notFound' | i18n }}</p>
+}

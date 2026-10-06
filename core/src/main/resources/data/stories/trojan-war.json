@@ -1,0 +1,328 @@
+[
+  {
+    "id": "judgement-of-paris",
+    "title": {
+      "en": "The judgement of Paris",
+      "fr": "Le jugement de Pâris"
+    },
+    "summary": {
+      "en": "All the gods had been invited to the wedding of the hero Peleus and the sea nymph Thetis — all except Eris, the goddess of strife. In revenge she threw among the guests a golden apple, declaring, Hyginus says, that the fairest should take it. Hera, Athena and Aphrodite each claimed it, and Zeus would not choose between his wife, his daughter and the goddess of love.\n\nHe ordered Hermes to lead the three goddesses to Mount Ida, near Troy, to be judged by Paris, a son of King Priam. Because his mother had dreamed she gave birth to a burning torch that set the city on fire, Paris had been abandoned as a baby and raised by shepherds. Each goddess tried to win him over with a gift: Hera offered him kingship over all men, Athena victory in every war, and Aphrodite the love of Helen, the most beautiful woman in the world.\n\nParis gave the apple to Aphrodite. Some time later, with her help, he sailed to Sparta, where King Menelaus received him as a guest, and carried off Helen, the king's wife, to Troy, together with his treasures. To bring her back, the Greeks gathered the greatest army ever seen: the Trojan War had begun.",
+      "fr": "Tous les dieux avaient été invités aux noces du héros Pélée et de la nymphe marine Thétis — tous sauf Éris, la déesse de la discorde. Pour se venger, elle jeta parmi les convives une pomme d’or en déclarant, dit Hygin, que la plus belle devait la prendre. Héra, Athéna et Aphrodite la réclamèrent chacune, et Zeus ne voulut pas choisir entre son épouse, sa fille et la déesse de l’amour.\n\nIl ordonna à Hermès de conduire les trois déesses sur le mont Ida, près de Troie, pour qu’elles soient jugées par Pâris, un fils du roi Priam. Parce que sa mère avait rêvé qu’elle enfantait une torche ardente qui embrasait la ville, Pâris avait été abandonné à sa naissance et élevé par des bergers. Chaque déesse tenta de le gagner par un présent : Héra lui offrit la royauté sur tous les hommes, Athéna la victoire dans toutes les guerres, et Aphrodite l’amour d’Hélène, la plus belle femme du monde.\n\nPâris donna la pomme à Aphrodite. Quelque temps plus tard, avec son aide, il fit voile vers Sparte, où le roi Ménélas le reçut en hôte, et emmena à Troie Hélène, l’épouse du roi, ainsi que ses trésors. Pour la reprendre, les Grecs rassemblèrent la plus grande armée jamais vue : la guerre de Troie commençait."
+    },
+    "characters": [
+      "paris",
+      "eris",
+      "hera",
+      "athena",
+      "aphrodite",
+      "zeus",
+      "hermes",
+      "helen",
+      "menelaus",
+      "peleus",
+      "thetis",
+      "priam"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "3.1–3.3",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Hyginus",
+          "fr": "Hygin"
+        },
+        "work": {
+          "en": "Fabulae",
+          "fr": "Fables"
+        },
+        "passage": "92",
+        "url": {
+          "en": "https://www.theoi.com/Text/HyginusFabulae2.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.12.5",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Judgement of Paris",
+        "url": "https://en.wikipedia.org/wiki/Judgement_of_Paris"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Jugement de Pâris",
+        "url": "https://fr.wikipedia.org/wiki/Jugement_de_P%C3%A2ris"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eris",
+        "url": "https://www.theoi.com/Daimon/Eris.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pâris",
+        "url": "https://mythologica.fr/grec/paris.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Judgement of Paris - The Apple of Discord - The Trojan War Saga Ep.2  Greek Mythology in Comics",
+        "url": "https://www.youtube.com/watch?v=ofdQOSH9Ke0"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Jugement de Pâris - La Pomme de Discorde - La Saga de la Guerre de Troie #02 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=1JNDnnszlb4"
+      }
+    ],
+    "related": [
+      "birth-of-aphrodite"
+    ]
+  },
+  {
+    "id": "wrath-of-achilles",
+    "title": {
+      "en": "The wrath of Achilles",
+      "fr": "La colère d’Achille"
+    },
+    "summary": {
+      "en": "In the tenth year of the siege of Troy, Apollo sent a plague on the Greek camp because Agamemnon had refused to return the daughter of his priest Chryses. Forced to give her back, Agamemnon took in her place Briseis, the captive who had been given to Achilles. Insulted, Achilles withdrew to his tent with his Myrmidons and refused to fight, and his mother Thetis persuaded Zeus to give victory to the Trojans until the Greeks paid Achilles due honour.\n\nLed by Hector, the Trojans drove the Greeks back to their ships and began to set them on fire. Achilles still refused, but let his dearest friend Patroclus fight in his armour. Patroclus drove the Trojans back to the walls of Troy, but there Apollo struck him, and Hector killed him and stripped him of Achilles' armour.\n\nMad with grief, Achilles was reconciled with Agamemnon and returned to battle in new armour forged by Hephaestus. He slaughtered the Trojans and faced Hector before the walls; three times he chased him around the city before killing him, then dragged his body behind his chariot. One night old King Priam, guided by Hermes, came alone to Achilles' tent, kissed the hands that had killed his son and begged for his body. Thinking of his own father, Achilles wept with him and gave the body back. The Iliad ends with Hector's funeral.",
+      "fr": "Dans la dixième année du siège de Troie, Apollon envoya la peste sur le camp grec, parce qu’Agamemnon refusait de rendre la fille de son prêtre Chrysès. Contraint de la rendre, Agamemnon prit à sa place Briséis, la captive qui avait été donnée à Achille. Outragé, Achille se retira sous sa tente avec ses Myrmidons et refusa de combattre, et sa mère Thétis obtint de Zeus qu’il donne la victoire aux Troyens jusqu’à ce que les Grecs rendent à Achille l’honneur qui lui était dû.\n\nMenés par Hector, les Troyens repoussèrent les Grecs jusqu’à leurs navires et commencèrent à les incendier. Achille refusait toujours, mais laissa son ami le plus cher, Patrocle, combattre revêtu de ses armes. Patrocle repoussa les Troyens jusqu’aux murs de Troie, mais là, Apollon le frappa, et Hector le tua et le dépouilla des armes d’Achille.\n\nFou de douleur, Achille se réconcilia avec Agamemnon et retourna au combat avec de nouvelles armes forgées par Héphaïstos. Il massacra les Troyens et affronta Hector devant les remparts ; il le poursuivit trois fois autour de la ville avant de le tuer, puis traîna son corps derrière son char. Une nuit, le vieux roi Priam, guidé par Hermès, vint seul sous la tente d’Achille, baisa les mains qui avaient tué son fils et lui demanda son corps. Pensant à son propre père, Achille pleura avec lui et rendit le corps. L’Iliade s’achève sur les funérailles d’Hector."
+    },
+    "characters": [
+      "achilles",
+      "agamemnon",
+      "hector",
+      "patroclus",
+      "priam",
+      "thetis",
+      "apollo",
+      "zeus",
+      "hephaestus",
+      "hermes"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "Books 1, 16, 18–24 / Chants I, XVI, XVIII–XXIV",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad1.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_I"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "22.131–404",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad22.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XXII"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Iliad",
+        "url": "https://en.wikipedia.org/wiki/Iliad"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Iliade",
+        "url": "https://fr.wikipedia.org/wiki/Iliade"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Iliad",
+        "url": "https://www.worldhistory.org/Iliad/"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Achilles",
+        "url": "https://www.worldhistory.org/Achilles/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Achille",
+        "url": "https://mythologica.fr/grec/achille.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — Greek mythology’s greatest warrior - Iseult Gillespie",
+        "url": "https://www.youtube.com/watch?v=YYZCpJmHAqI"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "TV5MONDE — Le mythe d'Achille : Légendes mythologiques",
+        "url": "https://www.youtube.com/watch?v=rjzcRhr-IWQ"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "ARTE — Les grands mythes : L'Iliade (Intégrale) | ARTE",
+        "url": "https://www.youtube.com/watch?v=QsHrl5lIQS4"
+      }
+    ],
+    "related": [
+      "judgement-of-paris"
+    ]
+  },
+  {
+    "id": "trojan-horse",
+    "title": {
+      "en": "The Trojan horse",
+      "fr": "Le cheval de Troie"
+    },
+    "summary": {
+      "en": "After ten years of siege, Troy still stood. On Athena's inspiration, the Greeks had Epeius build an enormous wooden horse, in whose hollow belly the bravest warriors hid — Odysseus, who had thought of the ruse, Menelaus, Neoptolemus the son of Achilles and others. The rest of the army burned its camp and sailed away to hide behind the nearby island of Tenedos.\n\nThe Trojans came out, amazed, to look at the horse left on the shore. Laocoön, a priest, ran down from the city crying out that it was a trap — \"I fear the Greeks, even when they bring gifts\" — and hurled his spear into its side. A Greek named Sinon, left behind on purpose, told the Trojans that the horse was an offering to Athena, made too large to be brought into the city, lest it bring them the goddess's protection. At that moment two huge serpents rose from the sea and strangled Laocoön and his two sons. Convinced that the gods had punished him for striking a sacred offering, the Trojans breached their own walls to drag the horse into the city, and celebrated their victory.\n\nIn the night, while Troy slept, the Greek fleet returned and Sinon opened the horse. The warriors came out, killed the guards and opened the gates to the army. Troy was put to the torch; old Priam was killed at the altar of Zeus by Neoptolemus, and Menelaus took back Helen. Only Aeneas escaped, with his father and his son, to found a new home in Italy.",
+      "fr": "Après dix ans de siège, Troie tenait toujours. Inspirés par Athéna, les Grecs firent construire par Épéios un énorme cheval de bois, dans le ventre creux duquel se cachèrent les plus braves guerriers — Ulysse, qui avait imaginé la ruse, Ménélas, Néoptolème le fils d’Achille et d’autres. Le reste de l’armée incendia son camp et prit la mer pour se cacher derrière l’île voisine de Ténédos.\n\nLes Troyens sortirent, stupéfaits, contempler le cheval abandonné sur le rivage. Laocoon, un prêtre, accourut de la ville en criant que c’était un piège — « Je crains les Grecs, même quand ils apportent des présents » — et lança sa lance dans son flanc. Un Grec nommé Sinon, laissé là à dessein, raconta aux Troyens que le cheval était une offrande à Athéna, construite trop grande pour entrer dans la ville, de peur qu’elle ne leur apporte la protection de la déesse. À cet instant, deux serpents énormes surgirent de la mer et étouffèrent Laocoon et ses deux fils. Persuadés que les dieux l’avaient puni d’avoir frappé une offrande sacrée, les Troyens ouvrirent une brèche dans leurs propres murailles pour faire entrer le cheval dans la ville, et fêtèrent leur victoire.\n\nDans la nuit, pendant que Troie dormait, la flotte grecque revint et Sinon ouvrit le cheval. Les guerriers en sortirent, tuèrent les gardes et ouvrirent les portes à l’armée. Troie fut livrée aux flammes ; le vieux Priam fut tué au pied de l’autel de Zeus par Néoptolème, et Ménélas reprit Hélène. Seul Énée s’échappa, avec son père et son fils, pour fonder une nouvelle patrie en Italie."
+    },
+    "characters": [
+      "odysseus",
+      "laocoon",
+      "athena",
+      "menelaus",
+      "helen",
+      "priam",
+      "poseidon"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "8.492–520",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey8.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/8"
+        }
+      },
+      {
+        "author": {
+          "en": "Virgil",
+          "fr": "Virgile"
+        },
+        "work": {
+          "en": "Aeneid",
+          "fr": "Énéide"
+        },
+        "passage": "2.13–267",
+        "url": {
+          "en": "https://www.theoi.com/Text/VirgilAeneid2.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99%C3%89n%C3%A9ide_(trad._Nisard)/Livre_II"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.14–5.21",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Trojan Horse",
+        "url": "https://en.wikipedia.org/wiki/Trojan_Horse"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cheval de Troie",
+        "url": "https://fr.wikipedia.org/wiki/Cheval_de_Troie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Trojan War",
+        "url": "https://www.worldhistory.org/Trojan_War/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Laocoon",
+        "url": "https://mythologica.fr/grec/laocoon.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — The tragedy of the one guy who was right about the Trojan Horse - Noah Charney",
+        "url": "https://www.youtube.com/watch?v=_ZmTQIFA9fY"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Guerre de Troie (Complète) - Mythologie Grecque - L'Iliade",
+        "url": "https://www.youtube.com/watch?v=Jhjlc-6C4Ig"
+      }
+    ],
+    "related": [
+      "odysseus-and-polyphemus"
+    ]
+  }
+]

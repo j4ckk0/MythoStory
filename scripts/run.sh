@@ -4,7 +4,7 @@
 # and opens the browser on it; or, with --android, the app installed and started on the device adb sees.
 #
 #   scripts/run.sh
-#   scripts/run.sh --port 9090 --no-browser --data /tmp/stories   # see: scripts/run.sh --help
+#   scripts/run.sh --port 9090 --no-browser   # see: scripts/run.sh --help
 #   scripts/run.sh --rebuild              # force a rebuild first
 #   scripts/run.sh --android              # on the device or emulator adb sees (setup.sh --android first)
 #

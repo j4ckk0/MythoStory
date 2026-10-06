@@ -1,0 +1,101 @@
+[
+  {
+    "id": "odysseus-and-polyphemus",
+    "title": {
+      "en": "Odysseus and the Cyclops",
+      "fr": "Ulysse et le Cyclope"
+    },
+    "summary": {
+      "en": "On his way home from Troy, Odysseus landed with twelve companions on the land of the Cyclopes, lawless giants who neither plough nor sow. They went into a vast cave full of cheeses and lambs and waited for its owner. At nightfall Polyphemus, a son of Poseidon with a single eye in his forehead, came home with his flocks, rolled a rock that twenty-two wagons could not have moved across the entrance and, discovering the intruders, seized two of the men and devoured them.\n\nOdysseus could not kill him in his sleep: no one else could have moved the rock from the entrance. So he offered the Cyclops a strong, sweet wine he had brought with him. Delighted, Polyphemus asked his name and promised him a gift in return. \"My name is Nobody,\" said Odysseus. \"Then I shall eat Nobody last,\" answered the giant, and fell asleep, drunk. Odysseus and his companions heated the point of a great olive stake in the fire and drove it into his eye. Polyphemus howled; the other Cyclopes came running and asked who was hurting him. \"Nobody is killing me!\" he cried — and they went away.\n\nIn the morning the blind Cyclops opened the cave to let out his flocks, feeling the backs of the animals as they passed. But the Greeks had tied themselves under the bellies of the rams, and Odysseus clung to the fleece of the largest. Once out at sea, Odysseus could not resist shouting his real name. Polyphemus then prayed to his father Poseidon that Odysseus should reach home only late and in misery, having lost all his companions, on a foreign ship, to find trouble in his house. Poseidon heard him, and his wrath pursued Odysseus for ten years.",
+      "fr": "En rentrant de Troie, Ulysse aborda avec douze compagnons au pays des Cyclopes, des géants sans lois qui ne labourent ni ne sèment. Ils entrèrent dans une vaste grotte pleine de fromages et d’agneaux et attendirent son propriétaire. À la tombée du jour, Polyphème, fils de Poséidon qui n’avait qu’un œil au milieu du front, rentra avec ses troupeaux, roula devant l’entrée un rocher que vingt-deux chariots n’auraient pas déplacé et, découvrant les intrus, saisit deux des hommes et les dévora.\n\nUlysse ne pouvait le tuer dans son sommeil : nul autre n’aurait pu dégager l’entrée. Il offrit donc au Cyclope un vin fort et doux qu’il avait emporté. Ravi, Polyphème lui demanda son nom et lui promit un présent en retour. « Mon nom est Personne », dit Ulysse. « Alors je mangerai Personne en dernier », répondit le géant, et il s’endormit, ivre. Ulysse et ses compagnons durcirent au feu la pointe d’un grand pieu d’olivier et la lui enfoncèrent dans l’œil. Polyphème hurla ; les autres Cyclopes accoururent et demandèrent qui lui faisait du mal. « Personne me tue ! » cria-t-il — et ils s’en allèrent.\n\nAu matin, le Cyclope aveugle ouvrit la grotte pour laisser sortir ses troupeaux, tâtant le dos des bêtes au passage. Mais les Grecs s’étaient attachés sous le ventre des béliers, et Ulysse s’agrippait à la toison du plus grand. Une fois au large, Ulysse ne put s’empêcher de crier son vrai nom. Polyphème pria alors son père Poséidon qu’Ulysse ne rentre chez lui que tard et misérablement, après avoir perdu tous ses compagnons, sur un navire étranger, pour trouver le malheur dans sa maison. Poséidon l’entendit, et sa colère poursuivit Ulysse pendant dix ans."
+    },
+    "characters": [
+      "odysseus",
+      "polyphemus",
+      "poseidon",
+      "cyclopes"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "9.105–566",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey9.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/9"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Polyphemus",
+        "url": "https://en.wikipedia.org/wiki/Polyphemus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polyphème",
+        "url": "https://fr.wikipedia.org/wiki/Polyph%C3%A8me"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Odyssey",
+        "url": "https://en.wikipedia.org/wiki/Odyssey"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Odyssée",
+        "url": "https://fr.wikipedia.org/wiki/Odyss%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Polyphemus (Polyphemos)",
+        "url": "https://www.theoi.com/Gigante/GigantePolyphemos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Odyssey",
+        "url": "https://www.worldhistory.org/Odyssey/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Polyphème",
+        "url": "https://mythologica.fr/grec/polypheme.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus on the Island of the Cyclops - The Odyssey - Episode 5 - See u In History",
+        "url": "https://www.youtube.com/watch?v=K9j9nhrKxE8"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse sur l'île des Cyclopes - L'Odyssée - #5 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=ByMogPTflfA"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "ARTE — Les grands mythes : L'Odyssée (Intégrale) | ARTE",
+        "url": "https://www.youtube.com/watch?v=C3F_sG_5Ho8"
+      }
+    ],
+    "related": [
+      "trojan-horse"
+    ]
+  }
+]

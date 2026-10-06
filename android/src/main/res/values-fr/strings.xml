@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app's own strings, in French (i18n: the English ones are in values/). -->
+<resources>
+    <string name="app_name">MythoStory</string>
+    <string name="server_failed">MythoStory n’a pas pu démarrer : %1$s</string>
+</resources>

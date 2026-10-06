@@ -8,8 +8,7 @@ import java.util.concurrent.CompletableFuture
 import kotlin.concurrent.thread
 
 /**
- * Starts the server once per process, whatever becomes of the activities: on 127.0.0.1 and a free port, the stories
- * in the app's private storage.
+ * Starts the server once per process, whatever becomes of the activities: on 127.0.0.1 and a free port.
  */
 class MythoStoryApplication : Application() {
     /** The port the server listens on, once it does; the activity waits for it. */
@@ -20,7 +19,7 @@ class MythoStoryApplication : Application() {
         // off the main thread: Android forbids network work there
         thread(name = "mythostory-server", isDaemon = true) {
             try {
-                val server = startServer("127.0.0.1", 0, filesDir, Platform.ANDROID)
+                val server = startServer("127.0.0.1", 0, Platform.ANDROID)
                 port.complete(runBlocking { server.engine.resolvedConnectors().first().port })
             } catch (e: Throwable) {
                 port.completeExceptionally(e)

@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "pandora",
+    "name": {
+      "en": "Pandora",
+      "fr": "Pandore"
+    },
+    "kind": "mortal",
+    "wikidata": "Q131346",
+    "description": {
+      "en": "The first woman, fashioned by the gods, who released the evils into the world.",
+      "fr": "La première femme, façonnée par les dieux, qui répandit les maux dans le monde."
+    },
+    "greek": "Πανδώρα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pandora",
+        "url": "https://en.wikipedia.org/wiki/Pandora"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pandore",
+        "url": "https://fr.wikipedia.org/wiki/Pandore"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Pandora",
+        "url": "https://www.worldhistory.org/Pandora/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Epiméthée et Pandore",
+        "url": "https://mythologica.fr/grec/pandore.htm"
+      }
+    ]
+  },
+  {
+    "id": "deucalion",
+    "name": {
+      "en": "Deucalion",
+      "fr": "Deucalion"
+    },
+    "kind": "mortal",
+    "wikidata": "Q207715",
+    "description": {
+      "en": "Son of Prometheus, who survived the great flood with his wife Pyrrha.",
+      "fr": "Fils de Prométhée, qui survécut au grand déluge avec son épouse Pyrrha."
+    },
+    "greek": "Δευκαλίων",
+    "parents": [
+      "prometheus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Deucalion",
+        "url": "https://en.wikipedia.org/wiki/Deucalion"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Deucalion (fils de Prométhée)",
+        "url": "https://fr.wikipedia.org/wiki/Deucalion_(fils_de_Prom%C3%A9th%C3%A9e)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Deucalion (Deukalion)",
+        "url": "https://www.theoi.com/Heros/Deukalion.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Deucalion",
+        "url": "https://mythologica.fr/grec/deucalion.htm"
+      }
+    ]
+  },
+  {
+    "id": "pyrrha",
+    "name": {
+      "en": "Pyrrha",
+      "fr": "Pyrrha"
+    },
+    "kind": "mortal",
+    "wikidata": "Q622809",
+    "description": {
+      "en": "Daughter of Epimetheus and Pandora, wife of Deucalion, who repeopled the earth after the flood.",
+      "fr": "Fille d’Épiméthée et de Pandore, épouse de Deucalion, qui repeupla la terre après le déluge."
+    },
+    "greek": "Πύρρα",
+    "parents": [
+      "epimetheus",
+      "pandora"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pyrrha",
+        "url": "https://en.wikipedia.org/wiki/Pyrrha"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pyrrha (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Pyrrha_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "arachne",
+    "name": {
+      "en": "Arachne",
+      "fr": "Arachné"
+    },
+    "kind": "mortal",
+    "wikidata": "Q190082",
+    "description": {
+      "en": "Lydian weaver who challenged Athena and was turned into a spider.",
+      "fr": "Tisserande lydienne qui défia Athéna et fut changée en araignée."
+    },
+    "greek": "Ἀράχνη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Arachne",
+        "url": "https://en.wikipedia.org/wiki/Arachne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Arachné",
+        "url": "https://fr.wikipedia.org/wiki/Arachn%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Arachne",
+        "url": "https://www.worldhistory.org/Arachne/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Arachné",
+        "url": "https://mythologica.fr/grec/arachne.htm"
+      }
+    ]
+  },
+  {
+    "id": "europa",
+    "name": {
+      "en": "Europa",
+      "fr": "Europe"
+    },
+    "kind": "mortal",
+    "wikidata": "Q165170",
+    "description": {
+      "en": "Phoenician princess carried off to Crete by Zeus in the shape of a bull.",
+      "fr": "Princesse phénicienne enlevée jusqu’en Crète par Zeus métamorphosé en taureau."
+    },
+    "greek": "Εὐρώπη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Europa (consort of Zeus)",
+        "url": "https://en.wikipedia.org/wiki/Europa_(consort_of_Zeus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Europe (fille d'Agénor)",
+        "url": "https://fr.wikipedia.org/wiki/Europe_(fille_d'Ag%C3%A9nor)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Europa",
+        "url": "https://www.worldhistory.org/Europa/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Europe",
+        "url": "https://mythologica.fr/grec/europe.htm"
+      }
+    ]
+  },
+  {
+    "id": "narcissus",
+    "name": {
+      "en": "Narcissus",
+      "fr": "Narcisse"
+    },
+    "kind": "mortal",
+    "wikidata": "Q179256",
+    "description": {
+      "en": "Beautiful youth who fell in love with his own reflection.",
+      "fr": "Beau jeune homme qui tomba amoureux de son propre reflet."
+    },
+    "greek": "Νάρκισσος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Narcissus (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Narcissus_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Narcisse (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Narcisse_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Narcissus (Narkissos)",
+        "url": "https://www.theoi.com/Heros/Narkissos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Narcissus",
+        "url": "https://www.worldhistory.org/Narcissus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Narcisse",
+        "url": "https://mythologica.fr/grec/narcisse.htm"
+      }
+    ]
+  },
+  {
+    "id": "phaethon",
+    "name": {
+      "en": "Phaethon",
+      "fr": "Phaéton"
+    },
+    "kind": "mortal",
+    "wikidata": "Q203480",
+    "description": {
+      "en": "Son of the Sun, who lost control of his father’s chariot and set the world ablaze.",
+      "fr": "Fils du Soleil, qui perdit le contrôle du char de son père et embrasa le monde."
+    },
+    "greek": "Φαέθων",
+    "parents": [
+      "helios",
+      "clymene"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Phaethon",
+        "url": "https://en.wikipedia.org/wiki/Phaethon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Phaéton",
+        "url": "https://fr.wikipedia.org/wiki/Pha%C3%A9ton"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Phaéton",
+        "url": "https://mythologica.fr/grec/phaeton.htm"
+      }
+    ]
+  },
+  {
+    "id": "midas",
+    "name": {
+      "en": "Midas",
+      "fr": "Midas"
+    },
+    "kind": "mortal",
+    "wikidata": "Q308398",
+    "description": {
+      "en": "King of Phrygia whose touch turned everything to gold.",
+      "fr": "Roi de Phrygie dont le toucher changeait tout en or."
+    },
+    "greek": "Μίδας",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Midas",
+        "url": "https://en.wikipedia.org/wiki/Midas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Midas",
+        "url": "https://fr.wikipedia.org/wiki/Midas"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Midas",
+        "url": "https://www.theoi.com/Heros/Midas.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Midas",
+        "url": "https://www.worldhistory.org/Midas/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Midas",
+        "url": "https://mythologica.fr/grec/midas.htm"
+      }
+    ]
+  },
+  {
+    "id": "danae",
+    "name": {
+      "en": "Danaë",
+      "fr": "Danaé"
+    },
+    "kind": "mortal",
+    "wikidata": "Q190582",
+    "description": {
+      "en": "Princess of Argos, visited by Zeus as a shower of gold, mother of Perseus.",
+      "fr": "Princesse d’Argos, visitée par Zeus sous la forme d’une pluie d’or, mère de Persée."
+    },
+    "greek": "Δανάη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Danaë",
+        "url": "https://en.wikipedia.org/wiki/Dana%C3%AB"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Danaé",
+        "url": "https://fr.wikipedia.org/wiki/Dana%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Danaé",
+        "url": "https://mythologica.fr/grec/danae.htm"
+      }
+    ]
+  },
+  {
+    "id": "andromeda",
+    "name": {
+      "en": "Andromeda",
+      "fr": "Andromède"
+    },
+    "kind": "mortal",
+    "wikidata": "Q161582",
+    "description": {
+      "en": "Ethiopian princess chained to a rock for a sea monster and saved by Perseus.",
+      "fr": "Princesse éthiopienne enchaînée à un rocher pour un monstre marin et sauvée par Persée."
+    },
+    "greek": "Ἀνδρομέδα",
+    "parents": [
+      "cassiopeia"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Andromeda (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Andromeda_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Andromède (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Androm%C3%A8de_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Andromède",
+        "url": "https://mythologica.fr/grec/andromede.htm"
+      }
+    ]
+  },
+  {
+    "id": "cassiopeia",
+    "name": {
+      "en": "Cassiopeia",
+      "fr": "Cassiopée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q207681",
+    "description": {
+      "en": "Queen of Ethiopia, whose boast angered the sea nymphs and Poseidon.",
+      "fr": "Reine d’Éthiopie, dont la vantardise irrita les Néréides et Poséidon."
+    },
+    "greek": "Κασσιέπεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cassiopeia (mother of Andromeda)",
+        "url": "https://en.wikipedia.org/wiki/Cassiopeia_(mother_of_Andromeda)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cassiopée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Cassiop%C3%A9e_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "alcmene",
+    "name": {
+      "en": "Alcmene",
+      "fr": "Alcmène"
+    },
+    "kind": "mortal",
+    "wikidata": "Q190543",
+    "description": {
+      "en": "Princess of Mycenae, mother of Heracles by Zeus.",
+      "fr": "Princesse de Mycènes, mère d’Héraclès par Zeus."
+    },
+    "greek": "Ἀλκμήνη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Alcmene",
+        "url": "https://en.wikipedia.org/wiki/Alcmene"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alcmène",
+        "url": "https://fr.wikipedia.org/wiki/Alcm%C3%A8ne"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Alcmène",
+        "url": "https://mythologica.fr/grec/alcmene.htm"
+      }
+    ]
+  },
+  {
+    "id": "eurystheus",
+    "name": {
+      "en": "Eurystheus",
+      "fr": "Eurysthée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q212087",
+    "description": {
+      "en": "King of Tiryns and Mycenae, who imposed the twelve labours on Heracles.",
+      "fr": "Roi de Tirynthe et de Mycènes, qui imposa les douze travaux à Héraclès."
+    },
+    "greek": "Εὐρυσθεύς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eurystheus",
+        "url": "https://en.wikipedia.org/wiki/Eurystheus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurysthée",
+        "url": "https://fr.wikipedia.org/wiki/Eurysth%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Eurysthée",
+        "url": "https://mythologica.fr/grec/eurysthee.htm"
+      }
+    ]
+  },
+  {
+    "id": "aegeus",
+    "name": {
+      "en": "Aegeus",
+      "fr": "Égée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q191725",
+    "description": {
+      "en": "King of Athens, father of Theseus, who gave his name to the Aegean Sea.",
+      "fr": "Roi d’Athènes, père de Thésée, qui donna son nom à la mer Égée."
+    },
+    "greek": "Αἰγεύς",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aegeus",
+        "url": "https://en.wikipedia.org/wiki/Aegeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Égée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89g%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Égée",
+        "url": "https://mythologica.fr/grec/egee.htm"
+      }
+    ]
+  },
+  {
+    "id": "aethra",
+    "name": {
+      "en": "Aethra",
+      "fr": "Éthra"
+    },
+    "kind": "mortal",
+    "wikidata": "Q11921121",
+    "description": {
+      "en": "Princess of Troezen, mother of Theseus.",
+      "fr": "Princesse de Trézène, mère de Thésée."
+    },
+    "greek": "Αἴθρα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aethra (mother of Theseus)",
+        "url": "https://en.wikipedia.org/wiki/Aethra_(mother_of_Theseus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éthra (fille de Pitthée)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89thra_(fille_de_Pitth%C3%A9e)"
+      }
+    ]
+  },
+  {
+    "id": "ariadne",
+    "name": {
+      "en": "Ariadne",
+      "fr": "Ariane"
+    },
+    "kind": "mortal",
+    "wikidata": "Q184874",
+    "description": {
+      "en": "Cretan princess who gave Theseus the thread to escape the Labyrinth; abandoned on Naxos, she became the wife of Dionysus.",
+      "fr": "Princesse crétoise qui donna à Thésée le fil pour sortir du Labyrinthe ; abandonnée à Naxos, elle devint l’épouse de Dionysos."
+    },
+    "greek": "Ἀριάδνη",
+    "parents": [
+      "minos",
+      "pasiphae"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ariadne",
+        "url": "https://en.wikipedia.org/wiki/Ariadne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ariane (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Ariane_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Ariadne",
+        "url": "https://www.worldhistory.org/Ariadne/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ariane",
+        "url": "https://mythologica.fr/grec/ariane.htm"
+      }
+    ]
+  },
+  {
+    "id": "minos",
+    "name": {
+      "en": "Minos",
+      "fr": "Minos"
+    },
+    "kind": "mortal",
+    "wikidata": "Q23168",
+    "description": {
+      "en": "King of Crete, son of Zeus and Europa, who shut the Minotaur in the Labyrinth; after his death, a judge of the dead.",
+      "fr": "Roi de Crète, fils de Zeus et d’Europe, qui enferma le Minotaure dans le Labyrinthe ; après sa mort, juge des Enfers."
+    },
+    "greek": "Μίνως",
+    "parents": [
+      "zeus",
+      "europa"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Minos",
+        "url": "https://en.wikipedia.org/wiki/Minos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Minos",
+        "url": "https://fr.wikipedia.org/wiki/Minos"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Minos",
+        "url": "https://mythologica.fr/grec/minos.htm"
+      }
+    ]
+  },
+  {
+    "id": "pasiphae",
+    "name": {
+      "en": "Pasiphaë",
+      "fr": "Pasiphaé"
+    },
+    "kind": "mortal",
+    "wikidata": "Q203236",
+    "description": {
+      "en": "Queen of Crete, daughter of the Sun, mother of Ariadne and of the Minotaur.",
+      "fr": "Reine de Crète, fille du Soleil, mère d’Ariane et du Minotaure."
+    },
+    "greek": "Πασιφάη",
+    "parents": [
+      "helios"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pasiphaë",
+        "url": "https://en.wikipedia.org/wiki/Pasipha%C3%AB"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pasiphaé",
+        "url": "https://fr.wikipedia.org/wiki/Pasipha%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "daedalus",
+    "name": {
+      "en": "Daedalus",
+      "fr": "Dédale"
+    },
+    "kind": "mortal",
+    "wikidata": "Q134756",
+    "description": {
+      "en": "Athenian craftsman and inventor, builder of the Labyrinth.",
+      "fr": "Artisan et inventeur athénien, constructeur du Labyrinthe."
+    },
+    "greek": "Δαίδαλος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Daedalus",
+        "url": "https://en.wikipedia.org/wiki/Daedalus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dédale",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9dale"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Daedalus",
+        "url": "https://www.worldhistory.org/Daedalus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Dédale et Icare",
+        "url": "https://mythologica.fr/grec/dedale.htm"
+      }
+    ]
+  },
+  {
+    "id": "icarus",
+    "name": {
+      "en": "Icarus",
+      "fr": "Icare"
+    },
+    "kind": "mortal",
+    "wikidata": "Q34041",
+    "description": {
+      "en": "Son of Daedalus, who flew too close to the sun on wings of wax.",
+      "fr": "Fils de Dédale, qui vola trop près du soleil avec des ailes de cire."
+    },
+    "greek": "Ἴκαρος",
+    "parents": [
+      "daedalus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Icarus",
+        "url": "https://en.wikipedia.org/wiki/Icarus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Icare",
+        "url": "https://fr.wikipedia.org/wiki/Icare"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Dédale et Icare",
+        "url": "https://mythologica.fr/grec/dedale.htm"
+      }
+    ]
+  },
+  {
+    "id": "medea",
+    "name": {
+      "en": "Medea",
+      "fr": "Médée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q174278",
+    "description": {
+      "en": "Sorceress of Colchis, granddaughter of the Sun, who helped Jason win the Golden Fleece.",
+      "fr": "Magicienne de Colchide, petite-fille du Soleil, qui aida Jason à conquérir la Toison d’or."
+    },
+    "greek": "Μήδεια",
+    "parents": [
+      "aeetes"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Medea",
+        "url": "https://en.wikipedia.org/wiki/Medea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Médée (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9d%C3%A9e_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Medea",
+        "url": "https://www.worldhistory.org/Medea/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Médée",
+        "url": "https://mythologica.fr/grec/medee.htm"
+      }
+    ]
+  },
+  {
+    "id": "aeetes",
+    "name": {
+      "en": "Aeëtes",
+      "fr": "Éétès"
+    },
+    "kind": "mortal",
+    "wikidata": "Q241971",
+    "description": {
+      "en": "King of Colchis, son of the Sun, keeper of the Golden Fleece.",
+      "fr": "Roi de Colchide, fils du Soleil, gardien de la Toison d’or."
+    },
+    "greek": "Αἰήτης",
+    "parents": [
+      "helios"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aeëtes",
+        "url": "https://en.wikipedia.org/wiki/Ae%C3%ABtes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éétès",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89%C3%A9t%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Aeétès",
+        "url": "https://mythologica.fr/grec/eetes.htm"
+      }
+    ]
+  },
+  {
+    "id": "pelias",
+    "name": {
+      "en": "Pelias",
+      "fr": "Pélias"
+    },
+    "kind": "mortal",
+    "wikidata": "Q182439",
+    "description": {
+      "en": "Usurping king of Iolcus, who sent Jason after the Golden Fleece.",
+      "fr": "Roi usurpateur d’Iolcos, qui envoya Jason chercher la Toison d’or."
+    },
+    "greek": "Πελίας",
+    "parents": [
+      "poseidon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pelias",
+        "url": "https://en.wikipedia.org/wiki/Pelias"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pélias",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9lias"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pélias",
+        "url": "https://mythologica.fr/grec/pelias.htm"
+      }
+    ]
+  },
+  {
+    "id": "oedipus",
+    "name": {
+      "en": "Oedipus",
+      "fr": "Œdipe"
+    },
+    "kind": "mortal",
+    "wikidata": "Q130890",
+    "description": {
+      "en": "King of Thebes who solved the riddle of the Sphinx and unknowingly killed his father and married his mother.",
+      "fr": "Roi de Thèbes qui résolut l’énigme du Sphinx et, sans le savoir, tua son père et épousa sa mère."
+    },
+    "greek": "Οἰδίπους",
+    "parents": [
+      "laius",
+      "jocasta"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oedipus",
+        "url": "https://en.wikipedia.org/wiki/Oedipus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Œdipe",
+        "url": "https://fr.wikipedia.org/wiki/%C5%92dipe"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Oedipus the King",
+        "url": "https://www.worldhistory.org/Oedipus_the_King/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Oedipe",
+        "url": "https://mythologica.fr/grec/oedipe.htm"
+      }
+    ]
+  },
+  {
+    "id": "laius",
+    "name": {
+      "en": "Laius",
+      "fr": "Laïos"
+    },
+    "kind": "mortal",
+    "wikidata": "Q463898",
+    "description": {
+      "en": "King of Thebes, father of Oedipus, killed by him at a crossroads.",
+      "fr": "Roi de Thèbes, père d’Œdipe, tué par lui à un carrefour."
+    },
+    "greek": "Λάϊος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Laius",
+        "url": "https://en.wikipedia.org/wiki/Laius"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Laïos",
+        "url": "https://fr.wikipedia.org/wiki/La%C3%AFos"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Laïos",
+        "url": "https://mythologica.fr/grec/laios.htm"
+      }
+    ]
+  },
+  {
+    "id": "jocasta",
+    "name": {
+      "en": "Jocasta",
+      "fr": "Jocaste"
+    },
+    "kind": "mortal",
+    "wikidata": "Q131445",
+    "description": {
+      "en": "Queen of Thebes, wife of Laius, then of her own son Oedipus.",
+      "fr": "Reine de Thèbes, épouse de Laïos, puis de son propre fils Œdipe."
+    },
+    "greek": "Ἰοκάστη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Jocasta",
+        "url": "https://en.wikipedia.org/wiki/Jocasta"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Jocaste",
+        "url": "https://fr.wikipedia.org/wiki/Jocaste"
+      }
+    ]
+  },
+  {
+    "id": "paris",
+    "name": {
+      "en": "Paris",
+      "fr": "Pâris"
+    },
+    "kind": "mortal",
+    "wikidata": "Q167646",
+    "description": {
+      "en": "Trojan prince who judged the goddesses’ beauty and carried off Helen.",
+      "fr": "Prince troyen qui jugea la beauté des déesses et enleva Hélène."
+    },
+    "greek": "Πάρις",
+    "parents": [
+      "priam"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Paris (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Paris_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pâris",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A2ris"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pâris",
+        "url": "https://mythologica.fr/grec/paris.htm"
+      }
+    ]
+  },
+  {
+    "id": "helen",
+    "name": {
+      "en": "Helen",
+      "fr": "Hélène"
+    },
+    "kind": "mortal",
+    "wikidata": "Q164061",
+    "description": {
+      "en": "Daughter of Zeus and Leda, the most beautiful of women, whose abduction by Paris caused the Trojan War.",
+      "fr": "Fille de Zeus et de Léda, la plus belle des femmes, dont l’enlèvement par Pâris causa la guerre de Troie."
+    },
+    "greek": "Ἑλένη",
+    "parents": [
+      "zeus",
+      "leda"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Helen of Troy",
+        "url": "https://en.wikipedia.org/wiki/Helen_of_Troy"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hélène (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Helen of Troy",
+        "url": "https://www.worldhistory.org/Helen_of_Troy/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hélène",
+        "url": "https://mythologica.fr/grec/helene.htm"
+      }
+    ]
+  },
+  {
+    "id": "priam",
+    "name": {
+      "en": "Priam",
+      "fr": "Priam"
+    },
+    "kind": "mortal",
+    "wikidata": "Q170473",
+    "description": {
+      "en": "Last king of Troy, father of Hector and Paris.",
+      "fr": "Dernier roi de Troie, père d’Hector et de Pâris."
+    },
+    "greek": "Πρίαμος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Priam",
+        "url": "https://en.wikipedia.org/wiki/Priam"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Priam",
+        "url": "https://fr.wikipedia.org/wiki/Priam"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Priam",
+        "url": "https://mythologica.fr/grec/priam.htm"
+      }
+    ]
+  },
+  {
+    "id": "laocoon",
+    "name": {
+      "en": "Laocoön",
+      "fr": "Laocoon"
+    },
+    "kind": "mortal",
+    "wikidata": "Q22878",
+    "description": {
+      "en": "Trojan priest who warned against the wooden horse and was killed with his sons by sea serpents.",
+      "fr": "Prêtre troyen qui mit en garde contre le cheval de bois et fut tué avec ses fils par des serpents venus de la mer."
+    },
+    "greek": "Λαοκόων",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Laocoön",
+        "url": "https://en.wikipedia.org/wiki/Laoco%C3%B6n"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Laocoon",
+        "url": "https://fr.wikipedia.org/wiki/Laocoon"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Laocoon",
+        "url": "https://mythologica.fr/grec/laocoon.htm"
+      }
+    ]
+  },
+  {
+    "id": "leda",
+    "name": {
+      "en": "Leda",
+      "fr": "Léda"
+    },
+    "kind": "mortal",
+    "wikidata": "Q182019",
+    "description": {
+      "en": "Queen of Sparta, loved by Zeus in the form of a swan, mother of Helen.",
+      "fr": "Reine de Sparte, aimée de Zeus sous la forme d’un cygne, mère d’Hélène."
+    },
+    "greek": "Λήδα",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Leda (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Leda_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Léda (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9da_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Léda",
+        "url": "https://mythologica.fr/grec/leda.htm"
+      }
+    ]
+  }
+]

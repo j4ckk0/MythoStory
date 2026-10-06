@@ -1,0 +1,709 @@
+[
+  {
+    "id": "zeus",
+    "name": {
+      "en": "Zeus",
+      "fr": "Zeus"
+    },
+    "kind": "olympian",
+    "wikidata": "Q34201",
+    "description": {
+      "en": "King of the gods, lord of the sky and the thunderbolt, who overthrew his father Cronus.",
+      "fr": "Roi des dieux, maître du ciel et de la foudre, qui renversa son père Cronos."
+    },
+    "greek": "Ζεύς",
+    "roman": {
+      "en": "Jupiter",
+      "fr": "Jupiter"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Zeus",
+        "url": "https://en.wikipedia.org/wiki/Zeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Zeus",
+        "url": "https://fr.wikipedia.org/wiki/Zeus"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Zeus",
+        "url": "https://www.theoi.com/Olympios/Zeus.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Zeus",
+        "url": "https://www.worldhistory.org/Zeus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Zeus",
+        "url": "https://mythologica.fr/grec/zeus.htm"
+      }
+    ]
+  },
+  {
+    "id": "hera",
+    "name": {
+      "en": "Hera",
+      "fr": "Héra"
+    },
+    "kind": "olympian",
+    "wikidata": "Q38012",
+    "description": {
+      "en": "Queen of the gods, wife and sister of Zeus, goddess of marriage, relentless toward his lovers and their children.",
+      "fr": "Reine des dieux, épouse et sœur de Zeus, déesse du mariage, implacable envers ses maîtresses et leurs enfants."
+    },
+    "greek": "Ἥρα",
+    "roman": {
+      "en": "Juno",
+      "fr": "Junon"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hera",
+        "url": "https://en.wikipedia.org/wiki/Hera"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Héra",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9ra"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hera",
+        "url": "https://www.theoi.com/Olympios/Hera.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hera",
+        "url": "https://www.worldhistory.org/Hera/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Héra",
+        "url": "https://mythologica.fr/grec/hera.htm"
+      }
+    ]
+  },
+  {
+    "id": "poseidon",
+    "name": {
+      "en": "Poseidon",
+      "fr": "Poséidon"
+    },
+    "kind": "olympian",
+    "wikidata": "Q41127",
+    "description": {
+      "en": "God of the sea, earthquakes and horses, brother of Zeus, who strikes with his trident.",
+      "fr": "Dieu de la mer, des séismes et des chevaux, frère de Zeus, qui frappe de son trident."
+    },
+    "greek": "Ποσειδῶν",
+    "roman": {
+      "en": "Neptune",
+      "fr": "Neptune"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Poseidon",
+        "url": "https://en.wikipedia.org/wiki/Poseidon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Poséidon",
+        "url": "https://fr.wikipedia.org/wiki/Pos%C3%A9idon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Poseidon",
+        "url": "https://www.theoi.com/Olympios/Poseidon.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Poseidon",
+        "url": "https://www.worldhistory.org/Poseidon/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Poséidon",
+        "url": "https://mythologica.fr/grec/poseidon.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Quelle Histoire — Poséidon, le dieu des mers",
+        "url": "https://www.youtube.com/watch?v=zbExwvltusY"
+      }
+    ]
+  },
+  {
+    "id": "demeter",
+    "name": {
+      "en": "Demeter",
+      "fr": "Déméter"
+    },
+    "kind": "olympian",
+    "wikidata": "Q40730",
+    "description": {
+      "en": "Goddess of grain and harvest, mother of Persephone.",
+      "fr": "Déesse du blé et des moissons, mère de Perséphone."
+    },
+    "greek": "Δημήτηρ",
+    "roman": {
+      "en": "Ceres",
+      "fr": "Cérès"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Demeter",
+        "url": "https://en.wikipedia.org/wiki/Demeter"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Déméter",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9m%C3%A9ter"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Demeter",
+        "url": "https://www.theoi.com/Olympios/Demeter.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Demeter",
+        "url": "https://www.worldhistory.org/Demeter/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Déméter",
+        "url": "https://mythologica.fr/grec/demeter.htm"
+      }
+    ]
+  },
+  {
+    "id": "hestia",
+    "name": {
+      "en": "Hestia",
+      "fr": "Hestia"
+    },
+    "kind": "olympian",
+    "wikidata": "Q41419",
+    "description": {
+      "en": "Goddess of the hearth, eldest child of Cronus and Rhea.",
+      "fr": "Déesse du foyer, aînée des enfants de Cronos et Rhéa."
+    },
+    "greek": "Ἑστία",
+    "roman": {
+      "en": "Vesta",
+      "fr": "Vesta"
+    },
+    "parents": [
+      "cronus",
+      "rhea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hestia",
+        "url": "https://en.wikipedia.org/wiki/Hestia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hestia",
+        "url": "https://fr.wikipedia.org/wiki/Hestia"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hestia",
+        "url": "https://www.theoi.com/Ouranios/Hestia.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hestia",
+        "url": "https://www.worldhistory.org/Hestia/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hestia",
+        "url": "https://mythologica.fr/grec/hestia.htm"
+      }
+    ]
+  },
+  {
+    "id": "athena",
+    "name": {
+      "en": "Athena",
+      "fr": "Athéna"
+    },
+    "kind": "olympian",
+    "wikidata": "Q37122",
+    "description": {
+      "en": "Goddess of wisdom, crafts and strategy, born fully armed from the head of Zeus; protector of heroes and of Athens.",
+      "fr": "Déesse de la sagesse, des arts et de la stratégie, née tout armée de la tête de Zeus ; protectrice des héros et d’Athènes."
+    },
+    "greek": "Ἀθηνᾶ",
+    "roman": {
+      "en": "Minerva",
+      "fr": "Minerve"
+    },
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Athena",
+        "url": "https://en.wikipedia.org/wiki/Athena"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Athéna",
+        "url": "https://fr.wikipedia.org/wiki/Ath%C3%A9na"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Athena (Athene)",
+        "url": "https://www.theoi.com/Olympios/Athena.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Athena",
+        "url": "https://www.worldhistory.org/Athena/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Athéna",
+        "url": "https://mythologica.fr/grec/athena.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Quelle Histoire — Athéna, la déesse de la sagesse et de la guerre",
+        "url": "https://www.youtube.com/watch?v=2j-4lWKqSZo"
+      }
+    ]
+  },
+  {
+    "id": "apollo",
+    "name": {
+      "en": "Apollo",
+      "fr": "Apollon"
+    },
+    "kind": "olympian",
+    "wikidata": "Q37340",
+    "description": {
+      "en": "God of light, music, prophecy and healing, master of the oracle of Delphi.",
+      "fr": "Dieu de la lumière, de la musique, de la prophétie et de la guérison, maître de l’oracle de Delphes."
+    },
+    "greek": "Ἀπόλλων",
+    "roman": {
+      "en": "Apollo",
+      "fr": "Apollon"
+    },
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Apollo",
+        "url": "https://en.wikipedia.org/wiki/Apollo"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Apollon",
+        "url": "https://fr.wikipedia.org/wiki/Apollon"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Apollo (Apollon)",
+        "url": "https://www.theoi.com/Olympios/Apollon.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Apollo",
+        "url": "https://www.worldhistory.org/Apollo/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Apollon",
+        "url": "https://mythologica.fr/grec/apollon.htm"
+      }
+    ]
+  },
+  {
+    "id": "artemis",
+    "name": {
+      "en": "Artemis",
+      "fr": "Artémis"
+    },
+    "kind": "olympian",
+    "wikidata": "Q39503",
+    "description": {
+      "en": "Goddess of the hunt and wild animals, twin sister of Apollo, sworn to remain a virgin.",
+      "fr": "Déesse de la chasse et des animaux sauvages, sœur jumelle d’Apollon, vouée à la virginité."
+    },
+    "greek": "Ἄρτεμις",
+    "roman": {
+      "en": "Diana",
+      "fr": "Diane"
+    },
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Artemis",
+        "url": "https://en.wikipedia.org/wiki/Artemis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Artémis",
+        "url": "https://fr.wikipedia.org/wiki/Art%C3%A9mis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Artemis",
+        "url": "https://www.theoi.com/Olympios/Artemis.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Artemis",
+        "url": "https://www.worldhistory.org/Artemis/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Artémis",
+        "url": "https://mythologica.fr/grec/artemis.htm"
+      }
+    ]
+  },
+  {
+    "id": "ares",
+    "name": {
+      "en": "Ares",
+      "fr": "Arès"
+    },
+    "kind": "olympian",
+    "wikidata": "Q40901",
+    "description": {
+      "en": "God of war in its violence and frenzy, son of Zeus and Hera.",
+      "fr": "Dieu de la guerre dans sa violence et sa fureur, fils de Zeus et d’Héra."
+    },
+    "greek": "Ἄρης",
+    "roman": {
+      "en": "Mars",
+      "fr": "Mars"
+    },
+    "parents": [
+      "zeus",
+      "hera"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ares",
+        "url": "https://en.wikipedia.org/wiki/Ares"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Arès",
+        "url": "https://fr.wikipedia.org/wiki/Ar%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Ares",
+        "url": "https://www.theoi.com/Olympios/Ares.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Ares",
+        "url": "https://www.worldhistory.org/Ares/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Arès",
+        "url": "https://mythologica.fr/grec/ares.htm"
+      }
+    ]
+  },
+  {
+    "id": "aphrodite",
+    "name": {
+      "en": "Aphrodite",
+      "fr": "Aphrodite"
+    },
+    "kind": "olympian",
+    "wikidata": "Q35500",
+    "description": {
+      "en": "Goddess of love and beauty, born from the sea foam.",
+      "fr": "Déesse de l’amour et de la beauté, née de l’écume de la mer."
+    },
+    "greek": "Ἀφροδίτη",
+    "roman": {
+      "en": "Venus",
+      "fr": "Vénus"
+    },
+    "parents": [
+      "uranus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aphrodite",
+        "url": "https://en.wikipedia.org/wiki/Aphrodite"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aphrodite",
+        "url": "https://fr.wikipedia.org/wiki/Aphrodite"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aphrodite",
+        "url": "https://www.theoi.com/Olympios/Aphrodite.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Aphrodite",
+        "url": "https://www.worldhistory.org/Aphrodite/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Aphrodite",
+        "url": "https://mythologica.fr/grec/aphrodite.htm"
+      }
+    ]
+  },
+  {
+    "id": "hephaestus",
+    "name": {
+      "en": "Hephaestus",
+      "fr": "Héphaïstos"
+    },
+    "kind": "olympian",
+    "wikidata": "Q44384",
+    "description": {
+      "en": "The lame smith of the gods, master of fire and metalwork.",
+      "fr": "Le forgeron boiteux des dieux, maître du feu et du travail des métaux."
+    },
+    "greek": "Ἥφαιστος",
+    "roman": {
+      "en": "Vulcan",
+      "fr": "Vulcain"
+    },
+    "parents": [
+      "hera"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hephaestus",
+        "url": "https://en.wikipedia.org/wiki/Hephaestus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Héphaïstos",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9pha%C3%AFstos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hephaestus (Hephaistos)",
+        "url": "https://www.theoi.com/Olympios/Hephaistos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hephaistos",
+        "url": "https://www.worldhistory.org/Hephaistos/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Héphaïstos",
+        "url": "https://mythologica.fr/grec/hephaistos.htm"
+      }
+    ]
+  },
+  {
+    "id": "hermes",
+    "name": {
+      "en": "Hermes",
+      "fr": "Hermès"
+    },
+    "kind": "olympian",
+    "wikidata": "Q41484",
+    "description": {
+      "en": "Messenger of the gods, god of travellers, trade and thieves, who guides souls to the underworld.",
+      "fr": "Messager des dieux, dieu des voyageurs, du commerce et des voleurs, qui conduit les âmes aux Enfers."
+    },
+    "greek": "Ἑρμῆς",
+    "roman": {
+      "en": "Mercury",
+      "fr": "Mercure"
+    },
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hermes",
+        "url": "https://en.wikipedia.org/wiki/Hermes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hermès",
+        "url": "https://fr.wikipedia.org/wiki/Herm%C3%A8s"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Hermes",
+        "url": "https://www.theoi.com/Olympios/Hermes.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Hermes",
+        "url": "https://www.worldhistory.org/Hermes/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hermès",
+        "url": "https://mythologica.fr/grec/hermes.htm"
+      }
+    ]
+  },
+  {
+    "id": "dionysus",
+    "name": {
+      "en": "Dionysus",
+      "fr": "Dionysos"
+    },
+    "kind": "olympian",
+    "wikidata": "Q41680",
+    "description": {
+      "en": "God of wine, ecstasy and theatre, twice born.",
+      "fr": "Dieu du vin, de l’extase et du théâtre, né deux fois."
+    },
+    "greek": "Διόνυσος",
+    "roman": {
+      "en": "Bacchus",
+      "fr": "Bacchus"
+    },
+    "parents": [
+      "zeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Dionysus",
+        "url": "https://en.wikipedia.org/wiki/Dionysus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dionysos",
+        "url": "https://fr.wikipedia.org/wiki/Dionysos"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Dionysus (Dionysos)",
+        "url": "https://www.theoi.com/Olympios/Dionysos.html"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Dionysos",
+        "url": "https://www.worldhistory.org/Dionysos/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Dionysos",
+        "url": "https://mythologica.fr/grec/dionysos.htm"
+      }
+    ]
+  }
+]

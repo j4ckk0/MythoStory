@@ -1,0 +1,196 @@
+[
+  {
+    "id": "daphne",
+    "name": {
+      "en": "Daphne",
+      "fr": "Daphné"
+    },
+    "kind": "nymph",
+    "wikidata": "Q194015",
+    "description": {
+      "en": "Naiad nymph, daughter of the river Peneus, changed into a laurel to escape Apollo.",
+      "fr": "Nymphe naïade, fille du fleuve Pénée, changée en laurier pour échapper à Apollon."
+    },
+    "greek": "Δάφνη",
+    "parents": [
+      "peneus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Daphne",
+        "url": "https://en.wikipedia.org/wiki/Daphne"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Daphné (nymphe)",
+        "url": "https://fr.wikipedia.org/wiki/Daphn%C3%A9_(nymphe)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Daphne",
+        "url": "https://www.theoi.com/Nymphe/NympheDaphne.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Daphné",
+        "url": "https://mythologica.fr/grec/daphne.htm"
+      }
+    ]
+  },
+  {
+    "id": "echo",
+    "name": {
+      "en": "Echo",
+      "fr": "Écho"
+    },
+    "kind": "nymph",
+    "wikidata": "Q207368",
+    "description": {
+      "en": "Mountain nymph condemned by Hera to repeat only the last words she hears.",
+      "fr": "Nymphe des montagnes condamnée par Héra à ne répéter que les derniers mots qu’elle entend."
+    },
+    "greek": "Ἠχώ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Echo (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Echo_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Écho (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89cho_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Echo (Ekho)",
+        "url": "https://www.theoi.com/Nymphe/NympheEkho.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Écho",
+        "url": "https://mythologica.fr/grec/echo.htm"
+      }
+    ]
+  },
+  {
+    "id": "clymene",
+    "name": {
+      "en": "Clymene",
+      "fr": "Clymène"
+    },
+    "kind": "nymph",
+    "wikidata": "Q105773233",
+    "description": {
+      "en": "Oceanid nymph, mother of Phaethon by Helios.",
+      "fr": "Nymphe océanide, mère de Phaéton par Hélios."
+    },
+    "greek": "Κλυμένη",
+    "parents": [
+      "oceanus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Clymene (mother of Phaethon)",
+        "url": "https://en.wikipedia.org/wiki/Clymene_(mother_of_Phaethon)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Clymène (Océanide)",
+        "url": "https://fr.wikipedia.org/wiki/Clym%C3%A8ne_(Oc%C3%A9anide)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Clymene (Klymene)",
+        "url": "https://www.theoi.com/Titan/TitanisKlymene.html"
+      }
+    ]
+  },
+  {
+    "id": "thetis",
+    "name": {
+      "en": "Thetis",
+      "fr": "Thétis"
+    },
+    "kind": "nymph",
+    "wikidata": "Q184437",
+    "description": {
+      "en": "Sea nymph, a Nereid, wife of Peleus and mother of Achilles.",
+      "fr": "Nymphe marine, une Néréide, épouse de Pélée et mère d’Achille."
+    },
+    "greek": "Θέτις",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thetis",
+        "url": "https://en.wikipedia.org/wiki/Thetis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thétis",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9tis"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Thetis",
+        "url": "https://www.theoi.com/Pontios/NereisThetis.html"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Thétis",
+        "url": "https://mythologica.fr/grec/thetis.htm"
+      }
+    ]
+  },
+  {
+    "id": "eurydice",
+    "name": {
+      "en": "Eurydice",
+      "fr": "Eurydice"
+    },
+    "kind": "nymph",
+    "wikidata": "Q208588",
+    "description": {
+      "en": "Wife of Orpheus, killed by a snake bite on her wedding day.",
+      "fr": "Épouse d’Orphée, morte d’une morsure de serpent le jour de ses noces."
+    },
+    "greek": "Εὐρυδίκη",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eurydice",
+        "url": "https://en.wikipedia.org/wiki/Eurydice"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eurydice",
+        "url": "https://fr.wikipedia.org/wiki/Eurydice"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Orphée et Eurydice",
+        "url": "https://mythologica.fr/grec/orphee.htm"
+      }
+    ]
+  }
+]

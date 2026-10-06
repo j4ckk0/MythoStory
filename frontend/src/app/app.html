@@ -1,31 +1,28 @@
 <header>
-  <h1>MythoStory</h1>
-  @if (info(); as info) {
-    <p class="version">{{ info.version }} · {{ info.platform }}</p>
-  }
+  <a class="brand" routerLink="/">{{ 'app.title' | i18n }}</a>
+  <nav>
+    <a routerLink="/characters" routerLinkActive="active">{{ 'nav.characters' | i18n }}</a>
+    <a routerLink="/stories" routerLinkActive="active">{{ 'nav.stories' | i18n }}</a>
+  </nav>
+  <form class="search" role="search" (ngSubmit)="search()">
+    <input name="q" type="search" [(ngModel)]="query" (input)="search()" [placeholder]="'nav.search.placeholder' | i18n"
+           [attr.aria-label]="'nav.search' | i18n" />
+  </form>
+  <button type="button" class="i18n-switch" (click)="i18n.setLanguage(i18n.otherLanguage())"
+          [attr.lang]="i18n.otherLanguage()" [title]="'i18n.switch' | i18n">{{ i18n.otherLanguage() }}</button>
 </header>
 
 <main>
-  @if (error(); as error) {
-    <p class="error">{{ error }}</p>
+  @if (catalog.unreachable()) {
+    <p class="error">{{ 'app.unreachable' | i18n }}</p>
+  } @else if (!catalog.catalog()) {
+    <p class="muted">{{ 'app.loading' | i18n }}</p>
   }
-
-  <form (ngSubmit)="add()">
-    <input name="title" [(ngModel)]="title" placeholder="Title" required />
-    <textarea name="summary" [(ngModel)]="summary" placeholder="Summary" rows="3"></textarea>
-    <button type="submit" [disabled]="!title.trim()">Add the story</button>
-  </form>
-
-  <ul class="stories">
-    @for (story of stories(); track story.id) {
-      <li>
-        <h2>{{ story.title }}</h2>
-        @if (story.summary) {
-          <p>{{ story.summary }}</p>
-        }
-      </li>
-    } @empty {
-      <li class="empty">No story yet.</li>
-    }
-  </ul>
+  <router-outlet />
 </main>
+
+<footer>
+  @if (catalog.info(); as info) {
+    <span class="version">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</span>
+  }
+</footer>
