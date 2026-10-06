@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
 import { CharacterPage } from './pages/character';
 import { Characters } from './pages/characters';
+import { MapPage } from './map/map-page';
 import { Home } from './pages/home';
+import { Timeline } from './timeline/timeline';
 import { Search } from './pages/search';
 import { Stories } from './pages/stories';
 import { StoryPage } from './pages/story';
@@ -13,6 +15,8 @@ export const routes: Routes = [
   { path: 'characters/:id', component: CharacterPage },
   { path: 'stories', component: Stories },
   { path: 'stories/:id', component: StoryPage },
+  { path: 'timeline', component: Timeline },
+  { path: 'map', component: MapPage },
   { path: 'search', component: Search },
   { path: '**', redirectTo: '' },
 ];

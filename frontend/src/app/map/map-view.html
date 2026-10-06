@@ -1,0 +1,76 @@
+<div class="frame" [style.aspect-ratio]="aspect()">
+  <svg
+    #svg
+    [attr.viewBox]="viewBox()"
+    preserveAspectRatio="xMidYMid meet"
+    [class.interactive]="interactive()"
+    (wheel)="onWheel($event)"
+    (pointerdown)="onPointerDown($event)"
+    (pointermove)="onPointerMove($event)"
+    (pointerup)="onPointerUp()"
+    (pointercancel)="onPointerUp()"
+    role="img"
+    [attr.aria-label]="'map.title' | i18n"
+  >
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="2.6" markerHeight="2.6" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" class="arrow" />
+      </marker>
+    </defs>
+    <rect class="sea" [attr.x]="view().x" [attr.y]="view().y" [attr.width]="view().width" [attr.height]="view().height" />
+    @if (land.path(); as path) {
+      <path class="land" [attr.d]="path" [attr.stroke-width]="unit() * 0.4" />
+    }
+
+    @for (route of routes(); track route.story.id) {
+      <polyline
+        class="route"
+        [attr.data-cycle]="route.cycle"
+        [class.highlighted]="route.highlighted"
+        [class.faded]="faded() && !route.highlighted"
+        [attr.points]="route.points"
+        [attr.stroke-width]="unit() * (route.highlighted ? 1.4 : 0.8)"
+        [attr.stroke-dasharray]="unit() * 3 + ' ' + unit() * 2"
+        marker-mid="url(#arrow)"
+        marker-end="url(#arrow)"
+      />
+    }
+
+    @for (p of drawnPlaces(); track p.place.id) {
+      <g
+        class="place"
+        [class.uncertain]="p.uncertain"
+        [class.selected]="p.place.id === selectedPlace()"
+        [class.faded]="faded() && !p.highlighted"
+        (click)="select(p.place)"
+        (keydown.enter)="select(p.place)"
+        tabindex="0"
+        role="button"
+        [attr.aria-label]="p.name"
+      >
+        <title>{{ p.name }}</title>
+        <circle
+          [attr.cx]="p.x"
+          [attr.cy]="p.y"
+          [attr.r]="unit() * (p.place.id === selectedPlace() ? 2.2 : 1.5)"
+          [attr.stroke-width]="unit() * 0.5"
+          [attr.stroke-dasharray]="p.uncertain ? unit() * 0.9 + ' ' + unit() * 0.6 : null"
+        />
+        @if (p.label; as label) {
+          <text [attr.x]="label.x" [attr.y]="label.y" [attr.text-anchor]="label.anchor" [attr.font-size]="unit() * 4.2" [attr.stroke-width]="unit() * 1.2">{{
+            p.name
+          }}</text>
+        }
+      </g>
+    }
+  </svg>
+
+  @if (interactive()) {
+    <div class="controls">
+      <button type="button" (click)="zoom(0.66)" [title]="'map.zoomIn' | i18n">+</button>
+      <button type="button" (click)="zoom(1.5)" [title]="'map.zoomOut' | i18n">−</button>
+      <button type="button" (click)="reset()" [title]="'map.reset' | i18n">⤢</button>
+    </div>
+  }
+  <span class="attribution">{{ 'map.attribution' | i18n }}</span>
+</div>

@@ -15,6 +15,17 @@
   }
 
   <h1>{{ s.title | i18nText }}</h1>
+  @if (era(); as e) {
+    <p class="when">
+      <a [routerLink]="['/timeline']" [fragment]="s.id">{{ e.title | i18nText }}</a>
+      @if (s.generation !== undefined) {
+        · {{ generationKey(s.generation) | i18n: { count: s.generation } }}
+      }
+      @if (s.dating) {
+        · <span class="dating">{{ s.dating | i18nText }}</span>
+      }
+    </p>
+  }
   <div class="chips">
     @for (character of characters(); track character.id) {
       <app-character-chip [character]="character" />
@@ -26,6 +37,12 @@
       <p>{{ paragraph }}</p>
     }
   </article>
+
+  @if (mapped().length) {
+    <h2>{{ 'story.where' | i18n }}</h2>
+    <app-map-view [stories]="mapped()" [highlight]="s.id" [interactive]="false" />
+    <p><a [routerLink]="['/map']" [queryParams]="{ story: s.id }">{{ 'map.open' | i18n }}</a></p>
+  }
 
   <h2>{{ 'story.sources' | i18n }}</h2>
   <ul class="sources">

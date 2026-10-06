@@ -1,0 +1,83 @@
+[
+  {
+    "id": "origins",
+    "title": {
+      "en": "The origins",
+      "fr": "Les origines"
+    },
+    "description": {
+      "en": "Chaos, the Earth and the Sky: the first powers of the world, and their first quarrels.",
+      "fr": "Le Chaos, la Terre et le Ciel : les premières puissances du monde, et leurs premières querelles."
+    }
+  },
+  {
+    "id": "titans",
+    "title": {
+      "en": "The reign of Cronus",
+      "fr": "Le règne de Cronos"
+    },
+    "description": {
+      "en": "Cronus rules the world, and swallows his children for fear of losing it.",
+      "fr": "Cronos règne sur le monde, et avale ses enfants de peur de le perdre."
+    }
+  },
+  {
+    "id": "olympians",
+    "title": {
+      "en": "The war for heaven",
+      "fr": "La guerre pour le ciel"
+    },
+    "description": {
+      "en": "Zeus and his brothers and sisters win the world, against the Titans, then against Typhon.",
+      "fr": "Zeus et ses frères et sœurs conquièrent le monde, contre les Titans, puis contre Typhon."
+    }
+  },
+  {
+    "id": "mankind",
+    "title": {
+      "en": "The first humans",
+      "fr": "Les premiers hommes"
+    },
+    "description": {
+      "en": "Fire, the first woman, and the flood from which mankind is born again.",
+      "fr": "Le feu, la première femme, et le déluge dont l’humanité renaît."
+    }
+  },
+  {
+    "id": "heroes",
+    "title": {
+      "en": "The age of heroes",
+      "fr": "L’âge des héros"
+    },
+    "description": {
+      "en": "The generations before the Trojan War, as the genealogies count them: Perseus is Heracles' great-grandfather, and Heracles' son fought at Troy. The myths do not always agree.",
+      "fr": "Les générations qui précèdent la guerre de Troie, telles que les généalogies les comptent : Persée est l’arrière-grand-père d’Héraclès, et le fils d’Héraclès combattit à Troie. Les mythes ne s’accordent pas toujours."
+    }
+  },
+  {
+    "id": "trojan-war",
+    "title": {
+      "en": "The Trojan War",
+      "fr": "La guerre de Troie"
+    },
+    "description": {
+      "en": "Ten years of siege, from the golden apple to the fall of the city.",
+      "fr": "Dix ans de siège, de la pomme d’or à la chute de la ville."
+    },
+    "dating": {
+      "en": "Ancient chronographers dated the fall of Troy to 1184/1183 BC (Eratosthenes) or 1209/1208 BC (the Parian Chronicle); Herodotus placed the war around 1250 BC.",
+      "fr": "Les chronographes antiques dataient la chute de Troie de 1184/1183 av. J.-C. (Ératosthène) ou de 1209/1208 av. J.-C. (la Chronique de Paros) ; Hérodote plaçait la guerre vers 1250 av. J.-C."
+    }
+  },
+  {
+    "id": "returns",
+    "title": {
+      "en": "The returns",
+      "fr": "Les retours"
+    },
+    "description": {
+      "en": "The victors' long and perilous journeys home.",
+      "fr": "Les longs et périlleux voyages de retour des vainqueurs."
+    }
+  }
+]

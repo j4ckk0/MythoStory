@@ -26,5 +26,7 @@
     "stories/trojan-war.json",
     "stories/odyssey.json"
   ],
-  "cycles": "cycles.json"
+  "cycles": "cycles.json",
+  "eras": "eras.json",
+  "places": "places.json"
 }

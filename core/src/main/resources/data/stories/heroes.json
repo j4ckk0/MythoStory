@@ -103,6 +103,13 @@
     ],
     "related": [
       "bellerophon-and-the-chimera"
+    ],
+    "era": "heroes",
+    "generation": 4,
+    "places": [
+      "argos",
+      "seriphos",
+      "larissa"
     ]
   },
   {
@@ -192,6 +199,11 @@
         "title": "Histoire et Mythologie en BD — Andromède et Persée: Le Tetour à la Maison - Les Aventures de Persée - 3/3 - Mythologie Grecque",
         "url": "https://www.youtube.com/watch?v=msJ-MtIxoMU"
       }
+    ],
+    "era": "heroes",
+    "generation": 4,
+    "places": [
+      "joppa"
     ]
   },
   {
@@ -288,7 +300,15 @@
     ],
     "related": [
       "perseus-and-medusa"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 2,
+    "places": [
+      "corinth",
+      "tiryns",
+      "lycia"
+    ],
+    "route": true
   },
   {
     "id": "labours-of-heracles",
@@ -376,7 +396,24 @@
     "related": [
       "prometheus-fire",
       "golden-fleece"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 1,
+    "places": [
+      "tiryns",
+      "nemea",
+      "lerna",
+      "erymanthos",
+      "elis",
+      "stymphalia",
+      "knossos",
+      "abdera",
+      "themiscyra",
+      "erytheia",
+      "hesperides",
+      "taenarum"
+    ],
+    "route": true
   },
   {
     "id": "golden-fleece",
@@ -498,7 +535,18 @@
     "related": [
       "orpheus-and-eurydice",
       "labours-of-heracles"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 1,
+    "places": [
+      "iolcus",
+      "lemnos",
+      "cyzicus",
+      "salmydessus",
+      "symplegades",
+      "colchis"
+    ],
+    "route": true
   },
   {
     "id": "theseus-and-the-minotaur",
@@ -625,7 +673,15 @@
     "related": [
       "daedalus-and-icarus",
       "europa-and-the-bull"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 1,
+    "places": [
+      "athens",
+      "knossos",
+      "naxos"
+    ],
+    "route": true
   },
   {
     "id": "daedalus-and-icarus",
@@ -726,7 +782,14 @@
     "related": [
       "theseus-and-the-minotaur",
       "phaethon"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 1,
+    "places": [
+      "knossos",
+      "icaria"
+    ],
+    "route": true
   },
   {
     "id": "orpheus-and-eurydice",
@@ -819,6 +882,12 @@
     "related": [
       "abduction-of-persephone",
       "golden-fleece"
+    ],
+    "era": "heroes",
+    "generation": 1,
+    "places": [
+      "taenarum",
+      "hebrus"
     ]
   }
 ]

@@ -1,0 +1,66 @@
+@if (pedigree(); as tree) {
+  <h3>{{ 'family.ancestors' | i18n }}</h3>
+  <div class="pedigree">
+    <svg [attr.width]="tree.width" [attr.height]="tree.height" [attr.viewBox]="'0 0 ' + tree.width + ' ' + tree.height">
+      @for (n of tree.nodes; track $index) {
+        @if (n.childY !== undefined) {
+          <path
+            class="link"
+            [attr.d]="
+              'M' + (n.x + nodeWidth / 2) + ',' + (n.y + nodeHeight) +
+              ' C' + (n.x + nodeWidth / 2) + ',' + (n.y + nodeHeight + 16) +
+              ' ' + (n.childX! + nodeWidth / 2) + ',' + (n.childY! - 16) +
+              ' ' + (n.childX! + nodeWidth / 2) + ',' + n.childY!
+            "
+          />
+        }
+      }
+      @for (n of tree.nodes; track $index) {
+        <g
+          class="node"
+          [class.root]="n.root"
+          [attr.data-kind]="n.character.kind"
+          [attr.transform]="'translate(' + n.x + ',' + n.y + ')'"
+          (click)="open(n.character)"
+          (keydown.enter)="open(n.character)"
+          tabindex="0"
+          role="link"
+        >
+          <title>{{ n.character.description | i18nText }}</title>
+          <rect [attr.width]="nodeWidth" [attr.height]="nodeHeight" rx="6" />
+          <text [attr.x]="nodeWidth / 2" [attr.y]="nodeHeight / 2 + 5">{{ n.character.name | i18nText }}</text>
+        </g>
+      }
+    </svg>
+  </div>
+}
+
+@if (families().length) {
+  <h3>{{ 'family.descendants' | i18n }}</h3>
+  <ul class="families">
+    @for (f of families(); track $index) {
+      <li>
+        <span class="with">
+          @if (f.others.length) {
+            {{ 'family.with' | i18n }}
+            @for (o of f.others; track o.id) {
+              <app-character-chip [character]="o" />
+            }
+          } @else {
+            {{ 'family.withUnknown' | i18n }}
+          }
+        </span>
+        <span class="chips">
+          @for (child of f.children; track child.id) {
+            <span class="child">
+              <app-character-chip [character]="child" />
+              @if (childCount(child); as n) {
+                <span class="grandchildren" [title]="(n === 1 ? 'family.children.one' : 'family.children') | i18n: { count: n }">+{{ n }}</span>
+              }
+            </span>
+          }
+        </span>
+      </li>
+    }
+  </ul>
+}

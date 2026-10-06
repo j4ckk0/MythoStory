@@ -1,0 +1,44 @@
+<h1>{{ 'timeline.title' | i18n }}</h1>
+<p class="muted">{{ 'timeline.intro' | i18n }}</p>
+
+<ol class="timeline">
+  @for (e of eras(); track e.era.id) {
+    <li class="era" [id]="e.era.id">
+      <h2>{{ e.era.title | i18nText }}</h2>
+      <p class="muted">{{ e.era.description | i18nText }}</p>
+      @if (e.era.dating) {
+        <p class="dating">{{ e.era.dating | i18nText }}</p>
+      }
+      @for (row of e.rows; track row.generation) {
+        @if (e.dated) {
+          <h3 class="generation">
+            @if (row.generation !== null) {
+              {{ generationKey(row.generation) | i18n: { count: row.generation } }}
+            } @else {
+              {{ 'timeline.undated' | i18n }}
+            }
+          </h3>
+        }
+        <ul class="cards">
+          @for (s of row.stories; track s.id) {
+            <li class="card" [attr.data-cycle]="cycleOf(s)" [id]="s.id">
+              <span class="cycle-name">{{ cycleTitle(s) | i18nText }}</span>
+              <a class="card-title" [routerLink]="['/stories', s.id]">{{ s.title | i18nText }}</a>
+              @if (s.dating) {
+                <span class="dating">{{ s.dating | i18nText }}</span>
+              }
+              <span class="chips">
+                @for (c of characters(s); track c.id) {
+                  <app-character-chip [character]="c" />
+                }
+              </span>
+              @if (s.places?.length) {
+                <a class="on-map" [routerLink]="['/map']" [queryParams]="{ story: s.id }">{{ 'map.show' | i18n }}</a>
+              }
+            </li>
+          }
+        </ul>
+      }
+    </li>
+  }
+</ol>

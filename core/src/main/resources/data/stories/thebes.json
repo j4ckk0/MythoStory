@@ -102,6 +102,14 @@
         "title": "Histoire et Mythologie en BD — L'Histoire d'Œdipe (complète) - Mythologie Grecque",
         "url": "https://www.youtube.com/watch?v=zEbyEiKvJpE"
       }
+    ],
+    "era": "heroes",
+    "generation": 2,
+    "places": [
+      "cithaeron",
+      "corinth",
+      "delphi",
+      "thebes"
     ]
   }
 ]

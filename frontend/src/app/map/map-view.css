@@ -1,0 +1,114 @@
+.frame {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--sea);
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  user-select: none;
+}
+
+svg.interactive {
+  cursor: grab;
+}
+
+svg.interactive:active {
+  cursor: grabbing;
+}
+
+.sea {
+  fill: var(--sea);
+}
+
+.land {
+  fill: var(--land);
+  stroke: var(--coast);
+  stroke-linejoin: round;
+}
+
+.route {
+  fill: none;
+  stroke: var(--cycle, var(--accent));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.75;
+}
+
+.route.highlighted {
+  opacity: 1;
+}
+
+.route.faded,
+.place.faded {
+  opacity: 0.25;
+}
+
+.arrow {
+  fill: var(--muted);
+}
+
+.place {
+  cursor: pointer;
+}
+
+.place circle {
+  fill: var(--accent);
+  stroke: var(--surface);
+}
+
+.place.uncertain circle {
+  fill: var(--surface);
+  stroke: var(--accent);
+}
+
+.place.selected circle {
+  fill: var(--text);
+}
+
+.place text {
+  fill: var(--text);
+  stroke: var(--land);
+  paint-order: stroke;
+  font-family: var(--serif);
+}
+
+.place:focus {
+  outline: none;
+}
+
+.place:focus circle {
+  stroke: var(--text);
+}
+
+.controls {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.controls button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: var(--surface);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.4rem;
+  font-size: 0.65rem;
+  color: var(--muted);
+}

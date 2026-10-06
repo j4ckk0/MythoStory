@@ -12,17 +12,23 @@ data class Catalog(
     val characters: List<Character>,
     val stories: List<Story>,
     val cycles: List<Cycle>,
+    val eras: List<Era>,
+    val places: List<Place>,
 ) {
     /** What is wrong with the catalog, one sentence per fault; empty when it is sound. */
     fun problems(): List<String> = buildList {
         val characterIds = characters.map { it.id }.toSet()
         val storyIds = stories.map { it.id }.toSet()
+        val eraIds = eras.map { it.id }.toSet()
+        val placeIds = places.map { it.id }.toSet()
         duplicates(characters.map { it.id }).forEach { add("character $it is defined twice") }
         duplicates(stories.map { it.id }).forEach { add("story $it is defined twice") }
         duplicates(cycles.map { it.id }).forEach { add("cycle $it is defined twice") }
+        duplicates(eras.map { it.id }).forEach { add("era $it is defined twice") }
+        duplicates(places.map { it.id }).forEach { add("place $it is defined twice") }
         duplicates(characters.mapNotNull { it.wikidata }).forEach { add("Wikidata item $it is two characters") }
         characters.mapNotNull { it.wikidata }.filterNot { WIKIDATA.matches(it) }.forEach { add("$it is not a Wikidata item (Q and digits)") }
-        (characters.map { it.id } + stories.map { it.id } + cycles.map { it.id })
+        (characters.map { it.id } + stories.map { it.id } + cycles.map { it.id } + eras.map { it.id } + places.map { it.id })
             .filterNot { SLUG.matches(it) }.forEach { add("$it is not a slug (a-z, 0-9 and dashes)") }
 
         for (c in characters) {
@@ -49,6 +55,24 @@ data class Catalog(
                 }
             }
             s.links.forEach { checkLink("story ${s.id}", it) }
+            if (s.era !in eraIds) add("story ${s.id}: no era ${s.era}")
+            s.generation?.let { if (it !in 0..20) add("story ${s.id}: generation $it is not between 0 and 20 before the Trojan War") }
+            s.dating?.let { checkI18n("story ${s.id}: its dating", it) }
+            s.places.filterNot { it in placeIds }.forEach { add("story ${s.id}: no place $it") }
+            if (s.route && s.places.size < 2) add("story ${s.id}: a route needs two places at least")
+        }
+        for (e in eras) {
+            checkI18n("era ${e.id}: its title", e.title)
+            checkI18n("era ${e.id}: its description", e.description)
+            e.dating?.let { checkI18n("era ${e.id}: its dating", it) }
+        }
+        val placesUsed = stories.flatMap { it.places }.toSet()
+        for (p in places) {
+            checkI18n("place ${p.id}: its name", p.name)
+            p.identification?.let { checkI18n("place ${p.id}: its identification", it) }
+            if (p.lat !in -90.0..90.0 || p.lon !in -180.0..180.0) add("place ${p.id}: ${p.lat}, ${p.lon} is not on Earth")
+            if (!WIKIDATA.matches(p.wikidata)) add("place ${p.id}: ${p.wikidata} is not a Wikidata item")
+            if (p.id !in placesUsed) add("place ${p.id} is in no story")
         }
         for (c in cycles) {
             checkI18n("cycle ${c.id}: its title", c.title)
@@ -96,6 +120,8 @@ data class Catalog(
                 characters = index.characters.flatMap { json.decodeFromString<List<Character>>(file(it)) },
                 stories = index.stories.flatMap { json.decodeFromString<List<Story>>(file(it)) },
                 cycles = json.decodeFromString(file(index.cycles)),
+                eras = json.decodeFromString(file(index.eras)),
+                places = json.decodeFromString(file(index.places)),
             )
         }
 
@@ -106,5 +132,5 @@ data class Catalog(
 
     /** data/index.json: the data files, relative to data/. */
     @Serializable
-    data class Index(val characters: List<String>, val stories: List<String>, val cycles: String)
+    data class Index(val characters: List<String>, val stories: List<String>, val cycles: String, val eras: String, val places: String)
 }

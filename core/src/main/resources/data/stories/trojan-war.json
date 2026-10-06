@@ -108,7 +108,15 @@
     ],
     "related": [
       "birth-of-aphrodite"
-    ]
+    ],
+    "era": "trojan-war",
+    "places": [
+      "pelion",
+      "mount-ida",
+      "sparta",
+      "troy"
+    ],
+    "route": true
   },
   {
     "id": "wrath-of-achilles",
@@ -216,6 +224,11 @@
     ],
     "related": [
       "judgement-of-paris"
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
     ]
   },
   {
@@ -323,6 +336,12 @@
     ],
     "related": [
       "odysseus-and-polyphemus"
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "tenedos",
+      "troy"
     ]
   }
 ]

@@ -25,15 +25,16 @@
       <dt>{{ 'character.wikidata' | i18n }}</dt>
       <dd><a [href]="'https://www.wikidata.org/wiki/' + c.wikidata" target="_blank" rel="noopener">{{ c.wikidata }}</a></dd>
     }
-    @if (children().length) {
+    @if (childCount()) {
       <dt>{{ 'character.children' | i18n }}</dt>
-      <dd class="chips">
-        @for (child of children(); track child.id) {
-          <app-character-chip [character]="child" />
-        }
-      </dd>
+      <dd><a href="#family">{{ (childCount() === 1 ? 'family.children.one' : 'family.children') | i18n: { count: childCount() } }}</a></dd>
     }
   </dl>
+
+  @if (parents().length || childCount()) {
+    <h2 id="family">{{ 'family.title' | i18n }}</h2>
+    <app-family-tree [character]="c" />
+  }
 
   <h2>{{ 'character.stories' | i18n }}</h2>
   @if (stories().length) {

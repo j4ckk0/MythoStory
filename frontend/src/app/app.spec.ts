@@ -26,14 +26,22 @@ const CATALOG: Catalog = {
     {
       id: 'labours', title: { en: 'The labours', fr: 'Les travaux' }, characters: ['heracles', 'zeus'],
       summary: { en: 'First paragraph.\n\nSecond paragraph.', fr: 'Premier paragraphe.\n\nSecond paragraphe.' },
+      era: 'heroes', generation: 1, places: ['tiryns', 'nemea'], route: true,
       sources: [{ author: { en: 'Apollodorus', fr: 'Apollodore' }, work: { en: 'Library', fr: 'Bibliothèque' }, passage: '2.5', url: { en: 'https://example.org/en' } }],
     },
     {
       id: 'apotheosis', title: { en: 'The apotheosis', fr: 'L’apothéose' }, characters: ['heracles'],
       summary: { en: 'He becomes a god.', fr: 'Il devient dieu.' }, sources: [{ author: { en: 'A', fr: 'A' }, work: { en: 'W', fr: 'W' } }],
+      era: 'heroes',
     },
   ],
   cycles: [{ id: 'heroes', title: { en: 'Heroes', fr: 'Héros' }, description: { en: 'd', fr: 'd' }, stories: ['labours', 'apotheosis'] }],
+  eras: [{ id: 'heroes', title: { en: 'The age of heroes', fr: 'L’âge des héros' }, description: { en: 'd', fr: 'd' } }],
+  places: [
+    { id: 'tiryns', name: { en: 'Tiryns', fr: 'Tirynthe' }, lat: 37.6, lon: 22.8, wikidata: 'Q217379' },
+    { id: 'nemea', name: { en: 'Nemea', fr: 'Némée' }, lat: 37.81, lon: 22.71, wikidata: 'Q748108',
+      identification: { en: 'Where the lion lived.', fr: 'Là où vivait le lion.' } },
+  ],
 };
 
 describe('MythoStory', () => {
@@ -55,6 +63,9 @@ describe('MythoStory', () => {
     http.expectOne('api/catalog').flush(CATALOG);
     http.expectOne('api/info').flush({ name: 'MythoStory', version: '0.1', platform: 'desktop', languages: ['en', 'fr'] });
     await harness.navigateByUrl(url);
+    // the coastlines, asked for by the pages drawing a map: none needed here
+    http.match('map/land.json').forEach((request) => request.flush({ features: [] }));
+    harness.detectChanges();
     return harness.routeNativeElement as HTMLElement;
   }
 
@@ -76,7 +87,8 @@ describe('MythoStory', () => {
   it('shows a character’s parents, children and stories', async () => {
     TestBed.inject(I18nService).setLanguage('en');
     const zeus = await open('/characters/zeus');
-    expect(zeus.querySelector('.facts')?.textContent).toContain('Heracles');
+    expect(zeus.querySelector('.facts')?.textContent).toContain('1 child');
+    expect(zeus.querySelector('.families')?.textContent).toContain('Heracles');
     expect(zeus.querySelector('.entries')?.textContent).toContain('The labours');
   });
 
@@ -86,6 +98,31 @@ describe('MythoStory', () => {
     expect(page.querySelector('.entries')?.textContent).toContain('Héraclès');
     expect(page.querySelector('.entries')?.textContent).not.toContain('Zeus');
     expect(page.querySelector('.letters a.active')?.textContent).toContain('Toutes'); // one character: no need to page by letter
+  });
+
+  it('places the stories on the timeline by generation, the undated ones last', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const page = await open('/timeline');
+    const rows = [...page.querySelectorAll('.generation')].map((h) => h.textContent?.trim());
+    expect(rows).toEqual(['The generation before the Trojan War', 'At a time the tradition does not say']);
+    expect(page.querySelector('.card .card-title')?.textContent).toContain('The labours');
+  });
+
+  it('draws the places and tells what happens at the one selected', async () => {
+    TestBed.inject(I18nService).setLanguage('fr');
+    const page = await open('/map?place=nemea');
+    expect(page.querySelectorAll('.place').length).toBe(2);
+    expect(page.querySelectorAll('.place.uncertain').length).toBe(1); // Nemea comes with an identification
+    expect(page.querySelector('.route')).not.toBeNull();
+    expect(page.querySelector('.place-panel')?.textContent).toContain('Là où vivait le lion');
+    expect(page.querySelector('.place-panel')?.textContent).toContain('Les travaux');
+  });
+
+  it('draws a character’s ancestors and groups the children by the other parent', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const heracles = await open('/characters/heracles');
+    expect(heracles.querySelector('.pedigree .node.root')?.textContent).toContain('Heracles');
+    expect(heracles.querySelectorAll('.pedigree .node').length).toBe(2);
   });
 
   it('finds a character whatever the accents and the language', async () => {

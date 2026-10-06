@@ -76,7 +76,8 @@
         "title": "Histoire et Mythologie en BD — L'origine du Monde Grec (Ouranos et Gaia) - Mythologie Grecque - Histoire et Mythologie en BD",
         "url": "https://www.youtube.com/watch?v=cN0yjnw5RSI"
       }
-    ]
+    ],
+    "era": "origins"
   },
   {
     "id": "birth-of-aphrodite",
@@ -139,7 +140,13 @@
     ],
     "related": [
       "judgement-of-paris"
-    ]
+    ],
+    "era": "origins",
+    "places": [
+      "cythera",
+      "paphos"
+    ],
+    "route": true
   },
   {
     "id": "birth-of-zeus",
@@ -227,6 +234,11 @@
         "title": "See U in History / Mythology — The Birth of the Olympic Gods - Greek Mythology in Comics - See U in History",
         "url": "https://www.youtube.com/watch?v=De2s6Uei0DA"
       }
+    ],
+    "era": "titans",
+    "places": [
+      "lyctus",
+      "delphi"
     ]
   },
   {
@@ -307,6 +319,11 @@
         "title": "Histoire et Mythologie en BD — La Grande Guerre entre Dieux et Titans - Titanomachie - Mythologie Grecque en BD",
         "url": "https://www.youtube.com/watch?v=HgLJtdc6vAs"
       }
+    ],
+    "era": "olympians",
+    "places": [
+      "mount-olympus",
+      "mount-othrys"
     ]
   },
   {
@@ -398,6 +415,11 @@
     ],
     "related": [
       "titanomachy"
+    ],
+    "era": "olympians",
+    "places": [
+      "corycian-cave",
+      "mount-etna"
     ]
   }
 ]

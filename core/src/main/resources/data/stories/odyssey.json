@@ -96,6 +96,16 @@
     ],
     "related": [
       "trojan-horse"
-    ]
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "troy",
+      "ismarus",
+      "malea",
+      "lotus-eaters",
+      "cyclopes-land"
+    ],
+    "route": true
   }
 ]

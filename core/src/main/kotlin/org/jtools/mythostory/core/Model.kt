@@ -53,6 +53,42 @@ data class Story(
     val links: List<Link> = emptyList(),
     /** Ids of stories that echo this one beyond its cycles (a sequel elsewhere, the same figure's fate…). */
     val related: List<String> = emptyList(),
+    /** The id of its era, on the timeline. */
+    val era: String,
+    /**
+     * How many generations before the Trojan War it happens (0: the war's own), as the genealogies count them —
+     * Perseus is Heracles' great-grandfather, Heracles' son fought at Troy; null when the tradition does not say.
+     */
+    val generation: Int? = null,
+    /** The date ancient chronographers gave it, when they did: "1529/1528 BC according to the Parian Chronicle". */
+    val dating: I18nText? = null,
+    /** Ids of the places it happens in, on the map; in the order of the journey when [route] is true. */
+    val places: List<String> = emptyList(),
+    /** Whether [places] are a journey, drawn as a route: the Argo's voyage, Heracles' labours… */
+    val route: Boolean = false,
+)
+
+/** A period of the mythic chronology: the timeline's sections, in the order of data/eras.json. */
+@Serializable
+data class Era(
+    val id: String,
+    val title: I18nText,
+    val description: I18nText,
+    /** What ancient chronographers dated in it, when they did. */
+    val dating: I18nText? = null,
+)
+
+/** A place on the map: a real one, or a mythical one the ancients identified with a real one ([identification]). */
+@Serializable
+data class Place(
+    val id: String,
+    val name: I18nText,
+    val lat: Double,
+    val lon: Double,
+    /** The Wikidata item the coordinates come from. */
+    val wikidata: String,
+    /** Set when the place is mythical, or its location disputed: who identified it with this one, and how surely. */
+    val identification: I18nText? = null,
 )
 
 /** An ancient text telling the story, and where to read it online. */

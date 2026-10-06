@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { CatalogService, Character, Source, Story } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 import { I18N_LANGUAGES, I18nLanguage, I18nService } from '../i18n/i18n.service';
+import { MapView } from '../map/map-view';
 import { CharacterChip } from '../shared/character-chip';
 import { Links } from '../shared/links';
 import { paragraphs } from '../shared/text';
@@ -10,7 +11,7 @@ import { paragraphs } from '../shared/text';
 /** A story: its place in its cycles, its summary, its characters, its ancient sources and links to read more. */
 @Component({
   selector: 'app-story',
-  imports: [RouterLink, I18nPipe, I18nTextPipe, CharacterChip, Links],
+  imports: [RouterLink, I18nPipe, I18nTextPipe, CharacterChip, Links, MapView],
   templateUrl: './story.html',
 })
 export class StoryPage {
@@ -29,6 +30,18 @@ export class StoryPage {
     const story = this.story();
     return story ? this.catalog.cyclePositions(story) : [];
   });
+  protected readonly era = computed(() => this.catalog.eraById().get(this.story()?.era ?? ''));
+  /** The story alone, for its inset map. */
+  protected readonly mapped = computed(() => {
+    const story = this.story();
+    return story?.places?.length ? [story] : [];
+  });
+
+  /** The i18n key of a generation's label. */
+  protected generationKey(generation: number): string {
+    return generation === 0 ? 'timeline.generation.zero' : generation === 1 ? 'timeline.generation.one' : 'timeline.generation';
+  }
+
   protected readonly related = computed(() =>
     (this.story()?.related ?? []).map((id) => this.catalog.storyById().get(id)).filter((s): s is Story => !!s),
   );

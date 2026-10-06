@@ -1,0 +1,88 @@
+h3 {
+  margin: 1rem 0 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pedigree {
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.pedigree svg {
+  display: block;
+  max-width: none;
+  margin: 0 auto;
+}
+
+.link {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 2;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node rect {
+  fill: var(--surface);
+  stroke: var(--kind, var(--border));
+  stroke-width: 1.5;
+}
+
+.node.root rect {
+  fill: var(--kind, var(--accent));
+  fill-opacity: 0.15;
+  stroke-width: 2.5;
+}
+
+.node text {
+  fill: var(--kind, var(--text));
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.node:focus {
+  outline: none;
+}
+
+.node:focus rect,
+.node:hover rect {
+  stroke-width: 2.5;
+}
+
+.families {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.families li {
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.with {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.child {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.grandchildren {
+  font-size: 0.7rem;
+  color: var(--muted);
+}

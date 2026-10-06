@@ -97,6 +97,11 @@
     ],
     "related": [
       "orpheus-and-eurydice"
+    ],
+    "era": "heroes",
+    "places": [
+      "enna",
+      "eleusis"
     ]
   },
   {
@@ -181,7 +186,14 @@
     ],
     "related": [
       "theseus-and-the-minotaur"
-    ]
+    ],
+    "era": "heroes",
+    "generation": 3,
+    "places": [
+      "tyre",
+      "gortyn"
+    ],
+    "route": true
   },
   {
     "id": "apollo-and-daphne",
@@ -254,6 +266,10 @@
         "title": "Histoire et Mythologie en BD — Daphné et Apollon - Amour non partagé - Mythologie Grecque - Histoire et Mythologie en BD",
         "url": "https://www.youtube.com/watch?v=AudarwFEGg4"
       }
+    ],
+    "era": "mankind",
+    "places": [
+      "tempe"
     ]
   },
   {
@@ -333,6 +349,10 @@
         "title": "Histoire et Mythologie en BD — Écho et Narcisse: L'Histoire de l'homme qui est Tombé Amoureux de lui-même -  Histoire et Mythologie",
         "url": "https://www.youtube.com/watch?v=FGc1dCjaLmI"
       }
+    ],
+    "era": "heroes",
+    "places": [
+      "thespiae"
     ]
   },
   {
@@ -409,6 +429,11 @@
     ],
     "related": [
       "daedalus-and-icarus"
+    ],
+    "era": "heroes",
+    "generation": 6,
+    "places": [
+      "eridanus"
     ]
   },
   {
@@ -488,6 +513,10 @@
     ],
     "related": [
       "europa-and-the-bull"
+    ],
+    "era": "heroes",
+    "places": [
+      "hypaepa"
     ]
   },
   {
@@ -565,6 +594,12 @@
         "title": "Restons Curieux — TED-Ed — Le mythe du roi Midas et ses mains d'or - Iseult Gillespie",
         "url": "https://www.youtube.com/watch?v=Npz3l0TZxzQ"
       }
-    ]
+    ],
+    "era": "heroes",
+    "places": [
+      "gordium",
+      "sardis"
+    ],
+    "route": true
   }
 ]

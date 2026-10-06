@@ -1,4 +1,8 @@
 <p class="tagline">{{ 'app.tagline' | i18n }}</p>
+<nav class="views">
+  <a routerLink="/timeline">{{ 'nav.timeline' | i18n }} →</a>
+  <a routerLink="/map">{{ 'nav.map' | i18n }} →</a>
+</nav>
 @if (catalog.catalog(); as data) {
   <p class="counts">{{ 'home.counts' | i18n: { characters: data.characters.length, stories: data.stories.length } }}</p>
 

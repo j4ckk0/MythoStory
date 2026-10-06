@@ -33,13 +33,19 @@ class CatalogTest {
     private fun both(text: String): I18nText = I18n.LANGUAGES.associateWith { text }
 
     @Test
-    fun `dangling references, duplicates, missing sources and i18n gaps are caught`() {
+    fun `dangling references, duplicates, missing sources, unused places and i18n gaps are caught`() {
         val zeus = Character("zeus", both("Zeus"), CharacterKind.OLYMPIAN, description = both("King of the gods"), parents = listOf("cronus"))
         val story = Story(
             "a-story", both("A story"), mapOf("en" to "Once upon a time"), listOf("zeus", "nobody"),
             sources = emptyList(), links = listOf(Link(LinkKind.VIDEO, "de", "A video", "https://example.org")), related = listOf("none"),
+            era = "heroes", places = listOf("troy", "atlantis"),
         )
-        val problems = Catalog(listOf(zeus, zeus), listOf(story), listOf(Cycle("c", both("C"), both("A cycle"), listOf("a-story", "gone")))).problems()
+        val troy = Place("troy", both("Troy"), 39.96, 26.24, "Q22647")
+        val delphi = Place("delphi", both("Delphi"), 38.48, 22.5, "Q75459")
+        val problems = Catalog(
+            listOf(zeus, zeus), listOf(story), listOf(Cycle("c", both("C"), both("A cycle"), listOf("a-story", "gone"))),
+            eras = listOf(Era("heroes", both("Heroes"), both("The age of heroes"))), places = listOf(troy, delphi),
+        ).problems()
         assertEquals(
             setOf(
                 "character zeus is defined twice",
@@ -50,6 +56,8 @@ class CatalogTest {
                 "story a-story: no character nobody",
                 "story a-story: no related story none",
                 "cycle c: no story gone",
+                "story a-story: no place atlantis",
+                "place delphi is in no story",
             ),
             problems.toSet(),
         )

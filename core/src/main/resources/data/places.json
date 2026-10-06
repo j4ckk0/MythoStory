@@ -1,0 +1,666 @@
+[
+  {
+    "id": "cythera",
+    "name": {
+      "en": "Cythera",
+      "fr": "Cythère"
+    },
+    "lat": 36.2575,
+    "lon": 22.9975,
+    "wikidata": "Q207239"
+  },
+  {
+    "id": "paphos",
+    "name": {
+      "en": "Paphos",
+      "fr": "Paphos"
+    },
+    "lat": 34.7761,
+    "lon": 32.4265,
+    "wikidata": "Q180918",
+    "identification": {
+      "en": "Hesiod says only that Aphrodite came ashore on Cyprus; tradition set it near Paphos and its sanctuary.",
+      "fr": "Hésiode dit seulement qu’Aphrodite aborda à Chypre ; la tradition plaçait le lieu près de Paphos et de son sanctuaire."
+    }
+  },
+  {
+    "id": "lyctus",
+    "name": {
+      "en": "Lyctus",
+      "fr": "Lyctos"
+    },
+    "lat": 35.208,
+    "lon": 25.3686,
+    "wikidata": "Q1001533"
+  },
+  {
+    "id": "delphi",
+    "name": {
+      "en": "Delphi",
+      "fr": "Delphes"
+    },
+    "lat": 38.4822,
+    "lon": 22.5017,
+    "wikidata": "Q75459"
+  },
+  {
+    "id": "mount-olympus",
+    "name": {
+      "en": "Mount Olympus",
+      "fr": "Mont Olympe"
+    },
+    "lat": 40.0833,
+    "lon": 22.35,
+    "wikidata": "Q80344"
+  },
+  {
+    "id": "mount-othrys",
+    "name": {
+      "en": "Mount Othrys",
+      "fr": "Mont Othrys"
+    },
+    "lat": 39.0169,
+    "lon": 22.7097,
+    "wikidata": "Q775676"
+  },
+  {
+    "id": "corycian-cave",
+    "name": {
+      "en": "Corycian cave (Cilicia)",
+      "fr": "Antre corycien (Cilicie)"
+    },
+    "lat": 36.4525,
+    "lon": 34.1056,
+    "wikidata": "Q474939",
+    "identification": {
+      "en": "Identified with the chasms of Cennet and Cehennem, near ancient Corycus.",
+      "fr": "Identifié aux gouffres de Cennet et Cehennem, près de l’antique Corycos."
+    }
+  },
+  {
+    "id": "mount-etna",
+    "name": {
+      "en": "Mount Etna",
+      "fr": "Etna"
+    },
+    "lat": 37.7508,
+    "lon": 14.9932,
+    "wikidata": "Q16990"
+  },
+  {
+    "id": "mecone",
+    "name": {
+      "en": "Mecone (Sicyon)",
+      "fr": "Mécôné (Sicyone)"
+    },
+    "lat": 37.9805,
+    "lon": 22.7227,
+    "wikidata": "Q368628",
+    "identification": {
+      "en": "Mecone was identified with Sicyon in antiquity.",
+      "fr": "Mécôné était identifiée à Sicyone dans l’Antiquité."
+    }
+  },
+  {
+    "id": "caucasus",
+    "name": {
+      "en": "Caucasus",
+      "fr": "Caucase"
+    },
+    "lat": 42.5,
+    "lon": 45.0,
+    "wikidata": "Q5477"
+  },
+  {
+    "id": "mount-parnassus",
+    "name": {
+      "en": "Mount Parnassus",
+      "fr": "Mont Parnasse"
+    },
+    "lat": 38.533,
+    "lon": 22.6167,
+    "wikidata": "Q105261"
+  },
+  {
+    "id": "enna",
+    "name": {
+      "en": "Enna",
+      "fr": "Enna"
+    },
+    "lat": 37.5667,
+    "lon": 14.2667,
+    "wikidata": "Q13687"
+  },
+  {
+    "id": "eleusis",
+    "name": {
+      "en": "Eleusis",
+      "fr": "Éleusis"
+    },
+    "lat": 38.0414,
+    "lon": 23.5453,
+    "wikidata": "Q204905"
+  },
+  {
+    "id": "tyre",
+    "name": {
+      "en": "Tyre",
+      "fr": "Tyr"
+    },
+    "lat": 33.2667,
+    "lon": 35.2,
+    "wikidata": "Q82070"
+  },
+  {
+    "id": "gortyn",
+    "name": {
+      "en": "Gortyn",
+      "fr": "Gortyne"
+    },
+    "lat": 35.0509,
+    "lon": 25.0282,
+    "wikidata": "Q2352674",
+    "identification": {
+      "en": "Cretan tradition set Europa's union with Zeus at Gortyn; the ancient texts say only Crete.",
+      "fr": "La tradition crétoise plaçait l’union d’Europe et de Zeus à Gortyne ; les textes antiques disent seulement la Crète."
+    }
+  },
+  {
+    "id": "tempe",
+    "name": {
+      "en": "Vale of Tempe",
+      "fr": "Vallée de Tempé"
+    },
+    "lat": 39.8728,
+    "lon": 22.5467,
+    "wikidata": "Q258540"
+  },
+  {
+    "id": "thespiae",
+    "name": {
+      "en": "Thespiae",
+      "fr": "Thespies"
+    },
+    "lat": 38.3036,
+    "lon": 23.1583,
+    "wikidata": "Q1141295",
+    "identification": {
+      "en": "Pausanias sets Narcissus's spring near Thespiae; Ovid names no place.",
+      "fr": "Pausanias situe la source de Narcisse près de Thespies ; Ovide ne nomme aucun lieu."
+    }
+  },
+  {
+    "id": "eridanus",
+    "name": {
+      "en": "Eridanus (Po)",
+      "fr": "Éridan (Pô)"
+    },
+    "lat": 44.9525,
+    "lon": 12.4319,
+    "wikidata": "Q643",
+    "identification": {
+      "en": "The Eridanus was identified with the Po from antiquity.",
+      "fr": "L’Éridan était identifié au Pô dès l’Antiquité."
+    }
+  },
+  {
+    "id": "hypaepa",
+    "name": {
+      "en": "Hypaepa",
+      "fr": "Hypaepa"
+    },
+    "lat": 38.2765,
+    "lon": 27.96,
+    "wikidata": "Q5957170"
+  },
+  {
+    "id": "gordium",
+    "name": {
+      "en": "Gordium",
+      "fr": "Gordion"
+    },
+    "lat": 39.6501,
+    "lon": 31.9786,
+    "wikidata": "Q542854"
+  },
+  {
+    "id": "sardis",
+    "name": {
+      "en": "Sardis and the Pactolus",
+      "fr": "Sardes et le Pactole"
+    },
+    "lat": 38.4883,
+    "lon": 28.0403,
+    "wikidata": "Q232615"
+  },
+  {
+    "id": "argos",
+    "name": {
+      "en": "Argos",
+      "fr": "Argos"
+    },
+    "lat": 37.6333,
+    "lon": 22.7292,
+    "wikidata": "Q189901"
+  },
+  {
+    "id": "seriphos",
+    "name": {
+      "en": "Seriphos",
+      "fr": "Sériphos"
+    },
+    "lat": 37.15,
+    "lon": 24.5,
+    "wikidata": "Q217214"
+  },
+  {
+    "id": "larissa",
+    "name": {
+      "en": "Larissa",
+      "fr": "Larissa"
+    },
+    "lat": 39.6385,
+    "lon": 22.4131,
+    "wikidata": "Q178405"
+  },
+  {
+    "id": "joppa",
+    "name": {
+      "en": "Joppa",
+      "fr": "Jaffa"
+    },
+    "lat": 32.0522,
+    "lon": 34.7531,
+    "wikidata": "Q180294",
+    "identification": {
+      "en": "Strabo and Pliny located Andromeda's rock at Joppa; Apollodorus names only Ethiopia.",
+      "fr": "Strabon et Pline situaient le rocher d’Andromède à Jaffa ; Apollodore ne nomme que l’Éthiopie."
+    }
+  },
+  {
+    "id": "corinth",
+    "name": {
+      "en": "Corinth",
+      "fr": "Corinthe"
+    },
+    "lat": 37.9058,
+    "lon": 22.8787,
+    "wikidata": "Q1363688"
+  },
+  {
+    "id": "tiryns",
+    "name": {
+      "en": "Tiryns",
+      "fr": "Tirynthe"
+    },
+    "lat": 37.5967,
+    "lon": 22.7998,
+    "wikidata": "Q217379"
+  },
+  {
+    "id": "lycia",
+    "name": {
+      "en": "Lycia (Xanthos)",
+      "fr": "Lycie (Xanthe)"
+    },
+    "lat": 36.3571,
+    "lon": 29.3193,
+    "wikidata": "Q464936"
+  },
+  {
+    "id": "nemea",
+    "name": {
+      "en": "Nemea",
+      "fr": "Némée"
+    },
+    "lat": 37.809,
+    "lon": 22.7103,
+    "wikidata": "Q748108"
+  },
+  {
+    "id": "lerna",
+    "name": {
+      "en": "Lerna",
+      "fr": "Lerne"
+    },
+    "lat": 37.5512,
+    "lon": 22.7182,
+    "wikidata": "Q1236078"
+  },
+  {
+    "id": "erymanthos",
+    "name": {
+      "en": "Mount Erymanthos",
+      "fr": "Mont Érymanthe"
+    },
+    "lat": 37.9714,
+    "lon": 21.8383,
+    "wikidata": "Q1363703"
+  },
+  {
+    "id": "elis",
+    "name": {
+      "en": "Elis",
+      "fr": "Élis"
+    },
+    "lat": 37.8918,
+    "lon": 21.3751,
+    "wikidata": "Q217667"
+  },
+  {
+    "id": "stymphalia",
+    "name": {
+      "en": "Lake Stymphalia",
+      "fr": "Lac Stymphale"
+    },
+    "lat": 37.8511,
+    "lon": 22.4611,
+    "wikidata": "Q1251026"
+  },
+  {
+    "id": "knossos",
+    "name": {
+      "en": "Knossos",
+      "fr": "Cnossos"
+    },
+    "lat": 35.298,
+    "lon": 25.1632,
+    "wikidata": "Q173527"
+  },
+  {
+    "id": "abdera",
+    "name": {
+      "en": "Abdera",
+      "fr": "Abdère"
+    },
+    "lat": 40.9337,
+    "lon": 24.9733,
+    "wikidata": "Q132527193"
+  },
+  {
+    "id": "themiscyra",
+    "name": {
+      "en": "Themiscyra",
+      "fr": "Thémiscyre"
+    },
+    "lat": 41.2092,
+    "lon": 36.9739,
+    "wikidata": "Q669752",
+    "identification": {
+      "en": "Themiscyra, the Amazons' city, lay in the plain of today's Terme, on the Black Sea.",
+      "fr": "Thémiscyre, la cité des Amazones, se trouvait dans la plaine de l’actuelle Terme, au bord de la mer Noire."
+    }
+  },
+  {
+    "id": "erytheia",
+    "name": {
+      "en": "Erytheia (Gades)",
+      "fr": "Érythie (Gadès)"
+    },
+    "lat": 36.535,
+    "lon": -6.2975,
+    "wikidata": "Q15682",
+    "identification": {
+      "en": "Erytheia, Geryon's island, was identified with Gades — today's Cádiz.",
+      "fr": "Érythie, l’île de Géryon, était identifiée à Gadès — l’actuelle Cadix."
+    }
+  },
+  {
+    "id": "hesperides",
+    "name": {
+      "en": "Garden of the Hesperides (Lixus)",
+      "fr": "Jardin des Hespérides (Lixus)"
+    },
+    "lat": 35.1987,
+    "lon": -6.1104,
+    "wikidata": "Q923835",
+    "identification": {
+      "en": "Apollodorus sets the garden among the Hyperboreans; Pliny located it at Lixus, in Mauretania.",
+      "fr": "Apollodore place le jardin chez les Hyperboréens ; Pline le situait à Lixus, en Maurétanie."
+    }
+  },
+  {
+    "id": "taenarum",
+    "name": {
+      "en": "Taenarum",
+      "fr": "Ténare"
+    },
+    "lat": 36.385,
+    "lon": 22.4828,
+    "wikidata": "Q849911",
+    "identification": {
+      "en": "A cave on Cape Taenarum was held to be an entrance to the underworld.",
+      "fr": "Une grotte du cap Ténare passait pour une entrée des Enfers."
+    }
+  },
+  {
+    "id": "athens",
+    "name": {
+      "en": "Athens",
+      "fr": "Athènes"
+    },
+    "lat": 37.9842,
+    "lon": 23.7281,
+    "wikidata": "Q1524"
+  },
+  {
+    "id": "naxos",
+    "name": {
+      "en": "Naxos",
+      "fr": "Naxos"
+    },
+    "lat": 37.0833,
+    "lon": 25.4667,
+    "wikidata": "Q188527"
+  },
+  {
+    "id": "icaria",
+    "name": {
+      "en": "Icaria",
+      "fr": "Icarie"
+    },
+    "lat": 37.5833,
+    "lon": 26.1667,
+    "wikidata": "Q209576"
+  },
+  {
+    "id": "iolcus",
+    "name": {
+      "en": "Iolcus",
+      "fr": "Iolcos"
+    },
+    "lat": 39.363,
+    "lon": 22.934,
+    "wikidata": "Q662613"
+  },
+  {
+    "id": "lemnos",
+    "name": {
+      "en": "Lemnos",
+      "fr": "Lemnos"
+    },
+    "lat": 39.9167,
+    "lon": 25.25,
+    "wikidata": "Q192483"
+  },
+  {
+    "id": "cyzicus",
+    "name": {
+      "en": "Cyzicus",
+      "fr": "Cyzique"
+    },
+    "lat": 40.3878,
+    "lon": 27.8706,
+    "wikidata": "Q615449"
+  },
+  {
+    "id": "salmydessus",
+    "name": {
+      "en": "Salmydessus",
+      "fr": "Salmydessos"
+    },
+    "lat": 41.6372,
+    "lon": 28.0911,
+    "wikidata": "Q65051022"
+  },
+  {
+    "id": "symplegades",
+    "name": {
+      "en": "Clashing Rocks (Bosporus)",
+      "fr": "Roches Cyanées (Bosphore)"
+    },
+    "lat": 41.12,
+    "lon": 29.08,
+    "wikidata": "Q35958",
+    "identification": {
+      "en": "The Clashing Rocks were placed at the Black Sea mouth of the Bosporus.",
+      "fr": "Les roches qui s’entrechoquent étaient placées à l’entrée du Bosphore sur la mer Noire."
+    }
+  },
+  {
+    "id": "colchis",
+    "name": {
+      "en": "Aia (Colchis)",
+      "fr": "Aia (Colchide)"
+    },
+    "lat": 42.1359,
+    "lon": 41.6923,
+    "wikidata": "Q378091",
+    "identification": {
+      "en": "Aeetes's city, Aia, lay on the river Phasis, where the town of Phasis stood later.",
+      "fr": "La cité d’Éétès, Aia, se trouvait sur le fleuve Phase, là où s’éleva plus tard la ville de Phasis."
+    }
+  },
+  {
+    "id": "hebrus",
+    "name": {
+      "en": "Mouth of the Hebrus",
+      "fr": "Embouchure de l’Hèbre"
+    },
+    "lat": 40.7306,
+    "lon": 26.035,
+    "wikidata": "Q204347"
+  },
+  {
+    "id": "thebes",
+    "name": {
+      "en": "Thebes",
+      "fr": "Thèbes"
+    },
+    "lat": 38.3208,
+    "lon": 23.3178,
+    "wikidata": "Q5760"
+  },
+  {
+    "id": "cithaeron",
+    "name": {
+      "en": "Mount Cithaeron",
+      "fr": "Mont Cithéron"
+    },
+    "lat": 38.1844,
+    "lon": 23.2492,
+    "wikidata": "Q1147780"
+  },
+  {
+    "id": "pelion",
+    "name": {
+      "en": "Mount Pelion",
+      "fr": "Mont Pélion"
+    },
+    "lat": 39.4333,
+    "lon": 23.05,
+    "wikidata": "Q1334825"
+  },
+  {
+    "id": "mount-ida",
+    "name": {
+      "en": "Mount Ida",
+      "fr": "Mont Ida"
+    },
+    "lat": 39.7044,
+    "lon": 26.8292,
+    "wikidata": "Q1127771"
+  },
+  {
+    "id": "sparta",
+    "name": {
+      "en": "Sparta",
+      "fr": "Sparte"
+    },
+    "lat": 37.0737,
+    "lon": 22.4309,
+    "wikidata": "Q5690"
+  },
+  {
+    "id": "troy",
+    "name": {
+      "en": "Troy",
+      "fr": "Troie"
+    },
+    "lat": 39.9575,
+    "lon": 26.2389,
+    "wikidata": "Q22647"
+  },
+  {
+    "id": "tenedos",
+    "name": {
+      "en": "Tenedos",
+      "fr": "Ténédos"
+    },
+    "lat": 39.8167,
+    "lon": 26.05,
+    "wikidata": "Q211817"
+  },
+  {
+    "id": "ismarus",
+    "name": {
+      "en": "Ismarus (Maroneia)",
+      "fr": "Ismaros (Maronée)"
+    },
+    "lat": 40.9,
+    "lon": 25.5167,
+    "wikidata": "Q690341",
+    "identification": {
+      "en": "The Cicones' Ismarus lay near Maroneia, the city of Maron, whose wine Odysseus carried.",
+      "fr": "L’Ismaros des Cicones se trouvait près de Maronée, la cité de Maron, dont Ulysse emportait le vin."
+    }
+  },
+  {
+    "id": "malea",
+    "name": {
+      "en": "Cape Malea",
+      "fr": "Cap Malée"
+    },
+    "lat": 36.4381,
+    "lon": 23.1986,
+    "wikidata": "Q1471621"
+  },
+  {
+    "id": "lotus-eaters",
+    "name": {
+      "en": "Land of the Lotus-eaters",
+      "fr": "Pays des Lotophages"
+    },
+    "lat": 33.7837,
+    "lon": 10.8833,
+    "wikidata": "Q188938",
+    "identification": {
+      "en": "Identified with the island of Djerba since antiquity.",
+      "fr": "Identifié à l’île de Djerba dès l’Antiquité."
+    }
+  },
+  {
+    "id": "cyclopes-land",
+    "name": {
+      "en": "Land of the Cyclopes",
+      "fr": "Pays des Cyclopes"
+    },
+    "lat": 37.55,
+    "lon": 15.15,
+    "wikidata": "Q245578",
+    "identification": {
+      "en": "Placed in Sicily, by Etna, since antiquity: the Cyclopean Isles are said to be the rocks Polyphemus threw at Odysseus.",
+      "fr": "Situé en Sicile, au pied de l’Etna, dès l’Antiquité : les îles des Cyclopes seraient les rochers que Polyphème lança sur Ulysse."
+    }
+  }
+]

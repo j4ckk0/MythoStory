@@ -129,6 +129,11 @@
     ],
     "related": [
       "labours-of-heracles"
+    ],
+    "era": "mankind",
+    "places": [
+      "mecone",
+      "caucasus"
     ]
   },
   {
@@ -226,7 +231,8 @@
         "title": "TV5MONDE — Le mythe de Pandore : Légendes mythologiques",
         "url": "https://www.youtube.com/watch?v=Dy3qENV8XEA"
       }
-    ]
+    ],
+    "era": "mankind"
   },
   {
     "id": "deucalion-flood",
@@ -312,6 +318,14 @@
     ],
     "related": [
       "pandora"
+    ],
+    "era": "mankind",
+    "dating": {
+      "en": "1529/1528 BC according to the Parian Chronicle.",
+      "fr": "1529/1528 av. J.-C. selon la Chronique de Paros."
+    },
+    "places": [
+      "mount-parnassus"
     ]
   }
 ]

@@ -290,3 +290,67 @@ h2[data-kind] {
   color: var(--accent);
   font-weight: 600;
 }
+
+/* the map's colours */
+:root {
+  --sea: #dfe9ec;
+  --land: #f3ead3;
+  --coast: #b9a983;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sea: #15232a;
+    --land: #2b2619;
+    --coast: #5c533c;
+  }
+}
+
+/* a cycle's colour, for every element marked with it: the timeline's cards, the map's journeys */
+[data-cycle='theogony'] { --cycle: var(--kind-primordial); }
+[data-cycle='prometheus'] { --cycle: var(--kind-titan); }
+[data-cycle='gods-and-mortals'] { --cycle: var(--kind-deity); }
+[data-cycle='heroes'] { --cycle: var(--kind-hero); }
+[data-cycle='thebes'] { --cycle: var(--kind-creature); }
+[data-cycle='trojan-war'] { --cycle: var(--kind-olympian); }
+[data-cycle='odyssey'] { --cycle: var(--kind-nymph); }
+
+.views {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.when {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.map-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0 1.5rem;
+}
+
+.place-panel {
+  grid-column: 1 / -1;
+}
+
+.map-stories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2 14rem;
+}
+
+.map-stories li {
+  padding: 0.15rem 0 0.15rem 0.5rem;
+  border-left: 3px solid var(--cycle, var(--border));
+  break-inside: avoid;
+}
+
+.map-stories a.active {
+  font-weight: 700;
+}

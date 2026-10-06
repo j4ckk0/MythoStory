@@ -1,0 +1,43 @@
+<h1>{{ 'map.title' | i18n }}</h1>
+<p class="muted">{{ 'map.intro' | i18n }}</p>
+
+<app-map-view [stories]="stories()" [highlight]="story() ?? null" [selectedPlace]="place() ?? null" (placeSelected)="selectPlace($event)" />
+
+<div class="map-panels">
+  @if (selectedPlace(); as p) {
+    <section class="place-panel">
+      <h2>{{ p.name | i18nText }}</h2>
+      @if (p.identification) {
+        <p class="muted">{{ p.identification | i18nText }}</p>
+      }
+      <h3>{{ 'map.place.stories' | i18n }}</h3>
+      <ul class="entries">
+        @for (s of placeStories(); track s.id) {
+          <li>
+            <a [routerLink]="['/map']" [queryParams]="{ story: s.id, place: p.id }">{{ s.title | i18nText }}</a>
+            · <a [routerLink]="['/stories', s.id]">{{ 'map.read' | i18n }}</a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  <section>
+    <h2>{{ 'map.stories' | i18n }}</h2>
+    <ul class="map-stories">
+      <li>
+        <a [routerLink]="['/map']" [queryParams]="{ place: place() ?? null }" [class.active]="!story()">{{ 'map.all' | i18n }}</a>
+      </li>
+      @for (s of stories(); track s.id) {
+        <li [attr.data-cycle]="cycleOf(s.id)">
+          <a [routerLink]="['/map']" [queryParams]="{ story: s.id, place: place() ?? null }" [class.active]="story() === s.id">{{
+            s.title | i18nText
+          }}</a>
+          @if (s.route) {
+            <span class="muted" aria-hidden="true"> ↝</span>
+          }
+        </li>
+      }
+    </ul>
+  </section>
+</div>

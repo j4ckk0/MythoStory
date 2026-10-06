@@ -155,7 +155,7 @@ class WikidataImport(private val data: File, private val all: Boolean) {
 
     /** Checks the catalog with the imported characters in, then writes them, one file per kind, and the index. */
     private fun write(catalog: Catalog, curated: List<Character>, imported: List<Character>) {
-        Catalog(curated + imported, catalog.stories, catalog.cycles).requireSound()
+        catalog.copy(characters = curated + imported).requireSound()
 
         data.resolve(IMPORTED).deleteRecursively()
         data.resolve(IMPORTED).mkdirs()

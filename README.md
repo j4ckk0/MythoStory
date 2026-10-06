@@ -74,6 +74,8 @@ data/characters/wikidata/     the characters imported from Wikidata, one file pe
                               scripts/import-characters.sh rewrites them (below)
 data/stories/<cycle>.json     the stories, one file per cycle
 data/cycles.json              the cycles: sequences of stories, in their order
+data/eras.json                the eras of the timeline, in their order
+data/places.json              the places of the map: coordinates from Wikidata
 ```
 
 The records refer to each other by **id**, a slug (`zeus`, `labours-of-heracles`), which is also the
@@ -98,11 +100,22 @@ a character's stories, the previous and next story of a cycle.
   "related": ["bellerophon-and-the-chimera"] }
 ```
 
+A story also says **when** and **where** it happens: its `era` (the timeline's section), its
+`generation` — how many generations before the Trojan War, as the genealogies count them; absent
+when the tradition does not say —, a `dating` when ancient chronographers gave one, its `places`, and
+`route: true` when those places are a journey, in its order.
+
+```jsonc
+// data/places.json: a place, with the Wikidata item its coordinates come from; identification marks a mythical place
+{ "id": "lotus-eaters", "name": {"en": "Land of the Lotus-eaters", "fr": "Pays des Lotophages"}, "lat": 33.7837, "lon": 10.8833,
+  "wikidata": "Q188938", "identification": {"en": "Identified with the island of Djerba since antiquity.", "fr": "…"} }
+```
+
 Link kinds: `wikipedia`, `article`, `video`. Each link says its **language**; the page shows the
 reader's language first and marks the others.
 
-**Checks.** `Catalog.problems()` refuses a catalog with a duplicate id, a dangling reference, a story
-without a source or a character, a text missing one of the languages, or a link in an unknown
+**Checks.** `Catalog.problems()` refuses a catalog with a duplicate id, a dangling reference (to a
+character, a story, an era, a place), a place no story uses, a story without a source or a character, a text missing one of the languages, or a link in an unknown
 language; the build runs it (`CatalogTest`), and the server would not start. **The links** are
 checked by `scripts/check-links.sh` (`scripts\check-links.bat`): every URL must answer — the videos
 through YouTube's oEmbed, which answers only for videos that exist, the Wikipedia articles through
@@ -154,9 +167,42 @@ server sends it. English translations of the sources come from the Theoi Classic
 MIT Internet Classics Archive and the University of Chicago's LacusCurtius; French ones from
 Wikisource (Leconte de Lisle, Nisard, Clavier).
 
-The page lists the characters by kind and, when there are more than 150, one initial at a time
+The page has a timeline, a map and family trees (below); it lists the characters by kind and, when there are more than 150, one initial at a time
 (`/characters?kind=mortal&letter=t`); the search shows the first hundred matches, names starting with
 the query first.
+
+## The timeline, the map and the family trees
+
+**The timeline** (`/timeline`) lays the stories out in the mythic chronology: the eras in their
+order (the origins, the reign of Cronus, the war for heaven, the first humans, the age of heroes, the
+Trojan War, the returns), and in each the stories by generation before the war — Phaethon six
+generations before it, Perseus four, Europa three, Bellerophon and Oedipus two, Heracles, Jason,
+Theseus and Orpheus one — then those the tradition does not place. The generations come from the
+genealogies (Perseus is Heracles' great-grandfather; Heracles' son Tlepolemus fought at Troy), which
+the myths do not always agree on; the dates shown are the ancient chronographers' — the flood of
+Deucalion in 1529/1528 BC by the Parian Chronicle, the fall of Troy in 1184/1183 BC by Eratosthenes —,
+never ours. The cards take their cycle's colour; each leads to its story and its place on the map.
+
+**The map** (`/map`; `?story=` draws one in front and zooms on it, `?place=` tells what happens
+there) puts the 60 places of the stories on the Mediterranean and the Black Sea, the journeys as
+routes in their cycle's colour: Heracles from Tiryns to Gades and the Hesperides, the Argo from
+Iolcus to Colchis, Odysseus from Troy to the Cyclopes. A hollow dot is a mythical place, or one whose
+location was disputed: its panel says who identified it with what. Zoom with the wheel or the
+buttons, pan by dragging; labels are laid out so as not to overlap. Each story page has its own inset.
+
+The map is drawn in SVG from `frontend/public/map/land.json`, so that it works offline, on Android
+too: Natural Earth's 1:10m land (public domain), clipped, the islands smaller than 15 km² left out,
+simplified with mapshaper:
+
+```bash
+npx mapshaper@0.6 -i ne_10m_land.geojson -clip bbox=-22,18,62,56 -explode -filter 'this.area > 15000000' \
+  -simplify 15% keep-shapes -o precision=0.01 format=geojson land.json
+```
+
+**The family tree**, on each character's page: their ancestors over two generations (further up, the
+gods' families repeat themselves), and their children grouped by the other parent — Zeus's hundred,
+with Hera, with Leto, with Maia… —, each child with how many children of their own. Every name leads
+to that character's tree.
 
 ## i18n
 

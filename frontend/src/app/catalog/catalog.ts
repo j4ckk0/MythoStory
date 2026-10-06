@@ -45,6 +45,33 @@ export interface Story {
   sources: Source[];
   links?: Link[];
   related?: string[];
+  /** Its era's id, on the timeline. */
+  era: string;
+  /** How many generations before the Trojan War it happens (0: the war's own); absent when the tradition does not say. */
+  generation?: number;
+  /** The date ancient chronographers gave it. */
+  dating?: I18nText;
+  /** Its places' ids, on the map; in the journey's order when route is true. */
+  places?: string[];
+  route?: boolean;
+}
+
+/** A period of the mythic chronology (backend: Era). */
+export interface Era {
+  id: string;
+  title: I18nText;
+  description: I18nText;
+  dating?: I18nText;
+}
+
+/** A place on the map (backend: Place); identification is set for a mythical or disputed one. */
+export interface Place {
+  id: string;
+  name: I18nText;
+  lat: number;
+  lon: number;
+  wikidata: string;
+  identification?: I18nText;
 }
 
 export interface Cycle {
@@ -58,6 +85,8 @@ export interface Catalog {
   characters: Character[];
   stories: Story[];
   cycles: Cycle[];
+  eras: Era[];
+  places: Place[];
 }
 
 /** What the server says of itself (backend: Info). */
@@ -89,6 +118,24 @@ export class CatalogService {
 
   readonly characterById = computed(() => new Map((this.catalog()?.characters ?? []).map((c) => [c.id, c])));
   readonly storyById = computed(() => new Map((this.catalog()?.stories ?? []).map((s) => [s.id, s])));
+  readonly eraById = computed(() => new Map((this.catalog()?.eras ?? []).map((e) => [e.id, e])));
+  readonly placeById = computed(() => new Map((this.catalog()?.places ?? []).map((p) => [p.id, p])));
+
+  /** The stories happening at each place, in the cycles' order. */
+  readonly storiesByPlace = computed(() => {
+    const index = new Map<string, Story[]>();
+    for (const story of this.storiesInCycleOrder()) {
+      for (const id of new Set(story.places ?? [])) index.set(id, [...(index.get(id) ?? []), story]);
+    }
+    return index;
+  });
+
+  /** A story's cycle, the first one it belongs to: its colour on the timeline and the map. */
+  readonly cycleOfStory = computed(() => {
+    const index = new Map<string, Cycle>();
+    for (const cycle of this.catalog()?.cycles ?? []) for (const id of cycle.stories) if (!index.has(id)) index.set(id, cycle);
+    return index;
+  });
 
   /** The stories each character appears in, in the cycles' order. */
   readonly storiesByCharacter = computed(() => {
