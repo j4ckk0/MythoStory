@@ -11,6 +11,7 @@ import org.jtools.mythostory.core.Catalog
 import kotlin.test.Test
 import kotlin.test.assertContains
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 
 class MythoStoryServerTest {
     private fun test(block: suspend ApplicationTestBuilder.() -> Unit) = testApplication {
@@ -36,6 +37,7 @@ class MythoStoryServerTest {
         assertContains(body, "\"fr\":\"Héraclès\"")
         assertContains(body, "\"id\":\"labours-of-heracles\"")
         assertContains(body, "\"kind\":\"creature\"")
+        assertFalse(body.contains(":null"), "what the data leaves out is left out, never null")
     }
 
     @Test

@@ -13,6 +13,7 @@ import android.webkit.WebViewClient
 /** The window: a WebView on the app's own server, as the desktop's browser is on the desktop's. */
 class MainActivity : Activity() {
     private lateinit var webView: WebView
+    private lateinit var speech: SpeechBridge
 
     @SuppressLint("SetJavaScriptEnabled") // the page is Angular, served by the app itself
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,9 @@ class MainActivity : Activity() {
                 insets
             }
         }
+        // the page's speaker button: the WebView has no speech synthesis of its own
+        speech = SpeechBridge(this, webView)
+        webView.addJavascriptInterface(speech, "MythoStorySpeech")
         setContentView(webView)
 
         (application as MythoStoryApplication).port.whenComplete { port, error ->
@@ -55,6 +59,7 @@ class MainActivity : Activity() {
     }
 
     override fun onDestroy() {
+        speech.shutdown()
         webView.destroy()
         super.onDestroy()
     }

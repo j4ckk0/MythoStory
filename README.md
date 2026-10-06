@@ -206,6 +206,22 @@ gods' families repeat themselves), and their children grouped by the other paren
 with Hera, with Leto, with Maia… —, each child with how many children of their own. Every name leads
 to that character's tree.
 
+## Listening to the stories
+
+Each story page has a **speaker button**: it reads the title, then the summary, aloud in the reader's
+language — pause, resume where it stopped, stop —, the paragraph being read highlighted. It speaks a
+sentence at a time (some browsers cut long utterances short), stops when the page goes or the
+language changes, and is disabled, saying so, where the device has no voice for the language.
+
+- **On the desktop**, the browser's own speech synthesis (the Web Speech API) with the system's
+  voices, offline when they are local (those are preferred, the locale's first: fr-FR, en-GB).
+  On Windows and macOS the system voices are there; on Linux, browsers take theirs from
+  speech-dispatcher (with espeak-ng, say) — Firefox by default, Chrome and Chromium may need starting
+  with `--enable-speech-dispatcher`.
+- **On Android**, the WebView has no speech synthesis: the app lends the page Android's
+  text-to-speech through a bridge (`SpeechBridge.kt`, `window.MythoStorySpeech`), with the voices
+  installed on the phone (Settings › Text-to-speech).
+
 ## i18n
 
 French and English, everywhere: everything about it is named **i18n**.

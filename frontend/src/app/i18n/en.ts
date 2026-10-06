@@ -59,6 +59,12 @@ export const en = {
   'story.cycle': 'Part {position} of {count}',
   'story.where': 'Where',
 
+  'speech.listen': 'Listen',
+  'speech.pause': 'Pause',
+  'speech.resume': 'Resume',
+  'speech.stop': 'Stop',
+  'speech.unavailable': 'No English voice on this device',
+
   'timeline.title': 'Timeline',
   'timeline.intro': 'The myths in the order the Greeks told them, from Chaos to the return from Troy. Before the war, generations as the genealogies count them; dates, where there are any, as ancient chronographers gave them.',
   'timeline.generation': '{count} generations before the Trojan War',

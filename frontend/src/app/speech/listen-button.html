@@ -1,0 +1,39 @@
+@if (speech.supported()) {
+  <div class="listen" role="group" [attr.aria-label]="'speech.listen' | i18n">
+    <button
+      type="button"
+      class="speaker"
+      [class.active]="state() !== 'idle'"
+      [disabled]="!available()"
+      [title]="(available() ? 'speech.listen' : 'speech.unavailable') | i18n"
+      (click)="toggle()"
+    >
+      @switch (state()) {
+        @case ('speaking') {
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
+          {{ 'speech.pause' | i18n }}
+        }
+        @case ('paused') {
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+          {{ 'speech.resume' | i18n }}
+        }
+        @default {
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 9v6h4l5 5V4L7 9H3z" />
+            <path d="M16.5 12A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" />
+          </svg>
+          {{ 'speech.listen' | i18n }}
+        }
+      }
+    </button>
+    @if (state() !== 'idle') {
+      <button type="button" class="stop" (click)="stop()" [title]="'speech.stop' | i18n">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z" /></svg>
+        <span class="visually-hidden">{{ 'speech.stop' | i18n }}</span>
+      </button>
+    }
+    @if (!available()) {
+      <span class="muted unavailable">{{ 'speech.unavailable' | i18n }}</span>
+    }
+  </div>
+}

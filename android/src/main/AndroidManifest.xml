@@ -4,6 +4,13 @@
     <!-- the server and the WebView talk over a socket, on 127.0.0.1: Android wants this even for its own loopback -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- the speaker button (SpeechBridge): Android 11 and later show an app only the text-to-speech engines it asks for -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
     <application
         android:name=".MythoStoryApplication"
         android:label="@string/app_name"

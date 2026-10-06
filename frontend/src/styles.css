@@ -354,3 +354,11 @@ h2[data-kind] {
 .map-stories a.active {
   font-weight: 700;
 }
+
+/* the sentence being read aloud's paragraph (speech: the speaker button) */
+.reading {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 0.35rem color-mix(in srgb, var(--accent) 12%, transparent);
+  transition: background 0.3s;
+}

@@ -61,6 +61,12 @@ export const fr: Record<I18nKey, string> = {
   'story.cycle': 'Épisode {position} sur {count}',
   'story.where': 'Où',
 
+  'speech.listen': 'Écouter',
+  'speech.pause': 'Pause',
+  'speech.resume': 'Reprendre',
+  'speech.stop': 'Arrêter',
+  'speech.unavailable': 'Aucune voix française sur cet appareil',
+
   'timeline.title': 'Chronologie',
   'timeline.intro': 'Les mythes dans l’ordre où les Grecs les racontaient, du Chaos au retour de Troie. Avant la guerre, les générations telles que les généalogies les comptent ; les dates, quand il y en a, telles que les chronographes antiques les donnaient.',
   'timeline.generation': '{count} générations avant la guerre de Troie',

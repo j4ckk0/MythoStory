@@ -26,6 +26,7 @@ import kotlinx.coroutines.delay
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
 import org.jtools.mythostory.core.Catalog
 import org.jtools.mythostory.core.I18n
 import java.util.Properties
@@ -67,7 +68,8 @@ fun startServer(
  */
 fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageSessions? = null) {
     val info = readInfo(platform)
-    install(ContentNegotiation) { json() }
+    // absent rather than null: what the data files leave out, the page receives left out (a story's generation…)
+    install(ContentNegotiation) { json(Json { explicitNulls = false }) }
     // the catalog weighs megabytes since the Wikidata import, a fifth of it gzipped; never the session streams,
     // whose pings gzip would hold back — and with them the news that a page has gone
     install(Compression) {

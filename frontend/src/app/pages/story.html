@@ -14,11 +14,11 @@
     </nav>
   }
 
-  <h1>{{ s.title | i18nText }}</h1>
+  <h1 [class.reading]="speech.key() === s.id && speech.paragraph() === -1">{{ s.title | i18nText }}</h1>
   @if (era(); as e) {
     <p class="when">
       <a [routerLink]="['/timeline']" [fragment]="s.id">{{ e.title | i18nText }}</a>
-      @if (s.generation !== undefined) {
+      @if (s.generation != null) {
         · {{ generationKey(s.generation) | i18n: { count: s.generation } }}
       }
       @if (s.dating) {
@@ -32,9 +32,10 @@
     }
   </div>
 
+  <app-listen-button [key]="s.id" [title]="s.title | i18nText" [paragraphs]="paragraphs()" />
   <article class="summary">
     @for (paragraph of paragraphs(); track $index) {
-      <p>{{ paragraph }}</p>
+      <p [class.reading]="speech.key() === s.id && speech.paragraph() === $index">{{ paragraph }}</p>
     }
   </article>
 
