@@ -55,7 +55,9 @@ The choices behind this layout:
 | Method | Path           | Answer                                                                            |
 |--------|----------------|-----------------------------------------------------------------------------------|
 | GET    | `/api/info`    | `{name, version, platform, languages}`: platform is `desktop` or `android`         |
-| GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, stories, cycles}`           |
+| GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, stories, cycles, eras, places}` |
+| GET    | `/api/session` | a page's session: a server-sent event stream, its first event the session's id     |
+| POST   | `/api/session/{id}/closed` | the page has gone (a beacon): the desktop stops once its last page has   |
 
 The catalog is small (a few hundred kilobytes) and read-only: the page loads it once, builds its own
 indexes (a character's stories and children, a story's cycles and neighbours) and switches language
@@ -289,12 +291,17 @@ the same; `mvn package -P-android` leaves it out.
 
 ```bash
 scripts/run.sh                                  # build if a source is newer than the jar, then run
-scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --help
+scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --keep-running, --help
 scripts/run.sh --rebuild
 scripts/run.sh --android                        # install and start the app on the device or emulator adb sees
 ```
 
-The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network).
+The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network). **It stops by itself
+when its last page is closed**, like a program whose last window is closed: each page holds a stream
+from the server (`/api/session`) and, as it goes away, says so; the server waits five seconds — a
+reload, a tab closed while another opens — and stops. Should the browser crash instead, the stream
+breaks and the server notices within seconds. It never stops before a first page has opened, and
+`--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
 
 ### Working on the frontend
 
@@ -302,7 +309,7 @@ Angular's dev server reloads the page on every change. It forwards `/api` to the
 (`frontend/proxy.conf.json`):
 
 ```bash
-scripts/run.sh --no-browser                     # the backend on :8080
+scripts/run.sh --no-browser --keep-running      # the backend on :8080, whatever the dev server's reloads
 cd frontend && PATH="$PWD/../external/node/bin:$PATH" npm start   # the page on http://localhost:4200/
 ```
 

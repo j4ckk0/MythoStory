@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CatalogService } from './catalog/catalog';
+import { SessionService } from './catalog/session';
 import { I18nPipe } from './i18n/i18n.pipe';
 import { I18nService } from './i18n/i18n.service';
 
@@ -17,6 +18,10 @@ export class App {
   protected readonly i18n = inject(I18nService);
   private readonly router = inject(Router);
   protected query = '';
+
+  constructor() {
+    inject(SessionService).open();
+  }
 
   protected search(): void {
     this.router.navigate(['/search'], { queryParams: { q: this.query.trim() || null } });

@@ -39,6 +39,10 @@
     </dependency>
     <dependency>
       <groupId>io.ktor</groupId>
+      <artifactId>ktor-server-sse-jvm</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.ktor</groupId>
       <artifactId>ktor-serialization-kotlinx-json-jvm</artifactId>
     </dependency>
     <!-- the tests' log (Ktor's): the desktop's logger; on Android, Ktor logs nowhere -->
@@ -55,6 +59,12 @@
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-test-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- PageSessionsTest: the grace period in virtual time -->
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-test-jvm</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
