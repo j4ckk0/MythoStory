@@ -322,6 +322,8 @@ scripts/run.sh                                  # build if a source is newer tha
 scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --keep-running, --help
 scripts/run.sh --rebuild
 scripts/run.sh --android                        # install and start the app on the device or emulator adb sees
+scripts/stop.sh                                 # stop every MythoStory server on this machine (scripts\stop.bat on Windows)
+scripts/stop.sh --port 9090                     # only the one on that port
 ```
 
 The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network). **It stops by itself
