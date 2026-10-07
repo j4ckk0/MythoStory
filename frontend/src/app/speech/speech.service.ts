@@ -4,17 +4,27 @@ import { CatalogService } from '../catalog/catalog';
 import { I18nLanguage } from '../i18n/i18n.service';
 import { AndroidSpeechBridge, AndroidSpeechEngine, ServerSpeechEngine, SpeechEngine, WebSpeechEngine } from './speech-engine';
 
-/** One sentence to say, and the paragraph it belongs to (-1: the title). */
+/** A text to read: its key (a story's id), its title, its paragraphs, and what to announce before it (a cycle's title). */
+export interface Reading {
+  key: string;
+  title: string;
+  paragraphs: string[];
+  intro?: string;
+}
+
+/** One sentence to say, the reading it belongs to and its paragraph (-1: the title, -2: the intro). */
 interface Sentence {
   text: string;
   paragraph: number;
+  item: number;
 }
 
 export type SpeechState = 'idle' | 'speaking' | 'paused';
 
 /**
- * Reads texts aloud — a story's title and summary —, sentence after sentence: long utterances get cut short by some
- * browsers, and pausing then resumes at the sentence where it stopped. One reading at a time, known by its key.
+ * Reads texts aloud — a story's title and summary, or a whole series of them —, sentence after sentence: long
+ * utterances get cut short by some browsers, and pausing then resumes at the sentence where it stopped. One reading
+ * at a time, known by its key: a story's id, or a series' ("all", "cycle:theogony").
  *
  * The voice, for each language: the Android app's text-to-speech in the app; else the server's (the desktop's Piper),
  * the same everywhere and natural; else the browser's own, which some systems lack or make robotic.
@@ -31,14 +41,23 @@ export class SpeechService {
   private readonly voices = signal(0);
 
   readonly state = signal<SpeechState>('idle');
-  /** The key of the text being read (or paused): a story's id. */
+  /** The key of the reading in progress (or paused): a story's id, or a series'. */
   readonly key = signal<string | null>(null);
-  /** The paragraph being read, to highlight it; -1 for the title, null when nothing is. */
+  /** The texts of the reading, in their order. */
+  readonly items = signal<readonly Reading[]>([]);
+  /** The index, in [items], of the text being read. */
+  readonly itemIndex = signal(0);
+  /** The key of the text being read: the story to highlight. */
+  readonly item = computed(() => (this.state() === 'idle' ? null : (this.items()[this.itemIndex()]?.key ?? null)));
+  /** The paragraph being read, to highlight it; -1 for the title, -2 for the intro, null when nothing is. */
   readonly paragraph = signal<number | null>(null);
+  /** The language the reading is in: another one asked for, it stops. */
+  readonly language = signal<I18nLanguage>('en');
 
   private sentences: Sentence[] = [];
   private position = 0;
-  private language: I18nLanguage = 'en';
+  /** Bumped at every sentence spoken, pause and stop: an engine's late "said" for an earlier one is ignored. */
+  private turn = 0;
 
   constructor() {
     const window = inject(DOCUMENT).defaultView as (Window & { MythoStorySpeech?: AndroidSpeechBridge }) | null;
@@ -70,18 +89,29 @@ export class SpeechService {
 
   /** Reads the title, then the paragraphs, from the start. */
   play(key: string, title: string, paragraphs: string[], language: I18nLanguage): void {
+    this.playAll(key, [{ key, title, paragraphs }], language);
+  }
+
+  /** Reads the texts one after the other, each one's intro, title and paragraphs, from the first. */
+  playAll(key: string, items: Reading[], language: I18nLanguage): void {
     this.engine?.cancel();
     this.engine = this.engineFor(language);
-    if (!this.engine) return;
+    if (!this.engine || !items.length) return;
     this.key.set(key);
-    this.language = language;
-    this.sentences = [{ text: title, paragraph: -1 }, ...paragraphs.flatMap((p, i) => split(p, language).map((text) => ({ text, paragraph: i })))];
+    this.items.set(items);
+    this.language.set(language);
+    this.sentences = items.flatMap((reading, item) => [
+      ...(reading.intro ? [{ text: reading.intro, paragraph: -2, item }] : []),
+      { text: reading.title, paragraph: -1, item },
+      ...reading.paragraphs.flatMap((p, i) => group(split(p, language), this.engine!.groupUpTo).map((text) => ({ text, paragraph: i, item }))),
+    ]);
     this.position = 0;
     this.speakFromPosition();
   }
 
   pause(): void {
     if (this.state() !== 'speaking') return;
+    this.turn++;
     this.state.set('paused');
     this.engine?.cancel();
   }
@@ -90,11 +120,39 @@ export class SpeechService {
     if (this.state() === 'paused') this.speakFromPosition();
   }
 
+  /** On to the next text of the reading, from its start; the end of the reading after the last. */
+  next(): void {
+    const item = this.sentences[this.position]?.item ?? 0;
+    this.jumpTo(this.sentences.findIndex((s) => s.item > item));
+  }
+
+  /** Back to the start of the text being read — of the one before, when it has only just started. */
+  previous(): void {
+    const item = this.sentences[this.position]?.item ?? 0;
+    const start = this.sentences.findIndex((s) => s.item === item);
+    const target = this.position - start > 2 || item === 0 ? item : item - 1;
+    this.jumpTo(this.sentences.findIndex((s) => s.item === target));
+  }
+
   stop(): void {
+    this.turn++;
     this.engine?.cancel();
     this.state.set('idle');
     this.key.set(null);
+    this.items.set([]);
     this.paragraph.set(null);
+  }
+
+  private jumpTo(position: number): void {
+    if (this.state() === 'idle') return;
+    this.turn++;
+    this.engine?.cancel();
+    if (position < 0) {
+      this.stop();
+      return;
+    }
+    this.position = position;
+    this.speakFromPosition();
   }
 
   private speakFromPosition(): void {
@@ -103,18 +161,31 @@ export class SpeechService {
       this.stop();
       return;
     }
+    const turn = ++this.turn;
     this.state.set('speaking');
+    this.itemIndex.set(sentence.item);
     this.paragraph.set(sentence.paragraph);
-    const key = this.key();
     const next = this.sentences[this.position + 1];
-    if (next) this.engine.prefetch?.(next.text, this.language);
-    this.engine.speak(sentence.text, this.language, () => {
-      // a sentence that ends after a pause, a stop or another reading has started is not followed
-      if (this.state() !== 'speaking' || this.key() !== key) return;
+    if (next) this.engine.prefetch?.(next.text, this.language());
+    this.engine.speak(sentence.text, this.language(), () => {
+      // the end of a sentence said before a pause, a jump, a stop or another reading is not followed
+      if (turn !== this.turn) return;
       this.position++;
       this.speakFromPosition();
     });
   }
+}
+
+/** Consecutive sentences joined while they fit in [limit] characters; each one alone when there is no limit. */
+export function group(sentences: string[], limit: number | undefined): string[] {
+  if (!limit) return sentences;
+  const groups: string[] = [];
+  for (const sentence of sentences) {
+    const last = groups.length - 1;
+    if (last >= 0 && groups[last].length + 1 + sentence.length <= limit) groups[last] += ' ' + sentence;
+    else groups.push(sentence);
+  }
+  return groups;
 }
 
 /** A paragraph's sentences, as the language cuts them. */

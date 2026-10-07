@@ -14,7 +14,7 @@
     </nav>
   }
 
-  <h1 [class.reading]="speech.key() === s.id && speech.paragraph() === -1">{{ s.title | i18nText }}</h1>
+  <h1 [class.reading]="speech.item() === s.id && speech.paragraph() === -1">{{ s.title | i18nText }}</h1>
   @if (era(); as e) {
     <p class="when">
       <a [routerLink]="['/timeline']" [fragment]="s.id">{{ e.title | i18nText }}</a>
@@ -35,7 +35,7 @@
   <app-listen-button [key]="s.id" [title]="s.title | i18nText" [paragraphs]="paragraphs()" />
   <article class="summary">
     @for (paragraph of paragraphs(); track $index) {
-      <p [class.reading]="speech.key() === s.id && speech.paragraph() === $index">{{ paragraph }}</p>
+      <p [class.reading]="speech.item() === s.id && speech.paragraph() === $index">{{ paragraph }}</p>
     }
   </article>
 

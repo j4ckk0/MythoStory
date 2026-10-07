@@ -27,9 +27,9 @@
       }
     </button>
     @if (state() !== 'idle') {
-      <button type="button" class="stop" (click)="stop()" [title]="'speech.stop' | i18n">
+      <button type="button" class="stop" (click)="stop()">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z" /></svg>
-        <span class="visually-hidden">{{ 'speech.stop' | i18n }}</span>
+        {{ 'speech.stopReading' | i18n }}
       </button>
     }
     @if (!available()) {

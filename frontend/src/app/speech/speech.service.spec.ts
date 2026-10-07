@@ -3,7 +3,7 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { TestBed } from '@angular/core/testing';
 import { CatalogService } from '../catalog/catalog';
 import { ServerSpeechEngine } from './speech-engine';
-import { split, SpeechService } from './speech.service';
+import { group, split, SpeechService } from './speech.service';
 
 /** A speech synthesis that says nothing: it records the utterances, and ends them when the test says. */
 class FakeSynthesis extends EventTarget {
@@ -84,6 +84,48 @@ describe('SpeechService', () => {
     synthesis.dispatchEvent(new Event('voiceschanged'));
     expect(speech.available('fr')).toBe(false);
     expect(speech.available('en')).toBe(true);
+  });
+
+  it('reads a series, each cycle announced, and goes on from one story to the next', () => {
+    speech.playAll('all', [
+      { key: 'a', title: 'A', paragraphs: ['One. Two.'], intro: 'The cycle' },
+      { key: 'b', title: 'B', paragraphs: ['Three.'] },
+    ], 'en');
+    const said = () => synthesis.spoken.map((s) => s.text);
+    expect(said()).toEqual(['The cycle']);
+    expect(speech.item()).toBe('a');
+    expect(speech.paragraph()).toBe(-2);
+    synthesis.spoken.at(-1)!.end(); // the intro
+    synthesis.spoken.at(-1)!.end(); // A
+    synthesis.spoken.at(-1)!.end(); // One.
+    synthesis.spoken.at(-1)!.end(); // Two.
+    expect(said().at(-1)).toBe('B');
+    expect(speech.item()).toBe('b');
+    expect(speech.itemIndex()).toBe(1);
+  });
+
+  it('skips to the next story, back to the previous one, and ignores the end of the sentence cut short', () => {
+    speech.playAll('all', [
+      { key: 'a', title: 'A', paragraphs: ['One. Two. Three.'] },
+      { key: 'b', title: 'B', paragraphs: ['Four.'] },
+    ], 'en');
+    const cut = synthesis.spoken[0];
+    speech.next();
+    expect(synthesis.spoken.at(-1)!.text).toBe('B');
+    cut.end(); // "A" ends after the jump: not followed
+    expect(synthesis.spoken.at(-1)!.text).toBe('B');
+    speech.previous(); // B has only just started: back to A
+    expect(synthesis.spoken.at(-1)!.text).toBe('A');
+    speech.next();
+    speech.next(); // past the last story: the end
+    expect(speech.state()).toBe('idle');
+    expect(speech.item()).toBeNull();
+  });
+
+  it('groups sentences up to a length, for the voices that read several at once', () => {
+    expect(group(['One.', 'Two.', 'Three.'], 10)).toEqual(['One. Two.', 'Three.']);
+    expect(group(['A long sentence that does not fit.', 'Two.'], 10)).toEqual(['A long sentence that does not fit.', 'Two.']);
+    expect(group(['One.', 'Two.'], undefined)).toEqual(['One.', 'Two.']);
   });
 
   it('cuts paragraphs into sentences', () => {

@@ -10,6 +10,11 @@ export interface SpeechEngine {
   cancel(): void;
   /** Prepares a text it will soon be asked to speak, so that no silence falls between two sentences. */
   prefetch?(text: string, language: I18nLanguage): void;
+  /**
+   * The longest text it reads well at once, sentences grouped up to it; one sentence at a time when absent — some
+   * browsers cut long utterances short.
+   */
+  readonly groupUpTo?: number;
 }
 
 /**
@@ -17,6 +22,8 @@ export interface SpeechEngine {
  * sentence is a WAV the page plays; the next one is fetched while the current one plays.
  */
 export class ServerSpeechEngine implements SpeechEngine {
+  /** Piper reads several sentences at once with a natural melody and pauses between them; the server takes 1000 characters. */
+  readonly groupUpTo = 500;
   private playing: HTMLAudioElement | null = null;
   private readonly prefetched = new Map<string, HTMLAudioElement>();
 

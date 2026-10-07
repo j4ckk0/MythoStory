@@ -26,6 +26,15 @@ class PiperSynthesizerTest {
     }
 
     @Test
+    fun `dashes become pauses, and a text one line`() {
+        assertEquals(
+            "Ce qui se passa à l’autel dépend de qui le raconte, pour Eschyle, elle fut tuée, et Clytemnestre ne pardonna jamais.",
+            PiperSynthesizer.forSpeech("Ce qui se passa à l’autel dépend de qui le raconte — pour Eschyle, elle fut tuée —\net Clytemnestre ne pardonna jamais."),
+        )
+        assertEquals("Le lion, le serpent.", PiperSynthesizer.forSpeech("Le lion — le serpent —."))
+    }
+
+    @Test
     fun `without Piper, no voice`() {
         assertEquals(emptySet(), PiperSynthesizer(File("no/such/piper"), voices).languages)
     }

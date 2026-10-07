@@ -1,0 +1,71 @@
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--surface);
+  border-top: 2px solid var(--accent);
+  box-shadow: 0 -2px 8px rgb(0 0 0 / 0.12);
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.series {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.story {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.controls {
+  display: flex;
+  gap: 0.35rem;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border-radius: 50%;
+}
+
+button.stop {
+  width: auto;
+  gap: 0.35rem;
+  padding: 0 0.9rem 0 0.7rem;
+  border-radius: 1.2rem;
+}
+
+button.main {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+}

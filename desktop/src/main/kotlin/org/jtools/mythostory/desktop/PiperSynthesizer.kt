@@ -52,7 +52,7 @@ class PiperSynthesizer(private val piper: File, private val voices: File) : Spee
         val file = File.createTempFile("speech", ".wav", workDir)
         try {
             val line = buildJsonObject {
-                put("text", JsonPrimitive(text.replace(Regex("\\s+"), " ")))
+                put("text", JsonPrimitive(forSpeech(text)))
                 put("output_file", JsonPrimitive(file.absolutePath))
             }
             voice.input.write(Json.encodeToString(line) + "\n")
@@ -73,7 +73,10 @@ class PiperSynthesizer(private val piper: File, private val voices: File) : Spee
     }
 
     private fun start(language: String): Voice {
-        val process = ProcessBuilder(piper.absolutePath, "--model", voices.resolve("$language.onnx").absolutePath, "--json-input", "--quiet")
+        val process = ProcessBuilder(
+            piper.absolutePath, "--model", voices.resolve("$language.onnx").absolutePath, "--json-input", "--quiet",
+            "--length_scale", LENGTH_SCALE, "--sentence_silence", SENTENCE_SILENCE,
+        )
             .directory(piper.parentFile)
             .redirectError(ProcessBuilder.Redirect.DISCARD)
             .start()
@@ -89,6 +92,22 @@ class PiperSynthesizer(private val piper: File, private val voices: File) : Spee
     }
 
     companion object {
+        /** A storyteller's pace: a little slower than Piper's default (1.0), which suits short messages. */
+        const val LENGTH_SCALE = "1.08"
+
+        /** The silence after each sentence, in seconds: Piper's 0.2 runs a story's sentences together. */
+        const val SENTENCE_SILENCE = "0.45"
+
+        /**
+         * The text as Piper should hear it: one line, and dashes — which it would run through without a breath — as
+         * commas.
+         */
+        fun forSpeech(text: String): String =
+            text.replace(Regex("\\s*[—–]\\s*"), ", ")
+                .replace(Regex("\\s+"), " ")
+                .replace(Regex(",\\s*([.,;:!?])"), "$1")
+                .trim()
+
         /** Piper's program in a directory: piper, or piper.exe on Windows. */
         fun program(dir: File): File = dir.resolve(if (System.getProperty("os.name").startsWith("Windows")) "piper.exe" else "piper")
     }

@@ -362,3 +362,17 @@ h2[data-kind] {
   box-shadow: 0 0 0 0.35rem color-mix(in srgb, var(--accent) 12%, transparent);
   transition: background 0.3s;
 }
+
+/* the story a series being read aloud is at, in the lists (speech: the player) */
+.reading-item {
+  font-weight: 700;
+}
+
+.reading-item::marker {
+  color: var(--accent);
+}
+
+/* room for the player, when a series is read aloud, under the page's last lines */
+body:has(app-player .player) {
+  padding-bottom: 5rem;
+}

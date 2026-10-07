@@ -14,8 +14,11 @@ button {
   padding: 0.3rem 0.8rem 0.3rem 0.6rem;
 }
 
-button.stop {
-  padding: 0.3rem 0.5rem;
+/* the buttons side by side: listen (or pause, resume), and stop */
+.listen {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 button.active {
