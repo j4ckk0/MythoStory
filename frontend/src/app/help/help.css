@@ -1,0 +1,61 @@
+.use dt {
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.use dd {
+  margin: 0.2rem 0 0;
+}
+
+h3 {
+  margin-top: 1.75rem;
+}
+
+.components {
+  list-style: none;
+  padding: 0;
+}
+
+.components li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.components p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.version {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.licence {
+  font-size: 0.9rem;
+}
+
+.libraries {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.libraries th {
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding: 0.3rem 0.5rem 0.3rem 0;
+}
+
+.libraries td {
+  padding: 0.25rem 0.5rem 0.25rem 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.components .version {
+  margin-left: 0.4em;
+}

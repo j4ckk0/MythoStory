@@ -362,6 +362,18 @@ The previous versions' releases are removed; anything else in `releases/` is lef
 checks every archive: the jar, the launcher and the JRE, the page inside the jar, and the page and the
 server inside the APK.
 
+**Licences**: the page's *Help* (`/help`, `/api/licences`) lists what MythoStory carries and under
+which licence:
+
+- the embedded software — the Temurin JRE (GPL-2.0 with the Classpath exception; its own notices in
+  `jre/legal/`), Piper and what it runs on, the voices — from
+  [`desktop/src/main/resources/licences/embedded.json`](desktop/src/main/resources/licences/embedded.json),
+  kept by hand; `EmbeddedLicencesTest` fails when `externals.conf` deploys another JRE, Piper or voice;
+- the server's libraries, from their poms: `license-maven-plugin` writes `licences/THIRD-PARTY.txt` into
+  the jar at every build;
+- the page's libraries: the Angular build's `3rdpartylicenses.txt`, served as
+  `licences/3rdpartylicenses.txt`.
+
 **Signing the APK**: put the release key's coordinates in `android/keystore.properties` (not under
 source control: `storeFile`, `storePassword`, `keyAlias`, `keyPassword`). Without it, the APK is
 signed with the debug key: you can install it for testing, but you can't publish it.

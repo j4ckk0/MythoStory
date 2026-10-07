@@ -5,6 +5,7 @@
     <a routerLink="/stories" routerLinkActive="active">{{ 'nav.stories' | i18n }}</a>
     <a routerLink="/timeline" routerLinkActive="active">{{ 'nav.timeline' | i18n }}</a>
     <a routerLink="/map" routerLinkActive="active">{{ 'nav.map' | i18n }}</a>
+    <a routerLink="/help" routerLinkActive="active">{{ 'nav.help' | i18n }}</a>
   </nav>
   <form class="search" role="search" (ngSubmit)="search()">
     <input name="q" type="search" [(ngModel)]="query" (input)="search()" [placeholder]="'nav.search.placeholder' | i18n"
@@ -23,13 +24,14 @@
   <router-outlet />
 </main>
 
-<footer>
 <app-player />
 
+<footer>
   @if (catalog.info(); as info) {
     <span class="version">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</span>
     @if (info.voices?.length) {
       <span class="credits"> · {{ 'speech.credits' | i18n }}</span>
     }
+    <span> · <a routerLink="/help" fragment="licences">{{ 'help.licences.title' | i18n }}</a></span>
   }
 </footer>

@@ -1,0 +1,92 @@
+<h1>{{ 'help.title' | i18n }}</h1>
+
+<section>
+  <h2>{{ 'help.use.title' | i18n }}</h2>
+  <dl class="use">
+    <dt><a routerLink="/characters">{{ 'nav.characters' | i18n }}</a></dt>
+    <dd>{{ 'help.use.characters' | i18n }}</dd>
+    <dt><a routerLink="/stories">{{ 'nav.stories' | i18n }}</a></dt>
+    <dd>{{ 'help.use.stories' | i18n }}</dd>
+    <dt><a routerLink="/timeline">{{ 'nav.timeline' | i18n }}</a> · <a routerLink="/map">{{ 'nav.map' | i18n }}</a></dt>
+    <dd>{{ 'help.use.timelineMap' | i18n }}</dd>
+    <dt>{{ 'help.use.listenTitle' | i18n }}</dt>
+    <dd>{{ 'help.use.listen' | i18n }}</dd>
+    <dt>{{ 'help.use.languageTitle' | i18n }}</dt>
+    <dd>{{ 'help.use.language' | i18n }}</dd>
+    @if (catalog.info()?.platform === 'desktop') {
+      <dt>{{ 'help.use.quitTitle' | i18n }}</dt>
+      <dd>{{ 'help.use.quit' | i18n }}</dd>
+    }
+  </dl>
+</section>
+
+<section id="licences">
+  <h2>{{ 'help.licences.title' | i18n }}</h2>
+  @if (catalog.info(); as info) {
+    <p class="muted">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</p>
+  }
+
+  <h3>{{ 'help.data.title' | i18n }}</h3>
+  <ul class="components">
+    <li>
+      <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> — <a href="https://spdx.org/licenses/CC0-1.0.html" target="_blank" rel="noopener">CC0-1.0</a>
+      <p class="muted">{{ 'help.data.wikidata' | i18n }}</p>
+    </li>
+    <li>
+      <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> — {{ 'help.data.publicDomain' | i18n }}
+      <p class="muted">{{ 'help.data.naturalEarth' | i18n }}</p>
+    </li>
+    <li>
+      {{ 'help.data.storiesTitle' | i18n }}
+      <p class="muted">{{ 'help.data.stories' | i18n }}</p>
+    </li>
+  </ul>
+
+  @if (licences(); as licences) {
+    @if (licences.embedded.length) {
+      <h3>{{ 'help.embedded.title' | i18n }}</h3>
+      <p class="muted">{{ 'help.embedded.intro' | i18n }}</p>
+      <ul class="components">
+        @for (c of licences.embedded; track c.name) {
+          <li>
+            @if (c.url) { <a [href]="c.url" target="_blank" rel="noopener">{{ c.name }}</a> } @else { {{ c.name }} }
+            <span class="version">{{ c.version }}</span> — <ng-container *ngTemplateOutlet="licence; context: { $implicit: c.licence }" />
+            @if (c.role) { <p class="muted">{{ c.role | i18nText }}</p> }
+          </li>
+        }
+      </ul>
+    }
+
+    @if (licences.libraries.length) {
+      <h3>{{ 'help.libraries.title' | i18n: { count: licences.libraries.length } }}</h3>
+      <p class="muted">{{ 'help.libraries.intro' | i18n }}</p>
+      <table class="libraries">
+        <thead>
+          <tr><th>{{ 'help.libraries.name' | i18n }}</th><th>{{ 'help.libraries.version' | i18n }}</th><th>{{ 'help.libraries.licence' | i18n }}</th></tr>
+        </thead>
+        <tbody>
+          @for (c of licences.libraries; track c.artifact ?? c.name) {
+            <tr>
+              <td>@if (c.url) { <a [href]="c.url" target="_blank" rel="noopener" [title]="c.artifact ?? ''">{{ c.name }}</a> } @else { {{ c.name }} }</td>
+              <td class="version">{{ c.version }}</td>
+              <td><ng-container *ngTemplateOutlet="licence; context: { $implicit: c.licence }" /></td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    }
+  }
+
+  <h3>{{ 'help.page.title' | i18n }}</h3>
+  <p class="muted">
+    {{ 'help.page.intro' | i18n }}
+    <a href="licences/3rdpartylicenses.txt" target="_blank" rel="noopener">{{ 'help.page.link' | i18n }}</a>
+  </p>
+</section>
+
+<ng-template #licence let-licence>
+  @for (p of parts(licence); track $index) {
+    @if (p.or) { &ngsp;<span class="muted">{{ 'help.or' | i18n }}</span>&ngsp; } @else if ($index) { &ngsp; }
+    @if (p.url) { <a class="licence" [href]="p.url" target="_blank" rel="noopener">{{ p.id }}</a> } @else { <span class="licence">{{ p.id }}</span> }
+  }
+</ng-template>

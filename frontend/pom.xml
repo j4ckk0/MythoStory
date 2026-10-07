@@ -29,6 +29,14 @@
         <directory>target/angular/browser</directory>
         <targetPath>static</targetPath>
       </resource>
+      <!-- the licences of the libraries the page bundles, which the Angular build writes: the help page lists them -->
+      <resource>
+        <directory>target/angular</directory>
+        <includes>
+          <include>3rdpartylicenses.txt</include>
+        </includes>
+        <targetPath>static/licences</targetPath>
+      </resource>
     </resources>
     <plugins>
       <plugin>

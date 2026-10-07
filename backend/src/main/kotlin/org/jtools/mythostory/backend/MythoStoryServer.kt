@@ -77,6 +77,7 @@ fun startServer(
  */
 fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageSessions? = null, speech: SpeechSynthesizer? = null) {
     val info = readInfo(platform, speech)
+    val licences = Licences.load()
     // absent rather than null: what the data files leave out, the page receives left out (a story's generation…)
     install(ContentNegotiation) { json(Json { explicitNulls = false }) }
     // the catalog weighs megabytes since the Wikidata import, a fifth of it gzipped; never the session streams,
@@ -90,6 +91,8 @@ fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageS
         route("/api") {
             get("/info") { call.respond(info) }
             get("/catalog") { call.respond(catalog) }
+            // what the application carries, and under which licences: the help page lists them
+            get("/licences") { call.respond(licences) }
             // a sentence read aloud: ?lang=fr&text=…, as WAV; the same text always sounds the same, so browsers keep it
             get("/speech") {
                 val language = call.request.queryParameters["lang"]

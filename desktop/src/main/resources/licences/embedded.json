@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Eclipse Temurin JRE (OpenJDK)",
+    "version": "25.0.4.1",
+    "licence": "GPL-2.0 WITH Classpath-exception-2.0",
+    "url": "https://adoptium.net/",
+    "role": {
+      "en": "The Java runtime MythoStory runs on, embedded in the distributions (jre/). Its own licences and notices are in jre/legal.",
+      "fr": "Le runtime Java sur lequel MythoStory s’exécute, embarqué dans les distributions (jre/). Ses licences et mentions se trouvent dans jre/legal."
+    }
+  },
+  {
+    "name": "Piper",
+    "version": "2023.11.14-2",
+    "licence": "MIT",
+    "url": "https://github.com/rhasspy/piper",
+    "role": {
+      "en": "The speech synthesis that reads the stories aloud (piper/).",
+      "fr": "La synthèse vocale qui lit les histoires à voix haute (piper/)."
+    }
+  },
+  {
+    "name": "piper-phonemize",
+    "version": "1.2.0",
+    "licence": "MIT",
+    "url": "https://github.com/rhasspy/piper-phonemize",
+    "role": {
+      "en": "Turns the text into phonemes for Piper (piper/).",
+      "fr": "Transforme le texte en phonèmes pour Piper (piper/)."
+    }
+  },
+  {
+    "name": "eSpeak NG",
+    "version": "1.52",
+    "licence": "GPL-3.0-or-later",
+    "url": "https://github.com/espeak-ng/espeak-ng",
+    "role": {
+      "en": "The pronunciation rules and dictionaries Piper relies on (piper/). Its source code is available at this address.",
+      "fr": "Les règles de prononciation et les dictionnaires dont Piper se sert (piper/). Son code source est disponible à cette adresse."
+    }
+  },
+  {
+    "name": "ONNX Runtime",
+    "version": "1.14.1",
+    "licence": "MIT",
+    "url": "https://onnxruntime.ai/",
+    "role": {
+      "en": "Runs Piper's neural voices (piper/).",
+      "fr": "Fait tourner les voix neuronales de Piper (piper/)."
+    }
+  },
+  {
+    "name": "Piper voice fr_FR-siwis-medium",
+    "version": "1.0.0",
+    "licence": "CC-BY-4.0",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/siwis/medium",
+    "role": {
+      "en": "The French voice (voices/fr.onnx), trained on the SIWIS French Speech Synthesis Database, University of Edinburgh.",
+      "fr": "La voix française (voices/fr.onnx), entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg."
+    }
+  },
+  {
+    "name": "Piper voice en_GB-alba-medium",
+    "version": "1.0.0",
+    "licence": "CC-BY-4.0",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/alba/medium",
+    "role": {
+      "en": "The English voice (voices/en.onnx), trained on the Alba dataset, University of Edinburgh.",
+      "fr": "La voix anglaise (voices/en.onnx), entraînée sur le jeu de données Alba, Université d’Édimbourg."
+    }
+  }
+]

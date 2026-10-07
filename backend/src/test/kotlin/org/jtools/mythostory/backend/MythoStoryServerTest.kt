@@ -26,6 +26,23 @@ class MythoStoryServerTest {
     }
 
     @Test
+    fun `the license plugin's lines become components, their licences as SPDX identifiers`() {
+        val libraries = Licences.libraries(
+            "Lists of 2 third-party dependencies.\n" +
+                "     (The Apache Software License, Version 2.0) ktor-server-core (io.ktor:ktor-server-core-jvm:3.6.0 - https://github.com/ktorio/ktor)\n" +
+                "     (EPL-2.0) (LGPL-2.1-only) Logback Classic Module (ch.qos.logback:logback-classic:1.6.5 - http://logback.qos.ch/logback-classic)\n",
+        )
+        assertEquals(
+            listOf(
+                Component("ktor-server-core", "3.6.0", "Apache-2.0", "https://github.com/ktorio/ktor", artifact = "io.ktor:ktor-server-core-jvm"),
+                Component("Logback Classic Module", "1.6.5", "EPL-2.0 OR LGPL-2.1-only", "http://logback.qos.ch/logback-classic", artifact = "ch.qos.logback:logback-classic"),
+            ),
+            libraries,
+        )
+        assertEquals("MIT", Licences.spdx("The MIT License"))
+    }
+
+    @Test
     fun `a sentence is read aloud in a language there is a voice for, and only then`() = test {
         val spoken = client.get("/api/speech?lang=fr&text=Bonjour%20Zeus")
         assertEquals(HttpStatusCode.OK, spoken.status)
