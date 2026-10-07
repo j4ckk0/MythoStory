@@ -54,8 +54,9 @@ The choices behind this layout:
 
 | Method | Path           | Answer                                                                            |
 |--------|----------------|-----------------------------------------------------------------------------------|
-| GET    | `/api/info`    | `{name, version, platform, languages}`: platform is `desktop` or `android`         |
+| GET    | `/api/info`    | `{name, version, platform, languages, voices}`: platform is `desktop` or `android` |
 | GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, stories, cycles, eras, places}` |
+| GET    | `/api/speech?lang=&text=` | a sentence read aloud, as WAV (the desktop's Piper; `voices` in `/api/info` says which languages) |
 | GET    | `/api/session` | a page's session: a server-sent event stream, its first event the session's id     |
 | POST   | `/api/session/{id}/closed` | the page has gone (a beacon): the desktop stops once its last page has   |
 
@@ -213,11 +214,17 @@ language — pause, resume where it stopped, stop —, the paragraph being read 
 sentence at a time (some browsers cut long utterances short), stops when the page goes or the
 language changes, and is disabled, saying so, where the device has no voice for the language.
 
-- **On the desktop**, the browser's own speech synthesis (the Web Speech API) with the system's
-  voices, offline when they are local (those are preferred, the locale's first: fr-FR, en-GB).
-  On Windows and macOS the system voices are there; on Linux, browsers take theirs from
-  speech-dispatcher (with espeak-ng, say) — Firefox by default, Chrome and Chromium may need starting
-  with `--enable-speech-dispatcher`.
+- **On the desktop**, the server reads aloud itself, with **Piper**: neural voices, offline, the
+  same in every browser on every system — French `fr_FR-siwis-medium`, English `en_GB-alba-medium`.
+  `/api/speech?lang=fr&text=…` answers a sentence as WAV in a fraction of a second (a process per
+  voice, started on its first sentence and kept; a cache for what was said already); the page plays
+  them, fetching the next one while the current one plays. Piper and its voices are externals
+  (`scripts/setup.sh` deploys them) and the distributions carry them, with their credits in
+  `VOICES.md` (Piper: MIT; the voices: CC BY 4.0, University of Edinburgh) — the page's footer
+  credits them too. The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
+- **Without Piper**, the browser's own speech synthesis (the Web Speech API) with the system's voices,
+  local ones and the locale's first (fr-FR, en-GB): fine on Windows and macOS; on Linux, browsers take
+  theirs from speech-dispatcher, whose espeak-ng sounds robotic (and a snap Chromium reaches none).
 - **On Android**, the WebView has no speech synthesis: the app lends the page Android's
   text-to-speech through a bridge (`SpeechBridge.kt`, `window.MythoStorySpeech`), with the voices
   installed on the phone (Settings › Text-to-speech).
@@ -260,6 +267,9 @@ external/maven/               its mvn first in their PATH
 external/node/                Node.js and npm, which Maven runs to build the frontend
 external/jre-linux.tar.gz     bundled by scripts/package.sh in the Linux distribution
 external/jre-windows.zip      bundled in the Windows distribution
+external/piper/               Piper, the speech synthesis the desktop server reads the stories aloud with
+external/piper-linux.tar.gz   Piper for the Linux distribution, external/piper-windows.zip for the Windows one
+external/voices/<lang>.onnx   Piper's voices, one per i18n language, with their <lang>.onnx.json
 external/gradle/              (--android) Gradle, which Maven runs to build the APK
 external/android-sdk/         (--android) the Android SDK: command-line tools, platform, build-tools, platform-tools
 external/downloads/           the archives as downloaded, kept so that a second run downloads nothing
@@ -340,8 +350,8 @@ Into `releases/` (not under source control):
 
 | File                                    | What it holds                                         |
 |-----------------------------------------|-------------------------------------------------------|
-| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `jre/`, this README |
-| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `mythostory.bat`, `jre/`, this README |
+| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README (about 220 MB) |
+| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `mythostory.bat`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README (about 215 MB) |
 | `mythostory-<version>-android.apk`      | the app (when the Android SDK is there)               |
 
 The previous versions' releases are removed; anything else in `releases/` is left alone. The script

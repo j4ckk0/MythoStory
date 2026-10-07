@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Sourced by the scripts, from the project root: makes sure scripts/setup.sh has been run — everything it
-# deploys is there: external/jdk, maven, node, jre-linux.tar.gz, jre-windows.zip — offering to run it
+# deploys is there: external/jdk, maven, node, piper, voices, the JRE's and Piper's archives — offering to run it
 # when something is missing (at a terminal; elsewhere, the CI or a hook, it stops with the way out). Then
 # puts the externals in front: external/jdk as JAVA_HOME, its java, Maven's mvn and Node's node and npm first
 # in PATH (Maven runs npm to build the frontend). Only generic names: the versions are externals.conf's business.
@@ -22,6 +22,11 @@ missing_externals() {
   [ -x "$ext/node/bin/node" ] || m="$m node/"
   [ -s "$ext/jre-linux.tar.gz" ] || m="$m jre-linux.tar.gz"
   [ -s "$ext/jre-windows.zip" ] || m="$m jre-windows.zip"
+  [ -x "$ext/piper/piper" ] || m="$m piper/"
+  [ -s "$ext/piper-linux.tar.gz" ] || m="$m piper-linux.tar.gz"
+  [ -s "$ext/piper-windows.zip" ] || m="$m piper-windows.zip"
+  local voice
+  for voice in fr en; do [ -s "$ext/voices/$voice.onnx" ] && [ -s "$ext/voices/$voice.onnx.json" ] || m="$m voices/$voice.onnx"; done
   echo "$m"
 }
 

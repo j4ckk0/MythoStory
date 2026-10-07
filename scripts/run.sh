@@ -63,4 +63,5 @@ RUN_JAR="$(dirname "$JAR")/mythostory-run.jar"
 cp "$JAR" "$RUN_JAR.$$"
 mv -f "$RUN_JAR.$$" "$RUN_JAR"
 
-exec java -jar "$RUN_JAR" ${args[@]+"${args[@]}"}
+# Piper and its voices from external/: the distributions have them next to the jar, where the program looks by default
+exec java -jar "$RUN_JAR" --piper external/piper --voices external/voices ${args[@]+"${args[@]}"}

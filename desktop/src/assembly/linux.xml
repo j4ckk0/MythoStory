@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Linux distribution: tar.gz with the bundled JRE and a .sh launcher. -->
+<!-- Linux distribution: tar.gz with the bundled JRE, Piper and its voices, and a .sh launcher. -->
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.2.0 http://maven.apache.org/xsd/assembly-2.2.0.xsd">
@@ -22,6 +22,11 @@
     </file>
     <file>
       <source>${maven.multiModuleProjectDirectory}/README.md</source>
+      <lineEnding>unix</lineEnding>
+      <fileMode>0644</fileMode>
+    </file>
+    <file>
+      <source>src/dist/VOICES.md</source>
       <lineEnding>unix</lineEnding>
       <fileMode>0644</fileMode>
     </file>
@@ -48,6 +53,40 @@
         <exclude>lib/jspawnhelper</exclude>
         <exclude>lib/jexec</exclude>
       </excludes>
+      <fileMode>0644</fileMode>
+      <directoryMode>0755</directoryMode>
+    </fileSet>
+    <!-- Piper: its programs executable, the rest not -->
+    <fileSet>
+      <directory>${project.build.directory}/piper/linux</directory>
+      <outputDirectory>piper</outputDirectory>
+      <includes>
+        <include>piper</include>
+        <include>piper_phonemize</include>
+        <include>espeak-ng</include>
+      </includes>
+      <fileMode>0755</fileMode>
+      <directoryMode>0755</directoryMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/piper/linux</directory>
+      <outputDirectory>piper</outputDirectory>
+      <excludes>
+        <exclude>piper</exclude>
+        <exclude>piper_phonemize</exclude>
+        <exclude>espeak-ng</exclude>
+        <exclude>pkgconfig/**</exclude>
+      </excludes>
+      <fileMode>0644</fileMode>
+      <directoryMode>0755</directoryMode>
+    </fileSet>
+    <fileSet>
+      <directory>${maven.multiModuleProjectDirectory}/external/voices</directory>
+      <outputDirectory>voices</outputDirectory>
+      <includes>
+        <include>*.onnx</include>
+        <include>*.onnx.json</include>
+      </includes>
       <fileMode>0644</fileMode>
       <directoryMode>0755</directoryMode>
     </fileSet>

@@ -66,6 +66,7 @@ export const fr: Record<I18nKey, string> = {
   'speech.resume': 'Reprendre',
   'speech.stop': 'Arrêter',
   'speech.unavailable': 'Aucune voix française sur cet appareil',
+  'speech.credits': 'Voix : Piper, siwis et alba (CC BY 4.0, Université d’Édimbourg)',
 
   'timeline.title': 'Chronologie',
   'timeline.intro': 'Les mythes dans l’ordre où les Grecs les racontaient, du Chaos au retour de Troie. Avant la guerre, les générations telles que les généalogies les comptent ; les dates, quand il y en a, telles que les chronographes antiques les donnaient.',

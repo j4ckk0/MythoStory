@@ -1,4 +1,8 @@
+import { provideHttpClient } from '@angular/common/http';
+import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+import { CatalogService } from '../catalog/catalog';
+import { ServerSpeechEngine } from './speech-engine';
 import { split, SpeechService } from './speech.service';
 
 /** A speech synthesis that says nothing: it records the utterances, and ends them when the test says. */
@@ -34,7 +38,7 @@ describe('SpeechService', () => {
       onend: () => void = () => undefined;
       constructor(public text: string) {}
     };
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({ providers: [provideHttpClient(), provideHttpClientTesting()] });
     speech = TestBed.inject(SpeechService);
   });
 
@@ -101,7 +105,7 @@ describe('SpeechService on Android', () => {
       stop: () => undefined,
     };
     Object.assign(window, { MythoStorySpeech: bridge });
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({ providers: [provideHttpClient(), provideHttpClientTesting()] });
     const speech = TestBed.inject(SpeechService);
     const host = window as unknown as { mythoStorySpeechReady: () => void; mythoStorySpeechDone: (id: string) => void };
 
@@ -115,5 +119,80 @@ describe('SpeechService on Android', () => {
     speech.play('k', 'Titre', ['Une phrase.'], 'fr');
     host.mythoStorySpeechDone(spoken[0][0]);
     expect(spoken.map(([, text, locale]) => [text, locale])).toEqual([['Titre', 'fr-FR'], ['Une phrase.', 'fr-FR']]);
+  });
+});
+
+describe('SpeechService with the server’s voices', () => {
+  afterEach(() => {
+    delete (window as unknown as Record<string, unknown>)['speechSynthesis'];
+  });
+
+  it('prefers the server’s voice for a language it has, the browser’s for the others', () => {
+    const spoken: string[] = [];
+    Object.assign(window, {
+      speechSynthesis: Object.assign(new EventTarget(), {
+        getVoices: () => [{ name: 'Daniel', lang: 'en-GB', localService: true, default: true }],
+        speak: (u: { text: string }) => spoken.push('browser: ' + u.text),
+        cancel: () => undefined,
+      }),
+    });
+    (globalThis as Record<string, unknown>)['SpeechSynthesisUtterance'] = class {
+      constructor(public text: string) {}
+    };
+    TestBed.configureTestingModule({ providers: [provideHttpClient(), provideHttpClientTesting()] });
+    const speech = TestBed.inject(SpeechService);
+    const http = TestBed.inject(HttpTestingController);
+    http.expectOne('api/catalog').flush({ characters: [], stories: [], cycles: [], eras: [], places: [] });
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: ['fr'] });
+    expect(TestBed.inject(CatalogService).info()?.voices).toEqual(['fr']);
+    expect(speech.available('fr')).toBe(true); // the server's
+    speech.play('k', 'Title', [], 'en');
+    expect(spoken).toEqual(['browser: Title']); // no English voice on the server: the browser's
+    delete (globalThis as Record<string, unknown>)['SpeechSynthesisUtterance'];
+  });
+});
+
+describe('ServerSpeechEngine', () => {
+  /** An audio element that plays nothing: it records what it was given, and ends when the test says. */
+  class FakeAudio {
+    static made: FakeAudio[] = [];
+    preload = '';
+    played = false;
+    paused = false;
+    loaded = false;
+    onended: (() => void) | null = null;
+    onerror: (() => void) | null = null;
+    constructor(public url: string) {
+      FakeAudio.made.push(this);
+    }
+    play() {
+      this.played = true;
+      return Promise.resolve();
+    }
+    pause() {
+      this.paused = true;
+    }
+    load() {
+      this.loaded = true;
+    }
+  }
+
+  it('plays each sentence the server says, the next one fetched while the current one plays', () => {
+    FakeAudio.made = [];
+    const engine = new ServerSpeechEngine(() => ['fr'], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
+    expect(engine.available('fr')).toBe(true);
+    expect(engine.available('en')).toBe(false);
+    let ended = 0;
+    engine.prefetch('Deux.', 'fr');
+    engine.speak('Un.', 'fr', () => ended++);
+    engine.speak('Deux.', 'fr', () => ended++);
+    expect(FakeAudio.made.map((a) => a.url)).toEqual(['api/speech?lang=fr&text=Deux.', 'api/speech?lang=fr&text=Un.']);
+    expect(FakeAudio.made[0].loaded).toBe(true); // prefetched, then played: not fetched twice
+    expect(FakeAudio.made[0].played).toBe(true);
+    FakeAudio.made[1].onended?.(); // "Un." ends after "Deux." began: not counted
+    FakeAudio.made[0].onended?.();
+    expect(ended).toBe(1);
+    engine.cancel();
+    expect(FakeAudio.made[0].paused).toBe(true);
   });
 });

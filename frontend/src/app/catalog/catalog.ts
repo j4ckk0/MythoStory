@@ -95,6 +95,8 @@ export interface Info {
   version: string;
   platform: string;
   languages: string[];
+  /** The i18n languages the server reads aloud itself (/api/speech): the desktop's Piper voices. */
+  voices?: string[];
 }
 
 /** A story's place in one of its cycles, with its neighbours. */

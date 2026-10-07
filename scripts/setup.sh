@@ -3,6 +3,9 @@
 # Deploys the project's externals into external/ (not under source control), from externals.conf:
 #   external/jdk, external/maven, external/node          extracted, their top-level directory stripped
 #   external/jre-linux.tar.gz, external/jre-windows.zip  the JRE archives the distributions bundle
+#   external/piper                                      Piper, the speech synthesis, for this machine
+#   external/piper-linux.tar.gz, piper-windows.zip      Piper's archives the distributions bundle
+#   external/voices/<lang>.onnx(.json)                  Piper's voices, one per i18n language
 #   external/downloads/                                 the archives as downloaded (kept)
 # and with --android, what the Android app's build needs (about a gigabyte):
 #   external/gradle                                     Gradle, which builds the APK (android/, run by Maven)
@@ -103,8 +106,26 @@ for spec in "jdk JDK_LINUX bin/java" "maven MAVEN_LINUX bin/mvn" "node NODE_LINU
   echo "== $dir deployed"
 done
 
-# the JRE archives the distributions bundle, kept as archives under generic names
-for spec in "jre-linux.tar.gz JRE_LINUX" "jre-windows.zip JRE_WINDOWS"; do
+# Piper, for this machine: the system tar, which keeps the libraries' symlinks
+if [ -x "$ext/piper/piper" ] && ! $force; then echo "== $ext/piper present"; else
+  file=$(fetch "$PIPER_LINUX") || exit 1
+  deploy "$file" "$ext/piper"
+  echo "== $ext/piper deployed"
+fi
+
+# Piper's voices, under the i18n language's name
+mkdir -p "$ext/voices"
+for spec in "fr.onnx VOICE_FR" "fr.onnx.json VOICE_FR_CONFIG" "en.onnx VOICE_EN" "en.onnx.json VOICE_EN_CONFIG"; do
+  set -- $spec
+  target=$ext/voices/$1
+  if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
+  file=$(fetch "${!2}") || exit 1
+  cp "$file" "$target"
+  echo "== $target deployed"
+done
+
+# the JRE's and Piper's archives the distributions bundle, kept as archives under generic names
+for spec in "jre-linux.tar.gz JRE_LINUX" "jre-windows.zip JRE_WINDOWS" "piper-linux.tar.gz PIPER_LINUX" "piper-windows.zip PIPER_WINDOWS"; do
   set -- $spec
   target=$ext/$1
   if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
@@ -148,6 +169,7 @@ fi
 echo "== external/ ready:"
 "$ext/jdk/bin/java" -version 2>&1 | head -1
 JAVA_HOME="$PWD/$ext/jdk" "$ext/maven/bin/mvn" -v 2>/dev/null | head -1
+echo "Piper: $ext/piper, voices: $(cd "$ext/voices" && ls *.onnx | tr '\n' ' ')"
 echo "Node.js $("$ext/node/bin/node" --version), npm $(PATH="$PWD/$ext/node/bin:$PATH" "$ext/node/bin/npm" --version)"
 if [ -x "$ext/gradle/bin/gradle" ]; then echo "Gradle: $ext/gradle"; fi
 if [ -d "$ext/android-sdk/platforms" ]; then echo "Android SDK: $ext/android-sdk ($(ls "$ext/android-sdk/platforms" | tr '\n' ' '))"; fi

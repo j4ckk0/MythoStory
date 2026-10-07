@@ -35,6 +35,11 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-test-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -136,6 +141,32 @@
                       <fileset dir="${jre.archives}" includes="${jre.linux}"/>
                       <cutdirsmapper dirs="1"/>
                     </untar>
+                    <!-- Piper and its voices (external/, scripts/setup.sh): the voice that reads the stories -->
+                    <fail message="no ${jre.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/setup.sh (see README: Externals)">
+                      <condition>
+                        <not><and>
+                          <available file="${jre.archives}/piper-linux.tar.gz"/>
+                          <available file="${jre.archives}/piper-windows.zip"/>
+                          <available file="${jre.archives}/voices/fr.onnx"/>
+                          <available file="${jre.archives}/voices/en.onnx"/>
+                        </and></not>
+                      </condition>
+                    </fail>
+                    <!-- the system tar, not Ant's: Piper's libraries are a soname and symlinks to it, which Ant
+                         would write as empty files, and its programs would lose their executable bit -->
+                    <mkdir dir="${project.build.directory}/piper/linux"/>
+                    <exec executable="tar" failonerror="true">
+                      <arg value="-xzf"/>
+                      <arg value="${jre.archives}/piper-linux.tar.gz"/>
+                      <arg value="-C"/>
+                      <arg value="${project.build.directory}/piper/linux"/>
+                      <arg value="--strip-components"/>
+                      <arg value="1"/>
+                    </exec>
+                    <unzip dest="${project.build.directory}/piper/windows">
+                      <fileset dir="${jre.archives}" includes="piper-windows.zip"/>
+                      <cutdirsmapper dirs="1"/>
+                    </unzip>
                   </target>
                 </configuration>
               </execution>

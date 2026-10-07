@@ -70,5 +70,6 @@ if "%ON_ANDROID%"=="1" (
   exit /b !errorlevel!
 )
 
-java -jar "%JAR%" %ARGS%
+rem Piper and its voices from external\: the distributions have them next to the jar, where the program looks by default
+java -jar "%JAR%" --piper external\piper --voices external\voices %ARGS%
 exit /b %errorlevel%

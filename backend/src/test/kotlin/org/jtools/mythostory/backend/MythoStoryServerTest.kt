@@ -14,9 +14,26 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
 class MythoStoryServerTest {
+    /** A synthesizer that speaks French only, its "audio" the text it was given. */
+    private val speech = object : SpeechSynthesizer {
+        override val languages = setOf("fr")
+        override fun synthesize(language: String, text: String) = "RIFF $language $text".toByteArray()
+    }
+
     private fun test(block: suspend ApplicationTestBuilder.() -> Unit) = testApplication {
-        application { mythoStory(Catalog.load(), Platform.ANDROID) }
+        application { mythoStory(Catalog.load(), Platform.ANDROID, speech = speech) }
         block()
+    }
+
+    @Test
+    fun `a sentence is read aloud in a language there is a voice for, and only then`() = test {
+        val spoken = client.get("/api/speech?lang=fr&text=Bonjour%20Zeus")
+        assertEquals(HttpStatusCode.OK, spoken.status)
+        assertEquals("audio/wav", spoken.headers[HttpHeaders.ContentType])
+        assertEquals("RIFF fr Bonjour Zeus", spoken.bodyAsText())
+        assertEquals(HttpStatusCode.NotFound, client.get("/api/speech?lang=en&text=Hello").status)
+        assertEquals(HttpStatusCode.BadRequest, client.get("/api/speech?lang=fr&text=" + "a".repeat(SPEECH_MAX_LENGTH + 1)).status)
+        assertContains(client.get("/api/info").bodyAsText(), "\"voices\":[\"fr\"]")
     }
 
     @Test

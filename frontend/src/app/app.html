@@ -26,5 +26,8 @@
 <footer>
   @if (catalog.info(); as info) {
     <span class="version">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</span>
+    @if (info.voices?.length) {
+      <span class="credits"> · {{ 'speech.credits' | i18n }}</span>
+    }
   }
 </footer>

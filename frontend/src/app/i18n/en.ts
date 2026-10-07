@@ -64,6 +64,7 @@ export const en = {
   'speech.resume': 'Resume',
   'speech.stop': 'Stop',
   'speech.unavailable': 'No English voice on this device',
+  'speech.credits': 'Voices: Piper, siwis and alba (CC BY 4.0, University of Edinburgh)',
 
   'timeline.title': 'Timeline',
   'timeline.intro': 'The myths in the order the Greeks told them, from Chaos to the return from Troy. Before the war, generations as the genealogies count them; dates, where there are any, as ancient chronographers gave them.',

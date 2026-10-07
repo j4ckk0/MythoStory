@@ -8,6 +8,60 @@ export interface SpeechEngine {
   speak(text: string, language: I18nLanguage, onEnd: () => void): void;
   /** Stops speaking at once, the current text and any queued. */
   cancel(): void;
+  /** Prepares a text it will soon be asked to speak, so that no silence falls between two sentences. */
+  prefetch?(text: string, language: I18nLanguage): void;
+}
+
+/**
+ * The server's voices (backend: /api/speech, the desktop's Piper): neural, the same on every browser and system. Each
+ * sentence is a WAV the page plays; the next one is fetched while the current one plays.
+ */
+export class ServerSpeechEngine implements SpeechEngine {
+  private playing: HTMLAudioElement | null = null;
+  private readonly prefetched = new Map<string, HTMLAudioElement>();
+
+  constructor(
+    /** The languages the server has a voice for: /api/info's voices, known once it has answered. */
+    private readonly voices: () => readonly string[],
+    private readonly createAudio: (url: string) => HTMLAudioElement = (url) => new Audio(url),
+  ) {}
+
+  available(language: I18nLanguage): boolean {
+    return this.voices().includes(language);
+  }
+
+  speak(text: string, language: I18nLanguage, onEnd: () => void): void {
+    const url = speechUrl(text, language);
+    const audio = this.prefetched.get(url) ?? this.createAudio(url);
+    this.prefetched.delete(url);
+    this.playing = audio;
+    const ended = () => {
+      if (this.playing === audio) onEnd();
+    };
+    audio.onended = ended;
+    // a sentence that cannot be said is skipped rather than stopping the reading
+    audio.onerror = ended;
+    void audio.play().catch(() => undefined);
+  }
+
+  cancel(): void {
+    this.playing?.pause();
+    this.playing = null;
+    this.prefetched.clear();
+  }
+
+  prefetch(text: string, language: I18nLanguage): void {
+    const url = speechUrl(text, language);
+    if (this.prefetched.has(url)) return;
+    const audio = this.createAudio(url);
+    audio.preload = 'auto';
+    audio.load();
+    this.prefetched.set(url, audio);
+  }
+}
+
+function speechUrl(text: string, language: I18nLanguage): string {
+  return `api/speech?lang=${language}&text=${encodeURIComponent(text)}`;
 }
 
 /** The voice's locale for each i18n language: what the engines are asked for. */

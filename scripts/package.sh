@@ -47,9 +47,9 @@ for archive in releases/mythostory-"$version"-windows.zip releases/mythostory-"$
   [ -f "$archive" ] || { echo "$archive was not built" >&2; exit 1; }
   case "$archive" in
     *.zip) entries=$(unzip -Z1 "$archive"); unzip -p "$archive" '*/mythostory.jar' > "$check_jar"
-           needed=(mythostory.jar mythostory.bat jre/bin/java.exe) ;;
+           needed=(mythostory.jar mythostory.bat jre/bin/java.exe piper/piper.exe voices/fr.onnx voices/en.onnx VOICES.md) ;;
     *) entries=$(tar tzf "$archive"); tar xzOf "$archive" --wildcards '*/mythostory.jar' > "$check_jar"
-       needed=(mythostory.jar mythostory.sh jre/bin/java) ;;
+       needed=(mythostory.jar mythostory.sh jre/bin/java piper/piper voices/fr.onnx voices/en.onnx VOICES.md) ;;
   esac
   for file in "${needed[@]}"; do
     grep -q "^mythostory-$version/$file\$" <<< "$entries" || { echo "$archive: no $file" >&2; exit 1; }
@@ -57,7 +57,7 @@ for archive in releases/mythostory-"$version"-windows.zip releases/mythostory-"$
   jar_entries=$(unzip -Z1 "$check_jar")
   grep -q '^static/index\.html$' <<< "$jar_entries" || { echo "$archive: the jar carries no frontend (static/index.html)" >&2; exit 1; }
 done
-echo "== releases/ checked: mythostory-$version, the jar (with the frontend), the launcher and the JRE in each"
+echo "== releases/ checked: mythostory-$version, the jar (with the frontend), the launcher, the JRE and Piper's voices in each"
 
 # The APK: the same page and server inside (the frontend and the backend as Java resources and dex)
 if $android; then
