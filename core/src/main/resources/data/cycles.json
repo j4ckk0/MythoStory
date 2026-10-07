@@ -95,13 +95,25 @@
       "fr": "La guerre de Troie"
     },
     "description": {
-      "en": "From the golden apple to the fall of Troy.",
-      "fr": "De la pomme d’or à la chute de Troie."
+      "en": "From the golden apple to the fall of Troy: the gathering, the ten years' siege, the Iliad and what followed it.",
+      "fr": "De la pomme d’or à la chute de Troie : le rassemblement, les dix ans de siège, l’Iliade et ce qui la suivit."
     },
     "stories": [
       "judgement-of-paris",
+      "gathering-of-the-greeks",
+      "sacrifice-of-iphigenia",
+      "landing-at-troy",
       "wrath-of-achilles",
-      "trojan-horse"
+      "death-of-patroclus",
+      "death-of-hector",
+      "priam-and-achilles",
+      "penthesilea",
+      "memnon",
+      "death-of-achilles",
+      "arms-of-achilles",
+      "oracles-of-troy",
+      "trojan-horse",
+      "fall-of-troy"
     ]
   },
   {
@@ -111,11 +123,23 @@
       "fr": "L’Odyssée"
     },
     "description": {
-      "en": "Odysseus's ten-year journey home to Ithaca.",
-      "fr": "Le voyage de dix ans d’Ulysse pour rentrer à Ithaque."
+      "en": "Odysseus's ten-year journey home to Ithaca, in the order it happened — Homer has him tell most of it to the Phaeacians.",
+      "fr": "Le voyage de dix ans d’Ulysse pour rentrer à Ithaque, dans l’ordre où il se déroula — Homère lui en fait raconter l’essentiel aux Phéaciens."
     },
     "stories": [
-      "odysseus-and-polyphemus"
+      "cicones-and-lotus-eaters",
+      "odysseus-and-polyphemus",
+      "aeolus-and-the-laestrygonians",
+      "odysseus-and-circe",
+      "descent-to-the-dead",
+      "sirens-scylla-and-charybdis",
+      "cattle-of-the-sun",
+      "telemachus-journey",
+      "odysseus-and-calypso",
+      "nausicaa-and-the-phaeacians",
+      "return-to-ithaca",
+      "the-bow-and-the-suitors",
+      "penelope-and-odysseus"
     ]
   }
 ]

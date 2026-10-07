@@ -13,6 +13,9 @@ object Texts {
             .replace(Regex("[^a-z0-9]+"), "-")
             .trim('-')
 
+    /** A Greek label without the transliteration Wikidata sometimes appends: "Πηνελόπη , Pēnelopē" → "Πηνελόπη". */
+    fun greek(label: String): String = label.split(Regex("\\s*[,|]\\s*"))[0].trim()
+
     /** A Wikidata description as a sentence: "daughter of Danaus" → "Daughter of Danaus." */
     fun sentence(text: String): String {
         val trimmed = text.trim()

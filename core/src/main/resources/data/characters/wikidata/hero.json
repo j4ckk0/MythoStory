@@ -66,12 +66,12 @@
     "wikidata": "Q221925",
     "description": {
       "en": "Son of Alcmaeon in Greek mythology.",
-      "fr": "Fils de Callirrhoé et d’Alcméon dans la mythologie grecque."
+      "fr": "Fils d’Alcméon et de Callirrhoé dans la mythologie grecque."
     },
     "greek": "Ακαρνάν",
     "parents": [
-      "callirhoe-q1722503",
-      "alcmaeon-q591089"
+      "alcmaeon-q591089",
+      "callirhoe-q1722503"
     ],
     "links": [
       {
@@ -309,12 +309,12 @@
     "wikidata": "Q208531",
     "description": {
       "en": "Son of Aristaeus in Greek mythology.",
-      "fr": "Fils d’Autonoé et d’Aristée dans la mythologie grecque."
+      "fr": "Fils d’Aristée et d’Autonoé dans la mythologie grecque."
     },
     "greek": "Ἀκταίων",
     "parents": [
-      "autonoe-q94072",
-      "aristaeus-q392435"
+      "aristaeus-q392435",
+      "autonoe-q94072"
     ],
     "links": [
       {
@@ -436,38 +436,6 @@
         "lang": "fr",
         "title": "Wikipédia — Égyptos",
         "url": "https://fr.wikipedia.org/wiki/%C3%89gyptos"
-      }
-    ]
-  },
-  {
-    "id": "aeneas",
-    "name": {
-      "en": "Aeneas",
-      "fr": "Énée"
-    },
-    "kind": "hero",
-    "wikidata": "Q82732",
-    "description": {
-      "en": "Trojan hero, son of Anchises and Aphrodite.",
-      "fr": "Fils d’Aphrodite et d’Anchise dans la mythologie grecque."
-    },
-    "greek": "Αἰνείας",
-    "parents": [
-      "aphrodite",
-      "anchises"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Aeneas",
-        "url": "https://en.wikipedia.org/wiki/Aeneas"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Énée",
-        "url": "https://fr.wikipedia.org/wiki/%C3%89n%C3%A9e"
       }
     ]
   },
@@ -927,8 +895,8 @@
     },
     "greek": "Αλκίππη",
     "parents": [
-      "aglaurus-daughter-of-cecrops",
-      "ares"
+      "ares",
+      "aglaurus-daughter-of-cecrops"
     ],
     "links": [
       {
@@ -1034,8 +1002,8 @@
     },
     "greek": "Αλίθερσος",
     "parents": [
-      "samia",
-      "ancaeus-q1606756"
+      "ancaeus-q1606756",
+      "samia"
     ],
     "links": [
       {
@@ -1060,8 +1028,8 @@
     },
     "greek": "Ἅλμος",
     "parents": [
-      "sisyphus",
-      "merope-q735518"
+      "merope-q735518",
+      "sisyphus"
     ],
     "links": [
       {
@@ -1092,8 +1060,8 @@
     },
     "greek": "Ἀλωεύς",
     "parents": [
-      "poseidon",
-      "canace"
+      "canace",
+      "poseidon"
     ],
     "links": [
       {
@@ -1116,7 +1084,7 @@
       "en": "Mythical character, daughter of Kerkyon.",
       "fr": "Fille de Cercyon dans la mythologie grecque."
     },
-    "greek": "Ἀλόπη , Alopē",
+    "greek": "Ἀλόπη",
     "parents": [
       "cercyon-of-eleusis"
     ],
@@ -1172,7 +1140,7 @@
       "en": "Mythical daughter of Thestius.",
       "fr": "Fille de Thestios dans la mythologie grecque."
     },
-    "greek": "Ἀλθαία , Althaiā",
+    "greek": "Ἀλθαία",
     "parents": [
       "thestius"
     ],
@@ -1205,8 +1173,8 @@
     },
     "greek": "Ἄλθηπος",
     "parents": [
-      "poseidon",
-      "leis"
+      "leis",
+      "poseidon"
     ],
     "links": [
       {
@@ -1230,8 +1198,8 @@
       "fr": "Personnage de la mythologie grecque, fils d'Amphion et de Niobé."
     },
     "parents": [
-      "niobe-q213621",
-      "amphion"
+      "amphion",
+      "niobe-q213621"
     ],
     "links": [
       {
@@ -1394,10 +1362,10 @@
       "en": "Mythical musician and ruler at Thebes.",
       "fr": "Personnage de la mythologie grecque, fils de Zeus."
     },
-    "greek": "Ἀμφίων , Ampīōn",
+    "greek": "Ἀμφίων",
     "parents": [
-      "antiope-q461439",
-      "zeus"
+      "zeus",
+      "antiope-q461439"
     ],
     "links": [
       {
@@ -1424,11 +1392,11 @@
     "wikidata": "Q981302",
     "description": {
       "en": "Son of Alcmaeon in Greek mythology.",
-      "fr": "Fils d’Alcméon et de Callirrhoé dans la mythologie grecque."
+      "fr": "Fils de Callirrhoé et d’Alcméon dans la mythologie grecque."
     },
     "parents": [
-      "alcmaeon-q591089",
-      "callirhoe-q1722503"
+      "callirhoe-q1722503",
+      "alcmaeon-q591089"
     ],
     "links": [
       {
@@ -1514,7 +1482,7 @@
       "en": "Character from Greek mythology, son of Zeus or Poseidon.",
       "fr": "Personnage de la mythologie grecque, fils de Poséidon."
     },
-    "greek": "Ἀγκαῖος , Ankaios",
+    "greek": "Ἀγκαῖος",
     "parents": [
       "poseidon",
       "astypalaea"
@@ -1631,8 +1599,8 @@
     },
     "greek": "Αντείας",
     "parents": [
-      "circe",
-      "odysseus"
+      "odysseus",
+      "circe"
     ],
     "links": [
       {
@@ -1657,8 +1625,8 @@
     },
     "greek": "Ἀνθήλεια",
     "parents": [
-      "danaus",
-      "polyxo-q2103187"
+      "polyxo-q2103187",
+      "danaus"
     ],
     "links": [
       {
@@ -1763,7 +1731,7 @@
       "en": "One of the three original Boeotian muses in Greek mythology.",
       "fr": "Une des trois Muses originelles."
     },
-    "greek": "Αοιδή , Aoidē",
+    "greek": "Αοιδή",
     "parents": [
       "zeus"
     ],
@@ -1950,8 +1918,8 @@
     },
     "greek": "Αρδείας",
     "parents": [
-      "odysseus",
-      "circe"
+      "circe",
+      "odysseus"
     ],
     "links": [
       {
@@ -2149,7 +2117,7 @@
       "en": "Greek mythological character, the only female Argonaut.",
       "fr": "Personnage de la mythologie grecque, argonaute."
     },
-    "greek": "Ἀταλάντη , Atalantē",
+    "greek": "Ἀταλάντη",
     "parents": [
       "clymene-q2344103"
     ],
@@ -2188,9 +2156,9 @@
     },
     "greek": "Ἀθάμας",
     "parents": [
+      "enarete",
       "aiolos",
-      "minyas",
-      "enarete"
+      "minyas"
     ],
     "links": [
       {
@@ -2590,8 +2558,8 @@
     },
     "greek": "Βοιωτός",
     "parents": [
-      "arne-q1627764",
-      "poseidon"
+      "poseidon",
+      "arne-q1627764"
     ],
     "links": [
       {
@@ -2705,8 +2673,8 @@
     },
     "greek": "Βροτέας",
     "parents": [
-      "euryanassa",
-      "tantalus-q182101"
+      "tantalus-q182101",
+      "euryanassa"
     ],
     "links": [
       {
@@ -2793,7 +2761,7 @@
       "en": "Argonaut, son of Teleon in Greek Mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Téléon."
     },
-    "greek": "Βούτης , Būtēs",
+    "greek": "Βούτης",
     "parents": [
       "zeuxippe-q3575332",
       "poseidon",
@@ -2947,37 +2915,6 @@
     ]
   },
   {
-    "id": "calchas",
-    "name": {
-      "en": "Calchas",
-      "fr": "Calchas"
-    },
-    "kind": "hero",
-    "wikidata": "Q725527",
-    "description": {
-      "en": "Mythical seer.",
-      "fr": "Fils de Thestor dans la mythologie grecque."
-    },
-    "greek": "Κάλχας",
-    "parents": [
-      "thestor"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Calchas",
-        "url": "https://en.wikipedia.org/wiki/Calchas"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Calchas",
-        "url": "https://fr.wikipedia.org/wiki/Calchas"
-      }
-    ]
-  },
-  {
     "id": "callirhoe-q1361804",
     "name": {
       "en": "Callirhoe",
@@ -3071,8 +3008,8 @@
     },
     "greek": "Καλύκη",
     "parents": [
-      "enarete",
-      "aiolos"
+      "aiolos",
+      "enarete"
     ],
     "links": [
       {
@@ -3320,8 +3257,8 @@
     },
     "greek": "Κασσιφόνη",
     "parents": [
-      "odysseus",
-      "circe"
+      "circe",
+      "odysseus"
     ],
     "links": [
       {
@@ -3348,13 +3285,13 @@
     "wikidata": "Q2606272",
     "description": {
       "en": "Father of centaurs in Greek mythology.",
-      "fr": "Fils de Néphélé, d’Apollon et d’Ixion dans la mythologie grecque."
+      "fr": "Fils d’Apollon, d’Ixion et de Néphélé dans la mythologie grecque."
     },
     "greek": "Κένταυρος",
     "parents": [
-      "nephele-q3874213",
       "apollo",
-      "ixion"
+      "ixion",
+      "nephele-q3874213"
     ],
     "links": [
       {
@@ -3437,15 +3374,15 @@
     "kind": "hero",
     "wikidata": "Q858116",
     "description": {
-      "en": "Son of Anchiroe, Agenor, Belus and Phoenix in Greek mythology.",
+      "en": "Son of Agenor, Belus, Phoenix and Anchiroe in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Bélos et d'Anchinoé."
     },
     "greek": "Κηφεύς",
     "parents": [
-      "anchiroe-q3615214",
       "agenor-q392631",
       "belus",
-      "phoenix-q1145956"
+      "phoenix-q1145956",
+      "anchiroe-q3615214"
     ],
     "links": [
       {
@@ -3474,7 +3411,7 @@
       "en": "Mythical son of Phosporus, husband of Alcyone.",
       "fr": "Personnage mythologique."
     },
-    "greek": "Κήϋξ , Ceyx",
+    "greek": "Κήϋξ",
     "parents": [
       "phosphorus"
     ],
@@ -3651,9 +3588,9 @@
     },
     "greek": "Χρύσης",
     "parents": [
+      "chryseis-q611124",
       "apollo",
-      "agamemnon",
-      "chryseis-q611124"
+      "agamemnon"
     ],
     "links": [
       {
@@ -3674,12 +3611,12 @@
     "wikidata": "Q17625356",
     "description": {
       "en": "Son of Apollo in Greek mythology.",
-      "fr": "Fils d’Apollon et de Rhodope dans la mythologie grecque."
+      "fr": "Fils de Rhodope et d’Apollon dans la mythologie grecque."
     },
     "greek": "Κίκονας",
     "parents": [
-      "apollo",
-      "rhodope"
+      "rhodope",
+      "apollo"
     ],
     "links": [
       {
@@ -3704,9 +3641,9 @@
     },
     "greek": "Κινύρας",
     "parents": [
-      "amathusa",
       "apollo",
-      "sandocus"
+      "sandocus",
+      "amathusa"
     ],
     "links": [
       {
@@ -3736,8 +3673,8 @@
       "fr": "Personnage de la mythologie grecque, fille de Danaos et d'Atlantie ou de Phébé."
     },
     "parents": [
-      "danaus",
-      "atlantia"
+      "atlantia",
+      "danaus"
     ],
     "links": [
       {
@@ -3745,57 +3682,6 @@
         "lang": "en",
         "title": "Wikipedia — Cleopatra (Danaid)",
         "url": "https://en.wikipedia.org/wiki/Cleopatra_(Danaid)"
-      }
-    ]
-  },
-  {
-    "id": "clytoneus",
-    "name": {
-      "en": "Clytoneus",
-      "fr": "Clytonée"
-    },
-    "kind": "hero",
-    "wikidata": "Q5772732",
-    "description": {
-      "en": "Son of Alcinous in Greek mythology.",
-      "fr": "Fils d’Alcinoos et d’Arété dans la mythologie grecque."
-    },
-    "greek": "Κλυτόνηος",
-    "parents": [
-      "alcinous",
-      "arete-q3622209"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Clytonée",
-        "url": "https://fr.wikipedia.org/wiki/Clyton%C3%A9e"
-      }
-    ]
-  },
-  {
-    "id": "clytoneus-halius-and-laodamas",
-    "name": {
-      "en": "Clytoneus, Halius and Laodamas",
-      "fr": "Clytonée, Halios et Laodamas"
-    },
-    "kind": "hero",
-    "wikidata": "Q118645506",
-    "description": {
-      "en": "Brothers in Greek mythology.",
-      "fr": "Frères de la mythologie grecque."
-    },
-    "parents": [
-      "alcinous",
-      "arete-q3622209"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Clytonée, Halios et Laodamas",
-        "url": "https://fr.wikipedia.org/wiki/Clyton%C3%A9e,_Halios_et_Laodamas"
       }
     ]
   },
@@ -3835,12 +3721,12 @@
     "wikidata": "Q2665478",
     "description": {
       "en": "Mythical son of Paris and Oenone.",
-      "fr": "Fils de Œnone et de Pâris dans la mythologie grecque."
+      "fr": "Fils de Pâris et de Œnone dans la mythologie grecque."
     },
     "greek": "Κόρυθος",
     "parents": [
-      "oenone",
-      "paris"
+      "paris",
+      "oenone"
     ],
     "links": [
       {
@@ -3921,8 +3807,8 @@
     },
     "greek": "Κρηθεύς",
     "parents": [
-      "enarete",
-      "aiolos"
+      "aiolos",
+      "enarete"
     ],
     "links": [
       {
@@ -3972,8 +3858,8 @@
     },
     "greek": "Κρῖσος",
     "parents": [
-      "phocus-q836311",
-      "asterodeia-q2868652"
+      "asterodeia-q2868652",
+      "phocus-q836311"
     ],
     "links": [
       {
@@ -4079,9 +3965,9 @@
     },
     "greek": "Κτέατος",
     "parents": [
-      "molione",
       "poseidon",
-      "actor-q423424"
+      "actor-q423424",
+      "molione"
     ],
     "links": [
       {
@@ -4143,9 +4029,9 @@
     },
     "greek": "Κύκνος",
     "parents": [
-      "poseidon",
       "calyce-q2934559",
-      "harpale"
+      "harpale",
+      "poseidon"
     ],
     "links": [
       {
@@ -4276,10 +4162,10 @@
       "en": "King of Sparta and son of Amyclas.",
       "fr": "Personnage de la mythologie grecque, fils d'Amyclas et de Diomédé."
     },
-    "greek": "Κυνόρτας , Cynortas",
+    "greek": "Κυνόρτας",
     "parents": [
-      "amyclas-of-sparta",
-      "diomede-q3028727"
+      "diomede-q3028727",
+      "amyclas-of-sparta"
     ],
     "links": [
       {
@@ -4333,13 +4219,13 @@
     "kind": "hero",
     "wikidata": "Q210883",
     "description": {
-      "en": "Son of Anchiroe and Belus in Greek mythology.",
+      "en": "Son of Belus and Anchiroe in Greek mythology.",
       "fr": "Roi de la mythologie grecque, père des Danaïdes."
     },
-    "greek": "Δαναός , Danaos",
+    "greek": "Δαναός",
     "parents": [
-      "anchiroe-q3615214",
-      "belus"
+      "belus",
+      "anchiroe-q3615214"
     ],
     "links": [
       {
@@ -4457,8 +4343,8 @@
     },
     "greek": "Δηΐων",
     "parents": [
-      "aiolos",
-      "enarete"
+      "enarete",
+      "aiolos"
     ],
     "links": [
       {
@@ -4718,8 +4604,8 @@
     },
     "greek": "Εχίων",
     "parents": [
-      "hermes",
-      "antianeira-q574825"
+      "antianeira-q574825",
+      "hermes"
     ],
     "links": [
       {
@@ -4853,12 +4739,12 @@
     "wikidata": "Q2075786",
     "description": {
       "en": "Mythical daughter of Echion.",
-      "fr": "Fille d’Échion (Thèbes) et d’Agavé dans la mythologie grecque."
+      "fr": "Fille d’Agavé et d’Échion (Thèbes) dans la mythologie grecque."
     },
     "greek": "Ήπειρος",
     "parents": [
-      "echion-q1280725",
-      "agave-q381459"
+      "agave-q381459",
+      "echion-q1280725"
     ],
     "links": [
       {
@@ -4938,7 +4824,7 @@
       "en": "Legendary king of Athens.",
       "fr": "Roi légendaire d'Athènes."
     },
-    "greek": "Ἐριχθόνιος , Erichthonios",
+    "greek": "Ἐριχθόνιος",
     "parents": [
       "hephaestus"
     ],
@@ -5051,7 +4937,7 @@
       "en": "Greek mythical character, leader of the Myrmidons.",
       "fr": "Fils de Polymèle et d’Hermès dans la mythologie grecque."
     },
-    "greek": "Εὔδωρος , Eudōros",
+    "greek": "Εὔδωρος",
     "parents": [
       "polymele-q3907331",
       "hermes"
@@ -5085,8 +4971,8 @@
     },
     "greek": "Ευίππη",
     "parents": [
-      "danaus",
-      "polyxo-q2103187"
+      "polyxo-q2103187",
+      "danaus"
     ],
     "links": [
       {
@@ -5164,7 +5050,7 @@
       "en": "Son of Poseidon in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Poséidon."
     },
-    "greek": "Εὔφημος , Euphēmos",
+    "greek": "Εὔφημος",
     "parents": [
       "poseidon",
       "europa-q3060743"
@@ -5221,7 +5107,7 @@
       "en": "King of Laconia.",
       "fr": "Fils de Cléocharie, de Lélex et de Mylès dans la mythologie grecque."
     },
-    "greek": "Εὐρώτας , Eurotas",
+    "greek": "Εὐρώτας",
     "parents": [
       "cleocharia",
       "lelex-q1419059",
@@ -5307,8 +5193,8 @@
     },
     "greek": "Ευρυτίων",
     "parents": [
-      "ares",
-      "erytheia"
+      "erytheia",
+      "ares"
     ],
     "links": [
       {
@@ -5366,8 +5252,8 @@
     },
     "greek": "Εύρυτος του Ερμή",
     "parents": [
-      "antianeira-q574825",
-      "hermes"
+      "hermes",
+      "antianeira-q574825"
     ],
     "links": [
       {
@@ -5443,12 +5329,12 @@
     "wikidata": "Q4132258",
     "description": {
       "en": "Son of Polyphemus in Greek mythology.",
-      "fr": "Fils de Polyphème et de Galatée dans la mythologie grecque."
+      "fr": "Fils de Galatée et de Polyphème dans la mythologie grecque."
     },
     "greek": "Γάλας",
     "parents": [
-      "polyphemus",
-      "galatea-q241070"
+      "galatea-q241070",
+      "polyphemus"
     ],
     "links": [
       {
@@ -5643,8 +5529,8 @@
     },
     "greek": "Γλαύκος του Σισύφου",
     "parents": [
-      "sisyphus",
-      "merope-q735518"
+      "merope-q735518",
+      "sisyphus"
     ],
     "links": [
       {
@@ -5737,32 +5623,6 @@
     ]
   },
   {
-    "id": "halius",
-    "name": {
-      "en": "Halius",
-      "fr": "Halios"
-    },
-    "kind": "hero",
-    "wikidata": "Q3611817",
-    "description": {
-      "en": "Son of Alcinous in Greek mythology.",
-      "fr": "Fils d’Arété et d’Alcinoos dans la mythologie grecque."
-    },
-    "greek": "Άλιος",
-    "parents": [
-      "arete-q3622209",
-      "alcinous"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Halios",
-        "url": "https://fr.wikipedia.org/wiki/Halios"
-      }
-    ]
-  },
-  {
     "id": "harpaleus",
     "name": {
       "en": "Harpaleus",
@@ -5810,41 +5670,6 @@
         "lang": "en",
         "title": "Wikipedia — Harpalus (mythology)",
         "url": "https://en.wikipedia.org/wiki/Harpalus_(mythology)"
-      }
-    ]
-  },
-  {
-    "id": "hecuba",
-    "name": {
-      "en": "Hecuba",
-      "fr": "Hécube"
-    },
-    "kind": "hero",
-    "wikidata": "Q193433",
-    "description": {
-      "en": "Spouse of king Priam.",
-      "fr": "Fille d’Eunoé, de Télécléia, de Sangarios, de Cissée et de Dymas dans la mythologie grecque."
-    },
-    "greek": "Ἑκάβη , Hekabē",
-    "parents": [
-      "eunoe",
-      "telecleia",
-      "sangarius",
-      "cisseus",
-      "dymas-q17486774"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Hecuba",
-        "url": "https://en.wikipedia.org/wiki/Hecuba"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Hécube",
-        "url": "https://fr.wikipedia.org/wiki/H%C3%A9cube"
       }
     ]
   },
@@ -5984,8 +5809,8 @@
     },
     "greek": "Ἱππολύτη",
     "parents": [
-      "otrera",
-      "ares"
+      "ares",
+      "otrera"
     ],
     "links": [
       {
@@ -6198,8 +6023,8 @@
     },
     "greek": "Ὑάκινθος",
     "parents": [
-      "clio-q103968",
-      "pieros"
+      "pieros",
+      "clio-q103968"
     ],
     "links": [
       {
@@ -6294,12 +6119,12 @@
     "wikidata": "Q1655397",
     "description": {
       "en": "Mythical son of Ares.",
-      "fr": "Fils d’Astyoché et d’Arès dans la mythologie grecque."
+      "fr": "Fils d’Arès et d’Astyoché dans la mythologie grecque."
     },
     "greek": "Ἰάλμενος",
     "parents": [
-      "astyoche-q15360381",
-      "ares"
+      "ares",
+      "astyoche-q15360381"
     ],
     "links": [
       {
@@ -6320,12 +6145,12 @@
     "wikidata": "Q1655431",
     "description": {
       "en": "Son of Evadne in Greek mythology, ancestor of the Iamidae.",
-      "fr": "Fils d’Évadné et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et d’Évadné dans la mythologie grecque."
     },
     "greek": "Ίαμος",
     "parents": [
-      "evadne-q1372039",
-      "apollo"
+      "apollo",
+      "evadne-q1372039"
     ],
     "links": [
       {
@@ -6498,7 +6323,7 @@
       "en": "Son of Aphareus, husband of Marpessa, argonaut in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils d'Apharée."
     },
-    "greek": "Ἴδας , Īdās",
+    "greek": "Ἴδας",
     "parents": [
       "poseidon",
       "aphareus"
@@ -6636,12 +6461,12 @@
     "wikidata": "Q1675360",
     "description": {
       "en": "Mythical son of Tereus.",
-      "fr": "Fils de Procné et de Térée dans la mythologie grecque."
+      "fr": "Fils de Térée et de Procné dans la mythologie grecque."
     },
     "greek": "Ίτυς",
     "parents": [
-      "procne",
-      "tereus"
+      "tereus",
+      "procne"
     ],
     "links": [
       {
@@ -6751,38 +6576,6 @@
     ]
   },
   {
-    "id": "laertes",
-    "name": {
-      "en": "Laertes",
-      "fr": "Laërte"
-    },
-    "kind": "hero",
-    "wikidata": "Q748296",
-    "description": {
-      "en": "Legendary king of Ithaca.",
-      "fr": "Fils d’Arcésios et de Chalcoméduse dans la mythologie grecque."
-    },
-    "greek": "Λαέρτης , Laērtēs",
-    "parents": [
-      "arcesius",
-      "chalcomedusa"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Laertes (father of Odysseus)",
-        "url": "https://en.wikipedia.org/wiki/Laertes_(father_of_Odysseus)"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Laërte",
-        "url": "https://fr.wikipedia.org/wiki/La%C3%ABrte"
-      }
-    ]
-  },
-  {
     "id": "lamia-q22906256",
     "name": {
       "en": "Lamia",
@@ -6835,32 +6628,6 @@
         "lang": "fr",
         "title": "Wikipédia — Lampédo",
         "url": "https://fr.wikipedia.org/wiki/Lamp%C3%A9do"
-      }
-    ]
-  },
-  {
-    "id": "laodamas-q5969992",
-    "name": {
-      "en": "Laodamas",
-      "fr": "Laodamas"
-    },
-    "kind": "hero",
-    "wikidata": "Q5969992",
-    "description": {
-      "en": "Mythical son of Alcinous.",
-      "fr": "Fils d’Arété et d’Alcinoos dans la mythologie grecque."
-    },
-    "greek": "Λαοδάμας ο Φαίακας",
-    "parents": [
-      "arete-q3622209",
-      "alcinous"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Laodamas fils d'Alcinoos",
-        "url": "https://fr.wikipedia.org/wiki/Laodamas_fils_d'Alcinoos"
       }
     ]
   },
@@ -6959,12 +6726,12 @@
     "wikidata": "Q1462644",
     "description": {
       "en": "Son of Athamas in Greek mythology.",
-      "fr": "Fils d’Athamas et d’Ino dans la mythologie grecque."
+      "fr": "Fils d’Ino et d’Athamas dans la mythologie grecque."
     },
     "greek": "Λέαρχος της Ινούς",
     "parents": [
-      "athamas",
-      "ino"
+      "ino",
+      "athamas"
     ],
     "links": [
       {
@@ -7023,8 +6790,8 @@
     },
     "greek": "Λέλεξ",
     "parents": [
-      "libya",
-      "poseidon"
+      "poseidon",
+      "libya"
     ],
     "links": [
       {
@@ -7131,12 +6898,12 @@
     "wikidata": "Q1129914",
     "description": {
       "en": "Goddess in Roman and Greek mythology.",
-      "fr": "Fille d’Épaphos et de Memphis dans la mythologie grecque."
+      "fr": "Fille de Memphis et d’Épaphos dans la mythologie grecque."
     },
-    "greek": "Λιβύη , Libyē",
+    "greek": "Λιβύη",
     "parents": [
-      "epaphus",
-      "memphis"
+      "memphis",
+      "epaphus"
     ],
     "links": [
       {
@@ -7198,8 +6965,8 @@
     },
     "greek": "Λίνος",
     "parents": [
-      "psamathe-q129168",
-      "apollo"
+      "apollo",
+      "psamathe-q129168"
     ],
     "links": [
       {
@@ -7346,8 +7113,8 @@
       "fr": "Personnage de la mythologie grecque, fils d'Apollon et de Parthénopé."
     },
     "parents": [
-      "parthenope",
-      "apollo"
+      "apollo",
+      "parthenope"
     ],
     "links": [
       {
@@ -7466,7 +7233,7 @@
     },
     "greek": "Μακαρεύς",
     "parents": [
-      "aeolus-q172549"
+      "aeolus"
     ],
     "links": [
       {
@@ -7660,8 +7427,8 @@
     },
     "greek": "Μελανίππη",
     "parents": [
-      "otrera",
-      "ares"
+      "ares",
+      "otrera"
     ],
     "links": [
       {
@@ -7765,11 +7532,11 @@
     "wikidata": "Q106638723",
     "description": {
       "en": "Daughter of Zeus and Pandora.",
-      "fr": "Fille de Pandore et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et de Pandore dans la mythologie grecque."
     },
     "parents": [
-      "pandora-q3085116",
-      "zeus"
+      "zeus",
+      "pandora-q3085116"
     ],
     "links": [
       {
@@ -7792,7 +7559,7 @@
       "en": "One of the three original Boeotian Muses in Greek mythology.",
       "fr": "Une des trois Muses originelles."
     },
-    "greek": "Μελέτη , Meletē",
+    "greek": "Μελέτη",
     "parents": [
       "zeus"
     ],
@@ -7825,8 +7592,8 @@
     },
     "greek": "Μελίβοια",
     "parents": [
-      "amphion",
-      "niobe-q213621"
+      "niobe-q213621",
+      "amphion"
     ],
     "links": [
       {
@@ -7840,38 +7607,6 @@
         "lang": "fr",
         "title": "Wikipédia — Chloris (Niobide)",
         "url": "https://fr.wikipedia.org/wiki/Chloris_(Niobide)"
-      }
-    ]
-  },
-  {
-    "id": "memnon",
-    "name": {
-      "en": "Memnon",
-      "fr": "Memnon"
-    },
-    "kind": "hero",
-    "wikidata": "Q506781",
-    "description": {
-      "en": "Mythical Ethiopian king, son of Tithonus and Eos.",
-      "fr": "Fils de Tithon et d’Éos dans la mythologie grecque."
-    },
-    "greek": "Μέμνων , Memnōn",
-    "parents": [
-      "tithonus",
-      "eos"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Memnon",
-        "url": "https://en.wikipedia.org/wiki/Memnon"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Memnon (mythologie)",
-        "url": "https://fr.wikipedia.org/wiki/Memnon_(mythologie)"
       }
     ]
   },
@@ -7924,7 +7659,7 @@
       "en": "Son of Spercheus in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Spercheus et de Polydora."
     },
-    "greek": "Μενέσθιος , Menesthios",
+    "greek": "Μενέσθιος",
     "parents": [
       "spercheus"
     ],
@@ -8044,9 +7779,9 @@
     },
     "greek": "Μίλητος",
     "parents": [
+      "apollo",
       "acacallis",
-      "areia",
-      "apollo"
+      "areia"
     ],
     "links": [
       {
@@ -8073,12 +7808,12 @@
     "wikidata": "Q1466343",
     "description": {
       "en": "Mythical king of Orchomenus.",
-      "fr": "Fils de Poséidon et d’Hermippé dans la mythologie grecque."
+      "fr": "Fils d’Hermippé et de Poséidon dans la mythologie grecque."
     },
     "greek": "Μινύας",
     "parents": [
-      "poseidon",
-      "hermippe"
+      "hermippe",
+      "poseidon"
     ],
     "links": [
       {
@@ -8129,12 +7864,12 @@
     "wikidata": "Q1149595",
     "description": {
       "en": "Mythical son of Ares and Demonice.",
-      "fr": "Fils d’Arès et de Démonicé dans la mythologie grecque."
+      "fr": "Fils de Démonicé et d’Arès dans la mythologie grecque."
     },
     "greek": "Μώλος",
     "parents": [
-      "ares",
-      "demonice"
+      "demonice",
+      "ares"
     ],
     "links": [
       {
@@ -8159,9 +7894,9 @@
     },
     "greek": "Μόψος",
     "parents": [
+      "manto",
       "apollo",
-      "rhacius",
-      "manto"
+      "rhacius"
     ],
     "links": [
       {
@@ -8255,12 +7990,12 @@
     "wikidata": "Q1956649",
     "description": {
       "en": "Ancient King of Laconia in Greek mythology.",
-      "fr": "Fils de Lélex et de Cléocharie dans la mythologie grecque."
+      "fr": "Fils de Cléocharie et de Lélex dans la mythologie grecque."
     },
     "greek": "Μύλης",
     "parents": [
-      "lelex-q1419059",
-      "cleocharia"
+      "cleocharia",
+      "lelex-q1419059"
     ],
     "links": [
       {
@@ -8316,8 +8051,8 @@
     },
     "greek": "Μυρμιδών",
     "parents": [
-      "eurymedusa",
-      "zeus"
+      "zeus",
+      "eurymedusa"
     ],
     "links": [
       {
@@ -8422,38 +8157,6 @@
     ]
   },
   {
-    "id": "nausicaa",
-    "name": {
-      "en": "Nausicaa",
-      "fr": "Nausicaa"
-    },
-    "kind": "hero",
-    "wikidata": "Q135224",
-    "description": {
-      "en": "Daughter of Alcinous in Greek mythology.",
-      "fr": "Princesse phéacienne, personnage de la mythologie grecque."
-    },
-    "greek": "Ναυσικάα",
-    "parents": [
-      "alcinous",
-      "arete-q3622209"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Nausicaa",
-        "url": "https://en.wikipedia.org/wiki/Nausicaa"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Nausicaa",
-        "url": "https://fr.wikipedia.org/wiki/Nausicaa"
-      }
-    ]
-  },
-  {
     "id": "nausinous",
     "name": {
       "en": "Nausinous",
@@ -8499,8 +8202,8 @@
     },
     "greek": "Ναυσίθοος",
     "parents": [
-      "calypso",
-      "odysseus"
+      "odysseus",
+      "calypso"
     ],
     "links": [
       {
@@ -8553,11 +8256,11 @@
     "wikidata": "Q3870523",
     "description": {
       "en": "Mythical son of Apollo and Acacallis.",
-      "fr": "Fils d’Acacallis et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et d’Acacallis dans la mythologie grecque."
     },
     "parents": [
-      "acacallis",
-      "apollo"
+      "apollo",
+      "acacallis"
     ],
     "links": [
       {
@@ -8640,8 +8343,8 @@
     },
     "greek": "Νιρεύς",
     "parents": [
-      "canace",
-      "poseidon"
+      "poseidon",
+      "canace"
     ],
     "links": [
       {
@@ -8666,8 +8369,8 @@
     },
     "greek": "Νωραξ",
     "parents": [
-      "erytheia",
-      "hermes"
+      "hermes",
+      "erytheia"
     ],
     "links": [
       {
@@ -8756,12 +8459,12 @@
     "wikidata": "Q12882096",
     "description": {
       "en": "Son of Apollo in Greek mythology.",
-      "fr": "Fils d’Acacallis et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et d’Acacallis dans la mythologie grecque."
     },
     "greek": "Οάξης",
     "parents": [
-      "acacallis",
-      "apollo"
+      "apollo",
+      "acacallis"
     ],
     "links": [
       {
@@ -8846,12 +8549,12 @@
     "wikidata": "Q844870",
     "description": {
       "en": "Daughter of Briareus in Greek mythology.",
-      "fr": "Fille de Cymopolée et de Briarée dans la mythologie grecque."
+      "fr": "Fille de Briarée et de Cymopolée dans la mythologie grecque."
     },
     "greek": "Οιολύκη",
     "parents": [
-      "cymopoleia",
-      "briareus"
+      "briareus",
+      "cymopoleia"
     ],
     "links": [
       {
@@ -8932,8 +8635,8 @@
     },
     "greek": "Οπούς",
     "parents": [
-      "protogeneia",
-      "zeus"
+      "zeus",
+      "protogeneia"
     ],
     "links": [
       {
@@ -8954,12 +8657,12 @@
     "wikidata": "Q2031315",
     "description": {
       "en": "Son of Sisyphus and king of Corinth in Greek mythology.",
-      "fr": "Fils de Sisyphe et de Mérope dans la mythologie grecque."
+      "fr": "Fils de Mérope et de Sisyphe dans la mythologie grecque."
     },
     "greek": "Ορνύτιων",
     "parents": [
-      "sisyphus",
-      "merope-q735518"
+      "merope-q735518",
+      "sisyphus"
     ],
     "links": [
       {
@@ -8990,8 +8693,8 @@
     },
     "greek": "Ορσίλοχος",
     "parents": [
-      "alpheus",
-      "telegone"
+      "telegone",
+      "alpheus"
     ],
     "links": [
       {
@@ -9051,10 +8754,10 @@
       "en": "Son of Endymion in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils d'Endymion."
     },
-    "greek": "Παίων , Paiōn",
+    "greek": "Παίων",
     "parents": [
-      "chromia",
-      "endymion"
+      "endymion",
+      "chromia"
     ],
     "links": [
       {
@@ -9129,8 +8832,8 @@
     },
     "greek": "Πανδίων Α΄",
     "parents": [
-      "praxithea-q13058657",
-      "erichthonius"
+      "erichthonius",
+      "praxithea-q13058657"
     ],
     "links": [
       {
@@ -9161,8 +8864,8 @@
     },
     "greek": "Πανοπεύς",
     "parents": [
-      "asterodeia-q2868652",
-      "phocus-q836311"
+      "phocus-q836311",
+      "asterodeia-q2868652"
     ],
     "links": [
       {
@@ -9264,16 +8967,16 @@
     "wikidata": "Q1128942",
     "description": {
       "en": "Son of Melanion in Greek mythology.",
-      "fr": "Fils d’Arès, de Méléagre, de Talaos, d’Hippomène, de Mélanion et d’Atalante dans la mythologie grecque."
+      "fr": "Fils d’Atalante, d’Arès, de Méléagre, de Talaos, d’Hippomène et de Mélanion dans la mythologie grecque."
     },
-    "greek": "Παρθενοπαῖος , Parthenopaios",
+    "greek": "Παρθενοπαῖος",
     "parents": [
+      "atalanta",
       "ares",
       "meleager",
       "talaus",
       "hippomenes",
-      "melanion",
-      "atalanta"
+      "melanion"
     ],
     "links": [
       {
@@ -9302,7 +9005,7 @@
       "en": "Son of Tantalus in Greek mythology, king of Pisa in the Peloponnesus region.",
       "fr": "Personnage de la mythologie grecque, fils de Tantale."
     },
-    "greek": "Πέλοψ , Pelops",
+    "greek": "Πέλοψ",
     "parents": [
       "tantalus-q182101"
     ],
@@ -9324,44 +9027,6 @@
         "lang": "en",
         "title": "Theoi Project — Pelops",
         "url": "https://www.theoi.com/Heros/Pelops.html"
-      }
-    ]
-  },
-  {
-    "id": "penthesilea",
-    "name": {
-      "en": "Penthesilea",
-      "fr": "Penthésilée"
-    },
-    "kind": "hero",
-    "wikidata": "Q379828",
-    "description": {
-      "en": "Amazonian queen in Greek mythology, daughter of Ares and Otrera.",
-      "fr": "Reine des Amazones dans la mythologie grecque."
-    },
-    "greek": "Πενθεσίλεια",
-    "parents": [
-      "otrera",
-      "ares"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Penthesilea",
-        "url": "https://en.wikipedia.org/wiki/Penthesilea"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Penthésilée",
-        "url": "https://fr.wikipedia.org/wiki/Penth%C3%A9sil%C3%A9e"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Penthesilea (Penthesileia)",
-        "url": "https://www.theoi.com/Heroine/AmazonPenthesileia.html"
       }
     ]
   },
@@ -9519,10 +9184,10 @@
     },
     "greek": "Φαέθων",
     "parents": [
-      "eos",
       "cephalus-q643504",
       "tithonus",
-      "cephalus-q3010239"
+      "cephalus-q3010239",
+      "eos"
     ],
     "links": [
       {
@@ -9731,8 +9396,8 @@
     },
     "greek": "Φίλανδρος",
     "parents": [
-      "acacallis",
-      "apollo"
+      "apollo",
+      "acacallis"
     ],
     "links": [
       {
@@ -9753,12 +9418,12 @@
     "wikidata": "Q1471454",
     "description": {
       "en": "Son of Belus in Greek mythology.",
-      "fr": "Fils de Bélos et d’Anchinoé dans la mythologie grecque."
+      "fr": "Fils d’Anchinoé et de Bélos dans la mythologie grecque."
     },
     "greek": "Φινέας",
     "parents": [
-      "belus",
-      "anchiroe-q3615214"
+      "anchiroe-q3615214",
+      "belus"
     ],
     "links": [
       {
@@ -9980,12 +9645,12 @@
     "wikidata": "Q16332222",
     "description": {
       "en": "Mythical son of Apollo.",
-      "fr": "Fils d’Acacallis et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et d’Acacallis dans la mythologie grecque."
     },
     "greek": "Φυλακίδης",
     "parents": [
-      "acacallis",
-      "apollo"
+      "apollo",
+      "acacallis"
     ],
     "links": [
       {
@@ -10039,7 +9704,7 @@
       "en": "Daughter of Sithon in Greek mythology.",
       "fr": "Fille de Sithon dans la mythologie grecque."
     },
-    "greek": "Φυλλίς , Phyllis",
+    "greek": "Φυλλίς",
     "parents": [
       "sithon"
     ],
@@ -10204,8 +9869,8 @@
     },
     "greek": "Πεισιδίκη",
     "parents": [
-      "aiolos",
-      "enarete"
+      "enarete",
+      "aiolos"
     ],
     "links": [
       {
@@ -10282,12 +9947,12 @@
     "wikidata": "Q1071946",
     "description": {
       "en": "Mythical son of Asclepius.",
-      "fr": "Fils d’Asclépios et d’Épione dans la mythologie grecque."
+      "fr": "Fils d’Épione et d’Asclépios dans la mythologie grecque."
     },
-    "greek": "Ποδαλείριος , Podaleirios",
+    "greek": "Ποδαλείριος",
     "parents": [
-      "asclepius",
-      "epione"
+      "epione",
+      "asclepius"
     ],
     "links": [
       {
@@ -10368,8 +10033,8 @@
     },
     "greek": "Πόλυβος της Σικυώνας",
     "parents": [
-      "chthonophyle",
-      "hermes"
+      "hermes",
+      "chthonophyle"
     ],
     "links": [
       {
@@ -10478,8 +10143,8 @@
     },
     "greek": "Πολύδωρος",
     "parents": [
-      "cadmus",
-      "harmonia-q978079"
+      "harmonia-q978079",
+      "cadmus"
     ],
     "links": [
       {
@@ -10533,7 +10198,7 @@
       "fr": "Personnage de la mythologie grecque, fille d'Éole."
     },
     "parents": [
-      "aeolus-q172549"
+      "aeolus"
     ],
     "links": [
       {
@@ -10591,12 +10256,12 @@
     "wikidata": "Q3909492",
     "description": {
       "en": "Son of Aegyptus in Greek mythology.",
-      "fr": "Fils de Caliadne et d’Égyptos dans la mythologie grecque."
+      "fr": "Fils d’Égyptos et de Caliadne dans la mythologie grecque."
     },
     "greek": "Ποταμών",
     "parents": [
-      "caliadne",
-      "aegyptus"
+      "aegyptus",
+      "caliadne"
     ],
     "links": [
       {
@@ -10714,8 +10379,8 @@
     },
     "greek": "Πύλος",
     "parents": [
-      "demonice",
-      "ares"
+      "ares",
+      "demonice"
     ],
     "links": [
       {
@@ -10760,13 +10425,13 @@
     "wikidata": "Q1131643",
     "description": {
       "en": "Son of Aiolos in Greek mythology.",
-      "fr": "Fils d’Éole, d’Énarété et d’Iphis fille de Pénée dans la mythologie grecque."
+      "fr": "Fils d’Énarété, d’Iphis fille de Pénée et d’Éole dans la mythologie grecque."
     },
     "greek": "Σαλμωνεύς",
     "parents": [
-      "aiolos",
       "enarete",
-      "iphis-q22965471"
+      "iphis-q22965471",
+      "aiolos"
     ],
     "links": [
       {
@@ -11431,7 +11096,7 @@
       "en": "Mythical son of Circe and Odysseus.",
       "fr": "Personnage de la mythologie grecque, fils d'Ulysse et de Circé."
     },
-    "greek": "Τηλέγονος , Tēlegonos",
+    "greek": "Τηλέγονος",
     "parents": [
       "circe",
       "odysseus"
@@ -11543,14 +11208,14 @@
     "wikidata": "Q2608087",
     "description": {
       "en": "Phoenician character from Greek mythology.",
-      "fr": "Fils de Téléphassa, de Poséidon, d’Agénor et de Cilix dans la mythologie grecque."
+      "fr": "Fils de Poséidon, d’Agénor, de Cilix et de Téléphassa dans la mythologie grecque."
     },
     "greek": "Θάσος",
     "parents": [
-      "telephassa",
       "poseidon",
       "agenor-q392631",
-      "cilix"
+      "cilix",
+      "telephassa"
     ],
     "links": [
       {
@@ -11681,8 +11346,8 @@
     },
     "greek": "Θόας",
     "parents": [
-      "dionysus",
-      "ariadne"
+      "ariadne",
+      "dionysus"
     ],
     "links": [
       {
@@ -11777,37 +11442,6 @@
         "lang": "en",
         "title": "Wikipedia — Timalcus",
         "url": "https://en.wikipedia.org/wiki/Timalcus"
-      }
-    ]
-  },
-  {
-    "id": "tiresias",
-    "name": {
-      "en": "Tiresias",
-      "fr": "Tirésias"
-    },
-    "kind": "hero",
-    "wikidata": "Q656881",
-    "description": {
-      "en": "Blind prophet of Apollo.",
-      "fr": "Devin aveugle, personnage de la mythologie grecque."
-    },
-    "greek": "Τειρεσίας",
-    "parents": [
-      "chariclo-q4358140"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Tiresias",
-        "url": "https://en.wikipedia.org/wiki/Tiresias"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Tirésias",
-        "url": "https://fr.wikipedia.org/wiki/Tir%C3%A9sias"
       }
     ]
   },
@@ -12105,13 +11739,13 @@
     "kind": "hero",
     "wikidata": "Q196865",
     "description": {
-      "en": "Son of Antiope and Zeus in Greek mythology.",
+      "en": "Son of Zeus and Antiope in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Zeus et d'Antiope."
     },
     "greek": "Ζῆθος",
     "parents": [
-      "antiope-q461439",
-      "zeus"
+      "zeus",
+      "antiope-q461439"
     ],
     "links": [
       {

@@ -11,7 +11,7 @@
       "en": "Mythological serpent.",
       "fr": "Personnage de la mythologie grecque."
     },
-    "greek": "Ἀγαθοδαίμων , Agathodaimōn",
+    "greek": "Ἀγαθοδαίμων",
     "links": [
       {
         "kind": "wikipedia",
@@ -41,8 +41,8 @@
     },
     "greek": "Αγλαόπη",
     "parents": [
-      "melpomene",
-      "achelous"
+      "achelous",
+      "melpomene"
     ],
     "links": [
       {
@@ -352,7 +352,7 @@
       "en": "Giant with hundred eyes in Greek mythology.",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Ἄργος , Argos",
+    "greek": "Ἄργος",
     "parents": [
       "agenor-q429064",
       "inachus",
@@ -779,7 +779,7 @@
       "en": "Centaur, figure from Greek mythology.",
       "fr": "Centaure de la mythologie grecque."
     },
-    "greek": "Χείρων , Cheirōn",
+    "greek": "Χείρων",
     "parents": [
       "philyra-q398524",
       "cronus"
@@ -1042,7 +1042,7 @@
       "en": "Mythological giant.",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Ἐγκέλαδος , Enkelados",
+    "greek": "Ἐγκέλαδος",
     "parents": [
       "uranus",
       "tartarus",
@@ -1081,7 +1081,7 @@
       "en": "Giant, son of Uranus.",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Ἐφιάλτης , Ephialtēs",
+    "greek": "Ἐφιάλτης",
     "parents": [
       "uranus",
       "gaia"
@@ -1370,7 +1370,7 @@
       "en": "Greek mythological serpent.",
       "fr": "Dragon de la mythologie grecque."
     },
-    "greek": "Λάδων , Lādōn",
+    "greek": "Λάδων",
     "parents": [
       "echidna",
       "ceto-q209489",
@@ -1408,13 +1408,13 @@
     "wikidata": "Q200073",
     "description": {
       "en": "A female daemon who devoured children, usually described as having the upper body of a woman and lower half of a serpent.",
-      "fr": "Fille de Libye, de Poséidon et de Bélos dans la mythologie grecque."
+      "fr": "Fille de Poséidon, de Bélos et de Libye dans la mythologie grecque."
     },
-    "greek": "Λαμία , Lamiā",
+    "greek": "Λαμία",
     "parents": [
-      "libya",
       "poseidon",
-      "belus"
+      "belus",
+      "libya"
     ],
     "links": [
       {
@@ -1523,7 +1523,7 @@
       "en": "Satyr musician in Greek mythology.",
       "fr": "Personnage de la mythologie grecque."
     },
-    "greek": "Μαρσύας , Marsyās",
+    "greek": "Μαρσύας",
     "links": [
       {
         "kind": "wikipedia",
@@ -1557,7 +1557,7 @@
       "en": "Giant (Greek mythology).",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Μίμας , Mimās",
+    "greek": "Μίμας",
     "parents": [
       "uranus",
       "gaia"
@@ -1633,7 +1633,7 @@
       "en": "Centaur in Greek mythology.",
       "fr": "Centaure dans la mythologie grecque."
     },
-    "greek": "Νέσσος , Nessos",
+    "greek": "Νέσσος",
     "parents": [
       "nephele-q624551",
       "ixion"
@@ -1866,7 +1866,7 @@
       "en": "Centaur in Greek mythology.",
       "fr": "Centaure, dont la légende est associée à celle d'Héraclès."
     },
-    "greek": "Φόλος , Pholos",
+    "greek": "Φόλος",
     "parents": [
       "silenus"
     ],
@@ -1951,7 +1951,7 @@
       "en": "One of the Giants of Greek mythology.",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Πολυβώτης , Polybōtēs",
+    "greek": "Πολυβώτης",
     "parents": [
       "uranus",
       "gaia"
@@ -2111,7 +2111,7 @@
       "en": "Mythological bronze automaton guarding Crete.",
       "fr": "Fils de Crès dans la mythologie grecque."
     },
-    "greek": "Τάλως , Talōs",
+    "greek": "Τάλως",
     "parents": [
       "cres"
     ],

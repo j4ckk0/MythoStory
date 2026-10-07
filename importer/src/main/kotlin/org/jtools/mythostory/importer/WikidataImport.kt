@@ -104,7 +104,7 @@ class WikidataImport(private val data: File, private val all: Boolean) {
                     "en" to description(item, "en", parents.map { nameByQid.getValue(it).getValue("en") }),
                     "fr" to description(item, "fr", parents.map { nameByQid.getValue(it).getValue("fr") }),
                 ),
-                greek = item["grc"] ?: item["el"],
+                greek = (item["grc"] ?: item["el"])?.let(Texts::greek),
                 parents = parents.map(idByQid::getValue),
                 links = listOfNotNull(
                     wikipedia(item, "en")?.let { Link(LinkKind.WIKIPEDIA, "en", "Wikipedia — ${item["enwiki"]}", it) },

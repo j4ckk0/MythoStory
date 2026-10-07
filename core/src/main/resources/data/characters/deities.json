@@ -350,5 +350,150 @@
         "url": "https://mythologica.fr/grec/silene.htm"
       }
     ]
+  },
+  {
+    "id": "circe",
+    "name": {
+      "en": "Circe",
+      "fr": "Circé"
+    },
+    "kind": "deity",
+    "wikidata": "Q187602",
+    "description": {
+      "en": "Sorceress, daughter of the Sun, who turned Odysseus's companions into swine on her island of Aeaea.",
+      "fr": "Magicienne, fille du Soleil, qui changea les compagnons d’Ulysse en porcs sur son île d’Aiaié."
+    },
+    "greek": "Κίρκη",
+    "parents": [
+      "helios",
+      "perse"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Circe",
+        "url": "https://en.wikipedia.org/wiki/Circe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Circé",
+        "url": "https://fr.wikipedia.org/wiki/Circ%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Circe (Kirke)",
+        "url": "https://www.theoi.com/Titan/Kirke.html"
+      }
+    ]
+  },
+  {
+    "id": "aeolus",
+    "name": {
+      "en": "Aeolus",
+      "fr": "Éole"
+    },
+    "kind": "deity",
+    "wikidata": "Q172549",
+    "description": {
+      "en": "Keeper of the winds, who gave Odysseus a bag holding every contrary wind.",
+      "fr": "Gardien des vents, qui donna à Ulysse une outre renfermant tous les vents contraires."
+    },
+    "greek": "Αἴολος",
+    "parents": [
+      "hippotes-q3136179"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aeolus (son of Hippotes)",
+        "url": "https://en.wikipedia.org/wiki/Aeolus_(son_of_Hippotes)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éole",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ole"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Aeolus (Aiolos)",
+        "url": "https://www.theoi.com/Titan/Aiolos.html"
+      }
+    ]
+  },
+  {
+    "id": "ino",
+    "name": {
+      "en": "Ino",
+      "fr": "Ino"
+    },
+    "kind": "deity",
+    "wikidata": "Q223690",
+    "description": {
+      "en": "Daughter of Cadmus made the sea goddess Leucothea, who saved Odysseus from the storm with her veil.",
+      "fr": "Fille de Cadmos devenue la déesse marine Leucothée, qui sauva Ulysse de la tempête avec son voile."
+    },
+    "greek": "Ἰνώ",
+    "parents": [
+      "harmonia-q978079",
+      "cadmus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ino (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Ino_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ino",
+        "url": "https://fr.wikipedia.org/wiki/Ino"
+      }
+    ]
+  },
+  {
+    "id": "eos",
+    "name": {
+      "en": "Eos",
+      "fr": "Éos"
+    },
+    "kind": "deity",
+    "wikidata": "Q178417",
+    "description": {
+      "en": "The Dawn, mother of Memnon.",
+      "fr": "L’Aurore, mère de Memnon."
+    },
+    "greek": "Ἠώς",
+    "parents": [
+      "theia-q184232",
+      "hyperion"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eos",
+        "url": "https://en.wikipedia.org/wiki/Eos"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éos",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89os"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Eos",
+        "url": "https://www.theoi.com/Titan/Eos.html"
+      }
+    ]
   }
 ]

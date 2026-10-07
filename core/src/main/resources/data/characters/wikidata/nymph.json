@@ -135,8 +135,8 @@
       "fr": "Océanide de la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -188,8 +188,8 @@
     },
     "greek": "Αδμήτη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -501,12 +501,12 @@
       "en": "Oceanid of Greek mythology.",
       "fr": "Océanide de la mythologie grecque."
     },
-    "greek": "Ἀμάλθεια , Amaltheia",
+    "greek": "Ἀμάλθεια",
     "parents": [
+      "tethys",
       "helios",
       "oceanus",
-      "melissus-of-crete",
-      "tethys"
+      "melissus-of-crete"
     ],
     "links": [
       {
@@ -542,8 +542,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -574,8 +574,8 @@
     },
     "greek": "Ἀμφιτρίτη",
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -819,8 +819,8 @@
     },
     "greek": "Αργεία",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -873,8 +873,8 @@
     },
     "greek": "Ἀσία",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -911,8 +911,8 @@
     },
     "greek": "Ασωπίδα",
     "parents": [
-      "metope",
-      "asopus"
+      "asopus",
+      "metope"
     ],
     "links": [
       {
@@ -1158,10 +1158,10 @@
       "fr": "Néréide ou Océanide de la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "nereus",
       "tethys",
-      "doris-q726279"
+      "doris-q726279",
+      "oceanus",
+      "nereus"
     ],
     "links": [
       {
@@ -1469,8 +1469,8 @@
     },
     "greek": "Καλλιρρόη (Ωκεανίδα)",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -1565,47 +1565,6 @@
     ]
   },
   {
-    "id": "calypso",
-    "name": {
-      "en": "Calypso",
-      "fr": "Calypso"
-    },
-    "kind": "nymph",
-    "wikidata": "Q48961",
-    "description": {
-      "en": "Oceanid of Greek mythology.",
-      "fr": "Océanide de la mythologie grecque."
-    },
-    "greek": "Καλυψώ",
-    "parents": [
-      "atlas",
-      "nereus",
-      "tethys",
-      "pleione",
-      "doris-q726279"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Calypso (mythology)",
-        "url": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Calypso",
-        "url": "https://fr.wikipedia.org/wiki/Calypso"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Calypso (Kalypso)",
-        "url": "https://www.theoi.com/Nymphe/NympheKalypso.html"
-      }
-    ]
-  },
-  {
     "id": "camarina",
     "name": {
       "en": "Camarina",
@@ -1615,11 +1574,11 @@
     "wikidata": "Q12752525",
     "description": {
       "en": "Oceanid in Greek mythology.",
-      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+      "fr": "Fille de Téthys et d’Océan dans la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -1640,12 +1599,12 @@
     "wikidata": "Q2937275",
     "description": {
       "en": "Oceanid of Greek mythology.",
-      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+      "fr": "Fille de Téthys et d’Océan dans la mythologie grecque."
     },
     "greek": "Καφείρα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -1853,8 +1812,8 @@
     },
     "greek": "Κερκηίδα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -2196,8 +2155,8 @@
       "fr": "Unes des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -2376,8 +2335,8 @@
     },
     "greek": "Κλυτία",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -2568,12 +2527,12 @@
     "wikidata": "Q58818193",
     "description": {
       "en": "Oceanid in Greek mythology.",
-      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
+      "fr": "Fille de Téthys et d’Océan dans la mythologie grecque."
     },
     "greek": "Κορυφή",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -2807,8 +2766,8 @@
     },
     "greek": "Δάειρα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -2908,8 +2867,8 @@
       "fr": "Néréide."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -3017,8 +2976,8 @@
     },
     "greek": "Δωρίς",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3137,8 +3096,8 @@
     },
     "greek": "Εἰδυῖα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3175,8 +3134,8 @@
     },
     "greek": "Ηλέκτρα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3247,13 +3206,13 @@
     "wikidata": "Q12751671",
     "description": {
       "en": "Nereid of Greek mythology.",
-      "fr": "Fille d’Océan, de Nérée, de Téthys et de Doris dans la mythologie grecque."
+      "fr": "Fille de Téthys, de Doris, d’Océan et de Nérée dans la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "nereus",
       "tethys",
-      "doris-q726279"
+      "doris-q726279",
+      "oceanus",
+      "nereus"
     ],
     "links": [
       {
@@ -3337,8 +3296,8 @@
       "fr": "Océanide de la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3422,8 +3381,8 @@
     },
     "greek": "Εὐρυνόμη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3518,8 +3477,8 @@
     },
     "greek": "Γαλαξαύρη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3604,13 +3563,13 @@
     "kind": "nymph",
     "wikidata": "Q3611629",
     "description": {
-      "en": "Daughter of Thalassa and Pontus in Greek mythology.",
-      "fr": "Fille de Thalassa et de Pontos dans la mythologie grecque."
+      "en": "Daughter of Pontus and Thalassa in Greek mythology.",
+      "fr": "Fille de Pontos et de Thalassa dans la mythologie grecque."
     },
     "greek": "Αλία",
     "parents": [
-      "thalassa",
-      "pontus"
+      "pontus",
+      "thalassa"
     ],
     "links": [
       {
@@ -3805,8 +3764,8 @@
     },
     "greek": "Ἡσιόνη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3922,8 +3881,8 @@
       "fr": "Océanide."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3947,8 +3906,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -3972,8 +3931,8 @@
       "fr": "Océanide."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -4255,7 +4214,7 @@
       "en": "Daughter of Oceanus in Greek mythology.",
       "fr": "Plus belle des nymphes de la mythologie grecque."
     },
-    "greek": "Λεύκη , Leukē",
+    "greek": "Λεύκη",
     "parents": [
       "oceanus"
     ],
@@ -4422,8 +4381,8 @@
     },
     "greek": "Λυσιθέα",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -4682,8 +4641,8 @@
       "fr": "Océanide de la mythologie grecque."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -4713,8 +4672,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -4862,8 +4821,8 @@
     },
     "greek": "Μῆτις",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -4932,7 +4891,7 @@
       "en": "Water nymph, consort of Hades.",
       "fr": "Nymphe amante d'Hadès et fille du Cocyte."
     },
-    "greek": "Μένθη , Menthē",
+    "greek": "Μένθη",
     "links": [
       {
         "kind": "wikipedia",
@@ -5536,8 +5495,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -5595,9 +5554,9 @@
     },
     "greek": "ΠειΘω",
     "parents": [
-      "oceanus",
       "aphrodite",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -5787,8 +5746,8 @@
     },
     "greek": "Φιλύρα",
     "parents": [
-      "asopus",
-      "metope"
+      "metope",
+      "asopus"
     ],
     "links": [
       {
@@ -5813,8 +5772,8 @@
     },
     "greek": "Φιλύρā",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -6019,8 +5978,8 @@
     },
     "greek": "Πληϊόνη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -6056,8 +6015,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -6082,8 +6041,8 @@
     },
     "greek": "Πλουτώ",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -6193,8 +6152,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -6304,13 +6263,13 @@
     },
     "greek": "Ρόδη",
     "parents": [
-      "poseidon",
-      "oceanus",
-      "asopus",
       "aphrodite",
       "amphitrite",
       "tethys",
-      "halie-q3611629"
+      "halie-q3611629",
+      "poseidon",
+      "oceanus",
+      "asopus"
     ],
     "links": [
       {
@@ -6383,7 +6342,7 @@
       "en": "Figure of Greek mythology.",
       "fr": "Naïade."
     },
-    "greek": "Σάλμακις , Salmakis",
+    "greek": "Σάλμακις",
     "links": [
       {
         "kind": "wikipedia",
@@ -6503,7 +6462,7 @@
       "en": "Daughter of Metope and Asopus in Greek mythology.",
       "fr": "Fille de Métope et d’Asopos dans la mythologie grecque."
     },
-    "greek": "Σινώπη , Sinōpē",
+    "greek": "Σινώπη",
     "parents": [
       "metope",
       "asopus"
@@ -6879,8 +6838,8 @@
     },
     "greek": "Τελεστώ",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -7066,8 +7025,8 @@
       "fr": "Une des Océanides."
     },
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -7130,8 +7089,8 @@
     },
     "greek": "Θράκη",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -7379,11 +7338,11 @@
     },
     "greek": "Τύχη",
     "parents": [
+      "aphrodite",
+      "tethys",
       "zeus",
       "hermes",
-      "oceanus",
-      "aphrodite",
-      "tethys"
+      "oceanus"
     ],
     "links": [
       {
@@ -7420,8 +7379,8 @@
     },
     "greek": "Ξάνθη (μυθολογία)",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {
@@ -7446,8 +7405,8 @@
     },
     "greek": "Ζευξώ",
     "parents": [
-      "oceanus",
-      "tethys"
+      "tethys",
+      "oceanus"
     ],
     "links": [
       {

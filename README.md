@@ -163,9 +163,11 @@ Wikidata's data is CC0: no attribution required — each imported character link
 
 ### The catalog today
 
-**3,031 characters** — 99 curated, 2,932 from Wikidata — and **28 stories** in 7 cycles (the birth of
-the gods, Prometheus and the first humans, gods among mortals, the age of heroes, Thebes, the Trojan
-War, the Odyssey); **5,267 links**, all checked. The catalog weighs 1.6 MB, 270 kB gzipped as the
+**3,033 characters** — 146 curated, 2,887 from Wikidata — and **52 stories** in 7 cycles: the birth
+of the gods (5), Prometheus and the first humans (3), gods among mortals (7), the age of heroes (8),
+Thebes (1), **the Trojan War in full** (15, from the golden apple through the Iliad to the fall of the
+city) and **the Odyssey in full** (13, in the order it happened); 73 places on the map; **5,429
+links**, all checked. The catalog weighs about 1.7 MB, about 300 kB gzipped as the
 server sends it. English translations of the sources come from the Theoi Classical Texts Library, the
 MIT Internet Classics Archive and the University of Chicago's LacusCurtius; French ones from
 Wikisource (Leconte de Lisle, Nisard, Clavier).

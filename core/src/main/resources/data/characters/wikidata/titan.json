@@ -83,7 +83,7 @@
       "en": "Greek astrological god associated with winds.",
       "fr": "Titan de la mythologie grecque."
     },
-    "greek": "Ἀστραῖος , Astraios",
+    "greek": "Ἀστραῖος",
     "parents": [
       "eurybia-q506285",
       "kreios"
@@ -115,7 +115,7 @@
       "en": "Titan in Greek mythology, one of the twelve titans.",
       "fr": "Titan dans la mythologie grecque."
     },
-    "greek": "Κοῖος , Koios",
+    "greek": "Κοῖος",
     "parents": [
       "gaia",
       "uranus"
@@ -421,7 +421,7 @@
       "en": "Ancient Greek mythological Titan.",
       "fr": "Fils d’Eurybie et de Crios dans la mythologie grecque."
     },
-    "greek": "Πέρσης , Persēs",
+    "greek": "Πέρσης",
     "parents": [
       "eurybia-q506285",
       "kreios"
@@ -535,7 +535,7 @@
       "en": "Ancient Greek mythological figure; mother of the river gods and the Oceanids.",
       "fr": "Fille de Gaïa et d’Ouranos dans la mythologie grecque."
     },
-    "greek": "Τηθύς , Tēthȳs",
+    "greek": "Τηθύς",
     "parents": [
       "gaia",
       "uranus"

@@ -119,26 +119,351 @@
     "route": true
   },
   {
+    "id": "gathering-of-the-greeks",
+    "title": {
+      "en": "The Greeks gather",
+      "fr": "Le rassemblement des Grecs"
+    },
+    "summary": {
+      "en": "When Helen was of an age to marry, the princes of all Greece came to Sparta to court her. To keep them from tearing each other apart, Odysseus advised her father Tyndareus to make every suitor swear to defend the man she chose, should anyone ever wrong him. She chose Menelaus. So when Paris carried her off, Menelaus and his brother Agamemnon called on that oath, and the princes of Greece had to go to war.\n\nNot all went willingly. Odysseus, warned that he would come home only after twenty years, feigned madness. But Palamedes snatched the infant Telemachus from Penelope's arms and drew his sword as if to kill him; Odysseus gave himself away to save his son — and never forgave Palamedes. At Troy, years later, he had him stoned as a traitor on forged evidence.\n\nAchilles' mother, the sea goddess Thetis, knew that her son would die at Troy. She dressed him as a girl and hid him among the daughters of King Lycomedes on the island of Skyros, where he fathered Neoptolemus with the princess Deidamia. But the seer Calchas declared that Troy could not be taken without him, and Odysseus found him out: at the sound of a war trumpet, the \"girl\" reached for weapons. At last the fleet gathered at Aulis — more than a thousand ships, whose list fills a book of the Iliad.",
+      "fr": "Quand Hélène fut en âge de se marier, les princes de toute la Grèce vinrent à Sparte demander sa main. Pour éviter qu’ils ne s’entre-déchirent, Ulysse conseilla à son père Tyndare de faire jurer à chaque prétendant de défendre l’élu, si quelqu’un l’offensait un jour. Elle choisit Ménélas. Aussi, quand Pâris l’enleva, Ménélas et son frère Agamemnon rappelèrent ce serment, et les princes de Grèce durent partir en guerre.\n\nTous ne partirent pas de bon cœur. Ulysse, averti qu’il ne rentrerait qu’au bout de vingt ans, simula la folie. Mais Palamède arracha le petit Télémaque des bras de Pénélope et tira son épée comme pour le tuer ; Ulysse se trahit pour sauver son fils — et ne pardonna jamais à Palamède. Des années plus tard, devant Troie, il le fit lapider comme traître sur de fausses preuves.\n\nLa mère d’Achille, la déesse marine Thétis, savait que son fils mourrait devant Troie. Elle le déguisa en fille et le cacha parmi les filles du roi Lycomède, sur l’île de Skyros, où il eut de la princesse Déidamie un fils, Néoptolème. Mais le devin Calchas déclara que Troie ne serait pas prise sans lui, et Ulysse le démasqua : au son d’une trompette de guerre, la « jeune fille » se jeta sur les armes. La flotte se rassembla enfin à Aulis — plus de mille navires, dont la liste remplit un chant de l’Iliade."
+    },
+    "characters": [
+      "odysseus",
+      "achilles",
+      "palamedes",
+      "thetis",
+      "deidamia",
+      "menelaus",
+      "agamemnon",
+      "helen",
+      "tyndareus",
+      "calchas",
+      "telemachus",
+      "penelope"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.10.9; 3.13.8",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "3.6–3.8",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "2.484–760",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad2.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_II"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Trojan War",
+        "url": "https://en.wikipedia.org/wiki/Trojan_War"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Guerre de Troie",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_de_Troie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Trojan War",
+        "url": "https://www.worldhistory.org/Trojan_War/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Guerre de Troie",
+        "url": "https://mythologica.fr/grec/troie.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus' Madness - The Greeks Gather for War - The Trojan War Saga Ep.6 - Greek Mytholoy in Comics",
+        "url": "https://www.youtube.com/watch?v=hFHJmtC9dMU"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Quest for Achilles: The Greatest Greek Warrior of His Time - The Trojan War Saga Ep.7",
+        "url": "https://www.youtube.com/watch?v=q9jYeE5Y59M"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Grande Trahison et les Aventures d'Achille - La Saga de la Guerre de Troie Ép.6",
+        "url": "https://www.youtube.com/watch?v=78vSDrYbddw"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "related": [
+      "judgement-of-paris"
+    ],
+    "places": [
+      "ithaca",
+      "skyros",
+      "aulis"
+    ]
+  },
+  {
+    "id": "sacrifice-of-iphigenia",
+    "title": {
+      "en": "The sacrifice of Iphigenia",
+      "fr": "Le sacrifice d’Iphigénie"
+    },
+    "summary": {
+      "en": "At Aulis the wind dropped, and the fleet could not sail. The seer Calchas explained why: Artemis was angry with Agamemnon, who had killed a deer and boasted that the goddess herself could not have shot better. She would let the ships go only if the king sacrificed to her the fairest of his daughters, Iphigenia.\n\nAgamemnon gave way. He sent for the girl on the pretext of marrying her to Achilles, and she came to Aulis with her mother Clytemnestra, believing she was to be a bride. Euripides shows her at first begging for her life, then accepting to die for Greece.\n\nWhat happened at the altar depends on who tells it. For Aeschylus she was killed — and Clytemnestra would never forgive her husband. For Apollodorus and Euripides, Artemis took pity at the last moment: she put a deer in the girl's place and carried Iphigenia away to the land of the Taurians, at the far end of the Black Sea, to be her priestess. Either way, the wind rose, and the thousand ships sailed for Troy.",
+      "fr": "À Aulis, le vent tomba, et la flotte ne put partir. Le devin Calchas en révéla la cause : Artémis était irritée contre Agamemnon, qui avait tué une biche en se vantant que la déesse elle-même n’aurait pas mieux visé. Elle ne laisserait partir les navires que si le roi lui sacrifiait la plus belle de ses filles, Iphigénie.\n\nAgamemnon céda. Il fit venir la jeune fille sous prétexte de la marier à Achille, et elle vint à Aulis avec sa mère Clytemnestre, croyant aller à ses noces. Euripide la montre d’abord suppliant qu’on l’épargne, puis acceptant de mourir pour la Grèce.\n\nCe qui se passa à l’autel dépend de qui le raconte. Pour Eschyle, elle fut tuée — et Clytemnestre ne pardonna jamais à son époux. Pour Apollodore et Euripide, Artémis eut pitié au dernier instant : elle mit une biche à la place de la jeune fille et emporta Iphigénie au pays des Taures, aux confins de la mer Noire, pour en faire sa prêtresse. Quoi qu’il en soit, le vent se leva, et les mille navires firent voile vers Troie."
+    },
+    "characters": [
+      "iphigenia",
+      "agamemnon",
+      "artemis",
+      "calchas",
+      "clytemnestra",
+      "achilles"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "3.21–3.22",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Euripides",
+          "fr": "Euripide"
+        },
+        "work": {
+          "en": "Iphigenia at Aulis",
+          "fr": "Iphigénie à Aulis"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://classics.mit.edu/Euripides/iphi_aul.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Aeschylus",
+          "fr": "Eschyle"
+        },
+        "work": {
+          "en": "Agamemnon",
+          "fr": "Agamemnon"
+        },
+        "passage": "184–247",
+        "url": {
+          "en": "https://www.theoi.com/Text/AeschylusAgamemnon.html",
+          "fr": "https://fr.wikisource.org/wiki/Agamemnon_(Eschyle)"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Iphigenia",
+        "url": "https://en.wikipedia.org/wiki/Iphigenia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Iphigénie",
+        "url": "https://fr.wikipedia.org/wiki/Iphig%C3%A9nie"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Iphigénie",
+        "url": "https://mythologica.fr/grec/iphigenie.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Curse of Agamemnon: A Life for a Thousand Ships - The Sacrifice of Iphigenia - Trojan War Ep.4",
+        "url": "https://www.youtube.com/watch?v=81ydsnKaD3k"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Malédiction d'Agamemnon : Une Vie pour Mille Navires - Le Sacrifice d'Iphigénie - Ép.4",
+        "url": "https://www.youtube.com/watch?v=GKuwt7fcM7k"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "aulis"
+    ]
+  },
+  {
+    "id": "landing-at-troy",
+    "title": {
+      "en": "The landing at Troy",
+      "fr": "Le débarquement à Troie"
+    },
+    "summary": {
+      "en": "On the way, at the island of Tenedos, the archer Philoctetes — who had inherited the bow of Heracles — was bitten by a water snake while the Greeks sacrificed. The wound festered and stank so badly, and he cried out so loudly, that on Agamemnon's orders Odysseus put him ashore alone on the island of Lemnos, with his bow. He lived there for ten years, shooting birds to eat.\n\nBefore fighting, the Greeks sent Odysseus and Menelaus to Troy to demand Helen and the treasures taken with her. The Trojans refused, and would have killed the envoys had not the wise Antenor protected them.\n\nAn oracle had said that the first Greek to set foot on Trojan soil would be the first to die. Protesilaus leapt ashore all the same, killed many Trojans, and fell by Hector's hand. Then Achilles killed Cycnus, a son of Poseidon, and the Trojans shut themselves up behind their walls. For nine years the Greeks besieged the city and plundered the towns around it — and in one of those raids Achilles won the captive Briseis.",
+      "fr": "En chemin, sur l’île de Ténédos, l’archer Philoctète — héritier de l’arc d’Héraclès — fut mordu par un serpent d’eau pendant que les Grecs sacrifiaient. La plaie s’infecta et sentait si mauvais, et il criait si fort, que sur l’ordre d’Agamemnon Ulysse le déposa seul sur l’île de Lemnos, avec son arc. Il y vécut dix ans, tirant les oiseaux pour se nourrir.\n\nAvant de combattre, les Grecs envoyèrent Ulysse et Ménélas à Troie réclamer Hélène et les trésors emportés avec elle. Les Troyens refusèrent, et auraient tué les ambassadeurs si le sage Anténor ne les avait protégés.\n\nUn oracle avait annoncé que le premier Grec à fouler le sol troyen serait le premier à mourir. Protésilas sauta pourtant à terre, tua bien des Troyens et tomba sous les coups d’Hector. Puis Achille tua Cycnos, un fils de Poséidon, et les Troyens s’enfermèrent derrière leurs murailles. Pendant neuf ans, les Grecs assiégèrent la ville et pillèrent les cités alentour — et lors de l’un de ces raids, Achille reçut pour captive Briséis."
+    },
+    "characters": [
+      "protesilaus",
+      "philoctetes",
+      "hector",
+      "odysseus",
+      "menelaus",
+      "achilles",
+      "agamemnon",
+      "briseis"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "3.26–3.33",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "2.695–725",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad2.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_II"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Protesilaus",
+        "url": "https://en.wikipedia.org/wiki/Protesilaus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Protésilas",
+        "url": "https://fr.wikipedia.org/wiki/Prot%C3%A9silas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Philoctetes",
+        "url": "https://en.wikipedia.org/wiki/Philoctetes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Philoctète",
+        "url": "https://fr.wikipedia.org/wiki/Philoct%C3%A8te"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The First Battle of the Trojan War - The Trojan War Saga Ep.5",
+        "url": "https://www.youtube.com/watch?v=Yk5kxAzi_T0"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Première Bataille de la Guerre de Troie - La Saga de la Guerre de Troie Ép.5",
+        "url": "https://www.youtube.com/watch?v=PHbWHMAG1Sw"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "aulis",
+      "tenedos",
+      "lemnos",
+      "troy"
+    ]
+  },
+  {
     "id": "wrath-of-achilles",
     "title": {
       "en": "The wrath of Achilles",
       "fr": "La colère d’Achille"
     },
     "summary": {
-      "en": "In the tenth year of the siege of Troy, Apollo sent a plague on the Greek camp because Agamemnon had refused to return the daughter of his priest Chryses. Forced to give her back, Agamemnon took in her place Briseis, the captive who had been given to Achilles. Insulted, Achilles withdrew to his tent with his Myrmidons and refused to fight, and his mother Thetis persuaded Zeus to give victory to the Trojans until the Greeks paid Achilles due honour.\n\nLed by Hector, the Trojans drove the Greeks back to their ships and began to set them on fire. Achilles still refused, but let his dearest friend Patroclus fight in his armour. Patroclus drove the Trojans back to the walls of Troy, but there Apollo struck him, and Hector killed him and stripped him of Achilles' armour.\n\nMad with grief, Achilles was reconciled with Agamemnon and returned to battle in new armour forged by Hephaestus. He slaughtered the Trojans and faced Hector before the walls; three times he chased him around the city before killing him, then dragged his body behind his chariot. One night old King Priam, guided by Hermes, came alone to Achilles' tent, kissed the hands that had killed his son and begged for his body. Thinking of his own father, Achilles wept with him and gave the body back. The Iliad ends with Hector's funeral.",
-      "fr": "Dans la dixième année du siège de Troie, Apollon envoya la peste sur le camp grec, parce qu’Agamemnon refusait de rendre la fille de son prêtre Chrysès. Contraint de la rendre, Agamemnon prit à sa place Briséis, la captive qui avait été donnée à Achille. Outragé, Achille se retira sous sa tente avec ses Myrmidons et refusa de combattre, et sa mère Thétis obtint de Zeus qu’il donne la victoire aux Troyens jusqu’à ce que les Grecs rendent à Achille l’honneur qui lui était dû.\n\nMenés par Hector, les Troyens repoussèrent les Grecs jusqu’à leurs navires et commencèrent à les incendier. Achille refusait toujours, mais laissa son ami le plus cher, Patrocle, combattre revêtu de ses armes. Patrocle repoussa les Troyens jusqu’aux murs de Troie, mais là, Apollon le frappa, et Hector le tua et le dépouilla des armes d’Achille.\n\nFou de douleur, Achille se réconcilia avec Agamemnon et retourna au combat avec de nouvelles armes forgées par Héphaïstos. Il massacra les Troyens et affronta Hector devant les remparts ; il le poursuivit trois fois autour de la ville avant de le tuer, puis traîna son corps derrière son char. Une nuit, le vieux roi Priam, guidé par Hermès, vint seul sous la tente d’Achille, baisa les mains qui avaient tué son fils et lui demanda son corps. Pensant à son propre père, Achille pleura avec lui et rendit le corps. L’Iliade s’achève sur les funérailles d’Hector."
+      "en": "In the tenth year of the siege, Chryses, a priest of Apollo, came to the Greek camp to ransom his daughter Chryseis, Agamemnon's captive. Agamemnon drove him off with insults. The priest prayed to his god, and for nine days Apollo's arrows rained plague on the camp. When the seer Calchas named the cause, Agamemnon agreed to give the girl back — but took in her place Briseis, the captive of Achilles.\n\nAchilles was on the point of drawing his sword on the king when Athena, seen by him alone, held him back by his hair. Instead he swore that the Greeks would soon miss him, withdrew to his tent with his Myrmidons and refused to fight. His mother Thetis went up to Olympus and begged Zeus to give the Trojans victory until the Greeks paid her son the honour due to him; Zeus bowed his head, and Olympus shook.\n\nThe Trojans, led by Hector, pressed the Greeks back to their ships. Agamemnon sent Odysseus, Ajax and old Phoenix to Achilles with Briseis and countless gifts. Achilles received them as friends but would not yield: he hated, he said, like the gates of Hades the man who hides one thing in his heart and says another. His mother had told him he had two fates — a long life without glory at home, or a short one and undying fame at Troy.",
+      "fr": "Dans la dixième année du siège, Chrysès, prêtre d’Apollon, vint au camp grec racheter sa fille Chryséis, captive d’Agamemnon. Agamemnon le chassa avec des injures. Le prêtre pria son dieu, et neuf jours durant les flèches d’Apollon firent pleuvoir la peste sur le camp. Quand le devin Calchas en nomma la cause, Agamemnon accepta de rendre la jeune fille — mais prit à sa place Briséis, la captive d’Achille.\n\nAchille allait tirer l’épée contre le roi quand Athéna, visible de lui seul, le retint par les cheveux. Il jura plutôt que les Grecs le regretteraient bientôt, se retira sous sa tente avec ses Myrmidons et refusa de combattre. Sa mère Thétis monta sur l’Olympe supplier Zeus de donner la victoire aux Troyens jusqu’à ce que les Grecs rendent à son fils l’honneur qui lui était dû ; Zeus inclina la tête, et l’Olympe trembla.\n\nLes Troyens, menés par Hector, repoussèrent les Grecs jusqu’à leurs navires. Agamemnon envoya Ulysse, Ajax et le vieux Phénix porter à Achille Briséis et des présents sans nombre. Achille les reçut en amis mais ne céda pas : il haïssait, dit-il, comme les portes d’Hadès l’homme qui cache une chose dans son cœur et en dit une autre. Sa mère lui avait révélé ses deux destins — une longue vie sans gloire dans sa patrie, ou une vie brève et une gloire impérissable devant Troie."
     },
     "characters": [
       "achilles",
       "agamemnon",
-      "hector",
-      "patroclus",
-      "priam",
-      "thetis",
+      "chryses",
       "apollo",
+      "briseis",
+      "athena",
+      "thetis",
       "zeus",
-      "hephaestus",
-      "hermes"
+      "odysseus",
+      "ajax",
+      "calchas"
     ],
     "sources": [
       {
@@ -150,7 +475,7 @@
           "en": "Iliad",
           "fr": "Iliade"
         },
-        "passage": "Books 1, 16, 18–24 / Chants I, XVI, XVIII–XXIV",
+        "passage": "Books 1 and 9 / Chants I et IX",
         "url": {
           "en": "https://www.theoi.com/Text/HomerIliad1.html",
           "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_I"
@@ -165,10 +490,10 @@
           "en": "Iliad",
           "fr": "Iliade"
         },
-        "passage": "22.131–404",
+        "passage": "9.225–429",
         "url": {
-          "en": "https://www.theoi.com/Text/HomerIliad22.html",
-          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XXII"
+          "en": "https://www.theoi.com/Text/HomerIliad9.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_IX"
         }
       }
     ],
@@ -206,6 +531,12 @@
       {
         "kind": "video",
         "lang": "en",
+        "title": "See U in History / Mythology — The Wrath of Achilles - The Fight between Agamemnon and the Great Warrior - The Trojan War Saga Ep16",
+        "url": "https://www.youtube.com/watch?v=_fF-hUJtREQ"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
         "title": "TED-Ed — Greek mythology’s greatest warrior - Iseult Gillespie",
         "url": "https://www.youtube.com/watch?v=YYZCpJmHAqI"
       },
@@ -222,12 +553,803 @@
         "url": "https://www.youtube.com/watch?v=QsHrl5lIQS4"
       }
     ],
+    "era": "trojan-war",
+    "generation": 0,
     "related": [
       "judgement-of-paris"
+    ],
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "death-of-patroclus",
+    "title": {
+      "en": "The death of Patroclus",
+      "fr": "La mort de Patrocle"
+    },
+    "summary": {
+      "en": "One after another the Greek leaders were wounded — Agamemnon, Diomedes, Odysseus. Hector broke through the wall the Greeks had built around their camp and set fire to the first of their ships. Patroclus, Achilles' dearest friend, came to him in tears and begged: if Achilles would not fight, let him at least lend him his armour, so that the Trojans, taking him for Achilles, might fall back.\n\nAchilles agreed, but warned him to come back as soon as he had driven the enemy from the ships. Wearing Achilles' armour, at the head of the Myrmidons, Patroclus put the Trojans to flight and killed Sarpedon, a son of Zeus, whom his father mourned with tears of blood. Carried away, he forgot the warning and pursued the Trojans to the very walls of the city. Three times he climbed the wall, and three times Apollo thrust him back.\n\nThen the god struck him from behind and knocked off his helmet; a young Trojan, Euphorbus, wounded him with his spear, and Hector finished him off. Dying, Patroclus foretold Hector's own death. Hector stripped Achilles' armour from the body, and the Greeks barely saved the corpse. When Antilochus brought the news, Achilles poured ashes on his head and wailed so terribly that Thetis heard him from the depths of the sea. He knew his own death would follow Hector's, but he chose vengeance; Hephaestus forged him new armour, and a shield on which the whole world was wrought.",
+      "fr": "L’un après l’autre, les chefs grecs furent blessés — Agamemnon, Diomède, Ulysse. Hector enfonça le mur que les Grecs avaient élevé autour de leur camp et mit le feu au premier de leurs navires. Patrocle, l’ami le plus cher d’Achille, vint à lui en pleurant et le supplia : s’il refusait de combattre, qu’il lui prête au moins ses armes, afin que les Troyens, le prenant pour Achille, reculent.\n\nAchille accepta, mais lui recommanda de revenir dès qu’il aurait repoussé l’ennemi loin des navires. Revêtu des armes d’Achille, à la tête des Myrmidons, Patrocle mit les Troyens en fuite et tua Sarpédon, un fils de Zeus, que son père pleura en larmes de sang. Emporté par son élan, il oublia l’avertissement et poursuivit les Troyens jusqu’aux murailles mêmes de la ville. Trois fois il escalada le rempart, et trois fois Apollon le repoussa.\n\nAlors le dieu le frappa par-derrière et fit tomber son casque ; un jeune Troyen, Euphorbe, le blessa de sa lance, et Hector l’acheva. En mourant, Patrocle prédit la mort d’Hector. Hector dépouilla le corps des armes d’Achille, et les Grecs sauvèrent à grand-peine la dépouille. Quand Antiloque lui apporta la nouvelle, Achille se couvrit la tête de cendre et poussa une plainte si terrible que Thétis l’entendit du fond de la mer. Il savait que sa propre mort suivrait celle d’Hector, mais il choisit la vengeance ; Héphaïstos lui forgea de nouvelles armes, et un bouclier où tout l’univers était figuré."
+    },
+    "characters": [
+      "patroclus",
+      "achilles",
+      "hector",
+      "apollo",
+      "euphorbus",
+      "antilochus",
+      "thetis",
+      "hephaestus",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "Books 11–18 / Chants XI–XVIII",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad16.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XVI"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "18.1–147; 18.478–608",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad18.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XVIII"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Patroclus",
+        "url": "https://en.wikipedia.org/wiki/Patroclus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Patrocle",
+        "url": "https://fr.wikipedia.org/wiki/Patrocle"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Patroclus",
+        "url": "https://www.worldhistory.org/Patroclus/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Patrocle",
+        "url": "https://mythologica.fr/grec/patrocle.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Achilles Cries for Revenge - The Trojan War Saga Ep.10",
+        "url": "https://www.youtube.com/watch?v=uOhNrU-7y5w"
+      }
     ],
     "era": "trojan-war",
     "generation": 0,
     "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "death-of-hector",
+    "title": {
+      "en": "The death of Hector",
+      "fr": "La mort d’Hector"
+    },
+    "summary": {
+      "en": "Achilles made his peace with Agamemnon, who gave Briseis back, and returned to battle. Even his horse Xanthus, given a voice for a moment by Hera, warned him that his death was near. He slaughtered the Trojans so furiously that the river Scamander, choked with their bodies, rose against him and nearly drowned him, until Hephaestus drove the river back with fire.\n\nThe Trojans fled into the city. Only Hector stayed outside the Scaean Gate, deaf to the pleas of his father Priam and his mother Hecuba on the walls. But when Achilles came at him, gleaming in his new armour, Hector's courage broke and he fled. Three times they ran around the walls of Troy. Zeus weighed their fates in his golden scales, and Hector's sank toward Hades.\n\nAthena, disguised as his brother Deiphobus, persuaded Hector to stand and fight, then vanished. Abandoned, Hector asked at least that the victor give his body back to his people; Achilles refused, and drove his spear into his throat. Dying, Hector foretold that Paris and Apollo would kill Achilles at the Scaean Gate. Achilles pierced his ankles, tied him to his chariot and dragged the body in the dust before the city, while Andromache, Hector's wife, fainted on the ramparts.",
+      "fr": "Achille se réconcilia avec Agamemnon, qui lui rendit Briséis, et retourna au combat. Même son cheval Xanthe, doué un instant de la parole par Héra, l’avertit que sa mort était proche. Il massacra les Troyens avec tant de fureur que le fleuve Scamandre, engorgé de leurs corps, se dressa contre lui et faillit le noyer, jusqu’à ce qu’Héphaïstos repousse le fleuve par le feu.\n\nLes Troyens s’enfuirent dans la ville. Seul Hector resta dehors, devant la porte Scée, sourd aux supplications de son père Priam et de sa mère Hécube sur les remparts. Mais quand Achille s’avança, étincelant dans ses armes neuves, le courage d’Hector se brisa et il s’enfuit. Trois fois ils coururent autour des murs de Troie. Zeus pesa leurs destins dans sa balance d’or, et celui d’Hector pencha vers l’Hadès.\n\nAthéna, sous les traits de son frère Déiphobe, persuada Hector de s’arrêter pour combattre, puis disparut. Abandonné, Hector demanda au moins que le vainqueur rende son corps aux siens ; Achille refusa, et lui plongea sa lance dans la gorge. En mourant, Hector prédit que Pâris et Apollon tueraient Achille à la porte Scée. Achille lui perça les chevilles, l’attacha à son char et traîna le corps dans la poussière devant la ville, tandis qu’Andromaque, l’épouse d’Hector, s’évanouissait sur les remparts."
+    },
+    "characters": [
+      "hector",
+      "achilles",
+      "athena",
+      "priam",
+      "hecuba",
+      "andromache",
+      "zeus",
+      "agamemnon",
+      "briseis",
+      "hephaestus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "Books 19–22 / Chants XIX–XXII",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad22.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XXII"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "19.40–424",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad19.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XIX"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hector",
+        "url": "https://en.wikipedia.org/wiki/Hector"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hector",
+        "url": "https://fr.wikipedia.org/wiki/Hector"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Hector",
+        "url": "https://mythologica.fr/grec/hector.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Great Duel between Achilles and Hector  - The Trojan War Saga Ep 26 - See U in History",
+        "url": "https://www.youtube.com/watch?v=2amey2dmbog"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le grand duel entre Achille et Hector - La Saga de la Guerre de Troie - #26 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=Nf_G0bNs5Tw"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "priam-and-achilles",
+    "title": {
+      "en": "Priam and Achilles",
+      "fr": "Priam et Achille"
+    },
+    "summary": {
+      "en": "Achilles buried Patroclus with great funeral games, but his grief did not ease. Day after day, at dawn, he dragged Hector's body around his friend's tomb — though Apollo kept it from all harm. On the twelfth day the gods could bear it no longer. Zeus sent Thetis to tell her son to accept a ransom, and the messenger Iris to tell Priam to go and offer it.\n\nThe old king loaded a wagon with treasures and set out by night with a single herald. Hermes, disguised as a young Myrmidon, guided him unseen through the Greek camp to Achilles' tent. Priam went in, clasped Achilles' knees and kissed the terrible hands that had killed so many of his sons. \"Think of your own father,\" he said. \"I have endured what no man on earth has ever endured: to put to my lips the hand of the man who killed my son.\"\n\nAchilles wept, remembering his old father Peleus, whom he would never see again, and Priam wept for Hector. Then Achilles raised him up, gave back the body, and granted a truce for the funeral. In Troy, Andromache, Hecuba and Helen in turn lamented Hector over his body. So ends the Iliad: \"Such were the funeral rites of Hector, tamer of horses.\"",
+      "fr": "Achille ensevelit Patrocle avec de grands jeux funèbres, mais sa douleur ne s’apaisait pas. Jour après jour, à l’aube, il traînait le corps d’Hector autour du tombeau de son ami — mais Apollon le gardait de toute atteinte. Le douzième jour, les dieux ne purent le supporter davantage. Zeus envoya Thétis dire à son fils d’accepter une rançon, et la messagère Iris dire à Priam d’aller la lui offrir.\n\nLe vieux roi chargea un chariot de trésors et partit de nuit avec un seul héraut. Hermès, sous les traits d’un jeune Myrmidon, le guida invisible à travers le camp grec jusqu’à la tente d’Achille. Priam entra, embrassa les genoux d’Achille et baisa les mains terribles qui avaient tué tant de ses fils. « Souviens-toi de ton père, dit-il. J’ai enduré ce qu’aucun homme sur terre n’a jamais enduré : porter à mes lèvres la main de l’homme qui a tué mon fils. »\n\nAchille pleura, songeant à son vieux père Pélée, qu’il ne reverrait jamais, et Priam pleura Hector. Puis Achille le releva, rendit le corps et accorda une trêve pour les funérailles. À Troie, Andromaque, Hécube et Hélène pleurèrent tour à tour Hector sur sa dépouille. Ainsi s’achève l’Iliade : « Telles furent les funérailles d’Hector, dompteur de chevaux. »"
+    },
+    "characters": [
+      "priam",
+      "achilles",
+      "hermes",
+      "hector",
+      "zeus",
+      "thetis",
+      "andromache",
+      "hecuba",
+      "helen",
+      "patroclus",
+      "apollo"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Iliad",
+          "fr": "Iliade"
+        },
+        "passage": "Books 23–24 / Chants XXIII–XXIV",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerIliad24.html",
+          "fr": "https://fr.wikisource.org/wiki/Iliade/Rhapsodie_XXIV"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Priam",
+        "url": "https://en.wikipedia.org/wiki/Priam"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Priam",
+        "url": "https://fr.wikipedia.org/wiki/Priam"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Andromache",
+        "url": "https://www.worldhistory.org/Andromache/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Priam",
+        "url": "https://mythologica.fr/grec/priam.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Priam goes to Achilles' tent - The Trojan War Saga Ep 27 - See U in History",
+        "url": "https://www.youtube.com/watch?v=GF9v8hggz5Q"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Roi Fait Irruption Dans la Tente d'Achille  - La Saga de la Guerre de Troie - #27",
+        "url": "https://www.youtube.com/watch?v=OP1OnbP5i3U"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "penthesilea",
+    "title": {
+      "en": "Penthesilea, queen of the Amazons",
+      "fr": "Penthésilée, reine des Amazones"
+    },
+    "summary": {
+      "en": "After Hector's death, help came to Troy from the ends of the world. First came Penthesilea, queen of the Amazons and daughter of Ares, with twelve warrior women. She had accidentally killed her sister Hippolyta while hunting, and King Priam had purified her of the blood; she came to repay him, and to seek glory.\n\nOn the battlefield she drove the Greeks back to their ships and killed many heroes. Then Achilles and Ajax came against her. Achilles pierced her with his spear and tore off her helmet — and, seeing her face, the conqueror fell in love with the woman he had just killed.\n\nThersites, the ugliest and most insolent of the Greeks, mocked Achilles for his grief. Achilles struck him dead with a single blow. The Greeks gave the queen's body back to the Trojans, who buried her with honour beside the tomb of Laomedon.",
+      "fr": "Après la mort d’Hector, des secours vinrent à Troie des confins du monde. Il vint d’abord Penthésilée, reine des Amazones et fille d’Arès, avec douze guerrières. Elle avait tué par mégarde sa sœur Hippolyte à la chasse, et le roi Priam l’avait purifiée de ce sang ; elle venait s’acquitter envers lui, et chercher la gloire.\n\nSur le champ de bataille, elle repoussa les Grecs jusqu’à leurs navires et tua bien des héros. Puis Achille et Ajax marchèrent contre elle. Achille la transperça de sa lance et lui arracha son casque — et, voyant son visage, le vainqueur s’éprit de la femme qu’il venait de tuer.\n\nThersite, le plus laid et le plus insolent des Grecs, se moqua du chagrin d’Achille. Achille l’abattit d’un seul coup. Les Grecs rendirent le corps de la reine aux Troyens, qui l’ensevelirent avec honneur près du tombeau de Laomédon."
+    },
+    "characters": [
+      "penthesilea",
+      "achilles",
+      "ares",
+      "thersites",
+      "ajax",
+      "priam",
+      "hippolyta"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.1–5.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Quintus of Smyrna",
+          "fr": "Quintus de Smyrne"
+        },
+        "work": {
+          "en": "The Fall of Troy",
+          "fr": "La Suite d’Homère"
+        },
+        "passage": "Book 1 / Livre I",
+        "url": {
+          "en": "https://www.theoi.com/Text/QuintusSmyrnaeus1.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Penthesilea",
+        "url": "https://en.wikipedia.org/wiki/Penthesilea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Penthésilée",
+        "url": "https://fr.wikipedia.org/wiki/Penth%C3%A9sil%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Penthésilée",
+        "url": "https://mythologica.fr/grec/penthesilee.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Arrival of the Amazons (Penthesilea) - The Trojan War Saga Ep 28 - See U in History",
+        "url": "https://www.youtube.com/watch?v=ktsn53h463g"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "memnon",
+    "title": {
+      "en": "Memnon, son of the Dawn",
+      "fr": "Memnon, fils de l’Aurore"
+    },
+    "summary": {
+      "en": "Next came Memnon, king of the Ethiopians, son of Tithonus and of Eos, the Dawn, at the head of a great army, wearing armour forged by Hephaestus. He killed many Greeks, among them young Antilochus, the son of old Nestor, who had thrown himself in front of his father to save him.\n\nTo avenge his friend, Achilles faced Memnon. Both were sons of goddesses, both wore divine armour; their mothers watched from Olympus, and Zeus weighed their fates. Memnon's sank, and Achilles killed him.\n\nEos obtained from Zeus that her son should become immortal. Later poets added that, in her grief, the Dawn weeps for him still every morning — and her tears are the dew.",
+      "fr": "Puis vint Memnon, roi des Éthiopiens, fils de Tithon et d’Éos, l’Aurore, à la tête d’une grande armée, revêtu d’armes forgées par Héphaïstos. Il tua bien des Grecs, dont le jeune Antiloque, le fils du vieux Nestor, qui s’était jeté devant son père pour le sauver.\n\nPour venger son ami, Achille affronta Memnon. Tous deux étaient fils de déesses, tous deux portaient des armes divines ; leurs mères regardaient depuis l’Olympe, et Zeus pesa leurs destins. Celui de Memnon pencha, et Achille le tua.\n\nÉos obtint de Zeus que son fils devienne immortel. Des poètes plus tardifs ajoutèrent que, dans sa douleur, l’Aurore le pleure encore chaque matin — et que ses larmes sont la rosée."
+    },
+    "characters": [
+      "memnon",
+      "achilles",
+      "eos",
+      "antilochus",
+      "nestor",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.3",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Quintus of Smyrna",
+          "fr": "Quintus de Smyrne"
+        },
+        "work": {
+          "en": "The Fall of Troy",
+          "fr": "La Suite d’Homère"
+        },
+        "passage": "Book 2 / Livre II",
+        "url": {
+          "en": "https://www.theoi.com/Text/QuintusSmyrnaeus2.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Memnon",
+        "url": "https://en.wikipedia.org/wiki/Memnon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Memnon (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Memnon_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Memnon",
+        "url": "https://mythologica.fr/grec/memnon.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Achilles Faces the African Prince (Memnon) - The Trojan War Saga Ep 29 - See U in History",
+        "url": "https://www.youtube.com/watch?v=gWHwkewoWKQ"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "death-of-achilles",
+    "title": {
+      "en": "The death of Achilles",
+      "fr": "La mort d’Achille"
+    },
+    "summary": {
+      "en": "Achilles drove the fleeing Trojans back to their city. But at the Scaean Gate, as Hector had foretold, Paris shot an arrow that Apollo guided, and it struck Achilles in the ankle. The greatest of the Greeks fell. Later Latin poets explained why the ankle: as a baby his mother had dipped him in the river Styx to make him invulnerable, holding him by the heel, which the water never touched.\n\nA terrible battle raged around his body. Ajax carried it off on his shoulders while Odysseus held off the Trojans. Thetis came up from the sea with the Nereids to mourn her son; the nine Muses sang his dirge, and for seventeen days gods and men wept for him.\n\nThen his body was burned on a great pyre. His bones were laid in a golden urn, mixed with those of Patroclus, as the two friends had wished, and a great mound was raised over them on a headland above the Hellespont, to be seen from far out at sea.",
+      "fr": "Achille repoussa les Troyens en fuite jusqu’à leur ville. Mais à la porte Scée, comme Hector l’avait prédit, Pâris tira une flèche que guida Apollon, et elle atteignit Achille à la cheville. Le plus grand des Grecs tomba. Des poètes latins plus tardifs expliquèrent pourquoi la cheville : enfant, sa mère l’avait plongé dans le Styx pour le rendre invulnérable, en le tenant par le talon, que l’eau ne toucha pas.\n\nUne terrible bataille fit rage autour de son corps. Ajax l’emporta sur ses épaules tandis qu’Ulysse contenait les Troyens. Thétis sortit de la mer avec les Néréides pour pleurer son fils ; les neuf Muses chantèrent sa plainte funèbre, et dix-sept jours durant dieux et hommes le pleurèrent.\n\nPuis son corps fut brûlé sur un grand bûcher. Ses os furent déposés dans une urne d’or, mêlés à ceux de Patrocle, comme les deux amis l’avaient souhaité, et l’on éleva sur eux un grand tertre, sur un promontoire dominant l’Hellespont, visible de loin en mer."
+    },
+    "characters": [
+      "achilles",
+      "paris",
+      "apollo",
+      "ajax",
+      "odysseus",
+      "thetis",
+      "patroclus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.3–5.5",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "24.36–94",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey24.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/24"
+        }
+      },
+      {
+        "author": {
+          "en": "Quintus of Smyrna",
+          "fr": "Quintus de Smyrne"
+        },
+        "work": {
+          "en": "The Fall of Troy",
+          "fr": "La Suite d’Homère"
+        },
+        "passage": "Book 3 / Livre III",
+        "url": {
+          "en": "https://www.theoi.com/Text/QuintusSmyrnaeus3.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Achilles' heel",
+        "url": "https://en.wikipedia.org/wiki/Achilles'_heel"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Talon d'Achille",
+        "url": "https://fr.wikipedia.org/wiki/Talon_d'Achille"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Achilles",
+        "url": "https://en.wikipedia.org/wiki/Achilles"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Achille",
+        "url": "https://fr.wikipedia.org/wiki/Achille"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Achille",
+        "url": "https://mythologica.fr/grec/achille.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Achilles' heel - The Hero's Fall - The Trojan War Saga Ep 30 - See U in History",
+        "url": "https://www.youtube.com/watch?v=R6zaIFXXQGs"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Talon d'Achille - La Chute du Héros - La Saga de la Guerre de Troie - #30 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=LEfZhqz6hC0"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "arms-of-achilles",
+    "title": {
+      "en": "The arms of Achilles and the madness of Ajax",
+      "fr": "Les armes d’Achille et la folie d’Ajax"
+    },
+    "summary": {
+      "en": "The divine armour of Achilles was to go to the bravest of the Greeks. Two heroes claimed it: Ajax, who had carried the body out of the battle, and Odysseus, who had covered his retreat. The judges — Trojan captives, some say, or the Greek leaders under Athena's eye — awarded it to Odysseus, the more eloquent of the two.\n\nAjax could not bear the humiliation. That night he set out, sword in hand, to kill Agamemnon, Menelaus and Odysseus. But Athena clouded his mind: he fell upon the army's flocks and their herdsmen, slaughtering them and dragging some back to his tent, believing he was torturing the Greek leaders.\n\nAt dawn he came to his senses among the carcasses. Overwhelmed with shame, he went to the seashore, planted in the ground the sword Hector had once given him, and threw himself upon it. Agamemnon wanted to leave his body unburied; Odysseus, his rival, persuaded him to give him a burial. In the underworld, years later, the shade of Ajax would still turn away from Odysseus without a word.",
+      "fr": "Les armes divines d’Achille devaient revenir au plus brave des Grecs. Deux héros les réclamèrent : Ajax, qui avait emporté le corps hors du combat, et Ulysse, qui avait couvert sa retraite. Les juges — des captifs troyens, disent les uns, ou les chefs grecs sous le regard d’Athéna — les attribuèrent à Ulysse, le plus éloquent des deux.\n\nAjax ne put supporter l’humiliation. Cette nuit-là, il sortit l’épée à la main pour tuer Agamemnon, Ménélas et Ulysse. Mais Athéna égara son esprit : il se jeta sur les troupeaux de l’armée et leurs bouviers, les massacra et en traîna une partie dans sa tente, croyant torturer les chefs grecs.\n\nÀ l’aube, il reprit ses esprits au milieu des carcasses. Accablé de honte, il gagna le rivage, planta en terre l’épée qu’Hector lui avait jadis donnée et se jeta dessus. Agamemnon voulait laisser son corps sans sépulture ; Ulysse, son rival, le persuada de l’ensevelir. Aux Enfers, des années plus tard, l’ombre d’Ajax se détournerait encore d’Ulysse sans un mot."
+    },
+    "characters": [
+      "ajax",
+      "odysseus",
+      "athena",
+      "achilles",
+      "agamemnon",
+      "menelaus",
+      "hector"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.6–5.7",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Sophocles",
+          "fr": "Sophocle"
+        },
+        "work": {
+          "en": "Ajax",
+          "fr": "Ajax"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://classics.mit.edu/Sophocles/ajax.html",
+          "fr": "https://fr.wikisource.org/wiki/Trag%C3%A9dies_de_Sophocle_(Artaud)/Ajax"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "11.543–567",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey11.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/11"
+        }
+      },
+      {
+        "author": {
+          "en": "Quintus of Smyrna",
+          "fr": "Quintus de Smyrne"
+        },
+        "work": {
+          "en": "The Fall of Troy",
+          "fr": "La Suite d’Homère"
+        },
+        "passage": "Book 5 / Livre V",
+        "url": {
+          "en": "https://www.theoi.com/Text/QuintusSmyrnaeus5.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ajax (play)",
+        "url": "https://en.wikipedia.org/wiki/Ajax_(play)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ajax (Sophocle)",
+        "url": "https://fr.wikipedia.org/wiki/Ajax_(Sophocle)"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Madness of Ajax - The Trojan War Saga Ep 31 - Greek Mythology - See U in History",
+        "url": "https://www.youtube.com/watch?v=k-op6pa4u8Q"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Folie d'Ajax - La Saga de la Guerre de Troie - #31 - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=yIl4tZ3zA7A"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "related": [
+      "descent-to-the-dead"
+    ],
+    "places": [
+      "troy"
+    ]
+  },
+  {
+    "id": "oracles-of-troy",
+    "title": {
+      "en": "Philoctetes and the oracles of Troy",
+      "fr": "Philoctète et les oracles de Troie"
+    },
+    "summary": {
+      "en": "In the tenth year, Troy still stood. The seer Calchas declared that it could not be taken without the bow of Heracles — the bow that Philoctetes had kept on Lemnos all those years. Odysseus and Diomedes (Neoptolemus, in Sophocles' play) sailed to Lemnos and, by trickery and persuasion, brought the bitter archer back to Troy. There the healer Podalirius cured his wound, and Philoctetes shot Paris with an arrow of Heracles.\n\nThen Odysseus captured the Trojan seer Helenus, a son of Priam, who revealed the oracles that protected his city: Troy would not fall until the bones of Pelops were brought to it, until Achilles' son fought among the Greeks, and until the Palladium — the ancient wooden statue of Athena that had fallen from heaven — was taken from its temple.\n\nThe bones were brought. Odysseus and Phoenix went to Skyros and persuaded King Lycomedes to let young Neoptolemus go; the son of Achilles proved as terrible as his father. Last of all, Odysseus slipped into Troy by night disguised as a beggar. Helen recognized him and said nothing; with Diomedes he carried off the Palladium. Nothing protected Troy any longer.",
+      "fr": "Dans la dixième année, Troie tenait toujours. Le devin Calchas déclara qu’elle ne serait pas prise sans l’arc d’Héraclès — l’arc que Philoctète gardait à Lemnos depuis tant d’années. Ulysse et Diomède (Néoptolème, dans la pièce de Sophocle) firent voile vers Lemnos et, par la ruse et la persuasion, ramenèrent devant Troie l’archer plein d’amertume. Là, le médecin Podalire guérit sa blessure, et Philoctète tua Pâris d’une flèche d’Héraclès.\n\nPuis Ulysse captura le devin troyen Hélénos, un fils de Priam, qui révéla les oracles protégeant sa ville : Troie ne tomberait pas tant qu’on n’y aurait pas apporté les os de Pélops, que le fils d’Achille ne combattrait pas parmi les Grecs, et que le Palladion — l’antique statue de bois d’Athéna tombée du ciel — ne serait pas enlevé de son temple.\n\nOn apporta les os. Ulysse et Phénix allèrent à Skyros persuader le roi Lycomède de laisser partir le jeune Néoptolème ; le fils d’Achille se montra aussi terrible que son père. Enfin, Ulysse se glissa de nuit dans Troie déguisé en mendiant. Hélène le reconnut et se tut ; avec Diomède, il emporta le Palladion. Plus rien ne protégeait Troie."
+    },
+    "characters": [
+      "philoctetes",
+      "odysseus",
+      "diomedes",
+      "neoptolemus",
+      "helenus",
+      "paris",
+      "helen",
+      "calchas",
+      "athena",
+      "heracles"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.8–5.13",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Sophocles",
+          "fr": "Sophocle"
+        },
+        "work": {
+          "en": "Philoctetes",
+          "fr": "Philoctète"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://classics.mit.edu/Sophocles/philoct.html",
+          "fr": "https://fr.wikisource.org/wiki/Philoct%C3%A8te_(Sophocle)"
+        }
+      },
+      {
+        "author": {
+          "en": "Quintus of Smyrna",
+          "fr": "Quintus de Smyrne"
+        },
+        "work": {
+          "en": "The Fall of Troy",
+          "fr": "La Suite d’Homère"
+        },
+        "passage": "Books 9–10 / Livres IX–X",
+        "url": {
+          "en": "https://www.theoi.com/Text/QuintusSmyrnaeus10.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Philoctetes",
+        "url": "https://en.wikipedia.org/wiki/Philoctetes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Philoctète",
+        "url": "https://fr.wikipedia.org/wiki/Philoct%C3%A8te"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Palladium (classical antiquity)",
+        "url": "https://en.wikipedia.org/wiki/Palladium_(classical_antiquity)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Palladium (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Palladium_(mythologie)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Philoctetes",
+        "url": "https://www.worldhistory.org/Philoctetes/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Philoctète",
+        "url": "https://mythologica.fr/grec/philoctete.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Son of Achilles Goes to Troy (Neoptolemus/Pyrrhus) - The Trojan War Saga Ep 32 -See U in History",
+        "url": "https://www.youtube.com/watch?v=YJ4IYZcAYbg"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus Invades The City Of Troy - Athena's Palladium - The Trojan War Saga Ep 34 - Greek Mythology",
+        "url": "https://www.youtube.com/watch?v=fCW1T59imnU"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Fils d'Achille va à Troie (Néoptolème/Pyrrhus) - La Saga de la Guerre de Troie - #32",
+        "url": "https://www.youtube.com/watch?v=Oq-_CrJMtm0"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "related": [
+      "landing-at-troy",
+      "labours-of-heracles"
+    ],
+    "places": [
+      "lemnos",
+      "skyros",
       "troy"
     ]
   },
@@ -238,15 +1360,16 @@
       "fr": "Le cheval de Troie"
     },
     "summary": {
-      "en": "After ten years of siege, Troy still stood. On Athena's inspiration, the Greeks had Epeius build an enormous wooden horse, in whose hollow belly the bravest warriors hid — Odysseus, who had thought of the ruse, Menelaus, Neoptolemus the son of Achilles and others. The rest of the army burned its camp and sailed away to hide behind the nearby island of Tenedos.\n\nThe Trojans came out, amazed, to look at the horse left on the shore. Laocoön, a priest, ran down from the city crying out that it was a trap — \"I fear the Greeks, even when they bring gifts\" — and hurled his spear into its side. A Greek named Sinon, left behind on purpose, told the Trojans that the horse was an offering to Athena, made too large to be brought into the city, lest it bring them the goddess's protection. At that moment two huge serpents rose from the sea and strangled Laocoön and his two sons. Convinced that the gods had punished him for striking a sacred offering, the Trojans breached their own walls to drag the horse into the city, and celebrated their victory.\n\nIn the night, while Troy slept, the Greek fleet returned and Sinon opened the horse. The warriors came out, killed the guards and opened the gates to the army. Troy was put to the torch; old Priam was killed at the altar of Zeus by Neoptolemus, and Menelaus took back Helen. Only Aeneas escaped, with his father and his son, to found a new home in Italy.",
-      "fr": "Après dix ans de siège, Troie tenait toujours. Inspirés par Athéna, les Grecs firent construire par Épéios un énorme cheval de bois, dans le ventre creux duquel se cachèrent les plus braves guerriers — Ulysse, qui avait imaginé la ruse, Ménélas, Néoptolème le fils d’Achille et d’autres. Le reste de l’armée incendia son camp et prit la mer pour se cacher derrière l’île voisine de Ténédos.\n\nLes Troyens sortirent, stupéfaits, contempler le cheval abandonné sur le rivage. Laocoon, un prêtre, accourut de la ville en criant que c’était un piège — « Je crains les Grecs, même quand ils apportent des présents » — et lança sa lance dans son flanc. Un Grec nommé Sinon, laissé là à dessein, raconta aux Troyens que le cheval était une offrande à Athéna, construite trop grande pour entrer dans la ville, de peur qu’elle ne leur apporte la protection de la déesse. À cet instant, deux serpents énormes surgirent de la mer et étouffèrent Laocoon et ses deux fils. Persuadés que les dieux l’avaient puni d’avoir frappé une offrande sacrée, les Troyens ouvrirent une brèche dans leurs propres murailles pour faire entrer le cheval dans la ville, et fêtèrent leur victoire.\n\nDans la nuit, pendant que Troie dormait, la flotte grecque revint et Sinon ouvrit le cheval. Les guerriers en sortirent, tuèrent les gardes et ouvrirent les portes à l’armée. Troie fut livrée aux flammes ; le vieux Priam fut tué au pied de l’autel de Zeus par Néoptolème, et Ménélas reprit Hélène. Seul Énée s’échappa, avec son père et son fils, pour fonder une nouvelle patrie en Italie."
+      "en": "After ten years of siege, Troy still stood. On Athena's inspiration, the Greeks had Epeius build an enormous wooden horse, in whose hollow belly the bravest warriors hid — Odysseus, who had thought of the ruse, Menelaus, Neoptolemus the son of Achilles and others. The rest of the army burned its camp and sailed away to hide behind the nearby island of Tenedos.\n\nThe Trojans came out, amazed, to look at the horse left on the shore. Laocoön, a priest, ran down from the city crying out that it was a trap — \"I fear the Greeks, even when they bring gifts\" — and hurled his spear into its side. A Greek named Sinon, left behind on purpose, told the Trojans that the horse was an offering to Athena, made too large to be brought into the city, lest it bring them the goddess's protection. At that moment two huge serpents rose from the sea and strangled Laocoön and his two sons. Convinced that the gods had punished him for striking a sacred offering, the Trojans breached their own walls to drag the horse into the city, and celebrated their victory.\n\nIn the night, while Troy slept after its feasting, the Greek fleet sailed back from Tenedos and Sinon let the warriors out of the horse. They killed the guards and opened the gates to the army: the last night of Troy had begun.",
+      "fr": "Après dix ans de siège, Troie tenait toujours. Inspirés par Athéna, les Grecs firent construire par Épéios un énorme cheval de bois, dans le ventre creux duquel se cachèrent les plus braves guerriers — Ulysse, qui avait imaginé la ruse, Ménélas, Néoptolème le fils d’Achille et d’autres. Le reste de l’armée incendia son camp et prit la mer pour se cacher derrière l’île voisine de Ténédos.\n\nLes Troyens sortirent, stupéfaits, contempler le cheval abandonné sur le rivage. Laocoon, un prêtre, accourut de la ville en criant que c’était un piège — « Je crains les Grecs, même quand ils apportent des présents » — et lança sa lance dans son flanc. Un Grec nommé Sinon, laissé là à dessein, raconta aux Troyens que le cheval était une offrande à Athéna, construite trop grande pour entrer dans la ville, de peur qu’elle ne leur apporte la protection de la déesse. À cet instant, deux serpents énormes surgirent de la mer et étouffèrent Laocoon et ses deux fils. Persuadés que les dieux l’avaient puni d’avoir frappé une offrande sacrée, les Troyens ouvrirent une brèche dans leurs propres murailles pour faire entrer le cheval dans la ville, et fêtèrent leur victoire.\n\nDans la nuit, pendant que Troie dormait après ses festins, la flotte grecque revint de Ténédos et Sinon fit sortir les guerriers du cheval. Ils tuèrent les gardes et ouvrirent les portes à l’armée : la dernière nuit de Troie commençait."
     },
     "characters": [
       "odysseus",
       "laocoon",
+      "sinon",
+      "epeius",
       "athena",
       "menelaus",
-      "helen",
       "priam",
       "poseidon"
     ],
@@ -332,15 +1455,153 @@
         "lang": "fr",
         "title": "Histoire et Mythologie en BD — La Guerre de Troie (Complète) - Mythologie Grecque - L'Iliade",
         "url": "https://www.youtube.com/watch?v=Jhjlc-6C4Ig"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Trojan Horse - The Trojan War Saga Ep 35 - Greek Mythology - See U in History",
+        "url": "https://www.youtube.com/watch?v=Wt4c4Br83ik"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Cheval de Troie - La Saga de la Guerre de Troie - #35 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=oWGQp6r1XjA"
       }
     ],
     "related": [
-      "odysseus-and-polyphemus"
+      "fall-of-troy"
     ],
     "era": "trojan-war",
     "generation": 0,
     "places": [
       "tenedos",
+      "troy"
+    ]
+  },
+  {
+    "id": "fall-of-troy",
+    "title": {
+      "en": "The fall of Troy",
+      "fr": "La chute de Troie"
+    },
+    "summary": {
+      "en": "That night Troy burned. Old Priam, putting on his armour in vain, took refuge at the altar of Zeus in his palace courtyard; Neoptolemus killed his son Polites before his eyes, then dragged the king to the altar and slew him there. Ajax the Lesser tore the prophetess Cassandra from the statue of Athena she was clinging to — a sacrilege that the goddess would avenge on the Greeks' way home. Menelaus found Helen; he meant to kill her, but led her back to the ships.\n\nAt dawn came the cruelties of victory. Hector's little son Astyanax was thrown from the walls, so that no avenger would grow up. Priam's daughter Polyxena was sacrificed on Achilles' tomb. The Trojan women were shared out as slaves: Cassandra to Agamemnon, Andromache to Neoptolemus, the old queen Hecuba to Odysseus.\n\nOne Trojan prince escaped. The ghost of Hector had warned Aeneas in a dream to flee with the gods of Troy. Carrying his old father Anchises on his shoulders and leading his little son by the hand, Aeneas made his way out through the flames — losing his wife Creusa in the darkness — and led the survivors away, toward the new homeland the gods had promised them in Italy.",
+      "fr": "Cette nuit-là, Troie brûla. Le vieux Priam, revêtant en vain ses armes, se réfugia à l’autel de Zeus dans la cour de son palais ; Néoptolème tua sous ses yeux son fils Politès, puis traîna le roi jusqu’à l’autel et l’y égorgea. Ajax le Petit arracha la prophétesse Cassandre à la statue d’Athéna qu’elle tenait embrassée — un sacrilège que la déesse vengerait sur les Grecs lors de leur retour. Ménélas retrouva Hélène ; il voulait la tuer, mais la ramena aux navires.\n\nÀ l’aube vinrent les cruautés de la victoire. Le petit Astyanax, fils d’Hector, fut précipité du haut des murailles, pour qu’aucun vengeur ne grandisse. Polyxène, fille de Priam, fut sacrifiée sur le tombeau d’Achille. Les Troyennes furent partagées comme esclaves : Cassandre à Agamemnon, Andromaque à Néoptolème, la vieille reine Hécube à Ulysse.\n\nUn prince troyen échappa. Le fantôme d’Hector avait averti Énée en songe de fuir avec les dieux de Troie. Portant sur ses épaules son vieux père Anchise et tenant son jeune fils par la main, Énée se fraya un chemin à travers les flammes — perdant dans les ténèbres son épouse Créüse — et emmena les survivants vers la nouvelle patrie que les dieux leur avaient promise en Italie."
+    },
+    "characters": [
+      "neoptolemus",
+      "priam",
+      "cassandra",
+      "ajax-the-lesser",
+      "athena",
+      "menelaus",
+      "helen",
+      "astyanax",
+      "polyxena",
+      "andromache",
+      "hecuba",
+      "agamemnon",
+      "odysseus",
+      "aeneas",
+      "anchises"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Virgil",
+          "fr": "Virgile"
+        },
+        "work": {
+          "en": "Aeneid",
+          "fr": "Énéide"
+        },
+        "passage": "2.268–804",
+        "url": {
+          "en": "https://www.theoi.com/Text/VirgilAeneid2.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99%C3%89n%C3%A9ide_(trad._Nisard)/Livre_II"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "5.21–5.23",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      },
+      {
+        "author": {
+          "en": "Euripides",
+          "fr": "Euripide"
+        },
+        "work": {
+          "en": "Hecuba",
+          "fr": "Hécube"
+        },
+        "passage": null,
+        "url": {
+          "en": "https://classics.mit.edu/Euripides/hecuba.html",
+          "fr": "https://fr.wikisource.org/wiki/H%C3%A9kab%C3%A8"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Iliupersis",
+        "url": "https://en.wikipedia.org/wiki/Iliupersis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Le Sac de Troie",
+        "url": "https://fr.wikipedia.org/wiki/Le_Sac_de_Troie"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Aeneas",
+        "url": "https://www.worldhistory.org/Aeneas/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Cassandre",
+        "url": "https://mythologica.fr/grec/cassandre.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Trojan Horse and the Devastation of the City of Troy - The Trojan War Saga Ep.14",
+        "url": "https://www.youtube.com/watch?v=p1Aq1_EKtUM"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — Did ancient Troy really exist? - Einav Zamir Dembin",
+        "url": "https://www.youtube.com/watch?v=gQbZX9JEQsQ"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Cheval de Troie et la Dévastation de la Cité de Troie - La Saga de la Guerre de Troie Ép.14",
+        "url": "https://www.youtube.com/watch?v=wTWkVS1zLOk"
+      }
+    ],
+    "era": "trojan-war",
+    "generation": 0,
+    "related": [
+      "cicones-and-lotus-eaters"
+    ],
+    "places": [
       "troy"
     ]
   }

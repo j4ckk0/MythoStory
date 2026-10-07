@@ -536,5 +536,392 @@
         "url": "https://mythologica.fr/grec/agamemnon.htm"
       }
     ]
+  },
+  {
+    "id": "nestor",
+    "name": {
+      "en": "Nestor",
+      "fr": "Nestor"
+    },
+    "kind": "hero",
+    "wikidata": "Q193267",
+    "description": {
+      "en": "Old king of Pylos, the wisest of the Greeks before Troy.",
+      "fr": "Vieux roi de Pylos, le plus sage des Grecs devant Troie."
+    },
+    "greek": "Νέστωρ",
+    "parents": [
+      "chloris-q28122362",
+      "neleus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nestor (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Nestor_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nestor",
+        "url": "https://fr.wikipedia.org/wiki/Nestor"
+      }
+    ]
+  },
+  {
+    "id": "palamedes",
+    "name": {
+      "en": "Palamedes",
+      "fr": "Palamède"
+    },
+    "kind": "hero",
+    "wikidata": "Q252387",
+    "description": {
+      "en": "Clever Greek hero who unmasked Odysseus's feigned madness, and was later destroyed by him.",
+      "fr": "Héros grec ingénieux qui démasqua la folie simulée d’Ulysse, et que celui-ci fit périr plus tard."
+    },
+    "greek": "Παλαμήδης",
+    "parents": [
+      "clymene-q2980439",
+      "nauplius-q833826"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Palamedes (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Palamedes_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Palamède (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Palam%C3%A8de_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "philoctetes",
+    "name": {
+      "en": "Philoctetes",
+      "fr": "Philoctète"
+    },
+    "kind": "hero",
+    "wikidata": "Q212827",
+    "description": {
+      "en": "Archer who inherited Heracles' bow, abandoned on Lemnos and fetched back for the fall of Troy.",
+      "fr": "Archer héritier de l’arc d’Héraclès, abandonné à Lemnos puis ramené pour la chute de Troie."
+    },
+    "greek": "Φιλοκτήτης",
+    "parents": [
+      "poeas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Philoctetes",
+        "url": "https://en.wikipedia.org/wiki/Philoctetes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Philoctète",
+        "url": "https://fr.wikipedia.org/wiki/Philoct%C3%A8te"
+      }
+    ]
+  },
+  {
+    "id": "protesilaus",
+    "name": {
+      "en": "Protesilaus",
+      "fr": "Protésilas"
+    },
+    "kind": "hero",
+    "wikidata": "Q871361",
+    "description": {
+      "en": "The first Greek to set foot on Trojan soil, and the first to die.",
+      "fr": "Le premier Grec à poser le pied sur le sol troyen, et le premier à mourir."
+    },
+    "greek": "Πρωτεσίλαος",
+    "parents": [
+      "diomedea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Protesilaus",
+        "url": "https://en.wikipedia.org/wiki/Protesilaus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Protésilas",
+        "url": "https://fr.wikipedia.org/wiki/Prot%C3%A9silas"
+      }
+    ]
+  },
+  {
+    "id": "diomedes",
+    "name": {
+      "en": "Diomedes",
+      "fr": "Diomède"
+    },
+    "kind": "hero",
+    "wikidata": "Q208256",
+    "description": {
+      "en": "King of Argos, one of the boldest Greeks before Troy, who wounded gods in battle.",
+      "fr": "Roi d’Argos, l’un des plus hardis des Grecs devant Troie, qui blessa des dieux au combat."
+    },
+    "greek": "Διομήδης",
+    "parents": [
+      "deipyle",
+      "tydeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Diomedes",
+        "url": "https://en.wikipedia.org/wiki/Diomedes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Diomède",
+        "url": "https://fr.wikipedia.org/wiki/Diom%C3%A8de"
+      }
+    ]
+  },
+  {
+    "id": "ajax",
+    "name": {
+      "en": "Ajax",
+      "fr": "Ajax"
+    },
+    "kind": "hero",
+    "wikidata": "Q172725",
+    "description": {
+      "en": "Son of Telamon, the mightiest Greek after Achilles, who went mad when Achilles' arms were given to Odysseus.",
+      "fr": "Fils de Télamon, le plus fort des Grecs après Achille, qui sombra dans la folie quand les armes d’Achille furent données à Ulysse."
+    },
+    "greek": "Αἴας",
+    "parents": [
+      "telamon",
+      "periboea-q1295435"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ajax the Great",
+        "url": "https://en.wikipedia.org/wiki/Ajax_the_Great"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ajax (fils de Télamon)",
+        "url": "https://fr.wikipedia.org/wiki/Ajax_(fils_de_T%C3%A9lamon)"
+      }
+    ]
+  },
+  {
+    "id": "ajax-the-lesser",
+    "name": {
+      "en": "Ajax the Lesser",
+      "fr": "Ajax le Petit"
+    },
+    "kind": "hero",
+    "wikidata": "Q242319",
+    "description": {
+      "en": "Son of Oileus, who dragged Cassandra from Athena's statue at the fall of Troy.",
+      "fr": "Fils d’Oïlée, qui arracha Cassandre à la statue d’Athéna lors de la chute de Troie."
+    },
+    "greek": "Αἴας",
+    "parents": [
+      "oileus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ajax the Lesser",
+        "url": "https://en.wikipedia.org/wiki/Ajax_the_Lesser"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ajax (fils d'Oïlée)",
+        "url": "https://fr.wikipedia.org/wiki/Ajax_(fils_d'O%C3%AFl%C3%A9e)"
+      }
+    ]
+  },
+  {
+    "id": "antilochus",
+    "name": {
+      "en": "Antilochus",
+      "fr": "Antiloque"
+    },
+    "kind": "hero",
+    "wikidata": "Q577552",
+    "description": {
+      "en": "Son of Nestor, killed by Memnon.",
+      "fr": "Fils de Nestor, tué par Memnon."
+    },
+    "greek": "Ἀντίλοχος",
+    "parents": [
+      "nestor",
+      "eurydice-of-pylos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Antilochus",
+        "url": "https://en.wikipedia.org/wiki/Antilochus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Antiloque",
+        "url": "https://fr.wikipedia.org/wiki/Antiloque"
+      }
+    ]
+  },
+  {
+    "id": "penthesilea",
+    "name": {
+      "en": "Penthesilea",
+      "fr": "Penthésilée"
+    },
+    "kind": "hero",
+    "wikidata": "Q379828",
+    "description": {
+      "en": "Queen of the Amazons, who came to Troy's aid and was killed by Achilles.",
+      "fr": "Reine des Amazones, venue au secours de Troie et tuée par Achille."
+    },
+    "greek": "Πενθεσίλεια",
+    "parents": [
+      "otrera",
+      "ares"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Penthesilea",
+        "url": "https://en.wikipedia.org/wiki/Penthesilea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Penthésilée",
+        "url": "https://fr.wikipedia.org/wiki/Penth%C3%A9sil%C3%A9e"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Penthesilea (Penthesileia)",
+        "url": "https://www.theoi.com/Heroine/AmazonPenthesileia.html"
+      }
+    ]
+  },
+  {
+    "id": "memnon",
+    "name": {
+      "en": "Memnon",
+      "fr": "Memnon"
+    },
+    "kind": "hero",
+    "wikidata": "Q506781",
+    "description": {
+      "en": "King of the Ethiopians, son of the Dawn, killed by Achilles.",
+      "fr": "Roi des Éthiopiens, fils de l’Aurore, tué par Achille."
+    },
+    "greek": "Μέμνων",
+    "parents": [
+      "tithonus",
+      "eos"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Memnon",
+        "url": "https://en.wikipedia.org/wiki/Memnon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Memnon (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Memnon_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "neoptolemus",
+    "name": {
+      "en": "Neoptolemus",
+      "fr": "Néoptolème"
+    },
+    "kind": "hero",
+    "wikidata": "Q322639",
+    "description": {
+      "en": "Son of Achilles, who killed Priam at the fall of Troy.",
+      "fr": "Fils d’Achille, qui tua Priam lors de la chute de Troie."
+    },
+    "greek": "Νεοπτόλεμος",
+    "parents": [
+      "deidamia",
+      "achilles"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Neoptolemus",
+        "url": "https://en.wikipedia.org/wiki/Neoptolemus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Néoptolème",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9optol%C3%A8me"
+      }
+    ]
+  },
+  {
+    "id": "aeneas",
+    "name": {
+      "en": "Aeneas",
+      "fr": "Énée"
+    },
+    "kind": "hero",
+    "wikidata": "Q82732",
+    "description": {
+      "en": "Trojan prince, son of Aphrodite, who escaped the fall of Troy to found a new people in Italy.",
+      "fr": "Prince troyen, fils d’Aphrodite, qui échappa à la chute de Troie pour fonder un nouveau peuple en Italie."
+    },
+    "greek": "Αἰνείας",
+    "parents": [
+      "aphrodite",
+      "anchises"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aeneas",
+        "url": "https://en.wikipedia.org/wiki/Aeneas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Énée",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89n%C3%A9e"
+      }
+    ]
   }
 ]

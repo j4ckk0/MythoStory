@@ -595,5 +595,136 @@
         "url": "https://mythologica.fr/grec/polypheme.htm"
       }
     ]
+  },
+  {
+    "id": "scylla",
+    "name": {
+      "en": "Scylla",
+      "fr": "Scylla"
+    },
+    "kind": "creature",
+    "wikidata": "Q193115",
+    "description": {
+      "en": "Six-headed monster of the strait, who snatched six of Odysseus's men from his ship.",
+      "fr": "Monstre à six têtes du détroit, qui enleva six des hommes d’Ulysse sur son navire."
+    },
+    "greek": "Σκύλλα",
+    "parents": [
+      "crataeis"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Scylla",
+        "url": "https://en.wikipedia.org/wiki/Scylla"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Scylla (monstre)",
+        "url": "https://fr.wikipedia.org/wiki/Scylla_(monstre)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Scylla (Skylla)",
+        "url": "https://www.theoi.com/Pontios/Skylla.html"
+      }
+    ]
+  },
+  {
+    "id": "charybdis",
+    "name": {
+      "en": "Charybdis",
+      "fr": "Charybde"
+    },
+    "kind": "creature",
+    "wikidata": "Q192082",
+    "description": {
+      "en": "Monster of the strait who swallows the sea three times a day, and spews it out again.",
+      "fr": "Monstre du détroit qui engloutit la mer trois fois par jour, et la rejette."
+    },
+    "greek": "Χάρυβδις",
+    "parents": [
+      "gaia",
+      "poseidon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Charybdis",
+        "url": "https://en.wikipedia.org/wiki/Charybdis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Charybde",
+        "url": "https://fr.wikipedia.org/wiki/Charybde"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Charybdis (Kharybdis)",
+        "url": "https://www.theoi.com/Pontios/Kharybdis.html"
+      }
+    ]
+  },
+  {
+    "id": "argos",
+    "name": {
+      "en": "Argos",
+      "fr": "Argos"
+    },
+    "kind": "creature",
+    "wikidata": "Q519334",
+    "description": {
+      "en": "Odysseus's old dog, who knew his master after twenty years, and died.",
+      "fr": "Le vieux chien d’Ulysse, qui reconnut son maître au bout de vingt ans, et mourut."
+    },
+    "greek": "Ἄργος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argos (dog)",
+        "url": "https://en.wikipedia.org/wiki/Argos_(dog)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argos (chien d'Ulysse)",
+        "url": "https://fr.wikipedia.org/wiki/Argos_(chien_d'Ulysse)"
+      }
+    ]
+  },
+  {
+    "id": "sirens",
+    "name": {
+      "en": "Sirens",
+      "fr": "Sirènes"
+    },
+    "kind": "creature",
+    "wikidata": "Q150986",
+    "description": {
+      "en": "Bird-women whose song lured sailors to their death; Odysseus heard it bound to his mast.",
+      "fr": "Femmes-oiseaux dont le chant attirait les marins vers la mort ; Ulysse l’entendit attaché à son mât."
+    },
+    "greek": "Σειρῆνες",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Siren (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sirène (mythologie grecque)",
+        "url": "https://fr.wikipedia.org/wiki/Sir%C3%A8ne_(mythologie_grecque)"
+      }
+    ]
   }
 ]

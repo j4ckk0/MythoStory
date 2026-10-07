@@ -15,6 +15,13 @@ class TextsTest {
     }
 
     @Test
+    fun `Greek names lose the transliteration Wikidata appends`() {
+        assertEquals("Πηνελόπη", Texts.greek("Πηνελόπη , Pēnelopē"))
+        assertEquals("Αἴας", Texts.greek("Αἴας|Aías"))
+        assertEquals("Ζεύς", Texts.greek("Ζεύς"))
+    }
+
+    @Test
     fun `Wikidata descriptions become sentences`() {
         assertEquals("Daughter of Danaus.", Texts.sentence("daughter of Danaus"))
         assertEquals("King of Argos.", Texts.sentence("King of Argos."))

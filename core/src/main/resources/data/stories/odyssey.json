@@ -1,5 +1,111 @@
 [
   {
+    "id": "cicones-and-lotus-eaters",
+    "title": {
+      "en": "The Cicones and the Lotus-eaters",
+      "fr": "Les Cicones et les Lotophages"
+    },
+    "summary": {
+      "en": "Leaving burning Troy with twelve ships, Odysseus first sailed to Ismarus, the city of the Cicones in Thrace, and sacked it. He spared only Maron, a priest of Apollo, who in gratitude gave him a dark, sweet wine of rare strength. But instead of putting to sea at once, his men lingered on the shore, drinking and feasting. At dawn the Cicones of the hinterland fell upon them: six men from each ship were killed before the others could escape.\n\nThen Zeus sent a storm. For nine days the north wind drove the fleet past Cape Malea, the southern tip of Greece, and out of the known world. On the tenth day they came to the land of the Lotus-eaters, a gentle people who fed on a honey-sweet flower.\n\nOdysseus sent three men to meet them. The Lotus-eaters offered them the lotus — and whoever tasted it forgot his home and wished only to stay there, eating lotus forever. Odysseus dragged the weeping men back to the ships by force, tied them under the benches, and ordered the others to row away before anyone else could taste it.",
+      "fr": "Quittant Troie en flammes avec douze navires, Ulysse fit d’abord voile vers Ismaros, la cité des Cicones en Thrace, et la saccagea. Il n’épargna que Maron, un prêtre d’Apollon, qui en remerciement lui donna un vin sombre et doux, d’une force rare. Mais au lieu de reprendre aussitôt la mer, ses hommes s’attardèrent sur le rivage à boire et à festoyer. À l’aube, les Cicones de l’intérieur des terres fondirent sur eux : six hommes par navire furent tués avant que les autres puissent s’enfuir.\n\nAlors Zeus envoya une tempête. Neuf jours durant, le vent du nord poussa la flotte au-delà du cap Malée, la pointe sud de la Grèce, hors du monde connu. Le dixième jour, ils abordèrent au pays des Lotophages, un peuple paisible qui se nourrissait d’une fleur douce comme le miel.\n\nUlysse envoya trois hommes à leur rencontre. Les Lotophages leur offrirent du lotus — et qui en goûtait oubliait sa patrie et ne voulait plus que rester là, à manger du lotus pour toujours. Ulysse ramena de force aux navires les hommes en pleurs, les attacha sous les bancs et ordonna aux autres de ramer avant que quiconque n’y goûte encore."
+    },
+    "characters": [
+      "odysseus",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "9.39–104",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey9.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/9"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Odyssey",
+        "url": "https://en.wikipedia.org/wiki/Odyssey"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Odyssée",
+        "url": "https://fr.wikipedia.org/wiki/Odyss%C3%A9e"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Lotus-eaters",
+        "url": "https://en.wikipedia.org/wiki/Lotus-eaters"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lotophages",
+        "url": "https://fr.wikipedia.org/wiki/Lotophages"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Odyssey",
+        "url": "https://www.worldhistory.org/Odyssey/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ulysse",
+        "url": "https://mythologica.fr/grec/ulysse.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Adventures of Odysseus  - The Odyssey - Episode 4 - See u In History",
+        "url": "https://www.youtube.com/watch?v=GjlIEhOr0Pc"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "TED-Ed — Everything you need to know to read Homer's \"Odyssey\" - Jill Dash",
+        "url": "https://www.youtube.com/watch?v=8Z9FQxcCAZ0"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Les Aventures d'Ulysse - L'Odyssée - #4 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=5VoYz0Vs8Xc"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "ARTE — Les grands mythes : L'Odyssée (Intégrale) | ARTE",
+        "url": "https://www.youtube.com/watch?v=C3F_sG_5Ho8"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "related": [
+      "fall-of-troy"
+    ],
+    "places": [
+      "troy",
+      "ismarus",
+      "malea",
+      "lotus-eaters"
+    ],
+    "route": true
+  },
+  {
     "id": "odysseus-and-polyphemus",
     "title": {
       "en": "Odysseus and the Cyclops",
@@ -100,12 +206,1050 @@
     "era": "returns",
     "generation": 0,
     "places": [
-      "troy",
-      "ismarus",
-      "malea",
-      "lotus-eaters",
       "cyclopes-land"
+    ]
+  },
+  {
+    "id": "aeolus-and-the-laestrygonians",
+    "title": {
+      "en": "Aeolus's winds and the Laestrygonians",
+      "fr": "Les vents d’Éole et les Lestrygons"
+    },
+    "summary": {
+      "en": "Escaped from the Cyclops, Odysseus reached the floating island of Aeolia, ringed by a wall of bronze, where Aeolus, keeper of the winds, lived feasting with his twelve children. Aeolus welcomed him for a month and, at his departure, gave him an ox-hide bag in which he had tied up all the contrary winds, leaving free only the west wind to carry him home.\n\nFor nine days and nights they sailed, Odysseus himself holding the sheet. On the tenth day Ithaca was in sight — they could see the people tending their fires. Then, exhausted, Odysseus fell asleep. His men, convinced that the bag held gold and silver he was keeping from them, opened it. The winds burst out, and the storm drove the ships all the way back to Aeolia. This time Aeolus drove them away: a man so hated by the gods would get no more help from him.\n\nAfter six days of rowing they came to the land of the Laestrygonians. The king's daughter led the scouts to her father's palace, where the giant Antiphates seized one of them and devoured him. The Laestrygonians, as tall as mountains, crushed the ships in the harbour with boulders and speared the sailors like fish. Only Odysseus, who had moored his own ship outside the harbour, escaped — cutting the cable with his sword. Of twelve ships, one remained.",
+      "fr": "Échappé au Cyclope, Ulysse atteignit l’île flottante d’Éolie, ceinte d’un rempart de bronze, où Éole, gardien des vents, vivait en festins avec ses douze enfants. Éole l’accueillit un mois entier et, à son départ, lui donna une outre en peau de bœuf où il avait enfermé tous les vents contraires, ne laissant libre que le zéphyr pour le ramener chez lui.\n\nNeuf jours et neuf nuits, ils naviguèrent, Ulysse tenant lui-même l’écoute. Le dixième jour, Ithaque était en vue — on voyait déjà les gens attiser leurs feux. Alors, épuisé, Ulysse s’endormit. Ses hommes, persuadés que l’outre renfermait de l’or et de l’argent qu’il gardait pour lui, l’ouvrirent. Les vents s’échappèrent, et la tempête ramena les navires jusqu’à Éolie. Cette fois, Éole les chassa : un homme si haï des dieux n’obtiendrait plus rien de lui.\n\nAprès six jours à la rame, ils abordèrent au pays des Lestrygons. La fille du roi conduisit les éclaireurs au palais de son père, où le géant Antiphatès saisit l’un d’eux et le dévora. Les Lestrygons, hauts comme des montagnes, écrasèrent les navires dans le port à coups de rochers et harponnèrent les marins comme des poissons. Seul Ulysse, qui avait amarré son navire hors du port, s’échappa en tranchant l’amarre de son épée. De douze navires, il en restait un."
+    },
+    "characters": [
+      "odysseus",
+      "aeolus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "10.1–132",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey10.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/10"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Aeolus (son of Hippotes)",
+        "url": "https://en.wikipedia.org/wiki/Aeolus_(son_of_Hippotes)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Éole",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89ole"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Laestrygonians",
+        "url": "https://en.wikipedia.org/wiki/Laestrygonians"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Lestrygons",
+        "url": "https://fr.wikipedia.org/wiki/Lestrygons"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Éole",
+        "url": "https://mythologica.fr/grec/eole.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus and the Winds - The Odyssey - Episode 6 - See u In History",
+        "url": "https://www.youtube.com/watch?v=tzuIVp0M3rE"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse et les Vents  - L'Odyssée - #6 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=9jsj3SNxcs0"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "aeolia",
+      "ithaca",
+      "aeolia",
+      "laestrygonians"
     ],
     "route": true
+  },
+  {
+    "id": "odysseus-and-circe",
+    "title": {
+      "en": "Circe",
+      "fr": "Circé"
+    },
+    "summary": {
+      "en": "The last ship reached Aeaea, the island of Circe, the sorceress daughter of the Sun. Odysseus sent half his men, led by Eurylochus, to explore. In a clearing they found a stone house; around it prowled wolves and lions that fawned on them like dogs. Circe invited them in and served them a mixture of cheese, barley and honey in Pramnian wine — laced with her drugs. Then she struck them with her wand: they became swine, with the heads, the voices and the bristles of pigs, but their minds remained as before. Only Eurylochus, who had stayed outside, escaped to tell the tale.\n\nOdysseus set out alone to free them. On the way Hermes appeared to him and gave him a herb against her spells, moly, black at the root with a flower as white as milk, and told him what to do. When Circe's drink had no effect and she raised her wand, Odysseus drew his sword as if to kill her. Terrified, she recognised the man Hermes had foretold, and swore by the gods to do him no harm. She turned his companions back into men — younger and handsomer than before.\n\nThey stayed a whole year with her, feasting. When at last his men reminded him of home, Circe told Odysseus he must first go down to the house of Hades and Persephone, to consult the shade of the seer Tiresias. On the morning of their departure, young Elpenor, who had slept on the roof to sober up, woke with a start, forgot the ladder, fell and broke his neck.",
+      "fr": "Le dernier navire aborda à Aiaié, l’île de Circé, la magicienne fille du Soleil. Ulysse envoya la moitié de ses hommes, menés par Euryloque, explorer l’île. Dans une clairière, ils trouvèrent une maison de pierre ; autour rôdaient des loups et des lions qui les caressaient comme des chiens. Circé les invita à entrer et leur servit un mélange de fromage, d’orge et de miel dans du vin de Pramnos — additionné de ses drogues. Puis elle les frappa de sa baguette : ils devinrent des porcs, avec la tête, la voix et les soies des pourceaux, mais leur esprit resta le même. Seul Euryloque, resté dehors, s’échappa pour raconter.\n\nUlysse partit seul les délivrer. En chemin, Hermès lui apparut et lui donna une herbe contre les sortilèges, le moly, noir à la racine, à la fleur blanche comme le lait, et lui dit comment agir. Quand le breuvage de Circé resta sans effet et qu’elle leva sa baguette, Ulysse tira son épée comme pour la tuer. Terrifiée, elle reconnut l’homme qu’Hermès avait annoncé, et jura par les dieux de ne lui faire aucun mal. Elle rendit à ses compagnons leur forme humaine — plus jeunes et plus beaux qu’avant.\n\nIls restèrent un an entier auprès d’elle, à festoyer. Quand enfin ses hommes lui rappelèrent leur patrie, Circé dit à Ulysse qu’il devait d’abord descendre dans la demeure d’Hadès et de Perséphone, consulter l’ombre du devin Tirésias. Au matin du départ, le jeune Elpénor, qui avait dormi sur le toit pour cuver son vin, se réveilla en sursaut, oublia l’échelle, tomba et se rompit le cou."
+    },
+    "characters": [
+      "circe",
+      "odysseus",
+      "hermes",
+      "elpenor",
+      "helios"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "10.133–574",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey10.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/10"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Circe",
+        "url": "https://en.wikipedia.org/wiki/Circe"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Circé",
+        "url": "https://fr.wikipedia.org/wiki/Circ%C3%A9"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Circe",
+        "url": "https://www.worldhistory.org/Circe/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Circé",
+        "url": "https://mythologica.fr/grec/circe.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus on the Island of the Witch Circe - The Odyssey - Episode 7 - See u In History",
+        "url": "https://www.youtube.com/watch?v=j9kgOMbQwVg"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Circe: The Sorceress Who Turned Men into Pigs",
+        "url": "https://www.youtube.com/watch?v=u1S8FfSlYQQ"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse sur l'île de la Sorcière Circé  - L'Odyssée - #7 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=rHiFfs5ql9k"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "aeaea"
+    ]
+  },
+  {
+    "id": "descent-to-the-dead",
+    "title": {
+      "en": "Odysseus among the dead",
+      "fr": "Ulysse chez les morts"
+    },
+    "summary": {
+      "en": "Odysseus sailed to the edge of the world, where the river Ocean flows around the land of the Cimmerians, wrapped in mist and night. There he dug a pit, poured libations, and slit the throats of a ram and a ewe. The shades came flocking up from Erebus to drink the blood; Odysseus held them back with his sword until Tiresias had drunk.\n\nThe first to come was Elpenor, begging him to burn and bury his body. Then the blind seer spoke: Poseidon would not forgive the blinding of his son, but Odysseus could still reach home if his men spared the cattle of the Sun on the island of Thrinacia; otherwise he would come home late, alone, on a foreign ship, to find men devouring his house. After taking vengeance, he must set out once more, carrying an oar inland until he met people who mistook it for a winnowing fan, sacrifice there to Poseidon — and a gentle death would come to him, far from the sea, in a rich old age.\n\nThen came his mother Anticlea, who had died of grief waiting for him; three times he tried to embrace her, and three times she slipped through his arms like a shadow. He saw the great women of old, then Agamemnon, murdered on his return by his wife and her lover; and Achilles, who said he would rather be a hired labourer on earth than king of all the dead, but rejoiced to hear of his son's valour. Ajax alone stood apart and would not answer him. At last, as the countless dead pressed round with a terrible cry, Odysseus fled back to his ship in fear.",
+      "fr": "Ulysse fit voile jusqu’au bout du monde, là où le fleuve Océan coule autour du pays des Cimmériens, enveloppé de brume et de nuit. Il y creusa une fosse, versa des libations et égorgea un bélier et une brebis. Les ombres montèrent en foule de l’Érèbe pour boire le sang ; Ulysse les écarta de son épée jusqu’à ce que Tirésias ait bu.\n\nLe premier à venir fut Elpénor, le suppliant de brûler et d’ensevelir son corps. Puis le devin aveugle parla : Poséidon ne pardonnerait pas l’aveuglement de son fils, mais Ulysse pourrait encore rentrer si ses hommes épargnaient les bœufs du Soleil dans l’île de Thrinacie ; sinon, il rentrerait tard, seul, sur un navire étranger, pour trouver des hommes dévorant sa maison. Sa vengeance accomplie, il devrait repartir, portant une rame à l’intérieur des terres jusqu’à rencontrer des gens qui la prendraient pour une pelle à vanner, y sacrifier à Poséidon — et une mort douce lui viendrait, loin de la mer, dans une riche vieillesse.\n\nPuis vint sa mère Anticlée, morte de chagrin à l’attendre ; trois fois il voulut l’étreindre, et trois fois elle glissa entre ses bras comme une ombre. Il vit les grandes héroïnes d’autrefois, puis Agamemnon, assassiné à son retour par son épouse et son amant ; et Achille, qui dit qu’il aimerait mieux être journalier sur terre que roi de tous les morts, mais se réjouit d’apprendre la vaillance de son fils. Seul Ajax resta à l’écart et ne lui répondit pas. Enfin, comme les morts innombrables se pressaient avec un cri terrible, Ulysse s’enfuit, saisi de peur, vers son navire."
+    },
+    "characters": [
+      "odysseus",
+      "tiresias",
+      "anticlea",
+      "elpenor",
+      "agamemnon",
+      "achilles",
+      "ajax",
+      "poseidon",
+      "persephone"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Book 11 / Chant XI",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey11.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/11"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nekyia",
+        "url": "https://en.wikipedia.org/wiki/Nekyia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nekuia",
+        "url": "https://fr.wikipedia.org/wiki/Nekuia"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Tirésias",
+        "url": "https://mythologica.fr/grec/tiresias.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus in the Land of the Dead - The Odyssey - Episode 8 - See u In History",
+        "url": "https://www.youtube.com/watch?v=du2kqHxPEgM"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "related": [
+      "arms-of-achilles",
+      "orpheus-and-eurydice"
+    ],
+    "places": [
+      "aeaea",
+      "avernus"
+    ],
+    "route": true
+  },
+  {
+    "id": "sirens-scylla-and-charybdis",
+    "title": {
+      "en": "The Sirens, Scylla and Charybdis",
+      "fr": "Les Sirènes, Scylla et Charybde"
+    },
+    "summary": {
+      "en": "Back on Aeaea, Odysseus buried Elpenor and planted his oar on the tomb. Circe warned him of the dangers ahead. First the Sirens, who sit in a meadow heaped with the bones of the men their song has drawn to their death. Odysseus plugged his crew's ears with beeswax and had himself bound to the mast, ordering them to tie him tighter if he begged to be freed.\n\nAs the ship passed, the Sirens sang: \"Come, famous Odysseus, glory of the Greeks! No one has ever sailed past us without hearing the honeyed voice from our lips; we know all that the Greeks and Trojans suffered at Troy, and all that happens on the fruitful earth.\" Odysseus, mad with longing, signalled to be released; two of his men only bound him tighter, and the ship sailed on.\n\nNext came the strait. On one side, Charybdis swallowed the black sea water three times a day; on the other, in her cave high in the cliff, lived Scylla, a monster with twelve feet and six long necks, each with a terrible head. Circe had told him it was better to lose six men than all of them. As everyone watched Charybdis, Scylla's heads swooped down and snatched six of the crew, who cried out Odysseus's name as they were lifted into the air — the most pitiful sight, he said, of all his wanderings.",
+      "fr": "De retour à Aiaié, Ulysse ensevelit Elpénor et planta sa rame sur le tombeau. Circé l’avertit des dangers à venir. D’abord les Sirènes, assises dans une prairie couverte des ossements des hommes que leur chant avait attirés à la mort. Ulysse boucha à la cire les oreilles de son équipage et se fit attacher au mât, ordonnant qu’on serre ses liens s’il suppliait qu’on le délivre.\n\nComme le navire passait, les Sirènes chantèrent : « Viens, illustre Ulysse, gloire des Grecs ! Nul n’a jamais passé près de nous sans entendre la voix de miel de nos lèvres ; nous savons tout ce que Grecs et Troyens ont souffert devant Troie, et tout ce qui arrive sur la terre nourricière. » Ulysse, fou de désir, fit signe qu’on le détache ; deux de ses hommes ne firent que serrer ses liens, et le navire passa.\n\nVint ensuite le détroit. D’un côté, Charybde engloutissait trois fois par jour l’eau noire de la mer ; de l’autre, dans sa caverne au haut de la falaise, vivait Scylla, un monstre à douze pieds et six longs cous, portant chacun une tête terrible. Circé lui avait dit qu’il valait mieux perdre six hommes que tous. Comme chacun regardait Charybde, les têtes de Scylla plongèrent et saisirent six hommes de l’équipage, qui criaient le nom d’Ulysse en s’élevant dans les airs — le spectacle le plus pitoyable, dit-il, de toutes ses errances."
+    },
+    "characters": [
+      "odysseus",
+      "sirens",
+      "scylla",
+      "charybdis",
+      "circe",
+      "elpenor"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "12.1–259",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey12.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/12"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Siren (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sirène (mythologie grecque)",
+        "url": "https://fr.wikipedia.org/wiki/Sir%C3%A8ne_(mythologie_grecque)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Scylla",
+        "url": "https://en.wikipedia.org/wiki/Scylla"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Scylla (monstre)",
+        "url": "https://fr.wikipedia.org/wiki/Scylla_(monstre)"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Scylla",
+        "url": "https://www.worldhistory.org/Scylla/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Les Sirènes",
+        "url": "https://mythologica.fr/grec/sirenes.htm"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Scylla",
+        "url": "https://mythologica.fr/grec/scylla.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus and the Sirens - The Odyssey - Ep. 5",
+        "url": "https://www.youtube.com/watch?v=7eyLkUVRnEU"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Les Sirène - Les Charmantes et Dangereuses Femmes Oiseaux - Mythologie Grecque",
+        "url": "https://www.youtube.com/watch?v=XEyh9cwzTSo"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "aeaea",
+      "sirenuse",
+      "strait-of-messina"
+    ],
+    "route": true
+  },
+  {
+    "id": "cattle-of-the-sun",
+    "title": {
+      "en": "The cattle of the Sun",
+      "fr": "Les bœufs du Soleil"
+    },
+    "summary": {
+      "en": "Next lay the island of Thrinacia, where the Sun pastured his immortal cattle. Remembering Tiresias's warning, Odysseus wanted to sail past, but his exhausted men, led by Eurylochus, insisted on spending the night ashore. Odysseus made them swear not to touch the cattle. Then, for a whole month, the south wind blew without ceasing, and they could not leave.\n\nWhen the ship's provisions ran out, the men fished and hunted birds, and starved. One day, while Odysseus had gone inland to pray and had fallen asleep, Eurylochus persuaded the others that it was better to die at sea than to waste away from hunger: they slaughtered the finest of the cattle and offered some to the gods. The nymph Lampetia told her father the Sun, who threatened Zeus to go down and shine among the dead if he was not avenged. Terrible signs appeared: the hides crawled along the ground, and the meat lowed on the spits.\n\nAfter six days of feasting, the wind changed and they put to sea. As soon as they were out of sight of land, Zeus struck the ship with his thunderbolt. It broke apart and every man drowned. Odysseus alone, clinging to the keel and the mast, was carried back to Charybdis; he saved himself by grabbing a fig tree above the whirlpool until it spewed out his timbers. For nine days he drifted, and on the tenth night the gods cast him ashore on Ogygia, the island of the nymph Calypso.",
+      "fr": "Venait ensuite l’île de Thrinacie, où le Soleil faisait paître ses bœufs immortels. Se souvenant de l’avertissement de Tirésias, Ulysse voulait passer au large, mais ses hommes épuisés, menés par Euryloque, exigèrent de passer la nuit à terre. Ulysse leur fit jurer de ne pas toucher aux bœufs. Alors, un mois entier, le vent du sud souffla sans relâche, et ils ne purent repartir.\n\nQuand les vivres du navire furent épuisés, les hommes pêchèrent et chassèrent les oiseaux, et souffrirent de la faim. Un jour qu’Ulysse était parti prier à l’intérieur de l’île et s’y était endormi, Euryloque persuada les autres qu’il valait mieux mourir en mer que dépérir de faim : ils égorgèrent les plus beaux des bœufs et en offrirent une part aux dieux. La nymphe Lampétie avertit son père le Soleil, qui menaça Zeus d’aller briller chez les morts s’il n’était pas vengé. De terribles prodiges apparurent : les peaux rampaient sur le sol, et les viandes mugissaient sur les broches.\n\nAprès six jours de festin, le vent tourna et ils reprirent la mer. Dès qu’ils furent hors de vue des terres, Zeus frappa le navire de sa foudre. Il se brisa, et tous les hommes se noyèrent. Seul Ulysse, agrippé à la quille et au mât, fut ramené vers Charybde ; il se sauva en s’accrochant à un figuier au-dessus du gouffre jusqu’à ce que celui-ci recrache ses épaves. Neuf jours il dériva, et la dixième nuit les dieux le jetèrent sur Ogygie, l’île de la nymphe Calypso."
+    },
+    "characters": [
+      "odysseus",
+      "helios",
+      "zeus",
+      "charybdis",
+      "calypso"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "12.260–453",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey12.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/12"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cattle of Helios",
+        "url": "https://en.wikipedia.org/wiki/Cattle_of_Helios"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hélios",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9lios"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus and the Cattle of Helios - The Ruin of Odysseus' Crew  - The Odyssey - Episode 10",
+        "url": "https://www.youtube.com/watch?v=IB2IVvK-SeU"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse et les bœufs d'Hélios - La ruine de l'équipage d'Ulysse - L'Odyssée - #10",
+        "url": "https://www.youtube.com/watch?v=gysn72T1zgM"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "thrinacia",
+      "strait-of-messina",
+      "ogygia"
+    ],
+    "route": true
+  },
+  {
+    "id": "telemachus-journey",
+    "title": {
+      "en": "Telemachus's journey",
+      "fr": "Le voyage de Télémaque"
+    },
+    "summary": {
+      "en": "Twenty years after Odysseus left for Troy, the gods took counsel on Olympus while Poseidon was away. Athena went to Ithaca disguised as a guest, Mentes, and found the palace overrun by more than a hundred suitors who, wanting to marry Penelope, were devouring the household's wealth. She urged young Telemachus to stand up to them and go in search of news of his father.\n\nTelemachus called the Ithacans to an assembly. The suitors' leader, Antinous, mocked him and blamed Penelope: for three years she had deceived them, saying she would choose a husband once she had finished weaving a shroud for old Laertes — and every night she undid what she had woven by day, until a maid betrayed her. Telemachus set sail by night, in secret, with Athena at his side disguised as Mentor, an old friend of his father.\n\nAt Pylos, old Nestor told him of the Greeks' return from Troy, but knew nothing of Odysseus. At Sparta, Menelaus and Helen welcomed him; Helen poured into their wine a drug that drives away all sorrow. Menelaus told how the sea god Proteus, whom he had held fast through all his changes of shape, had revealed to him that Odysseus was alive, held captive by the nymph Calypso. Meanwhile, in Ithaca, the suitors were lying in wait to kill Telemachus on his way home.",
+      "fr": "Vingt ans après le départ d’Ulysse pour Troie, les dieux tinrent conseil sur l’Olympe pendant que Poséidon était au loin. Athéna se rendit à Ithaque sous les traits d’un hôte, Mentès, et trouva le palais envahi par plus de cent prétendants qui, voulant épouser Pénélope, dévoraient les biens de la maison. Elle pressa le jeune Télémaque de leur tenir tête et de partir chercher des nouvelles de son père.\n\nTélémaque réunit les Ithaciens en assemblée. Le chef des prétendants, Antinoos, se moqua de lui et accusa Pénélope : trois ans durant, elle les avait trompés, disant qu’elle choisirait un époux quand elle aurait fini de tisser un linceul pour le vieux Laërte — et chaque nuit elle défaisait ce qu’elle avait tissé le jour, jusqu’à ce qu’une servante la trahisse. Télémaque prit la mer de nuit, en secret, avec à ses côtés Athéna sous les traits de Mentor, un vieil ami de son père.\n\nÀ Pylos, le vieux Nestor lui conta le retour des Grecs de Troie, mais ne savait rien d’Ulysse. À Sparte, Ménélas et Hélène l’accueillirent ; Hélène versa dans leur vin une drogue qui chasse toute peine. Ménélas raconta comment le dieu marin Protée, qu’il avait tenu à travers toutes ses métamorphoses, lui avait révélé qu’Ulysse était vivant, retenu captif par la nymphe Calypso. Pendant ce temps, à Ithaque, les prétendants guettaient Télémaque pour le tuer à son retour."
+    },
+    "characters": [
+      "telemachus",
+      "athena",
+      "penelope",
+      "nestor",
+      "menelaus",
+      "helen",
+      "laertes",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Books 1–4 / Chants I–IV",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey1.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/1"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "2.85–128",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey2.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/2"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "4.219–592",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey4.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/4"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Telemachy",
+        "url": "https://en.wikipedia.org/wiki/Telemachy"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Télémaque",
+        "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9maque"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Telemachus",
+        "url": "https://en.wikipedia.org/wiki/Telemachus"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Télémaque",
+        "url": "https://mythologica.fr/grec/telemaque.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Telemachus and the Suitors - The Odyssey - Episode 2 - See u In History",
+        "url": "https://www.youtube.com/watch?v=9KUl9tenFbM"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Telemachus in Search of Odysseus - The Journey to Sparta - The Odyssey - Episode 11",
+        "url": "https://www.youtube.com/watch?v=MYr8_2F2rzE"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Télémaque et les Prétendants - L'Odyssée - # 2 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=soFQX4EiQME"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "ithaca",
+      "pylos",
+      "sparta"
+    ],
+    "route": true
+  },
+  {
+    "id": "odysseus-and-calypso",
+    "title": {
+      "en": "Calypso",
+      "fr": "Calypso"
+    },
+    "summary": {
+      "en": "For seven years Odysseus had been the prisoner of the nymph Calypso on her island of Ogygia, at the navel of the sea. She loved him and offered to make him immortal and ageless; but every day he sat on the shore, weeping and gazing at the sea, longing for home. At Athena's request, Zeus sent Hermes to order Calypso to let him go.\n\nCalypso protested against the gods, who could never bear a goddess to love a mortal man — yet she obeyed. She gave Odysseus an axe and tools, and in four days he built a raft. Once more she offered him immortality: was Penelope more beautiful than she? Odysseus answered that his wife could not compare with a goddess, but that he wished, every day, only to go home.\n\nFor seventeen days he sailed, steering by the stars as Calypso had taught him. On the eighteenth, as the mountains of the Phaeacians came into sight, Poseidon, returning from the Ethiopians, saw him and unleashed a storm that shattered the raft. The sea goddess Ino, called Leucothea, took pity on him and gave him her veil, which would keep him from drowning. For two days and two nights he swam, until he reached the mouth of a river, crawled ashore and fell asleep, naked, under a pile of leaves.",
+      "fr": "Depuis sept ans, Ulysse était le prisonnier de la nymphe Calypso dans son île d’Ogygie, au nombril de la mer. Elle l’aimait et lui offrait de le rendre immortel et éternellement jeune ; mais chaque jour, il restait assis sur le rivage, pleurant et regardant la mer, rêvant de sa patrie. À la demande d’Athéna, Zeus envoya Hermès ordonner à Calypso de le laisser partir.\n\nCalypso protesta contre les dieux, qui ne supportaient jamais qu’une déesse aime un mortel — mais elle obéit. Elle donna à Ulysse une hache et des outils, et en quatre jours il construisit un radeau. Une dernière fois, elle lui offrit l’immortalité : Pénélope était-elle plus belle qu’elle ? Ulysse répondit que son épouse ne pouvait se comparer à une déesse, mais qu’il ne souhaitait, chaque jour, que rentrer chez lui.\n\nDix-sept jours durant, il navigua, se guidant sur les étoiles comme Calypso le lui avait appris. Le dix-huitième, comme apparaissaient les montagnes des Phéaciens, Poséidon, revenant de chez les Éthiopiens, l’aperçut et déchaîna une tempête qui fracassa le radeau. La déesse marine Ino, appelée Leucothée, eut pitié de lui et lui donna son voile, qui le garderait de la noyade. Deux jours et deux nuits, il nagea, jusqu’à atteindre l’embouchure d’un fleuve ; il se traîna sur la rive et s’endormit, nu, sous un tas de feuilles."
+    },
+    "characters": [
+      "calypso",
+      "odysseus",
+      "hermes",
+      "athena",
+      "zeus",
+      "poseidon",
+      "ino",
+      "penelope"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Book 5 / Chant V",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey5.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/5"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calypso (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calypso",
+        "url": "https://fr.wikipedia.org/wiki/Calypso"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Calypso",
+        "url": "https://www.worldhistory.org/Calypso/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Calypso",
+        "url": "https://mythologica.fr/grec/calypso.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Odyssey - Odysseus on the Isle of Calypso - Episode 1 - See u In History",
+        "url": "https://www.youtube.com/watch?v=m_TP7TCuM6w"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — L'Odyssée - Ulysse sur l'île de Calypso - # 1 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=XuC_5DkSUp8"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "related": [
+      "cattle-of-the-sun"
+    ],
+    "places": [
+      "ogygia",
+      "scheria"
+    ],
+    "route": true
+  },
+  {
+    "id": "nausicaa-and-the-phaeacians",
+    "title": {
+      "en": "Nausicaa and the Phaeacians",
+      "fr": "Nausicaa et les Phéaciens"
+    },
+    "summary": {
+      "en": "Athena appeared in a dream to Nausicaa, the daughter of Alcinous, king of the Phaeacians, and told her to go and wash her clothes at the river. The princess went there with her maids by mule cart; once the laundry was spread out to dry, they played ball on the shore. A shout woke Odysseus. He came out of the bushes, covering himself with a leafy branch, and the frightened maids scattered; only Nausicaa stood her ground. Odysseus begged her for help with such tact that she gave him clothes, food and the way to her father's palace.\n\nWrapped by Athena in a mist, Odysseus crossed the city to the palace of Alcinous, with its bronze walls and golden and silver dogs made by Hephaestus, and threw himself at the knees of Queen Arete. The Phaeacians, seafarers favoured by the gods, welcomed him without even asking his name, and held games in his honour, where he threw the discus farther than any of them.\n\nAt the feast, the blind bard Demodocus sang of the loves of Ares and Aphrodite, then — at Odysseus's request — of the wooden horse and the fall of Troy. Hearing his own exploits, Odysseus wept, hiding his face in his cloak. Alcinous asked him who he was. \"I am Odysseus, son of Laertes,\" he answered, and through the night he told the tale of his wanderings.",
+      "fr": "Athéna apparut en songe à Nausicaa, la fille d’Alcinoos, roi des Phéaciens, et lui dit d’aller laver son linge au fleuve. La princesse s’y rendit avec ses servantes en char à mules ; le linge étendu à sécher, elles jouèrent à la balle sur le rivage. Un cri réveilla Ulysse. Il sortit des fourrés, se couvrant d’une branche feuillue, et les servantes effrayées s’enfuirent ; seule Nausicaa resta. Ulysse implora son aide avec tant de tact qu’elle lui donna des vêtements, de la nourriture et le chemin du palais de son père.\n\nEnveloppé par Athéna d’une brume, Ulysse traversa la ville jusqu’au palais d’Alcinoos, aux murs de bronze, aux chiens d’or et d’argent forgés par Héphaïstos, et se jeta aux genoux de la reine Arété. Les Phéaciens, marins favorisés des dieux, l’accueillirent sans même lui demander son nom, et donnèrent des jeux en son honneur, où il lança le disque plus loin qu’aucun d’eux.\n\nAu festin, l’aède aveugle Démodocos chanta les amours d’Arès et d’Aphrodite, puis — à la demande d’Ulysse — le cheval de bois et la chute de Troie. En entendant ses propres exploits, Ulysse pleura, le visage caché dans son manteau. Alcinoos lui demanda qui il était. « Je suis Ulysse, fils de Laërte », répondit-il, et toute la nuit il raconta ses errances."
+    },
+    "characters": [
+      "nausicaa",
+      "odysseus",
+      "alcinous",
+      "athena",
+      "hephaestus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Books 6–8 / Chants VI–VIII",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey6.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/6"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "8.487–586",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey8.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/8"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nausicaa",
+        "url": "https://en.wikipedia.org/wiki/Nausicaa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nausicaa",
+        "url": "https://fr.wikipedia.org/wiki/Nausicaa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Scheria",
+        "url": "https://en.wikipedia.org/wiki/Scheria"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Schérie",
+        "url": "https://fr.wikipedia.org/wiki/Sch%C3%A9rie"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Nausicaa",
+        "url": "https://mythologica.fr/grec/nausicaa.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus and the Phaeacians - The Odyssey - Episode 3 - See u In History",
+        "url": "https://www.youtube.com/watch?v=RfFFC1rFWNM"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse et les Phéaciens - L'Odyssée - # 3 - Histoire et Mythologie en BD",
+        "url": "https://www.youtube.com/watch?v=RQVlKc3DsjI"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "related": [
+      "trojan-horse"
+    ],
+    "places": [
+      "scheria"
+    ]
+  },
+  {
+    "id": "return-to-ithaca",
+    "title": {
+      "en": "The return to Ithaca",
+      "fr": "Le retour à Ithaque"
+    },
+    "summary": {
+      "en": "A Phaeacian ship carried Odysseus home in a single night, and its sailors laid him, still asleep, on the shore of Ithaca with all their gifts. On its way back, Poseidon turned the ship to stone in sight of its harbour. When Odysseus woke, he did not recognise his own island until Athena showed it to him. She disguised him as an old, ragged beggar, so that he could take his revenge, and sent him to his faithful swineherd, Eumaeus.\n\nEumaeus welcomed the beggar kindly, without knowing him. Telemachus, warned by Athena, escaped the suitors' ambush and came to the swineherd's hut. There, when they were alone, Odysseus revealed himself to his son, and they wept in each other's arms; then they planned the suitors' death.\n\nIn town, at the palace gate, an old dog lay on a dung heap, neglected and covered in vermin: Argos, whom Odysseus had raised before leaving for Troy. Recognising his master after twenty years, he wagged his tail and dropped his ears, too weak to come to him. Odysseus wiped away a tear without letting it be seen. And Argos died. In the hall, the suitors mocked the beggar; Antinous threw a footstool at him.",
+      "fr": "Un navire phéacien ramena Ulysse chez lui en une seule nuit, et ses marins le déposèrent, encore endormi, sur le rivage d’Ithaque avec tous leurs présents. Sur le chemin du retour, Poséidon changea le navire en pierre en vue de son port. À son réveil, Ulysse ne reconnut pas sa propre île, jusqu’à ce qu’Athéna la lui montre. Elle le déguisa en vieux mendiant en haillons, pour qu’il puisse se venger, et l’envoya chez son fidèle porcher, Eumée.\n\nEumée accueillit le mendiant avec bonté, sans le reconnaître. Télémaque, averti par Athéna, échappa à l’embuscade des prétendants et vint à la cabane du porcher. Là, quand ils furent seuls, Ulysse se révéla à son fils, et ils pleurèrent dans les bras l’un de l’autre ; puis ils préparèrent la mort des prétendants.\n\nEn ville, à la porte du palais, un vieux chien gisait sur un tas de fumier, délaissé et couvert de vermine : Argos, qu’Ulysse avait élevé avant de partir pour Troie. Reconnaissant son maître au bout de vingt ans, il remua la queue et baissa les oreilles, trop faible pour aller vers lui. Ulysse essuya une larme sans la laisser voir. Et Argos mourut. Dans la grande salle, les prétendants se moquèrent du mendiant ; Antinoos lui lança un tabouret."
+    },
+    "characters": [
+      "odysseus",
+      "athena",
+      "eumaeus",
+      "telemachus",
+      "argos",
+      "poseidon"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Books 13–17 / Chants XIII–XVII",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey13.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/13"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "16.154–321",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey16.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/16"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "17.290–327",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey17.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/17"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eumaeus",
+        "url": "https://en.wikipedia.org/wiki/Eumaeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eumée",
+        "url": "https://fr.wikipedia.org/wiki/Eum%C3%A9e"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argos (dog)",
+        "url": "https://en.wikipedia.org/wiki/Argos_(dog)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argos (chien d'Ulysse)",
+        "url": "https://fr.wikipedia.org/wiki/Argos_(chien_d'Ulysse)"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — The Return of Odysseus - The Odyssey - Episode 12 - See u In History",
+        "url": "https://www.youtube.com/watch?v=QZn3T-yXLtI"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Odysseus Disguises Himself as a Beggar - The Odyssey - Episode 13 - See u In History",
+        "url": "https://www.youtube.com/watch?v=REQJP09PlU4"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Le Retour d'Ulysse - L'Odyssée - L'Odyssée - #12",
+        "url": "https://www.youtube.com/watch?v=SjxboHo9Xrs"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Ulysse se déguise en Mendiant - L'Odyssée - #13",
+        "url": "https://www.youtube.com/watch?v=jm5gu0WnwMs"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "scheria",
+      "ithaca"
+    ],
+    "route": true
+  },
+  {
+    "id": "the-bow-and-the-suitors",
+    "title": {
+      "en": "The bow and the suitors",
+      "fr": "L’arc et les prétendants"
+    },
+    "summary": {
+      "en": "Penelope asked to see the beggar, who claimed to have met Odysseus. As a mark of hospitality, his old nurse Eurycleia washed his feet — and recognised the scar a wild boar had given him in his youth, hunting on Mount Parnassus. Odysseus seized her by the throat to keep her silent.\n\nThe next day, Penelope brought out Odysseus's great bow: she would marry whoever could string it and shoot an arrow through the holes of twelve axe heads set in a row. One after another, the suitors failed even to bend it. Odysseus revealed himself to Eumaeus and to the cowherd Philoetius and had them lock the doors. Then the beggar asked to try. Amid the suitors' jeers he strung the bow as easily as a musician strings his lyre, and sent the arrow through all twelve axes.\n\nHis next arrow pierced the throat of Antinous as he raised his cup. \"Dogs,\" cried Odysseus, \"you thought I would never come home!\" Eurymachus offered compensation; Odysseus refused. With Telemachus, Eumaeus and Philoetius, and Athena brandishing her aegis from the rafters, he killed every one of the suitors. He spared only the bard Phemius and the herald Medon, who had served them against their will; the maids who had slept with the suitors were hanged.",
+      "fr": "Pénélope demanda à voir le mendiant, qui prétendait avoir rencontré Ulysse. En signe d’hospitalité, sa vieille nourrice Euryclée lui lava les pieds — et reconnut la cicatrice qu’un sanglier lui avait faite dans sa jeunesse, à la chasse sur le Parnasse. Ulysse la saisit à la gorge pour la faire taire.\n\nLe lendemain, Pénélope apporta le grand arc d’Ulysse : elle épouserait celui qui saurait le tendre et faire passer une flèche à travers les trous de douze haches alignées. L’un après l’autre, les prétendants échouèrent à seulement le plier. Ulysse se révéla à Eumée et au bouvier Philoïtios et leur fit fermer les portes. Alors le mendiant demanda à essayer. Sous les railleries des prétendants, il tendit l’arc aussi aisément qu’un musicien tend la corde de sa lyre, et la flèche traversa les douze haches.\n\nSa flèche suivante transperça la gorge d’Antinoos qui levait sa coupe. « Chiens, s’écria Ulysse, vous pensiez que je ne reviendrais jamais ! » Eurymaque offrit réparation ; Ulysse refusa. Avec Télémaque, Eumée et Philoïtios, et Athéna brandissant son égide depuis les poutres, il tua tous les prétendants. Il n’épargna que l’aède Phémios et le héraut Médon, qui les avaient servis malgré eux ; les servantes qui avaient couché avec les prétendants furent pendues."
+    },
+    "characters": [
+      "odysseus",
+      "penelope",
+      "eurycleia",
+      "telemachus",
+      "eumaeus",
+      "athena"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Books 19–22 / Chants XIX–XXII",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey21.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/21"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "19.386–507",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey19.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/19"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "22.1–389",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey22.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/22"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Suitors of Penelope",
+        "url": "https://en.wikipedia.org/wiki/Suitors_of_Penelope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Prétendants de Pénélope",
+        "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9tendants_de_P%C3%A9n%C3%A9lope"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Ulysse",
+        "url": "https://mythologica.fr/grec/ulysse.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Revenge of Odysseus - The Odyssey - Episode 14 - See u In History",
+        "url": "https://www.youtube.com/watch?v=MB9urpL2r90"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — La Revanche d'Ulysse  - L'Odyssée - #14",
+        "url": "https://www.youtube.com/watch?v=G4qwzHs5Nww"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "ithaca"
+    ]
+  },
+  {
+    "id": "penelope-and-odysseus",
+    "title": {
+      "en": "Penelope and Odysseus",
+      "fr": "Pénélope et Ulysse"
+    },
+    "summary": {
+      "en": "Eurycleia ran to wake Penelope: Odysseus was home, and the suitors were dead. Penelope refused to believe it — some god must have taken his shape — and came down to sit facing the stranger in silence, while Telemachus reproached her for her hard heart. Odysseus smiled: she would know him by signs only the two of them knew.\n\nSo Penelope tested him. She told Eurycleia to carry the bed that Odysseus had built out of their bedroom for the guest. Odysseus flared up: who could have moved that bed? He had built it himself around the trunk of an olive tree rooted in the ground, and built the bedroom around it. At these words Penelope's knees gave way; she ran to him in tears and threw her arms around his neck. Athena held back the Dawn at the edge of the Ocean, to lengthen their night.\n\nThe next day Odysseus went to the orchard where his old father Laertes lived in sorrow, and made himself known by his scar and by the trees Laertes had given him as a child — thirteen pear trees, ten apple trees and forty fig trees. The suitors' kinsmen, led by Eupeithes, the father of Antinous, came to take revenge; old Laertes, given new strength by Athena, killed Eupeithes with his spear. Then Zeus hurled a thunderbolt, and Athena imposed peace on Ithaca.",
+      "fr": "Euryclée courut réveiller Pénélope : Ulysse était de retour, et les prétendants étaient morts. Pénélope refusa d’y croire — quelque dieu avait dû prendre son apparence — et descendit s’asseoir en silence face à l’étranger, tandis que Télémaque lui reprochait la dureté de son cœur. Ulysse sourit : elle le reconnaîtrait à des signes connus d’eux seuls.\n\nAlors Pénélope le mit à l’épreuve. Elle dit à Euryclée de sortir de leur chambre, pour l’hôte, le lit qu’Ulysse avait fabriqué. Ulysse s’emporta : qui avait pu déplacer ce lit ? Il l’avait bâti lui-même autour du tronc d’un olivier enraciné dans le sol, et construit la chambre autour. À ces mots, les genoux de Pénélope se dérobèrent ; elle courut à lui en pleurant et lui jeta les bras autour du cou. Athéna retint l’Aurore au bord de l’Océan, pour prolonger leur nuit.\n\nLe lendemain, Ulysse alla au verger où son vieux père Laërte vivait dans le chagrin, et se fit reconnaître par sa cicatrice et par les arbres que Laërte lui avait donnés enfant — treize poiriers, dix pommiers et quarante figuiers. Les parents des prétendants, menés par Eupithès, le père d’Antinoos, vinrent se venger ; le vieux Laërte, rendu plus fort par Athéna, tua Eupithès de sa lance. Alors Zeus lança sa foudre, et Athéna imposa la paix à Ithaque."
+    },
+    "characters": [
+      "penelope",
+      "odysseus",
+      "eurycleia",
+      "telemachus",
+      "laertes",
+      "athena",
+      "zeus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "Books 23–24 / Chants XXIII–XXIV",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey23.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/23"
+        }
+      },
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "24.205–548",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey24.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/24"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Penelope",
+        "url": "https://en.wikipedia.org/wiki/Penelope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pénélope",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9lope"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "World History Encyclopedia — Penelope",
+        "url": "https://www.worldhistory.org/Penelope/"
+      },
+      {
+        "kind": "article",
+        "lang": "fr",
+        "title": "Mythologica — Pénélope",
+        "url": "https://mythologica.fr/grec/penelope.htm"
+      },
+      {
+        "kind": "video",
+        "lang": "en",
+        "title": "See U in History / Mythology — Penelope: The Myth of the Faithful Wife",
+        "url": "https://www.youtube.com/watch?v=t8lDKdIA00U"
+      },
+      {
+        "kind": "video",
+        "lang": "fr",
+        "title": "Histoire et Mythologie en BD — Pénélope : Le mythe de l’épouse fidèle",
+        "url": "https://www.youtube.com/watch?v=l1a3DiyBzLA"
+      }
+    ],
+    "era": "returns",
+    "generation": 0,
+    "places": [
+      "ithaca"
+    ]
   }
 ]

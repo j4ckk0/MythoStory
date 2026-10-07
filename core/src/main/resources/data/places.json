@@ -662,5 +662,171 @@
       "en": "Placed in Sicily, by Etna, since antiquity: the Cyclopean Isles are said to be the rocks Polyphemus threw at Odysseus.",
       "fr": "Situé en Sicile, au pied de l’Etna, dès l’Antiquité : les îles des Cyclopes seraient les rochers que Polyphème lança sur Ulysse."
     }
+  },
+  {
+    "id": "aulis",
+    "name": {
+      "en": "Aulis",
+      "fr": "Aulis"
+    },
+    "lat": 38.4333,
+    "lon": 23.5922,
+    "wikidata": "Q4821780"
+  },
+  {
+    "id": "skyros",
+    "name": {
+      "en": "Skyros",
+      "fr": "Skyros"
+    },
+    "lat": 38.8725,
+    "lon": 24.525,
+    "wikidata": "Q208566"
+  },
+  {
+    "id": "ithaca",
+    "name": {
+      "en": "Ithaca",
+      "fr": "Ithaque"
+    },
+    "lat": 38.3667,
+    "lon": 20.7167,
+    "wikidata": "Q187471"
+  },
+  {
+    "id": "pylos",
+    "name": {
+      "en": "Pylos",
+      "fr": "Pylos"
+    },
+    "lat": 36.9139,
+    "lon": 21.6964,
+    "wikidata": "Q7263152"
+  },
+  {
+    "id": "aeolia",
+    "name": {
+      "en": "Aeolia (Lipari)",
+      "fr": "Éolie (Lipari)"
+    },
+    "lat": 38.4667,
+    "lon": 14.95,
+    "wikidata": "Q496389",
+    "identification": {
+      "en": "Aeolus's floating island was identified with the Aeolian Islands, north of Sicily, Lipari above all.",
+      "fr": "L’île flottante d’Éole fut identifiée aux îles Éoliennes, au nord de la Sicile, et d’abord à Lipari."
+    }
+  },
+  {
+    "id": "laestrygonians",
+    "name": {
+      "en": "Land of the Laestrygonians (Formia)",
+      "fr": "Pays des Lestrygons (Formia)"
+    },
+    "lat": 41.2564,
+    "lon": 13.6069,
+    "wikidata": "Q128086",
+    "identification": {
+      "en": "The Romans placed the Laestrygonians' city at Formiae, on the coast of Latium; others placed it in Sicily.",
+      "fr": "Les Romains situaient la cité des Lestrygons à Formies, sur la côte du Latium ; d’autres en Sicile."
+    }
+  },
+  {
+    "id": "aeaea",
+    "name": {
+      "en": "Aeaea (Mount Circeo)",
+      "fr": "Aiaié (mont Circé)"
+    },
+    "lat": 41.2333,
+    "lon": 13.05,
+    "wikidata": "Q2530284",
+    "identification": {
+      "en": "Circe's island was identified with the promontory of Circeii — Mount Circeo, which bears her name.",
+      "fr": "L’île de Circé fut identifiée au promontoire de Circeii — le mont Circé, qui porte son nom."
+    }
+  },
+  {
+    "id": "avernus",
+    "name": {
+      "en": "Lake Avernus",
+      "fr": "Lac Averne"
+    },
+    "lat": 40.8383,
+    "lon": 14.075,
+    "wikidata": "Q782896",
+    "identification": {
+      "en": "Homer sets the gate of the dead at the edge of the world, among the Cimmerians; Roman tradition set it at Lake Avernus.",
+      "fr": "Homère place la porte des morts aux confins du monde, chez les Cimmériens ; la tradition romaine la situait au lac Averne."
+    }
+  },
+  {
+    "id": "sirenuse",
+    "name": {
+      "en": "The Sirens' islands (Li Galli)",
+      "fr": "Îles des Sirènes (Li Galli)"
+    },
+    "lat": 40.581,
+    "lon": 14.433,
+    "wikidata": "Q1812834",
+    "identification": {
+      "en": "The Sirenuse, off the Amalfi coast, were held to be the Sirens' islands.",
+      "fr": "Les Sirenuse, au large de la côte amalfitaine, passaient pour les îles des Sirènes."
+    }
+  },
+  {
+    "id": "strait-of-messina",
+    "name": {
+      "en": "Strait of Messina",
+      "fr": "Détroit de Messine"
+    },
+    "lat": 38.2458,
+    "lon": 15.6325,
+    "wikidata": "Q134705",
+    "identification": {
+      "en": "Scylla and Charybdis were placed on either side of the Strait of Messina since antiquity.",
+      "fr": "Scylla et Charybde étaient placées de part et d’autre du détroit de Messine dès l’Antiquité."
+    }
+  },
+  {
+    "id": "thrinacia",
+    "name": {
+      "en": "Thrinacia (Sicily)",
+      "fr": "Thrinacie (Sicile)"
+    },
+    "lat": 37.5,
+    "lon": 14.0,
+    "wikidata": "Q1460",
+    "identification": {
+      "en": "The island of the Sun's cattle was identified with Sicily, the three-cornered island.",
+      "fr": "L’île des bœufs du Soleil fut identifiée à la Sicile, l’île aux trois pointes."
+    }
+  },
+  {
+    "id": "ogygia",
+    "name": {
+      "en": "Ogygia (Gozo)",
+      "fr": "Ogygie (Gozo)"
+    },
+    "lat": 36.045,
+    "lon": 14.2589,
+    "wikidata": "Q170488",
+    "identification": {
+      "en": "Callimachus placed Calypso's island at Gaulos — Gozo, by Malta, as Strabo reports.",
+      "fr": "Callimaque plaçait l’île de Calypso à Gaulos — Gozo, près de Malte, rapporte Strabon."
+    }
+  },
+  {
+    "id": "scheria",
+    "name": {
+      "en": "Scheria (Corfu)",
+      "fr": "Schérie (Corfou)"
+    },
+    "lat": 39.6,
+    "lon": 19.87,
+    "wikidata": "Q121378",
+    "identification": {
+      "en": "The Phaeacians' island was identified with Corcyra — Corfu — whose people claimed them as ancestors.",
+      "fr": "L’île des Phéaciens fut identifiée à Corcyre — Corfou —, dont les habitants les revendiquaient pour ancêtres."
+    }
   }
 ]

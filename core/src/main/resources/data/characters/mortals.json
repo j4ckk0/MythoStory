@@ -1148,5 +1148,809 @@
         "url": "https://mythologica.fr/grec/leda.htm"
       }
     ]
+  },
+  {
+    "id": "penelope",
+    "name": {
+      "en": "Penelope",
+      "fr": "Pénélope"
+    },
+    "kind": "mortal",
+    "wikidata": "Q165769",
+    "description": {
+      "en": "Wife of Odysseus, who waited twenty years for him, weaving and unweaving a shroud to keep her suitors waiting.",
+      "fr": "Épouse d’Ulysse, qui l’attendit vingt ans, tissant et défaisant un linceul pour faire patienter ses prétendants."
+    },
+    "greek": "Πηνελόπη",
+    "parents": [
+      "icarius-of-sparta"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Penelope",
+        "url": "https://en.wikipedia.org/wiki/Penelope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pénélope",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9n%C3%A9lope"
+      }
+    ]
+  },
+  {
+    "id": "telemachus",
+    "name": {
+      "en": "Telemachus",
+      "fr": "Télémaque"
+    },
+    "kind": "mortal",
+    "wikidata": "Q192482",
+    "description": {
+      "en": "Son of Odysseus and Penelope, who set out to seek news of his father.",
+      "fr": "Fils d’Ulysse et de Pénélope, parti chercher des nouvelles de son père."
+    },
+    "greek": "Τηλέμαχος",
+    "parents": [
+      "penelope",
+      "odysseus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Telemachus",
+        "url": "https://en.wikipedia.org/wiki/Telemachus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Télémaque",
+        "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9maque"
+      }
+    ]
+  },
+  {
+    "id": "nausicaa",
+    "name": {
+      "en": "Nausicaa",
+      "fr": "Nausicaa"
+    },
+    "kind": "mortal",
+    "wikidata": "Q135224",
+    "description": {
+      "en": "Princess of the Phaeacians, who found Odysseus shipwrecked on the shore.",
+      "fr": "Princesse des Phéaciens, qui trouva Ulysse naufragé sur le rivage."
+    },
+    "greek": "Ναυσικάα",
+    "parents": [
+      "alcinous",
+      "arete-q3622209"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nausicaa",
+        "url": "https://en.wikipedia.org/wiki/Nausicaa"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Nausicaa",
+        "url": "https://fr.wikipedia.org/wiki/Nausicaa"
+      }
+    ]
+  },
+  {
+    "id": "alcinous",
+    "name": {
+      "en": "Alcinous",
+      "fr": "Alcinoos"
+    },
+    "kind": "mortal",
+    "wikidata": "Q496595",
+    "description": {
+      "en": "King of the Phaeacians, who heard Odysseus's tale and sent him home to Ithaca.",
+      "fr": "Roi des Phéaciens, qui écouta le récit d’Ulysse et le fit reconduire à Ithaque."
+    },
+    "greek": "᾿Αλκίνοος",
+    "parents": [
+      "nausithous-q80493"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Alcinous",
+        "url": "https://en.wikipedia.org/wiki/Alcinous"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Alcinoos",
+        "url": "https://fr.wikipedia.org/wiki/Alcinoos"
+      }
+    ]
+  },
+  {
+    "id": "tiresias",
+    "name": {
+      "en": "Tiresias",
+      "fr": "Tirésias"
+    },
+    "kind": "mortal",
+    "wikidata": "Q656881",
+    "description": {
+      "en": "Blind seer of Thebes, who kept his wisdom among the dead and foretold Odysseus's return.",
+      "fr": "Devin aveugle de Thèbes, qui garda sa sagesse chez les morts et prédit à Ulysse son retour."
+    },
+    "greek": "Τειρεσίας",
+    "parents": [
+      "chariclo-q4358140"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Tiresias",
+        "url": "https://en.wikipedia.org/wiki/Tiresias"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Tirésias",
+        "url": "https://fr.wikipedia.org/wiki/Tir%C3%A9sias"
+      }
+    ]
+  },
+  {
+    "id": "anticlea",
+    "name": {
+      "en": "Anticlea",
+      "fr": "Anticlée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q576170",
+    "description": {
+      "en": "Mother of Odysseus, who died of grief waiting for him.",
+      "fr": "Mère d’Ulysse, morte de chagrin à l’attendre."
+    },
+    "greek": "Αντίκλεια",
+    "parents": [
+      "autolycus",
+      "amphithea"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anticlea",
+        "url": "https://en.wikipedia.org/wiki/Anticlea"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anticlée",
+        "url": "https://fr.wikipedia.org/wiki/Anticl%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "eurycleia",
+    "name": {
+      "en": "Eurycleia",
+      "fr": "Euryclée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q615201",
+    "description": {
+      "en": "Odysseus's old nurse, who recognised him by his scar.",
+      "fr": "La vieille nourrice d’Ulysse, qui le reconnut à sa cicatrice."
+    },
+    "greek": "Εὐρύκλεια",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eurycleia (nurse of Odysseus)",
+        "url": "https://en.wikipedia.org/wiki/Eurycleia_(nurse_of_Odysseus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Euryclée",
+        "url": "https://fr.wikipedia.org/wiki/Eurycl%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "eumaeus",
+    "name": {
+      "en": "Eumaeus",
+      "fr": "Eumée"
+    },
+    "kind": "mortal",
+    "wikidata": "Q1333846",
+    "description": {
+      "en": "Odysseus's loyal swineherd, who took him in disguised as a beggar.",
+      "fr": "Le fidèle porcher d’Ulysse, qui l’accueillit déguisé en mendiant."
+    },
+    "greek": "Εύμαιος",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Eumaeus",
+        "url": "https://en.wikipedia.org/wiki/Eumaeus"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Eumée",
+        "url": "https://fr.wikipedia.org/wiki/Eum%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "laertes",
+    "name": {
+      "en": "Laertes",
+      "fr": "Laërte"
+    },
+    "kind": "mortal",
+    "wikidata": "Q748296",
+    "description": {
+      "en": "Father of Odysseus, who lived in grief on his farm until his son came back.",
+      "fr": "Père d’Ulysse, qui vécut dans le chagrin sur son domaine jusqu’au retour de son fils."
+    },
+    "greek": "Λαέρτης",
+    "parents": [
+      "arcesius",
+      "chalcomedusa"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Laertes (father of Odysseus)",
+        "url": "https://en.wikipedia.org/wiki/Laertes_(father_of_Odysseus)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Laërte",
+        "url": "https://fr.wikipedia.org/wiki/La%C3%ABrte"
+      }
+    ]
+  },
+  {
+    "id": "elpenor",
+    "name": {
+      "en": "Elpenor",
+      "fr": "Elpénor"
+    },
+    "kind": "mortal",
+    "wikidata": "Q935433",
+    "description": {
+      "en": "Youngest of Odysseus's companions, who fell from Circe's roof and was the first shade to meet him among the dead.",
+      "fr": "Le plus jeune des compagnons d’Ulysse, tombé du toit de Circé, la première ombre qu’il rencontra chez les morts."
+    },
+    "greek": "Ελπήνωρ",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Elpenor",
+        "url": "https://en.wikipedia.org/wiki/Elpenor"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Elpénor",
+        "url": "https://fr.wikipedia.org/wiki/Elp%C3%A9nor"
+      }
+    ]
+  },
+  {
+    "id": "iphigenia",
+    "name": {
+      "en": "Iphigenia",
+      "fr": "Iphigénie"
+    },
+    "kind": "mortal",
+    "wikidata": "Q192673",
+    "description": {
+      "en": "Daughter of Agamemnon, offered as a sacrifice at Aulis so that the fleet could sail for Troy.",
+      "fr": "Fille d’Agamemnon, offerte en sacrifice à Aulis pour que la flotte puisse partir pour Troie."
+    },
+    "greek": "Ἰφιγένεια",
+    "parents": [
+      "clytemnestra",
+      "agamemnon"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Iphigenia",
+        "url": "https://en.wikipedia.org/wiki/Iphigenia"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Iphigénie",
+        "url": "https://fr.wikipedia.org/wiki/Iphig%C3%A9nie"
+      }
+    ]
+  },
+  {
+    "id": "clytemnestra",
+    "name": {
+      "en": "Clytemnestra",
+      "fr": "Clytemnestre"
+    },
+    "kind": "mortal",
+    "wikidata": "Q131157",
+    "description": {
+      "en": "Wife of Agamemnon, who never forgave him their daughter Iphigenia and killed him on his return.",
+      "fr": "Épouse d’Agamemnon, qui ne lui pardonna jamais leur fille Iphigénie et le tua à son retour."
+    },
+    "greek": "Κλυταιμνήστρα",
+    "parents": [
+      "leda",
+      "tyndareus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Clytemnestra",
+        "url": "https://en.wikipedia.org/wiki/Clytemnestra"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Clytemnestre",
+        "url": "https://fr.wikipedia.org/wiki/Clytemnestre"
+      }
+    ]
+  },
+  {
+    "id": "deidamia",
+    "name": {
+      "en": "Deidamia",
+      "fr": "Déidamie"
+    },
+    "kind": "mortal",
+    "wikidata": "Q431387",
+    "description": {
+      "en": "Princess of Skyros, loved by Achilles while he hid among her sisters; mother of Neoptolemus.",
+      "fr": "Princesse de Skyros, aimée d’Achille quand il se cachait parmi ses sœurs ; mère de Néoptolème."
+    },
+    "greek": "Δηϊδάμεια",
+    "parents": [
+      "lycomedes-q1330532"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Deidamia (daughter of Lycomedes)",
+        "url": "https://en.wikipedia.org/wiki/Deidamia_(daughter_of_Lycomedes)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Déidamie fille de Lycomède",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9idamie_fille_de_Lycom%C3%A8de"
+      }
+    ]
+  },
+  {
+    "id": "calchas",
+    "name": {
+      "en": "Calchas",
+      "fr": "Calchas"
+    },
+    "kind": "mortal",
+    "wikidata": "Q725527",
+    "description": {
+      "en": "Seer of the Greek army before Troy.",
+      "fr": "Devin de l’armée grecque devant Troie."
+    },
+    "greek": "Κάλχας",
+    "parents": [
+      "thestor"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calchas",
+        "url": "https://en.wikipedia.org/wiki/Calchas"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calchas",
+        "url": "https://fr.wikipedia.org/wiki/Calchas"
+      }
+    ]
+  },
+  {
+    "id": "briseis",
+    "name": {
+      "en": "Briseis",
+      "fr": "Briséis"
+    },
+    "kind": "mortal",
+    "wikidata": "Q244318",
+    "description": {
+      "en": "Achilles' captive, whom Agamemnon took from him.",
+      "fr": "Captive d’Achille, qu’Agamemnon lui prit."
+    },
+    "greek": "Βρισηΐς",
+    "parents": [
+      "briseus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Briseis",
+        "url": "https://en.wikipedia.org/wiki/Briseis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Briséis",
+        "url": "https://fr.wikipedia.org/wiki/Bris%C3%A9is"
+      }
+    ]
+  },
+  {
+    "id": "chryses",
+    "name": {
+      "en": "Chryses",
+      "fr": "Chrysès"
+    },
+    "kind": "mortal",
+    "wikidata": "Q852301",
+    "description": {
+      "en": "Priest of Apollo, whose daughter Agamemnon refused to give back.",
+      "fr": "Prêtre d’Apollon, dont Agamemnon refusa de rendre la fille."
+    },
+    "greek": "Χρύσης",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Chryses (priest of Apollo)",
+        "url": "https://en.wikipedia.org/wiki/Chryses_(priest_of_Apollo)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Chrysès (prêtre d'Apollon)",
+        "url": "https://fr.wikipedia.org/wiki/Chrys%C3%A8s_(pr%C3%AAtre_d'Apollon)"
+      }
+    ]
+  },
+  {
+    "id": "helenus",
+    "name": {
+      "en": "Helenus",
+      "fr": "Hélénos"
+    },
+    "kind": "mortal",
+    "wikidata": "Q729332",
+    "description": {
+      "en": "Trojan seer, son of Priam, who revealed what the fall of Troy depended on.",
+      "fr": "Devin troyen, fils de Priam, qui révéla de quoi dépendait la chute de Troie."
+    },
+    "greek": "Ἕλενος",
+    "parents": [
+      "priam",
+      "hecuba"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Helenus (son of Priam)",
+        "url": "https://en.wikipedia.org/wiki/Helenus_(son_of_Priam)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hélénos",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9l%C3%A9nos"
+      }
+    ]
+  },
+  {
+    "id": "cassandra",
+    "name": {
+      "en": "Cassandra",
+      "fr": "Cassandre"
+    },
+    "kind": "mortal",
+    "wikidata": "Q170779",
+    "description": {
+      "en": "Trojan princess and prophetess, whom no one believed.",
+      "fr": "Princesse et prophétesse troyenne, que personne ne croyait."
+    },
+    "greek": "Κασσάνδρα",
+    "parents": [
+      "priam",
+      "hecuba"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cassandra",
+        "url": "https://en.wikipedia.org/wiki/Cassandra"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cassandre",
+        "url": "https://fr.wikipedia.org/wiki/Cassandre"
+      }
+    ]
+  },
+  {
+    "id": "andromache",
+    "name": {
+      "en": "Andromache",
+      "fr": "Andromaque"
+    },
+    "kind": "mortal",
+    "wikidata": "Q19376",
+    "description": {
+      "en": "Wife of Hector.",
+      "fr": "Épouse d’Hector."
+    },
+    "greek": "Ἀνδρομάχη",
+    "parents": [
+      "eetion"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Andromache",
+        "url": "https://en.wikipedia.org/wiki/Andromache"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Andromaque",
+        "url": "https://fr.wikipedia.org/wiki/Andromaque"
+      }
+    ]
+  },
+  {
+    "id": "astyanax",
+    "name": {
+      "en": "Astyanax",
+      "fr": "Astyanax"
+    },
+    "kind": "mortal",
+    "wikidata": "Q334787",
+    "description": {
+      "en": "Infant son of Hector, thrown from the walls of Troy.",
+      "fr": "Fils encore enfant d’Hector, précipité du haut des murs de Troie."
+    },
+    "greek": "Ἀστυάναξ",
+    "parents": [
+      "andromache",
+      "hector"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Astyanax",
+        "url": "https://en.wikipedia.org/wiki/Astyanax"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Astyanax",
+        "url": "https://fr.wikipedia.org/wiki/Astyanax"
+      }
+    ]
+  },
+  {
+    "id": "hecuba",
+    "name": {
+      "en": "Hecuba",
+      "fr": "Hécube"
+    },
+    "kind": "mortal",
+    "wikidata": "Q193433",
+    "description": {
+      "en": "Queen of Troy, wife of Priam and mother of Hector.",
+      "fr": "Reine de Troie, épouse de Priam et mère d’Hector."
+    },
+    "greek": "Ἑκάβη",
+    "parents": [
+      "dymas-q17486774"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hecuba",
+        "url": "https://en.wikipedia.org/wiki/Hecuba"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hécube",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9cube"
+      }
+    ]
+  },
+  {
+    "id": "polyxena",
+    "name": {
+      "en": "Polyxena",
+      "fr": "Polyxène"
+    },
+    "kind": "mortal",
+    "wikidata": "Q750236",
+    "description": {
+      "en": "Daughter of Priam, sacrificed on Achilles' tomb.",
+      "fr": "Fille de Priam, sacrifiée sur le tombeau d’Achille."
+    },
+    "greek": "Πολυξένη",
+    "parents": [
+      "priam",
+      "hecuba"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Polyxena",
+        "url": "https://en.wikipedia.org/wiki/Polyxena"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Polyxène",
+        "url": "https://fr.wikipedia.org/wiki/Polyx%C3%A8ne"
+      }
+    ]
+  },
+  {
+    "id": "anchises",
+    "name": {
+      "en": "Anchises",
+      "fr": "Anchise"
+    },
+    "kind": "mortal",
+    "wikidata": "Q211953",
+    "description": {
+      "en": "Father of Aeneas, carried out of burning Troy on his son's shoulders.",
+      "fr": "Père d’Énée, emporté hors de Troie en flammes sur les épaules de son fils."
+    },
+    "greek": "Ἀγχίσης",
+    "parents": [
+      "capys"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anchises",
+        "url": "https://en.wikipedia.org/wiki/Anchises"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Anchise",
+        "url": "https://fr.wikipedia.org/wiki/Anchise"
+      }
+    ]
+  },
+  {
+    "id": "sinon",
+    "name": {
+      "en": "Sinon",
+      "fr": "Sinon"
+    },
+    "kind": "mortal",
+    "wikidata": "Q663792",
+    "description": {
+      "en": "Greek who let himself be captured to persuade the Trojans to take in the horse.",
+      "fr": "Grec qui se laissa capturer pour persuader les Troyens de faire entrer le cheval."
+    },
+    "greek": "Σίνων",
+    "parents": [
+      "sisyphus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sinon",
+        "url": "https://en.wikipedia.org/wiki/Sinon"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sinon",
+        "url": "https://fr.wikipedia.org/wiki/Sinon"
+      }
+    ]
+  },
+  {
+    "id": "epeius",
+    "name": {
+      "en": "Epeius",
+      "fr": "Épéios"
+    },
+    "kind": "mortal",
+    "wikidata": "Q278930",
+    "description": {
+      "en": "Builder of the wooden horse.",
+      "fr": "Constructeur du cheval de bois."
+    },
+    "greek": "Ἐπειός",
+    "parents": [
+      "panopeus"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Epeius of Phocis",
+        "url": "https://en.wikipedia.org/wiki/Epeius_of_Phocis"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Épéios fils de Panopée",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89p%C3%A9ios_fils_de_Panop%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "thersites",
+    "name": {
+      "en": "Thersites",
+      "fr": "Thersite"
+    },
+    "kind": "mortal",
+    "wikidata": "Q1045730",
+    "description": {
+      "en": "The ugliest and most insolent of the Greeks before Troy, killed by Achilles for mocking him.",
+      "fr": "Le plus laid et le plus insolent des Grecs devant Troie, tué par Achille pour s’être moqué de lui."
+    },
+    "greek": "Θερσίτης",
+    "parents": [
+      "agrius-q396862"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thersites",
+        "url": "https://en.wikipedia.org/wiki/Thersites"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thersite",
+        "url": "https://fr.wikipedia.org/wiki/Thersite"
+      }
+    ]
   }
 ]

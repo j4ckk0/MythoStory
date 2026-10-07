@@ -117,8 +117,8 @@
       "fr": "Personnage de la mythologie grecque, fils de Poséidon."
     },
     "parents": [
-      "larissa-q1275070",
-      "poseidon"
+      "poseidon",
+      "larissa-q1275070"
     ],
     "links": [
       {
@@ -174,7 +174,7 @@
       "en": "River god in Greek mythology.",
       "fr": "Dieu fluvial de la mythologie grecque."
     },
-    "greek": "Ἀχέλῷος , Achelōos",
+    "greek": "Ἀχέλῷος",
     "links": [
       {
         "kind": "wikipedia",
@@ -298,8 +298,8 @@
     },
     "greek": "Ἀκταία",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -324,8 +324,8 @@
     },
     "greek": "Ακτίς",
     "parents": [
-      "rhodos",
-      "helios"
+      "helios",
+      "rhodos"
     ],
     "links": [
       {
@@ -483,9 +483,9 @@
     },
     "greek": "Αδράστεια",
     "parents": [
+      "zeus",
       "themis",
-      "ananke",
-      "zeus"
+      "ananke"
     ],
     "links": [
       {
@@ -506,12 +506,12 @@
     "wikidata": "Q4217252",
     "description": {
       "en": "Greek Goddess of revolt, just retribution and sublime balance between good and evil.",
-      "fr": "Fille d’Aphrodite et d’Arès dans la mythologie grecque."
+      "fr": "Fille d’Arès et d’Aphrodite dans la mythologie grecque."
     },
     "greek": "Αδρήστεια",
     "parents": [
-      "aphrodite",
-      "ares"
+      "ares",
+      "aphrodite"
     ],
     "links": [
       {
@@ -532,12 +532,12 @@
     "wikidata": "Q206187",
     "description": {
       "en": "Son of Zeus in Greek mythology.",
-      "fr": "Fils d’Égine et de Zeus dans la mythologie grecque."
+      "fr": "Fils de Zeus et d’Égine dans la mythologie grecque."
     },
-    "greek": "Αἰακός , Aiakos",
+    "greek": "Αἰακός",
     "parents": [
-      "aegina",
-      "zeus"
+      "zeus",
+      "aegina"
     ],
     "links": [
       {
@@ -574,8 +574,8 @@
     },
     "greek": "Αἰγαῖος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -606,9 +606,9 @@
     },
     "greek": "Αιγιαλέας του Ινάχου",
     "parents": [
+      "melia-q785598",
       "phoroneus",
-      "inachus",
-      "melia-q785598"
+      "inachus"
     ],
     "links": [
       {
@@ -678,9 +678,9 @@
     },
     "greek": "Αίγλη",
     "parents": [
+      "asclepius",
       "lampetia",
-      "epione",
-      "asclepius"
+      "epione"
     ],
     "links": [
       {
@@ -737,8 +737,8 @@
     },
     "greek": "Αίολος",
     "parents": [
-      "arne-q1627764",
-      "poseidon"
+      "poseidon",
+      "arne-q1627764"
     ],
     "links": [
       {
@@ -756,45 +756,6 @@
     ]
   },
   {
-    "id": "aeolus-q172549",
-    "name": {
-      "en": "Aeolus",
-      "fr": "Éole"
-    },
-    "kind": "deity",
-    "wikidata": "Q172549",
-    "description": {
-      "en": "God of winds, son of Hippotes in Greek mythology.",
-      "fr": "Personnage de la mythologie grecque, fils d'Hippotès et maître des vents."
-    },
-    "greek": "Αἴολος",
-    "parents": [
-      "poseidon",
-      "hippotes-q3136179",
-      "arne-q1627764"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Aeolus (son of Hippotes)",
-        "url": "https://en.wikipedia.org/wiki/Aeolus_(son_of_Hippotes)"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Éole",
-        "url": "https://fr.wikipedia.org/wiki/%C3%89ole"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Aeolus (Aiolos)",
-        "url": "https://www.theoi.com/Titan/Aiolos.html"
-      }
-    ]
-  },
-  {
     "id": "aergia",
     "name": {
       "en": "Aergia",
@@ -807,8 +768,8 @@
       "fr": "Divinité de la mythologie grecque de la paresse."
     },
     "parents": [
-      "gaia",
-      "aether"
+      "aether",
+      "gaia"
     ],
     "links": [
       {
@@ -870,8 +831,8 @@
     },
     "greek": "Αἵθουσα",
     "parents": [
-      "alcyone-q763268",
-      "poseidon"
+      "poseidon",
+      "alcyone-q763268"
     ],
     "links": [
       {
@@ -934,8 +895,8 @@
     },
     "greek": "Ἀγαύη",
     "parents": [
-      "harmonia-q978079",
-      "cadmus"
+      "cadmus",
+      "harmonia-q978079"
     ],
     "links": [
       {
@@ -1047,12 +1008,12 @@
     "wikidata": "Q4439972",
     "description": {
       "en": "One of the Graces (Charites) in Greek mythology.",
-      "fr": "Fille d’Eurynomé et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et d’Eurynomé dans la mythologie grecque."
     },
-    "greek": "Ἀγλαΐα , Aglaeā",
+    "greek": "Ἀγλαΐα",
     "parents": [
-      "eurynome-q548099",
-      "zeus"
+      "zeus",
+      "eurynome-q548099"
     ],
     "links": [
       {
@@ -1314,39 +1275,6 @@
     ]
   },
   {
-    "id": "alcinous",
-    "name": {
-      "en": "Alcinous",
-      "fr": "Alcinoos"
-    },
-    "kind": "deity",
-    "wikidata": "Q496595",
-    "description": {
-      "en": "Mythical character, King of the Phaeacians, son of Nausithous and brother of Rhexenor.",
-      "fr": "Personnage de la mythologie grecque, roi des Phéaciens."
-    },
-    "greek": "᾿Αλκίνοος",
-    "parents": [
-      "nausithous-q80493",
-      "phaeax",
-      "corcyra"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Alcinous",
-        "url": "https://en.wikipedia.org/wiki/Alcinous"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Alcinoos",
-        "url": "https://fr.wikipedia.org/wiki/Alcinoos"
-      }
-    ]
-  },
-  {
     "id": "alcyone-q912904",
     "name": {
       "en": "Alcyone",
@@ -1360,9 +1288,9 @@
     },
     "greek": "Ἀλκυόνη",
     "parents": [
+      "aiolos",
       "enarete",
-      "aegiale-q404396",
-      "aiolos"
+      "aegiale-q404396"
     ],
     "links": [
       {
@@ -1405,12 +1333,12 @@
     "wikidata": "Q1643451",
     "description": {
       "en": "One of the Erinyes or Furies, ancient Greek mythological punisher of moral crimes.",
-      "fr": "Fille de Gaïa et d’Ouranos dans la mythologie grecque."
+      "fr": "Fille d’Ouranos et de Gaïa dans la mythologie grecque."
     },
     "greek": "Αληκτώ",
     "parents": [
-      "gaia",
-      "uranus"
+      "uranus",
+      "gaia"
     ],
     "links": [
       {
@@ -1509,8 +1437,8 @@
     },
     "greek": "Άλμωψ",
     "parents": [
-      "helle",
-      "poseidon"
+      "poseidon",
+      "helle"
     ],
     "links": [
       {
@@ -1533,10 +1461,10 @@
       "en": "River and river god in Greek mythology.",
       "fr": "Divinité fluviale de la mythologie grecque."
     },
-    "greek": "Ἀλφειός , Alpheios",
+    "greek": "Ἀλφειός",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -1572,8 +1500,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -1710,11 +1638,11 @@
     "wikidata": "Q1163391",
     "description": {
       "en": "Character from Greek mythology, son of Apollo.",
-      "fr": "Fils d’Apollon et de Dryope dans la mythologie grecque."
+      "fr": "Fils de Dryope et d’Apollon dans la mythologie grecque."
     },
     "parents": [
-      "apollo",
-      "dryope-q910403"
+      "dryope-q910403",
+      "apollo"
     ],
     "links": [
       {
@@ -1745,8 +1673,8 @@
     },
     "greek": "Αμφιθόη",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -1775,7 +1703,7 @@
       "en": "Greek mythological character; King of Sparta.",
       "fr": "Personnage de la mythologie grecque, fils de Lacédémon."
     },
-    "greek": "Ἀμύκλας , Amyclas",
+    "greek": "Ἀμύκλας",
     "parents": [
       "lacedaemon",
       "sparta"
@@ -1913,12 +1841,12 @@
     "wikidata": "Q2849878",
     "description": {
       "en": "Deity in Greek mythology, daughter of Zeus and Hera.",
-      "fr": "Fille d’Héra et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et d’Héra dans la mythologie grecque."
     },
     "greek": "Άγγελος",
     "parents": [
-      "hera",
-      "zeus"
+      "zeus",
+      "hera"
     ],
     "links": [
       {
@@ -1947,7 +1875,7 @@
       "en": "The God of Selfless Love in Greek mythology.",
       "fr": "Divinité de l'amour réciproque dans la mythologie grecque."
     },
-    "greek": "Ἀντέρως , Anterōs",
+    "greek": "Ἀντέρως",
     "parents": [
       "aphrodite",
       "ares"
@@ -2083,7 +2011,7 @@
       "en": "Minor goddess in Greek mythology, personification of deceit.",
       "fr": "Fille de Nyx dans la mythologie grecque."
     },
-    "greek": "Ἀπάτη , Apatē",
+    "greek": "Ἀπάτη",
     "parents": [
       "nyx"
     ],
@@ -2146,7 +2074,7 @@
       "en": "Figure of Greek mythology.",
       "fr": "Divinité grecque antique d'Égine."
     },
-    "greek": "Ἀφαία , Aphaiā",
+    "greek": "Ἀφαία",
     "links": [
       {
         "kind": "wikipedia",
@@ -2332,8 +2260,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -2428,12 +2356,12 @@
     "kind": "deity",
     "wikidata": "Q8203830",
     "description": {
-      "en": "Son of Tethys and Oceanus in Greek mythology.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "en": "Son of Oceanus and Tethys in Greek mythology.",
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -2579,7 +2507,7 @@
       "en": "Minor god in Greek mythology.",
       "fr": "Fils de Cyrène et d’Apollon dans la mythologie grecque."
     },
-    "greek": "Ἀρισταῖος , Aristaios",
+    "greek": "Ἀρισταῖος",
     "parents": [
       "cyrene",
       "apollo"
@@ -2614,12 +2542,12 @@
     "kind": "deity",
     "wikidata": "Q4069374",
     "description": {
-      "en": "Daughter of Electra and Thaumas in Greek mythology.",
-      "fr": "Fille d’Électre et de Thaumas dans la mythologie grecque."
+      "en": "Daughter of Thaumas and Electra in Greek mythology.",
+      "fr": "Fille de Thaumas et d’Électre dans la mythologie grecque."
     },
     "parents": [
-      "electra-q1438693",
-      "thaumas"
+      "thaumas",
+      "electra-q1438693"
     ],
     "links": [
       {
@@ -2832,8 +2760,8 @@
     },
     "greek": "Αστερίων",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -2868,7 +2796,7 @@
       "en": "Ancient Greek religious figure.",
       "fr": "Fille de Thémis, d’Éos, de Zeus et d’Astréos dans la mythologie grecque."
     },
-    "greek": "Ἀστραία , Astraiā",
+    "greek": "Ἀστραία",
     "parents": [
       "themis",
       "eos",
@@ -2910,8 +2838,8 @@
     },
     "greek": "Αστυάγυια",
     "parents": [
-      "chlidanope",
-      "hypseus"
+      "hypseus",
+      "chlidanope"
     ],
     "links": [
       {
@@ -2932,12 +2860,12 @@
     "wikidata": "Q210871",
     "description": {
       "en": "Ancient Greek goddess of mischief.",
-      "fr": "Fille d’Éris et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et d’Éris dans la mythologie grecque."
     },
     "greek": "Ἄτη",
     "parents": [
-      "eris",
-      "zeus"
+      "zeus",
+      "eris"
     ],
     "links": [
       {
@@ -3070,12 +2998,12 @@
     "wikidata": "Q4817519",
     "description": {
       "en": "Son of Peneus in Greek mythology.",
-      "fr": "Fils de Pénée et de Boura dans la mythologie grecque."
+      "fr": "Fils de Boura et de Pénée dans la mythologie grecque."
     },
     "greek": "Άτραξ",
     "parents": [
-      "peneus",
-      "bura"
+      "bura",
+      "peneus"
     ],
     "links": [
       {
@@ -3098,7 +3026,7 @@
       "en": "One of the Fates of Greek Mythology.",
       "fr": "Fille de Nyx, de Thémis et de Zeus dans la mythologie grecque."
     },
-    "greek": "Ἄτροπος , Atropos",
+    "greek": "Ἄτροπος",
     "parents": [
       "nyx",
       "themis",
@@ -3129,14 +3057,14 @@
     "wikidata": "Q207663",
     "description": {
       "en": "Son of Phorbas in Greek mythology.",
-      "fr": "Fils d’Hyrmine, de Poséidon, d’Hélios et de Phorbas dans la mythologie grecque."
+      "fr": "Fils de Poséidon, d’Hélios, de Phorbas et d’Hyrmine dans la mythologie grecque."
     },
     "greek": "Αὐγείας",
     "parents": [
-      "hyrmine",
       "poseidon",
       "helios",
-      "phorbas-q22965548"
+      "phorbas-q22965548",
+      "hyrmine"
     ],
     "links": [
       {
@@ -3169,14 +3097,14 @@
     "wikidata": "Q782308",
     "description": {
       "en": "Mythical founder of the Ausoni.",
-      "fr": "Fils de Calypso, de Circé, d’Ulysse et d’Italos dans la mythologie grecque."
+      "fr": "Fils d’Ulysse, d’Italos, de Calypso et de Circé dans la mythologie grecque."
     },
     "greek": "Αύσων",
     "parents": [
-      "calypso",
-      "circe",
       "odysseus",
-      "italus"
+      "italus",
+      "calypso",
+      "circe"
     ],
     "links": [
       {
@@ -3200,8 +3128,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -3248,8 +3176,8 @@
     },
     "greek": "Αὐξώ",
     "parents": [
-      "themis",
-      "zeus"
+      "zeus",
+      "themis"
     ],
     "links": [
       {
@@ -3280,8 +3208,8 @@
     },
     "greek": "Αξιός",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -3308,12 +3236,12 @@
     "wikidata": "Q793560",
     "description": {
       "en": "Mythical son of Arcas.",
-      "fr": "Fils d’Érato et d’Arcas dans la mythologie grecque."
+      "fr": "Fils d’Arcas et d’Érato dans la mythologie grecque."
     },
     "greek": "Ἀζάν",
     "parents": [
-      "erato-q782764",
-      "arcas"
+      "arcas",
+      "erato-q782764"
     ],
     "links": [
       {
@@ -3389,12 +3317,12 @@
     "wikidata": "Q793088",
     "description": {
       "en": "Daughter of Poseidon and Amphitrite.",
-      "fr": "Fille d’Amphitrite et de Poséidon dans la mythologie grecque."
+      "fr": "Fille de Poséidon et d’Amphitrite dans la mythologie grecque."
     },
     "greek": "Βενθεσικύμη",
     "parents": [
-      "amphitrite",
-      "poseidon"
+      "poseidon",
+      "amphitrite"
     ],
     "links": [
       {
@@ -3507,8 +3435,8 @@
     },
     "greek": "Βορυσθένης",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -3543,7 +3471,7 @@
       "en": "Minoan goddess of mountains and hunting.",
       "fr": "Fille de Carme et de Zeus dans la mythologie grecque."
     },
-    "greek": "Βριτόμαρτις , Britomartis",
+    "greek": "Βριτόμαρτις",
     "parents": [
       "carme",
       "zeus"
@@ -3671,14 +3599,14 @@
     "kind": "deity",
     "wikidata": "Q2305446",
     "description": {
-      "en": "Son of Tethys, Poseidon and Oceanus in Greek mythology.",
+      "en": "Son of Poseidon, Oceanus and Tethys in Greek mythology.",
       "fr": "Divinité grecque."
     },
     "greek": "Κάανθος",
     "parents": [
-      "tethys",
       "poseidon",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -3766,8 +3694,8 @@
     },
     "greek": "Καλλιάνασσα",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -3846,13 +3774,13 @@
     "wikidata": "Q12899143",
     "description": {
       "en": "Mythical founder of Cameiros on Rhodes.",
-      "fr": "Fils de Cydippe, d’Hélios et de Cercaphus dans la mythologie grecque."
+      "fr": "Fils d’Hélios, de Cercaphus et de Cydippe dans la mythologie grecque."
     },
     "greek": "Κάμειρος",
     "parents": [
-      "cydippe-q5796486",
       "helios",
-      "cercaphus"
+      "cercaphus",
+      "cydippe-q5796486"
     ],
     "links": [
       {
@@ -3877,8 +3805,8 @@
     },
     "greek": "Κάνδαλος",
     "parents": [
-      "rhodos",
-      "helios"
+      "helios",
+      "rhodos"
     ],
     "links": [
       {
@@ -3901,7 +3829,7 @@
       "en": "Daughter of Themis and Zeus in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, Heure."
     },
-    "greek": "Καρπώ , Carpo",
+    "greek": "Καρπώ",
     "parents": [
       "themis",
       "zeus"
@@ -3956,8 +3884,8 @@
     },
     "greek": "Κάρυστος",
     "parents": [
-      "chariclo-q912408",
-      "chiron"
+      "chiron",
+      "chariclo-q912408"
     ],
     "links": [
       {
@@ -3984,12 +3912,12 @@
     "wikidata": "Q2943528",
     "description": {
       "en": "River god of Asia Minor.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Κάϋστρος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -4024,10 +3952,10 @@
       "en": "Water deity.",
       "fr": "Dieu fleuve de la mythologie grecque."
     },
-    "greek": "Κεβρήν , Kebrēn",
+    "greek": "Κεβρήν",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -4060,11 +3988,11 @@
     "wikidata": "Q127782068",
     "description": {
       "en": "Son of Apollo and Melia and eponym of Kea.",
-      "fr": "Fils de Rhodoessa et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et de Rhodoessa dans la mythologie grecque."
     },
     "parents": [
-      "rhodoessa",
-      "apollo"
+      "apollo",
+      "rhodoessa"
     ],
     "links": [
       {
@@ -4149,12 +4077,12 @@
     "wikidata": "Q2471013",
     "description": {
       "en": "Son of Helios in Greek mythology.",
-      "fr": "Fils de Rhode et d’Hélios dans la mythologie grecque."
+      "fr": "Fils d’Hélios et de Rhode dans la mythologie grecque."
     },
     "greek": "Κέρκαφος",
     "parents": [
-      "rhodos",
-      "helios"
+      "helios",
+      "rhodos"
     ],
     "links": [
       {
@@ -4207,15 +4135,15 @@
     "wikidata": "Q977434",
     "description": {
       "en": "Son of Eumolpus in Greek mythology.",
-      "fr": "Fils d’Hermès, d’Eumolpos, d’Aglaure, de Pandrose et d’Hersé dans la mythologie grecque."
+      "fr": "Fils d’Aglaure, de Pandrose, d’Hersé, d’Hermès et d’Eumolpos dans la mythologie grecque."
     },
     "greek": "Κήρυξ",
     "parents": [
-      "hermes",
-      "eumolpus",
       "aglaurus-daughter-of-cecrops",
       "pandrosus",
-      "herse"
+      "herse",
+      "hermes",
+      "eumolpus"
     ],
     "links": [
       {
@@ -4242,12 +4170,12 @@
     "wikidata": "Q209489",
     "description": {
       "en": "Greek sea goddess.",
-      "fr": "Fille de Gaïa et de Pontos dans la mythologie grecque."
+      "fr": "Fille de Pontos et de Gaïa dans la mythologie grecque."
     },
     "greek": "Κητώ",
     "parents": [
-      "gaia",
-      "pontus"
+      "pontus",
+      "gaia"
     ],
     "links": [
       {
@@ -4328,10 +4256,10 @@
       "en": "Ferryman of Hades in Greek-Roman mythology.",
       "fr": "Divinité grecque, passeur des Enfers."
     },
-    "greek": "Χάρων , Charōn",
+    "greek": "Χάρων",
     "parents": [
-      "erebos",
-      "nyx"
+      "nyx",
+      "erebos"
     ],
     "links": [
       {
@@ -4355,44 +4283,6 @@
     ]
   },
   {
-    "id": "charybdis",
-    "name": {
-      "en": "Charybdis",
-      "fr": "Charybde"
-    },
-    "kind": "deity",
-    "wikidata": "Q192082",
-    "description": {
-      "en": "Figure in Greek mythology transformed in a sea monster by Zeus.",
-      "fr": "Personnage de la mythologie grecque transformé en gouffre marin par Zeus."
-    },
-    "greek": "Χάρυβδις , Charybdis",
-    "parents": [
-      "gaia",
-      "poseidon"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Charybdis",
-        "url": "https://en.wikipedia.org/wiki/Charybdis"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Charybde",
-        "url": "https://fr.wikipedia.org/wiki/Charybde"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Charybdis (Kharybdis)",
-        "url": "https://www.theoi.com/Pontios/Kharybdis.html"
-      }
-    ]
-  },
-  {
     "id": "chione-q7382381",
     "name": {
       "en": "Chione",
@@ -4406,8 +4296,8 @@
     },
     "greek": "Χιόνη",
     "parents": [
-      "orithyia-q1129489",
-      "boreas"
+      "boreas",
+      "orithyia-q1129489"
     ],
     "links": [
       {
@@ -4468,9 +4358,9 @@
     },
     "greek": "Χρύσιππος",
     "parents": [
-      "pelops-q192485",
       "axioche",
-      "danais"
+      "danais",
+      "pelops-q192485"
     ],
     "links": [
       {
@@ -4520,46 +4410,6 @@
         "lang": "en",
         "title": "Theoi Project — Chrysos (Khrysos)",
         "url": "https://www.theoi.com/Daimon/Khrysos.html"
-      }
-    ]
-  },
-  {
-    "id": "circe",
-    "name": {
-      "en": "Circe",
-      "fr": "Circé"
-    },
-    "kind": "deity",
-    "wikidata": "Q187602",
-    "description": {
-      "en": "Enchantress-goddess in Greek mythology.",
-      "fr": "Déesse de la magie, ou enchanteresse dans la mythologie grecque."
-    },
-    "greek": "Κίρκη",
-    "parents": [
-      "hecate",
-      "perse",
-      "helios",
-      "aeetes"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Circe",
-        "url": "https://en.wikipedia.org/wiki/Circe"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Circé",
-        "url": "https://fr.wikipedia.org/wiki/Circ%C3%A9"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Circe (Kirke)",
-        "url": "https://www.theoi.com/Titan/Kirke.html"
       }
     ]
   },
@@ -4668,7 +4518,7 @@
       "en": "Greek mythological figure, daughter of Boreas.",
       "fr": "Personnage de la mythologie grecque, fille de Borée."
     },
-    "greek": "Κλεοπάτρα , Kleopatrā",
+    "greek": "Κλεοπάτρα",
     "parents": [
       "boreas",
       "orithyia-q1129489"
@@ -4761,8 +4611,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -4786,8 +4636,8 @@
       "fr": "Dieu romain."
     },
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -5000,12 +4850,12 @@
     "wikidata": "Q4233066",
     "description": {
       "en": "Mythical son of Iasion.",
-      "fr": "Fils d’Iasion et de Cybèle dans la mythologie grecque."
+      "fr": "Fils de Cybèle et d’Iasion dans la mythologie grecque."
     },
     "greek": "Κορύβας",
     "parents": [
-      "iasion",
-      "cybele"
+      "cybele",
+      "iasion"
     ],
     "links": [
       {
@@ -5025,12 +4875,12 @@
     "kind": "deity",
     "wikidata": "Q2753233",
     "description": {
-      "en": "Son of Electra and Zeus in Greek mythology.",
+      "en": "Son of Zeus and Electra in Greek mythology.",
       "fr": "Roi mythique des Tyrrhéniens."
     },
     "parents": [
-      "electra-q858663",
-      "zeus"
+      "zeus",
+      "electra-q858663"
     ],
     "links": [
       {
@@ -5088,8 +4938,8 @@
       "fr": "Néréide."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5119,8 +4969,8 @@
       "fr": "Néréide."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5147,12 +4997,12 @@
     "wikidata": "Q955408",
     "description": {
       "en": "Mythical king of Argos.",
-      "fr": "Fils d’Évadné et d’Argos dans la mythologie grecque."
+      "fr": "Fils d’Argos et d’Évadné dans la mythologie grecque."
     },
     "greek": "Κρίασος",
     "parents": [
-      "evadne-q1259960",
-      "argus-q649476"
+      "argus-q649476",
+      "evadne-q1259960"
     ],
     "links": [
       {
@@ -5177,8 +5027,8 @@
     },
     "greek": "Κριμισός",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -5208,8 +5058,8 @@
       "fr": "Personnage de la mythologie grecque, fils de Zeus et d'Himalia."
     },
     "parents": [
-      "himalia",
-      "zeus"
+      "zeus",
+      "himalia"
     ],
     "links": [
       {
@@ -5337,8 +5187,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5419,8 +5269,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5450,8 +5300,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5481,8 +5331,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5602,11 +5452,11 @@
     "wikidata": "Q59551326",
     "description": {
       "en": "Daughter of Zeus in Greek mythology.",
-      "fr": "Fille d’Égine et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et d’Égine dans la mythologie grecque."
     },
     "parents": [
-      "aegina",
-      "zeus"
+      "zeus",
+      "aegina"
     ],
     "links": [
       {
@@ -5661,7 +5511,7 @@
       "en": "Personal god of dread and terror in Greek mythology.",
       "fr": "Dieux de la terreur."
     },
-    "greek": "Δεῖμος , Deimos",
+    "greek": "Δεῖμος",
     "parents": [
       "aphrodite",
       "ares"
@@ -5790,12 +5640,12 @@
     "wikidata": "Q1146978",
     "description": {
       "en": "Greek goddess of Arcadian mystery cults.",
-      "fr": "Fille de Poséidon et de Déméter dans la mythologie grecque."
+      "fr": "Fille de Déméter et de Poséidon dans la mythologie grecque."
     },
     "greek": "Δέσποινα",
     "parents": [
-      "poseidon",
-      "demeter"
+      "demeter",
+      "poseidon"
     ],
     "links": [
       {
@@ -5831,8 +5681,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -5863,10 +5713,10 @@
     },
     "greek": "Δίκτυς",
     "parents": [
-      "agamede",
-      "cerebia",
       "poseidon",
-      "magnes-son-of-aeolus"
+      "magnes-son-of-aeolus",
+      "agamede",
+      "cerebia"
     ],
     "links": [
       {
@@ -5895,7 +5745,7 @@
       "en": "Greek goddess of law and justice, the spirit of moral order and fair judgment.",
       "fr": "Divinité de la mythologie grecque, personnifiant la Justice."
     },
-    "greek": "Δίκη , Dikē",
+    "greek": "Δίκη",
     "parents": [
       "themis",
       "zeus",
@@ -6041,14 +5891,14 @@
     "kind": "deity",
     "wikidata": "Q1236399",
     "description": {
-      "en": "Son of Gaia, Nyx and Aether in Greek mythology.",
+      "en": "Son of Aether, Gaia and Nyx in Greek mythology.",
       "fr": "Divinité mineure de la mythologie grecque."
     },
     "greek": "Δόλος",
     "parents": [
+      "aether",
       "gaia",
-      "nyx",
-      "aether"
+      "nyx"
     ],
     "links": [
       {
@@ -6084,8 +5934,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -6142,8 +5992,8 @@
     },
     "greek": "Δωτώ",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -6173,8 +6023,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -6260,11 +6110,11 @@
     "wikidata": "Q42325304",
     "description": {
       "en": "Hora in Greek mythology.",
-      "fr": "Fille de Thémis et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et de Thémis dans la mythologie grecque."
     },
     "parents": [
-      "themis",
-      "zeus"
+      "zeus",
+      "themis"
     ],
     "links": [
       {
@@ -6287,7 +6137,7 @@
       "en": "Ancient Greek deity.",
       "fr": "Déesse mineure de la mythologie grecque."
     },
-    "greek": "Δυσνομία , Dysnomiā",
+    "greek": "Δυσνομία",
     "parents": [
       "eris"
     ],
@@ -6386,8 +6236,8 @@
     },
     "greek": "Έχιδνα",
     "parents": [
-      "gaia",
-      "tartarus"
+      "tartarus",
+      "gaia"
     ],
     "links": [
       {
@@ -6449,7 +6299,7 @@
       "en": "Greek goddess of childbirth and midwifery.",
       "fr": "Divinité de l'enfantement dans la mythologie grecque."
     },
-    "greek": "Εἰλείθυια , Eileithyia",
+    "greek": "Εἰλείθυια",
     "parents": [
       "hera",
       "zeus"
@@ -6488,8 +6338,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -6518,7 +6368,7 @@
       "en": "Ancient Greek goddess of peace.",
       "fr": "Divinité grecque incarnant la paix."
     },
-    "greek": "Εἰρήνη , Eirēnē",
+    "greek": "Εἰρήνη",
     "parents": [
       "themis",
       "zeus"
@@ -6619,12 +6469,12 @@
     "wikidata": "Q2043578",
     "description": {
       "en": "Daughter of Helios.",
-      "fr": "Fille d’Hélios et de Rhode dans la mythologie grecque."
+      "fr": "Fille de Rhode et d’Hélios dans la mythologie grecque."
     },
     "greek": "Ἠλεκτρυώνη",
     "parents": [
-      "helios",
-      "rhodos"
+      "rhodos",
+      "helios"
     ],
     "links": [
       {
@@ -6850,12 +6700,12 @@
     "wikidata": "Q949290",
     "description": {
       "en": "Greek river god.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Ενιπεύς",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -6909,13 +6759,13 @@
     "kind": "deity",
     "wikidata": "Q1345963",
     "description": {
-      "en": "Son of Enyo and Ares in Greek mythology.",
-      "fr": "Fils d’Ényo et d’Arès dans la mythologie grecque."
+      "en": "Son of Ares and Enyo in Greek mythology.",
+      "fr": "Fils d’Arès et d’Ényo dans la mythologie grecque."
     },
     "greek": "Ενυάλιος",
     "parents": [
-      "enyo",
-      "ares"
+      "ares",
+      "enyo"
     ],
     "links": [
       {
@@ -6967,44 +6817,6 @@
         "lang": "en",
         "title": "Theoi Project — Enyo",
         "url": "https://www.theoi.com/Daimon/Enyo.html"
-      }
-    ]
-  },
-  {
-    "id": "eos",
-    "name": {
-      "en": "Eos",
-      "fr": "Éos"
-    },
-    "kind": "deity",
-    "wikidata": "Q178417",
-    "description": {
-      "en": "Greek goddess of the dawn.",
-      "fr": "Déesse de l'aurore."
-    },
-    "greek": "Ἠώς",
-    "parents": [
-      "theia-q184232",
-      "hyperion"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Eos",
-        "url": "https://en.wikipedia.org/wiki/Eos"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Éos",
-        "url": "https://fr.wikipedia.org/wiki/%C3%89os"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Eos",
-        "url": "https://www.theoi.com/Titan/Eos.html"
       }
     ]
   },
@@ -7077,12 +6889,12 @@
     "wikidata": "Q3726853",
     "description": {
       "en": "Son of Apollo in Greek mythology.",
-      "fr": "Fils d’Évadné et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et d’Évadné dans la mythologie grecque."
     },
     "greek": "Επίδαυρος",
     "parents": [
-      "evadne-q1259960",
-      "apollo"
+      "apollo",
+      "evadne-q1259960"
     ],
     "links": [
       {
@@ -7131,11 +6943,11 @@
     "wikidata": "Q5383161",
     "description": {
       "en": "Daimon in Greek mythodology.",
-      "fr": "Fils de Nyx et d’Érèbe dans la mythologie grecque."
+      "fr": "Fils d’Érèbe et de Nyx dans la mythologie grecque."
     },
     "parents": [
-      "nyx",
-      "erebos"
+      "erebos",
+      "nyx"
     ],
     "links": [
       {
@@ -7172,8 +6984,8 @@
     },
     "greek": "Ερασίνος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -7202,7 +7014,7 @@
       "en": "Greek muse of lyrical poetry.",
       "fr": "Muse de la poésie lyrique et érotique."
     },
-    "greek": "Ἐρατώ , Eratō",
+    "greek": "Ἐρατώ",
     "parents": [
       "mnemosyne",
       "zeus"
@@ -7241,8 +7053,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -7288,12 +7100,12 @@
     "wikidata": "Q1135146",
     "description": {
       "en": "River mentioned in Greek mythology.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Ἠριδανός",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -7326,13 +7138,13 @@
     "wikidata": "Q180325",
     "description": {
       "en": "Greek personification of dew.",
-      "fr": "Fille de Séléné, d’Éos et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus, de Séléné et d’Éos dans la mythologie grecque."
     },
     "greek": "Έρσα",
     "parents": [
+      "zeus",
       "selene",
-      "eos",
-      "zeus"
+      "eos"
     ],
     "links": [
       {
@@ -7369,8 +7181,8 @@
     },
     "greek": "Ευαγόρη",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -7434,8 +7246,8 @@
     },
     "greek": "Εὐκράντη",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -7465,8 +7277,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -7517,8 +7329,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -7570,13 +7382,13 @@
     "wikidata": "Q1125049",
     "description": {
       "en": "Thracian king settled at Eleusis in Greek mythology.",
-      "fr": "Fils de Poséidon, de Dionysos et de Chioné dans la mythologie grecque."
+      "fr": "Fils de Chioné, de Poséidon et de Dionysos dans la mythologie grecque."
     },
     "greek": "Εὔμολπος",
     "parents": [
+      "chione-q7382381",
       "poseidon",
-      "dionysus",
-      "chione-q7382381"
+      "dionysus"
     ],
     "links": [
       {
@@ -7606,8 +7418,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -7636,7 +7448,7 @@
       "en": "Greek goddess of good order.",
       "fr": "Divinité grecque."
     },
-    "greek": "Εὐνομία , Eunomiā",
+    "greek": "Εὐνομία",
     "parents": [
       "themis",
       "zeus"
@@ -7741,8 +7553,8 @@
     },
     "greek": "Ευφήμη",
     "parents": [
-      "aglaea-q4439972",
-      "hephaestus"
+      "hephaestus",
+      "aglaea-q4439972"
     ],
     "links": [
       {
@@ -7777,7 +7589,7 @@
       "en": "Deity, one of the Graces.",
       "fr": "Fille d’Eurynomé et de Zeus dans la mythologie grecque."
     },
-    "greek": "Εὐφροσύνη , Euphrosynē",
+    "greek": "Εὐφροσύνη",
     "parents": [
       "eurynome-q548099",
       "zeus"
@@ -7944,12 +7756,12 @@
     "wikidata": "Q506285",
     "description": {
       "en": "Greek sea goddess.",
-      "fr": "Fille de Gaïa et de Pontos dans la mythologie grecque."
+      "fr": "Fille de Pontos et de Gaïa dans la mythologie grecque."
     },
     "greek": "Εὐρυβία",
     "parents": [
-      "gaia",
-      "pontus"
+      "pontus",
+      "gaia"
     ],
     "links": [
       {
@@ -8077,9 +7889,9 @@
     },
     "greek": "Ευρύπυλος",
     "parents": [
-      "poseidon",
       "astypalaea",
-      "celaeno"
+      "celaeno",
+      "poseidon"
     ],
     "links": [
       {
@@ -8215,13 +8027,13 @@
     "wikidata": "Q12877329",
     "description": {
       "en": "Mythical son of Oenopion or Dionysus.",
-      "fr": "Fils d’Ariane, de Dionysos et de Œnopion dans la mythologie grecque."
+      "fr": "Fils de Dionysos, de Œnopion et d’Ariane dans la mythologie grecque."
     },
     "greek": "Ευάνθης",
     "parents": [
-      "ariadne",
       "dionysus",
-      "oenopion"
+      "oenopion",
+      "ariadne"
     ],
     "links": [
       {
@@ -8276,8 +8088,8 @@
       "fr": "Personnage de la mythologie grecque, fils d'Océan et de Téthys."
     },
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -8330,8 +8142,8 @@
     },
     "greek": "Γαλάτεια",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -8457,12 +8269,12 @@
     "wikidata": "Q1052301",
     "description": {
       "en": "Son of Night and personification of Old Age in Greek mythology.",
-      "fr": "Fils de Nyx et d’Érèbe dans la mythologie grecque."
+      "fr": "Fils d’Érèbe et de Nyx dans la mythologie grecque."
     },
     "greek": "Γῆρας",
     "parents": [
-      "nyx",
-      "erebos"
+      "erebos",
+      "nyx"
     ],
     "links": [
       {
@@ -8498,8 +8310,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -8523,8 +8335,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -8555,9 +8367,9 @@
     },
     "greek": "Γλαῦκος",
     "parents": [
-      "alcyone-q763268",
       "poseidon",
-      "polybus-of-sicyon"
+      "polybus-of-sicyon",
+      "alcyone-q763268"
     ],
     "links": [
       {
@@ -8648,8 +8460,8 @@
     },
     "greek": "Αἷμος",
     "parents": [
-      "boreas",
-      "orithyia-q1129489"
+      "orithyia-q1129489",
+      "boreas"
     ],
     "links": [
       {
@@ -8674,9 +8486,9 @@
     },
     "greek": "Αλιάκμων",
     "parents": [
-      "tethys",
       "oceanus",
-      "palaestinus"
+      "palaestinus",
+      "tethys"
     ],
     "links": [
       {
@@ -8707,8 +8519,8 @@
     },
     "greek": "Αλία",
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -8793,12 +8605,12 @@
     "wikidata": "Q978079",
     "description": {
       "en": "Ancient Greek goddess of harmony and concord, spouse of Cadmus; her opposite is Eris.",
-      "fr": "Fille d’Arès et d’Aphrodite dans la mythologie grecque."
+      "fr": "Fille d’Aphrodite et d’Arès dans la mythologie grecque."
     },
-    "greek": "Ἁρμονία , Harmoniā",
+    "greek": "Ἁρμονία",
     "parents": [
-      "ares",
-      "aphrodite"
+      "aphrodite",
+      "ares"
     ],
     "links": [
       {
@@ -8833,7 +8645,7 @@
       "en": "God-child in Egyptian mythology.",
       "fr": "Dieu enfant de la mythologie grecque."
     },
-    "greek": "Ἁρποκράτης , Harpocratēs",
+    "greek": "Ἁρποκράτης",
     "links": [
       {
         "kind": "wikipedia",
@@ -8869,8 +8681,8 @@
     },
     "greek": "Ηδονή",
     "parents": [
-      "psyche",
-      "eros"
+      "eros",
+      "psyche"
     ],
     "links": [
       {
@@ -8987,13 +8799,13 @@
     "kind": "deity",
     "wikidata": "Q638578",
     "description": {
-      "en": "Daughter of Nephele and Athamas in Greek mythology.",
-      "fr": "Fille de Néphélé et d’Athamas dans la mythologie grecque."
+      "en": "Daughter of Athamas and Nephele in Greek mythology.",
+      "fr": "Fille d’Athamas et de Néphélé dans la mythologie grecque."
     },
     "greek": "Ἕλλη",
     "parents": [
-      "nephele-q624551",
-      "athamas"
+      "athamas",
+      "nephele-q624551"
     ],
     "links": [
       {
@@ -9247,7 +9059,7 @@
       "en": "Personification of the planet Venus or its manifestation in the evening.",
       "fr": "Divinité grecque."
     },
-    "greek": "Ἓσπερος , Hesperos",
+    "greek": "Ἓσπερος",
     "parents": [
       "eos",
       "astraeus",
@@ -9316,12 +9128,12 @@
     "wikidata": "Q1425549",
     "description": {
       "en": "Son of Ares and Aphrodite, represents sexual desire.",
-      "fr": "Fils d’Aphrodite et d’Arès dans la mythologie grecque."
+      "fr": "Fils d’Arès et d’Aphrodite dans la mythologie grecque."
     },
     "greek": "Ίμερος",
     "parents": [
-      "aphrodite",
-      "ares"
+      "ares",
+      "aphrodite"
     ],
     "links": [
       {
@@ -9358,8 +9170,8 @@
     },
     "greek": "Ἱππονόη",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -9389,8 +9201,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -9433,11 +9245,11 @@
     "wikidata": "Q141284094",
     "description": {
       "en": "The eponymous nymph and legendary founder of the ancient Greek city of Histiaea in northern Euboea.",
-      "fr": "Fille d’Hyriée et de Clonia dans la mythologie grecque."
+      "fr": "Fille de Clonia et d’Hyriée dans la mythologie grecque."
     },
     "parents": [
-      "hyrieus",
-      "clonia"
+      "clonia",
+      "hyrieus"
     ],
     "links": [
       {
@@ -9556,13 +9368,13 @@
     "wikidata": "Q1639787",
     "description": {
       "en": "Son of Atlas in Greek mythology.",
-      "fr": "Fils d’Éthra, de Pléione et d’Atlas dans la mythologie grecque."
+      "fr": "Fils d’Atlas, d’Éthra et de Pléione dans la mythologie grecque."
     },
-    "greek": "Ὑας , Hyas",
+    "greek": "Ὑας",
     "parents": [
+      "atlas",
       "aethra-q410531",
-      "pleione",
-      "atlas"
+      "pleione"
     ],
     "links": [
       {
@@ -9628,14 +9440,14 @@
     "wikidata": "Q10527935",
     "description": {
       "en": "Greek mythological god of an Indian river with a swift stream.",
-      "fr": "Fils de Téthys, d’Électre, d’Océan et de Thaumas dans la mythologie grecque."
+      "fr": "Fils d’Océan, de Thaumas, de Téthys et d’Électre dans la mythologie grecque."
     },
     "greek": "Υδάσπης",
     "parents": [
-      "tethys",
-      "electra-q1438693",
       "oceanus",
-      "thaumas"
+      "thaumas",
+      "tethys",
+      "electra-q1438693"
     ],
     "links": [
       {
@@ -9664,7 +9476,7 @@
       "en": "Goddess in Greek mythology, personification of health.",
       "fr": "Déesse grecque de la santé, de la propreté et de l'hygiène."
     },
-    "greek": "Ὑγίεια , Hygieia",
+    "greek": "Ὑγίεια",
     "parents": [
       "epione",
       "asclepius"
@@ -9834,9 +9646,9 @@
     },
     "greek": "Ὑψεύς",
     "parents": [
-      "peneus",
       "creusa-q1232622",
-      "philyra-q109314110"
+      "philyra-q109314110",
+      "peneus"
     ],
     "links": [
       {
@@ -9862,14 +9674,14 @@
     "kind": "deity",
     "wikidata": "Q1817912",
     "description": {
-      "en": "Son of Poseidon, Learchus and Alcyone in Greek mythology.",
+      "en": "Son of Alcyone, Poseidon and Learchus in Greek mythology.",
       "fr": "Personnage de la mythologie grecque, fils de Poséidon et d'Alcyone."
     },
     "greek": "Υριέας",
     "parents": [
+      "alcyone-q763268",
       "poseidon",
-      "learchus",
-      "alcyone-q763268"
+      "learchus"
     ],
     "links": [
       {
@@ -9933,8 +9745,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -10048,8 +9860,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -10079,8 +9891,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -10101,12 +9913,12 @@
     "wikidata": "Q849438",
     "description": {
       "en": "Mythical lover of Demeter.",
-      "fr": "Fils d’Électre et de Zeus dans la mythologie grecque."
+      "fr": "Fils de Zeus et d’Électre dans la mythologie grecque."
     },
     "greek": "Ἰασίων",
     "parents": [
-      "electra-q858663",
-      "zeus"
+      "zeus",
+      "electra-q858663"
     ],
     "links": [
       {
@@ -10143,10 +9955,10 @@
     },
     "greek": "Ίασος",
     "parents": [
+      "ismene-q15543628",
       "argus-q649476",
       "phoroneus",
-      "triopas-q11704754",
-      "ismene-q15543628"
+      "triopas-q11704754"
     ],
     "links": [
       {
@@ -10283,14 +10095,14 @@
     "wikidata": "Q1258941",
     "description": {
       "en": "Son of Polyphemus in Greek mythology.",
-      "fr": "Fils de Cadmos, de Polyphème, de Galatée et d’Harmonie dans la mythologie grecque."
+      "fr": "Fils de Galatée, d’Harmonie, de Cadmos et de Polyphème dans la mythologie grecque."
     },
     "greek": "Ἰλλύριος",
     "parents": [
-      "cadmus",
-      "polyphemus",
       "galatea-q241070",
-      "harmonia-q978079"
+      "harmonia-q978079",
+      "cadmus",
+      "polyphemus"
     ],
     "links": [
       {
@@ -10313,10 +10125,10 @@
       "en": "River deity and king of the Argolid.",
       "fr": "Personnage de la mythologie grecque, fils d'Océan et de Téthys."
     },
-    "greek": "Ἴναχος , Īnachos",
+    "greek": "Ἴναχος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -10336,38 +10148,6 @@
         "lang": "en",
         "title": "Theoi Project — Inachus (Inakhos)",
         "url": "https://www.theoi.com/Potamos/PotamosInakhos.html"
-      }
-    ]
-  },
-  {
-    "id": "ino",
-    "name": {
-      "en": "Ino",
-      "fr": "Ino"
-    },
-    "kind": "deity",
-    "wikidata": "Q223690",
-    "description": {
-      "en": "Daughter of Harmonia and Cadmus in Greek mythology.",
-      "fr": "Fille d’Harmonie et de Cadmos dans la mythologie grecque."
-    },
-    "greek": "Ἰνώ",
-    "parents": [
-      "harmonia-q978079",
-      "cadmus"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Ino (mythology)",
-        "url": "https://en.wikipedia.org/wiki/Ino_(mythology)"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Ino",
-        "url": "https://fr.wikipedia.org/wiki/Ino"
       }
     ]
   },
@@ -10415,13 +10195,13 @@
     "wikidata": "Q853462",
     "description": {
       "en": "Mythical son of Apollo.",
-      "fr": "Fils de Créuse, d’Apollon et de Xouthos dans la mythologie grecque."
+      "fr": "Fils d’Apollon, de Xouthos et de Créuse dans la mythologie grecque."
     },
     "greek": "Ἴων",
     "parents": [
-      "creusa-q2196048",
       "apollo",
-      "xuthus"
+      "xuthus",
+      "creusa-q2196048"
     ],
     "links": [
       {
@@ -10475,7 +10255,7 @@
       "en": "The personification of the rainbow in ancient Greek religion and mythology.",
       "fr": "Déesse grecque."
     },
-    "greek": "Ἶρις , Īris",
+    "greek": "Ἶρις",
     "parents": [
       "electra-q1438693",
       "thaumas"
@@ -10515,8 +10295,8 @@
     },
     "greek": "Ισμήνη",
     "parents": [
-      "metope",
-      "asopus"
+      "asopus",
+      "metope"
     ],
     "links": [
       {
@@ -10553,10 +10333,10 @@
     },
     "greek": "Ισμηνὸς",
     "parents": [
-      "tethys",
-      "metope",
       "oceanus",
-      "asopus"
+      "asopus",
+      "tethys",
+      "metope"
     ],
     "links": [
       {
@@ -10605,13 +10385,13 @@
     "wikidata": "Q1676112",
     "description": {
       "en": "Arcadian nymph – daughter of Pan and Echo.",
-      "fr": "Fille d’Écho, de Péitho et de Pan dans la mythologie grecque."
+      "fr": "Fille de Pan, d’Écho et de Péitho dans la mythologie grecque."
     },
     "greek": "Ίυγξ",
     "parents": [
+      "pan",
       "echo",
-      "peitho",
-      "pan"
+      "peitho"
     ],
     "links": [
       {
@@ -10737,10 +10517,10 @@
     },
     "greek": "Κέλτος",
     "parents": [
-      "heracles",
-      "polyphemus",
       "galatea-q241070",
-      "celtine"
+      "celtine",
+      "heracles",
+      "polyphemus"
     ],
     "links": [
       {
@@ -10852,7 +10632,7 @@
       "en": "Son of Styx and Pallas in Greek mythology.",
       "fr": "Divinité de la mythologie grecque; personnification de la puissance et de la vigueur dans la mythologie grecque."
     },
-    "greek": "Κράτος , Kratos",
+    "greek": "Κράτος",
     "parents": [
       "styx",
       "pallas-q457294"
@@ -10924,10 +10704,10 @@
       "en": "Mythical king of Sparta.",
       "fr": "Personnage de la mythologie grecque et roi de Sparte."
     },
-    "greek": "Λακεδαίμων , Lacedaemon",
+    "greek": "Λακεδαίμων",
     "parents": [
-      "zeus",
-      "taygete"
+      "taygete",
+      "zeus"
     ],
     "links": [
       {
@@ -11022,8 +10802,8 @@
     },
     "greek": "Λαπίθης",
     "parents": [
-      "apollo",
-      "stilbe"
+      "stilbe",
+      "apollo"
     ],
     "links": [
       {
@@ -11140,7 +10920,7 @@
       "en": "River of forgetfulness in the Greek underworld.",
       "fr": "Fleuve des Enfers dans la mythologie grecque."
     },
-    "greek": "Λήθη , Lēthē",
+    "greek": "Λήθη",
     "links": [
       {
         "kind": "wikipedia",
@@ -11200,8 +10980,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -11427,8 +11207,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -11459,9 +11239,9 @@
     },
     "greek": "Λύκος",
     "parents": [
+      "clonia",
       "chthonius",
-      "hyrieus",
-      "clonia"
+      "hyrieus"
     ],
     "links": [
       {
@@ -11492,8 +11272,8 @@
     },
     "greek": "Λύκος",
     "parents": [
-      "lycus-q1047047",
-      "dirce"
+      "dirce",
+      "lycus-q1047047"
     ],
     "links": [
       {
@@ -11554,8 +11334,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -11576,12 +11356,12 @@
     "wikidata": "Q1084868",
     "description": {
       "en": "Greek spirit of mad rage and frenzy.",
-      "fr": "Fille de Nyx et d’Ouranos dans la mythologie grecque."
+      "fr": "Fille d’Ouranos et de Nyx dans la mythologie grecque."
     },
     "greek": "Λύσσα",
     "parents": [
-      "nyx",
-      "uranus"
+      "uranus",
+      "nyx"
     ],
     "links": [
       {
@@ -11618,9 +11398,9 @@
     },
     "greek": "Μακαρεύς",
     "parents": [
-      "rhodos",
       "helios",
-      "crinacus"
+      "crinacus",
+      "rhodos"
     ],
     "links": [
       {
@@ -11644,8 +11424,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -11666,14 +11446,14 @@
     "wikidata": "Q1884324",
     "description": {
       "en": "Mythical king of Magnesia.",
-      "fr": "Fils de Zeus, d’Éole, d’Énarété et de Thyia dans la mythologie grecque."
+      "fr": "Fils d’Énarété, de Thyia, de Zeus et d’Éole dans la mythologie grecque."
     },
     "greek": "Μάγνης",
     "parents": [
-      "zeus",
-      "aeolus-q172549",
       "enarete",
-      "thyia-q1388093"
+      "thyia-q1388093",
+      "zeus",
+      "aeolus"
     ],
     "links": [
       {
@@ -11768,7 +11548,7 @@
       "en": "Mythical son of Euanthes.",
       "fr": "Personnage mythologique."
     },
-    "greek": "Μάρων , Marōn",
+    "greek": "Μάρων",
     "parents": [
       "dionysus",
       "silenus",
@@ -11837,8 +11617,8 @@
     },
     "greek": "Μαίανδρος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -11989,12 +11769,12 @@
     "wikidata": "Q1414119",
     "description": {
       "en": "Nymph in Greek mythology, consort of Poseidon.",
-      "fr": "Fille d’Ouranos et de Gaïa dans la mythologie grecque."
+      "fr": "Fille de Gaïa et d’Ouranos dans la mythologie grecque."
     },
     "greek": "Μελία",
     "parents": [
-      "uranus",
-      "gaia"
+      "gaia",
+      "uranus"
     ],
     "links": [
       {
@@ -12020,13 +11800,13 @@
     "kind": "deity",
     "wikidata": "Q738007",
     "description": {
-      "en": "Son of Ino and Athamas in Greek mythology.",
-      "fr": "Fils d’Ino et d’Athamas dans la mythologie grecque."
+      "en": "Son of Athamas and Ino in Greek mythology.",
+      "fr": "Fils d’Athamas et d’Ino dans la mythologie grecque."
     },
     "greek": "Μελικέρτης",
     "parents": [
-      "ino",
-      "athamas"
+      "athamas",
+      "ino"
     ],
     "links": [
       {
@@ -12059,12 +11839,12 @@
     "wikidata": "Q3178796",
     "description": {
       "en": "Ancient Greek goddess of propitiation.",
-      "fr": "Fille de Perséphone et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et de Perséphone dans la mythologie grecque."
     },
     "greek": "Μηλινόη",
     "parents": [
-      "persephone",
-      "zeus"
+      "zeus",
+      "persephone"
     ],
     "links": [
       {
@@ -12100,8 +11880,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -12122,12 +11902,12 @@
     "wikidata": "Q1919421",
     "description": {
       "en": "Son of Zeus and Othreis in Greek mythology.",
-      "fr": "Fils de Zeus et d’Othréis dans la mythologie grecque."
+      "fr": "Fils d’Othréis et de Zeus dans la mythologie grecque."
     },
     "greek": "Μελιτεύς",
     "parents": [
-      "zeus",
-      "othreis"
+      "othreis",
+      "zeus"
     ],
     "links": [
       {
@@ -12257,9 +12037,9 @@
     },
     "greek": "Μενοίτιος",
     "parents": [
-      "actor-q2473937",
       "aegina",
-      "damocrateia"
+      "damocrateia",
+      "actor-q2473937"
     ],
     "links": [
       {
@@ -12355,7 +12135,7 @@
       "en": "The personification of satire and mockery in Greek mythology.",
       "fr": "Dieu de la raillerie, des malicieuses critiques et des bons mots dans la mythologie grecque."
     },
-    "greek": "Μῶμος , Mōmos",
+    "greek": "Μῶμος",
     "parents": [
       "nyx",
       "erebos"
@@ -12393,7 +12173,7 @@
       "en": "Greek spirit of doom.",
       "fr": "Fils de Nyx et d’Érèbe dans la mythologie grecque."
     },
-    "greek": "Μόρος , Moros",
+    "greek": "Μόρος",
     "parents": [
       "nyx",
       "erebos"
@@ -12561,8 +12341,8 @@
     },
     "greek": "Νημερτής",
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -12622,10 +12402,10 @@
       "en": "Sea god of Greek mythology.",
       "fr": "Divinité marine de la mythologie grecque."
     },
-    "greek": "Νηρεύς , Nēreus",
+    "greek": "Νηρεύς",
     "parents": [
-      "gaia",
-      "pontus"
+      "pontus",
+      "gaia"
     ],
     "links": [
       {
@@ -12699,8 +12479,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -12773,12 +12553,12 @@
     "wikidata": "Q844313",
     "description": {
       "en": "Daughter of Sangarius in Greek mythology.",
-      "fr": "Fille de Cybèle et de Sangarios dans la mythologie grecque."
+      "fr": "Fille de Sangarios et de Cybèle dans la mythologie grecque."
     },
     "greek": "Νίκαια (μυθολογία)",
     "parents": [
-      "cybele",
-      "sangarius"
+      "sangarius",
+      "cybele"
     ],
     "links": [
       {
@@ -12853,8 +12633,8 @@
     },
     "greek": "Νείλος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -12891,10 +12671,10 @@
     },
     "greek": "Νιόβη",
     "parents": [
-      "phoroneus",
       "teledice",
       "cerdo",
-      "cinna"
+      "cinna",
+      "phoroneus"
     ],
     "links": [
       {
@@ -12923,13 +12703,13 @@
       "en": "Mythological figure, daughter of Tantalus.",
       "fr": "Personnage de la mythologie grecque, fille de Tantale."
     },
-    "greek": "Νιόβη , Niobē",
+    "greek": "Νιόβη",
     "parents": [
+      "tantalus-q182101",
+      "assaon",
       "taygete",
       "dione-q199923",
-      "euryanassa",
-      "tantalus-q182101",
-      "assaon"
+      "euryanassa"
     ],
     "links": [
       {
@@ -13024,8 +12804,8 @@
       "fr": "Personnage de la mythologie grecque, fils de Poséidon."
     },
     "parents": [
-      "celaeno",
-      "poseidon"
+      "poseidon",
+      "celaeno"
     ],
     "links": [
       {
@@ -13143,12 +12923,12 @@
       "en": "Father of Hippodamia; son of Ares.",
       "fr": "Personnage de la mythologie grecque, fils d'Arès."
     },
-    "greek": "Οἰνόμαος , Oinomaos",
+    "greek": "Οἰνόμαος",
     "parents": [
+      "ares",
       "sterope-q748963",
       "harpina",
-      "eurythoe",
-      "ares"
+      "eurythoe"
     ],
     "links": [
       {
@@ -13179,10 +12959,10 @@
     },
     "greek": "Οινοπίων",
     "parents": [
-      "ariadne",
       "dionysus",
       "rhadamanthus",
-      "theseus"
+      "theseus",
+      "ariadne"
     ],
     "links": [
       {
@@ -13211,7 +12991,7 @@
       "en": "Goddess of misery in Greek mythology.",
       "fr": "Fille de Nyx dans la mythologie grecque."
     },
-    "greek": "Ὀϊζύς , Oizys",
+    "greek": "Ὀϊζύς",
     "parents": [
       "nyx"
     ],
@@ -13303,11 +13083,11 @@
     },
     "greek": "Όλυνθος",
     "parents": [
-      "heracles",
-      "strymon",
       "calliope",
       "euterpe",
-      "bolbe"
+      "bolbe",
+      "heracles",
+      "strymon"
     ],
     "links": [
       {
@@ -13331,8 +13111,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -13380,13 +13160,13 @@
     "kind": "deity",
     "wikidata": "Q111210877",
     "description": {
-      "en": "Son of Protogeneia, Locrus and Zeus in Greek mythology.",
+      "en": "Son of Locrus, Zeus and Protogeneia in Greek mythology.",
       "fr": "Demi-dieu de la mythologie grecque."
     },
     "parents": [
-      "protogeneia",
       "locrus-q11933884",
-      "zeus"
+      "zeus",
+      "protogeneia"
     ],
     "links": [
       {
@@ -13409,7 +13189,7 @@
       "en": "Giant huntsman in Greek mythology.",
       "fr": "Géant de la mythologie grecque."
     },
-    "greek": "Ὠρίων , Ōrīōn",
+    "greek": "Ὠρίων",
     "parents": [
       "hyrieus"
     ],
@@ -13446,10 +13226,10 @@
       "en": "Legendary princess of Athens.",
       "fr": "Personnage mythologique, princesse d'Athènes."
     },
-    "greek": "Ὠρείθυια , Ōrithyia",
+    "greek": "Ὠρείθυια",
     "parents": [
-      "praxithea-q2108224",
-      "erechtheus"
+      "erechtheus",
+      "praxithea-q2108224"
     ],
     "links": [
       {
@@ -13568,8 +13348,8 @@
       "fr": "Personnage de la mythologie grecque, fils de Poséïdon."
     },
     "parents": [
-      "helle",
-      "poseidon"
+      "poseidon",
+      "helle"
     ],
     "links": [
       {
@@ -13678,12 +13458,12 @@
     "wikidata": "Q4342721",
     "description": {
       "en": "Mythical daughter of Sithon.",
-      "fr": "Fille de Sithon et d’Anchiroé dans la mythologie grecque."
+      "fr": "Fille d’Anchiroé et de Sithon dans la mythologie grecque."
     },
     "greek": "Παλλήνη (μυθολογία)",
     "parents": [
-      "sithon",
-      "anchiroe-q29654988"
+      "anchiroe-q29654988",
+      "sithon"
     ],
     "links": [
       {
@@ -13747,7 +13527,7 @@
       "en": "Greek goddess of universal health.",
       "fr": "Fille d’Épione et d’Asclépios dans la mythologie grecque."
     },
-    "greek": "Πανάκεια , Panakeia",
+    "greek": "Πανάκεια",
     "parents": [
       "epione",
       "asclepius"
@@ -13783,12 +13563,12 @@
     "wikidata": "Q4779733",
     "description": {
       "en": "Divine epithet of Aphrodite, earthly or public.",
-      "fr": "Fille de Dioné et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et de Dioné dans la mythologie grecque."
     },
     "greek": "Πάνδημος",
     "parents": [
-      "dione-q199923",
-      "zeus"
+      "zeus",
+      "dione-q199923"
     ],
     "links": [
       {
@@ -13809,12 +13589,12 @@
     "wikidata": "Q1073827",
     "description": {
       "en": "Greek goddess, daughter of Zeus and Selene.",
-      "fr": "Fille de Séléné et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et de Séléné dans la mythologie grecque."
     },
-    "greek": "Πανδία , Pandia",
+    "greek": "Πανδία",
     "parents": [
-      "selene",
-      "zeus"
+      "zeus",
+      "selene"
     ],
     "links": [
       {
@@ -13871,8 +13651,8 @@
       "fr": "Néréide."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -13947,14 +13727,14 @@
     "wikidata": "Q1235379",
     "description": {
       "en": "One of the Charities in Greek mythology.",
-      "fr": "Fille d’Héra, d’Eurynomé, de Zeus et de Dionysos dans la mythologie grecque."
+      "fr": "Fille de Zeus, de Dionysos, d’Héra et d’Eurynomé dans la mythologie grecque."
     },
     "greek": "Πασιθέα",
     "parents": [
-      "hera",
-      "eurynome-q548099",
       "zeus",
-      "dionysus"
+      "dionysus",
+      "hera",
+      "eurynome-q548099"
     ],
     "links": [
       {
@@ -14017,8 +13797,8 @@
     },
     "greek": "Πείρας",
     "parents": [
-      "argus-q649476",
-      "evadne-q1259960"
+      "evadne-q1259960",
+      "argus-q649476"
     ],
     "links": [
       {
@@ -14222,8 +14002,8 @@
     },
     "greek": "Πέρσης της Κολχίδας",
     "parents": [
-      "helios",
-      "perse"
+      "perse",
+      "helios"
     ],
     "links": [
       {
@@ -14254,8 +14034,8 @@
     },
     "greek": "Φαίαξ",
     "parents": [
-      "corcyra",
-      "poseidon"
+      "poseidon",
+      "corcyra"
     ],
     "links": [
       {
@@ -14304,12 +14084,12 @@
     "wikidata": "Q7180028",
     "description": {
       "en": "Synonym of Saturn.",
-      "fr": "Fils d’Astréos et d’Éos dans la mythologie grecque."
+      "fr": "Fils d’Éos et d’Astréos dans la mythologie grecque."
     },
     "greek": "Φαίνων",
     "parents": [
-      "astraeus",
-      "eos"
+      "eos",
+      "astraeus"
     ],
     "links": [
       {
@@ -14330,11 +14110,11 @@
     "wikidata": "Q137703834",
     "description": {
       "en": "Son of Apollo by the nymph Othreis.",
-      "fr": "Fils d’Apollon et d’Othréis dans la mythologie grecque."
+      "fr": "Fils d’Othréis et d’Apollon dans la mythologie grecque."
     },
     "parents": [
-      "apollo",
-      "othreis"
+      "othreis",
+      "apollo"
     ],
     "links": [
       {
@@ -14394,7 +14174,7 @@
       "en": "Son of Nyx, Pasithea, Erebos and Hypnos in Greek mythology.",
       "fr": "Fils de Nyx, de Pasithée, d’Érèbe et d’Hypnos dans la mythologie grecque."
     },
-    "greek": "Phantasos , Phantasos",
+    "greek": "Phantasos",
     "parents": [
       "nyx",
       "pasithea-q1235379",
@@ -14430,10 +14210,10 @@
     },
     "greek": "Φάσις",
     "parents": [
-      "tethys",
-      "ocyrhoe-q6048797",
       "helios",
-      "oceanus"
+      "oceanus",
+      "tethys",
+      "ocyrhoe-q6048797"
     ],
     "links": [
       {
@@ -14469,8 +14249,8 @@
       "fr": "Un des dieux rustiques dans la mythologie grecque."
     },
     "parents": [
-      "circe",
-      "poseidon"
+      "poseidon",
+      "circe"
     ],
     "links": [
       {
@@ -14499,7 +14279,7 @@
       "en": "Greek goddess of fame or rumor.",
       "fr": "Déesse romaine."
     },
-    "greek": "Φήμη , Phēmē",
+    "greek": "Φήμη",
     "links": [
       {
         "kind": "wikipedia",
@@ -14549,12 +14329,12 @@
     "wikidata": "Q1128685",
     "description": {
       "en": "Ancient Greek deity.",
-      "fr": "Fils de Déméter et d’Iasion dans la mythologie grecque."
+      "fr": "Fils d’Iasion et de Déméter dans la mythologie grecque."
     },
     "greek": "Φιλόμηλος",
     "parents": [
-      "demeter",
-      "iasion"
+      "iasion",
+      "demeter"
     ],
     "links": [
       {
@@ -14591,8 +14371,8 @@
     },
     "greek": "Φιλοφροσύνη",
     "parents": [
-      "aglaea-q4439972",
-      "hephaestus"
+      "hephaestus",
+      "aglaea-q4439972"
     ],
     "links": [
       {
@@ -14627,7 +14407,7 @@
       "en": "Greek goddess of affection, friendship, and sex.",
       "fr": "Fille de Nyx dans la mythologie grecque."
     },
-    "greek": "Φιλότης , Philotēs",
+    "greek": "Φιλότης",
     "parents": [
       "nyx"
     ],
@@ -14695,13 +14475,13 @@
     "kind": "deity",
     "wikidata": "Q1133738",
     "description": {
-      "en": "Son of Nyx and Hypnos in Greek mythology.",
-      "fr": "Fils de Nyx et d’Hypnos dans la mythologie grecque."
+      "en": "Son of Hypnos and Nyx in Greek mythology.",
+      "fr": "Fils d’Hypnos et de Nyx dans la mythologie grecque."
     },
     "greek": "Φοβήτωρ",
     "parents": [
-      "nyx",
-      "hypnos"
+      "hypnos",
+      "nyx"
     ],
     "links": [
       {
@@ -14826,7 +14606,7 @@
       "en": "Greek sea god.",
       "fr": "Dieu marin de la mythologie grecque."
     },
-    "greek": "Φόρκυς , Phorkys",
+    "greek": "Φόρκυς",
     "parents": [
       "gaia",
       "pontus"
@@ -14866,8 +14646,8 @@
     },
     "greek": "Φορωνεύς",
     "parents": [
-      "melia-q785598",
-      "inachus"
+      "inachus",
+      "melia-q785598"
     ],
     "links": [
       {
@@ -14896,10 +14676,10 @@
       "en": "Personification of the Morning Star in Greek and Roman mythology.",
       "fr": "Personnification de l'étoile du matin dans la mythologie grecque et romaine."
     },
-    "greek": "Φωσφόρος , Phōsphoros",
+    "greek": "Φωσφόρος",
     "parents": [
-      "eos",
-      "cephalus-q3010239"
+      "cephalus-q3010239",
+      "eos"
     ],
     "links": [
       {
@@ -14992,13 +14772,13 @@
     "wikidata": "Q1465871",
     "description": {
       "en": "Ancient Greek deity personifying jealousy and envy.",
-      "fr": "Fils d’Aphrodite, de Nyx, de Dionysos et d’Érèbe dans la mythologie grecque."
+      "fr": "Fils de Dionysos, d’Érèbe, d’Aphrodite et de Nyx dans la mythologie grecque."
     },
     "parents": [
-      "aphrodite",
-      "nyx",
       "dionysus",
-      "erebos"
+      "erebos",
+      "aphrodite",
+      "nyx"
     ],
     "links": [
       {
@@ -15031,12 +14811,12 @@
     "wikidata": "Q7188515",
     "description": {
       "en": "River-god in Greek mythology, of a river of Bithynia.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Φυλληίς",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -15066,8 +14846,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -15403,7 +15183,7 @@
       "en": "Muse of sacred-poetry, sacred hymn and eloquence as well as muse of agriculture, geometry rhetoric, and pantomime in Greek mythology.",
       "fr": "Divinité de la mythologie grecque, muse de la rhétorique."
     },
-    "greek": "Πολυμνία , Polymniā",
+    "greek": "Πολυμνία",
     "parents": [
       "mnemosyne",
       "zeus"
@@ -15473,8 +15253,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -15504,8 +15284,8 @@
       "fr": "Personnage de la mythologie grecque, fille d'Atlas."
     },
     "parents": [
-      "atlas",
-      "aethra-q410531"
+      "aethra-q410531",
+      "atlas"
     ],
     "links": [
       {
@@ -15566,8 +15346,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -15662,14 +15442,14 @@
     "wikidata": "Q1539632",
     "description": {
       "en": "Greek divinity, desire/yearning personified.",
-      "fr": "Fils de Cronos, de Zéphyr, d’Aphrodite et d’Iris dans la mythologie grecque."
+      "fr": "Fils d’Aphrodite, d’Iris, de Cronos et de Zéphyr dans la mythologie grecque."
     },
     "greek": "Πόθος",
     "parents": [
-      "cronus",
-      "zephyrus",
       "aphrodite",
-      "iris"
+      "iris",
+      "cronus",
+      "zephyrus"
     ],
     "links": [
       {
@@ -15734,9 +15514,9 @@
     },
     "greek": "Πρίαπος",
     "parents": [
-      "aphrodite",
       "hermes",
-      "dionysus"
+      "dionysus",
+      "aphrodite"
     ],
     "links": [
       {
@@ -15861,7 +15641,7 @@
       "en": "Sea divinity in Greek mythology.",
       "fr": "Divinité marine de la mythologie grecque dotée du don de prophétie et du pouvoir de se métamorphoser."
     },
-    "greek": "Πρωτεύς , Prōteus",
+    "greek": "Πρωτεύς",
     "parents": [
       "poseidon"
     ],
@@ -15899,8 +15679,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -16063,14 +15843,14 @@
     "wikidata": "Q7257118",
     "description": {
       "en": "Mythical son of Athamas.",
-      "fr": "Fils de Thémisto, d’Apollon, d’Athamas et d’Acréphée dans la mythologie grecque."
+      "fr": "Fils d’Apollon, d’Athamas, d’Acréphée et de Thémisto dans la mythologie grecque."
     },
     "greek": "Πτώος",
     "parents": [
-      "themisto-q1458587",
       "apollo",
       "athamas",
-      "acraepheus"
+      "acraepheus",
+      "themisto-q1458587"
     ],
     "links": [
       {
@@ -16091,12 +15871,12 @@
     "wikidata": "Q7263645",
     "description": {
       "en": "In Greek mythology is the sky god of Areios, the planet Mars.",
-      "fr": "Fils d’Astréos et d’Éos dans la mythologie grecque."
+      "fr": "Fils d’Éos et d’Astréos dans la mythologie grecque."
     },
     "greek": "Πυρόεις",
     "parents": [
-      "astraeus",
-      "eos"
+      "eos",
+      "astraeus"
     ],
     "links": [
       {
@@ -16156,13 +15936,13 @@
     "wikidata": "Q193609",
     "description": {
       "en": "Greek mythology character, son of Zeus and Europa.",
-      "fr": "Fils d’Europe, de Zeus et d’Héphaïstos dans la mythologie grecque."
+      "fr": "Fils de Zeus, d’Héphaïstos et d’Europe dans la mythologie grecque."
     },
     "greek": "Ῥαδάμανθυς",
     "parents": [
-      "europa",
       "zeus",
-      "hephaestus"
+      "hephaestus",
+      "europa"
     ],
     "links": [
       {
@@ -16189,13 +15969,13 @@
     "wikidata": "Q1061782",
     "description": {
       "en": "Mythical king and demigod.",
-      "fr": "Fils de Strymon, de Calliope et d’Euterpe dans la mythologie grecque."
+      "fr": "Fils de Calliope, d’Euterpe et de Strymon dans la mythologie grecque."
     },
-    "greek": "Ῥῆσος , Rhēsos",
+    "greek": "Ῥῆσος",
     "parents": [
-      "strymon",
       "calliope",
-      "euterpe"
+      "euterpe",
+      "strymon"
     ],
     "links": [
       {
@@ -16242,13 +16022,13 @@
     "kind": "deity",
     "wikidata": "Q125945165",
     "description": {
-      "en": "Daughter of Tethys and Oceanus in Greek mythology.",
-      "fr": "Fille de Téthys et d’Océan dans la mythologie grecque."
+      "en": "Daughter of Oceanus and Tethys in Greek mythology.",
+      "fr": "Fille d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Ῥόδεια",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -16318,12 +16098,12 @@
     "wikidata": "Q1158902",
     "description": {
       "en": "Phrygian river-god of Greek mythology, son of Oceanus and Tethys.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Σαγγάριος",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -16359,8 +16139,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -16417,12 +16197,12 @@
       "en": "Water deity.",
       "fr": "Dieu fleuve de la mythologie grecque."
     },
-    "greek": "Σκάμανδρος , Skamandoros",
+    "greek": "Σκάμανδρος",
     "parents": [
-      "tethys",
-      "doris-q726279",
       "zeus",
-      "oceanus"
+      "oceanus",
+      "tethys",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -16467,50 +16247,6 @@
         "lang": "fr",
         "title": "Wikipédia — Sciron (vent)",
         "url": "https://fr.wikipedia.org/wiki/Sciron_(vent)"
-      }
-    ]
-  },
-  {
-    "id": "scylla-q193115",
-    "name": {
-      "en": "Scylla",
-      "fr": "Scylla"
-    },
-    "kind": "deity",
-    "wikidata": "Q193115",
-    "description": {
-      "en": "Nymph transformed into a sea monster by Circe in Greek mythology.",
-      "fr": "Nymphe transformée en monstre marin par Circé dans la mythologie grecque."
-    },
-    "greek": "Σκύλλα",
-    "parents": [
-      "hecate",
-      "echidna",
-      "lamia-q200073",
-      "styx",
-      "crataeis",
-      "poseidon",
-      "typhon",
-      "phorcys-q200382"
-    ],
-    "links": [
-      {
-        "kind": "wikipedia",
-        "lang": "en",
-        "title": "Wikipedia — Scylla",
-        "url": "https://en.wikipedia.org/wiki/Scylla"
-      },
-      {
-        "kind": "wikipedia",
-        "lang": "fr",
-        "title": "Wikipédia — Scylla (monstre)",
-        "url": "https://fr.wikipedia.org/wiki/Scylla_(monstre)"
-      },
-      {
-        "kind": "article",
-        "lang": "en",
-        "title": "Theoi Project — Scylla (Skylla)",
-        "url": "https://www.theoi.com/Pontios/Skylla.html"
       }
     ]
   },
@@ -16615,8 +16351,8 @@
     },
     "greek": "Σιμόεις",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -16643,13 +16379,13 @@
     "wikidata": "Q4421209",
     "description": {
       "en": "Mythical king of the Odomanti.",
-      "fr": "Fils d’Arès, de Poséidon et d’Anchinoé dans la mythologie grecque."
+      "fr": "Fils d’Anchinoé, d’Arès et de Poséidon dans la mythologie grecque."
     },
     "greek": "Σίθωνας",
     "parents": [
+      "anchiroe-q3615214",
       "ares",
-      "poseidon",
-      "anchiroe-q3615214"
+      "poseidon"
     ],
     "links": [
       {
@@ -16820,8 +16556,8 @@
     },
     "greek": "Σπειώ",
     "parents": [
-      "nereus",
-      "doris-q726279"
+      "doris-q726279",
+      "nereus"
     ],
     "links": [
       {
@@ -16852,8 +16588,8 @@
     },
     "greek": "Σπερχειός",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -16879,13 +16615,13 @@
     "kind": "deity",
     "wikidata": "Q109905616",
     "description": {
-      "en": "Son of Ariadne, Erigone and Dionysus in Greek mythology.",
-      "fr": "Fils d’Ariane, d’Érigone et de Dionysos dans la mythologie grecque."
+      "en": "Son of Dionysus, Ariadne and Erigone in Greek mythology.",
+      "fr": "Fils de Dionysos, d’Ariane et d’Érigone dans la mythologie grecque."
     },
     "parents": [
+      "dionysus",
       "ariadne",
-      "erigone-q568768",
-      "dionysus"
+      "erigone-q568768"
     ],
     "links": [
       {
@@ -16910,8 +16646,8 @@
     },
     "greek": "Σθεννώ",
     "parents": [
-      "phorcys-q200382",
-      "ceto-q209489"
+      "ceto-q209489",
+      "phorcys-q200382"
     ],
     "links": [
       {
@@ -16932,12 +16668,12 @@
     "wikidata": "Q3625559",
     "description": {
       "en": "River god of Greek antiquity.",
-      "fr": "Fils de Téthys et d’Océan dans la mythologie grecque."
+      "fr": "Fils d’Océan et de Téthys dans la mythologie grecque."
     },
     "greek": "Στρυμών",
     "parents": [
-      "tethys",
-      "oceanus"
+      "oceanus",
+      "tethys"
     ],
     "links": [
       {
@@ -17016,13 +16752,13 @@
     "wikidata": "Q3514925",
     "description": {
       "en": "Mythical daughter of Asopus.",
-      "fr": "Fille de Métope, d’Éole et d’Asopos dans la mythologie grecque."
+      "fr": "Fille d’Éole, d’Asopos et de Métope dans la mythologie grecque."
     },
     "greek": "Τανάγρα",
     "parents": [
-      "metope",
       "aiolos",
-      "asopus"
+      "asopus",
+      "metope"
     ],
     "links": [
       {
@@ -17059,8 +16795,8 @@
     },
     "greek": "Τάνταλος",
     "parents": [
-      "plouto",
-      "zeus"
+      "zeus",
+      "plouto"
     ],
     "links": [
       {
@@ -17119,12 +16855,12 @@
     "wikidata": "Q2361827",
     "description": {
       "en": "Mythic founder-king and ancestor of the Scythians.",
-      "fr": "Fils de fille du Borysthène et de Zeus dans la mythologie grecque."
+      "fr": "Fils de Zeus et de fille du Borysthène dans la mythologie grecque."
     },
     "greek": "Ταργίταος",
     "parents": [
-      "unnamed-daughter-of-borysthenes",
-      "zeus"
+      "zeus",
+      "unnamed-daughter-of-borysthenes"
     ],
     "links": [
       {
@@ -17151,12 +16887,12 @@
     "wikidata": "Q1294659",
     "description": {
       "en": "Greek and Celtic deity.",
-      "fr": "Fils d’Épione et d’Asclépios dans la mythologie grecque."
+      "fr": "Fils d’Asclépios et d’Épione dans la mythologie grecque."
     },
     "greek": "Τελεσφόρος",
     "parents": [
-      "epione",
-      "asclepius"
+      "asclepius",
+      "epione"
     ],
     "links": [
       {
@@ -17193,8 +16929,8 @@
     },
     "greek": "Τελετή",
     "parents": [
-      "nicaea",
-      "dionysus"
+      "dionysus",
+      "nicaea"
     ],
     "links": [
       {
@@ -17257,8 +16993,8 @@
     },
     "greek": "Τήνερος",
     "parents": [
-      "melia-q785598",
-      "apollo"
+      "apollo",
+      "melia-q785598"
     ],
     "links": [
       {
@@ -17313,7 +17049,7 @@
       "en": "Muse of dance in Greek mythology.",
       "fr": "Muse de la danse."
     },
-    "greek": "Τερψιχόρα , Terpsichorā",
+    "greek": "Τερψιχόρα",
     "parents": [
       "mnemosyne",
       "zeus"
@@ -17353,9 +17089,9 @@
     },
     "greek": "Τεύκρος της Τρωάδος",
     "parents": [
+      "idaea-q2007963",
       "scamander-q1134694",
-      "scamander-q16600792",
-      "idaea-q2007963"
+      "scamander-q16600792"
     ],
     "links": [
       {
@@ -17384,7 +17120,7 @@
       "en": "Muse of comedy in Greek mythology.",
       "fr": "Muse de la comédie."
     },
-    "greek": "Θάλεια , Thaleia",
+    "greek": "Θάλεια",
     "parents": [
       "mnemosyne",
       "zeus"
@@ -17420,12 +17156,12 @@
     "wikidata": "Q1260484",
     "description": {
       "en": "One of the 3 Graces.",
-      "fr": "Fille d’Eurynomé et de Zeus dans la mythologie grecque."
+      "fr": "Fille de Zeus et d’Eurynomé dans la mythologie grecque."
     },
-    "greek": "Θάλεια , Thaleia",
+    "greek": "Θάλεια",
     "parents": [
-      "eurynome-q548099",
-      "zeus"
+      "zeus",
+      "eurynome-q548099"
     ],
     "links": [
       {
@@ -17458,12 +17194,12 @@
     "wikidata": "Q1245211",
     "description": {
       "en": "Mythical character, one of the Horae.",
-      "fr": "Fille de Zeus et de Thémis dans la mythologie grecque."
+      "fr": "Fille de Thémis et de Zeus dans la mythologie grecque."
     },
-    "greek": "Θαλλώ , Thallo",
+    "greek": "Θαλλώ",
     "parents": [
-      "zeus",
-      "themis"
+      "themis",
+      "zeus"
     ],
     "links": [
       {
@@ -17492,7 +17228,7 @@
       "en": "Personification of death in Greek mythology.",
       "fr": "Divinité grecque et personnification de la mort dans la mythologie grecque."
     },
-    "greek": "Θάνατος , Thanatos",
+    "greek": "Θάνατος",
     "parents": [
       "nyx",
       "erebos"
@@ -17528,12 +17264,12 @@
     "wikidata": "Q326767",
     "description": {
       "en": "Sea god of Greek mythology.",
-      "fr": "Fils de Gaïa et de Pontos dans la mythologie grecque."
+      "fr": "Fils de Pontos et de Gaïa dans la mythologie grecque."
     },
     "greek": "Θαύμας",
     "parents": [
-      "gaia",
-      "pontus"
+      "pontus",
+      "gaia"
     ],
     "links": [
       {
@@ -17591,8 +17327,8 @@
     },
     "greek": "Θήβη",
     "parents": [
-      "metope",
-      "asopus"
+      "asopus",
+      "metope"
     ],
     "links": [
       {
@@ -17623,8 +17359,8 @@
     },
     "greek": "Θεμιστώ",
     "parents": [
-      "hypseus",
-      "chlidanope"
+      "chlidanope",
+      "hypseus"
     ],
     "links": [
       {
@@ -17814,8 +17550,8 @@
     },
     "greek": "Τισιφόνη",
     "parents": [
-      "gaia",
-      "uranus"
+      "uranus",
+      "gaia"
     ],
     "links": [
       {
@@ -17887,12 +17623,12 @@
     "wikidata": "Q17996944",
     "description": {
       "en": "King of Lydia and husband to Omphale in Greek mythology.",
-      "fr": "Fils d’Arès et de Theogone dans la mythologie grecque."
+      "fr": "Fils de Theogone et d’Arès dans la mythologie grecque."
     },
     "greek": "Τμῶλος",
     "parents": [
-      "ares",
-      "theogone"
+      "theogone",
+      "ares"
     ],
     "links": [
       {
@@ -17945,17 +17681,17 @@
     "wikidata": "Q269243",
     "description": {
       "en": "Mythical promulgator of agriculture at Eleusis.",
-      "fr": "Fils de Gaïa, de Métanire, d’Océan, de Céléos, de Raros, d’Éleusinos et de Trochilos dans la mythologie grecque."
+      "fr": "Fils d’Océan, de Céléos, de Raros, d’Éleusinos, de Trochilos, de Gaïa et de Métanire dans la mythologie grecque."
     },
     "greek": "Τριπτόλεμος",
     "parents": [
-      "gaia",
-      "metanira",
       "oceanus",
       "celeus-q1141300",
       "rarus",
       "eleusis",
-      "trochilus"
+      "trochilus",
+      "gaia",
+      "metanira"
     ],
     "links": [
       {
@@ -17992,8 +17728,8 @@
     },
     "greek": "Τρίτων",
     "parents": [
-      "amphitrite",
-      "poseidon"
+      "poseidon",
+      "amphitrite"
     ],
     "links": [
       {
@@ -18148,8 +17884,8 @@
       "fr": "Néréide de la mythologie grecque."
     },
     "parents": [
-      "doris-q726279",
-      "nereus"
+      "nereus",
+      "doris-q726279"
     ],
     "links": [
       {
@@ -18243,7 +17979,7 @@
       "en": "Ancient Greek personification of emulation/envy.",
       "fr": "Fils de Styx et de Pallas dans la mythologie grecque."
     },
-    "greek": "Ζῆλος , Zēlos",
+    "greek": "Ζῆλος",
     "parents": [
       "styx",
       "pallas-q457294"
@@ -18359,12 +18095,12 @@
     "wikidata": "Q197033",
     "description": {
       "en": "King of Sikyon.",
-      "fr": "Fils de Syllis et d’Apollon dans la mythologie grecque."
+      "fr": "Fils d’Apollon et de Syllis dans la mythologie grecque."
     },
     "greek": "Ζεύξιππος",
     "parents": [
-      "syllis",
-      "apollo"
+      "apollo",
+      "syllis"
     ],
     "links": [
       {

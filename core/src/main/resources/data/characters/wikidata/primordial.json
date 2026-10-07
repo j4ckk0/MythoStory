@@ -155,7 +155,7 @@
       "en": "Primordial deity in Greek mythology.",
       "fr": "Déité primordiale dans la mythologie grecque."
     },
-    "greek": "Ἔρεβος , Erebos",
+    "greek": "Ἔρεβος",
     "parents": [
       "chaos"
     ],
@@ -220,7 +220,7 @@
       "en": "Greek goddess of the night.",
       "fr": "Déesse grecque de la nuit."
     },
-    "greek": "Νύξ , Nýx",
+    "greek": "Νύξ",
     "parents": [
       "chaos"
     ],
@@ -294,7 +294,7 @@
       "en": "Sea god of Greek mythology.",
       "fr": "Fils de Gaïa dans la mythologie grecque."
     },
-    "greek": "Πόντος , Pontos",
+    "greek": "Πόντος",
     "parents": [
       "gaia"
     ],
@@ -331,7 +331,7 @@
       "en": "Primordial sea goddess in Greek mythology, daughter of Aether and Hemera.",
       "fr": "Divinité primordiale incarnant la mer dans la mythologie Grecque, fille d'Éther et d'Héméra."
     },
-    "greek": "Θάλασσα , Talassa",
+    "greek": "Θάλασσα",
     "parents": [
       "hemera",
       "aether"

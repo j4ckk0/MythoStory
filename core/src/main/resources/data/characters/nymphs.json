@@ -192,5 +192,42 @@
         "url": "https://mythologica.fr/grec/orphee.htm"
       }
     ]
+  },
+  {
+    "id": "calypso",
+    "name": {
+      "en": "Calypso",
+      "fr": "Calypso"
+    },
+    "kind": "nymph",
+    "wikidata": "Q48961",
+    "description": {
+      "en": "Nymph who kept Odysseus seven years on her island of Ogygia and offered him immortality.",
+      "fr": "Nymphe qui retint Ulysse sept ans sur son île d’Ogygie et lui offrit l’immortalité."
+    },
+    "greek": "Καλυψώ",
+    "parents": [
+      "atlas"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calypso (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Calypso",
+        "url": "https://fr.wikipedia.org/wiki/Calypso"
+      },
+      {
+        "kind": "article",
+        "lang": "en",
+        "title": "Theoi Project — Calypso (Kalypso)",
+        "url": "https://www.theoi.com/Nymphe/NympheKalypso.html"
+      }
+    ]
   }
 ]
