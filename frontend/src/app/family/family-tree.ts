@@ -1,4 +1,4 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { Component, ElementRef, afterRenderEffect, computed, inject, input, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { CHARACTER_KINDS, CatalogService, Character } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
@@ -43,6 +43,17 @@ export class FamilyTree {
   private readonly i18n = inject(I18nService);
   private readonly router = inject(Router);
   readonly character = input.required<Character>();
+  private readonly scroller = viewChild<ElementRef<HTMLElement>>('pedigree');
+
+  constructor() {
+    // a pedigree wider than the window scrolls: it opens on the character, at its bottom's middle
+    afterRenderEffect(() => {
+      const tree = this.pedigree();
+      const element = this.scroller()?.nativeElement;
+      const root = tree?.nodes.find((n) => n.root);
+      if (element && root) element.scrollLeft = root.x + NODE_WIDTH / 2 - element.clientWidth / 2;
+    });
+  }
 
   protected readonly nodeWidth = NODE_WIDTH;
   protected readonly nodeHeight = NODE_HEIGHT;

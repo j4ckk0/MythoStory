@@ -1,6 +1,6 @@
 @if (pedigree(); as tree) {
   <h3>{{ 'family.ancestors' | i18n }}</h3>
-  <div class="pedigree">
+  <div class="pedigree" #pedigree>
     <svg [attr.width]="tree.width" [attr.height]="tree.height" [attr.viewBox]="'0 0 ' + tree.width + ' ' + tree.height">
       @for (n of tree.nodes; track $index) {
         @if (n.childY !== undefined) {

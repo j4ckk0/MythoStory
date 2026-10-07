@@ -8,7 +8,14 @@ h3 {
   color: var(--muted);
 }
 
+/* wider than the text's column when it needs to: as wide as the window, centred on the column — which the window
+   centres —, scrolling only past the window's width (on a phone, say) */
 .pedigree {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100vw - 3rem);
   overflow-x: auto;
   padding-bottom: 0.25rem;
 }
