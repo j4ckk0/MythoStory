@@ -55,8 +55,18 @@
     "licence": "CC-BY-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/siwis/medium",
     "role": {
-      "en": "The French voice (voices/fr.onnx), trained on the SIWIS French Speech Synthesis Database, University of Edinburgh.",
-      "fr": "La voix française (voices/fr.onnx), entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg."
+      "en": "The French voice Siwis, trained on the SIWIS French Speech Synthesis Database, University of Edinburgh.",
+      "fr": "La voix française Siwis, entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg."
+    }
+  },
+  {
+    "name": "Piper voice fr_FR-upmc-medium",
+    "version": "1.0.0",
+    "licence": "CC-BY-SA-4.0",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/upmc/medium",
+    "role": {
+      "en": "The French voices Jessica and Pierre, trained on the UPMC corpus of MaryTTS (Université Pierre-et-Marie-Curie).",
+      "fr": "Les voix françaises Jessica et Pierre, entraînées sur le corpus UPMC de MaryTTS (Université Pierre-et-Marie-Curie)."
     }
   },
   {
@@ -65,8 +75,28 @@
     "licence": "CC-BY-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/alba/medium",
     "role": {
-      "en": "The English voice (voices/en.onnx), trained on the Alba dataset, University of Edinburgh.",
-      "fr": "La voix anglaise (voices/en.onnx), entraînée sur le jeu de données Alba, Université d’Édimbourg."
+      "en": "The English voice Alba, trained on the Alba dataset, University of Edinburgh.",
+      "fr": "La voix anglaise Alba, entraînée sur le jeu de données Alba, Université d’Édimbourg."
+    }
+  },
+  {
+    "name": "Piper voice en_GB-cori-medium",
+    "version": "1.0.0",
+    "licence": "Public domain",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/cori/medium",
+    "role": {
+      "en": "The English voice Cori, trained on LibriVox recordings, in the public domain.",
+      "fr": "La voix anglaise Cori, entraînée sur des enregistrements LibriVox, dans le domaine public."
+    }
+  },
+  {
+    "name": "Piper voice en_GB-northern_english_male-medium",
+    "version": "1.0.0",
+    "licence": "CC-BY-SA-4.0",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/northern_english_male/medium",
+    "role": {
+      "en": "The English voice Northern, trained on Google’s crowdsourced UK and Ireland English dialect speech (OpenSLR 83).",
+      "fr": "La voix anglaise Northern, entraînée sur le corpus participatif de Google des accents anglais du Royaume-Uni et d’Irlande (OpenSLR 83)."
     }
   }
 ]

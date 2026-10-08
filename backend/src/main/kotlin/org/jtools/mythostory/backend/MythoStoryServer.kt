@@ -38,10 +38,11 @@ import java.util.Properties
 
 /**
  * What the server says of itself (frontend: catalog.ts, Info): [platform] tells the desktop from Android, [languages]
- * are the i18n languages the catalog's texts are in, [voices] those it can read aloud (/api/speech).
+ * are the i18n languages the catalog's texts are in, [voices] those it reads aloud with (/api/speech), each language's
+ * default first.
  */
 @Serializable
-data class Info(val name: String, val version: String, val platform: String, val languages: List<String>, val voices: List<String>)
+data class Info(val name: String, val version: String, val platform: String, val languages: List<String>, val voices: List<Voice>)
 
 /** The longest text /api/speech reads: a sentence, or a long one — the page sends one at a time. */
 const val SPEECH_MAX_LENGTH = 1000
@@ -93,16 +94,20 @@ fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageS
             get("/catalog") { call.respond(catalog) }
             // what the application carries, and under which licences: the help page lists them
             get("/licences") { call.respond(licences) }
-            // a sentence read aloud: ?lang=fr&text=…, as WAV; the same text always sounds the same, so browsers keep it
+            // a sentence read aloud: ?lang=fr&voice=fr-pierre&text=…, as WAV — by the language's default voice when the
+            // voice is not one of the language's; the same text always sounds the same, so browsers keep it
             get("/speech") {
                 val language = call.request.queryParameters["lang"]
+                val asked = call.request.queryParameters["voice"]
                 val text = call.request.queryParameters["text"]?.trim()
+                val ofLanguage = speech?.voices.orEmpty().filter { it.language == language }
+                val voice = ofLanguage.firstOrNull { it.id == asked } ?: ofLanguage.firstOrNull()
                 when {
-                    speech == null || language !in speech.languages -> call.respond(HttpStatusCode.NotFound, "no voice for $language")
+                    speech == null || voice == null -> call.respond(HttpStatusCode.NotFound, "no voice for $language")
                     text.isNullOrEmpty() || text.length > SPEECH_MAX_LENGTH ->
                         call.respond(HttpStatusCode.BadRequest, "a text of 1 to $SPEECH_MAX_LENGTH characters")
                     else -> {
-                        val wav = withContext(Dispatchers.IO) { speech.synthesize(language!!, text) }
+                        val wav = withContext(Dispatchers.IO) { speech.synthesize(voice.id, text) }
                         call.response.header(HttpHeaders.CacheControl, "private, max-age=86400")
                         call.respondBytes(wav, ContentType("audio", "wav"))
                     }
@@ -137,6 +142,6 @@ fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageS
 private fun readInfo(platform: Platform, speech: SpeechSynthesizer?): Info {
     val props = Properties()
     Info::class.java.getResourceAsStream("/mythostory.properties")?.use(props::load)
-    val voices = I18n.LANGUAGES.filter { speech?.languages?.contains(it) == true }
+    val voices = speech?.voices.orEmpty().filter { it.language in I18n.LANGUAGES }
     return Info(props.getProperty("name", "MythoStory"), props.getProperty("version", "dev"), platform.label, I18n.LANGUAGES, voices)
 }

@@ -1,15 +1,28 @@
-import { I18nLanguage } from '../i18n/i18n.service';
+import { ServerVoice } from '../catalog/catalog';
+import { I18nLanguage, I18nText } from '../i18n/i18n.service';
 
-/** A way to speak a text aloud: the browser's own, or the Android app's. */
+/** A voice an engine offers for a language, which the settings let one choose: its id is the engine's own. */
+export interface VoiceOption {
+  id: string;
+  name: string;
+  description?: I18nText;
+}
+
+/** A way to speak a text aloud: the server's, the browser's own, or the Android app's. */
 export interface SpeechEngine {
   /** Whether it has a voice for the language — the browser's voices may come late: [ready] says when they are known. */
   available(language: I18nLanguage): boolean;
-  /** Speaks the text; [onEnd] once it is said, not when it was cancelled. */
-  speak(text: string, language: I18nLanguage, onEnd: () => void): void;
+  /** Its voices for the language, its default first; none when the system chooses (Android). */
+  voices?(language: I18nLanguage): VoiceOption[];
+  /**
+   * Speaks the text, with the voice when it is one of the language's (its default else); [onEnd] once it is said,
+   * not when it was cancelled.
+   */
+  speak(text: string, language: I18nLanguage, onEnd: () => void, voice?: string | null): void;
   /** Stops speaking at once, the current text and any queued. */
   cancel(): void;
   /** Prepares a text it will soon be asked to speak, so that no silence falls between two sentences. */
-  prefetch?(text: string, language: I18nLanguage): void;
+  prefetch?(text: string, language: I18nLanguage, voice?: string | null): void;
   /**
    * The longest text it reads well at once, sentences grouped up to it; one sentence at a time when absent — some
    * browsers cut long utterances short.
@@ -28,17 +41,23 @@ export class ServerSpeechEngine implements SpeechEngine {
   private readonly prefetched = new Map<string, HTMLAudioElement>();
 
   constructor(
-    /** The languages the server has a voice for: /api/info's voices, known once it has answered. */
-    private readonly voices: () => readonly string[],
+    /** The server's voices: /api/info's, known once it has answered. */
+    private readonly serverVoices: () => readonly ServerVoice[],
     private readonly createAudio: (url: string) => HTMLAudioElement = (url) => new Audio(url),
   ) {}
 
   available(language: I18nLanguage): boolean {
-    return this.voices().includes(language);
+    return this.voices(language).length > 0;
   }
 
-  speak(text: string, language: I18nLanguage, onEnd: () => void): void {
-    const url = speechUrl(text, language);
+  voices(language: I18nLanguage): VoiceOption[] {
+    return this.serverVoices()
+      .filter((v) => v.language === language)
+      .map(({ id, name, description }) => ({ id, name, description }));
+  }
+
+  speak(text: string, language: I18nLanguage, onEnd: () => void, voice?: string | null): void {
+    const url = this.url(text, language, voice);
     const audio = this.prefetched.get(url) ?? this.createAudio(url);
     this.prefetched.delete(url);
     this.playing = audio;
@@ -57,18 +76,20 @@ export class ServerSpeechEngine implements SpeechEngine {
     this.prefetched.clear();
   }
 
-  prefetch(text: string, language: I18nLanguage): void {
-    const url = speechUrl(text, language);
+  prefetch(text: string, language: I18nLanguage, voice?: string | null): void {
+    const url = this.url(text, language, voice);
     if (this.prefetched.has(url)) return;
     const audio = this.createAudio(url);
     audio.preload = 'auto';
     audio.load();
     this.prefetched.set(url, audio);
   }
-}
 
-function speechUrl(text: string, language: I18nLanguage): string {
-  return `api/speech?lang=${language}&text=${encodeURIComponent(text)}`;
+  /** The sentence's address: the voice named when it is one of the language's — the server's default else. */
+  private url(text: string, language: I18nLanguage, voice?: string | null): string {
+    const known = voice && this.voices(language).some((v) => v.id === voice);
+    return `api/speech?lang=${language}${known ? `&voice=${encodeURIComponent(voice)}` : ''}&text=${encodeURIComponent(text)}`;
+  }
 }
 
 /** The voice's locale for each i18n language: what the engines are asked for. */
@@ -79,7 +100,7 @@ const LOCALES: Record<I18nLanguage, string> = { en: 'en-GB', fr: 'fr-FR' };
  * those are preferred. The voice is the one of the language's locale (fr-FR, en-GB), else any of the language.
  */
 export class WebSpeechEngine implements SpeechEngine {
-  private voices: SpeechSynthesisVoice[] = [];
+  private systemVoices: SpeechSynthesisVoice[] = [];
 
   constructor(
     private readonly synthesis: SpeechSynthesis,
@@ -87,7 +108,7 @@ export class WebSpeechEngine implements SpeechEngine {
     onVoices: () => void,
   ) {
     const load = () => {
-      this.voices = synthesis.getVoices();
+      this.systemVoices = synthesis.getVoices();
       onVoices();
     };
     load();
@@ -95,13 +116,22 @@ export class WebSpeechEngine implements SpeechEngine {
   }
 
   available(language: I18nLanguage): boolean {
-    return this.voice(language) !== undefined;
+    return this.ofLanguage(language).length > 0;
   }
 
-  speak(text: string, language: I18nLanguage, onEnd: () => void): void {
+  voices(language: I18nLanguage): VoiceOption[] {
+    return this.ofLanguage(language).map((v) => ({
+      id: v.voiceURI || v.name,
+      name: v.name,
+      description: { en: v.lang + (v.localService ? '' : ' · online'), fr: v.lang + (v.localService ? '' : ' · en ligne') },
+    }));
+  }
+
+  speak(text: string, language: I18nLanguage, onEnd: () => void, voice?: string | null): void {
     const utterance = new SpeechSynthesisUtterance(text);
+    const voices = this.ofLanguage(language);
     utterance.lang = LOCALES[language];
-    utterance.voice = this.voice(language) ?? null;
+    utterance.voice = voices.find((v) => (v.voiceURI || v.name) === voice) ?? voices[0] ?? null;
     utterance.onend = onEnd;
     this.synthesis.speak(utterance);
   }
@@ -110,11 +140,12 @@ export class WebSpeechEngine implements SpeechEngine {
     this.synthesis.cancel();
   }
 
-  private voice(language: I18nLanguage): SpeechSynthesisVoice | undefined {
-    const ofLanguage = this.voices.filter((v) => v.lang.toLowerCase().replace('_', '-').startsWith(language));
+  /** The voices of the language, the best first: the locale's, local, the system's default. */
+  private ofLanguage(language: I18nLanguage): SpeechSynthesisVoice[] {
+    const ofLanguage = this.systemVoices.filter((v) => v.lang.toLowerCase().replace('_', '-').startsWith(language));
     const score = (v: SpeechSynthesisVoice) =>
       Number(v.lang.replace('_', '-') === LOCALES[language]) * 2 + Number(v.localService) + Number(v.default) * 0.5;
-    return ofLanguage.sort((a, b) => score(b) - score(a))[0];
+    return ofLanguage.sort((a, b) => score(b) - score(a));
   }
 }
 

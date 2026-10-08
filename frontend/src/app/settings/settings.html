@@ -1,0 +1,49 @@
+<h1>{{ 'settings.title' | i18n }}</h1>
+
+<section>
+  <h2>{{ 'settings.voices.title' | i18n }}</h2>
+  <p class="muted">{{ 'settings.voices.intro' | i18n }}</p>
+
+  @for (language of languages(); track language) {
+    <fieldset class="voices" [attr.lang]="language">
+      <legend>{{ legends[language] | i18n }}</legend>
+      @switch (speech.readerOf(language)) {
+        @case ('android') {
+          <p class="muted">{{ 'settings.voices.android' | i18n }}</p>
+        }
+        @case (null) {
+          <p class="muted">{{ 'settings.voices.none' | i18n }}</p>
+        }
+        @default {
+          @for (v of speech.voices(language); track v.id; let first = $first) {
+            <div class="voice" [class.chosen]="speech.voiceOf(language) === v.id">
+              <label>
+                <input type="radio" [name]="'voice-' + language" [checked]="speech.voiceOf(language) === v.id"
+                       (change)="choose(language, v.id, first)" />
+                <span class="name">{{ v.name }}</span>
+                @if (first) {
+                  <span class="default">{{ 'settings.voices.default' | i18n }}</span>
+                }
+                @if (v.description) {
+                  <span class="description">{{ v.description | i18nText }}</span>
+                }
+              </label>
+              <button type="button" class="sample" [class.active]="playing(v.id)" (click)="sample(language, v.id)">
+                @if (playing(v.id)) {
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z" /></svg>
+                  {{ 'speech.stop' | i18n }}
+                } @else {
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+                  {{ 'settings.voices.listen' | i18n }}
+                }
+              </button>
+            </div>
+          }
+          @if (speech.readerOf(language) === 'browser') {
+            <p class="muted note">{{ 'settings.voices.browser' | i18n }}</p>
+          }
+        }
+      }
+    </fieldset>
+  }
+</section>

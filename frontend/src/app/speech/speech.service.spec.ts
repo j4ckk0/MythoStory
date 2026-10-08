@@ -3,7 +3,8 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { TestBed } from '@angular/core/testing';
 import { CatalogService } from '../catalog/catalog';
 import { ServerSpeechEngine } from './speech-engine';
-import { group, split, SpeechService } from './speech.service';
+import { group, split, SpeechService, VOICE_SAMPLES } from './speech.service';
+import { VoiceSettings } from './voice-settings';
 
 /** A speech synthesis that says nothing: it records the utterances, and ends them when the test says. */
 class FakeSynthesis extends EventTarget {
@@ -122,6 +123,20 @@ describe('SpeechService', () => {
     expect(speech.item()).toBeNull();
   });
 
+  it('lists the browser’s voices of a language, the best first, and reads with the one chosen', () => {
+    synthesis.voices.push({ name: 'Amélie', lang: 'fr-CA', localService: true, default: false });
+    synthesis.dispatchEvent(new Event('voiceschanged'));
+    expect(speech.readerOf('fr')).toBe('browser');
+    expect(speech.voices('fr').map((v) => v.name)).toEqual(['Thomas', 'Amélie']);
+    TestBed.inject(VoiceSettings).choose('fr', 'Amélie');
+    speech.play('k', 'Titre', [], 'fr');
+    expect(synthesis.spoken.at(-1)?.voice).toBe('Amélie');
+    speech.playSample('fr', 'Thomas'); // a sample: with its voice, whatever was chosen; no title
+    expect(synthesis.spoken.at(-1)).toEqual(expect.objectContaining({ text: VOICE_SAMPLES.fr, voice: 'Thomas' }));
+    expect(speech.key()).toBe('sample:Thomas');
+    TestBed.inject(VoiceSettings).choose('fr', null);
+  });
+
   it('groups sentences up to a length, for the voices that read several at once', () => {
     expect(group(['One.', 'Two.', 'Three.'], 10)).toEqual(['One. Two.', 'Three.']);
     expect(group(['A long sentence that does not fit.', 'Two.'], 10)).toEqual(['A long sentence that does not fit.', 'Two.']);
@@ -164,6 +179,9 @@ describe('SpeechService on Android', () => {
   });
 });
 
+const SIWIS = { id: 'fr-siwis', language: 'fr', name: 'Siwis', description: { en: 'Female voice', fr: 'Voix féminine' } };
+const PIERRE = { id: 'fr-pierre', language: 'fr', name: 'Pierre' };
+
 describe('SpeechService with the server’s voices', () => {
   afterEach(() => {
     delete (window as unknown as Record<string, unknown>)['speechSynthesis'];
@@ -185,12 +203,32 @@ describe('SpeechService with the server’s voices', () => {
     const speech = TestBed.inject(SpeechService);
     const http = TestBed.inject(HttpTestingController);
     http.expectOne('api/catalog').flush({ characters: [], stories: [], cycles: [], eras: [], places: [] });
-    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: ['fr'] });
-    expect(TestBed.inject(CatalogService).info()?.voices).toEqual(['fr']);
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [SIWIS, PIERRE] });
+    expect(TestBed.inject(CatalogService).info()?.voices?.map((v) => v.id)).toEqual(['fr-siwis', 'fr-pierre']);
     expect(speech.available('fr')).toBe(true); // the server's
+    expect(speech.readerOf('fr')).toBe('server');
+    expect(speech.readerOf('en')).toBe('browser');
     speech.play('k', 'Title', [], 'en');
     expect(spoken).toEqual(['browser: Title']); // no English voice on the server: the browser's
     delete (globalThis as Record<string, unknown>)['SpeechSynthesisUtterance'];
+  });
+
+  it('offers the server’s voices of a language, the default first, and reads with the one chosen', () => {
+    localStorage.removeItem('mythostory.speech.voice.fr');
+    TestBed.configureTestingModule({ providers: [provideHttpClient(), provideHttpClientTesting()] });
+    const speech = TestBed.inject(SpeechService);
+    const http = TestBed.inject(HttpTestingController);
+    http.expectOne('api/catalog').flush({ characters: [], stories: [], cycles: [], eras: [], places: [] });
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [SIWIS, PIERRE] });
+    expect(speech.voices('fr').map((v) => v.name)).toEqual(['Siwis', 'Pierre']);
+    expect(speech.voiceOf('fr')).toBe('fr-siwis'); // nothing chosen: the default
+    TestBed.inject(VoiceSettings).choose('fr', 'fr-pierre');
+    expect(speech.voiceOf('fr')).toBe('fr-pierre');
+    expect(localStorage.getItem('mythostory.speech.voice.fr')).toBe('fr-pierre'); // remembered
+    TestBed.inject(VoiceSettings).choose('fr', 'fr-gone');
+    expect(speech.voiceOf('fr')).toBe('fr-siwis'); // a voice the server no longer has: the default
+    TestBed.inject(VoiceSettings).choose('fr', null);
+    expect(localStorage.getItem('mythostory.speech.voice.fr')).toBeNull();
   });
 });
 
@@ -221,7 +259,7 @@ describe('ServerSpeechEngine', () => {
 
   it('plays each sentence the server says, the next one fetched while the current one plays', () => {
     FakeAudio.made = [];
-    const engine = new ServerSpeechEngine(() => ['fr'], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
+    const engine = new ServerSpeechEngine(() => [SIWIS, PIERRE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
     expect(engine.available('fr')).toBe(true);
     expect(engine.available('en')).toBe(false);
     let ended = 0;
@@ -236,5 +274,13 @@ describe('ServerSpeechEngine', () => {
     expect(ended).toBe(1);
     engine.cancel();
     expect(FakeAudio.made[0].paused).toBe(true);
+  });
+
+  it('names the voice chosen when it is one of the language’s, and only then', () => {
+    FakeAudio.made = [];
+    const engine = new ServerSpeechEngine(() => [SIWIS, PIERRE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
+    engine.speak('Un.', 'fr', () => undefined, 'fr-pierre');
+    engine.speak('Un.', 'fr', () => undefined, 'en-alba');
+    expect(FakeAudio.made.map((a) => a.url)).toEqual(['api/speech?lang=fr&voice=fr-pierre&text=Un.', 'api/speech?lang=fr&text=Un.']);
   });
 });

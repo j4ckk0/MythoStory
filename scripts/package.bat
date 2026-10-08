@@ -33,8 +33,8 @@ set "VERSION=%VERSION:</revision>=%"
 for %%a in (releases\mythostory-*-windows.zip releases\mythostory-*-linux.tar.gz releases\mythostory-*-android.apk) do call :previous "%%a"
 
 rem What every desktop distribution must carry: the jar, its launcher, the bundled JRE.
-call :carries releases\mythostory-%VERSION%-windows.zip mythostory.jar mythostory.bat jre/bin/java.exe piper/piper.exe voices/fr.onnx voices/en.onnx VOICES.md || exit /b 1
-call :carries releases\mythostory-%VERSION%-linux.tar.gz mythostory.jar mythostory.sh jre/bin/java piper/piper voices/fr.onnx voices/en.onnx VOICES.md || exit /b 1
+call :carries releases\mythostory-%VERSION%-windows.zip mythostory.jar mythostory.bat jre/bin/java.exe piper/piper.exe voices/fr_FR-siwis-medium.onnx voices/en_GB-alba-medium.onnx VOICES.md || exit /b 1
+call :carries releases\mythostory-%VERSION%-linux.tar.gz mythostory.jar mythostory.sh jre/bin/java piper/piper voices/fr_FR-siwis-medium.onnx voices/en_GB-alba-medium.onnx VOICES.md || exit /b 1
 echo == releases\ checked: mythostory-%VERSION%, the jar, the launcher and the JRE in each
 if "%ANDROID%"=="0" exit /b 0
 rem The APK: the same page and server inside

@@ -2,7 +2,8 @@ import { DOCUMENT } from '@angular/common';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { CatalogService } from '../catalog/catalog';
 import { I18nLanguage } from '../i18n/i18n.service';
-import { AndroidSpeechBridge, AndroidSpeechEngine, ServerSpeechEngine, SpeechEngine, WebSpeechEngine } from './speech-engine';
+import { AndroidSpeechBridge, AndroidSpeechEngine, ServerSpeechEngine, SpeechEngine, VoiceOption, WebSpeechEngine } from './speech-engine';
+import { VoiceSettings } from './voice-settings';
 
 /** A text to read: its key (a story's id), its title, its paragraphs, and what to announce before it (a cycle's title). */
 export interface Reading {
@@ -21,6 +22,15 @@ interface Sentence {
 
 export type SpeechState = 'idle' | 'speaking' | 'paused';
 
+/** Who reads a language aloud: the server (Piper), the browser, the Android app's text-to-speech, or no one. */
+export type SpeechVoices = 'server' | 'browser' | 'android' | null;
+
+/** What a voice says when the settings let one hear it: the Iliad's first line, in the voice's language. */
+export const VOICE_SAMPLES: Record<I18nLanguage, string> = {
+  en: 'Sing, goddess, the anger of Peleus’ son Achilles, that brought countless ills upon the Achaeans.',
+  fr: 'Chante, déesse, la colère d’Achille, fils de Pélée, qui causa aux Achéens des maux sans nombre.',
+};
+
 /**
  * Reads texts aloud — a story's title and summary, or a whole series of them —, sentence after sentence: long
  * utterances get cut short by some browsers, and pausing then resumes at the sentence where it stopped. One reading
@@ -38,7 +48,7 @@ export class SpeechService {
   /** The engine of the reading in progress. */
   private engine: SpeechEngine | null = null;
   /** Bumped when the browser's voices become known, so that availability is asked again. */
-  private readonly voices = signal(0);
+  private readonly voicesChanged = signal(0);
 
   readonly state = signal<SpeechState>('idle');
   /** The key of the reading in progress (or paused): a story's id, or a series'. */
@@ -54,6 +64,9 @@ export class SpeechService {
   /** The language the reading is in: another one asked for, it stops. */
   readonly language = signal<I18nLanguage>('en');
 
+  private readonly settings = inject(VoiceSettings);
+  /** The voice of the reading in progress when it was given one (a sample); the settings' else. */
+  private voice: string | null = null;
   private sentences: Sentence[] = [];
   private position = 0;
   /** Bumped at every sentence spoken, pause and stop: an engine's late "said" for an earlier one is ignored. */
@@ -61,7 +74,7 @@ export class SpeechService {
 
   constructor() {
     const window = inject(DOCUMENT).defaultView as (Window & { MythoStorySpeech?: AndroidSpeechBridge }) | null;
-    const voicesKnown = () => this.voices.update((n) => n + 1);
+    const voicesKnown = () => this.voicesChanged.update((n) => n + 1);
     const catalog = inject(CatalogService);
     this.server = new ServerSpeechEngine(() => catalog.info()?.voices ?? []);
     this.android = !!window?.MythoStorySpeech;
@@ -73,7 +86,7 @@ export class SpeechService {
 
   /** The engine that speaks the language: see the class. */
   private engineFor(language: I18nLanguage): SpeechEngine | null {
-    this.voices();
+    this.voicesChanged();
     if (this.android) return this.device;
     if (this.server.available(language)) return this.server;
     return this.device?.available(language) ? this.device : null;
@@ -81,6 +94,30 @@ export class SpeechService {
 
   /** Whether this device can speak at all: no engine, no button. */
   readonly supported = computed(() => this.device !== null || this.server.available('en') || this.server.available('fr'));
+
+  /** Who reads the language aloud: the settings say which voices one can choose from. */
+  readerOf(language: I18nLanguage): SpeechVoices {
+    const engine = this.engineFor(language);
+    if (!engine) return null;
+    return engine === this.server ? 'server' : this.android ? 'android' : 'browser';
+  }
+
+  /** The voices one can choose for the language, the default first: none when the system chooses (Android). */
+  voices(language: I18nLanguage): VoiceOption[] {
+    return this.engineFor(language)?.voices?.(language) ?? [];
+  }
+
+  /** The voice the language is read with: the one chosen when the engine has it, its default else. */
+  voiceOf(language: I18nLanguage): string | null {
+    const voices = this.voices(language);
+    const chosen = this.settings.voice(language);
+    return voices.find((v) => v.id === chosen)?.id ?? voices[0]?.id ?? null;
+  }
+
+  /** A voice's sample said aloud (the settings); its key "sample:<voice>" tells which is playing. */
+  playSample(language: I18nLanguage, voice: string): void {
+    this.playAll(`sample:${voice}`, [{ key: `sample:${voice}`, title: '', paragraphs: [VOICE_SAMPLES[language]] }], language, voice);
+  }
 
   /** Whether there is a voice for the language. */
   available(language: I18nLanguage): boolean {
@@ -92,17 +129,21 @@ export class SpeechService {
     this.playAll(key, [{ key, title, paragraphs }], language);
   }
 
-  /** Reads the texts one after the other, each one's intro, title and paragraphs, from the first. */
-  playAll(key: string, items: Reading[], language: I18nLanguage): void {
+  /**
+   * Reads the texts one after the other, each one's intro, title and paragraphs, from the first: with the voice,
+   * else the one the settings chose for the language.
+   */
+  playAll(key: string, items: Reading[], language: I18nLanguage, voice?: string): void {
     this.engine?.cancel();
     this.engine = this.engineFor(language);
     if (!this.engine || !items.length) return;
+    this.voice = voice ?? null;
     this.key.set(key);
     this.items.set(items);
     this.language.set(language);
     this.sentences = items.flatMap((reading, item) => [
       ...(reading.intro ? [{ text: reading.intro, paragraph: -2, item }] : []),
-      { text: reading.title, paragraph: -1, item },
+      ...(reading.title ? [{ text: reading.title, paragraph: -1, item }] : []),
       ...reading.paragraphs.flatMap((p, i) => group(split(p, language), this.engine!.groupUpTo).map((text) => ({ text, paragraph: i, item }))),
     ]);
     this.position = 0;
@@ -165,14 +206,21 @@ export class SpeechService {
     this.state.set('speaking');
     this.itemIndex.set(sentence.item);
     this.paragraph.set(sentence.paragraph);
+    // the voice chosen is asked at every sentence: a choice made while reading is heard from the next one
+    const voice = this.voice ?? this.settings.voice(this.language());
     const next = this.sentences[this.position + 1];
-    if (next) this.engine.prefetch?.(next.text, this.language());
-    this.engine.speak(sentence.text, this.language(), () => {
-      // the end of a sentence said before a pause, a jump, a stop or another reading is not followed
-      if (turn !== this.turn) return;
-      this.position++;
-      this.speakFromPosition();
-    });
+    if (next) this.engine.prefetch?.(next.text, this.language(), voice);
+    this.engine.speak(
+      sentence.text,
+      this.language(),
+      () => {
+        // the end of a sentence said before a pause, a jump, a stop or another reading is not followed
+        if (turn !== this.turn) return;
+        this.position++;
+        this.speakFromPosition();
+      },
+      voice,
+    );
   }
 }
 

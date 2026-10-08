@@ -27,11 +27,18 @@ class EmbeddedLicencesTest {
     }
 
     @Test
-    fun `the JRE, Piper and the voices are those externals_conf deploys`() {
+    fun `the JRE, Piper and the voices are those externals_conf deploys and voices_json names`() {
         check("Eclipse Temurin JRE (OpenJDK)", listOf("JRE_LINUX", "JRE_WINDOWS")) { "jdk-$it+" }
         check("Piper", listOf("PIPER_LINUX", "PIPER_WINDOWS")) { "/$it/" }
-        val voices = embedded.keys.filter { it.startsWith("Piper voice ") }.map { it.removePrefix("Piper voice ") }
-        assertTrue(voices.any { it in conf.getValue("VOICE_FR") }, "the French voice of externals.conf (${conf["VOICE_FR"]}) is not in licences/embedded.json: $voices")
-        assertTrue(voices.any { it in conf.getValue("VOICE_EN") }, "the English voice of externals.conf (${conf["VOICE_EN"]}) is not in licences/embedded.json: $voices")
+        // every voice externals.conf deploys, by its model's name
+        conf.filterKeys { it.startsWith("VOICE_") }.forEach { (key, url) ->
+            val model = url.substringAfterLast('/').removeSuffix(".onnx")
+            assertTrue("Piper voice $model" in embedded, "externals.conf's $key ($model) is not in licences/embedded.json")
+        }
+        // and every model voices.json names
+        PiperVoice.catalogue().forEach { voice ->
+            assertTrue("Piper voice ${voice.file}" in embedded, "voices.json's ${voice.id} (${voice.file}) is not in licences/embedded.json")
+            assertTrue(conf.values.any { it.endsWith("/${voice.file}.onnx") }, "voices.json's ${voice.id} (${voice.file}) is not in externals.conf")
+        }
     }
 }

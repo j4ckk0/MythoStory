@@ -1,0 +1,46 @@
+[
+  {
+    "id": "fr-siwis",
+    "file": "fr_FR-siwis-medium",
+    "language": "fr",
+    "name": "Siwis",
+    "description": { "en": "Female voice", "fr": "Voix féminine" }
+  },
+  {
+    "id": "fr-jessica",
+    "file": "fr_FR-upmc-medium",
+    "speaker": 0,
+    "language": "fr",
+    "name": "Jessica",
+    "description": { "en": "Female voice", "fr": "Voix féminine" }
+  },
+  {
+    "id": "fr-pierre",
+    "file": "fr_FR-upmc-medium",
+    "speaker": 1,
+    "language": "fr",
+    "name": "Pierre",
+    "description": { "en": "Male voice", "fr": "Voix masculine" }
+  },
+  {
+    "id": "en-alba",
+    "file": "en_GB-alba-medium",
+    "language": "en",
+    "name": "Alba",
+    "description": { "en": "Female voice, Scottish accent", "fr": "Voix féminine, accent écossais" }
+  },
+  {
+    "id": "en-cori",
+    "file": "en_GB-cori-medium",
+    "language": "en",
+    "name": "Cori",
+    "description": { "en": "Female voice, English accent", "fr": "Voix féminine, accent anglais" }
+  },
+  {
+    "id": "en-northern",
+    "file": "en_GB-northern_english_male-medium",
+    "language": "en",
+    "name": "Northern",
+    "description": { "en": "Male voice, northern English accent", "fr": "Voix masculine, accent du nord de l’Angleterre" }
+  }
+]

@@ -14,6 +14,7 @@ export const fr: Record<I18nKey, string> = {
   'nav.search': 'Rechercher',
   'nav.timeline': 'Chronologie',
   'nav.map': 'Carte',
+  'nav.settings': 'Réglages',
   'nav.help': 'Aide',
   'nav.search.placeholder': 'Rechercher un personnage ou une histoire',
 
@@ -75,7 +76,7 @@ export const fr: Record<I18nKey, string> = {
   'speech.position': '{position} sur {count}',
   'speech.previous': 'Histoire précédente',
   'speech.next': 'Histoire suivante',
-  'speech.credits': 'Voix : Piper, siwis et alba (CC BY 4.0, Université d’Édimbourg)',
+  'speech.credits': 'Voix : Piper',
 
   'timeline.title': 'Chronologie',
   'timeline.intro': 'Les mythes dans l’ordre où les Grecs les racontaient, du Chaos au retour de Troie. Avant la guerre, les générations telles que les généalogies les comptent ; les dates, quand il y en a, telles que les chronographes antiques les donnaient.',
@@ -97,6 +98,17 @@ export const fr: Record<I18nKey, string> = {
   'map.open': 'Ouvrir la carte',
   'map.attribution': 'Côtes : Natural Earth',
 
+  'settings.title': 'Réglages',
+  'settings.voices.title': 'Voix',
+  'settings.voices.intro': 'La voix qui lit les histoires à voix haute, dans chaque langue. Écoutez-les, puis choisissez : le navigateur se souvient du choix.',
+  'settings.voices.fr': 'En français',
+  'settings.voices.en': 'En anglais',
+  'settings.voices.default': 'par défaut',
+  'settings.voices.listen': 'Écouter',
+  'settings.voices.browser': 'Ce sont les voix de votre navigateur : leur nombre et leur qualité dépendent du système.',
+  'settings.voices.android': 'La synthèse vocale d’Android lit les histoires : choisissez sa voix dans les paramètres du téléphone (Accessibilité, Synthèse vocale).',
+  'settings.voices.none': 'Aucune voix ne lit cette langue sur cet appareil.',
+
   'help.title': 'Aide',
   'help.use.title': 'Utiliser MythoStory',
   'help.use.characters': 'Tous les personnages des mythes, par catégorie : dieux, Titans, héros, nymphes, créatures… Chacun a son arbre généalogique et les histoires où il apparaît.',
@@ -104,6 +116,8 @@ export const fr: Record<I18nKey, string> = {
   'help.use.timelineMap': 'Les histoires dans la chronologie mythique, et là où elles se passent.',
   'help.use.listenTitle': 'Écouter',
   'help.use.listen': 'Le haut-parleur lit une histoire à voix haute ; sur la page Histoires, un cycle ou toutes, l’une après l’autre. La barre en bas de la page revient en arrière, avance, met en pause ou arrête la lecture.',
+  'help.use.settingsTitle': 'Réglages',
+  'help.use.settings': 'La voix qui lit les histoires, en français et en anglais : écoutez chacune, puis choisissez.',
   'help.use.languageTitle': 'Langue',
   'help.use.language': 'Le bouton en haut à droite passe du français à l’anglais ; l’application se souvient du choix.',
   'help.use.quitTitle': 'Quitter',

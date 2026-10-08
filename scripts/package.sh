@@ -41,15 +41,16 @@ done
 # What every desktop distribution must carry: the jar, its launcher, the bundled JRE — and the frontend inside the jar.
 # Every check gives grep the entries whole, never through a pipe it may leave early: under pipefail the writer it
 # leaves behind would fail the pipeline, and the check with it.
+voices=($(sed -n 's:^VOICE_[A-Z0-9_]*=.*/\([^/]*\.onnx\)$:voices/\1:p' externals.conf))   # every voice of externals.conf
 check_jar=$(mktemp)
 trap 'rm -f "$check_jar"' EXIT
 for archive in releases/mythostory-"$version"-windows.zip releases/mythostory-"$version"-linux.tar.gz; do
   [ -f "$archive" ] || { echo "$archive was not built" >&2; exit 1; }
   case "$archive" in
     *.zip) entries=$(unzip -Z1 "$archive"); unzip -p "$archive" '*/mythostory.jar' > "$check_jar"
-           needed=(mythostory.jar mythostory.bat jre/bin/java.exe piper/piper.exe voices/fr.onnx voices/en.onnx VOICES.md) ;;
+           needed=(mythostory.jar mythostory.bat jre/bin/java.exe piper/piper.exe "${voices[@]}" VOICES.md) ;;
     *) entries=$(tar tzf "$archive"); tar xzOf "$archive" --wildcards '*/mythostory.jar' > "$check_jar"
-       needed=(mythostory.jar mythostory.sh jre/bin/java piper/piper voices/fr.onnx voices/en.onnx VOICES.md) ;;
+       needed=(mythostory.jar mythostory.sh jre/bin/java piper/piper "${voices[@]}" VOICES.md) ;;
   esac
   for file in "${needed[@]}"; do
     grep -q "^mythostory-$version/$file\$" <<< "$entries" || { echo "$archive: no $file" >&2; exit 1; }

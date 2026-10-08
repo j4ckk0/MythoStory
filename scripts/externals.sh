@@ -25,8 +25,10 @@ missing_externals() {
   [ -x "$ext/piper/piper" ] || m="$m piper/"
   [ -s "$ext/piper-linux.tar.gz" ] || m="$m piper-linux.tar.gz"
   [ -s "$ext/piper-windows.zip" ] || m="$m piper-windows.zip"
-  local voice
-  for voice in fr en; do [ -s "$ext/voices/$voice.onnx" ] && [ -s "$ext/voices/$voice.onnx.json" ] || m="$m voices/$voice.onnx"; done
+  local model   # every VOICE_* of externals.conf
+  for model in $(sed -n 's:^VOICE_[A-Z0-9_]*=.*/\([^/]*\.onnx\)$:\1:p' externals.conf); do
+    [ -s "$ext/voices/$model" ] && [ -s "$ext/voices/$model.json" ] || m="$m voices/$model"
+  done
   echo "$m"
 }
 

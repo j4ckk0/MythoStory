@@ -6,6 +6,7 @@ import { MapPage } from './map/map-page';
 import { Home } from './pages/home';
 import { Timeline } from './timeline/timeline';
 import { Search } from './pages/search';
+import { Settings } from './settings/settings';
 import { Stories } from './pages/stories';
 import { StoryPage } from './pages/story';
 
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'timeline', component: Timeline },
   { path: 'map', component: MapPage },
   { path: 'search', component: Search },
+  { path: 'settings', component: Settings },
   { path: 'help', component: Help },
   { path: '**', redirectTo: '' },
 ];

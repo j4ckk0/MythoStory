@@ -113,15 +113,22 @@ if [ -x "$ext/piper/piper" ] && ! $force; then echo "== $ext/piper present"; els
   echo "== $ext/piper deployed"
 fi
 
-# Piper's voices, under the i18n language's name
+# Piper's voices: every VOICE_* model and its .onnx.json, under their own names; a model no longer listed goes
 mkdir -p "$ext/voices"
-for spec in "fr.onnx VOICE_FR" "fr.onnx.json VOICE_FR_CONFIG" "en.onnx VOICE_EN" "en.onnx.json VOICE_EN_CONFIG"; do
-  set -- $spec
-  target=$ext/voices/$1
-  if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
-  file=$(fetch "${!2}") || exit 1
-  cp "$file" "$target"
-  echo "== $target deployed"
+models=()
+for key in $(compgen -A variable VOICE_); do
+  for url in "${!key}" "${!key}.json"; do
+    target=$ext/voices/${url##*/}
+    models+=("${url##*/}")
+    if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
+    file=$(fetch "$url") || exit 1
+    cp "$file" "$target"
+    echo "== $target deployed"
+  done
+done
+for file in "$ext"/voices/*.onnx "$ext"/voices/*.onnx.json; do
+  [ -e "$file" ] || continue
+  case " ${models[*]} " in *" ${file##*/} "*) ;; *) rm -f "$file"; echo "== $file removed (no longer in externals.conf)" ;; esac
 done
 
 # the JRE's and Piper's archives the distributions bundle, kept as archives under generic names

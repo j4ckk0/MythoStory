@@ -14,10 +14,10 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
 class MythoStoryServerTest {
-    /** A synthesizer that speaks French only, its "audio" the text it was given. */
+    /** A synthesizer that speaks French only, with two voices, its "audio" the voice and the text it was given. */
     private val speech = object : SpeechSynthesizer {
-        override val languages = setOf("fr")
-        override fun synthesize(language: String, text: String) = "RIFF $language $text".toByteArray()
+        override val voices = listOf(Voice("fr-siwis", "fr", "Siwis"), Voice("fr-pierre", "fr", "Pierre"))
+        override fun synthesize(voice: String, text: String) = "RIFF $voice $text".toByteArray()
     }
 
     private fun test(block: suspend ApplicationTestBuilder.() -> Unit) = testApplication {
@@ -47,10 +47,12 @@ class MythoStoryServerTest {
         val spoken = client.get("/api/speech?lang=fr&text=Bonjour%20Zeus")
         assertEquals(HttpStatusCode.OK, spoken.status)
         assertEquals("audio/wav", spoken.headers[HttpHeaders.ContentType])
-        assertEquals("RIFF fr Bonjour Zeus", spoken.bodyAsText())
+        assertEquals("RIFF fr-siwis Bonjour Zeus", spoken.bodyAsText(), "the language's default voice")
+        assertEquals("RIFF fr-pierre Bonjour", client.get("/api/speech?lang=fr&voice=fr-pierre&text=Bonjour").bodyAsText())
+        assertEquals("RIFF fr-siwis Bonjour", client.get("/api/speech?lang=fr&voice=en-alba&text=Bonjour").bodyAsText(), "not a French voice")
         assertEquals(HttpStatusCode.NotFound, client.get("/api/speech?lang=en&text=Hello").status)
         assertEquals(HttpStatusCode.BadRequest, client.get("/api/speech?lang=fr&text=" + "a".repeat(SPEECH_MAX_LENGTH + 1)).status)
-        assertContains(client.get("/api/info").bodyAsText(), "\"voices\":[\"fr\"]")
+        assertContains(client.get("/api/info").bodyAsText(), "\"voices\":[{\"id\":\"fr-siwis\",\"language\":\"fr\",\"name\":\"Siwis\"},")
     }
 
     @Test

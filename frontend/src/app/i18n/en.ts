@@ -12,6 +12,7 @@ export const en = {
   'nav.search': 'Search',
   'nav.timeline': 'Timeline',
   'nav.map': 'Map',
+  'nav.settings': 'Settings',
   'nav.help': 'Help',
   'nav.search.placeholder': 'Search a character or a story',
 
@@ -73,7 +74,7 @@ export const en = {
   'speech.position': '{position} of {count}',
   'speech.previous': 'Previous story',
   'speech.next': 'Next story',
-  'speech.credits': 'Voices: Piper, siwis and alba (CC BY 4.0, University of Edinburgh)',
+  'speech.credits': 'Voices: Piper',
 
   'timeline.title': 'Timeline',
   'timeline.intro': 'The myths in the order the Greeks told them, from Chaos to the return from Troy. Before the war, generations as the genealogies count them; dates, where there are any, as ancient chronographers gave them.',
@@ -95,6 +96,17 @@ export const en = {
   'map.open': 'Open the map',
   'map.attribution': 'Coastlines: Natural Earth',
 
+  'settings.title': 'Settings',
+  'settings.voices.title': 'Voices',
+  'settings.voices.intro': 'The voice that reads the stories aloud, in each language. Listen to them, then choose: the browser remembers the choice.',
+  'settings.voices.fr': 'In French',
+  'settings.voices.en': 'In English',
+  'settings.voices.default': 'default',
+  'settings.voices.listen': 'Listen',
+  'settings.voices.browser': 'These are your browser’s voices: their number and quality depend on the system.',
+  'settings.voices.android': 'Android’s text-to-speech reads the stories: choose its voice in the phone’s settings (Accessibility, Text-to-speech output).',
+  'settings.voices.none': 'No voice reads this language on this device.',
+
   'help.title': 'Help',
   'help.use.title': 'Using MythoStory',
   'help.use.characters': 'Every character of the myths, by kind: gods, Titans, heroes, nymphs, creatures… Each one has their family tree and the stories they appear in.',
@@ -102,6 +114,8 @@ export const en = {
   'help.use.timelineMap': 'The stories in the mythic chronology, and where they happen.',
   'help.use.listenTitle': 'Listening',
   'help.use.listen': 'The speaker reads a story aloud; on the Stories page, a cycle or all of them, one after the other. The bar at the bottom of the page goes back, forward, pauses or stops the reading.',
+  'help.use.settingsTitle': 'Settings',
+  'help.use.settings': 'The voice that reads the stories, in French and in English: listen to each one, then choose.',
   'help.use.languageTitle': 'Language',
   'help.use.language': 'The button at the top right switches between English and French; the application remembers the choice.',
   'help.use.quitTitle': 'Quitting',

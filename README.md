@@ -212,18 +212,26 @@ to that character's tree.
 ## Listening to the stories
 
 Each story page has a **speaker button**: it reads the title, then the summary, aloud in the reader's
-language — pause, resume where it stopped, stop —, the paragraph being read highlighted. It speaks a
-sentence at a time (some browsers cut long utterances short), stops when the page goes or the
-language changes, and is disabled, saying so, where the device has no voice for the language.
+language — pause, resume where it stopped, stop —, the paragraph being read highlighted. It stops when
+the page goes or the language changes, and is disabled, saying so, where the device has no voice for
+the language. The *Stories* page reads all the stories, or a cycle's, one after the other, a player at
+the bottom of every page.
+
+**Settings** (`/settings`) choose the voice of each language among the reader's — Piper's, or the
+browser's —, each one heard first (the Iliad's first line); the browser remembers the choice
+(`localStorage`), and a voice no longer there reads with the default.
 
 - **On the desktop**, the server reads aloud itself, with **Piper**: neural voices, offline, the
-  same in every browser on every system — French `fr_FR-siwis-medium`, English `en_GB-alba-medium`.
-  `/api/speech?lang=fr&text=…` answers a sentence as WAV in a fraction of a second (a process per
-  voice, started on its first sentence and kept; a cache for what was said already); the page plays
-  them, fetching the next one while the current one plays. Piper and its voices are externals
+  same in every browser on every system — in French Siwis (the default), Jessica and Pierre; in
+  English Alba (the default), Cori and Northern. The models are `externals.conf`'s `VOICE_*`;
+  [`voices.json`](desktop/src/main/resources/voices.json) names them and their speakers for the page,
+  each language's first the default. `/api/speech?lang=fr&voice=fr-pierre&text=…` answers as WAV in a
+  fraction of a second (a process per model, started on its first text and kept; a cache for what was
+  said already); the page sends a few sentences at a time — Piper keeps the intonation going across
+  them —, fetching the next ones while the current ones play. Piper and its voices are externals
   (`scripts/setup.sh` deploys them) and the distributions carry them, with their credits in
-  `VOICES.md` (Piper: MIT; the voices: CC BY 4.0, University of Edinburgh) — the page's footer
-  credits them too. The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
+  `VOICES.md` and the *Help* page (Piper: MIT; the voices: CC BY 4.0, CC BY-SA 4.0, public domain).
+  The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
 - **Without Piper**, the browser's own speech synthesis (the Web Speech API) with the system's voices,
   local ones and the locale's first (fr-FR, en-GB): fine on Windows and macOS; on Linux, browsers take
   theirs from speech-dispatcher, whose espeak-ng sounds robotic (and a snap Chromium reaches none).
@@ -271,7 +279,7 @@ external/jre-linux.tar.gz     bundled by scripts/package.sh in the Linux distrib
 external/jre-windows.zip      bundled in the Windows distribution
 external/piper/               Piper, the speech synthesis the desktop server reads the stories aloud with
 external/piper-linux.tar.gz   Piper for the Linux distribution, external/piper-windows.zip for the Windows one
-external/voices/<lang>.onnx   Piper's voices, one per i18n language, with their <lang>.onnx.json
+external/voices/<model>.onnx  Piper's voices (externals.conf's VOICE_*), with their <model>.onnx.json
 external/gradle/              (--android) Gradle, which Maven runs to build the APK
 external/android-sdk/         (--android) the Android SDK: command-line tools, platform, build-tools, platform-tools
 external/downloads/           the archives as downloaded, kept so that a second run downloads nothing

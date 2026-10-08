@@ -168,8 +168,9 @@
                         <not><and>
                           <available file="${jre.archives}/piper-linux.tar.gz"/>
                           <available file="${jre.archives}/piper-windows.zip"/>
-                          <available file="${jre.archives}/voices/fr.onnx"/>
-                          <available file="${jre.archives}/voices/en.onnx"/>
+                          <!-- each language's default voice (voices.json), at least -->
+                          <available file="${jre.archives}/voices/fr_FR-siwis-medium.onnx"/>
+                          <available file="${jre.archives}/voices/en_GB-alba-medium.onnx"/>
                         </and></not>
                       </condition>
                     </fail>

@@ -16,7 +16,7 @@ private const val USAGE = """Usage: mythostory [--port N] [--host H] [--no-brows
   --no-browser     do not open the browser on the page
   --keep-running   keep serving once the last page is closed (by default, MythoStory then stops)
   --piper DIR      Piper, which reads the stories aloud (default: piper/ next to mythostory.jar)
-  --voices DIR     its voices, <lang>.onnx and <lang>.onnx.json (default: voices/ next to mythostory.jar)"""
+  --voices DIR     its voices, <model>.onnx and <model>.onnx.json (default: voices/ next to mythostory.jar)"""
 
 /**
  * The desktop program: the server on localhost, the browser as its window — and like a window's program, it stops
@@ -55,12 +55,12 @@ fun main(args: Array<String>) {
         Unit
     }
     val speech = PiperSynthesizer(PiperSynthesizer.program(piper), voices)
-    if (speech.languages.isEmpty()) println("No Piper voice in $piper and $voices: the browser's voices will read the stories, if it has some.")
+    if (speech.voices.isEmpty()) println("No Piper voice in $piper and $voices: the browser's voices will read the stories, if it has some.")
     Runtime.getRuntime().addShutdownHook(Thread { speech.close() })
     server = startServer(
         host, port, Platform.DESKTOP,
         onLastPageClosed = if (keepRunning) null else onLastPageClosed,
-        speech = speech.takeIf { it.languages.isNotEmpty() },
+        speech = speech.takeIf { it.voices.isNotEmpty() },
     )
     val actualPort = runBlocking { server.engine.resolvedConnectors().first().port }
     val url = "http://${if (host == "0.0.0.0") "localhost" else host}:$actualPort/"
