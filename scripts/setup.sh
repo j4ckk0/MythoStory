@@ -14,6 +14,8 @@
 #
 #   scripts/setup.sh            deploys what is missing
 #   scripts/setup.sh --android  the above, plus the Android build's externals (the build then makes the APK too)
+#   scripts/setup.sh --emulator the above with --android, plus the Android emulator and its system image
+#                               (ANDROID_EMULATOR_PACKAGES, 2 to 3 GB), which scripts/emulator.sh runs the app in
 #   scripts/setup.sh --force    downloads and deploys everything again
 #
 # MIRROR=<url> in externals.conf, or in the environment, fetches <MIRROR>/<file name> instead of the URLs;
@@ -30,11 +32,13 @@ ext=external
 dl=$ext/downloads
 force=false
 android=false
+emulator=false
 for arg in "$@"; do
   case "$arg" in
     --force) force=true ;;
     --android) android=true ;;
-    *) echo "unknown option: $arg (try --force, --android)" >&2; exit 1 ;;
+    --emulator) android=true; emulator=true ;;
+    *) echo "unknown option: $arg (try --force, --android, --emulator)" >&2; exit 1 ;;
   esac
 done
 
@@ -168,7 +172,14 @@ if $android; then
   sdkmanager --install $ANDROID_SDK_PACKAGES
   # sdkmanager says nothing by its status of the packages it skipped for want of a licence: each one's directory
   # tells (a package "a;b" lives in <sdk>/a/b)
-  for package in $ANDROID_SDK_PACKAGES; do
+  packages=$ANDROID_SDK_PACKAGES
+  if $emulator; then
+    echo "== installing $ANDROID_EMULATOR_PACKAGES"
+    # shellcheck disable=SC2086   # one package a word
+    sdkmanager --install $ANDROID_EMULATOR_PACKAGES
+    packages="$packages $ANDROID_EMULATOR_PACKAGES"
+  fi
+  for package in $packages; do
     [ -d "$sdk/${package//;//}" ] || { echo "$package was not installed: accept the licences (scripts/setup.sh --android, at a terminal)" >&2; exit 1; }
   done
 fi
@@ -180,3 +191,4 @@ echo "Piper: $ext/piper, voices: $(cd "$ext/voices" && ls *.onnx | tr '\n' ' ')"
 echo "Node.js $("$ext/node/bin/node" --version), npm $(PATH="$PWD/$ext/node/bin:$PATH" "$ext/node/bin/npm" --version)"
 if [ -x "$ext/gradle/bin/gradle" ]; then echo "Gradle: $ext/gradle"; fi
 if [ -d "$ext/android-sdk/platforms" ]; then echo "Android SDK: $ext/android-sdk ($(ls "$ext/android-sdk/platforms" | tr '\n' ' '))"; fi
+if [ -x "$ext/android-sdk/emulator/emulator" ]; then echo "Android emulator: $ext/android-sdk/emulator (scripts/emulator.sh)"; fi

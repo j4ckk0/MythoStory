@@ -305,14 +305,18 @@ external/piper/               Piper, the speech synthesis the desktop server rea
 external/piper-linux.tar.gz   Piper for the Linux distribution, external/piper-windows.zip for the Windows one
 external/voices/<model>.onnx  Piper's voices (externals.conf's VOICE_*), with their <model>.onnx.json
 external/gradle/              (--android) Gradle, which Maven runs to build the APK
-external/android-sdk/         (--android) the Android SDK: command-line tools, platform, build-tools, platform-tools
+external/android-sdk/         (--android) the Android SDK: command-line tools, platform, build-tools, platform-tools;
+                              (--emulator) the emulator and its system image too
+external/android-avd/         the emulator's virtual phone, which scripts/emulator.sh creates
 external/downloads/           the archives as downloaded, kept so that a second run downloads nothing
 ```
 
 `scripts/setup.sh` (Linux: needs `curl`, `tar`, `unzip`) and `scripts\setup.bat` (Windows 10 1803
 and later: `curl` and `tar` are there) download and deploy what is missing. `--force` downloads and
 deploys everything again. **`--android` adds Gradle and the Android SDK** (about a gigabyte), and
-asks you to accept the Android SDK licences.
+asks you to accept the Android SDK licences. **`--emulator`** does the same and adds the Android emulator and the
+system image of its virtual phone (`ANDROID_EMULATOR_PACKAGES`, 2 to 3 GB more; a Google Play image, which carries
+Google's text-to-speech for the speaker button).
 
 **The versions live in [`externals.conf`](externals.conf) and nowhere else**: one URL per external
 and per OS. Set `MIRROR=` there (or in the environment) to the folder of a local Artifactory holding
@@ -354,6 +358,7 @@ scripts/run.sh                                  # build if a source is newer tha
 scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --keep-running, --help
 scripts/run.sh --rebuild
 scripts/run.sh --android                        # install and start the app on the device or emulator adb sees
+scripts/emulator.sh                             # the same in the Android emulator, which it starts first (below)
 scripts/stop.sh                                 # stop every MythoStory server on this machine (scripts\stop.bat on Windows)
 scripts/stop.sh --port 9090                     # only the one on that port
 ```
@@ -364,6 +369,23 @@ from the server (`/api/session`) and, as it goes away, says so; the server waits
 reload, a tab closed while another opens — and stops. Should the browser crash instead, the stream
 breaks and the server notices within seconds. It never stops before a first page has opened, and
 `--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
+
+### In the Android emulator
+
+```bash
+scripts/setup.sh --emulator          # once: the Android SDK, its licences, the emulator and its system image
+scripts/emulator.sh                  # start the virtual phone (created on the first run), build, install, start the app
+scripts/emulator.sh --rebuild        # force a rebuild of the app first; any run.sh option is passed on
+scripts/emulator.sh --wipe           # the phone as new, its data wiped as it starts
+scripts/emulator.sh --no-window      # the phone without its window
+scripts/emulator.sh --stop           # stop the phone
+```
+
+The virtual phone, `mythostory` — an `ANDROID_AVD_DEVICE` (a Pixel 7) on the system image of
+`ANDROID_EMULATOR_PACKAGES` —, lives in `external/android-avd/`. The emulator keeps running after the script: run it
+again after a change, and it reinstalls the app on the phone already started. It finds its phone by name, so a real
+phone plugged in at the same time is left alone (`ANDROID_SERIAL`). On Linux it needs KVM (`/dev/kvm`, the `kvm`
+group); its output goes to `tmp/emulator.log`.
 
 ### Working on the frontend
 

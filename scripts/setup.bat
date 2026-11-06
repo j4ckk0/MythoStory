@@ -11,6 +11,8 @@ rem                                                        packages ANDROID_SDK_
 rem
 rem   scripts\setup.bat            deploys what is missing
 rem   scripts\setup.bat --android  the above, plus the Android build's externals (the build then makes the APK too)
+rem   scripts\setup.bat --emulator the above with --android, plus the Android emulator and its system image
+rem                                (ANDROID_EMULATOR_PACKAGES, 2 to 3 GB), which scripts\emulator.bat runs the app in
 rem   scripts\setup.bat --force    downloads and deploys everything again
 rem
 rem MIRROR=<url> in externals.conf, or in the environment, fetches <MIRROR>/<file name> instead of the URLs;
@@ -28,14 +30,18 @@ set "EXT=external"
 set "DL=%EXT%\downloads"
 set "FORCE=0"
 set "ANDROID=0"
+set "EMULATOR=0"
 :args
 if "%~1"=="" goto :argsDone
 if /i "%~1"=="--force" (
   set "FORCE=1"
 ) else if /i "%~1"=="--android" (
   set "ANDROID=1"
+) else if /i "%~1"=="--emulator" (
+  set "ANDROID=1"
+  set "EMULATOR=1"
 ) else (
-  echo unknown option: %~1 ^(try --force, --android^) >&2
+  echo unknown option: %~1 ^(try --force, --android, --emulator^) >&2
   exit /b 1
 )
 shift
@@ -78,6 +84,7 @@ call "%EXT%\maven\bin\mvn.cmd" -v 2>nul | findstr /i "Apache Maven"
 for /f %%v in ('"%EXT%\node\node.exe" --version') do echo Node.js %%v
 if exist "%EXT%\gradle\bin\gradle.bat" echo Gradle: %EXT%\gradle
 if exist "%EXT%\android-sdk\platforms" echo Android SDK: %EXT%\android-sdk
+if exist "%EXT%\android-sdk\emulator\emulator.exe" echo Android emulator: %EXT%\android-sdk\emulator ^(scripts\emulator.bat^)
 exit /b 0
 
 rem ---- a tool: extracted into external\<name>, the archive's top-level directory stripped; present when its
@@ -120,6 +127,12 @@ rem each package quoted: their ";" would otherwise split them
 set "PACKAGES="!ANDROID_SDK_PACKAGES: =" "!""
 echo == installing !ANDROID_SDK_PACKAGES!
 call "%SDK%\cmdline-tools\latest\bin\sdkmanager.bat" --sdk_root="%SDK%" --install !PACKAGES!
+if "%EMULATOR%"=="1" (
+  set "EMULATOR_PACKAGES="!ANDROID_EMULATOR_PACKAGES: =" "!""
+  echo == installing !ANDROID_EMULATOR_PACKAGES!
+  call "%SDK%\cmdline-tools\latest\bin\sdkmanager.bat" --sdk_root="%SDK%" --install !EMULATOR_PACKAGES!
+  set "PACKAGES=!PACKAGES! !EMULATOR_PACKAGES!"
+)
 rem sdkmanager says nothing by its status of the packages it skipped for want of a licence: each one's directory
 rem tells (a package "a;b" lives in <sdk>\a\b)
 for %%p in (!PACKAGES!) do (

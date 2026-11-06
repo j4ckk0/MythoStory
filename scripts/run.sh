@@ -8,7 +8,8 @@
 #   scripts/run.sh --port 9090 --no-browser   # see: scripts/run.sh --help
 #   scripts/run.sh --keep-running         # keep serving once the last page is closed (scripts/stop.sh then)
 #   scripts/run.sh --rebuild              # force a rebuild first
-#   scripts/run.sh --android              # on the device or emulator adb sees (setup.sh --android first)
+#   scripts/run.sh --android              # on the device or emulator adb sees (setup.sh --android first);
+#                                         # scripts/emulator.sh starts the emulator first
 #
 # Any other argument is passed to the program.
 #

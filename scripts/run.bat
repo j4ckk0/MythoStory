@@ -7,7 +7,8 @@ rem
 rem   scripts\run.bat
 rem   scripts\run.bat --port 9090 --no-browser     see: scripts\run.bat --help
 rem   scripts\run.bat --rebuild                    force a rebuild first
-rem   scripts\run.bat --android                    on the device or emulator adb sees (setup.bat --android first)
+rem   scripts\run.bat --android                    on the device or emulator adb sees (setup.bat --android first);
+rem                                                scripts\emulator.bat starts the emulator first
 rem
 rem Any other argument is passed to the program.
 rem
