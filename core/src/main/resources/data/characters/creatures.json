@@ -726,5 +726,207 @@
         "url": "https://fr.wikipedia.org/wiki/Sir%C3%A8ne_(mythologie_grecque)"
       }
     ]
+  },
+  {
+    "id": "pemphredo",
+    "name": {
+      "en": "Pemphredo",
+      "fr": "Pemphrédo"
+    },
+    "kind": "creature",
+    "wikidata": "Q3899048",
+    "description": {
+      "en": "One of the three Graeae, the sisters of the Gorgons, grey-haired from birth, who shared a single eye and a single tooth.",
+      "fr": "Une des trois Grées, sœurs des Gorgones, nées avec des cheveux gris, qui se partageaient un seul œil et une seule dent."
+    },
+    "greek": "Πεμφρηδώ",
+    "parents": [
+      "phorcys-q200382",
+      "ceto-q209489"
+    ]
+  },
+  {
+    "id": "enyo-graea",
+    "name": {
+      "en": "Enyo",
+      "fr": "Ényo"
+    },
+    "kind": "creature",
+    "wikidata": "Q3725417",
+    "description": {
+      "en": "One of the three Graeae, the sisters of the Gorgons, grey-haired from birth, who shared a single eye and a single tooth.",
+      "fr": "Une des trois Grées, sœurs des Gorgones, nées avec des cheveux gris, qui se partageaient un seul œil et une seule dent."
+    },
+    "greek": "Ἐνυώ",
+    "parents": [
+      "phorcys-q200382",
+      "ceto-q209489"
+    ]
+  },
+  {
+    "id": "deino",
+    "name": {
+      "en": "Deino",
+      "fr": "Dino"
+    },
+    "kind": "creature",
+    "wikidata": "Q1645883",
+    "description": {
+      "en": "One of the three Graeae, the sisters of the Gorgons, grey-haired from birth, who shared a single eye and a single tooth.",
+      "fr": "Une des trois Grées, sœurs des Gorgones, nées avec des cheveux gris, qui se partageaient un seul œil et une seule dent."
+    },
+    "greek": "Δεινώ",
+    "parents": [
+      "phorcys-q200382",
+      "ceto-q209489"
+    ]
+  },
+  {
+    "id": "aello",
+    "name": {
+      "en": "Aello",
+      "fr": "Aello"
+    },
+    "kind": "creature",
+    "wikidata": "Q380832",
+    "description": {
+      "en": "One of the Harpies, the winged snatchers swift as the storm, daughter of Thaumas and the Oceanid Electra.",
+      "fr": "Une des Harpies, ravisseuses ailées rapides comme la tempête, fille de Thaumas et de l’Océanide Électre."
+    },
+    "greek": "Ἀελλώ",
+    "parents": [
+      "thaumas",
+      "electra-q1438693"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Aello",
+        "url": "https://fr.wikipedia.org/wiki/Aello"
+      }
+    ]
+  },
+  {
+    "id": "ocypete",
+    "name": {
+      "en": "Ocypete",
+      "fr": "Ocypète"
+    },
+    "kind": "creature",
+    "wikidata": "Q3141720",
+    "description": {
+      "en": "One of the Harpies, the winged snatchers swift as the storm, daughter of Thaumas and the Oceanid Electra.",
+      "fr": "Une des Harpies, ravisseuses ailées rapides comme la tempête, fille de Thaumas et de l’Océanide Électre."
+    },
+    "greek": "Ὠκυπέτη",
+    "parents": [
+      "thaumas",
+      "electra-q1438693"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Ocypete",
+        "url": "https://en.wikipedia.org/wiki/Ocypete"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ocypète",
+        "url": "https://fr.wikipedia.org/wiki/Ocyp%C3%A8te"
+      }
+    ]
+  },
+  {
+    "id": "celaeno-harpy",
+    "name": {
+      "en": "Celaeno",
+      "fr": "Céléno"
+    },
+    "kind": "creature",
+    "wikidata": "Q753903",
+    "description": {
+      "en": "One of the Harpies; in Virgil, the one who foretold to the Trojans a hunger that would make them eat their tables.",
+      "fr": "Une des Harpies ; chez Virgile, celle qui prédit aux Troyens une faim qui leur ferait manger leurs tables."
+    },
+    "greek": "Κελαινώ",
+    "parents": [
+      "thaumas",
+      "electra-q1438693"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Celaeno (Harpy)",
+        "url": "https://en.wikipedia.org/wiki/Celaeno_(Harpy)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Céléno (Harpie)",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9l%C3%A9no_(Harpie)"
+      }
+    ]
+  },
+  {
+    "id": "podarge",
+    "name": {
+      "en": "Podarge",
+      "fr": "Podarge"
+    },
+    "kind": "creature",
+    "wikidata": "Q2723576",
+    "description": {
+      "en": "A Harpy who bore to the west wind Zephyrus the immortal horses of Achilles, Xanthus and Balius.",
+      "fr": "Une Harpie qui donna au vent d’ouest Zéphyr les chevaux immortels d’Achille, Xanthos et Balios."
+    },
+    "greek": "Ποδάργη",
+    "parents": [
+      "thaumas",
+      "electra-q1438693"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Podarge",
+        "url": "https://en.wikipedia.org/wiki/Podarge"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Podarge",
+        "url": "https://fr.wikipedia.org/wiki/Podarge"
+      }
+    ]
+  },
+  {
+    "id": "ligeia",
+    "name": {
+      "en": "Ligeia",
+      "fr": "Ligie"
+    },
+    "kind": "creature",
+    "wikidata": "Q1245648",
+    "description": {
+      "en": "One of the Sirens, daughter of the river Achelous and the Muse Melpomene; her body washed ashore, it was said, near Terina in Italy.",
+      "fr": "Une des Sirènes, fille du fleuve Achéloos et de la Muse Melpomène ; son corps, disait-on, s’échoua près de Térina, en Italie."
+    },
+    "greek": "Λίγεια",
+    "parents": [
+      "achelous",
+      "melpomene"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Ligie",
+        "url": "https://fr.wikipedia.org/wiki/Ligie"
+      }
+    ]
   }
 ]

@@ -19,6 +19,10 @@
       "pegasus",
       "hades"
     ],
+    "groups": [
+      "gorgons",
+      "graeae"
+    ],
     "sources": [
       {
         "author": {
@@ -332,6 +336,10 @@
       "zeus",
       "alcmene"
     ],
+    "groups": [
+      "hesperides",
+      "amazons"
+    ],
     "sources": [
       {
         "author": {
@@ -437,6 +445,11 @@
       "heracles",
       "orpheus",
       "peleus"
+    ],
+    "groups": [
+      "argonauts",
+      "boreads",
+      "harpies"
     ],
     "sources": [
       {

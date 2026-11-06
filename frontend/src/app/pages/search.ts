@@ -7,7 +7,7 @@ import { normalize } from '../shared/text';
 /** The characters shown at most: a query of one letter matches thousands. */
 const SHOWN = 100;
 
-/** The characters and stories matching ?q=, in any i18n language, Greek and Roman names included, accents ignored. */
+/** The characters, groups and stories matching ?q=, in any i18n language, Greek and Roman names included, accents ignored. */
 @Component({
   selector: 'app-search',
   imports: [RouterLink, I18nPipe, I18nTextPipe],
@@ -37,6 +37,12 @@ export class Search {
   protected readonly characters = computed(() => this.matching().slice(0, SHOWN));
   /** How many more match than are shown. */
   protected readonly more = computed(() => Math.max(0, this.matching().length - SHOWN));
+
+  protected readonly groups = computed(() => {
+    const query = this.query();
+    if (!query) return [];
+    return (this.catalog.catalog()?.groups ?? []).filter((g) => Object.values(g.name).some((name) => normalize(name ?? '').includes(query)));
+  });
 
   protected readonly stories = computed(() => {
     const query = this.query();

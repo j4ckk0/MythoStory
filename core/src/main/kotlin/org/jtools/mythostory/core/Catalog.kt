@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 /**
- * Everything MythoStory knows: the characters, the stories and the cycles, read from the data files the core jar
+ * Everything MythoStory knows: the characters, their groups, the stories and the cycles, read from the data files the core jar
  * carries (src/main/resources/data, listed by data/index.json) — the same on the desktop and on Android.
  */
 @Serializable
@@ -14,6 +14,7 @@ data class Catalog(
     val cycles: List<Cycle>,
     val eras: List<Era>,
     val places: List<Place>,
+    val groups: List<Group> = emptyList(),
 ) {
     /** What is wrong with the catalog, one sentence per fault; empty when it is sound. */
     fun problems(): List<String> = buildList {
@@ -21,14 +22,18 @@ data class Catalog(
         val storyIds = stories.map { it.id }.toSet()
         val eraIds = eras.map { it.id }.toSet()
         val placeIds = places.map { it.id }.toSet()
+        val groupIds = groups.map { it.id }.toSet()
         duplicates(characters.map { it.id }).forEach { add("character $it is defined twice") }
         duplicates(stories.map { it.id }).forEach { add("story $it is defined twice") }
         duplicates(cycles.map { it.id }).forEach { add("cycle $it is defined twice") }
         duplicates(eras.map { it.id }).forEach { add("era $it is defined twice") }
         duplicates(places.map { it.id }).forEach { add("place $it is defined twice") }
+        duplicates(groups.map { it.id }).forEach { add("group $it is defined twice") }
+        duplicates(groups.mapNotNull { it.wikidata }).forEach { add("Wikidata item $it is two groups") }
+        groups.mapNotNull { it.wikidata }.filterNot { WIKIDATA.matches(it) }.forEach { add("$it is not a Wikidata item (Q and digits)") }
         duplicates(characters.mapNotNull { it.wikidata }).forEach { add("Wikidata item $it is two characters") }
         characters.mapNotNull { it.wikidata }.filterNot { WIKIDATA.matches(it) }.forEach { add("$it is not a Wikidata item (Q and digits)") }
-        (characters.map { it.id } + stories.map { it.id } + cycles.map { it.id } + eras.map { it.id } + places.map { it.id })
+        (characters.map { it.id } + stories.map { it.id } + cycles.map { it.id } + eras.map { it.id } + places.map { it.id } + groups.map { it.id })
             .filterNot { SLUG.matches(it) }.forEach { add("$it is not a slug (a-z, 0-9 and dashes)") }
 
         for (c in characters) {
@@ -45,15 +50,9 @@ data class Catalog(
             if (s.sources.isEmpty()) add("story ${s.id} has no source")
             if (s.characters.isEmpty()) add("story ${s.id} involves no character")
             s.characters.filterNot { it in characterIds }.forEach { add("story ${s.id}: no character $it") }
+            s.groups.filterNot { it in groupIds }.forEach { add("story ${s.id}: no group $it") }
             s.related.filterNot { it in storyIds }.forEach { add("story ${s.id}: no related story $it") }
-            for (source in s.sources) {
-                checkI18n("story ${s.id}: a source's author", source.author)
-                checkI18n("story ${s.id}: a source's work", source.work)
-                source.url.forEach { (lang, url) ->
-                    if (lang !in I18n.LANGUAGES) add("story ${s.id}: source URL $url in $lang, which is not an i18n language")
-                    if (!url.startsWith("https://") && !url.startsWith("http://")) add("story ${s.id}: source URL $url is not http(s)")
-                }
-            }
+            s.sources.forEach { checkSource("story ${s.id}", it) }
             s.links.forEach { checkLink("story ${s.id}", it) }
             if (s.era !in eraIds) add("story ${s.id}: no era ${s.era}")
             s.generation?.let { if (it !in 0..20) add("story ${s.id}: generation $it is not between 0 and 20 before the Trojan War") }
@@ -74,6 +73,15 @@ data class Catalog(
             if (!WIKIDATA.matches(p.wikidata)) add("place ${p.id}: ${p.wikidata} is not a Wikidata item")
             if (p.id !in placesUsed) add("place ${p.id} is in no story")
         }
+        for (g in groups) {
+            checkI18n("group ${g.id}: its name", g.name)
+            checkI18n("group ${g.id}: its description", g.description)
+            if (g.members.size < 2) add("group ${g.id} has fewer than two members")
+            g.members.filterNot { it in characterIds }.forEach { add("group ${g.id}: no member $it") }
+            duplicates(g.members).forEach { add("group ${g.id} lists $it twice") }
+            g.sources.forEach { checkSource("group ${g.id}", it) }
+            g.links.forEach { checkLink("group ${g.id}", it) }
+        }
         for (c in cycles) {
             checkI18n("cycle ${c.id}: its title", c.title)
             checkI18n("cycle ${c.id}: its description", c.description)
@@ -92,6 +100,15 @@ data class Catalog(
     fun requireSound() {
         val problems = problems()
         check(problems.isEmpty()) { "the catalog is not sound:\n  " + problems.joinToString("\n  ") }
+    }
+
+    private fun MutableList<String>.checkSource(owner: String, source: Source) {
+        checkI18n("$owner: a source's author", source.author)
+        checkI18n("$owner: a source's work", source.work)
+        source.url.forEach { (lang, url) ->
+            if (lang !in I18n.LANGUAGES) add("$owner: source URL $url in $lang, which is not an i18n language")
+            if (!url.startsWith("https://") && !url.startsWith("http://")) add("$owner: source URL $url is not http(s)")
+        }
     }
 
     private fun MutableList<String>.checkLink(owner: String, link: Link) {
@@ -122,6 +139,7 @@ data class Catalog(
                 cycles = json.decodeFromString(file(index.cycles)),
                 eras = json.decodeFromString(file(index.eras)),
                 places = json.decodeFromString(file(index.places)),
+                groups = json.decodeFromString(file(index.groups)),
             )
         }
 
@@ -132,5 +150,12 @@ data class Catalog(
 
     /** data/index.json: the data files, relative to data/. */
     @Serializable
-    data class Index(val characters: List<String>, val stories: List<String>, val cycles: String, val eras: String, val places: String)
+    data class Index(
+        val characters: List<String>,
+        val stories: List<String>,
+        val cycles: String,
+        val eras: String,
+        val places: String,
+        val groups: String,
+    )
 }

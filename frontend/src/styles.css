@@ -22,6 +22,7 @@
   --kind-hero: #a33b2a;
   --kind-mortal: #6b6257;
   --kind-creature: #4f6b2a;
+  --kind-group: #8a3f72;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +43,7 @@
     --kind-hero: #f09a88;
     --kind-mortal: #c4b9aa;
     --kind-creature: #b8d47f;
+    --kind-group: #e6a6d4;
   }
 }
 
@@ -108,6 +110,7 @@ button {
 [data-kind='hero'] { --kind: var(--kind-hero); }
 [data-kind='mortal'] { --kind: var(--kind-mortal); }
 [data-kind='creature'] { --kind: var(--kind-creature); }
+[data-kind='group'] { --kind: var(--kind-group); }
 
 .kind a,
 h2[data-kind] {

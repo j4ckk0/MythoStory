@@ -923,5 +923,199 @@
         "url": "https://fr.wikipedia.org/wiki/%C3%89n%C3%A9e"
       }
     ]
+  },
+  {
+    "id": "castor",
+    "name": {
+      "en": "Castor",
+      "fr": "Castor"
+    },
+    "kind": "hero",
+    "wikidata": "Q11294144",
+    "description": {
+      "en": "The mortal twin of Pollux, son of Tyndareus and Leda: a tamer of horses, an Argonaut and a hunter of Calydon.",
+      "fr": "Le jumeau mortel de Pollux, fils de Tyndare et de Léda : dompteur de chevaux, Argonaute et chasseur de Calydon."
+    },
+    "greek": "Κάστωρ",
+    "parents": [
+      "tyndareus",
+      "leda"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Castor and Pollux",
+        "url": "https://en.wikipedia.org/wiki/Castor_and_Pollux"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dioscures",
+        "url": "https://fr.wikipedia.org/wiki/Dioscures"
+      }
+    ]
+  },
+  {
+    "id": "pollux",
+    "name": {
+      "en": "Pollux",
+      "fr": "Pollux"
+    },
+    "kind": "hero",
+    "wikidata": "Q12046224",
+    "description": {
+      "en": "The immortal twin of Castor, son of Zeus and Leda: a boxer, an Argonaut and a hunter of Calydon, who shared his immortality with his brother.",
+      "fr": "Le jumeau immortel de Castor, fils de Zeus et de Léda : pugiliste, Argonaute et chasseur de Calydon, qui partagea son immortalité avec son frère."
+    },
+    "greek": "Πολυδεύκης",
+    "parents": [
+      "zeus",
+      "leda"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Castor and Pollux",
+        "url": "https://en.wikipedia.org/wiki/Castor_and_Pollux"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dioscures",
+        "url": "https://fr.wikipedia.org/wiki/Dioscures"
+      }
+    ]
+  },
+  {
+    "id": "zetes",
+    "name": {
+      "en": "Zetes",
+      "fr": "Zétès"
+    },
+    "kind": "hero",
+    "wikidata": "Q4024302",
+    "description": {
+      "en": "Winged son of the north wind Boreas and of Orithyia, an Argonaut who with his brother Calais chased the Harpies away from Phineus.",
+      "fr": "Fils ailé de Borée, le vent du nord, et d’Orithye, Argonaute qui avec son frère Calaïs chassa les Harpies loin de Phinée."
+    },
+    "greek": "Ζήτης",
+    "parents": [
+      "boreas",
+      "orithyia-q1129489"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Boreads",
+        "url": "https://en.wikipedia.org/wiki/Boreads"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Boréades",
+        "url": "https://fr.wikipedia.org/wiki/Bor%C3%A9ades"
+      }
+    ]
+  },
+  {
+    "id": "calais",
+    "name": {
+      "en": "Calais",
+      "fr": "Calaïs"
+    },
+    "kind": "hero",
+    "wikidata": "Q893473",
+    "description": {
+      "en": "Winged son of the north wind Boreas and of Orithyia, an Argonaut who with his brother Zetes chased the Harpies away from Phineus.",
+      "fr": "Fils ailé de Borée, le vent du nord, et d’Orithye, Argonaute qui avec son frère Zétès chassa les Harpies loin de Phinée."
+    },
+    "greek": "Κάλαϊς",
+    "parents": [
+      "boreas",
+      "orithyia-q1129489"
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Boreads",
+        "url": "https://en.wikipedia.org/wiki/Boreads"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Boréades",
+        "url": "https://fr.wikipedia.org/wiki/Bor%C3%A9ades"
+      }
+    ]
+  },
+  {
+    "id": "periclymenus",
+    "name": {
+      "en": "Periclymenus",
+      "fr": "Périclymène"
+    },
+    "kind": "hero",
+    "wikidata": "Q3899862",
+    "description": {
+      "en": "Son of Neleus, an Argonaut to whom Poseidon gave the power to take any shape; Heracles killed him at Pylos.",
+      "fr": "Fils de Nélée, Argonaute à qui Poséidon donna le pouvoir de prendre toutes les formes ; Héraclès le tua à Pylos."
+    },
+    "greek": "Περικλύμενος",
+    "parents": [
+      "neleus",
+      "chloris-q28122362"
+    ]
+  },
+  {
+    "id": "iphiclus-son-of-thestius",
+    "name": {
+      "en": "Iphiclus",
+      "fr": "Iphiclos"
+    },
+    "kind": "hero",
+    "wikidata": "Q4205397",
+    "description": {
+      "en": "Son of Thestius and brother of Althaea, an Argonaut, killed by his nephew Meleager after the hunt of Calydon.",
+      "fr": "Fils de Thestios et frère d’Althée, Argonaute, tué par son neveu Méléagre après la chasse de Calydon."
+    },
+    "greek": "Ἴφικλος",
+    "parents": [
+      "thestius"
+    ]
+  },
+  {
+    "id": "palaemon-argonaut",
+    "name": {
+      "en": "Palaemon",
+      "fr": "Palémon"
+    },
+    "kind": "hero",
+    "wikidata": "Q3891708",
+    "description": {
+      "en": "Son of Hephaestus, or of Aetolus, an Argonaut.",
+      "fr": "Fils d’Héphaïstos, ou d’Étolos, Argonaute."
+    },
+    "greek": "Παλαίμων",
+    "parents": [
+      "hephaestus"
+    ]
+  },
+  {
+    "id": "iphitus-son-of-naubolus",
+    "name": {
+      "en": "Iphitus",
+      "fr": "Iphitos"
+    },
+    "kind": "hero",
+    "wikidata": "Q2731769",
+    "description": {
+      "en": "Son of Naubolus of Phocis, an Argonaut.",
+      "fr": "Fils de Naubolos de Phocide, Argonaute."
+    },
+    "greek": "Ἴφιτος"
   }
 ]

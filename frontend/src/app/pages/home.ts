@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { CHARACTER_KINDS, CatalogService } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 
-/** The way in: the kinds of characters and the cycles of stories. */
+/** The way in: the kinds of characters, their groups, and the cycles of stories. */
 @Component({
   selector: 'app-home',
   imports: [RouterLink, I18nPipe, I18nTextPipe],

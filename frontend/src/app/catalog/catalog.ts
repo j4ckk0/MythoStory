@@ -42,6 +42,8 @@ export interface Story {
   title: I18nText;
   summary: I18nText;
   characters: string[];
+  /** Its groups' ids: the Argonauts in the voyage of the Argo… */
+  groups?: string[];
   sources: Source[];
   links?: Link[];
   related?: string[];
@@ -81,8 +83,22 @@ export interface Cycle {
   stories: string[];
 }
 
+/** A group the myths name as one (backend: Group): the Argonauts, the Muses… Its members are characters. */
+export interface Group {
+  id: string;
+  name: I18nText;
+  description: I18nText;
+  /** Its members' ids, in the order of the list it comes from. */
+  members: string[];
+  wikidata?: string;
+  /** Where the ancient texts list its members. */
+  sources?: Source[];
+  links?: Link[];
+}
+
 export interface Catalog {
   characters: Character[];
+  groups: Group[];
   stories: Story[];
   cycles: Cycle[];
   eras: Era[];
@@ -116,8 +132,8 @@ export interface CyclePosition {
 }
 
 /**
- * The catalog, loaded once, and the indexes the navigation follows: a character's stories and children, a story's
- * cycles and neighbours — everything is derived here, the data files hold each relation once.
+ * The catalog, loaded once, and the indexes the navigation follows: a character's stories, children and groups, a
+ * group's stories, a story's cycles and neighbours — everything is derived here, the data files hold each relation once.
  */
 @Injectable({ providedIn: 'root' })
 export class CatalogService {
@@ -130,6 +146,24 @@ export class CatalogService {
   readonly storyById = computed(() => new Map((this.catalog()?.stories ?? []).map((s) => [s.id, s])));
   readonly eraById = computed(() => new Map((this.catalog()?.eras ?? []).map((e) => [e.id, e])));
   readonly placeById = computed(() => new Map((this.catalog()?.places ?? []).map((p) => [p.id, p])));
+  readonly groupById = computed(() => new Map((this.catalog()?.groups ?? []).map((g) => [g.id, g])));
+
+  /** The groups each character belongs to, in alphabetical order of their English name. */
+  readonly groupsByCharacter = computed(() => {
+    const index = new Map<string, Group[]>();
+    const groups = [...(this.catalog()?.groups ?? [])].sort((a, b) => (a.name.en ?? '').localeCompare(b.name.en ?? ''));
+    for (const group of groups) for (const id of group.members) index.set(id, [...(index.get(id) ?? []), group]);
+    return index;
+  });
+
+  /** The stories each group takes part in, in the cycles' order. */
+  readonly storiesByGroup = computed(() => {
+    const index = new Map<string, Story[]>();
+    for (const story of this.storiesInCycleOrder()) {
+      for (const id of story.groups ?? []) index.set(id, [...(index.get(id) ?? []), story]);
+    }
+    return index;
+  });
 
   /** The stories happening at each place, in the cycles' order. */
   readonly storiesByPlace = computed(() => {

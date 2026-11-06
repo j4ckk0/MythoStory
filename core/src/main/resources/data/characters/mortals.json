@@ -1952,5 +1952,33 @@
         "url": "https://fr.wikipedia.org/wiki/Thersite"
       }
     ]
+  },
+  {
+    "id": "hyperenor-spartos",
+    "name": {
+      "en": "Hyperenor",
+      "fr": "Hypérénor"
+    },
+    "kind": "mortal",
+    "wikidata": "Q12767272",
+    "description": {
+      "en": "One of the five Spartoi, the armed men who sprang from the dragon’s teeth Cadmus sowed at Thebes.",
+      "fr": "Un des cinq Spartes, les hommes en armes nés des dents du dragon que Cadmos sema à Thèbes."
+    },
+    "greek": "Ὑπερήνωρ"
+  },
+  {
+    "id": "pelorus",
+    "name": {
+      "en": "Pelorus",
+      "fr": "Péloros"
+    },
+    "kind": "mortal",
+    "wikidata": "Q3898964",
+    "description": {
+      "en": "One of the five Spartoi, the armed men who sprang from the dragon’s teeth Cadmus sowed at Thebes.",
+      "fr": "Un des cinq Spartes, les hommes en armes nés des dents du dragon que Cadmos sema à Thèbes."
+    },
+    "greek": "Πέλωρ"
   }
 ]

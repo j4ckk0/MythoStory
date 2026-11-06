@@ -9,7 +9,7 @@ import { I18nService } from './i18n/i18n.service';
 import { en } from './i18n/en';
 import { fr } from './i18n/fr';
 
-/** A catalog of two characters and two stories in one cycle: enough to follow every kind of link. */
+/** A catalog of two characters in one group and two stories in one cycle: enough to follow every kind of link. */
 const CATALOG: Catalog = {
   characters: [
     { id: 'zeus', name: { en: 'Zeus', fr: 'Zeus' }, kind: 'olympian', description: { en: 'King of the gods', fr: 'Roi des dieux' } },
@@ -24,15 +24,22 @@ const CATALOG: Catalog = {
   ],
   stories: [
     {
-      id: 'labours', title: { en: 'The labours', fr: 'Les travaux' }, characters: ['heracles', 'zeus'],
+      id: 'labours', title: { en: 'The labours', fr: 'Les travaux' }, characters: ['heracles', 'zeus'], groups: ['argonauts'],
       summary: { en: 'First paragraph.\n\nSecond paragraph.', fr: 'Premier paragraphe.\n\nSecond paragraphe.' },
       era: 'heroes', generation: 1, places: ['tiryns', 'nemea'], route: true,
       sources: [{ author: { en: 'Apollodorus', fr: 'Apollodore' }, work: { en: 'Library', fr: 'Bibliothèque' }, passage: '2.5', url: { en: 'https://example.org/en' } }],
     },
     {
-      id: 'apotheosis', title: { en: 'The apotheosis', fr: 'L’apothéose' }, characters: ['heracles'],
+      id: 'apotheosis', title: { en: 'The apotheosis', fr: 'L’apothéose' }, characters: ['heracles'], groups: ['argonauts'],
       summary: { en: 'He becomes a god.', fr: 'Il devient dieu.' }, sources: [{ author: { en: 'A', fr: 'A' }, work: { en: 'W', fr: 'W' } }],
       era: 'heroes',
+    },
+  ],
+  groups: [
+    {
+      id: 'argonauts', name: { en: 'Argonauts', fr: 'Argonautes' }, members: ['heracles', 'zeus'], wikidata: 'Q165510',
+      description: { en: 'The crew of the Argo', fr: 'L’équipage de l’Argo' },
+      sources: [{ author: { en: 'Apollodorus', fr: 'Apollodore' }, work: { en: 'Library', fr: 'Bibliothèque' }, passage: '1.9.16', url: { fr: 'https://example.org/fr' } }],
     },
   ],
   cycles: [{ id: 'heroes', title: { en: 'Heroes', fr: 'Héros' }, description: { en: 'd', fr: 'd' }, stories: ['labours', 'apotheosis'] }],
@@ -123,6 +130,47 @@ describe('MythoStory', () => {
     const heracles = await open('/characters/heracles');
     expect(heracles.querySelector('.pedigree .node.root')?.textContent).toContain('Heracles');
     expect(heracles.querySelectorAll('.pedigree .node').length).toBe(2);
+  });
+
+  it('shows a group’s members, its stories and who lists them', async () => {
+    TestBed.inject(I18nService).setLanguage('fr');
+    const page = await open('/groups/argonauts');
+    expect(page.querySelector('h1')?.textContent).toContain('Argonautes');
+    expect(page.querySelectorAll('.members .chip').length).toBe(2);
+    expect(page.querySelector('.entries')?.textContent).toContain('Les travaux');
+    expect(page.querySelector('.sources')?.textContent).toContain('1.9.16');
+  });
+
+  it('lists the groups with their number of members', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const page = await open('/groups');
+    expect(page.querySelector('.entries')?.textContent).toContain('Argonauts');
+    expect(page.querySelector('.entries')?.textContent).toContain('2 members');
+  });
+
+  it('says which groups a character belongs to', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const heracles = await open('/characters/heracles');
+    expect(heracles.querySelector('.facts .group-chip')?.textContent).toContain('Argonauts');
+  });
+
+  it('lists the stories a character takes part in through their groups, each once', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    // Zeus is named in the labours, and is one of the test's Argonauts, who take part in both stories
+    const stories = [...(await open('/characters/zeus')).querySelectorAll('.entries li')].map((li) => li.textContent?.replace(/\s+/g, ' ').trim());
+    expect(stories).toEqual(['The labours', 'The apotheosis — with the Argonauts']);
+  });
+
+  it('shows the groups a story involves among its characters', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const story = await open('/stories/labours');
+    expect(story.querySelector('.chips .group-chip')?.textContent).toContain('Argonauts');
+  });
+
+  it('finds a group by its name', async () => {
+    TestBed.inject(I18nService).setLanguage('fr');
+    const page = await open('/search?q=argonaute');
+    expect(page.textContent).toContain('Argonautes');
   });
 
   it('finds a character whatever the accents and the language', async () => {

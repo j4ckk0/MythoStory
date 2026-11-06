@@ -1,10 +1,11 @@
 # MythoStory
 
 The myths of ancient Greece, to read and to wander through: **the characters** — gods, Titans, nymphs,
-heroes, mortals, monsters — and **the stories** they appear in. Every story is summarised, **sourced**
+heroes, mortals, monsters —, **the groups** they form — the Argonauts, the Muses, the Seven against Thebes… — and
+**the stories** they appear in. Every story is summarised, **sourced**
 from the ancient texts (with a link to read them online) and linked to **Wikipedia, articles and
-videos**. One click leads from a story to its characters, from a character to their family and their
-other stories, and from one episode of a cycle to the next. **In French and in English.**
+videos**. One click leads from a story to its characters, from a character to their family, their
+groups and their other stories, from a group to its members, and from one episode of a cycle to the next. **In French and in English.**
 
 One application, two platforms:
 
@@ -55,13 +56,13 @@ The choices behind this layout:
 | Method | Path           | Answer                                                                            |
 |--------|----------------|-----------------------------------------------------------------------------------|
 | GET    | `/api/info`    | `{name, version, platform, languages, voices}`: platform is `desktop` or `android` |
-| GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, stories, cycles, eras, places}` |
+| GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, groups, stories, cycles, eras, places}` |
 | GET    | `/api/speech?lang=&text=` | a sentence read aloud, as WAV (the desktop's Piper; `voices` in `/api/info` says which languages) |
 | GET    | `/api/session` | a page's session: a server-sent event stream, its first event the session's id     |
 | POST   | `/api/session/{id}/closed` | the page has gone (a beacon): the desktop stops once its last page has   |
 
 The catalog is small (a few hundred kilobytes) and read-only: the page loads it once, builds its own
-indexes (a character's stories and children, a story's cycles and neighbours) and switches language
+indexes (a character's stories, children and groups, a group's stories, a story's cycles and neighbours) and switches language
 without asking the server again. Any other path serves the page (`index.html` for the Angular routes).
 
 ## The catalog
@@ -75,6 +76,7 @@ data/characters/<kind>.json   the curated characters, one file per kind: primord
                               deities, nymphs, heroes, mortals, creatures
 data/characters/wikidata/     the characters imported from Wikidata, one file per kind: never edited by hand,
                               scripts/import-characters.sh rewrites them (below)
+data/groups.json              the groups: the Argonauts, the Muses… and their members, from the ancient lists
 data/stories/<cycle>.json     the stories, one file per cycle
 data/cycles.json              the cycles: sequences of stories, in their order
 data/eras.json                the eras of the timeline, in their order
@@ -82,9 +84,10 @@ data/places.json              the places of the map: coordinates from Wikidata
 ```
 
 The records refer to each other by **id**, a slug (`zeus`, `labours-of-heracles`), which is also the
-page's URL (`/characters/zeus`). Each relation is said **once** — a character's `parents`, a story's
-`characters`, a cycle's `stories`, a story's `related` — and everything else is derived: children,
-a character's stories, the previous and next story of a cycle.
+page's URL (`/characters/zeus`, `/groups/argonauts`). Each relation is said **once** — a character's `parents`,
+a group's `members`, a story's `characters` and `groups`, a cycle's `stories`, a story's `related` — and
+everything else is derived: children, a character's stories and groups, a group's stories, the previous and
+next story of a cycle.
 
 ```jsonc
 // a character
@@ -109,6 +112,17 @@ when the tradition does not say —, a `dating` when ancient chronographers gave
 `route: true` when those places are a journey, in its order.
 
 ```jsonc
+// data/groups.json: a group, its members in the order of the ancient list it comes from, which its sources cite
+{ "id": "argonauts", "name": {"en": "Argonauts", "fr": "Argonautes"}, "description": {"en": "…", "fr": "…"},
+  "members": ["jason", "tiphys", "orpheus", "zetes", "calais", "castor", "pollux", "…"], "wikidata": "Q165510",
+  "sources": [{"author": {"en": "Apollodorus", "fr": "Apollodore"}, "work": {"en": "Library", "fr": "Bibliothèque"}, "passage": "1.9.16", "url": {…}}],
+  "links": [{"kind": "wikipedia", "lang": "en", "title": "Wikipedia — Argonauts", "url": "https://en.wikipedia.org/wiki/Argonauts"}] }
+```
+
+A story names the groups it involves in its `groups` (the voyage of the Argo: the Argonauts, the Boreads, the
+Harpies); a member may belong to several groups (Castor: an Argonaut, a hunter of Calydon, one of the Dioscuri).
+
+```jsonc
 // data/places.json: a place, with the Wikidata item its coordinates come from; identification marks a mythical place
 { "id": "lotus-eaters", "name": {"en": "Land of the Lotus-eaters", "fr": "Pays des Lotophages"}, "lat": 33.7837, "lon": 10.8833,
   "wikidata": "Q188938", "identification": {"en": "Identified with the island of Djerba since antiquity.", "fr": "…"} }
@@ -118,14 +132,15 @@ Link kinds: `wikipedia`, `article`, `video`. Each link says its **language**; th
 reader's language first and marks the others.
 
 **Checks.** `Catalog.problems()` refuses a catalog with a duplicate id, a dangling reference (to a
-character, a story, an era, a place), a place no story uses, a story without a source or a character, a text missing one of the languages, or a link in an unknown
+character, a story, an era, a place, a group), a place no story uses, a story without a source or a character, a
+group of fewer than two members or listing one twice, a text missing one of the languages, or a link in an unknown
 language; the build runs it (`CatalogTest`), and the server would not start. **The links** are
 checked by `scripts/check-links.sh` (`scripts\check-links.bat`): every URL must answer — the videos
 through YouTube's oEmbed, which answers only for videos that exist, the Wikipedia articles through
 Wikipedia's API, fifty to a request. It needs the network, so the build
 never runs it: run it after editing the data, and now and then, since pages move.
 
-**Adding** a character or a story: edit the JSON of its kind or cycle (a new file: add it to
+**Adding** a character, a group or a story: edit the JSON of its kind, `groups.json` or its cycle (a new file: add it to
 `index.json`), with every text in English and French, then `scripts/build.sh` (the checks) and
 `scripts/check-links.sh`. Summaries are written in our own words, never copied: the sources are
 cited, with the passage.
@@ -155,7 +170,13 @@ Each imported character gets:
   reorganisation).
 
 The catalog must be sound with what is imported before anything is written. Then
-`scripts/check-links.sh` and `scripts/build.sh`. Many characters share a name (four Clymenes, two
+`scripts/check-links.sh` and `scripts/build.sh`. Wikidata knows characters the import leaves out: those without a Wikipedia article of their own — Castor and
+Pollux share one, as do Zetes and Calais — and those Wikidata files under classes outside "mythological Greek
+character" (the Harpy Celaeno, the Siren Ligeia). The ones the groups need are curated, with their `wikidata`, so
+that a later import never brings them twice. A group's members must stay in the catalog: an import that dropped one
+would be refused.
+
+Many characters share a name (four Clymenes, two
 Thalias…): their ids then carry their Wikidata item (`clymene-q2980439`), their descriptions tell them
 apart, and so does the description shown when hovering their name.
 
@@ -163,16 +184,19 @@ Wikidata's data is CC0: no attribution required — each imported character link
 
 ### The catalog today
 
-**3,033 characters** — 146 curated, 2,887 from Wikidata — and **52 stories** in 7 cycles: the birth
+**3,053 characters** — 166 curated, 2,887 from Wikidata —, **30 groups** of them (433 members: 44
+Argonauts, the Muses, the Nereids, the Seven against Thebes, the suitors of Penelope…) and **52
+stories** in 7 cycles: the birth
 of the gods (5), Prometheus and the first humans (3), gods among mortals (7), the age of heroes (8),
 Thebes (1), **the Trojan War in full** (15, from the golden apple through the Iliad to the fall of the
-city) and **the Odyssey in full** (13, in the order it happened); 73 places on the map; **5,429
+city) and **the Odyssey in full** (13, in the order it happened); 73 places on the map; **5,483
 links**, all checked. The catalog weighs about 1.7 MB, about 300 kB gzipped as the
 server sends it. English translations of the sources come from the Theoi Classical Texts Library, the
 MIT Internet Classics Archive and the University of Chicago's LacusCurtius; French ones from
 Wikisource (Leconte de Lisle, Nisard, Clavier).
 
-The page has a timeline, a map and family trees (below); it lists the characters by kind and, when there are more than 150, one initial at a time
+The page has a timeline, a map and family trees (below); it lists the groups by what most of their members are
+(heroes and mortals, gods and nymphs, monsters), and the characters by kind and, when there are more than 150, one initial at a time
 (`/characters?kind=mortal&letter=t`); the search shows the first hundred matches, names starting with
 the query first.
 

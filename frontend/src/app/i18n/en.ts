@@ -8,13 +8,14 @@ export const en = {
 
   'nav.home': 'Home',
   'nav.characters': 'Characters',
+  'nav.groups': 'Groups',
   'nav.stories': 'Stories',
   'nav.search': 'Search',
   'nav.timeline': 'Timeline',
   'nav.map': 'Map',
   'nav.settings': 'Settings',
   'nav.help': 'Help',
-  'nav.search.placeholder': 'Search a character or a story',
+  'nav.search.placeholder': 'Search a character, a group or a story',
 
   'i18n.language': 'Language',
   'i18n.switch': 'Lire en français',
@@ -44,10 +45,24 @@ export const en = {
   'character.roman': 'For the Romans',
   'character.parents': 'Parents',
   'character.children': 'Children',
+  'character.groups': 'Member of',
   'character.stories': 'Stories',
+  'character.withGroup': 'with the {group}',
   'character.noStories': 'No story tells of them yet.',
   'character.notFound': 'No character here.',
   'character.wikidata': 'Wikidata',
+
+  'groups.title': 'Groups',
+  'groups.lead': 'The companies, sisterhoods and peoples the myths name as one: the Argonauts, the Muses, the Seven against Thebes…',
+  'groups.section.heroes': 'Heroes and mortals',
+  'groups.section.gods': 'Gods and nymphs',
+  'groups.section.monsters': 'Creatures and monsters',
+
+  'group.kind': 'Group',
+  'group.members': '{count} members',
+  'group.members.one': '1 member',
+  'group.sources': 'Who lists them',
+  'group.notFound': 'No group here.',
 
   'stories.title': 'Stories',
 

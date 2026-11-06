@@ -1,7 +1,7 @@
 <h1>{{ 'search.title' | i18n }}</h1>
 @if (!query()) {
   <p class="muted">{{ 'search.hint' | i18n }}</p>
-} @else if (!characters().length && !stories().length) {
+} @else if (!characters().length && !groups().length && !stories().length) {
   <p class="muted">{{ 'search.none' | i18n: { query: q() } }}</p>
 } @else {
   @if (characters().length) {
@@ -17,6 +17,17 @@
     @if (more()) {
       <p class="muted">{{ 'search.more' | i18n: { count: more() } }}</p>
     }
+  }
+  @if (groups().length) {
+    <h2>{{ 'nav.groups' | i18n }}</h2>
+    <ul class="entries">
+      @for (group of groups(); track group.id) {
+        <li>
+          <a [routerLink]="['/groups', group.id]">{{ group.name | i18nText }}</a>
+          <span class="muted"> — {{ group.description | i18nText }}</span>
+        </li>
+      }
+    </ul>
   }
   @if (stories().length) {
     <h2>{{ 'nav.stories' | i18n }}</h2>

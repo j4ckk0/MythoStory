@@ -30,7 +30,8 @@ class LinkCheckTest {
         assumeTrue(System.getProperty("links.check") == "true", "the links are checked by scripts/check-links.sh")
         val catalog = Catalog.load()
         val urls = (catalog.characters.flatMap { c -> c.links.map { it.url to "character ${c.id}" } } +
-            catalog.stories.flatMap { s -> s.links.map { it.url to "story ${s.id}" } + s.sources.flatMap { it.url.values }.map { it to "story ${s.id}" } })
+            catalog.stories.flatMap { s -> s.links.map { it.url to "story ${s.id}" } + s.sources.flatMap { it.url.values }.map { it to "story ${s.id}" } } +
+            catalog.groups.flatMap { g -> g.links.map { it.url to "group ${g.id}" } + g.sources.flatMap { it.url.values }.map { it to "group ${g.id}" } })
             .groupBy({ it.first }, { it.second })
 
         val (articles, pages) = urls.keys.partition { WIKIPEDIA.matches(it) }

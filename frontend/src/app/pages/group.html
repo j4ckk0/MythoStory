@@ -1,0 +1,39 @@
+@if (group(); as g) {
+  <p class="kind" data-kind="group"><a [routerLink]="['/groups']">{{ 'group.kind' | i18n }}</a></p>
+  <h1>{{ g.name | i18nText }}</h1>
+  <p class="lead">{{ g.description | i18nText }}</p>
+  @if (g.wikidata) {
+    <dl class="facts">
+      <dt>{{ 'character.wikidata' | i18n }}</dt>
+      <dd><a [href]="'https://www.wikidata.org/wiki/' + g.wikidata" target="_blank" rel="noopener">{{ g.wikidata }}</a></dd>
+    </dl>
+  }
+
+  <h2>{{ (members().length === 1 ? 'group.members.one' : 'group.members') | i18n: { count: members().length } }}</h2>
+  <div class="chips members">
+    @for (member of members(); track member.id) {
+      <app-character-chip [character]="member" />
+    }
+  </div>
+
+  @if (stories().length) {
+    <h2>{{ 'character.stories' | i18n }}</h2>
+    <ul class="entries">
+      @for (story of stories(); track story.id) {
+        <li><a [routerLink]="['/stories', story.id]">{{ story.title | i18nText }}</a></li>
+      }
+    </ul>
+  }
+
+  @if (g.sources?.length) {
+    <h2>{{ 'group.sources' | i18n }}</h2>
+    <app-sources [sources]="g.sources ?? []" />
+  }
+
+  @if (g.links?.length) {
+    <h2>{{ 'links.title' | i18n }}</h2>
+    <app-links [links]="g.links ?? []" />
+  }
+} @else if (loaded()) {
+  <p class="muted">{{ 'group.notFound' | i18n }}</p>
+}

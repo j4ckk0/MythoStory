@@ -16,6 +16,14 @@
         </a>
       </li>
     }
+    @if (data.groups.length) {
+      <li>
+        <a class="tile" routerLink="/groups" data-kind="group">
+          <span class="tile-title">{{ 'nav.groups' | i18n }}</span>
+          <span class="tile-count">{{ data.groups.length }}</span>
+        </a>
+      </li>
+    }
   </ul>
 
   <h2>{{ 'home.cycles' | i18n }}</h2>

@@ -10,13 +10,14 @@ export const fr: Record<I18nKey, string> = {
 
   'nav.home': 'Accueil',
   'nav.characters': 'Personnages',
+  'nav.groups': 'Groupes',
   'nav.stories': 'Histoires',
   'nav.search': 'Rechercher',
   'nav.timeline': 'Chronologie',
   'nav.map': 'Carte',
   'nav.settings': 'Réglages',
   'nav.help': 'Aide',
-  'nav.search.placeholder': 'Rechercher un personnage ou une histoire',
+  'nav.search.placeholder': 'Rechercher un personnage, un groupe ou une histoire',
 
   'i18n.language': 'Langue',
   'i18n.switch': 'Read in English',
@@ -46,10 +47,24 @@ export const fr: Record<I18nKey, string> = {
   'character.roman': 'Chez les Romains',
   'character.parents': 'Parents',
   'character.children': 'Enfants',
+  'character.groups': 'Membre de',
   'character.stories': 'Histoires',
+  'character.withGroup': 'avec les {group}',
   'character.noStories': 'Aucune histoire ne parle encore de ce personnage.',
   'character.notFound': 'Aucun personnage ici.',
   'character.wikidata': 'Wikidata',
+
+  'groups.title': 'Groupes',
+  'groups.lead': 'Les compagnies, les sœurs et les peuples que les mythes nomment d’un seul nom : les Argonautes, les Muses, les Sept contre Thèbes…',
+  'groups.section.heroes': 'Héros et mortels',
+  'groups.section.gods': 'Dieux et nymphes',
+  'groups.section.monsters': 'Créatures et monstres',
+
+  'group.kind': 'Groupe',
+  'group.members': '{count} membres',
+  'group.members.one': '1 membre',
+  'group.sources': 'Qui les énumère',
+  'group.notFound': 'Aucun groupe ici.',
 
   'stories.title': 'Histoires',
 

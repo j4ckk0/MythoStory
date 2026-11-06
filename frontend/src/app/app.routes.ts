@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
 import { CharacterPage } from './pages/character';
 import { Characters } from './pages/characters';
+import { GroupPage } from './pages/group';
+import { Groups } from './pages/groups';
 import { Help } from './help/help';
 import { MapPage } from './map/map-page';
 import { Home } from './pages/home';
@@ -15,6 +17,8 @@ export const routes: Routes = [
   { path: '', component: Home },
   { path: 'characters', component: Characters },
   { path: 'characters/:id', component: CharacterPage },
+  { path: 'groups', component: Groups },
+  { path: 'groups/:id', component: GroupPage },
   { path: 'stories', component: Stories },
   { path: 'stories/:id', component: StoryPage },
   { path: 'timeline', component: Timeline },

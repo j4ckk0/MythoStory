@@ -229,5 +229,33 @@
         "url": "https://www.theoi.com/Nymphe/NympheKalypso.html"
       }
     ]
+  },
+  {
+    "id": "hesperia-hesperid",
+    "name": {
+      "en": "Hesperia",
+      "fr": "Hespérie"
+    },
+    "kind": "nymph",
+    "wikidata": "Q2288596",
+    "description": {
+      "en": "One of the Hesperides, the nymphs of the evening who kept the golden apples in the far west.",
+      "fr": "Une des Hespérides, les nymphes du soir qui gardaient les pommes d’or au bout de l’Occident."
+    },
+    "greek": "Ἑσπερία"
+  },
+  {
+    "id": "arethusa-hesperid",
+    "name": {
+      "en": "Arethusa",
+      "fr": "Aréthuse"
+    },
+    "kind": "nymph",
+    "wikidata": "Q19738771",
+    "description": {
+      "en": "One of the Hesperides, the nymphs of the evening who kept the golden apples in the far west.",
+      "fr": "Une des Hespérides, les nymphes du soir qui gardaient les pommes d’or au bout de l’Occident."
+    },
+    "greek": "Ἀρέθουσα"
   }
 ]

@@ -48,6 +48,8 @@ data class Story(
     val summary: I18nText,
     /** Ids of the characters it involves, the main ones first. */
     val characters: List<String>,
+    /** Ids of the groups it involves as a group: the Argonauts in the voyage of the Argo, the Seven against Thebes… */
+    val groups: List<String> = emptyList(),
     /** Where the story is told in the ancient texts: at least one. */
     val sources: List<Source>,
     val links: List<Link> = emptyList(),
@@ -66,6 +68,26 @@ data class Story(
     val places: List<String> = emptyList(),
     /** Whether [places] are a journey, drawn as a route: the Argo's voyage, Heracles' labours… */
     val route: Boolean = false,
+)
+
+/**
+ * A group the myths name as one: the Argonauts, the Muses, the Seven against Thebes… Its members are characters of the
+ * catalog, as an ancient list gives them ([sources]); a member may belong to several groups (Castor: an Argonaut and
+ * a hunter of Calydon). The groups a character belongs to are derived from here.
+ */
+@Serializable
+data class Group(
+    val id: String,
+    val name: I18nText,
+    /** Who they are, in a sentence or two: what makes them a group, and how many the tradition counts. */
+    val description: I18nText,
+    /** Ids of its members, in the order of the list it comes from. */
+    val members: List<String>,
+    /** The Wikidata item of the group itself ("Q165510": the Argonauts). */
+    val wikidata: String? = null,
+    /** Where the ancient texts list its members; none for a group no single text lists. */
+    val sources: List<Source> = emptyList(),
+    val links: List<Link> = emptyList(),
 )
 
 /** A period of the mythic chronology: the timeline's sections, in the order of data/eras.json. */

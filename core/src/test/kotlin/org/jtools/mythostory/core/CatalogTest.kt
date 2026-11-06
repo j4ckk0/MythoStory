@@ -33,7 +33,7 @@ class CatalogTest {
     private fun both(text: String): I18nText = I18n.LANGUAGES.associateWith { text }
 
     @Test
-    fun `dangling references, duplicates, missing sources, unused places and i18n gaps are caught`() {
+    fun `dangling references, duplicates, missing sources, unused places, lone groups and i18n gaps are caught`() {
         val zeus = Character("zeus", both("Zeus"), CharacterKind.OLYMPIAN, description = both("King of the gods"), parents = listOf("cronus"))
         val story = Story(
             "a-story", both("A story"), mapOf("en" to "Once upon a time"), listOf("zeus", "nobody"),
@@ -42,9 +42,11 @@ class CatalogTest {
         )
         val troy = Place("troy", both("Troy"), 39.96, 26.24, "Q22647")
         val delphi = Place("delphi", both("Delphi"), 38.48, 22.5, "Q75459")
+        val argonauts = Group("argonauts", both("Argonauts"), mapOf("en" to "Jason's crew"), listOf("zeus", "zeus", "jason"))
+        val alone = Group("alone", both("Alone"), both("A group of one"), listOf("zeus"))
         val problems = Catalog(
-            listOf(zeus, zeus), listOf(story), listOf(Cycle("c", both("C"), both("A cycle"), listOf("a-story", "gone"))),
-            eras = listOf(Era("heroes", both("Heroes"), both("The age of heroes"))), places = listOf(troy, delphi),
+            listOf(zeus, zeus), listOf(story.copy(groups = listOf("argonauts", "muses"))), listOf(Cycle("c", both("C"), both("A cycle"), listOf("a-story", "gone"))),
+            eras = listOf(Era("heroes", both("Heroes"), both("The age of heroes"))), places = listOf(troy, delphi), groups = listOf(argonauts, alone),
         ).problems()
         assertEquals(
             setOf(
@@ -58,6 +60,11 @@ class CatalogTest {
                 "cycle c: no story gone",
                 "story a-story: no place atlantis",
                 "place delphi is in no story",
+                "story a-story: no group muses",
+                "group argonauts: its description lacks its \"fr\" i18n text",
+                "group argonauts: no member jason",
+                "group argonauts lists zeus twice",
+                "group alone has fewer than two members",
             ),
             problems.toSet(),
         )

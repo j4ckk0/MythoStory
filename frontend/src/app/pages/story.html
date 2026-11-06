@@ -30,6 +30,9 @@
     @for (character of characters(); track character.id) {
       <app-character-chip [character]="character" />
     }
+    @for (group of groups(); track group.id) {
+      <app-group-chip [group]="group" />
+    }
   </div>
 
   <app-listen-button [key]="s.id" [title]="s.title | i18nText" [paragraphs]="paragraphs()" />
@@ -46,22 +49,7 @@
   }
 
   <h2>{{ 'story.sources' | i18n }}</h2>
-  <ul class="sources">
-    @for (source of s.sources; track $index) {
-      <li>
-        <span class="author">{{ source.author | i18nText }}</span>, <cite>{{ source.work | i18nText }}</cite>
-        @if (source.passage) {
-          <span class="passage">{{ source.passage }}</span>
-        }
-        @if (reading(source); as read) {
-          — <a [href]="read.url" target="_blank" rel="noopener">{{ 'story.read' | i18n }}</a>
-          @if (read.lang !== i18n.language()) {
-            <span class="lang" [title]="'i18n.name.' + read.lang | i18n">{{ read.lang }}</span>
-          }
-        }
-      </li>
-    }
-  </ul>
+  <app-sources [sources]="s.sources" />
 
   @if (s.links?.length) {
     <h2>{{ 'links.title' | i18n }}</h2>

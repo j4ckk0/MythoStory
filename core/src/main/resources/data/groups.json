@@ -1,0 +1,1849 @@
+[
+  {
+    "id": "argonauts",
+    "name": {
+      "en": "Argonauts",
+      "fr": "Argonautes"
+    },
+    "description": {
+      "en": "The heroes who sailed with Jason on the Argo to bring back the Golden Fleece from Colchis. The ancient lists differ: Apollodorus names some forty-five, Apollonius of Rhodes about fifty-five.",
+      "fr": "Les héros qui firent voile avec Jason sur l’Argo pour rapporter la Toison d’or de Colchide. Les listes anciennes diffèrent : Apollodore en nomme quarante-cinq, Apollonios de Rhodes une cinquantaine."
+    },
+    "members": [
+      "jason",
+      "tiphys",
+      "orpheus",
+      "zetes",
+      "calais",
+      "castor",
+      "pollux",
+      "telamon",
+      "peleus",
+      "heracles",
+      "theseus",
+      "idas",
+      "lynceus-q1124866",
+      "amphiaraus",
+      "caeneus",
+      "palaemon-argonaut",
+      "cepheus-king-of-tegea",
+      "laertes",
+      "autolycus",
+      "atalanta",
+      "menoetius-q1920680",
+      "admetus-q192109",
+      "acastus",
+      "eurytus-q3731822",
+      "meleager",
+      "ancaeus-q2446902",
+      "euphemus-q749123",
+      "poeas",
+      "butes-q1301972",
+      "phanus",
+      "staphylus-q2332185",
+      "erginus-q16331922",
+      "periclymenus",
+      "augeias-of-elis",
+      "iphiclus-son-of-thestius",
+      "argus-q16169688",
+      "euryalus-q1378407",
+      "peneleus",
+      "leitus",
+      "iphitus-son-of-naubolus",
+      "ascalaphus-q660196",
+      "ialmenus",
+      "polyphemus-q2627407",
+      "argus-q1075014"
+    ],
+    "wikidata": "Q165510",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.9.16",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollonius of Rhodes",
+          "fr": "Apollonios de Rhodes"
+        },
+        "work": {
+          "en": "Argonautica",
+          "fr": "Argonautiques"
+        },
+        "passage": "1.23–233",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApolloniusRhodius1.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_Petits_po%C3%A8mes_grecs/Apollonius/Exp%C3%A9dition_des_Argonautes"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Argonauts",
+        "url": "https://en.wikipedia.org/wiki/Argonauts"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Argonautes",
+        "url": "https://fr.wikipedia.org/wiki/Argonautes"
+      }
+    ]
+  },
+  {
+    "id": "calydonian-hunters",
+    "name": {
+      "en": "Hunters of Calydon",
+      "fr": "Chasseurs de Calydon"
+    },
+    "description": {
+      "en": "The heroes Meleager gathered to hunt the boar Artemis had sent against Calydon. Atalanta drew its first blood; the quarrel over its hide cost Meleager his life.",
+      "fr": "Les héros que Méléagre rassembla pour chasser le sanglier qu’Artémis avait envoyé contre Calydon. Atalante le blessa la première ; la querelle pour sa dépouille coûta la vie à Méléagre."
+    },
+    "members": [
+      "meleager",
+      "idas",
+      "lynceus-q1124866",
+      "castor",
+      "pollux",
+      "theseus",
+      "admetus-q192109",
+      "ancaeus-q2446902",
+      "cepheus-king-of-tegea",
+      "jason",
+      "iphicles",
+      "pirithous",
+      "peleus",
+      "telamon",
+      "eurytion-q1128881",
+      "atalanta",
+      "amphiaraus"
+    ],
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.8.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Calydonian boar hunt",
+        "url": "https://en.wikipedia.org/wiki/Calydonian_boar_hunt"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sanglier de Calydon",
+        "url": "https://fr.wikipedia.org/wiki/Sanglier_de_Calydon"
+      }
+    ]
+  },
+  {
+    "id": "seven-against-thebes",
+    "name": {
+      "en": "Seven against Thebes",
+      "fr": "Sept contre Thèbes"
+    },
+    "description": {
+      "en": "The seven champions who marched with Adrastus to win back the throne of Thebes for Polynices. All but Adrastus died before the city’s seven gates. Some lists put Eteoclus and Mecisteus in place of Tydeus and Polynices.",
+      "fr": "Les sept chefs qui marchèrent avec Adraste pour rendre à Polynice le trône de Thèbes. Tous sauf Adraste périrent devant les sept portes de la ville. Certaines listes mettent Étéoclos et Mécistée à la place de Tydée et de Polynice."
+    },
+    "members": [
+      "adrastus-q223152",
+      "amphiaraus",
+      "capaneus",
+      "hippomedon-q976463",
+      "polynices",
+      "tydeus",
+      "parthenopeus"
+    ],
+    "wikidata": "Q3119061",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.6.3",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Seven against Thebes",
+        "url": "https://en.wikipedia.org/wiki/Seven_against_Thebes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Guerre des Sept Chefs",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_des_Sept_Chefs"
+      }
+    ]
+  },
+  {
+    "id": "epigoni",
+    "name": {
+      "en": "Epigoni",
+      "fr": "Épigones"
+    },
+    "description": {
+      "en": "The “offspring”: the sons of the Seven against Thebes, who ten years after their fathers took the city they had failed to take.",
+      "fr": "Les « descendants » : les fils des Sept contre Thèbes, qui dix ans après leurs pères prirent la ville devant laquelle ceux-ci avaient échoué."
+    },
+    "members": [
+      "alcmaeon-q591089",
+      "amphilochus-q474888",
+      "aegialeus-q10966726",
+      "diomedes",
+      "promachus-q519168",
+      "sthenelus-son-of-capaneus",
+      "thersander",
+      "euryalus-q1378407"
+    ],
+    "wikidata": "Q780650",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.7.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Epigoni",
+        "url": "https://en.wikipedia.org/wiki/Epigoni"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Épigones",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89pigones"
+      }
+    ]
+  },
+  {
+    "id": "dioscuri",
+    "name": {
+      "en": "Dioscuri",
+      "fr": "Dioscures"
+    },
+    "description": {
+      "en": "Castor and Pollux, the twin “sons of Zeus”, brothers of Helen: one mortal, one immortal, they share the immortality between them, a day among the gods and a day in the underworld.",
+      "fr": "Castor et Pollux, les jumeaux « fils de Zeus », frères d’Hélène : l’un mortel, l’autre immortel, ils se partagent l’immortalité, un jour parmi les dieux et un jour aux Enfers."
+    },
+    "members": [
+      "castor",
+      "pollux"
+    ],
+    "wikidata": "Q190103",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.10.7",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.11.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Castor and Pollux",
+        "url": "https://en.wikipedia.org/wiki/Castor_and_Pollux"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dioscures",
+        "url": "https://fr.wikipedia.org/wiki/Dioscures"
+      }
+    ]
+  },
+  {
+    "id": "boreads",
+    "name": {
+      "en": "Boreads",
+      "fr": "Boréades"
+    },
+    "description": {
+      "en": "Zetes and Calais, the winged sons of the north wind Boreas, who sailed with the Argonauts and chased the Harpies away from the blind king Phineus.",
+      "fr": "Zétès et Calaïs, les fils ailés de Borée, le vent du nord, qui firent voile avec les Argonautes et chassèrent les Harpies loin du roi aveugle Phinée."
+    },
+    "members": [
+      "zetes",
+      "calais"
+    ],
+    "wikidata": "Q845818",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.15.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollonius of Rhodes",
+          "fr": "Apollonios de Rhodes"
+        },
+        "work": {
+          "en": "Argonautica",
+          "fr": "Argonautiques"
+        },
+        "passage": "1.211–223",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApolloniusRhodius1.html",
+          "fr": "https://fr.wikisource.org/wiki/Les_Petits_po%C3%A8mes_grecs/Apollonius/Exp%C3%A9dition_des_Argonautes"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Boreads",
+        "url": "https://en.wikipedia.org/wiki/Boreads"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Boréades",
+        "url": "https://fr.wikipedia.org/wiki/Bor%C3%A9ades"
+      }
+    ]
+  },
+  {
+    "id": "spartoi",
+    "name": {
+      "en": "Spartoi",
+      "fr": "Spartes"
+    },
+    "description": {
+      "en": "The “sown men”: armed warriors who sprang from the dragon’s teeth Cadmus sowed at Thebes. They killed each other but five, who became the ancestors of the Theban nobility.",
+      "fr": "Les « hommes semés » : guerriers en armes nés des dents du dragon que Cadmos sema à Thèbes. Ils s’entretuèrent, sauf cinq, qui devinrent les ancêtres de la noblesse thébaine."
+    },
+    "members": [
+      "echion-q1280725",
+      "udaeus",
+      "chthonius",
+      "hyperenor-spartos",
+      "pelorus"
+    ],
+    "wikidata": "Q598170",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.4.1",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Spartoi",
+        "url": "https://en.wikipedia.org/wiki/Spartoi"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Spartes",
+        "url": "https://fr.wikipedia.org/wiki/Spartes"
+      }
+    ]
+  },
+  {
+    "id": "suitors-of-penelope",
+    "name": {
+      "en": "Suitors of Penelope",
+      "fr": "Prétendants de Pénélope"
+    },
+    "description": {
+      "en": "The young nobles of Ithaca and the nearby islands who courted Penelope while Odysseus was away, feasting in his palace, until he came back and killed them all. Apollodorus counts more than a hundred; those named here are the ones the catalog knows.",
+      "fr": "Les jeunes nobles d’Ithaque et des îles voisines qui courtisèrent Pénélope en l’absence d’Ulysse, festoyant dans son palais, jusqu’à ce qu’il revienne et les tue tous. Apollodore en compte plus de cent ; ceux nommés ici sont ceux que connaît le catalogue."
+    },
+    "members": [
+      "agelaus-q2043747",
+      "agerochus",
+      "amphimedon",
+      "amphinomus",
+      "antinous-son-of-eupeithes",
+      "ctesippus",
+      "demoptolemus",
+      "elatus",
+      "euryades",
+      "eurydamas",
+      "eurymachus",
+      "eurynomus",
+      "hagius",
+      "hellanicus",
+      "leodes",
+      "peisander-son-of-polyctor",
+      "philodemus",
+      "promachus-q111211223"
+    ],
+    "wikidata": "Q1058631",
+    "sources": [
+      {
+        "author": {
+          "en": "Homer",
+          "fr": "Homère"
+        },
+        "work": {
+          "en": "Odyssey",
+          "fr": "Odyssée"
+        },
+        "passage": "22.1–389",
+        "url": {
+          "en": "https://www.theoi.com/Text/HomerOdyssey22.html",
+          "fr": "https://fr.wikisource.org/wiki/L%E2%80%99Odyss%C3%A9e/Traduction_Leconte_de_Lisle/22"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "7.26–7.30",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Suitors of Penelope",
+        "url": "https://en.wikipedia.org/wiki/Suitors_of_Penelope"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Prétendants de Pénélope",
+        "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9tendants_de_P%C3%A9n%C3%A9lope"
+      }
+    ]
+  },
+  {
+    "id": "amazons",
+    "name": {
+      "en": "Amazons",
+      "fr": "Amazones"
+    },
+    "description": {
+      "en": "A people of warrior women, daughters of Ares, who lived on the shores of the Black Sea. Heracles took the belt of their queen Hippolyta, Theseus carried off Antiope, and Penthesilea led them to Troy.",
+      "fr": "Un peuple de femmes guerrières, filles d’Arès, qui vivaient sur les bords de la mer Noire. Héraclès prit la ceinture de leur reine Hippolyte, Thésée enleva Antiope, et Penthésilée les mena à Troie."
+    },
+    "members": [
+      "aegea",
+      "aella",
+      "alcibie",
+      "antandre",
+      "antibrote",
+      "antioche",
+      "antiope-q580862",
+      "areto",
+      "bremusa",
+      "clonie",
+      "derimacheia",
+      "derinoe",
+      "eurypyle-q15439204",
+      "evandre",
+      "harmothoe-q106879772",
+      "hippolyta",
+      "iphito",
+      "lampedo",
+      "marpesia",
+      "melanippe-q3854106",
+      "molpadia",
+      "myrina-q17561739",
+      "orithyia-q7102883",
+      "penthesilea",
+      "polemusa",
+      "thalestris",
+      "thermodosa"
+    ],
+    "wikidata": "Q134154",
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Amazons",
+        "url": "https://en.wikipedia.org/wiki/Amazons"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Amazones",
+        "url": "https://fr.wikipedia.org/wiki/Amazones"
+      }
+    ]
+  },
+  {
+    "id": "danaids",
+    "name": {
+      "en": "Danaids",
+      "fr": "Danaïdes"
+    },
+    "description": {
+      "en": "The fifty daughters of Danaus, married against their will to the fifty sons of Aegyptus. All but Hypermnestra killed their husbands on the wedding night, and in the underworld they carry water in leaking jars for ever.",
+      "fr": "Les cinquante filles de Danaos, mariées de force aux cinquante fils d’Égyptos. Toutes sauf Hypermnestre tuèrent leur époux la nuit des noces, et aux Enfers elles portent à jamais de l’eau dans des jarres percées."
+    },
+    "members": [
+      "amymone",
+      "anaxithea",
+      "antheleia",
+      "automate",
+      "bryce",
+      "cleopatra-q1242207",
+      "euippe-q1246743",
+      "eurythoe",
+      "hypermnestra",
+      "isonoe",
+      "scaea",
+      "stygne"
+    ],
+    "wikidata": "Q724907",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.1.5",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Danaïdes",
+        "url": "https://en.wikipedia.org/wiki/Dana%C3%AFdes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Danaïdes",
+        "url": "https://fr.wikipedia.org/wiki/Dana%C3%AFdes"
+      }
+    ]
+  },
+  {
+    "id": "sons-of-aegyptus",
+    "name": {
+      "en": "Sons of Aegyptus",
+      "fr": "Fils d’Égyptos"
+    },
+    "description": {
+      "en": "The fifty sons of Aegyptus, who forced their cousins the Danaids to marry them and were killed by them on the wedding night, all but Lynceus.",
+      "fr": "Les cinquante fils d’Égyptos, qui forcèrent leurs cousines les Danaïdes à les épouser et furent tués par elles la nuit des noces, tous sauf Lyncée."
+    },
+    "members": [
+      "aegius",
+      "agaptolemus",
+      "alces",
+      "alcmenor",
+      "bromius",
+      "cercetes",
+      "chaetus",
+      "diocorystes",
+      "enceladus-q15208061",
+      "eurylochus-q1378477",
+      "imbrus",
+      "istrus",
+      "lynceus-q7877819",
+      "menemachus",
+      "phantes",
+      "polyctor",
+      "potamon"
+    ],
+    "wikidata": "Q4173622",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.1.5",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Sons of Aegyptus",
+        "url": "https://en.wikipedia.org/wiki/Sons_of_Aegyptus"
+      }
+    ]
+  },
+  {
+    "id": "thespiads",
+    "name": {
+      "en": "Thespiads",
+      "fr": "Thespiades"
+    },
+    "description": {
+      "en": "The fifty daughters of Thespius, king of Thespiae, who each bore a son to Heracles while he stayed with their father to hunt the lion of Cithaeron.",
+      "fr": "Les cinquante filles de Thespios, roi de Thespies, qui donnèrent chacune un fils à Héraclès pendant qu’il séjournait chez leur père pour chasser le lion du Cithéron."
+    },
+    "members": [
+      "aeschreis",
+      "anthea",
+      "anthippe-q21548714",
+      "argela",
+      "calametis",
+      "certhe",
+      "eone",
+      "epilais",
+      "eubote",
+      "eurybia-q107144089",
+      "eurytele",
+      "exole",
+      "heliconis",
+      "hesychia",
+      "lyse",
+      "marse",
+      "meline",
+      "menippis",
+      "nicippe-q3339693",
+      "olympusa",
+      "oria",
+      "patro",
+      "phyleis",
+      "procris-q12774686",
+      "pyrippe",
+      "terpsicrate",
+      "tiphyse",
+      "toxicrate",
+      "xanthis"
+    ],
+    "wikidata": "Q11951669",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.4.10",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      },
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.7.8",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Thespius",
+        "url": "https://en.wikipedia.org/wiki/Thespius"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Thespios",
+        "url": "https://fr.wikipedia.org/wiki/Thespios"
+      }
+    ]
+  },
+  {
+    "id": "niobids",
+    "name": {
+      "en": "Niobids",
+      "fr": "Niobides"
+    },
+    "description": {
+      "en": "The children of Niobe and Amphion, king of Thebes. Niobe boasted of having more children than Leto, whose twins Apollo and Artemis shot them all with their arrows. Their names and number vary from one author to the next.",
+      "fr": "Les enfants de Niobé et d’Amphion, roi de Thèbes. Niobé se vanta d’avoir plus d’enfants que Léto, dont les jumeaux Apollon et Artémis les tuèrent tous de leurs flèches. Leurs noms et leur nombre varient d’un auteur à l’autre."
+    },
+    "members": [
+      "alphenor",
+      "amaleus",
+      "amyclas",
+      "meliboea-q1539124"
+    ],
+    "wikidata": "Q2738502",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.5.6",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Niobids",
+        "url": "https://en.wikipedia.org/wiki/Niobids"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Niobides",
+        "url": "https://fr.wikipedia.org/wiki/Niobides"
+      }
+    ]
+  },
+  {
+    "id": "muses",
+    "name": {
+      "en": "Muses",
+      "fr": "Muses"
+    },
+    "description": {
+      "en": "The nine daughters of Zeus and Mnemosyne (Memory), goddesses of song, poetry and knowledge, who dance on Mount Helicon and inspire the poets.",
+      "fr": "Les neuf filles de Zeus et de Mnémosyne (la Mémoire), déesses du chant, de la poésie et du savoir, qui dansent sur l’Hélicon et inspirent les poètes."
+    },
+    "members": [
+      "clio-q103968",
+      "euterpe",
+      "thalia-q108019",
+      "melpomene",
+      "terpsichore",
+      "erato-q104413",
+      "polyhymnia",
+      "urania",
+      "calliope"
+    ],
+    "wikidata": "Q66016",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "75–79"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Muses",
+        "url": "https://en.wikipedia.org/wiki/Muses"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Muses",
+        "url": "https://fr.wikipedia.org/wiki/Muses"
+      }
+    ]
+  },
+  {
+    "id": "charites",
+    "name": {
+      "en": "Charites (Graces)",
+      "fr": "Charites (Grâces)"
+    },
+    "description": {
+      "en": "The Graces: the three daughters of Zeus and the Oceanid Eurynome, goddesses of charm, beauty and festivity.",
+      "fr": "Les Grâces : les trois filles de Zeus et de l’Océanide Eurynomé, déesses du charme, de la beauté et des fêtes."
+    },
+    "members": [
+      "aglaea-q4439972",
+      "euphrosyne",
+      "thalia-q1260484"
+    ],
+    "wikidata": "Q184353",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "907–909"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Charites",
+        "url": "https://en.wikipedia.org/wiki/Charites"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Charites",
+        "url": "https://fr.wikipedia.org/wiki/Charites"
+      }
+    ]
+  },
+  {
+    "id": "horae",
+    "name": {
+      "en": "Horae (Seasons)",
+      "fr": "Heures (Saisons)"
+    },
+    "description": {
+      "en": "The Seasons, daughters of Zeus and Themis, who keep the order of nature and of cities. Hesiod names Eunomia, Dike and Eirene; at Athens they were Thallo, Auxo and Carpo, who bring blossom, growth and fruit.",
+      "fr": "Les Saisons, filles de Zeus et de Thémis, qui veillent sur l’ordre de la nature et des cités. Hésiode nomme Eunomie, Dicé et Eiréné ; à Athènes, c’étaient Thallo, Auxo et Carpo, qui apportent la fleur, la croissance et le fruit."
+    },
+    "members": [
+      "eunomia",
+      "dike",
+      "eirene-q214987",
+      "thallo",
+      "auxo",
+      "carpo"
+    ],
+    "wikidata": "Q201411",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "901–903"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Horae",
+        "url": "https://en.wikipedia.org/wiki/Horae"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Heures (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Heures_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "moirai",
+    "name": {
+      "en": "Moirai (Fates)",
+      "fr": "Moires"
+    },
+    "description": {
+      "en": "The Fates, who spin, measure and cut the thread of every life: Clotho spins it, Lachesis allots it, Atropos cuts it. Hesiod makes them daughters of Night, and also of Zeus and Themis.",
+      "fr": "Les Parques des Grecs, qui filent, mesurent et coupent le fil de chaque vie : Clotho le file, Lachésis le déroule, Atropos le tranche. Hésiode en fait les filles de la Nuit, et aussi de Zeus et de Thémis."
+    },
+    "members": [
+      "clotho",
+      "lachesis",
+      "atropos"
+    ],
+    "wikidata": "Q180287",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "904–906"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Moirai",
+        "url": "https://en.wikipedia.org/wiki/Moirai"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Moires",
+        "url": "https://fr.wikipedia.org/wiki/Moires"
+      }
+    ]
+  },
+  {
+    "id": "erinyes",
+    "name": {
+      "en": "Erinyes (Furies)",
+      "fr": "Érinyes"
+    },
+    "description": {
+      "en": "The Furies, born from the blood of Uranus that fell on Gaia, who hound those who have shed the blood of their kin.",
+      "fr": "Les Furies, nées du sang d’Ouranos tombé sur Gaïa, qui poursuivent ceux qui ont versé le sang des leurs."
+    },
+    "members": [
+      "alecto",
+      "tisiphone-q3991817",
+      "megaera"
+    ],
+    "wikidata": "Q180262",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "1.1.4",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus1.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_premier"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Erinyes",
+        "url": "https://en.wikipedia.org/wiki/Erinyes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Érinyes",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89rinyes"
+      }
+    ]
+  },
+  {
+    "id": "pleiades",
+    "name": {
+      "en": "Pleiades",
+      "fr": "Pléiades"
+    },
+    "description": {
+      "en": "The seven daughters of the Titan Atlas and the Oceanid Pleione, placed among the stars. Merope, who married the mortal Sisyphus, is the faint one.",
+      "fr": "Les sept filles du Titan Atlas et de l’Océanide Pléioné, placées parmi les étoiles. Mérope, qui épousa le mortel Sisyphe, est la plus pâle."
+    },
+    "members": [
+      "maia",
+      "electra-q858663",
+      "taygete",
+      "alcyone-q763268",
+      "celaeno",
+      "sterope-q748963",
+      "merope-q735518"
+    ],
+    "wikidata": "Q922942",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "3.10.1",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus3.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_troisi%C3%A8me"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Pleiades (Greek mythology)",
+        "url": "https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Pléiades (mythologie)",
+        "url": "https://fr.wikipedia.org/wiki/Pl%C3%A9iades_(mythologie)"
+      }
+    ]
+  },
+  {
+    "id": "hesperides",
+    "name": {
+      "en": "Hesperides",
+      "fr": "Hespérides"
+    },
+    "description": {
+      "en": "The nymphs of the evening, who with the dragon Ladon kept the tree of golden apples in a garden at the western edge of the world, where Heracles came for the apples.",
+      "fr": "Les nymphes du soir, qui avec le dragon Ladon gardaient l’arbre aux pommes d’or dans un jardin au bout de l’Occident, où Héraclès vint chercher les pommes."
+    },
+    "members": [
+      "aegle-q21272183",
+      "erytheia",
+      "hesperia-hesperid",
+      "arethusa-hesperid"
+    ],
+    "wikidata": "Q165938",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.5.11",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hesperides",
+        "url": "https://en.wikipedia.org/wiki/Hesperides"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hespérides",
+        "url": "https://fr.wikipedia.org/wiki/Hesp%C3%A9rides"
+      }
+    ]
+  },
+  {
+    "id": "nereids",
+    "name": {
+      "en": "Nereids",
+      "fr": "Néréides"
+    },
+    "description": {
+      "en": "The fifty sea nymphs, daughters of Nereus, the old man of the sea, and the Oceanid Doris. Hesiod names them all; Thetis, Amphitrite and Galatea are the best known.",
+      "fr": "Les cinquante nymphes de la mer, filles de Nérée, le vieillard de la mer, et de l’Océanide Doris. Hésiode les nomme toutes ; Thétis, Amphitrite et Galatée sont les plus connues."
+    },
+    "members": [
+      "actaea",
+      "agave-q391614",
+      "amatheia",
+      "amphinome",
+      "amphithoe",
+      "amphitrite",
+      "apseudes",
+      "arethusa-q2866192",
+      "asia-q51846366",
+      "autonoe-q12898908",
+      "beroe-q826973",
+      "callianassa",
+      "callianeira",
+      "callianira",
+      "ceto-q97667465",
+      "clio-q12899376",
+      "clymene-q2344103",
+      "cranto",
+      "creneis",
+      "cydippe-q12899524",
+      "cymatolege",
+      "cymo",
+      "cymodoce",
+      "cymothoe",
+      "deiopea",
+      "dero",
+      "dexamene",
+      "dione-q60172446",
+      "doris-q12899696",
+      "doto",
+      "drymo",
+      "dynamene",
+      "eione",
+      "ephyra",
+      "erato-q12899799",
+      "euagore",
+      "eucrante",
+      "eudore-q12899828",
+      "eulimene",
+      "eumolpe",
+      "eunice",
+      "eupompe",
+      "eurydice-q1378437",
+      "evarne",
+      "galatea-q241070",
+      "galene",
+      "glauce-q12900082",
+      "glauconome",
+      "halie-q1571021",
+      "halimede",
+      "hipponoe",
+      "hippothoe-q12900273",
+      "iaera",
+      "ianassa",
+      "ianeira",
+      "ione-q97629593",
+      "iphianassa-q124823433",
+      "laomedia",
+      "leiagore",
+      "leucothoe-q97667477",
+      "ligea",
+      "limnoreia",
+      "lycorias",
+      "lysianassa",
+      "maera-q3854797",
+      "melite-q12901014",
+      "menippe-q97485551",
+      "nausithoe-nereid",
+      "neaera-q1375640",
+      "nemertes",
+      "neomeris",
+      "nesaea",
+      "neso",
+      "opis-q12901294",
+      "orithyia-q12901309",
+      "panopea",
+      "pasithea-q97649797",
+      "phyllodoce",
+      "plexaure-q97629381",
+      "ploto",
+      "polynoe",
+      "polynome",
+      "pontomedusa",
+      "pontoporeia",
+      "pronoe",
+      "proto",
+      "protomedea",
+      "psamathe-q5623747",
+      "sao",
+      "speio",
+      "thaleia",
+      "themisto-q97581031",
+      "thetis",
+      "thoe-q7786636",
+      "xantho"
+    ],
+    "wikidata": "Q54230",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "240–264"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Nereids",
+        "url": "https://en.wikipedia.org/wiki/Nereids"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Néréides",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9r%C3%A9ides"
+      }
+    ]
+  },
+  {
+    "id": "oceanids",
+    "name": {
+      "en": "Oceanids",
+      "fr": "Océanides"
+    },
+    "description": {
+      "en": "The daughters of the Titans Oceanus and Tethys, nymphs of springs, rivers and seas: three thousand, says Hesiod, who names forty-one of them.",
+      "fr": "Les filles des Titans Océan et Téthys, nymphes des sources, des fleuves et des mers : trois mille, dit Hésiode, qui en nomme quarante et une."
+    },
+    "members": [
+      "acaste-q4668463",
+      "admete-q4679171",
+      "aethra-q410531",
+      "amalthea",
+      "amphiro",
+      "amphitrite",
+      "argeia",
+      "asia-q605744",
+      "asterodeia-q748574",
+      "beroe-q826973",
+      "bolbe",
+      "callirhoe-q913161",
+      "camarina",
+      "capheira",
+      "cerceis",
+      "ceto-q5065673",
+      "chryseis-q57424690",
+      "clymene",
+      "clytie",
+      "coryphe",
+      "daeira",
+      "doris-q726279",
+      "eidyia",
+      "electra-q1438693",
+      "eudore-q60691484",
+      "eurynome-q548099",
+      "galaxaura",
+      "hesione-q669635",
+      "hippo",
+      "iache",
+      "ianire",
+      "ianthe-q106620096",
+      "klymene",
+      "lysithea",
+      "meliboea-q2602177",
+      "melobosis",
+      "menestho",
+      "metis",
+      "ocyrhoe-q6048797",
+      "pasithoe",
+      "peitho",
+      "periboea-q3411899",
+      "perse",
+      "phaeno",
+      "philyra-q398524",
+      "pleione",
+      "plexaure-q105348967",
+      "plouto",
+      "pronoia",
+      "prymno",
+      "rhodia",
+      "rhodos",
+      "styx",
+      "telesto",
+      "thoe-q2163700",
+      "thrace",
+      "tyche",
+      "xanthe",
+      "zeuxo"
+    ],
+    "wikidata": "Q182406",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "346–370"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Oceanids",
+        "url": "https://en.wikipedia.org/wiki/Oceanids"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Océanides",
+        "url": "https://fr.wikipedia.org/wiki/Oc%C3%A9anides"
+      }
+    ]
+  },
+  {
+    "id": "potamoi",
+    "name": {
+      "en": "River gods",
+      "fr": "Dieux fleuves"
+    },
+    "description": {
+      "en": "The Potamoi: the sons of Oceanus and Tethys, the gods of the rivers, as many as the Oceanids, their sisters.",
+      "fr": "Les Potamoi : les fils d’Océan et de Téthys, les dieux des fleuves, aussi nombreux que les Océanides, leurs sœurs."
+    },
+    "members": [
+      "aegaeus",
+      "alpheus",
+      "anapos",
+      "ardescus",
+      "asopus",
+      "asterion",
+      "axius",
+      "borysthenes",
+      "caanthus",
+      "caystrus",
+      "cebren",
+      "crinisus",
+      "enipeus",
+      "erasinos",
+      "eridanos",
+      "evenus",
+      "haliacmon",
+      "hydaspes",
+      "inachus",
+      "ismenus",
+      "meander",
+      "nilus",
+      "phasis",
+      "phyllis-q7188515",
+      "pleistos",
+      "sangarius",
+      "scamander-q1134694",
+      "simoeis",
+      "spercheus",
+      "strymon"
+    ],
+    "wikidata": "Q3027575",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "337–345"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — River gods (Greek mythology)",
+        "url": "https://en.wikipedia.org/wiki/River_gods_(Greek_mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Dieu fleuve",
+        "url": "https://fr.wikipedia.org/wiki/Dieu_fleuve"
+      }
+    ]
+  },
+  {
+    "id": "anemoi",
+    "name": {
+      "en": "Anemoi (Winds)",
+      "fr": "Anémoi (Vents)"
+    },
+    "description": {
+      "en": "The winds, sons of Astraeus and Eos the Dawn: Boreas from the north, Zephyrus from the west, Notus from the south.",
+      "fr": "Les vents, fils d’Astréos et d’Éos, l’Aurore : Borée au nord, Zéphyr à l’ouest, Notos au sud."
+    },
+    "members": [
+      "boreas",
+      "zephyrus",
+      "notus"
+    ],
+    "wikidata": "Q476682",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "378–380"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Anemoi",
+        "url": "https://en.wikipedia.org/wiki/Anemoi"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Divinités grecques des vents",
+        "url": "https://fr.wikipedia.org/wiki/Divinit%C3%A9s_grecques_des_vents"
+      }
+    ]
+  },
+  {
+    "id": "cyclopes",
+    "name": {
+      "en": "Cyclopes",
+      "fr": "Cyclopes"
+    },
+    "description": {
+      "en": "The three one-eyed sons of Uranus and Gaia, smiths who forged Zeus’s thunderbolt. Homer’s Cyclopes, Polyphemus’s shepherd people, are another race.",
+      "fr": "Les trois fils d’Ouranos et de Gaïa à l’œil unique, forgerons qui forgèrent la foudre de Zeus. Les Cyclopes d’Homère, le peuple de bergers de Polyphème, sont une autre race."
+    },
+    "members": [
+      "brontes",
+      "steropes",
+      "arges"
+    ],
+    "wikidata": "Q128430",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "139–146"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Cyclopes",
+        "url": "https://en.wikipedia.org/wiki/Cyclopes"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Cyclope",
+        "url": "https://fr.wikipedia.org/wiki/Cyclope"
+      }
+    ]
+  },
+  {
+    "id": "hecatoncheires",
+    "name": {
+      "en": "Hecatoncheires",
+      "fr": "Hécatonchires"
+    },
+    "description": {
+      "en": "The Hundred-Handers, sons of Uranus and Gaia, each with a hundred arms and fifty heads, who helped Zeus overthrow the Titans and then guarded them in Tartarus.",
+      "fr": "Les Cent-Bras, fils d’Ouranos et de Gaïa, chacun avec cent bras et cinquante têtes, qui aidèrent Zeus à renverser les Titans puis les gardèrent dans le Tartare."
+    },
+    "members": [
+      "cottus",
+      "briareus",
+      "gyges"
+    ],
+    "wikidata": "Q175255",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "147–153"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Hecatoncheires",
+        "url": "https://en.wikipedia.org/wiki/Hecatoncheires"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Hécatonchires",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9catonchires"
+      }
+    ]
+  },
+  {
+    "id": "gorgons",
+    "name": {
+      "en": "Gorgons",
+      "fr": "Gorgones"
+    },
+    "description": {
+      "en": "The three daughters of Phorcys and Ceto, with snakes for hair, whose gaze turned to stone. Stheno and Euryale were immortal; Medusa, the mortal one, was beheaded by Perseus.",
+      "fr": "Les trois filles de Phorcys et de Céto, à la chevelure de serpents, dont le regard pétrifiait. Sthéno et Euryale étaient immortelles ; Méduse, la mortelle, fut décapitée par Persée."
+    },
+    "members": [
+      "stheno",
+      "euryale",
+      "medusa"
+    ],
+    "wikidata": "Q102059",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "274–283"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Gorgons",
+        "url": "https://en.wikipedia.org/wiki/Gorgons"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Gorgones",
+        "url": "https://fr.wikipedia.org/wiki/Gorgones"
+      }
+    ]
+  },
+  {
+    "id": "graeae",
+    "name": {
+      "en": "Graeae",
+      "fr": "Grées"
+    },
+    "description": {
+      "en": "The three sisters of the Gorgons, old women from birth, who shared one eye and one tooth. Perseus seized the eye to make them show him the way.",
+      "fr": "Les trois sœurs des Gorgones, vieilles dès leur naissance, qui se partageaient un œil et une dent. Persée s’empara de l’œil pour qu’elles lui indiquent le chemin."
+    },
+    "members": [
+      "enyo-graea",
+      "pemphredo",
+      "deino"
+    ],
+    "wikidata": "Q257768",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library",
+          "fr": "Bibliothèque"
+        },
+        "passage": "2.4.2",
+        "url": {
+          "en": "https://www.theoi.com/Text/Apollodorus2.html",
+          "fr": "https://fr.wikisource.org/wiki/Biblioth%C3%A8que/Livre_second"
+        }
+      },
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "270–273"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Graeae",
+        "url": "https://en.wikipedia.org/wiki/Graeae"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Grées",
+        "url": "https://fr.wikipedia.org/wiki/Gr%C3%A9es"
+      }
+    ]
+  },
+  {
+    "id": "harpies",
+    "name": {
+      "en": "Harpies",
+      "fr": "Harpies"
+    },
+    "description": {
+      "en": "The winged snatchers, daughters of Thaumas and the Oceanid Electra, swift as the storm winds, who carried people off and plagued the blind king Phineus.",
+      "fr": "Les ravisseuses ailées, filles de Thaumas et de l’Océanide Électre, rapides comme les vents de tempête, qui emportaient les humains et tourmentaient le roi aveugle Phinée."
+    },
+    "members": [
+      "aello",
+      "ocypete",
+      "celaeno-harpy",
+      "podarge"
+    ],
+    "wikidata": "Q181360",
+    "sources": [
+      {
+        "author": {
+          "en": "Hesiod",
+          "fr": "Hésiode"
+        },
+        "work": {
+          "en": "Theogony",
+          "fr": "Théogonie"
+        },
+        "url": {
+          "en": "https://www.theoi.com/Text/HesiodTheogony.html",
+          "fr": "https://fr.wikisource.org/wiki/La_Th%C3%A9ogonie_(traduction_Leconte_de_Lisle)"
+        },
+        "passage": "265–269"
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Harpy",
+        "url": "https://en.wikipedia.org/wiki/Harpy"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Harpies",
+        "url": "https://fr.wikipedia.org/wiki/Harpies"
+      }
+    ]
+  },
+  {
+    "id": "sirens",
+    "name": {
+      "en": "Sirens",
+      "fr": "Sirènes"
+    },
+    "description": {
+      "en": "The singers half woman, half bird, daughters of the river Achelous, whose song drew sailors onto the rocks. Homer gives them no names; later authors name Aglaope, Leucosia, Ligeia, Parthenope, Peisinoe or Thelxiepeia.",
+      "fr": "Les chanteuses mi-femmes mi-oiseaux, filles du fleuve Achéloos, dont le chant attirait les marins sur les écueils. Homère ne les nomme pas ; des auteurs plus tardifs les appellent Aglaopé, Leucosie, Ligie, Parthénope, Peisinoé ou Thelxiépie."
+    },
+    "members": [
+      "aglaope",
+      "leucosia",
+      "ligeia"
+    ],
+    "wikidata": "Q150986",
+    "sources": [
+      {
+        "author": {
+          "en": "Apollodorus",
+          "fr": "Apollodore"
+        },
+        "work": {
+          "en": "Library, Epitome",
+          "fr": "Bibliothèque, Épitomé"
+        },
+        "passage": "7.18–7.19",
+        "url": {
+          "en": "https://www.theoi.com/Text/ApollodorusE.html"
+        }
+      }
+    ],
+    "links": [
+      {
+        "kind": "wikipedia",
+        "lang": "en",
+        "title": "Wikipedia — Siren (mythology)",
+        "url": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+      },
+      {
+        "kind": "wikipedia",
+        "lang": "fr",
+        "title": "Wikipédia — Sirène (mythologie grecque)",
+        "url": "https://fr.wikipedia.org/wiki/Sir%C3%A8ne_(mythologie_grecque)"
+      }
+    ]
+  }
+]

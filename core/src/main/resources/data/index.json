@@ -28,5 +28,6 @@
   ],
   "cycles": "cycles.json",
   "eras": "eras.json",
-  "places": "places.json"
+  "places": "places.json",
+  "groups": "groups.json"
 }
