@@ -3,7 +3,7 @@
 # Runs MythoStory in the Android emulator: starts the emulator's virtual phone — created on the first run, in
 # external/android-avd —, waits for it to boot, then builds the app if needed, installs it and starts it there
 # (scripts/run.sh --android). The emulator keeps running afterwards: run this again after a change, it reinstalls.
-# Needs the emulator and its system image: scripts/setup.sh --emulator, once.
+# Needs the emulator and its system image: scripts/setup.sh --emulator, once (offered when they are missing).
 #
 #   scripts/emulator.sh                  start the phone (or use the one running), install and start the app
 #   scripts/emulator.sh --rebuild        force a rebuild of the app first
@@ -47,11 +47,22 @@ for package in $(conf ANDROID_EMULATOR_PACKAGES); do
 done
 device=$(conf ANDROID_AVD_DEVICE)
 
-emulator=${ANDROID_HOME:-}/emulator/emulator
-if ! $android || [ ! -x "$emulator" ] || [ -z "$image" ] || [ ! -d "$ANDROID_HOME/${image//;//}" ]; then
-  echo "The Android emulator is not set up: run scripts/setup.sh --emulator (once; 2 to 3 GB)" >&2
-  exit 1
+# Whether setup.sh --emulator has deployed the emulator and its system image.
+emulator_set_up() {
+  [ -n "$image" ] && [ -x "external/android-sdk/emulator/emulator" ] && [ -d "external/android-sdk/${image//;//}" ]
+}
+if ! emulator_set_up; then
+  echo "The Android emulator is not set up: scripts/setup.sh --emulator installs it, once (the Android SDK and its" >&2
+  echo "licences, the emulator and its system image: 3 to 4 GB)." >&2
+  # as externals.sh does: at a terminal, offer to run it; elsewhere (the CI), stop with the way out
+  [ -t 0 ] && [ -t 2 ] || exit 1
+  read -r -p "Run scripts/setup.sh --emulator now? [Y/n] " answer
+  case "$answer" in ''|[Yy]*) scripts/setup.sh --emulator ;; *) exit 1 ;; esac
+  emulator_set_up || { echo "the emulator is still not set up: see setup.sh's messages above" >&2; exit 1; }
+  # setup.sh has just made the Android SDK: its tools into PATH, as externals.sh does
+  . scripts/externals.sh
 fi
+emulator=$ANDROID_HOME/emulator/emulator
 avdmanager() { "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" "$@"; }
 # the virtual phone under external/, with the rest of the externals
 export ANDROID_AVD_HOME=$PWD/external/android-avd

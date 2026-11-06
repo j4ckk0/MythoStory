@@ -3,7 +3,7 @@ rem
 rem Runs MythoStory in the Android emulator on Windows: starts the emulator's virtual phone — created on the first
 rem run, in external\android-avd —, waits for it to boot, then builds the app if needed, installs it and starts it
 rem there (scripts\run.bat --android). The emulator keeps running afterwards: run this again after a change.
-rem Needs the emulator and its system image: scripts\setup.bat --emulator, once.
+rem Needs the emulator and its system image: scripts\setup.bat --emulator, once (offered when they are missing).
 rem
 rem   scripts\emulator.bat                 start the phone (or use the one running), install and start the app
 rem   scripts\emulator.bat --rebuild       force a rebuild of the app first
@@ -53,8 +53,19 @@ if not exist "%EMULATOR%" set "SET_UP=0"
 if not defined IMAGE set "SET_UP=0"
 if defined IMAGE if not exist "%ANDROID_HOME%\!IMAGE:;=\!" set "SET_UP=0"
 if "%SET_UP%"=="0" (
-  echo The Android emulator is not set up: run scripts\setup.bat --emulator ^(once; 2 to 3 GB^) >&2
-  exit /b 1
+  echo The Android emulator is not set up: scripts\setup.bat --emulator installs it, once ^(the Android SDK and its >&2
+  echo licences, the emulator and its system image: 3 to 4 GB^). >&2
+  rem as externals.bat does: offer to run it, No after 30 s so that the CI does not hang
+  choice /c YN /n /t 30 /d N /m "Run scripts\setup.bat --emulator now? [Y/N] "
+  if errorlevel 2 exit /b 1
+  call "%~dp0setup.bat" --emulator || exit /b 1
+  rem setup.bat has just made the Android SDK: its tools into PATH, as externals.bat does
+  call "%~dp0externals.bat" || exit /b 1
+  if not exist "%ANDROID_HOME%\emulator\emulator.exe" (
+    echo the emulator is still not set up: see setup.bat's messages above >&2
+    exit /b 1
+  )
+  set "EMULATOR=!ANDROID_HOME!\emulator\emulator.exe"
 )
 rem the virtual phone under external\, with the rest of the externals
 set "ANDROID_AVD_HOME=%CD%\external\android-avd"
