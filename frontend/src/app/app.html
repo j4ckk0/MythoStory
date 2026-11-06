@@ -1,25 +1,35 @@
-<header>
-  <a class="brand" routerLink="/">{{ 'app.title' | i18n }}</a>
-  <nav>
-    <a routerLink="/characters" routerLinkActive="active">{{ 'nav.characters' | i18n }}</a>
-    <a routerLink="/groups" routerLinkActive="active">{{ 'nav.groups' | i18n }}</a>
-    <a routerLink="/stories" routerLinkActive="active">{{ 'nav.stories' | i18n }}</a>
-    <a routerLink="/timeline" routerLinkActive="active">{{ 'nav.timeline' | i18n }}</a>
-    <a routerLink="/map" routerLinkActive="active">{{ 'nav.map' | i18n }}</a>
-    <a routerLink="/settings" routerLinkActive="active">{{ 'nav.settings' | i18n }}</a>
-    <a routerLink="/help" routerLinkActive="active">{{ 'nav.help' | i18n }}</a>
-  </nav>
-  <form class="search" role="search" (ngSubmit)="search()">
-    <input name="q" type="search" [(ngModel)]="query" (input)="search()" [placeholder]="'nav.search.placeholder' | i18n"
-           [attr.aria-label]="'nav.search' | i18n" />
-  </form>
-  <select class="i18n-select" [ngModel]="i18n.language()" (ngModelChange)="i18n.setLanguage($event)"
-          [attr.aria-label]="'i18n.language' | i18n" [title]="'i18n.language' | i18n">
-    @for (language of languages; track language) {
-      <option [value]="language" [attr.lang]="language">{{ languageNames[language] }}</option>
-    }
-  </select>
-</header>
+<div class="top">
+  <header>
+    <a class="brand" routerLink="/">
+      <!-- an amphora, the page's emblem (and favicon.svg's), with two painted bands -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" fill-rule="evenodd" d="M8.6 2H15.4V3.3H14V5.5C14 6.5 18.2 7.9 18.2 11.6C18.2 15.2 15.2 17.6 13.7 19.5H14.7V21.6H9.3V19.5H10.3C8.8 17.6 5.8 15.2 5.8 11.6C5.8 7.9 10 6.5 10 5.5V3.3H8.6ZM6.4 10.2H17.6V10.9H6.4ZM7.2 14H16.8V14.5H7.2Z" />
+        <path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M10 4.3C6.4 4.1 5.9 6.6 7.4 8.7M14 4.3C17.6 4.1 18.1 6.6 16.6 8.7" />
+      </svg>
+      {{ 'app.title' | i18n }}
+    </a>
+    <nav>
+      <a routerLink="/characters" routerLinkActive="active">{{ 'nav.characters' | i18n }}</a>
+      <a routerLink="/groups" routerLinkActive="active">{{ 'nav.groups' | i18n }}</a>
+      <a routerLink="/stories" routerLinkActive="active">{{ 'nav.stories' | i18n }}</a>
+      <a routerLink="/timeline" routerLinkActive="active">{{ 'nav.timeline' | i18n }}</a>
+      <a routerLink="/map" routerLinkActive="active">{{ 'nav.map' | i18n }}</a>
+      <a routerLink="/settings" routerLinkActive="active">{{ 'nav.settings' | i18n }}</a>
+      <a routerLink="/help" routerLinkActive="active">{{ 'nav.help' | i18n }}</a>
+    </nav>
+    <form class="search" role="search" (ngSubmit)="search()">
+      <input name="q" type="search" [(ngModel)]="query" (input)="search()" [placeholder]="'nav.search.placeholder' | i18n"
+             [attr.aria-label]="'nav.search' | i18n" />
+    </form>
+    <select class="i18n-select" [ngModel]="i18n.language()" (ngModelChange)="i18n.setLanguage($event)"
+            [attr.aria-label]="'i18n.language' | i18n" [title]="'i18n.language' | i18n">
+      @for (language of languages; track language) {
+        <option [value]="language" [attr.lang]="language">{{ languageNames[language] }}</option>
+      }
+    </select>
+  </header>
+  <div class="meander" aria-hidden="true"></div>
+</div>
 
 <main>
   @if (catalog.unreachable()) {
@@ -33,11 +43,14 @@
 <app-player />
 
 <footer>
-  @if (catalog.info(); as info) {
-    <span class="version">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</span>
-    @if (info.voices?.length) {
-      <span class="credits"> · {{ 'speech.credits' | i18n }}</span>
+  <div class="meander" aria-hidden="true"></div>
+  <p>
+    @if (catalog.info(); as info) {
+      <span class="version">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</span>
+      @if (info.voices?.length) {
+        <span class="credits"> · {{ 'speech.credits' | i18n }}</span>
+      }
+      <span> · <a routerLink="/help" fragment="licences">{{ 'help.licences.title' | i18n }}</a></span>
     }
-    <span> · <a routerLink="/help" fragment="licences">{{ 'help.licences.title' | i18n }}</a></span>
-  }
+  </p>
 </footer>
