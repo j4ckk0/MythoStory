@@ -273,8 +273,8 @@ French and English, everywhere: everything about it is named **i18n**.
   `fr.ts` must hold the same (the compiler checks it), shown by the `i18n` pipe
   (`{{ 'nav.characters' | i18n }}`); catalog texts by the `i18nText` pipe
   (`{{ character.name | i18nText }}`). `I18nService` holds the language: the reader's last
-  choice, else the browser's (the phone's on Android), else English; the header's button switches it,
-  instantly.
+  choice, else the browser's (the phone's on Android), else English; the header's list of languages, each named
+  in itself (English, Français), switches it, instantly.
 - **The Android app's own strings** (its name, its error) are Android resources: `res/values/`
   (English) and `res/values-fr/`.
 

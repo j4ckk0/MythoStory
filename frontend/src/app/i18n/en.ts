@@ -18,7 +18,6 @@ export const en = {
   'nav.search.placeholder': 'Search a character, a group or a story',
 
   'i18n.language': 'Language',
-  'i18n.switch': 'Lire en français',
   'i18n.name.en': 'In English',
   'i18n.name.fr': 'In French',
 

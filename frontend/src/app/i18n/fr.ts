@@ -17,10 +17,9 @@ export const fr: Record<I18nKey, string> = {
   'nav.map': 'Carte',
   'nav.settings': 'Réglages',
   'nav.help': 'Aide',
-  'nav.search.placeholder': 'Rechercher un personnage, un groupe ou une histoire',
+  'nav.search.placeholder': 'Personnage, groupe ou histoire…',
 
   'i18n.language': 'Langue',
-  'i18n.switch': 'Read in English',
   'i18n.name.en': 'En anglais',
   'i18n.name.fr': 'En français',
 

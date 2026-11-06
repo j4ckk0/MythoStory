@@ -3,6 +3,7 @@ import { HttpTestingController, provideHttpClientTesting } from '@angular/common
 import { TestBed } from '@angular/core/testing';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
+import { App } from './app';
 import { routes } from './app.routes';
 import { Catalog, CatalogService } from './catalog/catalog';
 import { I18nService } from './i18n/i18n.service';
@@ -75,6 +76,23 @@ describe('MythoStory', () => {
     harness.detectChanges();
     return harness.routeNativeElement as HTMLElement;
   }
+
+  it('switches the language from the header’s list, which names each language in itself', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const fixture = TestBed.createComponent(App);
+    http.expectOne('api/catalog').flush(CATALOG);
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0.1', platform: 'desktop', languages: ['en', 'fr'] });
+    fixture.detectChanges();
+    await fixture.whenStable();
+    const select = fixture.nativeElement.querySelector('select.i18n-select') as HTMLSelectElement;
+    expect([...select.options].map((o) => o.textContent?.trim())).toEqual(['English', 'Français']);
+    expect(select.value).toBe('en');
+    select.value = 'fr';
+    select.dispatchEvent(new Event('change'));
+    fixture.detectChanges();
+    expect(TestBed.inject(I18nService).language()).toBe('fr');
+    expect(fixture.nativeElement.querySelector('nav')?.textContent).toContain('Personnages');
+  });
 
   it('has every i18n message in French that it has in English', () => {
     expect(Object.keys(fr).sort()).toEqual(Object.keys(en).sort());

@@ -13,8 +13,12 @@
     <input name="q" type="search" [(ngModel)]="query" (input)="search()" [placeholder]="'nav.search.placeholder' | i18n"
            [attr.aria-label]="'nav.search' | i18n" />
   </form>
-  <button type="button" class="i18n-switch" (click)="i18n.setLanguage(i18n.otherLanguage())"
-          [attr.lang]="i18n.otherLanguage()" [title]="'i18n.switch' | i18n">{{ i18n.otherLanguage() }}</button>
+  <select class="i18n-select" [ngModel]="i18n.language()" (ngModelChange)="i18n.setLanguage($event)"
+          [attr.aria-label]="'i18n.language' | i18n" [title]="'i18n.language' | i18n">
+    @for (language of languages; track language) {
+      <option [value]="language" [attr.lang]="language">{{ languageNames[language] }}</option>
+    }
+  </select>
 </header>
 
 <main>

@@ -7,6 +7,9 @@ import { fr } from './fr';
 export const I18N_LANGUAGES = ['en', 'fr'] as const;
 export type I18nLanguage = (typeof I18N_LANGUAGES)[number];
 
+/** Each i18n language's name in itself, as the language list offers it: a reader finds their own whatever the page's. */
+export const I18N_LANGUAGE_NAMES: Record<I18nLanguage, string> = { en: 'English', fr: 'Français' };
+
 /** A catalog text in every i18n language, by code (backend: I18nText). */
 export type I18nText = Partial<Record<I18nLanguage, string>>;
 
@@ -21,7 +24,7 @@ const I18N_STORAGE_KEY = 'mythostory.i18n.language';
 export class I18nService {
   private readonly document = inject(DOCUMENT);
   readonly language = signal<I18nLanguage>(this.initialLanguage());
-  /** The other language, which the switch offers. */
+  /** The other language, which the settings list after the reader's. */
   readonly otherLanguage = computed<I18nLanguage>(() => (this.language() === 'en' ? 'fr' : 'en'));
 
   constructor() {
