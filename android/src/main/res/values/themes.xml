@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The app's window: no action bar — the page has its own header, with the app's name — and the page's own
+      background colour (frontend: styles.css) behind the system bars and while the page loads; dark icons on the
+      light status bar.
+      values-night/themes.xml: the same in the dark theme.
+    -->
+    <style name="MythoStory" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/page</item>
+        <item name="android:statusBarColor">@color/page</item>
+        <item name="android:navigationBarColor">@color/page</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <color name="page">#f6f1e7</color>
+</resources>

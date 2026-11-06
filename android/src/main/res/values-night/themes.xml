@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- values/themes.xml in the dark theme: the page's dark colours (frontend: styles.css, its background colour), light icons -->
+    <style name="MythoStory" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/page</item>
+        <item name="android:statusBarColor">@color/page</item>
+        <item name="android:navigationBarColor">@color/page</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <color name="page">#14100c</color>
+</resources>
