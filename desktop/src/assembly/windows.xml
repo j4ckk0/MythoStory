@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Windows distribution: zip with the bundled JRE, Piper and its voices, and a .bat launcher. -->
+<!-- Windows distribution: jtools-parent's — the jar, its launchers, the runtime jlink linked — with Piper and its voices. -->
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.2.0 http://maven.apache.org/xsd/assembly-2.2.0.xsd">
@@ -14,8 +14,17 @@
       <source>${project.build.directory}/${project.build.finalName}.jar</source>
       <destName>mythostory.jar</destName>
     </file>
+    <!-- the launchers jtools-parent's distributions made: without a console, and in one -->
     <file>
-      <source>src/dist/mythostory.bat</source>
+      <source>${project.build.directory}/MythoStory.exe</source>
+    </file>
+    <file>
+      <source>${project.build.directory}/jtools-dist-work/windows/app.bat</source>
+      <destName>mythostory.bat</destName>
+      <lineEnding>crlf</lineEnding>
+    </file>
+    <file>
+      <source>src/dist/mythostory.ini</source>
       <lineEnding>crlf</lineEnding>
     </file>
     <file>
@@ -30,7 +39,7 @@
 
   <fileSets>
     <fileSet>
-      <directory>${project.build.directory}/jre/windows</directory>
+      <directory>${project.build.directory}/runtime/windows</directory>
       <outputDirectory>jre</outputDirectory>
     </fileSet>
     <fileSet>

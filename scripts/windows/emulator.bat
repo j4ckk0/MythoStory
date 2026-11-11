@@ -2,20 +2,21 @@
 rem
 rem Runs MythoStory in the Android emulator on Windows: starts the emulator's virtual phone — created on the first
 rem run, in external\android-avd —, waits for it to boot, then builds the app if needed, installs it and starts it
-rem there (scripts\run.bat --android). The emulator keeps running afterwards: run this again after a change.
-rem Needs the emulator and its system image: scripts\setup.bat --emulator, once (offered when they are missing).
+rem there (scripts\windows\run-android.bat). The emulator keeps running afterwards: run this again after a change.
+rem Needs the emulator and its system image: scripts\windows\setup.bat --emulator, once (offered when they are missing).
 rem
-rem   scripts\emulator.bat                 start the phone (or use the one running), install and start the app
-rem   scripts\emulator.bat --rebuild       force a rebuild of the app first
-rem   scripts\emulator.bat --wipe          the phone as new: its data wiped as it starts
-rem   scripts\emulator.bat --no-window     the phone without its window
-rem   scripts\emulator.bat --stop          stop the phone
+rem   scripts\windows\emulator.bat                 start the phone (or use the one running), install and start the app
+rem   scripts\windows\emulator.bat --rebuild       force a rebuild of the app first
+rem   scripts\windows\emulator.bat --wipe          the phone as new: its data wiped as it starts
+rem   scripts\windows\emulator.bat --no-window     the phone without its window
+rem   scripts\windows\emulator.bat --stop          stop the phone
 rem
 setlocal EnableDelayedExpansion
-cd /d "%~dp0.."
+cd /d "%~dp0..\.."
 rem (the project root)
 call "%~dp0externals.bat" || exit /b 1
-rem (setup done? it is offered otherwise; the externals first; sets ANDROID and ANDROID_HOME)
+call "%~dp0android-env.bat" || exit /b 1
+rem (setup done? it is offered otherwise; the externals first; then ANDROID and ANDROID_HOME)
 
 set "AVD=mythostory"
 set "LOG=tmp\emulator.log"
@@ -53,14 +54,15 @@ if not exist "%EMULATOR%" set "SET_UP=0"
 if not defined IMAGE set "SET_UP=0"
 if defined IMAGE if not exist "%ANDROID_HOME%\!IMAGE:;=\!" set "SET_UP=0"
 if "%SET_UP%"=="0" (
-  echo The Android emulator is not set up: scripts\setup.bat --emulator installs it, once ^(the Android SDK and its >&2
+  echo The Android emulator is not set up: scripts\windows\setup.bat --emulator installs it, once ^(the Android SDK and its >&2
   echo licences, the emulator and its system image: 3 to 4 GB^). >&2
   rem as externals.bat does: offer to run it, No after 30 s so that the CI does not hang
-  choice /c YN /n /t 30 /d N /m "Run scripts\setup.bat --emulator now? [Y/N] "
+  choice /c YN /n /t 30 /d N /m "Run scripts\windows\setup.bat --emulator now? [Y/N] "
   if errorlevel 2 exit /b 1
   call "%~dp0setup.bat" --emulator || exit /b 1
   rem setup.bat has just made the Android SDK: its tools into PATH, as externals.bat does
   call "%~dp0externals.bat" || exit /b 1
+  call "%~dp0android-env.bat" || exit /b 1
   if not exist "%ANDROID_HOME%\emulator\emulator.exe" (
     echo the emulator is still not set up: see setup.bat's messages above >&2
     exit /b 1
@@ -91,7 +93,7 @@ if not exist "%ANDROID_AVD_HOME%\%AVD%.ini" (
 
 if defined SERIAL (
   if "%WIPE%"=="1" (
-    echo --wipe: the phone is already running; stop it first ^(scripts\emulator.bat --stop^) >&2
+    echo --wipe: the phone is already running; stop it first ^(scripts\windows\emulator.bat --stop^) >&2
     exit /b 1
   )
   echo == the MythoStory phone is running ^(!SERIAL!^)
@@ -114,7 +116,7 @@ set "OPTIONS=-avd %AVD% -port !PORT! -no-boot-anim"
 if "%WIPE%"=="1" set "OPTIONS=!OPTIONS! -wipe-data"
 if "%WINDOW%"=="0" set "OPTIONS=!OPTIONS! -no-window -no-audio"
 echo == starting the MythoStory phone ^(!SERIAL!; its log: %LOG%^)
-rem in a console of its own, minimised: the phone outlives this script, which hands over to run.bat
+rem in a console of its own, minimised: the phone outlives this script, which hands over to run-android.bat
 start "MythoStory phone" /min cmd /c ""%EMULATOR%" !OPTIONS! ^> "%CD%\%LOG%" 2^>^&1"
 echo == waiting for it to boot
 set /a WAITED=0
@@ -133,9 +135,9 @@ goto :boot
 echo == booted
 
 :run
-rem run.bat installs with a bare adb: this phone, whatever else adb sees
+rem run-android.bat installs with a bare adb: this phone, whatever else adb sees
 set "ANDROID_SERIAL=!SERIAL!"
-call "%~dp0run.bat" --android !ARGS!
+call "%~dp0run-android.bat" !ARGS!
 exit /b !errorlevel!
 
 rem ---- the serial of the emulator running our phone, found by the phone's name, in SERIAL (undefined when none)

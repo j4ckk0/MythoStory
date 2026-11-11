@@ -4,6 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <!-- The build's conventions — the one jar, the page's npm build, the distributions' runtimes — are JToolsFramework's -->
+  <parent>
+    <groupId>org.jtools.framework</groupId>
+    <artifactId>jtools-parent</artifactId>
+    <version>1.6.1</version>
+    <relativePath/>
+  </parent>
+
   <groupId>org.jtools</groupId>
   <artifactId>mythostory-parent</artifactId>
   <version>${revision}</version>
@@ -32,7 +40,13 @@
 
   <properties>
     <revision>0.1.0</revision>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- the program, for jtools-parent: its one jar (desktop/target/mythostory.jar), its distributions -->
+    <jtools.app.id>mythostory</jtools.app.id>
+    <jtools.app.name>MythoStory</jtools.app.name>
+    <jtools.app.mainClass>org.jtools.mythostory.desktop.MainKt</jtools.app.mainClass>
+    <jtools.app.port>8080</jtools.app.port>
+    <jtools.app.windowsVersion>0.1.0.0</jtools.app.windowsVersion>
+    <!-- core and backend, which Android runs too: Java 17 bytecode (jtools-parent's is 25, the desktop's) -->
     <maven.compiler.release>17</maven.compiler.release>
     <kotlin.compiler.jvmTarget>17</kotlin.compiler.jvmTarget>
     <!-- Kotlin: the version Ktor is built with; android/ reads it from here for its own Kotlin -->
@@ -143,40 +157,14 @@
             </execution>
           </executions>
         </plugin>
+        <!-- MythoStory's tests read their module's files by paths from the module (src/main/resources/data/…), not from the
+             root of the repository as jtools-parent has them run -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.6.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.5.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.5.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.16.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.5.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>3.2.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-shade-plugin</artifactId>
-          <version>3.6.2</version>
+          <configuration>
+            <workingDirectory>${project.basedir}</workingDirectory>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>

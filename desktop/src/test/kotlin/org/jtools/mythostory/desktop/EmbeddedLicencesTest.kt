@@ -9,8 +9,8 @@ import kotlin.test.Test
 import kotlin.test.assertTrue
 
 /**
- * The embedded components the help page lists (licences/embedded.json) are those externals.conf deploys: a JRE, Piper
- * or a voice changed there, the list must follow, and this test says so.
+ * The embedded components the help page lists (licences/embedded.json) are those externals.conf deploys: the jmods the
+ * runtime is linked from, Piper or a voice changed there, the list must follow, and this test says so.
  */
 class EmbeddedLicencesTest {
     private val conf = File("../externals.conf").readLines().filter { "=" in it && !it.startsWith("#") }
@@ -21,14 +21,14 @@ class EmbeddedLicencesTest {
     private fun check(component: String, externals: List<String>, mark: (String) -> String) {
         val version = embedded[component] ?: error("licences/embedded.json lists no $component")
         externals.forEach { key ->
-            val url = conf.getValue(key)
+            val url = conf.getValue(key).replace("%2B", "+")   // Temurin's URLs write the version's + either way
             assertTrue(mark(version) in url, "$component $version in licences/embedded.json, but externals.conf's $key is $url")
         }
     }
 
     @Test
     fun `the JRE, Piper and the voices are those externals_conf deploys and voices_json names`() {
-        check("Eclipse Temurin JRE (OpenJDK)", listOf("JRE_LINUX", "JRE_WINDOWS")) { "jdk-$it+" }
+        check("Eclipse Temurin JRE (OpenJDK)", listOf("JMODS_LINUX", "JMODS_WINDOWS")) { "jdk-$it+" }
         check("Piper", listOf("PIPER_LINUX", "PIPER_WINDOWS")) { "/$it/" }
         // every voice externals.conf deploys, by its model's name
         conf.filterKeys { it.startsWith("VOICE_") }.forEach { (key, url) ->

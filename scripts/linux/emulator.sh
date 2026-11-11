@@ -2,18 +2,18 @@
 #
 # Runs MythoStory in the Android emulator: starts the emulator's virtual phone — created on the first run, in
 # external/android-avd —, waits for it to boot, then builds the app if needed, installs it and starts it there
-# (scripts/run.sh --android). The emulator keeps running afterwards: run this again after a change, it reinstalls.
-# Needs the emulator and its system image: scripts/setup.sh --emulator, once (offered when they are missing).
+# (scripts/linux/run-android.sh). The emulator keeps running afterwards: run this again after a change, it reinstalls.
+# Needs the emulator and its system image: scripts/linux/setup.sh --emulator, once (offered when they are missing).
 #
-#   scripts/emulator.sh                  start the phone (or use the one running), install and start the app
-#   scripts/emulator.sh --rebuild        force a rebuild of the app first
-#   scripts/emulator.sh --wipe           the phone as new: its data wiped as it starts (the app uninstalled with it)
-#   scripts/emulator.sh --no-window      the phone without its window (the CI, a remote machine)
-#   scripts/emulator.sh --stop           stop the phone
+#   scripts/linux/emulator.sh                  start the phone (or use the one running), install and start the app
+#   scripts/linux/emulator.sh --rebuild        force a rebuild of the app first
+#   scripts/linux/emulator.sh --wipe           the phone as new: its data wiped as it starts (the app uninstalled with it)
+#   scripts/linux/emulator.sh --no-window      the phone without its window (the CI, a remote machine)
+#   scripts/linux/emulator.sh --stop           stop the phone
 #
 set -euo pipefail
-cd "$(dirname "$(readlink -f "$0")")/.."   # the project root
-. scripts/externals.sh   # setup done? (offers it otherwise); the externals first; $android, $ANDROID_HOME
+cd "$(dirname "$(readlink -f "$0")")/../.."   # the project root
+. scripts/linux/externals.sh   # setup done? (offers it otherwise); the externals first; $android, $ANDROID_HOME
 
 AVD=mythostory
 LOG=tmp/emulator.log
@@ -52,15 +52,15 @@ emulator_set_up() {
   [ -n "$image" ] && [ -x "external/android-sdk/emulator/emulator" ] && [ -d "external/android-sdk/${image//;//}" ]
 }
 if ! emulator_set_up; then
-  echo "The Android emulator is not set up: scripts/setup.sh --emulator installs it, once (the Android SDK and its" >&2
+  echo "The Android emulator is not set up: scripts/linux/setup.sh --emulator installs it, once (the Android SDK and its" >&2
   echo "licences, the emulator and its system image: 3 to 4 GB)." >&2
   # as externals.sh does: at a terminal, offer to run it; elsewhere (the CI), stop with the way out
   [ -t 0 ] && [ -t 2 ] || exit 1
-  read -r -p "Run scripts/setup.sh --emulator now? [Y/n] " answer
-  case "$answer" in ''|[Yy]*) scripts/setup.sh --emulator ;; *) exit 1 ;; esac
+  read -r -p "Run scripts/linux/setup.sh --emulator now? [Y/n] " answer
+  case "$answer" in ''|[Yy]*) scripts/linux/setup.sh --emulator ;; *) exit 1 ;; esac
   emulator_set_up || { echo "the emulator is still not set up: see setup.sh's messages above" >&2; exit 1; }
   # setup.sh has just made the Android SDK: its tools into PATH, as externals.sh does
-  . scripts/externals.sh
+  . scripts/linux/externals.sh
 fi
 emulator=$ANDROID_HOME/emulator/emulator
 avdmanager() { "$ANDROID_HOME/cmdline-tools/latest/bin/avdmanager" "$@"; }
@@ -96,7 +96,7 @@ if [ ! -f "$ANDROID_AVD_HOME/$AVD.ini" ]; then
 fi
 
 if [ -n "$serial" ]; then
-  $wipe && { echo "--wipe: the phone is already running; stop it first (scripts/emulator.sh --stop)" >&2; exit 1; }
+  $wipe && { echo "--wipe: the phone is already running; stop it first (scripts/linux/emulator.sh --stop)" >&2; exit 1; }
   echo "== the MythoStory phone is running ($serial)"
 else
   # the first free port of the emulator's range; the serial is emulator-<port>
@@ -108,7 +108,7 @@ else
   $wipe && options+=(-wipe-data)
   $window || options+=(-no-window -no-audio)
   echo "== starting the MythoStory phone ($serial; its log: $LOG)"
-  # detached: the phone outlives this script, which hands over to run.sh
+  # detached: the phone outlives this script, which hands over to run-android.sh
   setsid nohup "$emulator" "${options[@]}" > "$LOG" 2>&1 < /dev/null &
   emulator_pid=$!
   echo -n "== waiting for it to boot"
@@ -125,6 +125,6 @@ else
   echo " booted"
 fi
 
-# run.sh installs with a bare adb: this phone, whatever else adb sees
+# run-android.sh installs with a bare adb: this phone, whatever else adb sees
 export ANDROID_SERIAL=$serial
-exec scripts/run.sh --android ${args[@]+"${args[@]}"}
+exec scripts/linux/run-android.sh ${args[@]+"${args[@]}"}

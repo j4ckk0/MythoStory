@@ -14,10 +14,12 @@
   <packaging>jar</packaging>
 
   <name>MythoStory desktop</name>
-  <description>The desktop program: starts the server on localhost and opens the browser on it. Its jar, desktop/target/mythostory.jar, embeds everything; the distributions add a JRE.</description>
+  <description>The desktop program: starts the server on localhost and opens the browser on it. Its jar, desktop/target/mythostory.jar, embeds everything; the distributions add a runtime, Piper and its voices.</description>
 
   <properties>
-    <!-- the desktop runs on the bundled JRE, never on Android: the JDK's own bytecode -->
+    <!-- the program's module, for jtools-parent: this module's jar becomes the one jar, embedding everything -->
+    <jtools.app.skip>false</jtools.app.skip>
+    <!-- the desktop runs on the bundled runtime, never on Android: the JDK's own bytecode -->
     <maven.compiler.release>25</maven.compiler.release>
     <kotlin.compiler.jvmTarget>25</kotlin.compiler.jvmTarget>
   </properties>
@@ -55,6 +57,11 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>license-maven-plugin</artifactId>
         <executions>
+          <!-- jtools-parent's Apache header on the sources is the framework's own licence, not MythoStory's -->
+          <execution>
+            <id>add-license-headers</id>
+            <phase>none</phase>
+          </execution>
           <execution>
             <id>third-party</id>
             <phase>generate-resources</phase>
@@ -70,39 +77,18 @@
           </execution>
         </executions>
       </plugin>
-      <!-- every dependency joins the jar, so that java -jar mythostory.jar needs nothing else -->
+      <!-- jtools-parent's one jar, with every jar's META-INF/services merged: Ktor and logback find their parts
+           through ServiceLoader -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <executions>
           <execution>
-            <id>executable-jar</id>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
+            <id>jtools-embed</id>
             <configuration>
-              <createDependencyReducedPom>false</createDependencyReducedPom>
-              <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>org.jtools.mythostory.desktop.MainKt</mainClass>
-                </transformer>
-                <!-- Ktor and logback find their parts through ServiceLoader: every jar's services, merged -->
+              <transformers combine.children="append">
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
               </transformers>
-              <filters>
-                <filter>
-                  <artifact>*:*</artifact>
-                  <excludes>
-                    <exclude>module-info.class</exclude>
-                    <exclude>META-INF/versions/*/module-info.class</exclude>
-                    <exclude>META-INF/*.SF</exclude>
-                    <exclude>META-INF/*.DSA</exclude>
-                    <exclude>META-INF/*.RSA</exclude>
-                    <exclude>META-INF/MANIFEST.MF</exclude>
-                  </excludes>
-                </filter>
-              </filters>
             </configuration>
           </execution>
         </executions>
@@ -112,21 +98,17 @@
 
   <profiles>
     <!--
-      mvn package -Pdist
-      Builds the self-contained distributions, each with a bundled JRE
-      (external/jre-windows.zip and external/jre-linux.tar.gz at the root of the repository, deployed by
-      scripts/setup.sh, not tracked) and a launcher script, into releases/ at the root (not tracked, kept by
-      mvn clean; the previous versions' releases are removed there by scripts/package.*):
-        releases/mythostory-<version>-windows.zip    mythostory.bat
+      mvn package -Pdist (scripts/linux/package.sh)
+      jtools-parent's profile links a runtime per platform (jlink, from the jmods in external/) and makes the
+      launchers; this one then makes the archives again with Piper and its voices beside them (external/, deployed
+      by scripts/linux/setup.sh), under the same names, into releases/ at the root:
+        releases/mythostory-<version>-windows.zip    MythoStory.exe, mythostory.bat
         releases/mythostory-<version>-linux.tar.gz   mythostory.sh
     -->
     <profile>
       <id>dist</id>
       <properties>
-        <jre.archives>${maven.multiModuleProjectDirectory}/external</jre.archives>
-        <jre.windows>jre-windows.zip</jre.windows>
-        <jre.linux>jre-linux.tar.gz</jre.linux>
-        <jre.unpacked>${project.build.directory}/jre</jre.unpacked>
+        <piper.archives>${maven.multiModuleProjectDirectory}/external</piper.archives>
         <release.dir>${maven.multiModuleProjectDirectory}/releases</release.dir>
       </properties>
       <build>
@@ -136,57 +118,39 @@
             <artifactId>maven-antrun-plugin</artifactId>
             <executions>
               <execution>
-                <id>unpack-jre</id>
+                <id>unpack-piper</id>
                 <phase>prepare-package</phase>
                 <goals>
                   <goal>run</goal>
                 </goals>
                 <configuration>
                   <target>
-                    <fail message="no ${jre.archives}/${jre.windows}: run scripts/setup.sh (see README: Externals)">
-                      <condition>
-                        <not><available file="${jre.archives}/${jre.windows}"/></not>
-                      </condition>
-                    </fail>
-                    <fail message="no ${jre.archives}/${jre.linux}: run scripts/setup.sh (see README: Externals)">
-                      <condition>
-                        <not><available file="${jre.archives}/${jre.linux}"/></not>
-                      </condition>
-                    </fail>
-                    <!-- cutdirsmapper strips the archives' top-level "jdk-xx-jre/" directory -->
-                    <unzip dest="${jre.unpacked}/windows">
-                      <fileset dir="${jre.archives}" includes="${jre.windows}"/>
-                      <cutdirsmapper dirs="1"/>
-                    </unzip>
-                    <untar dest="${jre.unpacked}/linux" compression="gzip">
-                      <fileset dir="${jre.archives}" includes="${jre.linux}"/>
-                      <cutdirsmapper dirs="1"/>
-                    </untar>
-                    <!-- Piper and its voices (external/, scripts/setup.sh): the voice that reads the stories -->
-                    <fail message="no ${jre.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/setup.sh (see README: Externals)">
+                    <!-- Piper and its voices (external/, scripts/linux/setup.sh): the voice that reads the stories -->
+                    <fail message="no ${piper.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/linux/setup.sh (see README: Externals)">
                       <condition>
                         <not><and>
-                          <available file="${jre.archives}/piper-linux.tar.gz"/>
-                          <available file="${jre.archives}/piper-windows.zip"/>
+                          <available file="${piper.archives}/piper-linux.tar.gz"/>
+                          <available file="${piper.archives}/piper-windows.zip"/>
                           <!-- each language's default voice (voices.json), at least -->
-                          <available file="${jre.archives}/voices/fr_FR-siwis-medium.onnx"/>
-                          <available file="${jre.archives}/voices/en_GB-alba-medium.onnx"/>
+                          <available file="${piper.archives}/voices/fr_FR-siwis-medium.onnx"/>
+                          <available file="${piper.archives}/voices/en_GB-alba-medium.onnx"/>
                         </and></not>
                       </condition>
                     </fail>
                     <!-- the system tar, not Ant's: Piper's libraries are a soname and symlinks to it, which Ant
                          would write as empty files, and its programs would lose their executable bit -->
+                    <delete dir="${project.build.directory}/piper"/>
                     <mkdir dir="${project.build.directory}/piper/linux"/>
                     <exec executable="tar" failonerror="true">
                       <arg value="-xzf"/>
-                      <arg value="${jre.archives}/piper-linux.tar.gz"/>
+                      <arg value="${piper.archives}/piper-linux.tar.gz"/>
                       <arg value="-C"/>
                       <arg value="${project.build.directory}/piper/linux"/>
                       <arg value="--strip-components"/>
                       <arg value="1"/>
                     </exec>
                     <unzip dest="${project.build.directory}/piper/windows">
-                      <fileset dir="${jre.archives}" includes="piper-windows.zip"/>
+                      <fileset dir="${piper.archives}" includes="piper-windows.zip"/>
                       <cutdirsmapper dirs="1"/>
                     </unzip>
                   </target>
@@ -195,11 +159,13 @@
             </executions>
           </plugin>
           <plugin>
+            <!-- after jtools-parent's distributions in the same phase (a parent's plugins run before a module's own):
+                 the same archives, Piper and the voices added -->
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-assembly-plugin</artifactId>
             <executions>
               <execution>
-                <id>dist</id>
+                <id>dist-piper</id>
                 <phase>package</phase>
                 <goals>
                   <goal>single</goal>

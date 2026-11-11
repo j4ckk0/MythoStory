@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Linux distribution: tar.gz with the bundled JRE, Piper and its voices, and a .sh launcher. -->
+<!-- Linux distribution: jtools-parent's — the jar, its launcher, the runtime jlink linked — with Piper and its voices. -->
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.2.0 http://maven.apache.org/xsd/assembly-2.2.0.xsd">
@@ -15,10 +15,17 @@
       <destName>mythostory.jar</destName>
       <fileMode>0644</fileMode>
     </file>
+    <!-- the launcher jtools-parent's distributions made -->
     <file>
-      <source>src/dist/mythostory.sh</source>
+      <source>${project.build.directory}/jtools-dist-work/unix/app.sh</source>
+      <destName>mythostory.sh</destName>
       <lineEnding>unix</lineEnding>
       <fileMode>0755</fileMode>
+    </file>
+    <file>
+      <source>src/dist/mythostory.ini</source>
+      <lineEnding>unix</lineEnding>
+      <fileMode>0644</fileMode>
     </file>
     <file>
       <source>${maven.multiModuleProjectDirectory}/README.md</source>
@@ -33,9 +40,9 @@
   </files>
 
   <fileSets>
-    <!-- Ant's untar does not keep permissions: restore the executable bits here. -->
+    <!-- the runtime jlink linked (jtools-parent): its executables 0755, the rest 0644 -->
     <fileSet>
-      <directory>${project.build.directory}/jre/linux</directory>
+      <directory>${project.build.directory}/runtime/linux</directory>
       <outputDirectory>jre</outputDirectory>
       <includes>
         <include>bin/**</include>
@@ -46,7 +53,7 @@
       <directoryMode>0755</directoryMode>
     </fileSet>
     <fileSet>
-      <directory>${project.build.directory}/jre/linux</directory>
+      <directory>${project.build.directory}/runtime/linux</directory>
       <outputDirectory>jre</outputDirectory>
       <excludes>
         <exclude>bin/**</exclude>
