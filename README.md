@@ -9,7 +9,7 @@ groups and their other stories, from a group to its members, and from one episod
 
 One application, two platforms:
 
-- **Desktop**: a local server (`mythostory.jar`, with a bundled JRE) serves the page on
+- **Desktop**: a local server (`mythostory.jar`, with a bundled Java runtime) serves the page on
   `http://127.0.0.1:8080/` and opens the browser on it. The browser is the window.
 - **Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the
   **same page**. Everything stays on the phone and works offline (the links lead to the web).
@@ -28,7 +28,7 @@ One application, two platforms:
             └───────────┬─────────────────────────┬──────────────┘
                         │                         │
            desktop: main + browser       android: Application + WebView
-           (fat jar + JRE, Maven)        (APK, Gradle run by Maven)
+           (fat jar + runtime, Maven)        (APK, Gradle run by Maven)
 ```
 
 | Module      | What it is                                                                                        | Built by |
@@ -75,7 +75,7 @@ data/index.json               the files below, in order (CatalogTest fails on a 
 data/characters/<kind>.json   the curated characters, one file per kind: primordials, titans, olympians,
                               deities, nymphs, heroes, mortals, creatures
 data/characters/wikidata/     the characters imported from Wikidata, one file per kind: never edited by hand,
-                              scripts/import-characters.sh rewrites them (below)
+                              scripts/linux/import-characters.sh rewrites them (below)
 data/groups.json              the groups: the Argonauts, the Muses… and their members, from the ancient lists
 data/stories/<cycle>.json     the stories, one file per cycle
 data/cycles.json              the cycles: sequences of stories, in their order
@@ -135,19 +135,19 @@ reader's language first and marks the others.
 character, a story, an era, a place, a group), a place no story uses, a story without a source or a character, a
 group of fewer than two members or listing one twice, a text missing one of the languages, or a link in an unknown
 language; the build runs it (`CatalogTest`), and the server would not start. **The links** are
-checked by `scripts/check-links.sh` (`scripts\check-links.bat`): every URL must answer — the videos
+checked by `scripts/linux/check-links.sh` (`scripts\windows\check-links.bat`): every URL must answer — the videos
 through YouTube's oEmbed, which answers only for videos that exist, the Wikipedia articles through
 Wikipedia's API, fifty to a request. It needs the network, so the build
 never runs it: run it after editing the data, and now and then, since pages move.
 
 **Adding** a character, a group or a story: edit the JSON of its kind, `groups.json` or its cycle (a new file: add it to
-`index.json`), with every text in English and French, then `scripts/build.sh` (the checks) and
-`scripts/check-links.sh`. Summaries are written in our own words, never copied: the sources are
+`index.json`), with every text in English and French, then `scripts/linux/build.sh` (the checks) and
+`scripts/linux/check-links.sh`. Summaries are written in our own words, never copied: the sources are
 cited, with the passage.
 
 ### The characters from Wikidata
 
-`scripts/import-characters.sh` (`.bat`) imports **every character of Greek mythology Wikidata knows
+`scripts/linux/import-characters.sh` (`.bat`) imports **every character of Greek mythology Wikidata knows
 with a Wikipedia article in English or French** — the instances of "mythological Greek character"
 (Q22988604) and its subclasses —, `--all` even those without (names, little else). It needs the
 network, takes half a minute, and rewrites `data/characters/wikidata/` whole; the curated characters
@@ -170,7 +170,7 @@ Each imported character gets:
   reorganisation).
 
 The catalog must be sound with what is imported before anything is written. Then
-`scripts/check-links.sh` and `scripts/build.sh`. Wikidata knows characters the import leaves out: those without a Wikipedia article of their own — Castor and
+`scripts/linux/check-links.sh` and `scripts/linux/build.sh`. Wikidata knows characters the import leaves out: those without a Wikipedia article of their own — Castor and
 Pollux share one, as do Zetes and Calais — and those Wikidata files under classes outside "mythological Greek
 character" (the Harpy Celaeno, the Siren Ligeia). The ones the groups need are curated, with their `wikidata`, so
 that a later import never brings them twice. A group's members must stay in the catalog: an import that dropped one
@@ -253,7 +253,7 @@ browser's —, each one heard first (the Iliad's first line); the browser rememb
   fraction of a second (a process per model, started on its first text and kept; a cache for what was
   said already); the page sends a few sentences at a time — Piper keeps the intonation going across
   them —, fetching the next ones while the current ones play. Piper and its voices are externals
-  (`scripts/setup.sh` deploys them) and the distributions carry them, with their credits in
+  (`scripts/linux/setup.sh` deploys them) and the distributions carry them, with their credits in
   `VOICES.md` and the *Help* page (Piper: MIT; the voices: CC BY 4.0, CC BY-SA 4.0, public domain).
   The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
 - **Without Piper**, the browser's own speech synthesis (the Web Speech API) with the system's voices,
@@ -284,11 +284,15 @@ messages file, and its texts in every data file — the checks list what is miss
 ## Quick start
 
 ```bash
-scripts/setup.sh              # once: the JDK, Maven, Node.js and the JREs into external/
-scripts/run.sh                # build if needed, start, open the browser
+scripts/linux/setup.sh        # once: the JDK, Maven, Node.js, Piper and its voices into external/
+scripts/linux/run.sh          # build if needed, start, open the browser
 ```
 
-On Windows, the same scripts are `scripts\*.bat`.
+On Windows, the same scripts are `scripts\windows\*.bat`. They are
+[JToolsFramework](https://github.com/j4ckk0/JToolsFramework)'s devkit's, whose `jtools-parent` is also the build's
+parent (the page's npm build, the one jar, the distributions' runtimes); MythoStory's own scripts stand beside them
+(below). `jtools.conf` is what the devkit's scripts know of the project, and `scripts/linux/jtools sync` refreshes them
+from the framework version it names.
 
 ## Externals
 
@@ -299,21 +303,23 @@ source control, under **generic names** that the scripts and the build are the o
 external/jdk/                 the scripts' JAVA_HOME (Temurin 25); its java first in their PATH
 external/maven/               its mvn first in their PATH
 external/node/                Node.js and npm, which Maven runs to build the frontend
-external/jre-linux.tar.gz     bundled by scripts/package.sh in the Linux distribution
-external/jre-windows.zip      bundled in the Windows distribution
+external/jdk-linux.tar.gz     this machine's JDK again, as its archive: the jlink that links the distributions' runtimes
+external/jmods-linux.tar.gz   the jmods the Linux distribution's runtime is linked from, external/jmods-windows.zip the Windows one's
 external/piper/               Piper, the speech synthesis the desktop server reads the stories aloud with
 external/piper-linux.tar.gz   Piper for the Linux distribution, external/piper-windows.zip for the Windows one
 external/voices/<model>.onnx  Piper's voices (externals.conf's VOICE_*), with their <model>.onnx.json
 external/gradle/              (--android) Gradle, which Maven runs to build the APK
 external/android-sdk/         (--android) the Android SDK: command-line tools, platform, build-tools, platform-tools;
                               (--emulator) the emulator and its system image too
-external/android-avd/         the emulator's virtual phone, which scripts/emulator.sh creates
+external/android-avd/         the emulator's virtual phone, which scripts/linux/emulator.sh creates
 external/downloads/           the archives as downloaded, kept so that a second run downloads nothing
 ```
 
-`scripts/setup.sh` (Linux: needs `curl`, `tar`, `unzip`) and `scripts\setup.bat` (Windows 10 1803
-and later: `curl` and `tar` are there) download and deploy what is missing. `--force` downloads and
-deploys everything again. **`--android` adds Gradle and the Android SDK** (about a gigabyte), and
+`scripts/linux/setup.sh` (needs `curl`, `tar`, `unzip`) and `scripts\windows\setup.bat` (Windows 10 1803 and later:
+`curl` and `tar` are there) download and deploy what is missing; `--force` deploys everything again. The JDK, Maven,
+Node.js and the jmods are the devkit's to deploy; Piper, the voices and the Android externals are MythoStory's own,
+`scripts/linux/setup.local.sh`, which the devkit's setup runs after its own (on Windows, `setup.local.bat` deploys the
+Android externals). **`--android` adds Gradle and the Android SDK** (about a gigabyte), and
 asks you to accept the Android SDK licences. **`--emulator`** does the same and adds the Android emulator and the
 system image of its virtual phone (`ANDROID_EMULATOR_PACKAGES`, 2 to 3 GB more; a Google Play image, which carries
 Google's text-to-speech for the speaker button).
@@ -328,9 +334,10 @@ Keep the secrets out of `externals.conf`: put them, with the mirror, in `externa
 it (same syntax, not under source control) or in the environment. The environment wins over the
 local file, which wins over `externals.conf`.
 
-`scripts/externals.sh` / `externals.bat`, called by every script, check that setup has been run
-(everything it deploys is there) and offer to run it when something is missing. At a terminal they
-ask; the CI or a hook stops with the way out instead. They then put the externals first in `PATH`.
+`scripts/linux/externals.sh` / `externals.bat`, called by every script, check that setup has been run
+(everything it deploys is there, `scripts/linux/externals.local.sh` saying what of MythoStory's own) and offer to run
+it when something is missing. At a terminal they ask; the CI or a hook stops with the way out instead. They then put
+the externals first in `PATH`.
 
 Libraries (Maven Central, Google's Maven, npm) are not externals: Maven, Gradle and npm fetch them
 into their usual caches. To fetch them from an Artifactory too, point `~/.m2/settings.xml`, an
@@ -339,46 +346,50 @@ into their usual caches. To fetch them from an Artifactory too, point `~/.m2/set
 ## Building
 
 ```bash
-scripts/build.sh                  # clean build, every test: desktop/target/mythostory.jar (+ the APK, see below)
-scripts/build.sh -DskipTests      # extra arguments are passed to mvn
-scripts/build.sh --no-android     # the desktop alone, even with the Android SDK there
-scripts/ci.sh                     # the CI: quiet, npm ci (exactly package-lock.json)
-scripts/check-links.sh            # every URL of the catalog answers (network; not part of the build)
-scripts/import-characters.sh      # the characters from Wikidata (network; see "The characters from Wikidata")
+scripts/linux/build.sh                     # clean build, every test: desktop/target/mythostory.jar (+ the APK, see below)
+scripts/linux/build.sh -DskipTests         # extra arguments are passed to mvn
+scripts/linux/build.sh -P-android          # the desktop alone, even with the Android SDK there
+scripts/linux/ci.sh                        # the CI: quiet, npm ci (exactly package-lock.json)
+scripts/linux/check-links.sh               # every URL of the catalog answers (network; not part of the build)
+scripts/linux/import-characters.sh         # the characters from Wikidata (network; see "The characters from Wikidata")
 ```
 
-The Android app is built **as soon as `scripts/setup.sh --android` has run**: Maven's `android`
+The Android app is built **as soon as `scripts/linux/setup.sh --android` has run**: Maven's `android`
 profile switches itself on when `external/android-sdk/platforms` exists. Plain `mvn package` does
 the same; `mvn package -P-android` leaves it out.
 
 ## Running
 
 ```bash
-scripts/run.sh                                  # build if a source is newer than the jar, then run
-scripts/run.sh --port 9090 --no-browser         # the program's options: --port, --host, --no-browser, --keep-running, --help
-scripts/run.sh --rebuild
-scripts/run.sh --android                        # install and start the app on the device or emulator adb sees
-scripts/emulator.sh                             # the same in the Android emulator, which it starts first (below)
-scripts/stop.sh                                 # stop every MythoStory server on this machine (scripts\stop.bat on Windows)
-scripts/stop.sh --port 9090                     # only the one on that port
+scripts/linux/run.sh                            # build if a source is newer than the jar, then run
+scripts/linux/run.sh --port 9090 --no-browser   # the program's options: --port, --host, --no-browser, --keep-running, --help
+scripts/linux/run.sh --rebuild
+scripts/linux/run-android.sh                    # install and start the app on the device or emulator adb sees
+scripts/linux/emulator.sh                       # the same in the Android emulator, which it starts first (below)
+scripts/linux/stop.sh                           # stop every MythoStory server on this machine (scripts\windows\stop.bat on Windows)
+scripts/linux/stop.sh --port 9090               # only the one on that port
 ```
 
-The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network). **It stops by itself
+The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network), on port 8080 unless `mythostory.ini`,
+beside the jar, names another. **It stops by itself
 when its last page is closed**, like a program whose last window is closed: each page holds a stream
 from the server (`/api/session`) and, as it goes away, says so; the server waits five seconds — a
 reload, a tab closed while another opens — and stops. Should the browser crash instead, the stream
 breaks and the server notices within seconds. It never stops before a first page has opened, and
 `--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
 
+Run from the repository, the program reads the stories aloud with `external/piper` and `external/voices`; a
+distribution's are beside its jar.
+
 ### In the Android emulator
 
 ```bash
-scripts/setup.sh --emulator          # once: the Android SDK, its licences, the emulator and its system image
-scripts/emulator.sh                  # start the virtual phone (created on the first run), build, install, start the app
-scripts/emulator.sh --rebuild        # force a rebuild of the app first; any run.sh option is passed on
-scripts/emulator.sh --wipe           # the phone as new, its data wiped as it starts
-scripts/emulator.sh --no-window      # the phone without its window
-scripts/emulator.sh --stop           # stop the phone
+scripts/linux/setup.sh --emulator          # once: the Android SDK, its licences, the emulator and its system image
+scripts/linux/emulator.sh                  # start the virtual phone (created on the first run), build, install, start the app
+scripts/linux/emulator.sh --rebuild        # force a rebuild of the app first (run-android.sh's option)
+scripts/linux/emulator.sh --wipe           # the phone as new, its data wiped as it starts
+scripts/linux/emulator.sh --no-window      # the phone without its window
+scripts/linux/emulator.sh --stop           # stop the phone
 ```
 
 The virtual phone, `mythostory` — an `ANDROID_AVD_DEVICE` (a Pixel 7) on the system image of
@@ -393,36 +404,38 @@ Angular's dev server reloads the page on every change. It forwards `/api` to the
 (`frontend/proxy.conf.json`):
 
 ```bash
-scripts/run.sh --no-browser --keep-running      # the backend on :8080, whatever the dev server's reloads
+scripts/linux/run.sh --no-browser --keep-running   # the backend on :8080, whatever the dev server's reloads
 cd frontend && PATH="$PWD/../external/node/bin:$PATH" npm start   # the page on http://localhost:4200/
 ```
 
 ## Packaging
 
 ```bash
-scripts/package.sh                 # or scripts\package.bat on Windows
-scripts/package.sh --no-android    # the desktop's distributions alone
+scripts/linux/package.sh                 # or scripts\windows\package.bat on Windows
+scripts/linux/package.sh --no-android    # the desktop's distributions alone (jtools.conf's PACKAGE_OPTION)
 ```
 
 Into `releases/` (not under source control):
 
 | File                                    | What it holds                                         |
 |-----------------------------------------|-------------------------------------------------------|
-| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README (about 220 MB) |
-| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `mythostory.bat`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README (about 215 MB) |
+| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README |
+| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `MythoStory.exe` (no console), `mythostory.bat`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README |
 | `mythostory-<version>-android.apk`      | the app (when the Android SDK is there)               |
 
-The previous versions' releases are removed; anything else in `releases/` is left alone. The script
-checks every archive: the jar, the launcher and the JRE, the page inside the jar, and the page and the
-server inside the APK.
+`jre/` is a runtime jlink links from Temurin's jmods with only the modules MythoStory uses (about 66 MB, against
+200 MB for a whole JRE); the voices are most of the rest. jtools-parent's `dist` profile links it and makes the
+launchers; MythoStory's own (`desktop/pom.xml`, `desktop/src/assembly/`) then makes the archives again with Piper and
+the voices. The previous versions' archives are removed; anything else in `releases/` is left alone. The script
+checks every archive: the jar, the launchers, the `.ini` and the runtime, and the page inside the jar.
 
 **Licences**: the page's *Help* (`/help`, `/api/licences`) lists what MythoStory carries and under
 which licence:
 
-- the embedded software — the Temurin JRE (GPL-2.0 with the Classpath exception; its own notices in
+- the embedded software — the Temurin runtime (GPL-2.0 with the Classpath exception; its own notices in
   `jre/legal/`), Piper and what it runs on, the voices — from
   [`desktop/src/main/resources/licences/embedded.json`](desktop/src/main/resources/licences/embedded.json),
-  kept by hand; `EmbeddedLicencesTest` fails when `externals.conf` deploys another JRE, Piper or voice;
+  kept by hand; `EmbeddedLicencesTest` fails when `externals.conf` deploys other jmods, Piper or voice;
 - the server's libraries, from their poms: `license-maven-plugin` writes `licences/THIRD-PARTY.txt` into
   the jar at every build;
 - the page's libraries: the Angular build's `3rdpartylicenses.txt`, served as
@@ -438,7 +451,7 @@ all come from it.
 
 ## Git hooks
 
-`.githooks/pre-push` runs `scripts/ci.sh` before every push. Enable it once per clone:
+`.githooks/pre-push` runs `scripts/linux/ci.sh` before every push. Enable it once per clone:
 
 ```bash
 git config core.hooksPath .githooks
