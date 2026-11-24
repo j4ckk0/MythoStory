@@ -41,6 +41,7 @@ data class Catalog(
             checkI18n("character ${c.id}: its description", c.description)
             c.roman?.let { checkI18n("character ${c.id}: its Roman name", it) }
             c.parents.filterNot { it in characterIds }.forEach { add("character ${c.id}: no parent $it") }
+            duplicates(c.parents).forEach { add("character ${c.id} lists parent $it twice") }
             if (c.id in c.parents) add("character ${c.id} is its own parent")
             c.links.forEach { checkLink("character ${c.id}", it) }
         }
@@ -52,6 +53,11 @@ data class Catalog(
             s.characters.filterNot { it in characterIds }.forEach { add("story ${s.id}: no character $it") }
             s.groups.filterNot { it in groupIds }.forEach { add("story ${s.id}: no group $it") }
             s.related.filterNot { it in storyIds }.forEach { add("story ${s.id}: no related story $it") }
+            // each listed once: the page shows a chip per entry, keyed by its id
+            duplicates(s.characters).forEach { add("story ${s.id} lists character $it twice") }
+            duplicates(s.groups).forEach { add("story ${s.id} lists group $it twice") }
+            duplicates(s.related).forEach { add("story ${s.id} lists related story $it twice") }
+            if (s.id in s.related) add("story ${s.id} is related to itself")
             s.sources.forEach { checkSource("story ${s.id}", it) }
             s.links.forEach { checkLink("story ${s.id}", it) }
             if (s.era !in eraIds) add("story ${s.id}: no era ${s.era}")
@@ -59,6 +65,8 @@ data class Catalog(
             s.dating?.let { checkI18n("story ${s.id}: its dating", it) }
             s.places.filterNot { it in placeIds }.forEach { add("story ${s.id}: no place $it") }
             if (s.route && s.places.size < 2) add("story ${s.id}: a route needs two places at least")
+            // a journey may pass a place twice (the way home); a story's places otherwise are each listed once
+            if (!s.route) duplicates(s.places).forEach { add("story ${s.id} lists place $it twice") }
         }
         for (e in eras) {
             checkI18n("era ${e.id}: its title", e.title)
@@ -88,6 +96,10 @@ data class Catalog(
             c.stories.filterNot { it in storyIds }.forEach { add("cycle ${c.id}: no story $it") }
             duplicates(c.stories).forEach { add("cycle ${c.id} lists $it twice") }
         }
+        // the page lists the stories cycle by cycle, and so do its indexes (a character's stories, the timeline, the
+        // map): a story in no cycle would be on none of them
+        val inCycles = cycles.flatMap { it.stories }.toSet()
+        stories.filterNot { it.id in inCycles }.forEach { add("story ${it.id} is in no cycle: the page would show it nowhere") }
     }
 
     /** A text in every i18n language, none blank. */

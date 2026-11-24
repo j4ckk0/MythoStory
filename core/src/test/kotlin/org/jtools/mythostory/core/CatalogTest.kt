@@ -24,12 +24,6 @@ class CatalogTest {
         }
     }
 
-    @Test
-    fun `every story belongs to a cycle, so that the page lists it`() {
-        val inCycles = catalog.cycles.flatMap { it.stories }.toSet()
-        assertEquals(emptyList(), catalog.stories.map { it.id }.filterNot { it in inCycles })
-    }
-
     private fun both(text: String): I18nText = I18n.LANGUAGES.associateWith { text }
 
     @Test
@@ -67,6 +61,40 @@ class CatalogTest {
                 "group alone has fewer than two members",
             ),
             problems.toSet(),
+        )
+    }
+
+    @Test
+    fun `a story in no cycle, an entry listed twice, a story related to itself are caught`() {
+        val zeus = Character("zeus", both("Zeus"), CharacterKind.OLYMPIAN, description = both("King of the gods"), parents = listOf("cronus", "cronus"))
+        val cronus = Character("cronus", both("Cronus"), CharacterKind.TITAN, description = both("The Titan king"))
+        val source = Source(both("Hesiod"), both("Theogony"))
+        val troy = Place("troy", both("Troy"), 39.96, 26.24, "Q22647")
+        val ithaca = Place("ithaca", both("Ithaca"), 38.4, 20.7, "Q187232")
+        val told = Story(
+            "told", both("Told"), both("Once"), listOf("zeus", "zeus"), groups = listOf("gods", "gods"), sources = listOf(source),
+            related = listOf("told", "untold", "untold"), era = "gods", places = listOf("troy", "troy"),
+        )
+        val journey = Story("journey", both("Journey"), both("Away and back"), listOf("cronus"), sources = listOf(source), era = "gods",
+            places = listOf("ithaca", "troy", "ithaca"), route = true)
+        val untold = Story("untold", both("Untold"), both("Never listed"), listOf("cronus"), sources = listOf(source), era = "gods")
+        val problems = Catalog(
+            listOf(zeus, cronus), listOf(told, journey, untold), listOf(Cycle("c", both("C"), both("A cycle"), listOf("told", "journey"))),
+            eras = listOf(Era("gods", both("Gods"), both("The age of gods"))), places = listOf(troy, ithaca),
+            groups = listOf(Group("gods", both("Gods"), both("The gods"), listOf("zeus", "cronus"))),
+        ).problems()
+        assertEquals(
+            setOf(
+                "character zeus lists parent cronus twice",
+                "story told lists character zeus twice",
+                "story told lists group gods twice",
+                "story told lists related story untold twice",
+                "story told is related to itself",
+                "story told lists place troy twice",
+                "story untold is in no cycle: the page would show it nowhere",
+            ),
+            problems.toSet(),
+            "a route passing a place twice is a journey home, not a fault",
         )
     }
 }
