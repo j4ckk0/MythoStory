@@ -2,6 +2,7 @@ package org.jtools.mythostory.android
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Build
@@ -21,6 +22,9 @@ class MainActivity : Activity() {
     private lateinit var frame: FrameLayout
     private lateinit var speech: SpeechBridge
 
+    /** The app's server's port, once it listens: its pages, and only they, stay in the WebView. */
+    private var serverPort = -1
+
     /** Back, from Android 13 on: the page before, while there is one (see [followHistory]). */
     private val goBack: Any? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) OnBackInvokedCallback { webView.goBack() } else null
     private var goBackRegistered = false
@@ -32,10 +36,15 @@ class MainActivity : Activity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
         webView.webViewClient = object : WebViewClient() {
-            // the app's pages stay in the app; any other link opens in the browser
+            // the app's pages stay in the app — its own server's, not another app's on this phone, which would get the
+            // speech bridge —; any other link opens in the browser, or nowhere when the phone has nothing to open it with
             override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean {
-                if (request.url.host == "127.0.0.1") return false
-                startActivity(Intent(Intent.ACTION_VIEW, request.url))
+                if (request.url.host == "127.0.0.1" && request.url.port == serverPort) return false
+                try {
+                    startActivity(Intent(Intent.ACTION_VIEW, request.url))
+                } catch (e: ActivityNotFoundException) {
+                    // no browser, no app for that kind of link: the page stays as it is
+                }
                 return true
             }
 
@@ -66,6 +75,7 @@ class MainActivity : Activity() {
                 if (error != null) {
                     webView.loadData(getString(R.string.server_failed, error.message), "text/plain", "UTF-8")
                 } else {
+                    serverPort = port
                     webView.loadUrl("http://127.0.0.1:$port/")
                 }
             }
