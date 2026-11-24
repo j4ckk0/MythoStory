@@ -71,7 +71,7 @@ class MythoStoryServerTest {
         assertContains(body, "\"name\":\"MythoStory\"")
         assertContains(body, "\"platform\":\"android\"")
         assertContains(body, "\"languages\":[\"en\",\"fr\"]")
-        assertContains(body, "\"version\":\"0.") // filtered from the pom, never the placeholder
+        assertContains(body, Regex("\"version\":\"\\d+\\.\\d+\\.\\d+\"")) // filtered from the pom, never the placeholder
     }
 
     @Test

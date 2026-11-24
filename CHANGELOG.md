@@ -3,7 +3,7 @@
 What each version brings, for whoever installs it. `scripts/linux/release.sh` publishes the version the root pom
 names with its section here as the release's notes (JToolsFramework's devkit).
 
-## 0.1.0
+## 1.0.0 — 2026-11-24
 
 The first version: a guide to Greek mythology, in English and in French, on the desktop and on Android.
 
@@ -14,7 +14,8 @@ The first version: a guide to Greek mythology, in English and in French, on the 
   read them online, and linked to Wikipedia, articles and videos; a **timeline** by generation and a **map** of
   their places.
 - **Reading aloud**: on the desktop, neural voices that work offline (Piper), chosen in the settings, each heard
-  first; on Android, the phone's own voices.
+  first — Claire and Antoine in French, Cori, Kristin, LJ and Norman in English, each trained from scratch on free
+  recordings (`VOICES.md`); on Android, the phone's own voices.
 - **One program, two platforms**: on the desktop, a local server and the browser as its window, which stops once its
   last page is closed (`--keep-alive` keeps it serving); on Android, the same server inside the app.
 - The desktop listens on port **8090** (`--port`, or `port=` in `mythostory.ini`). Launched again, it opens the
