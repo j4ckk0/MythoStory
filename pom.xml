@@ -71,7 +71,9 @@
     <jtools.app.id>mythostory</jtools.app.id>
     <jtools.app.name>MythoStory</jtools.app.name>
     <jtools.app.mainClass>org.jtools.mythostory.desktop.MainKt</jtools.app.mainClass>
-    <jtools.app.port>8080</jtools.app.port>
+    <!-- MythoStory's own port, never 8080 (JToolsFramework: "Ports"); Main.kt, mythostory.ini and frontend/proxy.conf.json
+         say the same, which DesktopSettingsTest checks -->
+    <jtools.app.port>8090</jtools.app.port>
     <jtools.app.windowsVersion>0.1.0.0</jtools.app.windowsVersion>
     <!-- Kotlin's bytecode follows each module's Java level: jtools-parent's 25, core's and backend's 17 (their poms).
          jtools-parent, a Java framework's, says none: Kotlin would compile for Java 8 -->

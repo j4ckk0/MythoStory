@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- The desktop's log, on the console: Ktor's start and the errors, not every request. -->
+<!-- The desktop's log: on the console, and in ~/.mythostory/logs/mythostory.0.log (two files of 5 MB, the older
+     mythostory.1.log), where JToolsFramework's programs keep theirs — what a MythoStory.exe without a console said.
+     Ktor's start and the errors, the program's own messages, not every request. -->
 <configuration>
   <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} %-5level %logger{20} - %msg%n</pattern>
     </encoder>
   </appender>
+  <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${user.home}/.mythostory/logs/mythostory.0.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <fileNamePattern>${user.home}/.mythostory/logs/mythostory.%i.log</fileNamePattern>
+      <minIndex>1</minIndex>
+      <maxIndex>1</maxIndex>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <maxFileSize>5MB</maxFileSize>
+    </triggeringPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{20} - %msg%n</pattern>
+    </encoder>
+  </appender>
   <logger name="io.ktor" level="INFO"/>
+  <!-- the program's messages: on the console already (Main prints them), in the file only -->
+  <logger name="org.jtools.mythostory.desktop.Main" level="INFO" additivity="false">
+    <appender-ref ref="file"/>
+  </logger>
   <root level="WARN">
     <appender-ref ref="console"/>
+    <appender-ref ref="file"/>
   </root>
 </configuration>

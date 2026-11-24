@@ -10,7 +10,7 @@ groups and their other stories, from a group to its members, and from one episod
 One application, two platforms:
 
 - **Desktop**: a local server (`mythostory.jar`, with a bundled Java runtime) serves the page on
-  `http://127.0.0.1:8080/` and opens the browser on it. The browser is the window.
+  `http://127.0.0.1:8090/` and opens the browser on it. The browser is the window.
 - **Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the
   **same page**. Everything stays on the phone and works offline (the links lead to the web).
 
@@ -367,7 +367,7 @@ the same; `mvn package -P-android` leaves it out.
 
 ```bash
 scripts/linux/run.sh                            # build if a source is newer than the jar, then run
-scripts/linux/run.sh --port 9090 --no-browser   # the program's options: --port, --host, --no-browser, --keep-running, --help
+scripts/linux/run.sh --port 9090 --no-browser   # the program's options: --port, --host, --no-browser, --keep-alive, --help
 scripts/linux/run.sh --rebuild
 scripts/linux/run-android.sh                    # install and start the app on the device or emulator adb sees
 scripts/linux/emulator.sh                       # the same in the Android emulator, which it starts first (below)
@@ -375,14 +375,14 @@ scripts/linux/stop.sh                           # stop every MythoStory server o
 scripts/linux/stop.sh --port 9090               # only the one on that port
 ```
 
-The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network), on port 8080 unless `mythostory.ini`,
+The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network), on port 8090 (MythoStory's own, not the 8080 of so many servers) unless `mythostory.ini`,
 beside the jar, names another. **It stops by itself
 when its last page is closed**, like a program whose last window is closed: each page holds a WebSocket
 to the server (`/api/session`) and, as it goes away, closes it and says so; the server waits five seconds — a
 reload, a tab closed while another opens — and stops. Should the browser crash instead, the socket
 closes and the server notices at once. A WebSocket rather than a stream of server-sent events: browsers allow six
 HTTP connections per host, all tabs together, and a stream held by every tab left the seventh tab blank. It never stops before a first page has opened, and
-`--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
+`--keep-alive` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
 Launched again while it runs, it opens the running one's page and exits; should another program hold the port, it
 says so and exits (1).
 
@@ -412,7 +412,7 @@ Angular's dev server reloads the page on every change. It forwards `/api` to the
 (`frontend/proxy.conf.json`):
 
 ```bash
-scripts/linux/run.sh --no-browser --keep-running   # the backend on :8080, whatever the dev server's reloads
+scripts/linux/run.sh --no-browser --keep-alive   # the backend on :8090, whatever the dev server's reloads
 cd frontend && PATH="$PWD/../external/node/bin:$PATH" npm start   # the page on http://localhost:4200/
 ```
 
