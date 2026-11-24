@@ -7,24 +7,24 @@
   <formats>
     <format>zip</format>
   </formats>
-  <baseDirectory>${project.artifactId}-${project.version}</baseDirectory>
+  <baseDirectory>${jtools.app.id}-${project.version}</baseDirectory>
 
   <files>
     <file>
       <source>${project.build.directory}/${project.build.finalName}.jar</source>
-      <destName>mythostory.jar</destName>
+      <destName>${jtools.app.id}.jar</destName>
     </file>
     <!-- the launchers jtools-parent's distributions made: without a console, and in one -->
     <file>
-      <source>${project.build.directory}/MythoStory.exe</source>
+      <source>${project.build.directory}/${jtools.app.name}.exe</source>
     </file>
     <file>
       <source>${project.build.directory}/jtools-dist-work/windows/app.bat</source>
-      <destName>mythostory.bat</destName>
+      <destName>${jtools.app.id}.bat</destName>
       <lineEnding>crlf</lineEnding>
     </file>
     <file>
-      <source>src/dist/mythostory.ini</source>
+      <source>src/dist/${jtools.app.id}.ini</source>
       <lineEnding>crlf</lineEnding>
     </file>
     <file>
@@ -39,13 +39,15 @@
       <source>${maven.multiModuleProjectDirectory}/NOTICE</source>
       <lineEnding>crlf</lineEnding>
     </file>
-    <file>
-      <source>src/dist/VOICES.md</source>
-      <lineEnding>crlf</lineEnding>
-    </file>
   </files>
 
   <fileSets>
+    <!-- the module's src/dist/files/, as jtools-dist carries it: VOICES.md, the voices' credits -->
+    <fileSet>
+      <directory>src/dist/files</directory>
+      <outputDirectory>.</outputDirectory>
+      <lineEnding>crlf</lineEnding>
+    </fileSet>
     <fileSet>
       <directory>${project.build.directory}/runtime/windows</directory>
       <outputDirectory>jre</outputDirectory>

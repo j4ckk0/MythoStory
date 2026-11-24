@@ -7,23 +7,23 @@
   <formats>
     <format>tar.gz</format>
   </formats>
-  <baseDirectory>${project.artifactId}-${project.version}</baseDirectory>
+  <baseDirectory>${jtools.app.id}-${project.version}</baseDirectory>
 
   <files>
     <file>
       <source>${project.build.directory}/${project.build.finalName}.jar</source>
-      <destName>mythostory.jar</destName>
+      <destName>${jtools.app.id}.jar</destName>
       <fileMode>0644</fileMode>
     </file>
     <!-- the launcher jtools-parent's distributions made -->
     <file>
       <source>${project.build.directory}/jtools-dist-work/unix/app.sh</source>
-      <destName>mythostory.sh</destName>
+      <destName>${jtools.app.id}.sh</destName>
       <lineEnding>unix</lineEnding>
       <fileMode>0755</fileMode>
     </file>
     <file>
-      <source>src/dist/mythostory.ini</source>
+      <source>src/dist/${jtools.app.id}.ini</source>
       <lineEnding>unix</lineEnding>
       <fileMode>0644</fileMode>
     </file>
@@ -42,14 +42,16 @@
       <lineEnding>unix</lineEnding>
       <fileMode>0644</fileMode>
     </file>
-    <file>
-      <source>src/dist/VOICES.md</source>
-      <lineEnding>unix</lineEnding>
-      <fileMode>0644</fileMode>
-    </file>
   </files>
 
   <fileSets>
+    <!-- the module's src/dist/files/, as jtools-dist carries it: VOICES.md, the voices' credits -->
+    <fileSet>
+      <directory>src/dist/files</directory>
+      <outputDirectory>.</outputDirectory>
+      <lineEnding>unix</lineEnding>
+      <fileMode>0644</fileMode>
+    </fileSet>
     <!-- the runtime jlink linked (jtools-parent): its executables 0755, the rest 0644 -->
     <fileSet>
       <directory>${project.build.directory}/runtime/linux</directory>

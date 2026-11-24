@@ -17,7 +17,7 @@ class CatalogTest {
 
     @Test
     fun `every data file is listed by the index, so that none is forgotten`() {
-        val data = File("src/main/resources/data")
+        val data = File("core/src/main/resources/data")
         val index = data.resolve("index.json").readText()
         data.walkTopDown().filter { it.isFile && it.name != "index.json" }.forEach {
             assertContains(index, "\"${it.relativeTo(data).invariantSeparatorsPath}\"")

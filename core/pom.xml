@@ -16,6 +16,11 @@
   <name>MythoStory core</name>
   <description>The domain: the stories and their storage. Pure Kotlin and kotlinx.serialization, no framework: the desktop and Android run it alike.</description>
 
+  <properties>
+    <!-- Android runs this module too: Java 17 bytecode, the newest it takes (jtools-parent's is 25) -->
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>

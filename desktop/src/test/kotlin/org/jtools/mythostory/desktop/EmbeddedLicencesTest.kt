@@ -13,9 +13,9 @@ import kotlin.test.assertTrue
  * runtime is linked from, Piper or a voice changed there, the list must follow, and this test says so.
  */
 class EmbeddedLicencesTest {
-    private val conf = File("../externals.conf").readLines().filter { "=" in it && !it.startsWith("#") }
+    private val conf = File("externals.conf").readLines().filter { "=" in it && !it.startsWith("#") }
         .associate { it.substringBefore('=') to it.substringAfter('=') }
-    private val embedded = Json.parseToJsonElement(File("src/main/resources/licences/embedded.json").readText()).jsonArray
+    private val embedded = Json.parseToJsonElement(File("desktop/src/main/resources/licences/embedded.json").readText()).jsonArray
         .associate { it.jsonObject["name"]!!.jsonPrimitive.content to it.jsonObject["version"]!!.jsonPrimitive.content }
 
     private fun check(component: String, externals: List<String>, mark: (String) -> String) {

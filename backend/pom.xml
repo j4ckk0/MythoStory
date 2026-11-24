@@ -16,6 +16,11 @@
   <name>MythoStory backend</name>
   <description>The HTTP server: Ktor on its CIO engine (pure Kotlin, which Android runs too), the API over core and the page from the classpath's static/ (the frontend's jar). The desktop and the Android app start it alike.</description>
 
+  <properties>
+    <!-- Android runs this module too: Java 17 bytecode, the newest it takes (jtools-parent's is 25) -->
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.jtools</groupId>

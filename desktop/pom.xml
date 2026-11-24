@@ -19,9 +19,6 @@
   <properties>
     <!-- the program's module, for jtools-parent: this module's jar becomes the one jar, embedding everything -->
     <jtools.app.skip>false</jtools.app.skip>
-    <!-- the desktop runs on the bundled runtime, never on Android: the JDK's own bytecode -->
-    <maven.compiler.release>25</maven.compiler.release>
-    <kotlin.compiler.jvmTarget>25</kotlin.compiler.jvmTarget>
   </properties>
 
   <dependencies>
@@ -45,7 +42,7 @@
   </dependencies>
 
   <build>
-    <finalName>mythostory</finalName>
+    <finalName>${jtools.app.id}</finalName>
     <plugins>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -110,7 +107,6 @@
       <id>dist</id>
       <properties>
         <piper.archives>${maven.multiModuleProjectDirectory}/external</piper.archives>
-        <release.dir>${maven.multiModuleProjectDirectory}/releases</release.dir>
       </properties>
       <build>
         <plugins>
@@ -127,7 +123,7 @@
                 <configuration>
                   <target>
                     <!-- Piper and its voices (external/, scripts/linux/setup.sh): the voice that reads the stories -->
-                    <fail message="no ${piper.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/linux/setup.sh (see README: Externals)">
+                    <fail message="no ${piper.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/linux/setup.sh, or scripts\windows\setup.bat (see README: Externals)">
                       <condition>
                         <not><and>
                           <available file="${piper.archives}/piper-linux.tar.gz"/>

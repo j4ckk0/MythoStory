@@ -125,8 +125,13 @@
                 </goals>
                 <configuration>
                   <target>
+                    <!-- the previous versions' APKs go, as package.sh removes the previous archives -->
+                    <delete>
+                      <fileset dir="${maven.multiModuleProjectDirectory}/releases" includes="${jtools.app.id}-*-android.apk"
+                               excludes="${jtools.app.id}-${project.version}-android.apk" erroronmissingdir="false"/>
+                    </delete>
                     <copy file="${project.build.directory}/gradle/outputs/apk/release/mythostory-android-release.apk"
-                          tofile="${maven.multiModuleProjectDirectory}/releases/mythostory-${project.version}-android.apk"
+                          tofile="${maven.multiModuleProjectDirectory}/releases/${jtools.app.id}-${project.version}-android.apk"
                           failonerror="true"/>
                   </target>
                 </configuration>

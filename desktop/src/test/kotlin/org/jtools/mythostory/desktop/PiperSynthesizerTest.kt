@@ -11,10 +11,10 @@ import kotlin.test.assertTrue
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.measureTime
 
-/** Piper itself, as setup deploys it into external/: skipped where it is not (the tests run from the module's directory). */
+/** Piper itself, as setup deploys it into external/: skipped where it is not (the tests run from the root of the repository). */
 class PiperSynthesizerTest {
-    private val piper = PiperSynthesizer.program(File("../external/piper"))
-    private val voices = File("../external/voices")
+    private val piper = PiperSynthesizer.program(File("external/piper"))
+    private val voices = File("external/voices")
 
     @Test
     fun `reads with every voice of the catalogue, as WAV, and says the same text the same way twice`() {
