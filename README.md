@@ -1,18 +1,82 @@
 # MythoStory
 
-The myths of ancient Greece, to read and to wander through: **the characters** — gods, Titans, nymphs,
-heroes, mortals, monsters —, **the groups** they form — the Argonauts, the Muses, the Seven against Thebes… — and
-**the stories** they appear in. Every story is summarised, **sourced**
-from the ancient texts (with a link to read them online) and linked to **Wikipedia, articles and
-videos**. One click leads from a story to its characters, from a character to their family, their
-groups and their other stories, from a group to its members, and from one episode of a cycle to the next. **In French and in English.**
+[![Licence: Apache 2.0](https://img.shields.io/badge/licence-Apache%202.0-blue)](LICENSE)
+![Linux | Windows | Android](https://img.shields.io/badge/runs%20on-Linux%20%7C%20Windows%20%7C%20Android-lightgrey)
+![English | French](https://img.shields.io/badge/languages-English%20%7C%20French-orange)
 
-One application, two platforms:
+**The myths of ancient Greece, to read, to listen to and to wander through.** MythoStory gathers **the stories**
+— from the birth of the gods to the fall of Troy and the return of Odysseus —, **the characters** who appear in them
+— gods, Titans, nymphs, heroes, mortals, monsters: 3,000 of them —, and **the groups** they form — the Argonauts, the
+Muses, the Seven against Thebes… One click leads from a story to its characters, from a character to their family,
+their groups and their other stories, and from one episode of a cycle to the next. **In English and in French.**
 
-- **Desktop**: a local server (`mythostory.jar`, with a bundled Java runtime) serves the page on
-  `http://127.0.0.1:8090/` and opens the browser on it. The browser is the window.
-- **Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the
-  **same page**. Everything stays on the phone and works offline (the links lead to the web).
+It runs on your computer or your phone, **offline**: no account, no ads, nothing sent anywhere. Only the links to
+the ancient texts, Wikipedia, articles and videos lead to the web.
+
+| | |
+|---|---|
+| You want to read the myths | [**What it does**](#what-it-does), then [**Download**](#download) |
+| You want to build it or change it | [**Quick start**](#quick-start), [**Architecture**](#architecture), [**Building**](#building) |
+| You wonder where the content comes from | [**The catalog**](#the-catalog) and [**Licence**](#licence) |
+
+## What it does
+
+- **52 stories, each one summarised and sourced**: who tells it (Homer, Hesiod, Ovid, Apollodorus…), with a link
+  to read the ancient text online, and to Wikipedia, articles and videos about it. The stories form cycles — the
+  birth of the gods, the age of heroes, the Trojan War, the Odyssey… — read in order, part after part.
+
+  ![A story: Perseus and Medusa, its characters, the cycle it belongs to](docs/screenshots/story.png)
+
+- **3,053 characters**, each with their name in Greek and for the Romans, their parents, their children and their
+  **family tree**, the groups they belong to and the stories they appear in. The characters come from Wikidata.
+
+  ![Zeus: his parents, his family tree, his children](docs/screenshots/character.png)
+
+- **A timeline** of the myths in the order the Greeks told them, from Chaos to the return from Troy, and **a map**
+  of where they happen: each story's journey drawn on it, like the Argonauts' to Colchis below.
+
+  ![The timeline, from the origins of the world](docs/screenshots/timeline.png)
+
+  ![The map: the voyage of the Argonauts](docs/screenshots/map.png)
+
+- **The stories read aloud**: a *Listen* button on every story, or all the stories one after the other. On a
+  computer, natural voices that run offline (Piper): Cori, Kristin, LJ and Norman in English, Claire and Antoine in
+  French. On a phone, the phone's own voices.
+
+  ![The settings: choosing the voice that reads the stories](docs/screenshots/settings.png)
+
+- **Search** across characters, groups and stories, from every page; **English or French** at any time; **a dark
+  look** that follows the system's; and the same page on a phone:
+
+  <img src="docs/screenshots/phone-dark.png" alt="Achilles on a phone, in the dark look" width="300">
+
+The home page counts what is inside:
+
+![The home page: the characters by kind, the stories by cycle](docs/screenshots/home.png)
+
+## Download
+
+The ready-to-run builds are on the [**Releases page**](https://github.com/j4ckk0/MythoStory/releases/latest):
+
+| File | For | How to start it |
+|---|---|---|
+| `mythostory-<version>-linux.tar.gz` | Linux (x86_64) | unpack it anywhere, run `./mythostory.sh` |
+| `mythostory-<version>-windows.zip` | Windows (64-bit) | unzip it anywhere, run `MythoStory.exe` (not yet tried on Windows: say what fails) |
+| `mythostory-<version>-android.apk` | Android 8.0 or later | open it on the phone, and allow installing it |
+
+Nothing to install on a computer: each archive carries its own Java runtime, Piper and its voices. MythoStory opens
+your browser on its page, and stops by itself once the page is closed (see
+[Running a distribution](#running-a-distribution)). To build it yourself instead: [Quick start](#quick-start).
+
+### How it works
+
+One application, two platforms, the same page:
+
+- **On a computer**: a small local server (`mythostory.jar`, with its Java runtime) serves the page on
+  `http://127.0.0.1:8090/` and opens the browser on it. The browser is the window; nothing listens beyond this
+  computer.
+- **On Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the **same page**.
+  Everything stays on the phone and works offline (the links lead to the web).
 
 ## Quick start
 
