@@ -119,4 +119,18 @@ class PiperSynthesizerTest {
             assertEquals(emptyList(), speech.voices)
         }
     }
+
+    @Test
+    fun `the cache keeps the last texts heard within its size, dropping the least recently heard first`() {
+        // each fake WAV is "RIFF" and its file's name, some thirty bytes: a cache of 80 holds two, not three
+        val (program, dir) = fakePiper("  printf 'RIFF%s' \"\$(basename \"\$file\")\" > \"\$file\"; echo \"\$file\"")
+        PiperSynthesizer(program, dir, voice, cacheBytes = 80).use { speech ->
+            val first = speech.synthesize("fake", "Un.")
+            val second = speech.synthesize("fake", "Deux.")
+            assertTrue(first === speech.synthesize("fake", "Un."), "both kept; the first now the latest heard")
+            speech.synthesize("fake", "Trois.")
+            assertTrue(first === speech.synthesize("fake", "Un."), "the latest heard stays")
+            assertFalse(second === speech.synthesize("fake", "Deux."), "the least recently heard was dropped, said again")
+        }
+    }
 }

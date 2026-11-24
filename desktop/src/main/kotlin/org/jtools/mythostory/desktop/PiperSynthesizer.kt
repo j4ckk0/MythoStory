@@ -34,6 +34,7 @@ class PiperSynthesizer(
     private val directory: File,
     catalogue: List<PiperVoice> = PiperVoice.catalogue(),
     private val answerTimeout: Duration = ANSWER_TIMEOUT,
+    private val cacheBytes: Long = CACHE_BYTES,
 ) : SpeechSynthesizer, AutoCloseable {
     /**
      * Whether Piper runs on this computer: present is not enough — a shared library missing, a system too old, and
@@ -60,10 +61,13 @@ class PiperSynthesizer(
     private val answers: ExecutorService = Executors.newCachedThreadPool { task -> Thread(task, "piper-answer").apply { isDaemon = true } }
     private val workDir: File = Files.createTempDirectory("mythostory-speech").toFile().apply { deleteOnExit() }
 
-    /** The last texts said, by voice and text: a summary read twice is synthesized once. */
-    private val cache = object : LinkedHashMap<String, ByteArray>(64, 0.75f, true) {
-        override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, ByteArray>) = size > 300
-    }
+    /**
+     * The last texts said, by voice and text, the least recently heard dropped first: a summary read twice is
+     * synthesized once. Bounded by their size, [cacheBytes] in all: a text of 500 characters is half a minute of
+     * speech, over a megabyte.
+     */
+    private val cache = LinkedHashMap<String, ByteArray>(64, 0.75f, true)
+    private var cached = 0L
 
     override fun synthesize(voice: String, text: String): ByteArray {
         val piperVoice = requireNotNull(available[voice]) { "no voice $voice" }
@@ -81,7 +85,7 @@ class PiperSynthesizer(
                 say(model(piperVoice), piperVoice.speaker, text)
             }
         }
-        synchronized(cache) { cache["$voice\n$text"] = wav }
+        remember("$voice\n$text", wav)
         return wav
     }
 
@@ -110,6 +114,16 @@ class PiperSynthesizer(
             return file.readBytes()
         } finally {
             file.delete()
+        }
+    }
+
+    private fun remember(key: String, wav: ByteArray) = synchronized(cache) {
+        cache.put(key, wav)?.let { cached -= it.size }
+        cached += wav.size
+        val eldest = cache.values.iterator()
+        while (cached > cacheBytes && eldest.hasNext()) {
+            cached -= eldest.next().size
+            eldest.remove()
         }
     }
 
@@ -154,6 +168,9 @@ class PiperSynthesizer(
          * the page sends up to 500 characters at a time, a few seconds of work on a slow computer.
          */
         val ANSWER_TIMEOUT: Duration = 30.seconds
+
+        /** How much speech the cache keeps: a few stories' worth; the browser keeps what it played too (a day). */
+        const val CACHE_BYTES: Long = 64L * 1024 * 1024
 
         /** A storyteller's pace: a little slower than Piper's default (1.0), which suits short messages. */
         const val LENGTH_SCALE = "1.08"
