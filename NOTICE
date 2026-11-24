@@ -1,0 +1,54 @@
+MythoStory
+Copyright 2026 j4ckk0
+
+MythoStory's own code, data and texts (the story summaries are written for MythoStory, in our own words, from the
+ancient sources each story names) carry no licence yet: all rights reserved until one is chosen.
+
+What follows is everything MythoStory holds or ships that it did not write, where it comes from and on what terms.
+
+
+In this repository
+==================
+
+Data
+----
+- Wikidata (https://www.wikidata.org/): the characters in core/src/main/resources/data/characters/wikidata/
+  (names, Greek names, parents, descriptions, Wikidata items), written by importer/, and the coordinates of
+  data/places.json. CC0 1.0: no attribution required; each record keeps its Wikidata item.
+- Natural Earth (https://www.naturalearthdata.com/): the 1:10m land of frontend/public/map/land.json, clipped and
+  simplified. Public domain. The map shows "Coastlines: Natural Earth".
+- The Theoi Project (https://www.theoi.com/): the importer reads the titles of the pages Wikidata names, for a
+  link's name ("Cronus (Kronos)"). Only links and those names are kept; no text of theirs.
+- Wikipedia, Wikisource, Theoi, Mythologica, World History Encyclopedia, the Internet Classics Archive,
+  LacusCurtius, YouTube: the catalog only links to their pages, which belong to their authors.
+
+Scripts
+-------
+- JToolsFramework's devkit (https://github.com/j4ckk0/JToolsFramework), version 1.6.1: the managed files that
+  scripts/linux/jtools lists (scripts/linux/*, scripts/windows/*, .githooks/pre-push, .gitattributes).
+  Apache License 2.0; Copyright 2026 jtools.org.
+
+
+In the builds and distributions (not in this repository)
+=========================================================
+
+The page (every build, desktop and Android)
+--------------------------------------------
+Angular (@angular/*, MIT), RxJS (Apache-2.0), tslib (0BSD). The Angular build writes their licence texts to
+licences/3rdpartylicenses.txt, which the help page links.
+
+The server's libraries (the desktop jar and the Android app)
+------------------------------------------------------------
+Kotlin, kotlinx (coroutines, serialization, io, datetime), Ktor and their dependencies (Apache-2.0); Typesafe
+Config, kaml, okio, SnakeYAML Engine KMP, UrlEncoder (Apache-2.0); SLF4J (MIT); Logback (EPL-2.0 or LGPL-2.1,
+desktop only). Maven's license plugin writes the exact list at every build to licences/THIRD-PARTY.txt in the
+desktop jar, which the help page shows.
+
+The desktop distributions (releases/*-linux.tar.gz, *-windows.zip)
+-------------------------------------------------------------------
+Listed with their versions in desktop/src/main/resources/licences/embedded.json, which the help page shows, and
+downloaded by scripts/linux/setup.sh from the URLs externals.conf names:
+- Eclipse Temurin JRE (OpenJDK), trimmed by jlink: GPL-2.0 with the Classpath Exception.
+- Piper, piper-phonemize, ONNX Runtime: MIT. eSpeak NG (its data, used by Piper): GPL-3.0-or-later.
+- The Piper voices desktop/src/dist/VOICES.md lists, each with its own licence (CC-BY-4.0, CC-BY-SA-4.0 or public
+  domain) and the attribution it asks for.
