@@ -53,5 +53,5 @@ Listed with their versions in desktop/src/main/resources/licences/embedded.json,
 downloaded by scripts/linux/setup.sh from the URLs externals.conf names:
 - Eclipse Temurin JRE (OpenJDK), trimmed by jlink: GPL-2.0 with the Classpath Exception.
 - Piper, piper-phonemize, ONNX Runtime: MIT. eSpeak NG (its data, used by Piper): GPL-3.0-or-later.
-- The Piper voices desktop/src/dist/VOICES.md lists, each with its own licence (CC-BY-4.0, CC-BY-SA-4.0 or public
+- The Piper voices desktop/src/dist/files/VOICES.md lists, each with its own licence (CC-BY-4.0, CC-BY-SA-4.0 or public
   domain) and the attribution it asks for.
