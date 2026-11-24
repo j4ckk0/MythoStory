@@ -123,7 +123,7 @@
                 <configuration>
                   <target>
                     <!-- Piper and its voices (external/, scripts/linux/setup.sh): the voice that reads the stories -->
-                    <fail message="no ${piper.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/linux/setup.sh, or scripts\windows\setup.bat (see README: Externals)">
+                    <fail message="no ${piper.archives}/piper-linux.tar.gz or piper-windows.zip: run scripts/linux/setup.sh, or scripts\windows\setup.bat (see docs/DEVELOPING.md: Externals)">
                       <condition>
                         <not><and>
                           <available file="${piper.archives}/piper-linux.tar.gz"/>

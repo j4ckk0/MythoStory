@@ -9,7 +9,7 @@ interface Geometry {
 
 /**
  * The coastlines, as one SVG path: map/land.json — Natural Earth's 1:10m land (public domain), clipped to the
- * Mediterranean and the Black Sea and simplified (README: The map). A static file: the Android app has it offline.
+ * Mediterranean and the Black Sea and simplified (docs/DEVELOPING.md: The map). A static file: the Android app has it offline.
  */
 @Injectable({ providedIn: 'root' })
 export class LandService {

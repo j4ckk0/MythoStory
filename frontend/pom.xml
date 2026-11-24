@@ -14,7 +14,7 @@
   <packaging>jar</packaging>
 
   <name>MythoStory frontend</name>
-  <description>The Angular page, as a jar of static/ resources the backend serves. Built by npm, which jtools-parent runs: the npm of PATH, external/node's when the scripts run Maven (README: Externals).</description>
+  <description>The Angular page, as a jar of static/ resources the backend serves. Built by npm, which jtools-parent runs: the npm of PATH, external/node's when the scripts run Maven (docs/DEVELOPING.md: Externals).</description>
 
   <properties>
     <!-- the page's npm build is jtools-parent's (its profile jtools-frontend, switched on by angular.json): npm install

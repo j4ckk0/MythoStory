@@ -18,7 +18,7 @@ import kotlin.system.exitProcess
  * (Q22988604) and its subclasses — into data/characters/wikidata/<kind>.json, which it rewrites whole, and lists
  * those files in data/index.json. The curated characters (the other files) are never touched: an item a curated
  * character already is (by its Wikidata item, or by its English Wikipedia article) is not imported. What each imported
- * character gets: README, "The characters from Wikidata". The catalog, with what was imported, must be sound
+ * character gets: docs/DEVELOPING.md, "The characters from Wikidata". The catalog, with what was imported, must be sound
  * (Catalog.problems) before anything is written.
  *
  *   mythostory-importer [--all] [--data DIR]
