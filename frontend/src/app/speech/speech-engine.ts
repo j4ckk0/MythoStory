@@ -61,13 +61,14 @@ export class ServerSpeechEngine implements SpeechEngine {
     const audio = this.prefetched.get(url) ?? this.createAudio(url);
     this.prefetched.delete(url);
     this.playing = audio;
-    const ended = () => {
+    const ended = once(() => {
       if (this.playing === audio) onEnd();
-    };
+    });
     audio.onended = ended;
-    // a sentence that cannot be said is skipped rather than stopping the reading
+    // a text that cannot be said — it failed to load, or the browser refused to play it — is skipped rather than
+    // leaving the reading waiting for an end that never comes
     audio.onerror = ended;
-    void audio.play().catch(() => undefined);
+    void audio.play().catch(ended);
   }
 
   cancel(): void {
@@ -92,6 +93,16 @@ export class ServerSpeechEngine implements SpeechEngine {
   }
 }
 
+/** A callback that runs the first time it is called, and never again. */
+function once(callback: () => void): () => void {
+  let done = false;
+  return () => {
+    if (done) return;
+    done = true;
+    callback();
+  };
+}
+
 /** The voice's locale for each i18n language: what the engines are asked for. */
 const LOCALES: Record<I18nLanguage, string> = { en: 'en-GB', fr: 'fr-FR' };
 
@@ -101,6 +112,8 @@ const LOCALES: Record<I18nLanguage, string> = { en: 'en-GB', fr: 'fr-FR' };
  */
 export class WebSpeechEngine implements SpeechEngine {
   private systemVoices: SpeechSynthesisVoice[] = [];
+  /** The text being said, kept: an utterance nothing refers to may be collected before its end is told (Chrome). */
+  private speaking: SpeechSynthesisUtterance | null = null;
 
   constructor(
     private readonly synthesis: SpeechSynthesis,
@@ -132,11 +145,17 @@ export class WebSpeechEngine implements SpeechEngine {
     const voices = this.ofLanguage(language);
     utterance.lang = LOCALES[language];
     utterance.voice = voices.find((v) => (v.voiceURI || v.name) === voice) ?? voices[0] ?? null;
-    utterance.onend = onEnd;
+    // a failure ends the text too (Chrome reports one with an error and no end), and once only: some browsers report
+    // both, which would skip the next text
+    const ended = once(onEnd);
+    utterance.onend = ended;
+    utterance.onerror = ended;
+    this.speaking = utterance;
     this.synthesis.speak(utterance);
   }
 
   cancel(): void {
+    this.speaking = null;
     this.synthesis.cancel();
   }
 
