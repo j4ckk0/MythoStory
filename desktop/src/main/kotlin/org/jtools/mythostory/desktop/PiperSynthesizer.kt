@@ -35,8 +35,14 @@ class PiperSynthesizer(
     catalogue: List<PiperVoice> = PiperVoice.catalogue(),
     private val answerTimeout: Duration = ANSWER_TIMEOUT,
 ) : SpeechSynthesizer, AutoCloseable {
+    /**
+     * Whether Piper runs on this computer: present is not enough — a shared library missing, a system too old, and
+     * every text would fail, while the page, told of voices, would not fall back on the browser's.
+     */
+    val runs: Boolean = piper.canExecute() && answersVersion(piper)
+
     private val available: Map<String, PiperVoice> =
-        if (!piper.canExecute()) emptyMap()
+        if (!runs) emptyMap()
         else catalogue.filter { it.language in I18n.LANGUAGES && model(it.file).isFile && directory.resolve("${it.file}.onnx.json").isFile }
             .associateBy { it.id }
 
@@ -164,6 +170,19 @@ class PiperSynthesizer(
                 .replace(Regex("\\s+"), " ")
                 .replace(Regex(",\\s*([.,;:!?])"), "$1")
                 .trim()
+
+        /** Whether the program starts and says its version, within a few seconds: it loads all its libraries to do so. */
+        private fun answersVersion(piper: File): Boolean = runCatching {
+            val process = ProcessBuilder(piper.absolutePath, "--version")
+                .directory(piper.parentFile)
+                .redirectErrorStream(true)
+                .redirectOutput(ProcessBuilder.Redirect.DISCARD)
+                .start()
+            process.outputStream.close()
+            val done = process.waitFor(10, TimeUnit.SECONDS)
+            if (!done) process.destroyForcibly()
+            done && process.exitValue() == 0
+        }.getOrDefault(false)
 
         /** Piper's program in a directory: piper, or piper.exe on Windows. */
         fun program(dir: File): File = dir.resolve(if (System.getProperty("os.name").startsWith("Windows")) "piper.exe" else "piper")

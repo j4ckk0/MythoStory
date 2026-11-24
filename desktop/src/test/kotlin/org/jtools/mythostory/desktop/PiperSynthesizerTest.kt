@@ -68,6 +68,7 @@ class PiperSynthesizerTest {
         val program = dir.resolve("piper")
         program.writeText(
             "#!/bin/sh\n" +
+                "[ \"\$1\" = --version ] && { echo 1.2.0; exit 0; }\n" +
                 "while read -r line; do\n" +
                 "  file=$(printf '%s' \"\$line\" | sed -n 's/.*\"output_file\":\"\\([^\"]*\\)\".*/\\1/p')\n" +
                 body + "\n" +
@@ -105,6 +106,17 @@ class PiperSynthesizerTest {
             assertTrue(wav.startsWith("RIFFspeech"), "the WAV of this text, from a process started again: $wav")
             val next = String(speech.synthesize("fake", "Encore."))
             assertTrue(next.startsWith("RIFFspeech") && next != wav, "and the next text, its own: $next")
+        }
+    }
+
+    @Test
+    fun `a Piper that cannot run on this computer offers no voice, so that the page reads with the browser's`() {
+        val (program, dir) = fakePiper("")
+        // as when a shared library is missing: the loader refuses the program before it says anything
+        program.writeText("#!/bin/sh\necho 'piper: error while loading shared libraries: libonnxruntime.so.1.14.1' >&2\nexit 127\n")
+        PiperSynthesizer(program, dir, voice).use { speech ->
+            assertFalse(speech.runs)
+            assertEquals(emptyList(), speech.voices)
         }
     }
 }

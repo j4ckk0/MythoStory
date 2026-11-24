@@ -58,7 +58,11 @@ fun main(args: Array<String>) {
         Unit
     }
     val speech = PiperSynthesizer(PiperSynthesizer.program(piper), voices)
-    if (speech.voices.isEmpty()) println("No Piper voice in $piper and $voices: the browser's voices will read the stories, if it has some.")
+    if (PiperSynthesizer.program(piper).canExecute() && !speech.runs) {
+        println("Piper in $piper does not run on this computer: the browser's voices will read the stories, if it has some.")
+    } else if (speech.voices.isEmpty()) {
+        println("No Piper voice in $piper and $voices: the browser's voices will read the stories, if it has some.")
+    }
     Runtime.getRuntime().addShutdownHook(Thread { speech.close() })
     server = startServer(
         host, port, Platform.DESKTOP,
