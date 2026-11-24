@@ -44,18 +44,17 @@ class PiperSynthesizer(
 
     private val available: Map<String, PiperVoice> =
         if (!runs) emptyMap()
-        else catalogue.filter { it.language in I18n.LANGUAGES && model(it.file).isFile && directory.resolve("${it.file}.onnx.json").isFile }
+        else catalogue.filter { it.language in I18n.LANGUAGES && modelFile(it.file).isFile && directory.resolve("${it.file}.onnx.json").isFile }
             .associateBy { it.id }
 
     /** Each language's voices in the catalogue's order, so that its first — its default — comes first. */
     override val voices: List<Voice> = available.values.map { Voice(it.id, it.language, it.name, it.description) }
 
-    private class Model(val process: Process, val input: Writer, val output: BufferedReader)
-
     /** A model hung: killed, and not asked again for this text, which would likely hang it again. */
     private class Hung(message: String) : Exception(message)
 
-    private val running = HashMap<String, Model>()
+    /** Each model, by its file: its Piper process, started on its first text. */
+    private val models = HashMap<String, PiperModel>()
 
     /** The threads waiting for Piper's answers, so that a request can stop waiting while one still blocks. */
     private val answers: ExecutorService = Executors.newCachedThreadPool { task -> Thread(task, "piper-answer").apply { isDaemon = true } }
@@ -72,48 +71,81 @@ class PiperSynthesizer(
     override fun synthesize(voice: String, text: String): ByteArray {
         val piperVoice = requireNotNull(available[voice]) { "no voice $voice" }
         synchronized(cache) { cache["$voice\n$text"] }?.let { return it }
-        // one text at a time per model: Piper answers in the order it is asked
-        val wav = synchronized(modelLock(piperVoice.file)) {
-            try {
-                say(model(piperVoice), piperVoice.speaker, text)
-            } catch (e: Hung) {
-                forget(piperVoice.file)
-                throw e
-            } catch (e: Exception) {
-                // a model that died, or answered out of turn, is started again, once
-                forget(piperVoice.file)
-                say(model(piperVoice), piperVoice.speaker, text)
-            }
-        }
+        val model = synchronized(models) { models.getOrPut(piperVoice.file) { PiperModel(piperVoice.file) } }
+        val wav = model.say(piperVoice.speaker, text)
         remember("$voice\n$text", wav)
         return wav
     }
 
-    private fun say(model: Model, speaker: Int?, text: String): ByteArray {
-        val file = File.createTempFile("speech", ".wav", workDir)
-        try {
-            val line = buildJsonObject {
-                put("text", JsonPrimitive(forSpeech(text)))
-                if (speaker != null) put("speaker_id", JsonPrimitive(speaker))
-                put("output_file", JsonPrimitive(file.absolutePath))
+    /**
+     * One model's Piper process: started on its first text and kept; started again, once, when it died or answered
+     * out of turn; killed when it hangs. One text at a time ([say] is synchronized: Piper answers in the order it is
+     * asked), while the other models' voices are said meanwhile.
+     */
+    private inner class PiperModel(private val file: String) {
+        @Volatile private var process: Process? = null
+        private lateinit var input: Writer
+        private lateinit var output: BufferedReader
+
+        @Synchronized
+        fun say(speaker: Int?, text: String): ByteArray = try {
+            sayOnce(speaker, text)
+        } catch (e: Hung) {
+            stop()
+            throw e
+        } catch (e: Exception) {
+            stop()
+            sayOnce(speaker, text)
+        }
+
+        /** The process stopped: the next text starts another. Not synchronized: closing does not wait for a text. */
+        fun stop() {
+            process?.destroyForcibly()
+            process = null
+        }
+
+        private fun sayOnce(speaker: Int?, text: String): ByteArray {
+            val process = process?.takeIf { it.isAlive } ?: start()
+            val file = File.createTempFile("speech", ".wav", workDir)
+            try {
+                val line = buildJsonObject {
+                    put("text", JsonPrimitive(forSpeech(text)))
+                    if (speaker != null) put("speaker_id", JsonPrimitive(speaker))
+                    put("output_file", JsonPrimitive(file.absolutePath))
+                }
+                input.write(Json.encodeToString(line) + "\n")
+                input.flush()
+                val answer = answers.submit(Callable { output.readLine() })
+                val path = try {
+                    answer.get(answerTimeout.inWholeMilliseconds, TimeUnit.MILLISECONDS)
+                } catch (e: TimeoutException) {
+                    // killed, the process closes its output: the thread still reading it ends too
+                    process.destroyForcibly()
+                    throw Hung("Piper gave no answer in $answerTimeout")
+                }
+                checkNotNull(path) { "Piper stopped" }
+                // the answer to this text is the path it was given: any other line (a warning, an answer out of turn)
+                // would shift every later answer by one, and return a file half written or another text's
+                check(path.trim() == file.absolutePath) { "Piper answered \"$path\" instead of the WAV's path" }
+                return file.readBytes()
+            } finally {
+                file.delete()
             }
-            model.input.write(Json.encodeToString(line) + "\n")
-            model.input.flush()
-            val answer = answers.submit(Callable { model.output.readLine() })
-            val path = try {
-                answer.get(answerTimeout.inWholeMilliseconds, TimeUnit.MILLISECONDS)
-            } catch (e: TimeoutException) {
-                // killed, the process closes its output: the thread still reading it ends too
-                model.process.destroyForcibly()
-                throw Hung("Piper gave no answer in $answerTimeout")
-            }
-            checkNotNull(path) { "Piper stopped" }
-            // the answer to this text is the path it was given: any other line (a warning, an answer out of turn)
-            // would shift every later answer by one, and return a file half written or another text's
-            check(path.trim() == file.absolutePath) { "Piper answered \"$path\" instead of the WAV's path" }
-            return file.readBytes()
-        } finally {
-            file.delete()
+        }
+
+        private fun start(): Process {
+            val started = ProcessBuilder(
+                piper.absolutePath, "--model", modelFile(file).absolutePath, "--json-input", "--quiet",
+                "--length_scale", LENGTH_SCALE, "--sentence_silence", SENTENCE_SILENCE,
+            )
+                .directory(piper.parentFile)
+                // stderr discarded: a pipe nobody reads would fill up and stall Piper
+                .redirectError(ProcessBuilder.Redirect.DISCARD)
+                .start()
+            input = started.outputStream.writer(Charsets.UTF_8)
+            output = started.inputStream.bufferedReader(Charsets.UTF_8)
+            process = started
+            return started
         }
     }
 
@@ -127,36 +159,13 @@ class PiperSynthesizer(
         }
     }
 
-    /** A model's process stopped and forgotten: the next text starts another. */
-    private fun forget(file: String) {
-        synchronized(running) { running.remove(file)?.process?.destroyForcibly() }
-    }
-
-    private val locks = HashMap<String, Any>()
-
-    private fun modelLock(file: String): Any = synchronized(locks) { locks.getOrPut(file) { Any() } }
-
-    private fun model(file: String): File = directory.resolve("$file.onnx")
-
-    private fun model(voice: PiperVoice): Model = synchronized(running) {
-        running[voice.file]?.takeIf { it.process.isAlive } ?: start(voice.file).also { running[voice.file] = it }
-    }
-
-    private fun start(file: String): Model {
-        val process = ProcessBuilder(
-            piper.absolutePath, "--model", model(file).absolutePath, "--json-input", "--quiet",
-            "--length_scale", LENGTH_SCALE, "--sentence_silence", SENTENCE_SILENCE,
-        )
-            .directory(piper.parentFile)
-            .redirectError(ProcessBuilder.Redirect.DISCARD)
-            .start()
-        return Model(process, process.outputStream.writer(Charsets.UTF_8), process.inputStream.bufferedReader(Charsets.UTF_8))
-    }
+    /** A model's file: <file>.onnx in [directory]. */
+    private fun modelFile(file: String): File = directory.resolve("$file.onnx")
 
     override fun close() {
-        synchronized(running) {
-            running.values.forEach { it.process.destroy() }
-            running.clear()
+        synchronized(models) {
+            models.values.forEach { it.stop() }
+            models.clear()
         }
         answers.shutdownNow()
         workDir.deleteRecursively()
