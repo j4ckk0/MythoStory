@@ -20,6 +20,27 @@
   <name>MythoStory</name>
   <description>MythoStory, one application on two platforms: on the desktop, a local server and the browser as its window; on Android, the same server inside the app and a WebView as its window.</description>
 
+  <!-- MythoStory's own repository and licence: without them, it would inherit jtools-parent's, the framework's
+       (JToolsFramework doc/CONVENTIONS.md, "The licence") -->
+  <url>https://github.com/j4ckk0/MythoStory</url>
+  <licenses>
+    <license>
+      <name>Apache License Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/j4ckk0/MythoStory.git</connection>
+    <developerConnection>scm:git:git@github.com:j4ckk0/MythoStory.git</developerConnection>
+    <url>https://github.com/j4ckk0/MythoStory</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/j4ckk0/MythoStory/issues</url>
+  </issueManagement>
+
   <!-- The modules, each depending only on those above it in this list:
          core       the domain: the stories and their storage — pure Kotlin, no framework (Android runs it too)
          frontend   the Angular page, packaged as a jar of static/ resources (built by npm, which Maven runs)

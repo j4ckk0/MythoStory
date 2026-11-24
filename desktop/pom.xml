@@ -57,7 +57,8 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>license-maven-plugin</artifactId>
         <executions>
-          <!-- jtools-parent's Apache header on the sources is the framework's own licence, not MythoStory's -->
+          <!-- jtools-parent's Apache header covers Java sources, of which MythoStory has none: its licence is in
+               LICENSE and NOTICE, at the root and in every archive, not at the top of each file -->
           <execution>
             <id>add-license-headers</id>
             <phase>none</phase>

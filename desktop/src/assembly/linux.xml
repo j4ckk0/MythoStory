@@ -33,6 +33,16 @@
       <fileMode>0644</fileMode>
     </file>
     <file>
+      <source>${maven.multiModuleProjectDirectory}/LICENSE</source>
+      <lineEnding>unix</lineEnding>
+      <fileMode>0644</fileMode>
+    </file>
+    <file>
+      <source>${maven.multiModuleProjectDirectory}/NOTICE</source>
+      <lineEnding>unix</lineEnding>
+      <fileMode>0644</fileMode>
+    </file>
+    <file>
       <source>src/dist/VOICES.md</source>
       <lineEnding>unix</lineEnding>
       <fileMode>0644</fileMode>

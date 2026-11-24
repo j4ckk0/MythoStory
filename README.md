@@ -419,8 +419,8 @@ Into `releases/` (not under source control):
 
 | File                                    | What it holds                                         |
 |-----------------------------------------|-------------------------------------------------------|
-| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README |
-| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `MythoStory.exe` (no console), `mythostory.bat`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README |
+| `mythostory-<version>-linux.tar.gz`     | `mythostory.jar`, `mythostory.sh`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README, `LICENSE`, `NOTICE` |
+| `mythostory-<version>-windows.zip`      | `mythostory.jar`, `MythoStory.exe` (no console), `mythostory.bat`, `mythostory.ini`, `jre/`, `piper/`, `voices/`, `VOICES.md`, this README, `LICENSE`, `NOTICE` |
 | `mythostory-<version>-android.apk`      | the app (when the Android SDK is there)               |
 
 `jre/` is a runtime jlink links from Temurin's jmods with only the modules MythoStory uses (about 66 MB, against
@@ -458,3 +458,11 @@ git config core.hooksPath .githooks
 ```
 
 Skip it once with `git push --no-verify`.
+
+## Licence
+
+MythoStory — its code, its data and the summaries written for it — is licensed under the
+[Apache License, Version 2.0](LICENSE). [`NOTICE`](NOTICE) lists everything it holds or ships that it did not
+write, where it comes from and on what terms: the characters from Wikidata (CC0), the coastlines from Natural
+Earth (public domain), JToolsFramework's devkit scripts (Apache-2.0), and, in the builds, the page's and the
+server's libraries, the Java runtime, Piper and its voices. The Linux and Windows archives carry both files.

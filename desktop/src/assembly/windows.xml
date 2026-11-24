@@ -32,6 +32,14 @@
       <lineEnding>crlf</lineEnding>
     </file>
     <file>
+      <source>${maven.multiModuleProjectDirectory}/LICENSE</source>
+      <lineEnding>crlf</lineEnding>
+    </file>
+    <file>
+      <source>${maven.multiModuleProjectDirectory}/NOTICE</source>
+      <lineEnding>crlf</lineEnding>
+    </file>
+    <file>
       <source>src/dist/VOICES.md</source>
       <lineEnding>crlf</lineEnding>
     </file>
