@@ -135,4 +135,18 @@ class MythoStoryServerTest {
             assertEquals(HttpStatusCode.OK, client.get("/api/info") { header(HttpHeaders.Host, "mythostory.lan:8080") }.status, "served to the network on purpose")
         }
     }
+
+    @Test
+    fun `the page's routes get index html, never cached, while a missing file or API answers 404`() = test {
+        // test resources: a static/index.html standing for the page
+        for (route in listOf("/", "/stories", "/characters/heracles", "/map?story=labours")) {
+            val response = client.get(route)
+            assertEquals(HttpStatusCode.OK, response.status, route)
+            assertContains(response.bodyAsText(), "<app-root>", message = route)
+            assertEquals("no-cache", response.headers[HttpHeaders.CacheControl], "$route: an upgrade's page names other chunks")
+        }
+        assertEquals(HttpStatusCode.NotFound, client.get("/api/catalogue").status, "a misspelt API")
+        assertEquals(HttpStatusCode.NotFound, client.get("/api").status)
+        assertEquals(HttpStatusCode.NotFound, client.get("/main-OLDHASH.js").status, "a chunk of a previous version")
+    }
 }

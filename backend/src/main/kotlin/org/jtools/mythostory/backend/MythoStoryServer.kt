@@ -1,5 +1,6 @@
 package org.jtools.mythostory.backend
 
+import io.ktor.http.CacheControl
 import io.ktor.http.ContentType
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
@@ -22,6 +23,7 @@ import io.ktor.server.request.port
 import io.ktor.server.response.respond
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
+import io.ktor.http.withCharset
 import io.ktor.server.response.header
 import io.ktor.server.response.respondBytes
 import kotlinx.coroutines.Dispatchers
@@ -157,9 +159,21 @@ fun Application.mythoStory(
                 call.respond(HttpStatusCode.NoContent)
             }
         }
-        // the Angular page; its routes are the page's business, so any path it does not serve gets index.html
+        // the Angular page, from the frontend's static/. Its routes (/stories, /characters/heracles…) are the page's
+        // business: a path that is no file gets index.html — unless it is under /api or names a file (a dot in its last
+        // segment: a chunk of a previous version, say), which get 404 rather than a page where JSON or a script was
+        // expected. index.html is never cached: after an upgrade, it names chunks the old one did not.
+        val page = Application::class.java.getResource("/static/index.html")?.readBytes()
         staticResources("/", "static") {
-            default("index.html")
+            cacheControl { url -> if (url.path.endsWith("/index.html")) listOf(CacheControl.NoCache(null)) else emptyList() }
+            fallback { path, call ->
+                val file = path.substringAfterLast('/').contains('.')
+                if (page == null || path == "api" || path.startsWith("api/") || file) call.respond(HttpStatusCode.NotFound)
+                else {
+                    call.response.header(HttpHeaders.CacheControl, "no-cache")
+                    call.respondBytes(page, ContentType.Text.Html.withCharset(Charsets.UTF_8))
+                }
+            }
         }
     }
 }
