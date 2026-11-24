@@ -3,6 +3,8 @@ package org.jtools.mythostory.backend
 import io.ktor.http.ContentType
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
+import io.ktor.server.application.ApplicationCallPipeline
+import io.ktor.server.application.call
 import io.ktor.server.application.install
 import io.ktor.server.cio.CIO
 import io.ktor.server.cio.CIOApplicationEngine
@@ -13,6 +15,10 @@ import io.ktor.server.plugins.compression.Compression
 import io.ktor.server.plugins.compression.excludeContentType
 import io.ktor.server.plugins.compression.gzip
 import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.server.request.host
+import io.ktor.server.request.ApplicationRequest
+import io.ktor.server.request.path
+import io.ktor.server.request.port
 import io.ktor.server.response.respond
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
@@ -24,10 +30,11 @@ import io.ktor.server.routing.get
 import io.ktor.server.routing.post
 import io.ktor.server.routing.route
 import io.ktor.server.routing.routing
-import io.ktor.server.sse.SSE
-import io.ktor.server.sse.sse
-import io.ktor.sse.ServerSentEvent
-import kotlinx.coroutines.delay
+import io.ktor.server.websocket.WebSockets
+import io.ktor.server.websocket.webSocket
+import io.ktor.websocket.Frame
+import java.net.InetAddress
+import java.net.URI
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
 import kotlinx.serialization.Serializable
@@ -50,8 +57,16 @@ const val SPEECH_MAX_LENGTH = 1000
 /** The platforms the server runs on: the page shows which. */
 enum class Platform(val label: String) { DESKTOP("desktop"), ANDROID("android") }
 
-/** How often a page's session stream is written to: how soon a crashed browser's page is noticed. */
-val SESSION_PING: Duration = 2.seconds
+/**
+ * How often the server pings a page's session socket, and how long it waits for the answer before taking the page
+ * for gone. A browser that crashes closes its sockets at once, which the server notices at once: the pings are for
+ * the rarer page that hangs or loses its network, so they are patient — browsers answer them even in background tabs.
+ */
+val SESSION_PING: Duration = 5.seconds
+val SESSION_TIMEOUT: Duration = 30.seconds
+
+/** The names a request from this computer may give the server in its Host header, when it listens on loopback only. */
+private val LOOPBACK_NAMES = setOf("127.0.0.1", "localhost", "::1", "[::1]")
 
 /**
  * Starts the server: the desktop's main and the Android app call this alike.
@@ -68,26 +83,37 @@ fun startServer(
     speech: SpeechSynthesizer? = null,
 ): EmbeddedServer<CIOApplicationEngine, CIOApplicationEngine.Configuration> =
     embeddedServer(CIO, host = host, port = port) {
-        mythoStory(Catalog.load(), platform, onLastPageClosed?.let { PageSessions(this, grace, it) }, speech)
+        val loopbackOnly = InetAddress.getByName(host).isLoopbackAddress
+        mythoStory(Catalog.load(), platform, onLastPageClosed?.let { PageSessions(this, grace, it) }, speech, loopbackOnly)
     }.start(wait = false)
 
 /**
  * The application: the API under /api, and the page — the frontend's static/, index.html for any other path.
  * The catalog is served whole, every language in it: the page builds its own indexes and switches language without
- * asking the server again.
+ * asking the server again. [loopbackOnly]: the server listens on this computer's loopback only (the default, the
+ * Android app's too), so a request naming any other host is refused (see [refuseForeignRequests]).
  */
-fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageSessions? = null, speech: SpeechSynthesizer? = null) {
+fun Application.mythoStory(
+    catalog: Catalog,
+    platform: Platform,
+    sessions: PageSessions? = null,
+    speech: SpeechSynthesizer? = null,
+    loopbackOnly: Boolean = true,
+) {
     val info = readInfo(platform, speech)
     val licences = Licences.load()
+    refuseForeignRequests(loopbackOnly)
     // absent rather than null: what the data files leave out, the page receives left out (a story's generation…)
     install(ContentNegotiation) { json(Json { explicitNulls = false }) }
-    // the catalog weighs megabytes since the Wikidata import, a fifth of it gzipped; never the session streams,
-    // whose pings gzip would hold back — and with them the news that a page has gone
+    // the catalog weighs megabytes, a fifth of that gzipped
     install(Compression) {
         gzip()
-        excludeContentType(ContentType.Text.EventStream, ContentType.Audio.Any)
+        excludeContentType(ContentType.Audio.Any)
     }
-    install(SSE)
+    install(WebSockets) {
+        pingPeriodMillis = SESSION_PING.inWholeMilliseconds
+        timeoutMillis = SESSION_TIMEOUT.inWholeMilliseconds
+    }
     routing {
         route("/api") {
             get("/info") { call.respond(info) }
@@ -113,16 +139,15 @@ fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageS
                     }
                 }
             }
-            // each open page holds this stream (frontend: SessionService), whose first event is its session's id; the
-            // page closes it with a beacon as it goes away, and if it crashed instead, the pings soon fail
-            sse("/session") {
+            // each open page holds this socket (frontend: SessionService), whose first message is its session's id; the
+            // page closes it, and sends a beacon, as it goes away; a crashed browser's socket closes by itself. A
+            // WebSocket rather than a stream of server-sent events: browsers allow six HTTP connections per host, all
+            // tabs together, and a stream held by every tab would leave the seventh tab without one.
+            webSocket("/session") {
                 val id = sessions?.opened() ?: ""
                 try {
-                    send(ServerSentEvent(data = id, event = "session"))
-                    while (true) {
-                        send(ServerSentEvent(comments = "ping"))
-                        delay(SESSION_PING)
-                    }
+                    send(Frame.Text(id))
+                    for (frame in incoming) Unit // the page sends nothing: this waits for the socket to close
                 } finally {
                     sessions?.closed(id)
                 }
@@ -138,6 +163,40 @@ fun Application.mythoStory(catalog: Catalog, platform: Platform, sessions: PageS
         }
     }
 }
+
+/**
+ * Refuses, with 403, what another website could have a browser ask of this server, which listens on the user's own
+ * computer or phone:
+ * - when it listens on loopback only, a Host header naming another host: a website whose name was made to resolve to
+ *   127.0.0.1 (DNS rebinding) would otherwise read the API as if it were the page;
+ * - under /api, a request a browser marks as sent from another site (Sec-Fetch-Site), or whose Origin is not the
+ *   server's own: another site's page could otherwise stop the desktop server (the session's beacon, its socket,
+ *   which no same-origin rule protects) or keep Piper busy.
+ * Requests that carry neither header — curl, the scripts' probes — are not a browser's, and pass. Links from another
+ * site to the page itself stay allowed: only the API is guarded against them.
+ */
+private fun Application.refuseForeignRequests(loopbackOnly: Boolean) {
+    intercept(ApplicationCallPipeline.Plugins) {
+        val request = call.request
+        val foreignHost = loopbackOnly && request.host() !in LOOPBACK_NAMES
+        val api = request.path().startsWith("/api/")
+        val site = request.headers["Sec-Fetch-Site"]
+        val origin = request.headers[HttpHeaders.Origin]
+        val crossSite = api && site != null && site != "same-origin" && site != "none"
+        val foreignOrigin = api && origin != null && !request.isFrom(origin)
+        if (foreignHost || crossSite || foreignOrigin) {
+            call.respond(HttpStatusCode.Forbidden, "refused: not this application's page")
+            finish()
+        }
+    }
+}
+
+/** Whether an Origin header ("http://127.0.0.1:8080") names the host and port this request was sent to. */
+private fun ApplicationRequest.isFrom(origin: String): Boolean = runCatching {
+    val uri = URI(origin)
+    val port = if (uri.port != -1) uri.port else if (uri.scheme == "https") 443 else 80
+    uri.host.equals(host(), ignoreCase = true) && port == port()
+}.getOrDefault(false)
 
 private fun readInfo(platform: Platform, speech: SpeechSynthesizer?): Info {
     val props = Properties()

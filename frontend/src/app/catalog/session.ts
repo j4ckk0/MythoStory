@@ -1,24 +1,28 @@
 import { Injectable } from '@angular/core';
 
 /**
- * The page's session with the server (backend: /api/session, PageSessions): a stream the page keeps open while it
- * lives, whose first event names the session; as the page goes away, a beacon closes it — the desktop server stops
- * once its last page is closed. Browsers keep such streams open even in background tabs, which slow their timers
- * down; and should the browser crash, the stream breaks, which the server notices too. The Android app's server
- * ignores it all.
+ * How long the page waits before opening its session again, once the socket closed without the page going away: a
+ * second at first, well within the server's grace, then longer each time, up to half a minute, should the server be
+ * gone for good.
+ */
+const RECONNECT_FIRST_MS = 1000;
+const RECONNECT_MAX_MS = 30_000;
+
+/**
+ * The page's session with the server (backend: /api/session, PageSessions): a WebSocket the page keeps open while it
+ * lives, whose first message names the session; as the page goes away, it closes the socket and sends a beacon — the
+ * desktop server stops once its last page is closed. A socket rather than a stream of server-sent events: browsers
+ * allow six HTTP connections per host, all tabs together, and a stream held by each tab would leave the seventh tab
+ * without one; sockets are not counted among them. Should the browser crash, the socket closes, which the server
+ * notices too; should it close while the page lives (a server restarted), the page opens it again, within the
+ * server's grace. The Android app's server ignores it all.
  */
 @Injectable({ providedIn: 'root' })
 export class SessionService {
-  private stream: EventSource | null = null;
+  private socket: WebSocket | null = null;
   private id: string | null = null;
-
-  open(): void {
-    // no EventSource in the tests' jsdom
-    if (this.stream || typeof EventSource === 'undefined') return;
-    this.stream = new EventSource('api/session');
-    this.stream.addEventListener('session', (event) => (this.id = (event as MessageEvent<string>).data));
-    addEventListener('pagehide', this.close);
-  }
+  private reconnect: ReturnType<typeof setTimeout> | null = null;
+  private reconnectDelay = RECONNECT_FIRST_MS;
 
   constructor() {
     // a page back from the browser's history cache opens a new session
@@ -29,11 +33,38 @@ export class SessionService {
     }
   }
 
+  open(): void {
+    if (this.socket || this.reconnect || typeof WebSocket === 'undefined') return;
+    addEventListener('pagehide', this.close);
+    this.connect();
+  }
+
+  private connect(): void {
+    this.reconnect = null;
+    const url = new URL('api/session', document.baseURI);
+    url.protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
+    const socket = new WebSocket(url);
+    this.socket = socket;
+    socket.onopen = () => (this.reconnectDelay = RECONNECT_FIRST_MS);
+    socket.onmessage = (event) => (this.id = event.data as string);
+    socket.onclose = () => {
+      // closed by the server or the network, not by the page going away (close() forgets the socket first)
+      if (this.socket !== socket) return;
+      this.socket = null;
+      this.id = null;
+      this.reconnect = setTimeout(() => this.connect(), this.reconnectDelay);
+      this.reconnectDelay = Math.min(this.reconnectDelay * 2, RECONNECT_MAX_MS);
+    };
+  }
+
   private readonly close = () => {
     if (this.id) navigator.sendBeacon(`api/session/${this.id}/closed`);
-    this.stream?.close();
-    this.stream = null;
+    const socket = this.socket;
+    this.socket = null;
     this.id = null;
+    socket?.close();
+    if (this.reconnect) clearTimeout(this.reconnect);
+    this.reconnect = null;
     removeEventListener('pagehide', this.close);
   };
 }

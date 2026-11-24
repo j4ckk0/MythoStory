@@ -1,17 +1,27 @@
 package org.jtools.mythostory.backend
 
+import io.ktor.client.plugins.websocket.WebSockets
+import io.ktor.client.plugins.websocket.webSocket
 import io.ktor.client.request.get
+import io.ktor.client.request.post
 import io.ktor.client.statement.bodyAsText
 import io.ktor.client.request.header
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.testing.ApplicationTestBuilder
 import io.ktor.server.testing.testApplication
+import io.ktor.websocket.Frame
+import io.ktor.websocket.readText
+import kotlinx.coroutines.CompletableDeferred
+import kotlinx.coroutines.withTimeout
 import org.jtools.mythostory.core.Catalog
+import kotlin.time.Duration.Companion.milliseconds
+import kotlin.time.Duration.Companion.seconds
 import kotlin.test.Test
 import kotlin.test.assertContains
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
+import kotlin.test.assertNotEquals
 
 class MythoStoryServerTest {
     /** A synthesizer that speaks French only, with two voices, its "audio" the voice and the text it was given. */
@@ -80,5 +90,49 @@ class MythoStoryServerTest {
     fun `the catalog is gzipped for whoever accepts it`() = test {
         val response = client.get("/api/catalog") { header(HttpHeaders.AcceptEncoding, "gzip") }
         assertEquals("gzip", response.headers[HttpHeaders.ContentEncoding])
+    }
+
+    @Test
+    fun `a page holds a session socket, named by its first message, and the server hears when the last one closes`() {
+        val lastClosed = CompletableDeferred<Unit>()
+        testApplication {
+            application {
+                mythoStory(Catalog.load(), Platform.DESKTOP, PageSessions(this, 100.milliseconds) { lastClosed.complete(Unit) })
+            }
+            val client = createClient { install(WebSockets) }
+            client.webSocket("/api/session") {
+                val id = (incoming.receive() as Frame.Text).readText()
+                assertEquals(36, id.length, "a UUID: $id")
+                assertFalse(lastClosed.isCompleted, "open while the page is")
+            }
+            withTimeout(5.seconds) { lastClosed.await() }
+        }
+    }
+
+    @Test
+    fun `another website cannot use the API through the user's browser`() = test {
+        // a browser marks what another site's page asks for
+        assertEquals(HttpStatusCode.Forbidden, client.get("/api/speech?lang=fr&text=Bonjour") { header("Sec-Fetch-Site", "cross-site") }.status)
+        assertEquals(HttpStatusCode.Forbidden, client.get("/api/info") { header("Sec-Fetch-Site", "same-site") }.status)
+        assertEquals(HttpStatusCode.Forbidden, client.post("/api/session/x/closed") { header(HttpHeaders.Origin, "https://example.org") }.status)
+        // the page itself, and what the user types in the address bar
+        assertEquals(HttpStatusCode.OK, client.get("/api/info") { header("Sec-Fetch-Site", "same-origin") }.status)
+        assertEquals(HttpStatusCode.OK, client.get("/api/info") { header("Sec-Fetch-Site", "none") }.status)
+        assertEquals(HttpStatusCode.NoContent, client.post("/api/session/x/closed") { header(HttpHeaders.Origin, "http://localhost") }.status)
+        // a link from another site to the page is fine: only the API is guarded
+        assertNotEquals(HttpStatusCode.Forbidden, client.get("/stories") { header("Sec-Fetch-Site", "cross-site") }.status)
+    }
+
+    @Test
+    fun `a request naming another host is refused while the server listens on loopback only`() {
+        test {
+            assertEquals(HttpStatusCode.Forbidden, client.get("/api/info") { header(HttpHeaders.Host, "rebound.example.org") }.status)
+            assertEquals(HttpStatusCode.Forbidden, client.get("/") { header(HttpHeaders.Host, "rebound.example.org") }.status)
+            assertEquals(HttpStatusCode.OK, client.get("/api/info") { header(HttpHeaders.Host, "127.0.0.1:8080") }.status)
+        }
+        testApplication {
+            application { mythoStory(Catalog.load(), Platform.DESKTOP, loopbackOnly = false) }
+            assertEquals(HttpStatusCode.OK, client.get("/api/info") { header(HttpHeaders.Host, "mythostory.lan:8080") }.status, "served to the network on purpose")
+        }
     }
 }

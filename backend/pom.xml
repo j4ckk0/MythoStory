@@ -39,7 +39,7 @@
     </dependency>
     <dependency>
       <groupId>io.ktor</groupId>
-      <artifactId>ktor-server-sse-jvm</artifactId>
+      <artifactId>ktor-server-websockets-jvm</artifactId>
     </dependency>
     <dependency>
       <groupId>io.ktor</groupId>

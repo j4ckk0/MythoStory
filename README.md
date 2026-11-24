@@ -57,9 +57,14 @@ The choices behind this layout:
 |--------|----------------|-----------------------------------------------------------------------------------|
 | GET    | `/api/info`    | `{name, version, platform, languages, voices}`: platform is `desktop` or `android` |
 | GET    | `/api/catalog` | the whole catalog, every language in it: `{characters, groups, stories, cycles, eras, places}` |
-| GET    | `/api/speech?lang=&text=` | a sentence read aloud, as WAV (the desktop's Piper; `voices` in `/api/info` says which languages) |
-| GET    | `/api/session` | a page's session: a server-sent event stream, its first event the session's id     |
+| GET    | `/api/speech?lang=&voice=&text=` | a text of 1 to 1000 characters read aloud, as WAV, by that voice or the language's default (the desktop's Piper; `voices` in `/api/info` says which); 404 without a voice for the language, 400 for a bad text |
+| GET    | `/api/licences` | `{embedded, libraries}`: what the help page lists                              |
+| GET    | `/api/session` | a page's session: a WebSocket, its first message the session's id                 |
 | POST   | `/api/session/{id}/closed` | the page has gone (a beacon): the desktop stops once its last page has   |
+
+The API answers the page only: a request a browser marks as sent from another site (`Sec-Fetch-Site`), or whose
+`Origin` is not the server's, gets 403, and so does any request naming another host than this computer while the
+server listens on loopback (DNS rebinding). Requests without those headers (curl, the scripts) pass.
 
 The catalog is small (a few hundred kilobytes) and read-only: the page loads it once, builds its own
 indexes (a character's stories, children and groups, a group's stories, a story's cycles and neighbours) and switches language
@@ -372,10 +377,11 @@ scripts/linux/stop.sh --port 9090               # only the one on that port
 
 The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network), on port 8080 unless `mythostory.ini`,
 beside the jar, names another. **It stops by itself
-when its last page is closed**, like a program whose last window is closed: each page holds a stream
-from the server (`/api/session`) and, as it goes away, says so; the server waits five seconds — a
-reload, a tab closed while another opens — and stops. Should the browser crash instead, the stream
-breaks and the server notices within seconds. It never stops before a first page has opened, and
+when its last page is closed**, like a program whose last window is closed: each page holds a WebSocket
+to the server (`/api/session`) and, as it goes away, closes it and says so; the server waits five seconds — a
+reload, a tab closed while another opens — and stops. Should the browser crash instead, the socket
+closes and the server notices at once. A WebSocket rather than a stream of server-sent events: browsers allow six
+HTTP connections per host, all tabs together, and a stream held by every tab left the seventh tab blank. It never stops before a first page has opened, and
 `--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
 
 Run from the repository, the program reads the stories aloud with `external/piper` and `external/voices`; a
