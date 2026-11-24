@@ -12,12 +12,18 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
+import android.window.OnBackInvokedCallback
+import android.window.OnBackInvokedDispatcher
 
 /** The window: a WebView on the app's own server, as the desktop's browser is on the desktop's. */
 class MainActivity : Activity() {
     private lateinit var webView: WebView
     private lateinit var frame: FrameLayout
     private lateinit var speech: SpeechBridge
+
+    /** Back, from Android 13 on: the page before, while there is one (see [followHistory]). */
+    private val goBack: Any? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) OnBackInvokedCallback { webView.goBack() } else null
+    private var goBackRegistered = false
 
     @SuppressLint("SetJavaScriptEnabled") // the page is Angular, served by the app itself
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +37,11 @@ class MainActivity : Activity() {
                 if (request.url.host == "127.0.0.1") return false
                 startActivity(Intent(Intent.ACTION_VIEW, request.url))
                 return true
+            }
+
+            // every page the WebView goes to, the Angular router's included (history.pushState), and every one back
+            override fun doUpdateVisitedHistory(view: WebView, url: String?, isReload: Boolean) {
+                followHistory()
             }
         }
         // Android 15 draws the app under the system bars: keep the page clear of them. The WebView in a frame, padded by
@@ -81,7 +92,24 @@ class MainActivity : Activity() {
         paintSystemBars()
     }
 
-    @Deprecated("the predictive back gesture comes with OnBackInvokedCallback; this one serves every version")
+    /**
+     * Back goes to the page before while there is one, and leaves the app from the first page, as in a browser. From
+     * Android 13 on (the manifest's enableOnBackInvokedCallback), Back reaches the app only through a callback, which
+     * is therefore registered only while the WebView has a page to go back to: without one, the system's own Back —
+     * and its predictive animation, leaving the app — applies. Android 16 calls onBackPressed no more.
+     */
+    private fun followHistory() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
+        val wanted = webView.canGoBack()
+        if (wanted == goBackRegistered) return
+        val callback = goBack as OnBackInvokedCallback
+        if (wanted) onBackInvokedDispatcher.registerOnBackInvokedCallback(OnBackInvokedDispatcher.PRIORITY_DEFAULT, callback)
+        else onBackInvokedDispatcher.unregisterOnBackInvokedCallback(callback)
+        goBackRegistered = wanted
+    }
+
+    /** Back before Android 13: the system calls this, and only below 13 (the manifest opts the app into callbacks). */
+    @Deprecated("from Android 13 on, Back comes through followHistory's callback")
     override fun onBackPressed() {
         if (webView.canGoBack()) webView.goBack() else @Suppress("DEPRECATION") super.onBackPressed()
     }
