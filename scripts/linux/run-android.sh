@@ -25,8 +25,10 @@ sources=(pom.xml {core,frontend,backend,desktop,android}/pom.xml {core,frontend,
          frontend/public frontend/package.json frontend/package-lock.json frontend/angular.json
          android/build.gradle.kts android/settings.gradle.kts)
 if $rebuild || [ ! -f "$APK" ] || [ -n "$(find "${sources[@]}" -newer "$APK" -print -quit)" ]; then
+  refuse_while_running "building the APK"   # the build replaces the desktop's jar too
   echo "== building $APK"
-  mvn -q clean package -DskipTests   # clean: Maven leaves in target/ what the sources no longer have
+  # shellcheck disable=SC2086 # BUILD_GOALS (jtools.conf) is a list of goals; clean: Maven leaves in target/ what the sources no longer have
+  mvn -q $BUILD_GOALS -DskipTests
 fi
 adb install -r "$APK"
 exec adb shell am start -n org.jtools.mythostory/org.jtools.mythostory.android.MainActivity

@@ -12,6 +12,12 @@
 #   scripts/linux/setup.sh --emulator   the above with --android, plus the Android emulator and its system image
 #                                       (ANDROID_EMULATOR_PACKAGES, 2 to 3 GB), which scripts/linux/emulator.sh runs the app in
 #
+# An external is deployed again when externals.conf names another URL for it than the one it came from
+# (external/.<name>.url, the devkit's stamp): a new version is a line changed there, then setup. Its download is
+# then fetched anew too, in case the new URL keeps the old file name (a voice's new version).
+current() { ! $force && [ -e "$1" ] && deployed_from "$2" "$3"; }
+fetch_for() { if [ -e "$ext/.$1.url" ] && ! deployed_from "$1" "$2"; then (force=true; fetch "$2"); else fetch "$2"; fi; }
+
 android=false
 emulator=false
 for arg in ${local_args[@]+"${local_args[@]}"}; do
@@ -23,9 +29,10 @@ for arg in ${local_args[@]+"${local_args[@]}"}; do
 done
 
 # Piper, for this machine: the system tar, which keeps the libraries' symlinks
-if [ -x "$ext/piper/piper" ] && ! $force; then echo "== $ext/piper present"; else
-  file=$(fetch "$PIPER_LINUX") || exit 1
+if current "$ext/piper/piper" piper "$PIPER_LINUX"; then echo "== $ext/piper present"; else
+  file=$(fetch_for piper "$PIPER_LINUX") || exit 1
   deploy "$file" "$ext/piper"
+  stamp piper "$PIPER_LINUX"
   echo "== $ext/piper deployed"
 fi
 
@@ -36,40 +43,44 @@ for key in $(compgen -A variable VOICE_); do
   for url in "${!key}" "${!key}.json"; do
     target=$ext/voices/${url##*/}
     models+=("${url##*/}")
-    if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
-    file=$(fetch "$url") || exit 1
+    if current "$target" "voice-${url##*/}" "$url"; then echo "== $target present"; continue; fi
+    file=$(fetch_for "voice-${url##*/}" "$url") || exit 1
     cp "$file" "$target"
+    stamp "voice-${url##*/}" "$url"
     echo "== $target deployed"
   done
 done
 for file in "$ext"/voices/*.onnx "$ext"/voices/*.onnx.json; do
   [ -e "$file" ] || continue
-  case " ${models[*]} " in *" ${file##*/} "*) ;; *) rm -f "$file"; echo "== $file removed (no longer in externals.conf)" ;; esac
+  case " ${models[*]} " in *" ${file##*/} "*) ;; *) rm -f "$file" "$ext/.voice-${file##*/}.url"; echo "== $file removed (no longer in externals.conf)" ;; esac
 done
 
 # Piper's archives the distributions bundle, kept as archives under generic names
 for spec in "piper-linux.tar.gz PIPER_LINUX" "piper-windows.zip PIPER_WINDOWS"; do
   set -- $spec
   target=$ext/$1
-  if [ -s "$target" ] && ! $force; then echo "== $target present"; continue; fi
-  file=$(fetch "${!2}") || exit 1
+  if current "$target" "$1" "${!2}"; then echo "== $target present"; continue; fi
+  file=$(fetch_for "$1" "${!2}") || exit 1
   cp "$file" "$target"
+  stamp "$1" "${!2}"
   echo "== $target deployed"
 done
 
 # the Android build's externals: only when asked for
 if $android; then
   dir=$ext/gradle
-  if [ -x "$dir/bin/gradle" ] && ! $force; then echo "== $dir present"; else
-    file=$(fetch "$ANDROID_GRADLE") || exit 1
+  if current "$dir/bin/gradle" gradle "$ANDROID_GRADLE"; then echo "== $dir present"; else
+    file=$(fetch_for gradle "$ANDROID_GRADLE") || exit 1
     deploy "$file" "$dir"
+    stamp gradle "$ANDROID_GRADLE"
     echo "== $dir deployed"
   fi
   # the command-line tools go where sdkmanager expects to find itself: <sdk>/cmdline-tools/latest
   sdk=$ext/android-sdk
-  if [ -x "$sdk/cmdline-tools/latest/bin/sdkmanager" ] && ! $force; then echo "== $sdk/cmdline-tools present"; else
-    file=$(fetch "$ANDROID_CMDLINE_TOOLS_LINUX") || exit 1
+  if current "$sdk/cmdline-tools/latest/bin/sdkmanager" android-cmdline-tools "$ANDROID_CMDLINE_TOOLS_LINUX"; then echo "== $sdk/cmdline-tools present"; else
+    file=$(fetch_for android-cmdline-tools "$ANDROID_CMDLINE_TOOLS_LINUX") || exit 1
     deploy "$file" "$sdk/cmdline-tools/latest"
+    stamp android-cmdline-tools "$ANDROID_CMDLINE_TOOLS_LINUX"
     echo "== $sdk/cmdline-tools deployed"
   fi
   sdkmanager() { JAVA_HOME="$PWD/$ext/jdk" "$sdk/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$PWD/$sdk" "$@"; }

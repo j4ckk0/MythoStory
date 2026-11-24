@@ -40,7 +40,7 @@ if "%NEED_BUILD%"=="0" (
 )
 if "%NEED_BUILD%"=="1" (
   echo == building %APK%
-  call mvn -q clean package -DskipTests || exit /b 1
+  call mvn -q %BUILD_GOALS% -DskipTests || exit /b 1
 )
 adb install -r "%APK%" || exit /b 1
 adb shell am start -n org.jtools.mythostory/org.jtools.mythostory.android.MainActivity
