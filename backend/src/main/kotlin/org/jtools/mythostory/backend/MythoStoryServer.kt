@@ -122,7 +122,7 @@ fun Application.mythoStory(
             get("/catalog") { call.respond(catalog) }
             // what the application carries, and under which licences: the help page lists them
             get("/licences") { call.respond(licences) }
-            // a text read aloud (a sentence, or a few the page groups): ?lang=fr&voice=fr-pierre&text=…, as WAV — by the language's default voice when the
+            // a text read aloud (a sentence, or a few the page groups): ?lang=fr&voice=fr-antoine&text=…, as WAV — by the language's default voice when the
             // voice is not one of the language's; the same text always sounds the same, so browsers keep it
             get("/speech") {
                 val language = call.request.queryParameters["lang"]

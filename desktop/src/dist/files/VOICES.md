@@ -9,19 +9,17 @@ ONNX Runtime 1.14.1 (MIT). Their licence texts, and where eSpeak NG's exact sour
 The voices, in `voices/`, come from https://huggingface.co/rhasspy/piper-voices (v1.0.0); the page's
 *Settings* choose among them:
 
-| File                                      | Voices                     | Trained on                                                    | Licence      |
-|-------------------------------------------|----------------------------|---------------------------------------------------------------|--------------|
-| `fr_FR-siwis-medium.onnx`                 | Siwis (French)             | the SIWIS French Speech Synthesis Database, University of Edinburgh — https://datashare.ed.ac.uk/handle/10283/2353 | CC BY 4.0    |
-| `fr_FR-upmc-medium.onnx`                  | Jessica, Pierre (French)   | the UPMC corpus of MaryTTS, Université Pierre-et-Marie-Curie — https://github.com/marytts/upmc-pierre-data | CC BY-SA 4.0 |
-| `en_GB-alba-medium.onnx`                  | Alba (English)             | the Alba dataset, University of Edinburgh — https://datashare.ed.ac.uk/handle/10283/3270 | CC BY 4.0    |
-| `en_GB-cori-medium.onnx`                  | Cori (English)             | LibriVox recordings — https://librivox.org                    | public domain |
-| `en_GB-northern_english_male-medium.onnx` | Northern (English)         | Google's crowdsourced UK and Ireland English dialect speech — https://www.openslr.org/83/ | CC BY-SA 4.0 |
+| File                         | Voices                   | Trained on                                                                                     | Licence       |
+|------------------------------|--------------------------|------------------------------------------------------------------------------------------------|---------------|
+| `fr_FR-mls-medium.onnx`      | Claire, Antoine (French) | the French part of Multilingual LibriSpeech (MLS), read from LibriVox audiobooks — https://www.openslr.org/94/ (readers 3060 and 4699 of its 125) | CC BY 4.0     |
+| `en_GB-cori-medium.onnx`     | Cori (English)           | LibriVox recordings — https://librivox.org                                                     | public domain |
+| `en_US-kristin-medium.onnx`  | Kristin (English)        | LibriVox recordings — https://librivox.org                                                     | public domain |
+| `en_US-ljspeech-medium.onnx` | LJ (English)             | the LJ Speech dataset, LibriVox recordings — https://keithito.com/LJ-Speech-Dataset/           | public domain |
+| `en_US-norman-medium.onnx`   | Norman (English)         | LibriVox recordings — https://librivox.org                                                     | public domain |
 
-CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ —
-CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/ (the voice models trained on these
-datasets are shared under the same licence).
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ — MLS: Pratap, Xu, Sriram, Synnaeve and Collobert, "MLS: A
+Large-Scale Multilingual Dataset for Speech Research", Interspeech 2020, https://arxiv.org/abs/2012.03411.
 
-Siwis, Jessica and Pierre, Alba and Northern were not trained from scratch: their model cards say each was
-fine-tuned from Piper's U.S. English *lessac* voice, itself trained on the Lessac Blizzard 2013 data, whose
-licence allows research use only (https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/license.html).
-Cori was trained from scratch.
+Every voice was trained from scratch on its own recordings, none fine-tuned from another voice, as each model card
+says (https://huggingface.co/rhasspy/piper-voices). Cori, Kristin, LJ and Norman were trained by Bryce Beattie:
+https://brycebeattie.com/files/tts/.

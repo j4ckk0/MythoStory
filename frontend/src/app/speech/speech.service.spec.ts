@@ -179,8 +179,8 @@ describe('SpeechService on Android', () => {
   });
 });
 
-const SIWIS = { id: 'fr-siwis', language: 'fr', name: 'Siwis', description: { en: 'Female voice', fr: 'Voix féminine' } };
-const PIERRE = { id: 'fr-pierre', language: 'fr', name: 'Pierre' };
+const CLAIRE = { id: 'fr-claire', language: 'fr', name: 'Claire', description: { en: 'Female voice', fr: 'Voix féminine' } };
+const ANTOINE = { id: 'fr-antoine', language: 'fr', name: 'Antoine' };
 
 describe('SpeechService with the server’s voices', () => {
   afterEach(() => {
@@ -203,8 +203,8 @@ describe('SpeechService with the server’s voices', () => {
     const speech = TestBed.inject(SpeechService);
     const http = TestBed.inject(HttpTestingController);
     http.expectOne('api/catalog').flush({ characters: [], stories: [], cycles: [], eras: [], places: [] });
-    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [SIWIS, PIERRE] });
-    expect(TestBed.inject(CatalogService).info()?.voices?.map((v) => v.id)).toEqual(['fr-siwis', 'fr-pierre']);
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [CLAIRE, ANTOINE] });
+    expect(TestBed.inject(CatalogService).info()?.voices?.map((v) => v.id)).toEqual(['fr-claire', 'fr-antoine']);
     expect(speech.available('fr')).toBe(true); // the server's
     expect(speech.readerOf('fr')).toBe('server');
     expect(speech.readerOf('en')).toBe('browser');
@@ -219,14 +219,14 @@ describe('SpeechService with the server’s voices', () => {
     const speech = TestBed.inject(SpeechService);
     const http = TestBed.inject(HttpTestingController);
     http.expectOne('api/catalog').flush({ characters: [], stories: [], cycles: [], eras: [], places: [] });
-    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [SIWIS, PIERRE] });
-    expect(speech.voices('fr').map((v) => v.name)).toEqual(['Siwis', 'Pierre']);
-    expect(speech.voiceOf('fr')).toBe('fr-siwis'); // nothing chosen: the default
-    TestBed.inject(VoiceSettings).choose('fr', 'fr-pierre');
-    expect(speech.voiceOf('fr')).toBe('fr-pierre');
-    expect(localStorage.getItem('mythostory.speech.voice.fr')).toBe('fr-pierre'); // remembered
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0', platform: 'desktop', languages: ['en', 'fr'], voices: [CLAIRE, ANTOINE] });
+    expect(speech.voices('fr').map((v) => v.name)).toEqual(['Claire', 'Antoine']);
+    expect(speech.voiceOf('fr')).toBe('fr-claire'); // nothing chosen: the default
+    TestBed.inject(VoiceSettings).choose('fr', 'fr-antoine');
+    expect(speech.voiceOf('fr')).toBe('fr-antoine');
+    expect(localStorage.getItem('mythostory.speech.voice.fr')).toBe('fr-antoine'); // remembered
     TestBed.inject(VoiceSettings).choose('fr', 'fr-gone');
-    expect(speech.voiceOf('fr')).toBe('fr-siwis'); // a voice the server no longer has: the default
+    expect(speech.voiceOf('fr')).toBe('fr-claire'); // a voice the server no longer has: the default
     TestBed.inject(VoiceSettings).choose('fr', null);
     expect(localStorage.getItem('mythostory.speech.voice.fr')).toBeNull();
   });
@@ -259,7 +259,7 @@ describe('ServerSpeechEngine', () => {
 
   it('plays each sentence the server says, the next one fetched while the current one plays', () => {
     FakeAudio.made = [];
-    const engine = new ServerSpeechEngine(() => [SIWIS, PIERRE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
+    const engine = new ServerSpeechEngine(() => [CLAIRE, ANTOINE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
     expect(engine.available('fr')).toBe(true);
     expect(engine.available('en')).toBe(false);
     let ended = 0;
@@ -278,9 +278,9 @@ describe('ServerSpeechEngine', () => {
 
   it('names the voice chosen when it is one of the language’s, and only then', () => {
     FakeAudio.made = [];
-    const engine = new ServerSpeechEngine(() => [SIWIS, PIERRE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
-    engine.speak('Un.', 'fr', () => undefined, 'fr-pierre');
-    engine.speak('Un.', 'fr', () => undefined, 'en-alba');
-    expect(FakeAudio.made.map((a) => a.url)).toEqual(['api/speech?lang=fr&voice=fr-pierre&text=Un.', 'api/speech?lang=fr&text=Un.']);
+    const engine = new ServerSpeechEngine(() => [CLAIRE, ANTOINE], (url) => new FakeAudio(url) as unknown as HTMLAudioElement);
+    engine.speak('Un.', 'fr', () => undefined, 'fr-antoine');
+    engine.speak('Un.', 'fr', () => undefined, 'en-cori');
+    expect(FakeAudio.made.map((a) => a.url)).toEqual(['api/speech?lang=fr&voice=fr-antoine&text=Un.', 'api/speech?lang=fr&text=Un.']);
   });
 });

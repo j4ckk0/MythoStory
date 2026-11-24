@@ -50,33 +50,13 @@
     }
   },
   {
-    "name": "Piper voice fr_FR-siwis-medium",
+    "name": "Piper voice fr_FR-mls-medium",
     "version": "1.0.0",
     "licence": "CC-BY-4.0",
-    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/siwis/medium",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/mls/medium",
     "role": {
-      "en": "The French voice Siwis, trained on the SIWIS French Speech Synthesis Database, University of Edinburgh. Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
-      "fr": "La voix française Siwis, entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg. Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
-    }
-  },
-  {
-    "name": "Piper voice fr_FR-upmc-medium",
-    "version": "1.0.0",
-    "licence": "CC-BY-SA-4.0",
-    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/upmc/medium",
-    "role": {
-      "en": "The French voices Jessica and Pierre, trained on the UPMC corpus of MaryTTS (Université Pierre-et-Marie-Curie). Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
-      "fr": "Les voix françaises Jessica et Pierre, entraînées sur le corpus UPMC de MaryTTS (Université Pierre-et-Marie-Curie). Affinées à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
-    }
-  },
-  {
-    "name": "Piper voice en_GB-alba-medium",
-    "version": "1.0.0",
-    "licence": "CC-BY-4.0",
-    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/alba/medium",
-    "role": {
-      "en": "The English voice Alba, trained on the Alba dataset, University of Edinburgh. Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
-      "fr": "La voix anglaise Alba, entraînée sur le jeu de données Alba, Université d’Édimbourg. Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
+      "en": "The French voices Claire and Antoine (readers 3060 and 4699 of 125), trained from scratch on the French part of Multilingual LibriSpeech (MLS, OpenSLR 94), read from LibriVox audiobooks.",
+      "fr": "Les voix françaises Claire et Antoine (lecteurs 3060 et 4699 sur 125), entraînées de zéro sur la partie française de Multilingual LibriSpeech (MLS, OpenSLR 94), lue d’après des livres audio LibriVox."
     }
   },
   {
@@ -85,18 +65,38 @@
     "licence": "Public domain",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/cori/medium",
     "role": {
-      "en": "The English voice Cori, trained on LibriVox recordings, in the public domain.",
-      "fr": "La voix anglaise Cori, entraînée sur des enregistrements LibriVox, dans le domaine public."
+      "en": "The English voice Cori, trained from scratch on LibriVox recordings, in the public domain.",
+      "fr": "La voix anglaise Cori, entraînée de zéro sur des enregistrements LibriVox, dans le domaine public."
     }
   },
   {
-    "name": "Piper voice en_GB-northern_english_male-medium",
+    "name": "Piper voice en_US-kristin-medium",
     "version": "1.0.0",
-    "licence": "CC-BY-SA-4.0",
-    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/northern_english_male/medium",
+    "licence": "Public domain",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/kristin/medium",
     "role": {
-      "en": "The English voice Northern, trained on Google’s crowdsourced UK and Ireland English dialect speech (OpenSLR 83). Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
-      "fr": "La voix anglaise Northern, entraînée sur le corpus participatif de Google des accents anglais du Royaume-Uni et d’Irlande (OpenSLR 83). Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
+      "en": "The English voice Kristin, trained from scratch on LibriVox recordings, in the public domain.",
+      "fr": "La voix anglaise Kristin, entraînée de zéro sur des enregistrements LibriVox, dans le domaine public."
+    }
+  },
+  {
+    "name": "Piper voice en_US-ljspeech-medium",
+    "version": "1.0.0",
+    "licence": "Public domain",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/ljspeech/medium",
+    "role": {
+      "en": "The English voice LJ, trained from scratch on the LJ Speech dataset (LibriVox recordings), in the public domain.",
+      "fr": "La voix anglaise LJ, entraînée de zéro sur le jeu de données LJ Speech (enregistrements LibriVox), dans le domaine public."
+    }
+  },
+  {
+    "name": "Piper voice en_US-norman-medium",
+    "version": "1.0.0",
+    "licence": "Public domain",
+    "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/norman/medium",
+    "role": {
+      "en": "The English voice Norman, trained from scratch on LibriVox recordings, in the public domain.",
+      "fr": "La voix anglaise Norman, entraînée de zéro sur des enregistrements LibriVox, dans le domaine public."
     }
   }
 ]

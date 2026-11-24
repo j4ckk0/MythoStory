@@ -26,7 +26,7 @@ import kotlin.test.assertNotEquals
 class MythoStoryServerTest {
     /** A synthesizer that speaks French only, with two voices, its "audio" the voice and the text it was given. */
     private val speech = object : SpeechSynthesizer {
-        override val voices = listOf(Voice("fr-siwis", "fr", "Siwis"), Voice("fr-pierre", "fr", "Pierre"))
+        override val voices = listOf(Voice("fr-claire", "fr", "Claire"), Voice("fr-antoine", "fr", "Antoine"))
         override fun synthesize(voice: String, text: String) = "RIFF $voice $text".toByteArray()
     }
 
@@ -57,12 +57,12 @@ class MythoStoryServerTest {
         val spoken = client.get("/api/speech?lang=fr&text=Bonjour%20Zeus")
         assertEquals(HttpStatusCode.OK, spoken.status)
         assertEquals("audio/wav", spoken.headers[HttpHeaders.ContentType])
-        assertEquals("RIFF fr-siwis Bonjour Zeus", spoken.bodyAsText(), "the language's default voice")
-        assertEquals("RIFF fr-pierre Bonjour", client.get("/api/speech?lang=fr&voice=fr-pierre&text=Bonjour").bodyAsText())
-        assertEquals("RIFF fr-siwis Bonjour", client.get("/api/speech?lang=fr&voice=en-alba&text=Bonjour").bodyAsText(), "not a French voice")
+        assertEquals("RIFF fr-claire Bonjour Zeus", spoken.bodyAsText(), "the language's default voice")
+        assertEquals("RIFF fr-antoine Bonjour", client.get("/api/speech?lang=fr&voice=fr-antoine&text=Bonjour").bodyAsText())
+        assertEquals("RIFF fr-claire Bonjour", client.get("/api/speech?lang=fr&voice=en-cori&text=Bonjour").bodyAsText(), "not a French voice")
         assertEquals(HttpStatusCode.NotFound, client.get("/api/speech?lang=en&text=Hello").status)
         assertEquals(HttpStatusCode.BadRequest, client.get("/api/speech?lang=fr&text=" + "a".repeat(SPEECH_MAX_LENGTH + 1)).status)
-        assertContains(client.get("/api/info").bodyAsText(), "\"voices\":[{\"id\":\"fr-siwis\",\"language\":\"fr\",\"name\":\"Siwis\"},")
+        assertContains(client.get("/api/info").bodyAsText(), "\"voices\":[{\"id\":\"fr-claire\",\"language\":\"fr\",\"name\":\"Claire\"},")
     }
 
     @Test

@@ -15,6 +15,6 @@ interface SpeechSynthesizer {
     fun synthesize(voice: String, text: String): ByteArray
 }
 
-/** A voice the server reads with: its id, its i18n language, its name and what it sounds like ("male, northern English"). */
+/** A voice the server reads with: its id, its i18n language, its name and what it sounds like ("male, American accent"). */
 @Serializable
 data class Voice(val id: String, val language: String, val name: String, val description: I18nText? = null)

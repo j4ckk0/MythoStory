@@ -14,7 +14,7 @@ class FakeAudio {
 }
 
 describe('ServerSpeechEngine', () => {
-  const voices = () => [{ id: 'fr-siwis', language: 'fr', name: 'Siwis' }];
+  const voices = () => [{ id: 'fr-claire', language: 'fr', name: 'Claire' }];
 
   it('goes on to the next text when the browser refuses to play one, rather than waiting for its end forever', async () => {
     const audio = new FakeAudio(() => Promise.reject(new DOMException('autoplay', 'NotAllowedError')));

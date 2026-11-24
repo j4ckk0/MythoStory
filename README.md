@@ -299,15 +299,15 @@ browser's —, each one heard first (the Iliad's first line); the browser rememb
 (`localStorage`), and a voice no longer there reads with the default.
 
 - **On the desktop**, the server reads aloud itself, with **Piper**: neural voices, offline, the
-  same in every browser on every system — in French Siwis (the default), Jessica and Pierre; in
-  English Alba (the default), Cori and Northern. The models are `externals.conf`'s `VOICE_*`;
+  same in every browser on every system — in French Claire (the default) and Antoine; in English
+  Cori (the default), Kristin, LJ and Norman. The models are `externals.conf`'s `VOICE_*`;
   [`voices.json`](desktop/src/main/resources/voices.json) names them and their speakers for the page,
-  each language's first the default. `/api/speech?lang=fr&voice=fr-pierre&text=…` answers as WAV in a
+  each language's first the default. `/api/speech?lang=fr&voice=fr-antoine&text=…` answers as WAV in a
   fraction of a second (a process per model, started on its first text and kept; a cache for what was
   said already); the page sends a few sentences at a time — Piper keeps the intonation going across
   them —, fetching the next ones while the current ones play. Piper and its voices are externals
   (`scripts/linux/setup.sh` deploys them) and the distributions carry them, with their credits in
-  `VOICES.md` (`desktop/src/dist/files/`) and the *Help* page (Piper: MIT; the voices: CC BY 4.0, CC BY-SA 4.0, public domain).
+  `VOICES.md` (`desktop/src/dist/files/`) and the *Help* page (Piper: MIT; the voices: CC BY 4.0, public domain).
   The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
 - **Without Piper**, the browser's own speech synthesis (the Web Speech API) with the system's voices,
   local ones and the locale's first (fr-FR, en-GB): fine on Windows and macOS; on Linux, browsers take

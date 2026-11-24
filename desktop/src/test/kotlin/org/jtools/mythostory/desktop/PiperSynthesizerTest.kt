@@ -21,16 +21,16 @@ class PiperSynthesizerTest {
         assumeTrue(piper.canExecute(), "no external/piper: scripts/linux/setup.sh deploys it")
         PiperSynthesizer(piper, voices).use { speech ->
             assertEquals(PiperVoice.catalogue().map { it.id }, speech.voices.map { it.id }, "setup deploys every voice of voices.json")
-            val french = speech.synthesize("fr-siwis", "Zeus est le roi des dieux.")
+            val french = speech.synthesize("fr-claire", "Zeus est le roi des dieux.")
             assertEquals("RIFF", String(french, 0, 4))
             assertEquals("WAVE", String(french, 8, 4))
             assertTrue(french.size > 20_000, "about a second of speech at least")
-            assertEquals("RIFF", String(speech.synthesize("en-alba", "Zeus is the king of the gods."), 0, 4))
-            assertTrue(french === speech.synthesize("fr-siwis", "Zeus est le roi des dieux."), "the second time comes from the cache")
+            assertEquals("RIFF", String(speech.synthesize("en-cori", "Zeus is the king of the gods."), 0, 4))
+            assertTrue(french === speech.synthesize("fr-claire", "Zeus est le roi des dieux."), "the second time comes from the cache")
             // two speakers of one model: one process, two voices
-            val jessica = speech.synthesize("fr-jessica", "Bonjour.")
-            val pierre = speech.synthesize("fr-pierre", "Bonjour.")
-            assertFalse(jessica.contentEquals(pierre), "each speaker has a voice of their own")
+            val claire = speech.synthesize("fr-claire", "Bonjour.")
+            val antoine = speech.synthesize("fr-antoine", "Bonjour.")
+            assertFalse(claire.contentEquals(antoine), "each speaker has a voice of their own")
         }
     }
 
@@ -39,8 +39,8 @@ class PiperSynthesizerTest {
         val catalogue = PiperVoice.catalogue()
         assertEquals(catalogue.size, catalogue.map { it.id }.toSet().size)
         assertEquals(setOf("en", "fr"), catalogue.map { it.language }.toSet())
-        assertEquals("fr-siwis", catalogue.first { it.language == "fr" }.id)
-        assertEquals("en-alba", catalogue.first { it.language == "en" }.id)
+        assertEquals("fr-claire", catalogue.first { it.language == "fr" }.id)
+        assertEquals("en-cori", catalogue.first { it.language == "en" }.id)
         catalogue.forEach { assertEquals(setOf("en", "fr"), it.description?.keys, "${it.id}'s description in both languages") }
     }
 

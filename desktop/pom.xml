@@ -129,8 +129,8 @@
                           <available file="${piper.archives}/piper-linux.tar.gz"/>
                           <available file="${piper.archives}/piper-windows.zip"/>
                           <!-- each language's default voice (voices.json), at least -->
-                          <available file="${piper.archives}/voices/fr_FR-siwis-medium.onnx"/>
-                          <available file="${piper.archives}/voices/en_GB-alba-medium.onnx"/>
+                          <available file="${piper.archives}/voices/fr_FR-mls-medium.onnx"/>
+                          <available file="${piper.archives}/voices/en_GB-cori-medium.onnx"/>
                         </and></not>
                       </condition>
                     </fail>

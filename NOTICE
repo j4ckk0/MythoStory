@@ -56,9 +56,8 @@ downloaded by scripts/linux/setup.sh from the URLs externals.conf names:
   library and data, which Piper uses): GPL-3.0-or-later. Bundled unmodified, run as a separate program. Their
   licence texts, which Piper's own archive leaves out, are in piper/licences/ (from desktop/src/dist/piper-licences/),
   with where eSpeak NG's complete source code is.
-- The Piper voices desktop/src/dist/files/VOICES.md lists, each with its own licence (CC-BY-4.0, CC-BY-SA-4.0 or public
-  domain) and the attribution it asks for. Four of them (all but Cori) were fine-tuned from Piper's lessac voice,
-  trained on the Lessac Blizzard 2013 data, licensed for research purposes only: VOICES.md says which.
+- The Piper voices desktop/src/dist/files/VOICES.md lists, each with its own licence (CC-BY-4.0 or public domain) and
+  the attribution it asks for; each trained from scratch on recordings under those terms.
 
 
 Trademarks

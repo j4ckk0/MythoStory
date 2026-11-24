@@ -236,7 +236,7 @@ describe('MythoStory', () => {
     const speech = TestBed.inject(SpeechService);
     const stop = vi.spyOn(speech, 'stop').mockImplementation(() => speech.key.set(null));
     await harness.navigateByUrl('/settings');
-    speech.key.set('sample:fr-siwis'); // a voice being heard, as its button starts it
+    speech.key.set('sample:fr-claire'); // a voice being heard, as its button starts it
     await harness.navigateByUrl('/stories');
     expect(stop).toHaveBeenCalledTimes(1);
     await harness.navigateByUrl('/settings');

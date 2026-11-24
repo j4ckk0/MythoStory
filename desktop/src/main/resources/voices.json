@@ -1,33 +1,19 @@
 [
   {
-    "id": "fr-siwis",
-    "file": "fr_FR-siwis-medium",
+    "id": "fr-claire",
+    "file": "fr_FR-mls-medium",
+    "speaker": 8,
     "language": "fr",
-    "name": "Siwis",
+    "name": "Claire",
     "description": { "en": "Female voice", "fr": "Voix féminine" }
   },
   {
-    "id": "fr-jessica",
-    "file": "fr_FR-upmc-medium",
-    "speaker": 0,
+    "id": "fr-antoine",
+    "file": "fr_FR-mls-medium",
+    "speaker": 80,
     "language": "fr",
-    "name": "Jessica",
-    "description": { "en": "Female voice", "fr": "Voix féminine" }
-  },
-  {
-    "id": "fr-pierre",
-    "file": "fr_FR-upmc-medium",
-    "speaker": 1,
-    "language": "fr",
-    "name": "Pierre",
+    "name": "Antoine",
     "description": { "en": "Male voice", "fr": "Voix masculine" }
-  },
-  {
-    "id": "en-alba",
-    "file": "en_GB-alba-medium",
-    "language": "en",
-    "name": "Alba",
-    "description": { "en": "Female voice, Scottish accent", "fr": "Voix féminine, accent écossais" }
   },
   {
     "id": "en-cori",
@@ -37,10 +23,24 @@
     "description": { "en": "Female voice, English accent", "fr": "Voix féminine, accent anglais" }
   },
   {
-    "id": "en-northern",
-    "file": "en_GB-northern_english_male-medium",
+    "id": "en-kristin",
+    "file": "en_US-kristin-medium",
     "language": "en",
-    "name": "Northern",
-    "description": { "en": "Male voice, northern English accent", "fr": "Voix masculine, accent du nord de l’Angleterre" }
+    "name": "Kristin",
+    "description": { "en": "Female voice, American accent", "fr": "Voix féminine, accent américain" }
+  },
+  {
+    "id": "en-lj",
+    "file": "en_US-ljspeech-medium",
+    "language": "en",
+    "name": "LJ",
+    "description": { "en": "Female voice, American accent", "fr": "Voix féminine, accent américain" }
+  },
+  {
+    "id": "en-norman",
+    "file": "en_US-norman-medium",
+    "language": "en",
+    "name": "Norman",
+    "description": { "en": "Male voice, American accent", "fr": "Voix masculine, accent américain" }
   }
 ]
