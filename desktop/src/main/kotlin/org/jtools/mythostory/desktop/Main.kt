@@ -5,6 +5,10 @@ import org.jtools.mythostory.backend.Platform
 import org.jtools.mythostory.backend.startServer
 import java.awt.Desktop
 import java.io.File
+import java.net.BindException
+import java.net.HttpURLConnection
+import java.net.InetAddress
+import java.net.ServerSocket
 import java.net.URI
 import java.util.Properties
 import io.ktor.server.engine.EmbeddedServer
@@ -64,20 +68,58 @@ fun main(args: Array<String>) {
         println("No Piper voice in $piper and $voices: the browser's voices will read the stories, if it has some.")
     }
     Runtime.getRuntime().addShutdownHook(Thread { speech.close() })
-    server = startServer(
-        host, port, Platform.DESKTOP,
-        onLastPageClosed = if (keepRunning) null else onLastPageClosed,
-        speech = speech.takeIf { it.voices.isNotEmpty() },
-    )
-    val actualPort = runBlocking { server.engine.resolvedConnectors().first().port }
-    val url = "http://${if (host == "0.0.0.0") "localhost" else host}:$actualPort/"
-    println("MythoStory is ready on $url; " + if (keepRunning) "Ctrl+C to stop" else "it stops when its last page is closed (or Ctrl+C)")
-    if (browser && Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-        Desktop.getDesktop().browse(URI(url))
+    // launched again, as one double-clicks a program already open: the page of the one running opens instead. Asked
+    // before the server starts, which would otherwise print the failed bind's stack trace from its own threads
+    val portTaken = {
+        val url = pageUrl(host, port)
+        if (isMythoStory(url)) {
+            println("MythoStory is already running on $url: its page opens.")
+            if (browser) openBrowser(url)
+            exitProcess(0)
+        }
+        System.err.println("Port $port is taken by another program: give MythoStory another, with --port N or port= in mythostory.ini.")
+        exitProcess(1)
     }
+    if (port != 0 && !canListen(host, port)) portTaken()
+    server = try {
+        startServer(
+            host, port, Platform.DESKTOP,
+            onLastPageClosed = if (keepRunning) null else onLastPageClosed,
+            speech = speech.takeIf { it.voices.isNotEmpty() },
+        )
+    } catch (e: Exception) {
+        // taken in the meantime
+        if (generateSequence<Throwable>(e) { it.cause }.any { it is BindException }) portTaken() else throw e
+    }
+    val url = pageUrl(host, runBlocking { server.engine.resolvedConnectors().first().port })
+    println("MythoStory is ready on $url; " + if (keepRunning) "Ctrl+C to stop" else "it stops when its last page is closed (or Ctrl+C)")
+    if (browser) openBrowser(url)
     Runtime.getRuntime().addShutdownHook(Thread { server.stop(500, 2000) })
     Thread.currentThread().join()
 }
+
+/** The page's address: on this computer, when the server listens on every interface. */
+private fun pageUrl(host: String, port: Int): String = "http://${if (host == "0.0.0.0") "localhost" else host}:$port/"
+
+private fun openBrowser(url: String) {
+    if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) Desktop.getDesktop().browse(URI(url))
+}
+
+/** Whether a server could listen on this interface and port now: no other program does. */
+private fun canListen(host: String, port: Int): Boolean =
+    runCatching { ServerSocket(port, 1, InetAddress.getByName(host)).close() }.isSuccess
+
+/** Whether the server answering at this address is MythoStory: its /api/info says so (backend: Info). */
+private fun isMythoStory(url: String): Boolean = runCatching {
+    val connection = URI("${url}api/info").toURL().openConnection() as HttpURLConnection
+    connection.connectTimeout = 2000
+    connection.readTimeout = 2000
+    try {
+        connection.responseCode == 200 && connection.inputStream.reader().use { it.readText() }.contains("\"name\":\"MythoStory\"")
+    } finally {
+        connection.disconnect()
+    }
+}.getOrDefault(false)
 
 /** The installation's settings, mythostory.ini next to the jar (a distribution's); none when it is not there. */
 private fun installationSettings(ini: File): Properties = Properties().apply {

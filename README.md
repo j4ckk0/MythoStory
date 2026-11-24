@@ -383,6 +383,8 @@ reload, a tab closed while another opens — and stops. Should the browser crash
 closes and the server notices at once. A WebSocket rather than a stream of server-sent events: browsers allow six
 HTTP connections per host, all tabs together, and a stream held by every tab left the seventh tab blank. It never stops before a first page has opened, and
 `--keep-running` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
+Launched again while it runs, it opens the running one's page and exits; should another program hold the port, it
+says so and exits (1).
 
 Run from the repository, the program reads the stories aloud with `external/piper` and `external/voices`; a
 distribution's are beside its jar.
