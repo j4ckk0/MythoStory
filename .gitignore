@@ -13,3 +13,6 @@ target/
 # your mirror and its credentials (setup reads it on top of externals.conf)
 /externals.local.conf
 tmp/
+
+# Claude Code's working notes: kept on this machine, never published
+CLAUDE.md
