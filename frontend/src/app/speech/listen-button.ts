@@ -1,4 +1,4 @@
-import { Component, OnDestroy, computed, effect, inject, input, untracked } from '@angular/core';
+import { Component, computed, effect, inject, input, untracked } from '@angular/core';
 import { I18nPipe } from '../i18n/i18n.pipe';
 import { I18nService } from '../i18n/i18n.service';
 import { SpeechService } from './speech.service';
@@ -14,7 +14,7 @@ import { SpeechService } from './speech.service';
   templateUrl: './listen-button.html',
   styleUrl: './listen-button.css',
 })
-export class ListenButton implements OnDestroy {
+export class ListenButton {
   protected readonly speech = inject(SpeechService);
   private readonly i18n = inject(I18nService);
 
@@ -28,11 +28,15 @@ export class ListenButton implements OnDestroy {
   protected readonly available = computed(() => this.speech.available(this.i18n.language()));
 
   constructor() {
-    // another language, another text: what was being read stops
-    effect(() => {
+    // another language, another text — the "next" link keeps this page and gives it another story —, or the page
+    // gone: the text this speaker was reading stops. The text it was reading, not the one it now shows: hence the
+    // key kept for the cleanup, which runs before each change and as the page goes.
+    effect((onCleanup) => {
       this.i18n.language();
-      this.key();
-      untracked(() => this.stopMine());
+      const key = this.key();
+      onCleanup(() => untracked(() => {
+        if (this.speech.key() === key) this.speech.stop();
+      }));
     });
   }
 
@@ -50,11 +54,4 @@ export class ListenButton implements OnDestroy {
     this.speech.stop();
   }
 
-  ngOnDestroy(): void {
-    this.stopMine();
-  }
-
-  private stopMine(): void {
-    if (this.mine()) this.speech.stop();
-  }
 }
