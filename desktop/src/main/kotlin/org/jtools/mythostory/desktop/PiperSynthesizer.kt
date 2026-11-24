@@ -12,6 +12,13 @@ import java.io.BufferedReader
 import java.io.File
 import java.io.Writer
 import java.nio.file.Files
+import java.util.concurrent.Callable
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.seconds
 
 /**
  * Piper (rhasspy/piper): neural speech synthesis, offline. Its voices are those of [catalogue] (voices.json, in the
@@ -19,12 +26,14 @@ import java.nio.file.Files
  * <file>.onnx and its <file>.onnx.json, as setup deploys them into external/voices and the distributions carry them;
  * a model may hold several speakers, each a voice. One Piper process per model, started on its first text and kept:
  * loading a model takes a moment, a sentence then takes a fraction of one. Piper reads a JSON line per text — its
- * speaker too — and writes the WAV where the line says, answering with its path.
+ * speaker too — and writes the WAV where the line says, answering with its path. A process that does not answer
+ * within [answerTimeout] is killed, so that a hung Piper never holds its voice for good.
  */
 class PiperSynthesizer(
     private val piper: File,
     private val directory: File,
     catalogue: List<PiperVoice> = PiperVoice.catalogue(),
+    private val answerTimeout: Duration = ANSWER_TIMEOUT,
 ) : SpeechSynthesizer, AutoCloseable {
     private val available: Map<String, PiperVoice> =
         if (!piper.canExecute()) emptyMap()
@@ -36,7 +45,13 @@ class PiperSynthesizer(
 
     private class Model(val process: Process, val input: Writer, val output: BufferedReader)
 
+    /** A model hung: killed, and not asked again for this text, which would likely hang it again. */
+    private class Hung(message: String) : Exception(message)
+
     private val running = HashMap<String, Model>()
+
+    /** The threads waiting for Piper's answers, so that a request can stop waiting while one still blocks. */
+    private val answers: ExecutorService = Executors.newCachedThreadPool { task -> Thread(task, "piper-answer").apply { isDaemon = true } }
     private val workDir: File = Files.createTempDirectory("mythostory-speech").toFile().apply { deleteOnExit() }
 
     /** The last texts said, by voice and text: a summary read twice is synthesized once. */
@@ -51,9 +66,12 @@ class PiperSynthesizer(
         val wav = synchronized(modelLock(piperVoice.file)) {
             try {
                 say(model(piperVoice), piperVoice.speaker, text)
+            } catch (e: Hung) {
+                forget(piperVoice.file)
+                throw e
             } catch (e: Exception) {
-                // a model that died is started again, once
-                synchronized(running) { running.remove(piperVoice.file)?.process?.destroy() }
+                // a model that died, or answered out of turn, is started again, once
+                forget(piperVoice.file)
                 say(model(piperVoice), piperVoice.speaker, text)
             }
         }
@@ -71,11 +89,27 @@ class PiperSynthesizer(
             }
             model.input.write(Json.encodeToString(line) + "\n")
             model.input.flush()
-            checkNotNull(model.output.readLine()) { "Piper stopped" }
+            val answer = answers.submit(Callable { model.output.readLine() })
+            val path = try {
+                answer.get(answerTimeout.inWholeMilliseconds, TimeUnit.MILLISECONDS)
+            } catch (e: TimeoutException) {
+                // killed, the process closes its output: the thread still reading it ends too
+                model.process.destroyForcibly()
+                throw Hung("Piper gave no answer in $answerTimeout")
+            }
+            checkNotNull(path) { "Piper stopped" }
+            // the answer to this text is the path it was given: any other line (a warning, an answer out of turn)
+            // would shift every later answer by one, and return a file half written or another text's
+            check(path.trim() == file.absolutePath) { "Piper answered \"$path\" instead of the WAV's path" }
             return file.readBytes()
         } finally {
             file.delete()
         }
+    }
+
+    /** A model's process stopped and forgotten: the next text starts another. */
+    private fun forget(file: String) {
+        synchronized(running) { running.remove(file)?.process?.destroyForcibly() }
     }
 
     private val locks = HashMap<String, Any>()
@@ -104,10 +138,17 @@ class PiperSynthesizer(
             running.values.forEach { it.process.destroy() }
             running.clear()
         }
+        answers.shutdownNow()
         workDir.deleteRecursively()
     }
 
     companion object {
+        /**
+         * How long Piper may take to answer a text: a model's first text includes its loading (a second or two), and
+         * the page sends up to 500 characters at a time, a few seconds of work on a slow computer.
+         */
+        val ANSWER_TIMEOUT: Duration = 30.seconds
+
         /** A storyteller's pace: a little slower than Piper's default (1.0), which suits short messages. */
         const val LENGTH_SCALE = "1.08"
 

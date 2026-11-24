@@ -2,10 +2,14 @@ package org.jtools.mythostory.desktop
 
 import org.junit.jupiter.api.Assumptions.assumeTrue
 import java.io.File
+import java.nio.file.Files
 import kotlin.test.Test
+import kotlin.test.assertFailsWith
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.time.Duration.Companion.milliseconds
+import kotlin.time.measureTime
 
 /** Piper itself, as setup deploys it into external/: skipped where it is not (the tests run from the module's directory). */
 class PiperSynthesizerTest {
@@ -52,5 +56,55 @@ class PiperSynthesizerTest {
     @Test
     fun `without Piper, no voice`() {
         assertEquals(emptyList(), PiperSynthesizer(File("no/such/piper"), voices).voices)
+    }
+
+    /**
+     * A Piper of our own, a shell script [body] runs each JSON line through ($line; $file, the WAV's path in it), with
+     * one voice whose model files exist: what the synthesizer does when Piper misbehaves. Unix only.
+     */
+    private fun fakePiper(body: String): Pair<File, File> {
+        assumeTrue(!System.getProperty("os.name").startsWith("Windows"), "a shell script stands for Piper")
+        val dir = Files.createTempDirectory("fake-piper").toFile().apply { deleteOnExit() }
+        val program = dir.resolve("piper")
+        program.writeText(
+            "#!/bin/sh\n" +
+                "while read -r line; do\n" +
+                "  file=$(printf '%s' \"\$line\" | sed -n 's/.*\"output_file\":\"\\([^\"]*\\)\".*/\\1/p')\n" +
+                body + "\n" +
+                "done\n",
+        )
+        program.setExecutable(true)
+        dir.resolve("model.onnx").writeText("")
+        dir.resolve("model.onnx.json").writeText("{}")
+        return program to dir
+    }
+
+    private val voice = listOf(PiperVoice("fake", "model", language = "fr", name = "Fake"))
+
+    @Test
+    fun `a Piper that hangs is killed after the timeout, and the voice answers again`() {
+        val (program, dir) = fakePiper("  sleep 60")
+        PiperSynthesizer(program, dir, voice, answerTimeout = 300.milliseconds).use { speech ->
+            val first = measureTime { assertFailsWith<Exception> { speech.synthesize("fake", "Bonjour.") } }
+            assertTrue(first.inWholeMilliseconds < 1500, "one timeout, not retried: $first")
+            // the voice is not held for good: the next text is tried, with a new process, and times out too
+            val second = measureTime { assertFailsWith<Exception> { speech.synthesize("fake", "Encore.") } }
+            assertTrue(second.inWholeMilliseconds < 1500, "$second")
+        }
+    }
+
+    @Test
+    fun `an answer that is not the WAV's path is never taken for it`() {
+        // the first process prints a stray line before its answer, as a warning would; the second behaves
+        val (program, dir) = fakePiper(
+            "  if [ ! -e \"\$0.started\" ]; then touch \"\$0.started\"; echo 'warning: something'; fi\n" +
+                "  printf 'RIFF%s' \"\$(basename \"\$file\")\" > \"\$file\"; echo \"\$file\"",
+        )
+        PiperSynthesizer(program, dir, voice, answerTimeout = 5000.milliseconds).use { speech ->
+            val wav = String(speech.synthesize("fake", "Bonjour."))
+            assertTrue(wav.startsWith("RIFFspeech"), "the WAV of this text, from a process started again: $wav")
+            val next = String(speech.synthesize("fake", "Encore."))
+            assertTrue(next.startsWith("RIFFspeech") && next != wav, "and the next text, its own: $next")
+        }
     }
 }
