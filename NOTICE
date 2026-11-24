@@ -42,8 +42,10 @@ The server's libraries (the desktop jar and the Android app)
 ------------------------------------------------------------
 Kotlin, kotlinx (coroutines, serialization, io, datetime), Ktor and their dependencies (Apache-2.0); Typesafe
 Config, kaml, okio, SnakeYAML Engine KMP, UrlEncoder (Apache-2.0); SLF4J (MIT); Logback (EPL-2.0 or LGPL-2.1,
-desktop only). Maven's license plugin writes the exact list at every build to licences/THIRD-PARTY.txt in the
-desktop jar, which the help page shows.
+desktop only). Maven's license plugin writes the exact list at every build to licences/THIRD-PARTY.txt, in the
+desktop jar and in the Android app, which the help page shows. This NOTICE and the Apache License's text (LICENSE)
+are in both too, served as licences/NOTICE.txt and licences/LICENSE.txt and linked by the help page; the Android app also
+keeps the libraries' own licence files (META-INF/LICENSE*, NOTICE*).
 
 The desktop distributions (releases/*-linux.tar.gz, *-windows.zip)
 -------------------------------------------------------------------

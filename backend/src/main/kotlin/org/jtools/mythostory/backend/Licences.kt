@@ -19,9 +19,9 @@ data class Component(
 
 /**
  * The licences the help page lists (frontend: help page): the embedded components — the JRE, Piper and its voices,
- * a curated list, licences/embedded.json, which the desktop carries — and the libraries the server's jar carries,
- * licences/THIRD-PARTY.txt, which Maven's license plugin writes from their poms at every build. On Android, neither:
- * the app carries no JRE nor Piper, and its libraries are packaged by Gradle.
+ * a curated list, licences/embedded.json, which the desktop carries — and the libraries the program carries,
+ * licences/THIRD-PARTY.txt, which Maven's license plugin writes from their poms at every build, into the desktop's
+ * jar and among the Android app's resources alike. The Android app carries no JRE nor Piper: no embedded component.
  */
 @Serializable
 data class Licences(val embedded: List<Component>, val libraries: List<Component>) {

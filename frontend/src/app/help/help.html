@@ -27,6 +27,12 @@
   @if (catalog.info(); as info) {
     <p class="muted">{{ 'app.version' | i18n: { version: info.version, platform: info.platform } }}</p>
   }
+  <p>
+    {{ 'help.licences.own' | i18n }}
+    <a href="licences/LICENSE.txt" target="_blank" rel="noopener">Apache License 2.0</a>.
+    {{ 'help.licences.notice' | i18n }}
+    <a href="licences/NOTICE.txt" target="_blank" rel="noopener">NOTICE</a>.
+  </p>
 
   <h3>{{ 'help.data.title' | i18n }}</h3>
   <ul class="components">

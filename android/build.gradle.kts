@@ -63,14 +63,19 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    // the list of the libraries and their licences Maven's license plugin writes (android/pom.xml), among the APK's
+    // resources: the server reads it from there (backend: Licences)
+    sourceSets.getByName("main").resources.srcDir("target/third-party")
+
     packaging {
         resources {
+            // the libraries' licences and notices, which their licences ask to go with them: several jars carry them
+            // under the same name, so they are put end to end rather than one kept
+            merges += listOf("META-INF/LICENSE*", "META-INF/NOTICE*")
             // what several jars carry under the same name, and the app never reads
             excludes += listOf(
                 "META-INF/INDEX.LIST",
                 "META-INF/DEPENDENCIES",
-                "META-INF/LICENSE*",
-                "META-INF/NOTICE*",
                 "META-INF/*.kotlin_module",
                 "META-INF/versions/9/previous-compilation-data.bin",
                 "META-INF/io.netty.versions.properties",

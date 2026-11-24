@@ -54,6 +54,29 @@
           </execution>
         </executions>
       </plugin>
+      <!-- the libraries the APK carries and their licences, from their poms: licences/THIRD-PARTY.txt among the APK's
+           resources (build.gradle.kts), which the help page lists (backend: /api/licences), as the desktop's jar does -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>third-party</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>add-third-party</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/third-party/licences</outputDirectory>
+              <!-- this module's packaging is pom (Gradle makes the APK), which the plugin skips unless told -->
+              <acceptPomPackaging>true</acceptPomPackaging>
+              <excludedGroups>org\.jtools</excludedGroups>
+              <excludedScopes>test,provided,system</excludedScopes>
+              <sortArtifactByName>true</sortArtifactByName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>

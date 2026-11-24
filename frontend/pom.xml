@@ -22,4 +22,31 @@
          vitest tests. The page uses nothing of @jtools/web: not unpacked. -->
     <jtools.weblib.skip>true</jtools.weblib.skip>
   </properties>
+
+  <build>
+    <plugins>
+      <!-- MythoStory's LICENSE and NOTICE in the page, as static/licences/LICENSE.txt and NOTICE.txt (served as text):
+           the help page links them, on the desktop and on Android alike — the Apache License's text, which the
+           libraries under it ask to go with them too -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>licence</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <copy file="${maven.multiModuleProjectDirectory}/LICENSE" tofile="${project.build.outputDirectory}/static/licences/LICENSE.txt" failonerror="true"/>
+                <copy file="${maven.multiModuleProjectDirectory}/NOTICE" tofile="${project.build.outputDirectory}/static/licences/NOTICE.txt" failonerror="true"/>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>

@@ -445,7 +445,10 @@ which licence:
   [`desktop/src/main/resources/licences/embedded.json`](desktop/src/main/resources/licences/embedded.json),
   kept by hand; `EmbeddedLicencesTest` fails when `externals.conf` deploys other jmods, Piper or voice;
 - the server's libraries, from their poms: `license-maven-plugin` writes `licences/THIRD-PARTY.txt` into
-  the jar at every build;
+  the jar at every build, and among the Android app's resources (`android/pom.xml`, `build.gradle.kts`), which also
+  keeps the libraries' own `META-INF/LICENSE*` and `NOTICE*`;
+- MythoStory's own `LICENSE` and `NOTICE`, copied into the page as `licences/LICENSE.txt` and `licences/NOTICE.txt`
+  (`frontend/pom.xml`), on both platforms;
 - the page's libraries: the Angular build's `3rdpartylicenses.txt`, served as
   `licences/3rdpartylicenses.txt`.
 
