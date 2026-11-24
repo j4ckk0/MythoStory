@@ -1,7 +1,7 @@
 import { provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { provideRouter, Router, withComponentInputBinding } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
 import { App } from './app';
 import { routes } from './app.routes';
@@ -196,5 +196,29 @@ describe('MythoStory', () => {
     const page = await open('/search?q=heracles');
     expect(page.textContent).toContain('Heracles');
     expect(page.textContent).toContain('Heroes and demigods');
+  });
+  it('shows an empty search page once the query is cleared, without a ?q=', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const page = await open('/search');
+    expect(page.querySelector('h1')).not.toBeNull();
+  });
+
+  it('keeps one history entry for a search, however many letters are typed', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const fixture = TestBed.createComponent(App);
+    http.expectOne('api/catalog').flush(CATALOG);
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0.1', platform: 'desktop', languages: ['en', 'fr'] });
+    fixture.detectChanges();
+    const router = TestBed.inject(Router);
+    const navigate = vi.spyOn(router, 'navigate');
+    const input = fixture.nativeElement.querySelector('form.search input') as HTMLInputElement;
+    for (const typed of ['h', 'he', 'her']) {
+      input.value = typed;
+      input.dispatchEvent(new Event('input'));
+      await fixture.whenStable();
+    }
+    // the first letter opens the search page, the next ones replace its query
+    expect(navigate.mock.calls.map(([, extras]) => !!extras?.replaceUrl)).toEqual([false, true, true]);
+    expect(router.url).toBe('/search?q=her');
   });
 });

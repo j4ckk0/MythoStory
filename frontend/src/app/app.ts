@@ -26,7 +26,9 @@ export class App {
     inject(SessionService).open();
   }
 
+  /** Each letter typed searches again: the first opens the search page, the next ones replace its query in the history. */
   protected search(): void {
-    this.router.navigate(['/search'], { queryParams: { q: this.query.trim() || null } });
+    const searching = this.router.url.startsWith('/search');
+    this.router.navigate(['/search'], { queryParams: { q: this.query.trim() || null }, replaceUrl: searching });
   }
 }

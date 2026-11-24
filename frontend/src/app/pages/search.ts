@@ -15,8 +15,8 @@ const SHOWN = 100;
 })
 export class Search {
   private readonly catalog = inject(CatalogService);
-  /** The ?q= query parameter. */
-  readonly q = input<string>('');
+  /** The ?q= query parameter: none once the box is cleared, which the router binds as undefined. */
+  readonly q = input('', { transform: (q: string | undefined) => q ?? '' });
 
   protected readonly query = computed(() => normalize(this.q().trim()));
 
