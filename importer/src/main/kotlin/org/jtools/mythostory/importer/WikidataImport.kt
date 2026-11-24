@@ -16,14 +16,10 @@ import kotlin.system.exitProcess
 /**
  * Imports the characters of Greek mythology from Wikidata — every instance of "mythological Greek character"
  * (Q22988604) and its subclasses — into data/characters/wikidata/<kind>.json, which it rewrites whole, and lists
- * those files in data/index.json. The curated characters (the other files) are never touched: a Wikidata item one
- * of them already is is not imported.
- *
- * Each imported character gets its names in English and French (from Wikidata's labels, one language standing in for
- * the other when it has none), its Greek name, its kind (Kinds), its parents among the catalog's characters, a
- * description (Wikidata's, or one made from its parents when Wikidata's says no more than "Greek mythological
- * figure"), and links: Wikipedia in both languages when the articles exist, and the Theoi Project's page when it
- * answers. The catalog, with what was imported, must be sound (Catalog.problems) before anything is written.
+ * those files in data/index.json. The curated characters (the other files) are never touched: an item a curated
+ * character already is (by its Wikidata item, or by its English Wikipedia article) is not imported. What each imported
+ * character gets: README, "The characters from Wikidata". The catalog, with what was imported, must be sound
+ * (Catalog.problems) before anything is written.
  *
  *   mythostory-importer [--all] [--data DIR]
  *     --all       also the characters without a Wikipedia article in English or French (names, little else)
@@ -68,6 +64,7 @@ class WikidataImport(private val data: File, private val all: Boolean) {
         val curatedWikipedia = curated.flatMap { c -> c.links.filter { it.kind == LinkKind.WIKIPEDIA }.map { it.url } }.toSet()
 
         println("== asking Wikidata for the characters of Greek mythology${if (all) "" else " with a Wikipedia article"}")
+        // an item with several values of a property (two Theoi ids, two genders…) comes back in several rows: the first stands for it
         val items = sparql.select(itemsQuery()).groupBy { it["item"]!! }.map { (qid, rows) -> Item(qid, rows.first()) }.associateBy { it.qid }
         sparql.select(parentsQuery()).forEach { row -> items[row["item"]]?.parents?.add(row["parent"]!!) }
         sparql.select(rootsQuery()).forEach { row -> items[row["item"]]?.roots?.add(row["root"]!!) }
@@ -78,7 +75,8 @@ class WikidataImport(private val data: File, private val all: Boolean) {
         val imported = items.values.filter { it.qid !in curatedByQid && wikipedia(it, "en") !in curatedWikipedia }
             .sortedBy { it.qid.drop(1).toLong() }
 
-        // the kinds: by classes first, then by parents, curated parents' kinds included, until nothing changes
+        // the kinds: by classes first, then by parents, curated parents' kinds included, in three passes: a kind found
+        // by parents reaches three generations down
         val kinds = HashMap<String, CharacterKind>()
         curatedByQid.forEach { (qid, c) -> kinds[qid] = c.kind }
         imported.forEach { item -> Kinds.byClasses(item.roots)?.let { kinds[item.qid] = it } }

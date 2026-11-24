@@ -16,7 +16,7 @@ import kotlin.test.fail
 /**
  * Every URL of the catalog answers: run by scripts/linux/check-links.sh (check-links.bat; -Dlinks.check=true), never by the build, which
  * must not depend on the network. YouTube answers 200 for a video that does not exist: its oEmbed endpoint, which
- * answers only for real videos, is asked instead. Wikipedia's articles — thousands, since the Wikidata import — are
+ * answers only for real videos, is asked instead. Wikipedia's articles — thousands, most of them imported from Wikidata — are
  * asked of Wikipedia's API, fifty to a request, rather than one by one.
  */
 class LinkCheckTest {

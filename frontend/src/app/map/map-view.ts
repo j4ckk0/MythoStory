@@ -76,8 +76,8 @@ export class MapView {
   });
 
   /**
-   * The places, and the labels of those that deserve one — the highlighted story's, the selected one, all of them
-   * when zoomed in —, laid out greedily: the selected place first, each label trying the four sides of its dot and
+   * The places, and the labels of those that deserve one — the highlighted story's, the selected one, every place on
+   * an inset, all of them when zoomed in —, laid out greedily: the selected place first, each label trying the four sides of its dot and
    * given up when every side would overlap a label already placed or leave the view (the dot's tooltip still names it).
    */
   protected readonly drawnPlaces = computed<DrawnPlace[]>(() => {

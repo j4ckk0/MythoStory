@@ -10,13 +10,13 @@ export interface VoiceOption {
 
 /** A way to speak a text aloud: the server's, the browser's own, or the Android app's. */
 export interface SpeechEngine {
-  /** Whether it has a voice for the language — the browser's voices may come late: [ready] says when they are known. */
+  /** Whether it has a voice for the language. The browser's voices and the Android engine come late: their constructor's callback says when to ask again. */
   available(language: I18nLanguage): boolean;
   /** Its voices for the language, its default first; none when the system chooses (Android). */
   voices?(language: I18nLanguage): VoiceOption[];
   /**
-   * Speaks the text, with the voice when it is one of the language's (its default else); [onEnd] once it is said,
-   * not when it was cancelled.
+   * Speaks the text, with the voice when it is one of the language's (its default else); [onEnd] once it is said, or
+   * could not be. A cancelled text may still call [onEnd] (the browser's engine does): the caller ignores it.
    */
   speak(text: string, language: I18nLanguage, onEnd: () => void, voice?: string | null): void;
   /** Stops speaking at once, the current text and any queued. */
@@ -32,7 +32,8 @@ export interface SpeechEngine {
 
 /**
  * The server's voices (backend: /api/speech, the desktop's Piper): neural, the same on every browser and system. Each
- * sentence is a WAV the page plays; the next one is fetched while the current one plays.
+ * text — a sentence, or sentences grouped up to [groupUpTo] — is a WAV the page plays; the next one is fetched while
+ * the current one plays.
  */
 export class ServerSpeechEngine implements SpeechEngine {
   /** Piper reads several sentences at once with a natural melody and pauses between them; the server takes 1000 characters. */

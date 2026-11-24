@@ -24,7 +24,7 @@ export class Player {
   /** A series is being read: more than one text. */
   protected readonly shown = computed(() => this.speech.state() !== 'idle' && this.speech.items().length > 1);
   protected readonly story = computed(() => this.catalog.storyById().get(this.speech.item() ?? ''));
-  /** What is read: all the stories, or a cycle's title. */
+  /** The cycle being read, when the series is one cycle's; undefined for all the stories. */
   protected readonly cycle = computed(() => {
     const key = this.speech.key() ?? '';
     return key.startsWith('cycle:') ? this.catalog.catalog()?.cycles.find((c) => c.id === key.slice(6)) : undefined;

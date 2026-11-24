@@ -53,7 +53,7 @@ import java.util.Properties
 @Serializable
 data class Info(val name: String, val version: String, val platform: String, val languages: List<String>, val voices: List<Voice>)
 
-/** The longest text /api/speech reads: a sentence, or a long one — the page sends one at a time. */
+/** The longest text /api/speech reads: the page sends a sentence, or sentences grouped up to 500 characters (frontend: ServerSpeechEngine.groupUpTo). */
 const val SPEECH_MAX_LENGTH = 1000
 
 /** The platforms the server runs on: the page shows which. */
@@ -122,7 +122,7 @@ fun Application.mythoStory(
             get("/catalog") { call.respond(catalog) }
             // what the application carries, and under which licences: the help page lists them
             get("/licences") { call.respond(licences) }
-            // a sentence read aloud: ?lang=fr&voice=fr-pierre&text=…, as WAV — by the language's default voice when the
+            // a text read aloud (a sentence, or a few the page groups): ?lang=fr&voice=fr-pierre&text=…, as WAV — by the language's default voice when the
             // voice is not one of the language's; the same text always sounds the same, so browsers keep it
             get("/speech") {
                 val language = call.request.queryParameters["lang"]

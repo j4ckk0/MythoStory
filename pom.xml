@@ -42,7 +42,7 @@
   </issueManagement>
 
   <!-- The modules, each depending only on those above it in this list:
-         core       the domain: the stories and their storage — pure Kotlin, no framework (Android runs it too)
+         core       the catalog: its model, the data files the jar carries, their validation — pure Kotlin, no framework (Android runs it too)
          frontend   the Angular page, packaged as a jar of static/ resources (built by npm, which Maven runs)
          backend    the HTTP server: Ktor, the API over core and the page (Android runs it too)
          desktop    the desktop program: the server's main, the executable jar and the distributions with a JRE

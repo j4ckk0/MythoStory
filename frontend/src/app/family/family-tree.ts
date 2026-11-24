@@ -6,7 +6,7 @@ import { I18nService } from '../i18n/i18n.service';
 import { CharacterChip } from '../shared/character-chip';
 import { normalize } from '../shared/text';
 
-/** How many generations of ancestors the tree shows. */
+/** How many generations of ancestors the tree shows: further up, the gods' families repeat themselves (Ouranos and Gaia four times over for Hebe). */
 const ANCESTOR_GENERATIONS = 2;
 const NODE_WIDTH = 124;
 const NODE_HEIGHT = 34;
@@ -28,8 +28,8 @@ interface AncestorTree {
 }
 
 /**
- * A character's family: their ancestors as a pedigree — the character at the bottom, parents and grandparents above
- * (further up, the gods' families repeat themselves: Ouranos and Gaia four times over for Hebe) —, and their children grouped by the other parent ("with Leto: Apollo, Artemis"), which keeps Zeus's hundred
+ * A character's family: their ancestors as a pedigree — the character at the bottom, parents and grandparents
+ * above —, and their children grouped by the other parent ("with Leto: Apollo, Artemis"), which keeps Zeus's hundred
  * children readable. Every name leads to that character's own tree.
  */
 @Component({
@@ -58,7 +58,7 @@ export class FamilyTree {
   protected readonly nodeWidth = NODE_WIDTH;
   protected readonly nodeHeight = NODE_HEIGHT;
 
-  /** The pedigree, laid out: each leaf gets a column, each parent sits above the middle of its own parents. */
+  /** The pedigree, laid out: each topmost ancestor gets a column, every other box is centred under its own parents. */
   protected readonly pedigree = computed(() => {
     const tree = this.ancestors(this.character(), 0, new Set());
     if (!tree.parents.length) return null;
@@ -85,7 +85,7 @@ export class FamilyTree {
     return { nodes, width, height: rows * ROW_HEIGHT - (ROW_HEIGHT - NODE_HEIGHT) };
   });
 
-  /** The children by other parent, those with a known other parent first, each group and its children by name. */
+  /** The children by other parent: groups with a known other parent first, then the largest; within a group, by kind, then by name. */
   protected readonly families = computed(() => {
     const me = this.character().id;
     const groups = new Map<string, { others: Character[]; children: Character[] }>();
@@ -112,6 +112,7 @@ export class FamilyTree {
     this.router.navigate(['/characters', character.id]);
   }
 
+  // [seen]: the characters on the path from the root, so that a loop in the data (A parent of B, B of A) ends the branch
   private ancestors(character: Character, level: number, seen: Set<string>): AncestorTree {
     const parents =
       level < ANCESTOR_GENERATIONS && !seen.has(character.id)

@@ -14,7 +14,7 @@
   <packaging>jar</packaging>
 
   <name>MythoStory core</name>
-  <description>The domain: the stories and their storage. Pure Kotlin and kotlinx.serialization, no framework: the desktop and Android run it alike.</description>
+  <description>The catalog: its model, the data files the jar carries and their validation. Pure Kotlin and kotlinx.serialization, no framework: the desktop and Android run it alike.</description>
 
   <properties>
     <!-- Android runs this module too: Java 17 bytecode, the newest it takes (jtools-parent's is 25) -->

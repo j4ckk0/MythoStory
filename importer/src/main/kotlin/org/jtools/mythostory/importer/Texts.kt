@@ -38,7 +38,7 @@ object Texts {
         Regex("(un-|une-)?(personnage|figure|heros|heroine|divinite|dieu|deesse|nymphe|roi|reine|princesse|prince)?-?((de-la|des|du|dans-la)-)?(mythologie|legende|mythe)s?-grecques?"),
     )
 
-    /** "Son of Zeus and Leda." / "Fils de Zeus et de Léda." — from the gender ("male", "female" or null) and the parents' names. */
+    /** "Son of Zeus and Leda in Greek mythology." / "Fils de Zeus et de Léda dans la mythologie grecque." — from the gender ("male", "female" or null) and the parents' names. */
     fun childOf(gender: String?, parents: List<String>, language: String): String = when (language) {
         "fr" -> {
             val child = when (gender) { "male" -> "Fils"; "female" -> "Fille"; else -> "Enfant" }

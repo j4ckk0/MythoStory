@@ -24,11 +24,14 @@ class PageSessions(
     private val open = HashSet<String>()
     private var countdown: Job? = null
 
-    /** How many pages are open. */
+    /** How many pages are open (the tests ask). */
     val count: Int
         @Synchronized get() = open.size
 
-    /** A page opened: its session's id, which it closes with. */
+    /**
+     * A page opened: its session's id, which it closes with. Synchronized, as [closed]: the session sockets and the
+     * beacons' requests come on the server's threads, at the same time.
+     */
     @Synchronized
     fun opened(): String {
         val id = UUID.randomUUID().toString()
@@ -38,6 +41,7 @@ class PageSessions(
         return id
     }
 
+    /** A page closed, by its beacon or its socket: the second of the two is ignored; the last page closed starts the countdown. */
     @Synchronized
     fun closed(id: String) {
         if (!open.remove(id) || open.isNotEmpty()) return

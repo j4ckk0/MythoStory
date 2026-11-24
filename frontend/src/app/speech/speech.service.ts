@@ -13,7 +13,7 @@ export interface Reading {
   intro?: string;
 }
 
-/** One sentence to say, the reading it belongs to and its paragraph (-1: the title, -2: the intro). */
+/** One stretch to say (a sentence, or sentences the engine groups), the reading it belongs to ([item], its index in [items]) and its paragraph (-1: the title, -2: the intro). */
 interface Sentence {
   text: string;
   paragraph: number;
@@ -47,7 +47,7 @@ export class SpeechService {
   private readonly android: boolean;
   /** The engine of the reading in progress. */
   private engine: SpeechEngine | null = null;
-  /** Bumped when the browser's voices become known, so that availability is asked again. */
+  /** Bumped when the device's voices become known (the browser's list, or the Android engine ready), so that availability is asked again. */
   private readonly voicesChanged = signal(0);
 
   readonly state = signal<SpeechState>('idle');
@@ -61,7 +61,7 @@ export class SpeechService {
   readonly item = computed(() => (this.state() === 'idle' ? null : (this.items()[this.itemIndex()]?.key ?? null)));
   /** The paragraph being read, to highlight it; -1 for the title, -2 for the intro, null when nothing is. */
   readonly paragraph = signal<number | null>(null);
-  /** The language the reading is in: another one asked for, it stops. */
+  /** The language the reading is in: the player and the speaker buttons stop the reading when the page's language changes. */
   readonly language = signal<I18nLanguage>('en');
 
   private readonly settings = inject(VoiceSettings);

@@ -50,7 +50,7 @@
       <groupId>io.ktor</groupId>
       <artifactId>ktor-serialization-kotlinx-json-jvm</artifactId>
     </dependency>
-    <!-- the tests' log (Ktor's): the desktop's logger; on Android, Ktor logs nowhere -->
+    <!-- Ktor logs through SLF4J: logback gives the tests a log; the desktop brings its own, Android none (Ktor is silent there) -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>

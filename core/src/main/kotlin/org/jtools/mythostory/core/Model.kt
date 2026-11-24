@@ -3,10 +3,10 @@ package org.jtools.mythostory.core
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-/**
- * The catalog's records, as the data files under data/ hold them and as the API serves them (frontend: catalog.ts).
- * Ids are slugs ("zeus", "labours-of-heracles"), the same in every language: the records refer to each other by
- * them, and the page's URLs use them. Every text is an [I18nText].
+/*
+ * The catalog's records, as the data files under data/ hold them and as the API serves them (frontend: catalog.ts,
+ * which backend's ContractTest keeps the same). Ids are slugs ("zeus", "labours-of-heracles"), the same in every
+ * language: the records refer to each other by them, and the page's URLs use them. Every text is an [I18nText].
  */
 
 /** What a character is; the order is the one the page lists them in (its names: the frontend's i18n). */
@@ -113,7 +113,7 @@ data class Place(
     val identification: I18nText? = null,
 )
 
-/** An ancient text telling the story, and where to read it online. */
+/** An ancient text — one that tells a story, or lists a group's members — and where to read it online. */
 @Serializable
 data class Source(
     val author: I18nText,
@@ -124,7 +124,7 @@ data class Source(
     val url: I18nUrl = emptyMap(),
 )
 
-/** A page about a character or a story, in one language. */
+/** A page about a character, a group or a story, in one language. */
 @Serializable
 data class Link(
     val kind: LinkKind,

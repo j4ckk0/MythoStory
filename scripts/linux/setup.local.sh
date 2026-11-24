@@ -103,7 +103,7 @@ if $android; then
     packages="$packages $ANDROID_EMULATOR_PACKAGES"
   fi
   for package in $packages; do
-    [ -d "$sdk/${package//;//}" ] || { echo "$package was not installed: accept the licences (scripts/linux/setup.sh --android, at a terminal)" >&2; exit 1; }
+    [ -d "$sdk/${package//;//}" ] || { echo "$package was not installed: accept the licences (scripts/linux/setup.sh --android, or --emulator, at a terminal)" >&2; exit 1; }
   done
 fi
 

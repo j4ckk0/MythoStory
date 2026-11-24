@@ -53,8 +53,8 @@ class MainActivity : Activity() {
                 followHistory()
             }
         }
-        // Android 15 draws the app under the system bars: keep the page clear of them. The WebView in a frame, padded by
-        // the bars — a WebView ignores its own padding, drawing the page under them —; the theme's colour shows there.
+        // Android 15 draws the app under the system bars: the WebView sits in a frame padded by them (a WebView ignores
+        // its own padding), the theme's colour showing there.
         frame = FrameLayout(this)
         frame.addView(webView)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

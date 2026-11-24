@@ -102,7 +102,7 @@ data class Catalog(
         stories.filterNot { it.id in inCycles }.forEach { add("story ${it.id} is in no cycle: the page would show it nowhere") }
     }
 
-    /** A text in every i18n language, none blank. */
+    /** A text in every i18n language, none blank, and in no other. */
     private fun MutableList<String>.checkI18n(what: String, text: I18nText) {
         I18n.LANGUAGES.filter { text[it].isNullOrBlank() }.forEach { add("$what lacks its \"$it\" i18n text") }
         (text.keys - I18n.LANGUAGES.toSet()).forEach { add("$what is in \"$it\", which is not an i18n language") }
@@ -132,6 +132,7 @@ data class Catalog(
     companion object {
         private val SLUG = Regex("[a-z0-9]+(-[a-z0-9]+)*")
         private val WIKIDATA = Regex("Q[1-9][0-9]*")
+        // strict: a misspelt key in a data file fails the build, rather than being dropped unseen
         private val json = Json { ignoreUnknownKeys = false }
 
         private fun duplicates(ids: List<String>) = ids.groupingBy { it }.eachCount().filterValues { it > 1 }.keys

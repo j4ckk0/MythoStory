@@ -24,7 +24,7 @@ export interface Licences {
   libraries: ThirdPartyComponent[];
 }
 
-/** SPDX identifiers whose text spdx.org has: each licence links to it. */
+/** What looks like an SPDX identifier (no spaces): linked to its text on spdx.org. */
 const SPDX = /^[A-Za-z0-9.+-]+$/;
 
 /** How to use the application, and what it carries under which licences. */

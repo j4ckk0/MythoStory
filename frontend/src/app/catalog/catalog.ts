@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { I18nLanguage, I18nText } from '../i18n/i18n.service';
 
-/** The backend's catalog (core: Model.kt), served whole by /api/catalog. */
+// The backend's catalog (core: Model.kt), served whole by /api/catalog; backend's ContractTest checks these interfaces
+// against the Kotlin classes.
+
 export type CharacterKind = 'primordial' | 'titan' | 'olympian' | 'deity' | 'nymph' | 'hero' | 'mortal' | 'creature';
 export const CHARACTER_KINDS: CharacterKind[] = ['primordial', 'titan', 'olympian', 'deity', 'nymph', 'hero', 'mortal', 'creature'];
 
@@ -58,7 +60,7 @@ export interface Story {
   route?: boolean;
 }
 
-/** A period of the mythic chronology (backend: Era). */
+/** A period of the mythic chronology (core: Era). */
 export interface Era {
   id: string;
   title: I18nText;
@@ -66,7 +68,7 @@ export interface Era {
   dating?: I18nText;
 }
 
-/** A place on the map (backend: Place); identification is set for a mythical or disputed one. */
+/** A place on the map (core: Place); identification is set for a mythical or disputed one. */
 export interface Place {
   id: string;
   name: I18nText;
@@ -83,7 +85,7 @@ export interface Cycle {
   stories: string[];
 }
 
-/** A group the myths name as one (backend: Group): the Argonauts, the Muses… Its members are characters. */
+/** A group the myths name as one (core: Group): the Argonauts, the Muses… Its members are characters. */
 export interface Group {
   id: string;
   name: I18nText;

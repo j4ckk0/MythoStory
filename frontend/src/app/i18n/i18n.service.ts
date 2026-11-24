@@ -10,7 +10,7 @@ export type I18nLanguage = (typeof I18N_LANGUAGES)[number];
 /** Each i18n language's name in itself, as the language list offers it: a reader finds their own whatever the page's. */
 export const I18N_LANGUAGE_NAMES: Record<I18nLanguage, string> = { en: 'English', fr: 'Français' };
 
-/** A catalog text in every i18n language, by code (backend: I18nText). */
+/** A catalog text in every i18n language, by code (core: I18nText). */
 export type I18nText = Partial<Record<I18nLanguage, string>>;
 
 const I18N_MESSAGES: Record<I18nLanguage, Record<I18nKey, string>> = { en, fr };

@@ -66,7 +66,7 @@ rem tells (a package "a;b" lives in <sdk>\a\b)
 for %%p in (!PACKAGES!) do (
   set "PACKAGE=%%~p"
   if not exist "%SDK%\!PACKAGE:;=\!" (
-    echo %%~p was not installed: accept the licences ^(scripts\windows\setup.bat --android^) >&2
+    echo %%~p was not installed: accept the licences ^(scripts\windows\setup.bat --android, or --emulator^) >&2
     exit /b 1
   )
 )

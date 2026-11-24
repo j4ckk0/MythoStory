@@ -17,6 +17,7 @@ import java.util.Locale
 class SpeechBridge(context: Context, private val webView: WebView) : TextToSpeech.OnInitListener {
     private val tts = TextToSpeech(context, this)
 
+    // written by onInit on the main thread, read by the page's calls on the WebView's JavaBridge thread
     @Volatile
     private var ready = false
 

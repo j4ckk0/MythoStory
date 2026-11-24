@@ -1,8 +1,8 @@
 package org.jtools.mythostory.core
 
 /**
- * The application's i18n: the languages it speaks, and its texts in each of them.
- * Every text of the catalog is an [I18nText], which [Catalog.problems] requires in every one of [I18n.LANGUAGES].
+ * The application's i18n languages. Every text of the catalog is an [I18nText], which [Catalog.problems] requires in
+ * every one of [I18n.LANGUAGES], and in no other; the page's own texts are the frontend's (i18n/en.ts, fr.ts).
  */
 object I18n {
     /** ISO 639-1 codes; the first is the fallback when a text lacks a language (it never should). */
