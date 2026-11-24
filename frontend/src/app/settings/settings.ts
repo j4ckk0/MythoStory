@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, OnDestroy, computed, inject } from '@angular/core';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 import { I18nLanguage, I18nService } from '../i18n/i18n.service';
 import { SpeechService } from '../speech/speech.service';
@@ -11,7 +11,7 @@ import { VoiceSettings } from '../speech/voice-settings';
   templateUrl: './settings.html',
   styleUrl: './settings.css',
 })
-export class Settings {
+export class Settings implements OnDestroy {
   protected readonly speech = inject(SpeechService);
   private readonly settings = inject(VoiceSettings);
   private readonly i18n = inject(I18nService);
@@ -31,5 +31,10 @@ export class Settings {
   protected sample(language: I18nLanguage, voice: string): void {
     if (this.playing(voice)) this.speech.stop();
     else this.speech.playSample(language, voice);
+  }
+
+  /** A voice sample stops with the page that plays it: the player shows no single text, nothing else could stop it. */
+  ngOnDestroy(): void {
+    if (this.speech.key()?.startsWith('sample:')) this.speech.stop();
   }
 }

@@ -7,6 +7,7 @@ import { App } from './app';
 import { routes } from './app.routes';
 import { Catalog, CatalogService } from './catalog/catalog';
 import { SessionService } from './catalog/session';
+import { SpeechService } from './speech/speech.service';
 import { I18nService } from './i18n/i18n.service';
 import { en } from './i18n/en';
 import { fr } from './i18n/fr';
@@ -225,5 +226,22 @@ describe('MythoStory', () => {
     // the first letter opens the search page, the next ones replace its query
     expect(navigate.mock.calls.map(([, extras]) => !!extras?.replaceUrl)).toEqual([false, true, true]);
     expect(router.url).toBe('/search?q=her');
+  });
+  it('stops a voice sample when the settings page is left, not a story being read', async () => {
+    TestBed.inject(I18nService).setLanguage('en');
+    const harness = await RouterTestingHarness.create();
+    TestBed.inject(CatalogService);
+    http.expectOne('api/catalog').flush(CATALOG);
+    http.expectOne('api/info').flush({ name: 'MythoStory', version: '0.1', platform: 'desktop', languages: ['en', 'fr'] });
+    const speech = TestBed.inject(SpeechService);
+    const stop = vi.spyOn(speech, 'stop').mockImplementation(() => speech.key.set(null));
+    await harness.navigateByUrl('/settings');
+    speech.key.set('sample:fr-siwis'); // a voice being heard, as its button starts it
+    await harness.navigateByUrl('/stories');
+    expect(stop).toHaveBeenCalledTimes(1);
+    await harness.navigateByUrl('/settings');
+    speech.key.set('labours'); // a story read from its page, heard on while choosing a voice
+    await harness.navigateByUrl('/stories');
+    expect(stop).toHaveBeenCalledTimes(1);
   });
 });
