@@ -99,6 +99,13 @@
       <fileMode>0644</fileMode>
       <directoryMode>0755</directoryMode>
     </fileSet>
+    <!-- the licences of Piper's components, which its own archive leaves out, and where eSpeak NG's source is -->
+    <fileSet>
+      <directory>src/dist/piper-licences</directory>
+      <outputDirectory>piper/licences</outputDirectory>
+      <fileMode>0644</fileMode>
+      <directoryMode>0755</directoryMode>
+    </fileSet>
     <fileSet>
       <directory>${maven.multiModuleProjectDirectory}/external/voices</directory>
       <outputDirectory>voices</outputDirectory>

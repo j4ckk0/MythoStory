@@ -41,4 +41,20 @@ class EmbeddedLicencesTest {
             assertTrue(conf.values.any { it.endsWith("/${voice.file}.onnx") }, "voices.json's ${voice.id} (${voice.file}) is not in externals.conf")
         }
     }
+
+    /**
+     * Piper's archive carries no licence text, so the distributions add its components' from src/dist/piper-licences.
+     * Those texts and the eSpeak NG source they point to belong to one Piper release: another one in externals.conf
+     * needs them gathered again, from the versions that release was built from.
+     */
+    @Test
+    fun `the licence texts the distributions add to piper are those of the Piper externals_conf deploys`() {
+        val licences = File("desktop/src/dist/piper-licences")
+        val readme = licences.resolve("README.txt").readText()
+        val piper = embedded.getValue("Piper")
+        assertTrue("Piper $piper " in readme, "externals.conf deploys Piper $piper, but piper-licences/README.txt is about another release")
+        Regex("""\b[\w.-]+(?:LICENSE|COPYING)[\w.]*|\b[\w-]+ThirdPartyNotices\.txt""").findAll(readme).map { it.value }.toSet().forEach {
+            assertTrue(licences.resolve(it).isFile, "piper-licences/README.txt names $it, which is not there")
+        }
+    }
 }

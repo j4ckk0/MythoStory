@@ -4,7 +4,7 @@ MythoStory reads the stories aloud with **Piper** 2023.11.14-2, a neural speech 
 computer, offline: https://github.com/rhasspy/piper — MIT licence, © Michael Hansen.
 Its directory, `piper/`, also holds what Piper needs to run: piper-phonemize 1.2.0 (MIT), eSpeak NG 1.52
 (GPL-3.0-or-later, which turns the text into phonemes; its source: https://github.com/espeak-ng/espeak-ng) and
-ONNX Runtime 1.14.1 (MIT).
+ONNX Runtime 1.14.1 (MIT). Their licence texts, and where eSpeak NG's exact source code is, are in `piper/licences/`.
 
 The voices, in `voices/`, come from https://huggingface.co/rhasspy/piper-voices (v1.0.0); the page's
 *Settings* choose among them:
@@ -20,3 +20,8 @@ The voices, in `voices/`, come from https://huggingface.co/rhasspy/piper-voices 
 CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ —
 CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/ (the voice models trained on these
 datasets are shared under the same licence).
+
+Siwis, Jessica and Pierre, Alba and Northern were not trained from scratch: their model cards say each was
+fine-tuned from Piper's U.S. English *lessac* voice, itself trained on the Lessac Blizzard 2013 data, whose
+licence allows research use only (https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/license.html).
+Cori was trained from scratch.

@@ -15,8 +15,8 @@
     "licence": "MIT",
     "url": "https://github.com/rhasspy/piper",
     "role": {
-      "en": "The speech synthesis that reads the stories aloud (piper/).",
-      "fr": "La synthèse vocale qui lit les histoires à voix haute (piper/)."
+      "en": "The speech synthesis that reads the stories aloud (piper/). The licences of its components, {fmt}, spdlog and libtashkeel’s model among them, are in piper/licences.",
+      "fr": "La synthèse vocale qui lit les histoires à voix haute (piper/). Les licences de ses composants, dont {fmt}, spdlog et le modèle de libtashkeel, se trouvent dans piper/licences."
     }
   },
   {
@@ -35,8 +35,8 @@
     "licence": "GPL-3.0-or-later",
     "url": "https://github.com/espeak-ng/espeak-ng",
     "role": {
-      "en": "The pronunciation rules and dictionaries Piper relies on (piper/). Its source code is available at this address.",
-      "fr": "Les règles de prononciation et les dictionnaires dont Piper se sert (piper/). Son code source est disponible à cette adresse."
+      "en": "The pronunciation rules and dictionaries Piper relies on (piper/). Its source code is available at this address; piper/licences/README.txt names the exact version.",
+      "fr": "Les règles de prononciation et les dictionnaires dont Piper se sert (piper/). Son code source est disponible à cette adresse ; piper/licences/README.txt en donne la version exacte."
     }
   },
   {
@@ -55,8 +55,8 @@
     "licence": "CC-BY-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/siwis/medium",
     "role": {
-      "en": "The French voice Siwis, trained on the SIWIS French Speech Synthesis Database, University of Edinburgh.",
-      "fr": "La voix française Siwis, entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg."
+      "en": "The French voice Siwis, trained on the SIWIS French Speech Synthesis Database, University of Edinburgh. Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
+      "fr": "La voix française Siwis, entraînée sur la SIWIS French Speech Synthesis Database, Université d’Édimbourg. Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
     }
   },
   {
@@ -65,8 +65,8 @@
     "licence": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/fr/fr_FR/upmc/medium",
     "role": {
-      "en": "The French voices Jessica and Pierre, trained on the UPMC corpus of MaryTTS (Université Pierre-et-Marie-Curie).",
-      "fr": "Les voix françaises Jessica et Pierre, entraînées sur le corpus UPMC de MaryTTS (Université Pierre-et-Marie-Curie)."
+      "en": "The French voices Jessica and Pierre, trained on the UPMC corpus of MaryTTS (Université Pierre-et-Marie-Curie). Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
+      "fr": "Les voix françaises Jessica et Pierre, entraînées sur le corpus UPMC de MaryTTS (Université Pierre-et-Marie-Curie). Affinées à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
     }
   },
   {
@@ -75,8 +75,8 @@
     "licence": "CC-BY-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/alba/medium",
     "role": {
-      "en": "The English voice Alba, trained on the Alba dataset, University of Edinburgh.",
-      "fr": "La voix anglaise Alba, entraînée sur le jeu de données Alba, Université d’Édimbourg."
+      "en": "The English voice Alba, trained on the Alba dataset, University of Edinburgh. Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
+      "fr": "La voix anglaise Alba, entraînée sur le jeu de données Alba, Université d’Édimbourg. Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
     }
   },
   {
@@ -95,8 +95,8 @@
     "licence": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_GB/northern_english_male/medium",
     "role": {
-      "en": "The English voice Northern, trained on Google’s crowdsourced UK and Ireland English dialect speech (OpenSLR 83).",
-      "fr": "La voix anglaise Northern, entraînée sur le corpus participatif de Google des accents anglais du Royaume-Uni et d’Irlande (OpenSLR 83)."
+      "en": "The English voice Northern, trained on Google’s crowdsourced UK and Ireland English dialect speech (OpenSLR 83). Fine-tuned from Piper’s lessac voice (Lessac Blizzard 2013 data, research use only).",
+      "fr": "La voix anglaise Northern, entraînée sur le corpus participatif de Google des accents anglais du Royaume-Uni et d’Irlande (OpenSLR 83). Affinée à partir de la voix lessac de Piper (données Lessac Blizzard 2013, usage de recherche seulement)."
     }
   }
 ]

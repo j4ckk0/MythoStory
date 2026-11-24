@@ -16,9 +16,12 @@ One application, two platforms:
 
 ## Quick start
 
-On Linux (x86_64), or on Windows with the same scripts as `scripts\windows\*.bat`; `curl`, `tar` and `unzip` at hand:
+On Linux (x86_64), or on Windows with the same scripts as `scripts\windows\*.bat`; `curl`, `tar` and `unzip` at hand (on Windows, `jtools-1.6.1\install.bat --no-project` for the first step):
 
 ```bash
+# once: JToolsFramework 1.6.1, the build's parent (jtools-parent), into ~/.m2 - it is not on Maven Central
+curl -fLO https://github.com/j4ckk0/JToolsFramework/releases/download/v1.6.1/jtools-1.6.1.zip
+unzip -q jtools-1.6.1.zip && jtools-1.6.1/install.sh --no-project
 git clone https://github.com/j4ckk0/MythoStory.git && cd MythoStory
 scripts/linux/setup.sh                    # once: the JDK, Maven, Node.js, Piper and its voices into external/
 git config core.hooksPath .githooks       # once: scripts/linux/ci.sh runs before every push (git push --no-verify skips it)
@@ -512,4 +515,10 @@ MythoStory — its code, its data and the summaries written for it — is licens
 [Apache License, Version 2.0](LICENSE). [`NOTICE`](NOTICE) lists everything it holds or ships that it did not
 write, where it comes from and on what terms: the characters from Wikidata (CC0), the coastlines from Natural
 Earth (public domain), JToolsFramework's devkit scripts (Apache-2.0), and, in the builds, the page's and the
-server's libraries, the Java runtime, Piper and its voices. The Linux and Windows archives carry both files.
+server's libraries, the Java runtime, Piper and its voices. The Linux and Windows archives carry both files, and
+`piper/licences/` the licence texts of Piper's components, which Piper's own archive leaves out, with where eSpeak
+NG's source code is ([`desktop/src/dist/piper-licences/`](desktop/src/dist/piper-licences/README.txt)).
+
+Android, Windows, Linux, Java, Wikipedia, Wikidata, YouTube, GitHub and the other names this README uses are
+trademarks of their owners, named only to say what MythoStory runs on, is built with or links to; MythoStory is not
+affiliated with any of them. `NOTICE` names the owners.

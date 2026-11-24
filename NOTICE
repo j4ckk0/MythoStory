@@ -52,6 +52,21 @@ The desktop distributions (releases/*-linux.tar.gz, *-windows.zip)
 Listed with their versions in desktop/src/main/resources/licences/embedded.json, which the help page shows, and
 downloaded by scripts/linux/setup.sh from the URLs externals.conf names:
 - Eclipse Temurin JRE (OpenJDK), trimmed by jlink: GPL-2.0 with the Classpath Exception.
-- Piper, piper-phonemize, ONNX Runtime: MIT. eSpeak NG (its data, used by Piper): GPL-3.0-or-later.
+- Piper, piper-phonemize, ONNX Runtime, and {fmt}, spdlog and libtashkeel's model within them: MIT. eSpeak NG (its
+  library and data, which Piper uses): GPL-3.0-or-later. Bundled unmodified, run as a separate program. Their
+  licence texts, which Piper's own archive leaves out, are in piper/licences/ (from desktop/src/dist/piper-licences/),
+  with where eSpeak NG's complete source code is.
 - The Piper voices desktop/src/dist/files/VOICES.md lists, each with its own licence (CC-BY-4.0, CC-BY-SA-4.0 or public
-  domain) and the attribution it asks for.
+  domain) and the attribution it asks for. Four of them (all but Cori) were fine-tuned from Piper's lessac voice,
+  trained on the Lessac Blizzard 2013 data, licensed for research purposes only: VOICES.md says which.
+
+
+Trademarks
+==========
+Android, Google, YouTube and Angular are trademarks of Google LLC; Windows is a trademark of Microsoft Corporation;
+macOS is a trademark of Apple Inc.; Linux is the registered trademark of Linus Torvalds; Java and OpenJDK are
+trademarks of Oracle and/or its affiliates; Eclipse Temurin is a trademark of the Eclipse Foundation; Apache and
+Maven are trademarks of the Apache Software Foundation; Node.js is a trademark of the OpenJS Foundation; Wikipedia,
+Wikidata and Wikisource are trademarks of the Wikimedia Foundation; GitHub is a trademark of GitHub, Inc. Every other
+product or company name used here belongs to its owner. They are named only to say what MythoStory runs on, is built
+with, comes from or links to. MythoStory is not affiliated with, endorsed or sponsored by any of them.
