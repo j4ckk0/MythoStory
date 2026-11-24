@@ -27,7 +27,7 @@ data class Character(
     val id: String,
     val name: I18nText,
     val kind: CharacterKind,
-    /** The Wikidata item ("Q34201"): what scripts/import-characters.sh knows them by, so as to never import them twice. */
+    /** The Wikidata item ("Q34201"): the importer (scripts/linux/import-characters.sh) matches characters by it, so as never to import one twice. */
     val wikidata: String? = null,
     /** One sentence: who they are. */
     val description: I18nText,

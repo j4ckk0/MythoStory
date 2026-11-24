@@ -14,6 +14,37 @@ One application, two platforms:
 - **Android**: the **same server** runs inside the app on `127.0.0.1`, and a WebView shows the
   **same page**. Everything stays on the phone and works offline (the links lead to the web).
 
+## Quick start
+
+On Linux (x86_64), or on Windows with the same scripts as `scripts\windows\*.bat`; `curl`, `tar` and `unzip` at hand:
+
+```bash
+git clone https://github.com/j4ckk0/MythoStory.git && cd MythoStory
+scripts/linux/setup.sh                    # once: the JDK, Maven, Node.js, Piper and its voices into external/
+git config core.hooksPath .githooks       # once: scripts/linux/ci.sh runs before every push (git push --no-verify skips it)
+scripts/linux/run.sh                      # build if needed, start, open the browser on http://127.0.0.1:8090/
+```
+
+For the Android app: `scripts/linux/setup.sh --android` (the Android SDK, about a gigabyte), then
+`scripts/linux/run-android.sh` with a phone plugged in, or `scripts/linux/setup.sh --emulator` and
+`scripts/linux/emulator.sh` for the emulator. On Windows, `setup.bat` deploys Piper and its voices too, but has not
+been run on Windows yet: say what fails.
+
+The scripts are [JToolsFramework](https://github.com/j4ckk0/JToolsFramework)'s devkit's, whose `jtools-parent` is
+also the build's parent (the page's npm build, the one jar, the distributions' runtimes); MythoStory's own scripts
+stand beside them (`setup.local`, `externals.local`, `run-android`, `emulator`, `check-links`,
+`import-characters`; on Windows `android-env.bat` too). `jtools.conf` is what the devkit's scripts know of the
+project, and `scripts/linux/jtools sync` refreshes them from the framework version it names.
+
+## Running a distribution
+
+Unpack `mythostory-<version>-linux.tar.gz` or `-windows.zip` (Packaging, below) anywhere, then run `./mythostory.sh`,
+or `MythoStory.exe` (`mythostory.bat` for a console): nothing to install, the Java runtime, Piper and its voices are
+inside. The browser opens on the page; MythoStory stops by itself once its last page is closed. `mythostory.ini`,
+beside the jar, sets the port (`port=`, 8090 by default) and the interface (`host=`, 127.0.0.1: this computer only);
+the command line wins over it (`--port N`, `--host H`, `--no-browser`, `--keep-alive`, `--piper DIR`,
+`--voices DIR`, `--help`). The log is `~/.mythostory/logs/mythostory.0.log`; the voices' credits are in `VOICES.md`.
+
 ## Architecture
 
 ```
@@ -66,9 +97,15 @@ The API answers the page only: a request a browser marks as sent from another si
 `Origin` is not the server's, gets 403, and so does any request naming another host than this computer while the
 server listens on loopback (DNS rebinding). Requests without those headers (curl, the scripts) pass.
 
-The catalog is small (a few hundred kilobytes) and read-only: the page loads it once, builds its own
+The page's own addresses — the Angular routes, which any other path serves `index.html` for: `/characters`
+(`?kind=`, `&letter=`), `/characters/:id`, `/groups`, `/groups/:id`, `/stories`, `/stories/:id`, `/timeline`, `/map`
+(`?story=`, `?place=`), `/search?q=`, `/settings`, `/help`. Under `/api` or for a missing file (a dot in its name),
+404 instead, and `index.html` is never cached.
+
+The catalog (about 1.7 MB, 300 kB gzipped) is read-only: the page loads it once, builds its own
 indexes (a character's stories, children and groups, a group's stories, a story's cycles and neighbours) and switches language
-without asking the server again. Any other path serves the page (`index.html` for the Angular routes).
+without asking the server again. `ContractTest` (backend) checks that the TypeScript interfaces of
+`catalog.ts` and `help.ts` have the Kotlin classes' fields, the ones the server may leave out optional.
 
 ## The catalog
 
@@ -77,9 +114,9 @@ Android alike:
 
 ```
 data/index.json               the files below, in order (CatalogTest fails on a file it does not list)
-data/characters/<kind>.json   the curated characters, one file per kind: primordials, titans, olympians,
-                              deities, nymphs, heroes, mortals, creatures
-data/characters/wikidata/     the characters imported from Wikidata, one file per kind: never edited by hand,
+data/characters/<kinds>.json  the curated characters, one file per kind (plural names): primordials, titans,
+                              olympians, deities, nymphs, heroes, mortals, creatures
+data/characters/wikidata/     the characters imported from Wikidata, <kind>.json (singular): never edited by hand,
                               scripts/linux/import-characters.sh rewrites them (below)
 data/groups.json              the groups: the Argonauts, the Muses… and their members, from the ancient lists
 data/stories/<cycle>.json     the stories, one file per cycle
@@ -108,8 +145,11 @@ next story of a cycle.
                "passage": "2.4.1–2.4.4",
                "url": {"en": "https://www.theoi.com/Text/Apollodorus2.html", "fr": "https://fr.wikisource.org/wiki/…"}}],
   "links": [{"kind": "video", "lang": "en", "title": "TED-Ed — The myth of Medusa", "url": "https://www.youtube.com/watch?v=O18-FA83BaM"}],
-  "related": ["bellerophon-and-the-chimera"] }
+  "related": ["bellerophon-and-the-chimera"],
+  "era": "heroes", "generation": 4, "groups": ["gorgons", "graeae"], "places": ["argos", "seriphos", "larissa"] }
 ```
+
+A field the parser does not know — misspelt — is refused, as is a missing required one (`era`, a story's).
 
 A story also says **when** and **where** it happens: its `era` (the timeline's section), its
 `generation` — how many generations before the Trojan War, as the genealogies count them; absent
@@ -136,10 +176,13 @@ Harpies); a member may belong to several groups (Castor: an Argonaut, a hunter o
 Link kinds: `wikipedia`, `article`, `video`. Each link says its **language**; the page shows the
 reader's language first and marks the others.
 
-**Checks.** `Catalog.problems()` refuses a catalog with a duplicate id, a dangling reference (to a
-character, a story, an era, a place, a group), a place no story uses, a story without a source or a character, a
-group of fewer than two members or listing one twice, a text missing one of the languages, or a link in an unknown
-language; the build runs it (`CatalogTest`), and the server would not start. **The links** are
+**Checks.** `Catalog.problems()` refuses, among others (it lists every rule): a duplicate id or Wikidata item, an id
+that is not a slug, a dangling reference (to a character, a story, an era, a place, a group), a place no story uses,
+a story without a source or a character, in no cycle, related to itself, or listing an entry twice (a place too,
+unless its places are a route), a character that is its own parent, a group of fewer than two members or listing
+one twice, a generation outside 0–20, a place off the Earth, a text missing one of the languages or in another, a
+link or source that is not http(s), a link without a title; the build runs it (`CatalogTest`), and the server would
+not start. **The links** are
 checked by `scripts/linux/check-links.sh` (`scripts\windows\check-links.bat`): every URL must answer — the videos
 through YouTube's oEmbed, which answers only for videos that exist, the Wikipedia articles through
 Wikipedia's API, fifty to a request. It needs the network, so the build
@@ -156,15 +199,16 @@ cited, with the passage.
 with a Wikipedia article in English or French** — the instances of "mythological Greek character"
 (Q22988604) and its subclasses —, `--all` even those without (names, little else). It needs the
 network, takes half a minute, and rewrites `data/characters/wikidata/` whole; the curated characters
-are never touched, and a Wikidata item one of them already is (their `wikidata` field) is not imported.
+are never touched, and a Wikidata item one of them already is (their `wikidata` field, or their English Wikipedia
+article) is not imported. A character keeps the id the previous import gave it, its page's address.
 Each imported character gets:
 
 - **its names** in English and French from Wikidata's labels (one language standing in for the
   other when Wikidata has only one), and its **Greek** name;
 - **its kind**, from its Wikidata classes (`Kinds.kt`: primordial deity, Titan, Olympian, nymph,
-  centaur, Giant…, deity, demigod, mythical creature — the most specific first); a character with no
-  such class is a **demigod** when one parent is a god and the other is not, a **deity** when both are,
-  else a **mortal**;
+  centaur, Giant…, deity, demigod (→ hero), mythical creature — the most specific first); a character with no
+  such class is a **hero** (a demigod) when one parent is a god and the other is not or is unknown, a **deity**
+  when both are, else a **mortal**;
 - **its parents** (Wikidata's father and mother) among the catalog's characters, so that the curated
   ones gain their children too (Zeus: about a hundred);
 - **a description**: Wikidata's, unless it says no more than "Greek mythological figure", in which case
@@ -181,7 +225,7 @@ character" (the Harpy Celaeno, the Siren Ligeia). The ones the groups need are c
 that a later import never brings them twice. A group's members must stay in the catalog: an import that dropped one
 would be refused.
 
-Many characters share a name (four Clymenes, two
+Many characters share a name (four Clymenes, three
 Thalias…): their ids then carry their Wikidata item (`clymene-q2980439`), their descriptions tell them
 apart, and so does the description shown when hovering their name.
 
@@ -189,7 +233,8 @@ Wikidata's data is CC0: no attribution required — each imported character link
 
 ### The catalog today
 
-**3,053 characters** — 166 curated, 2,887 from Wikidata —, **30 groups** of them (433 members: 44
+**3,053 characters** — 166 curated, 2,887 from Wikidata —, **30 groups** of them (433 memberships, 411
+characters: 44
 Argonauts, the Muses, the Nereids, the Seven against Thebes, the suitors of Penelope…) and **52
 stories** in 7 cycles: the birth
 of the gods (5), Prometheus and the first humans (3), gods among mortals (7), the age of heroes (8),
@@ -218,7 +263,7 @@ Deucalion in 1529/1528 BC by the Parian Chronicle, the fall of Troy in 1184/1183
 never ours. The cards take their cycle's colour; each leads to its story and its place on the map.
 
 **The map** (`/map`; `?story=` draws one in front and zooms on it, `?place=` tells what happens
-there) puts the 60 places of the stories on the Mediterranean and the Black Sea, the journeys as
+there) puts the places of the stories on the Mediterranean and the Black Sea, the journeys as
 routes in their cycle's colour: Heracles from Tiryns to Gades and the Hesperides, the Argo from
 Iolcus to Colchis, Odysseus from Troy to the Cyclopes. A hollow dot is a mythical place, or one whose
 location was disputed: its panel says who identified it with what. Zoom with the wheel or the
@@ -259,7 +304,7 @@ browser's —, each one heard first (the Iliad's first line); the browser rememb
   said already); the page sends a few sentences at a time — Piper keeps the intonation going across
   them —, fetching the next ones while the current ones play. Piper and its voices are externals
   (`scripts/linux/setup.sh` deploys them) and the distributions carry them, with their credits in
-  `VOICES.md` and the *Help* page (Piper: MIT; the voices: CC BY 4.0, CC BY-SA 4.0, public domain).
+  `VOICES.md` (`desktop/src/dist/files/`) and the *Help* page (Piper: MIT; the voices: CC BY 4.0, CC BY-SA 4.0, public domain).
   The program finds them next to its jar, or where `--piper DIR --voices DIR` say.
 - **Without Piper**, the browser's own speech synthesis (the Web Speech API) with the system's voices,
   local ones and the locale's first (fr-FR, en-GB): fine on Windows and macOS; on Linux, browsers take
@@ -286,19 +331,6 @@ French and English, everywhere: everything about it is named **i18n**.
 Adding a language: add it to `I18n.LANGUAGES` and `I18N_LANGUAGES` (`i18n.service.ts`), write its
 messages file, and its texts in every data file — the checks list what is missing.
 
-## Quick start
-
-```bash
-scripts/linux/setup.sh        # once: the JDK, Maven, Node.js, Piper and its voices into external/
-scripts/linux/run.sh          # build if needed, start, open the browser
-```
-
-On Windows, the same scripts are `scripts\windows\*.bat`. They are
-[JToolsFramework](https://github.com/j4ckk0/JToolsFramework)'s devkit's, whose `jtools-parent` is also the build's
-parent (the page's npm build, the one jar, the distributions' runtimes); MythoStory's own scripts stand beside them
-(below). `jtools.conf` is what the devkit's scripts know of the project, and `scripts/linux/jtools sync` refreshes them
-from the framework version it names.
-
 ## Externals
 
 Everything the build and the distributions need lives in `external/` at the project root, not under
@@ -323,14 +355,18 @@ external/downloads/           the archives as downloaded, kept so that a second 
 `scripts/linux/setup.sh` (needs `curl`, `tar`, `unzip`) and `scripts\windows\setup.bat` (Windows 10 1803 and later:
 `curl` and `tar` are there) download and deploy what is missing; `--force` deploys everything again. The JDK, Maven,
 Node.js and the jmods are the devkit's to deploy; Piper, the voices and the Android externals are MythoStory's own,
-`scripts/linux/setup.local.sh`, which the devkit's setup runs after its own (on Windows, `setup.local.bat` deploys the
-Android externals). **`--android` adds Gradle and the Android SDK** (about a gigabyte), and
+`scripts/linux/setup.local.sh`, which the devkit's setup runs after its own (on Windows `setup.local.bat`, which
+deploys Piper and its voices too but has not been run on Windows yet). **`--android` adds Gradle and the Android SDK** (about a gigabyte), and
 asks you to accept the Android SDK licences. **`--emulator`** does the same and adds the Android emulator and the
 system image of its virtual phone (`ANDROID_EMULATOR_PACKAGES`, 2 to 3 GB more; a Google Play image, which carries
 Google's text-to-speech for the speaker button).
 
 **The versions live in [`externals.conf`](externals.conf) and nowhere else**: one URL per external
-and per OS. Set `MIRROR=` there (or in the environment) to the folder of a local Artifactory holding
+and per OS — but for the Android Gradle Plugin's, in `android/settings.gradle.kts`. **A new version is a line
+changed there, then setup**: each external remembers the URL it came from (`external/.<name>.url`), and one deployed
+from another is deployed again; until then the scripts say it is out of date. `JTOOLS_DOWNLOADS=<dir>` in the
+environment shares one downloads folder between projects; `scripts/linux/jtools` unpacks the devkit into
+`external/jtools-devkit-<version>/`. Set `MIRROR=` there (or in the environment) to the folder of a local Artifactory holding
 the same file names, and everything is fetched as `<MIRROR>/<file name>` instead of from the internet.
 A mirror that wants **authentication** gets it from `MIRROR_TOKEN`, sent in the header
 `MIRROR_TOKEN_HEADER` (`Authorization: Bearer` by default, for an Artifactory access token;
@@ -361,22 +397,23 @@ scripts/linux/import-characters.sh         # the characters from Wikidata (netwo
 
 The Android app is built **as soon as `scripts/linux/setup.sh --android` has run**: Maven's `android`
 profile switches itself on when `external/android-sdk/platforms` exists. Plain `mvn package` does
-the same; `mvn package -P-android` leaves it out.
+the same, with the externals first in `PATH` (`. scripts/linux/externals.sh`); `mvn package -P-android` leaves it
+out, and `BUILD_GOALS='clean package -P-android' scripts/linux/run.sh` runs quicker without it.
 
 ## Running
 
 ```bash
 scripts/linux/run.sh                            # build if a source is newer than the jar, then run
-scripts/linux/run.sh --port 9090 --no-browser   # the program's options: --port, --host, --no-browser, --keep-alive, --help
+scripts/linux/run.sh --port 9090 --no-browser   # the program's options: --port, --host, --no-browser, --keep-alive, --piper, --voices, --help
 scripts/linux/run.sh --rebuild
 scripts/linux/run-android.sh                    # install and start the app on the device or emulator adb sees
 scripts/linux/emulator.sh                       # the same in the Android emulator, which it starts first (below)
-scripts/linux/stop.sh                           # stop every MythoStory server on this machine (scripts\windows\stop.bat on Windows)
+scripts/linux/stop.sh                           # stop every MythoStory server on this machine (scripts\windows\stop.bat: every one, no --port; it needs wmic)
 scripts/linux/stop.sh --port 9090               # only the one on that port
 ```
 
 The desktop listens on `127.0.0.1` only (`--host 0.0.0.0` for the network), on port 8090 (MythoStory's own, not the 8080 of so many servers) unless `mythostory.ini`,
-beside the jar, names another. **It stops by itself
+beside a distribution's jar (`port=`, `host=`), names another; the command line wins over it. **It stops by itself
 when its last page is closed**, like a program whose last window is closed: each page holds a WebSocket
 to the server (`/api/session`) and, as it goes away, closes it and says so; the server waits five seconds — a
 reload, a tab closed while another opens — and stops. Should the browser crash instead, the socket
@@ -384,7 +421,8 @@ closes and the server notices at once. A WebSocket rather than a stream of serve
 HTTP connections per host, all tabs together, and a stream held by every tab left the seventh tab blank. It never stops before a first page has opened, and
 `--keep-alive` keeps it serving (Ctrl+C then). The Android app's server lives as long as the app.
 Launched again while it runs, it opens the running one's page and exits; should another program hold the port, it
-says so and exits (1).
+says so and exits (3) — in a dialog too when there is no console to say it in (`MythoStory.exe`). A command line it
+does not understand exits with 2. The log: `~/.mythostory/logs/mythostory.0.log`.
 
 Run from the repository, the program reads the stories aloud with `external/piper` and `external/voices`; a
 distribution's are beside its jar.
@@ -416,6 +454,8 @@ scripts/linux/run.sh --no-browser --keep-alive   # the backend on :8090, whateve
 cd frontend && PATH="$PWD/../external/node/bin:$PATH" npm start   # the page on http://localhost:4200/
 ```
 
+`npm start` needs `frontend/node_modules`, which a first `scripts/linux/build.sh` installs.
+
 ## Packaging
 
 ```bash
@@ -434,8 +474,14 @@ Into `releases/` (not under source control):
 `jre/` is a runtime jlink links from Temurin's jmods with only the modules MythoStory uses (about 66 MB, against
 200 MB for a whole JRE); the voices are most of the rest. jtools-parent's `dist` profile links it and makes the
 launchers; MythoStory's own (`desktop/pom.xml`, `desktop/src/assembly/`) then makes the archives again with Piper and
-the voices. The previous versions' archives are removed; anything else in `releases/` is left alone. The script
-checks every archive: the jar, the launchers, the `.ini` and the runtime, and the page inside the jar.
+the voices. The previous versions' archives and APKs are removed; anything else in `releases/` is left alone. The
+script checks the Linux and Windows archives — the jar, the launchers, the `.ini`, the runtime, the page inside the
+jar —; the APK is copied as Gradle made it.
+
+**Releasing**: `scripts/linux/release.sh` publishes the version the root pom names, once its tag `v<version>` exists
+and `package` has made its archives, with `CHANGELOG.md`'s `## <version>` section as its notes. `jtools.conf` names
+no `RELEASE_GITHUB`: the release is local (`releases/mythostory-<version>.sha256` and `-notes.md`). Publishing the
+archives anywhere is a new distribution: check first what they carry and under which licences (`NOTICE`).
 
 **Licences**: the page's *Help* (`/help`, `/api/licences`) lists what MythoStory carries and under
 which licence:
@@ -459,16 +505,6 @@ signed with the debug key: you can install it for testing, but you can't publish
 **The version** is `<revision>` in [`pom.xml`](pom.xml), said once: the jar, the API's `/api/info`,
 the archives' names, and the APK's `versionName` and `versionCode` (`a.b.c` → `a·10000 + b·100 + c`)
 all come from it.
-
-## Git hooks
-
-`.githooks/pre-push` runs `scripts/linux/ci.sh` before every push. Enable it once per clone:
-
-```bash
-git config core.hooksPath .githooks
-```
-
-Skip it once with `git push --no-verify`.
 
 ## Licence
 

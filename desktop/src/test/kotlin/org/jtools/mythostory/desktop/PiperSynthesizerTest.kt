@@ -18,7 +18,7 @@ class PiperSynthesizerTest {
 
     @Test
     fun `reads with every voice of the catalogue, as WAV, and says the same text the same way twice`() {
-        assumeTrue(piper.canExecute(), "no external/piper: scripts/setup.sh deploys it")
+        assumeTrue(piper.canExecute(), "no external/piper: scripts/linux/setup.sh deploys it")
         PiperSynthesizer(piper, voices).use { speech ->
             assertEquals(PiperVoice.catalogue().map { it.id }, speech.voices.map { it.id }, "setup deploys every voice of voices.json")
             val french = speech.synthesize("fr-siwis", "Zeus est le roi des dieux.")

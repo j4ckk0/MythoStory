@@ -14,7 +14,7 @@
   <packaging>jar</packaging>
 
   <name>MythoStory importer</name>
-  <description>The characters imported from Wikidata into core's data files (scripts/import-characters.sh): a tool for the catalog's authors, never shipped. Its jar and target/lib/ are all it needs to run.</description>
+  <description>The characters imported from Wikidata into core's data files (scripts/linux/import-characters.sh): a tool for the catalog's authors, never shipped. Its jar and target/lib/ are all it needs to run.</description>
 
   <dependencies>
     <dependency>

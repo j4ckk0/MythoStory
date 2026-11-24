@@ -88,6 +88,6 @@ if (keystore == null) logger.warn("android/keystore.properties absent: the relea
 
 dependencies {
     val libs = fileTree("target/libs") { include("*.jar") }
-    if (libs.isEmpty) logger.warn("android/target/libs is empty: build through Maven (scripts/build.sh), which resolves the dependencies there")
+    if (libs.isEmpty) logger.warn("android/target/libs is empty: build through Maven (scripts/linux/build.sh), which resolves the dependencies there")
     implementation(libs)
 }

@@ -14,7 +14,7 @@ import kotlin.test.Test
 import kotlin.test.fail
 
 /**
- * Every URL of the catalog answers: run by scripts/check-links.sh (-Dlinks.check=true), never by the build, which
+ * Every URL of the catalog answers: run by scripts/linux/check-links.sh (check-links.bat; -Dlinks.check=true), never by the build, which
  * must not depend on the network. YouTube answers 200 for a video that does not exist: its oEmbed endpoint, which
  * answers only for real videos, is asked instead. Wikipedia's articles — thousands, since the Wikidata import — are
  * asked of Wikipedia's API, fifty to a request, rather than one by one.
@@ -27,7 +27,7 @@ class LinkCheckTest {
 
     @Test
     fun `every link answers`() {
-        assumeTrue(System.getProperty("links.check") == "true", "the links are checked by scripts/check-links.sh")
+        assumeTrue(System.getProperty("links.check") == "true", "the links are checked by scripts/linux/check-links.sh")
         val catalog = Catalog.load()
         val urls = (catalog.characters.flatMap { c -> c.links.map { it.url to "character ${c.id}" } } +
             catalog.stories.flatMap { s -> s.links.map { it.url to "story ${s.id}" } + s.sources.flatMap { it.url.values }.map { it to "story ${s.id}" } } +
