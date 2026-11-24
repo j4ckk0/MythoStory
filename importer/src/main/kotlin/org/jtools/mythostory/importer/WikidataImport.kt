@@ -85,7 +85,8 @@ class WikidataImport(private val data: File, private val all: Boolean) {
         repeat(3) { imported.filter { it.roots.isEmpty() }.forEach { kinds[it.qid] = Kinds.byParents(it.parents.map(kinds::get)) } }
 
         val names = imported.associate { it.qid to names(it) }
-        val ids = ids(imported, names, curated.map { it.id }.toSet())
+        val slugs = imported.associate { it.qid to Texts.slug(names.getValue(it.qid).getValue("en")) }
+        val ids = ids(slugs, curated.map { it.id }.toSet(), previousIds())
         val idByQid = ids + curatedByQid.mapValues { it.value.id }
         val nameByQid = names + curatedByQid.mapValues { it.value.name }
 
@@ -142,16 +143,12 @@ class WikidataImport(private val data: File, private val all: Boolean) {
                 .replace("%28", "(").replace("%29", ")").replace("%2C", ",").replace("%27", "'")
         }
 
-    /** The ids: the English name as a slug, followed by the Wikidata item when several characters would share it. */
-    private fun ids(items: List<Item>, names: Map<String, Map<String, String>>, taken: Set<String>): Map<String, String> {
-        val slugs = items.associate { it.qid to Texts.slug(names.getValue(it.qid).getValue("en")) }
-        val counts = slugs.values.groupingBy { it }.eachCount()
-        return slugs.mapValues { (qid, slug) ->
-            if (slug.isEmpty()) qid.lowercase()
-            else if (slug in taken || counts.getValue(slug) > 1) "$slug-${qid.lowercase()}"
-            else slug
-        }
-    }
+    /** The ids the previous import gave, by Wikidata item: its files, which this import replaces. */
+    private fun previousIds(): Map<String, String> =
+        index().characters.filter { it.startsWith(IMPORTED) && data.resolve(it).isFile }
+            .flatMap { json.decodeFromString<List<Character>>(data.resolve(it).readText()) }
+            .mapNotNull { c -> c.wikidata?.let { it to c.id } }
+            .toMap()
 
     /** Checks the catalog with the imported characters in, then writes them, one file per kind, and the index. */
     private fun write(catalog: Catalog, curated: List<Character>, imported: List<Character>) {
@@ -205,9 +202,27 @@ class WikidataImport(private val data: File, private val all: Boolean) {
         }
     """.trimIndent()
 
-    private companion object {
+    internal companion object {
         /** The imported characters' files, under data/: never edited by hand, the next import rewrites them. */
         const val IMPORTED = "characters/wikidata/"
+
+        /**
+         * The ids, by Wikidata item ([slugs]: each one's English name as a slug). An id is a page's address, which
+         * bookmarks and the curated stories keep: so a character keeps the id the [previous] import gave it, unless a
+         * curated one has taken it since ([taken]). A newcomer gets its slug, followed by its item when the slug is
+         * taken, kept, or shared with another newcomer; the item alone when its name has no Latin letter or digit.
+         */
+        fun ids(slugs: Map<String, String>, taken: Set<String>, previous: Map<String, String>): Map<String, String> {
+            val kept = slugs.keys.mapNotNull { qid -> previous[qid]?.takeIf { it !in taken }?.let { qid to it } }.toMap()
+            val keptIds = kept.values.toSet()
+            val fresh = slugs - kept.keys
+            val counts = fresh.values.groupingBy { it }.eachCount()
+            return kept + fresh.mapValues { (qid, slug) ->
+                if (slug.isEmpty()) qid.lowercase()
+                else if (slug in taken || slug in keptIds || counts.getValue(slug) > 1) "$slug-${qid.lowercase()}"
+                else slug
+            }
+        }
         val GENDERS = mapOf("Q6581097" to "male", "Q6581072" to "female")
     }
 }
