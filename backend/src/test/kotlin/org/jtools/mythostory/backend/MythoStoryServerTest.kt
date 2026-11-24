@@ -44,8 +44,8 @@ class MythoStoryServerTest {
         )
         assertEquals(
             listOf(
-                Component("ktor-server-core", "3.6.0", "Apache-2.0", "https://github.com/ktorio/ktor", artifact = "io.ktor:ktor-server-core-jvm"),
-                Component("Logback Classic Module", "1.6.5", "EPL-2.0 OR LGPL-2.1-only", "http://logback.qos.ch/logback-classic", artifact = "ch.qos.logback:logback-classic"),
+                ThirdPartyComponent("ktor-server-core", "3.6.0", "Apache-2.0", "https://github.com/ktorio/ktor", artifact = "io.ktor:ktor-server-core-jvm"),
+                ThirdPartyComponent("Logback Classic Module", "1.6.5", "EPL-2.0 OR LGPL-2.1-only", "http://logback.qos.ch/logback-classic", artifact = "ch.qos.logback:logback-classic"),
             ),
             libraries,
         )

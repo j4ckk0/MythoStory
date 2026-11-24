@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { CatalogService, Character, Era, Story } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 import { CharacterChip } from '../shared/character-chip';
+import { generationKey } from './generation';
 
 /** A row of the timeline: the stories of one generation of an era, or those the tradition does not date. */
 interface Row {
@@ -45,11 +46,8 @@ export class Timeline {
 
   /** The story's three main characters. */
   protected characters(story: Story): Character[] {
-    return story.characters.slice(0, 3).map((id) => this.catalog.characterById().get(id)).filter((c): c is Character => !!c);
+    return this.catalog.charactersOf(story.characters.slice(0, 3));
   }
 
-  /** The i18n key of a generation's label. */
-  protected generationKey(generation: number): string {
-    return generation === 0 ? 'timeline.generation.zero' : generation === 1 ? 'timeline.generation.one' : 'timeline.generation';
-  }
+  protected readonly generationKey = generationKey;
 }

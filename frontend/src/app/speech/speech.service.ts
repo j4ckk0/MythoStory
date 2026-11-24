@@ -23,7 +23,7 @@ interface Sentence {
 export type SpeechState = 'idle' | 'speaking' | 'paused';
 
 /** Who reads a language aloud: the server (Piper), the browser, the Android app's text-to-speech, or no one. */
-export type SpeechVoices = 'server' | 'browser' | 'android' | null;
+export type SpeechReader = 'server' | 'browser' | 'android' | null;
 
 /** What a voice says when the settings let one hear it: the Iliad's first line, in the voice's language. */
 export const VOICE_SAMPLES: Record<I18nLanguage, string> = {
@@ -96,7 +96,7 @@ export class SpeechService {
   readonly supported = computed(() => this.device !== null || this.server.available('en') || this.server.available('fr'));
 
   /** Who reads the language aloud: the settings say which voices one can choose from. */
-  readerOf(language: I18nLanguage): SpeechVoices {
+  readerOf(language: I18nLanguage): SpeechReader {
     const engine = this.engineFor(language);
     if (!engine) return null;
     return engine === this.server ? 'server' : this.android ? 'android' : 'browser';

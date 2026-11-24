@@ -98,7 +98,8 @@ export interface Group {
 
 export interface Catalog {
   characters: Character[];
-  groups: Group[];
+  /** Absent when there is none: the server leaves out what is empty by default (core: Catalog). */
+  groups?: Group[];
   stories: Story[];
   cycles: Cycle[];
   eras: Era[];
@@ -112,11 +113,11 @@ export interface Info {
   platform: string;
   languages: string[];
   /** The voices the server reads aloud with (/api/speech): the desktop's Piper; each language's default first. */
-  voices?: ServerVoice[];
+  voices?: Voice[];
 }
 
 /** A voice of the server (backend: Voice): its i18n language, name and what it sounds like. */
-export interface ServerVoice {
+export interface Voice {
   id: string;
   language: string;
   name: string;
@@ -129,6 +130,21 @@ export interface CyclePosition {
   position: number;
   previous?: Story;
   next?: Story;
+}
+
+/** Adds a value to the list a key has in an index: how the indexes below are built. */
+function addTo<K, V>(index: Map<K, V[]>, key: K, value: V): void {
+  const list = index.get(key);
+  if (list) list.push(value);
+  else index.set(key, [value]);
+}
+
+/** The records of these ids that an index holds, in the ids' order: an id the catalog lacks is left out. */
+function known<T>(ids: readonly string[] | undefined, byId: Map<string, T>): T[] {
+  return (ids ?? []).flatMap((id) => {
+    const record = byId.get(id);
+    return record ? [record] : [];
+  });
 }
 
 /**
@@ -152,7 +168,7 @@ export class CatalogService {
   readonly groupsByCharacter = computed(() => {
     const index = new Map<string, Group[]>();
     const groups = [...(this.catalog()?.groups ?? [])].sort((a, b) => (a.name.en ?? '').localeCompare(b.name.en ?? ''));
-    for (const group of groups) for (const id of group.members) index.set(id, [...(index.get(id) ?? []), group]);
+    for (const group of groups) for (const id of group.members) addTo(index, id, group);
     return index;
   });
 
@@ -160,7 +176,7 @@ export class CatalogService {
   readonly storiesByGroup = computed(() => {
     const index = new Map<string, Story[]>();
     for (const story of this.storiesInCycleOrder()) {
-      for (const id of story.groups ?? []) index.set(id, [...(index.get(id) ?? []), story]);
+      for (const id of story.groups ?? []) addTo(index, id, story);
     }
     return index;
   });
@@ -169,7 +185,7 @@ export class CatalogService {
   readonly storiesByPlace = computed(() => {
     const index = new Map<string, Story[]>();
     for (const story of this.storiesInCycleOrder()) {
-      for (const id of new Set(story.places ?? [])) index.set(id, [...(index.get(id) ?? []), story]);
+      for (const id of new Set(story.places ?? [])) addTo(index, id, story);
     }
     return index;
   });
@@ -185,7 +201,7 @@ export class CatalogService {
   readonly storiesByCharacter = computed(() => {
     const index = new Map<string, Story[]>();
     for (const story of this.storiesInCycleOrder()) {
-      for (const id of story.characters) index.set(id, [...(index.get(id) ?? []), story]);
+      for (const id of story.characters) addTo(index, id, story);
     }
     return index;
   });
@@ -194,7 +210,7 @@ export class CatalogService {
   readonly childrenByCharacter = computed(() => {
     const index = new Map<string, Character[]>();
     for (const child of this.catalog()?.characters ?? []) {
-      for (const parent of child.parents ?? []) index.set(parent, [...(index.get(parent) ?? []), child]);
+      for (const parent of child.parents ?? []) addTo(index, parent, child);
     }
     return index;
   });
@@ -221,6 +237,26 @@ export class CatalogService {
       error: () => this.unreachable.set(true),
     });
     this.http.get<Info>('api/info').subscribe({ next: (info) => this.info.set(info), error: () => this.unreachable.set(true) });
+  }
+
+  /** The characters of these ids, in their order (the ones the catalog lacks left out). */
+  charactersOf(ids: readonly string[] | undefined): Character[] {
+    return known(ids, this.characterById());
+  }
+
+  /** The stories of these ids, in their order (the ones the catalog lacks left out). */
+  storiesOf(ids: readonly string[] | undefined): Story[] {
+    return known(ids, this.storyById());
+  }
+
+  /** The groups of these ids, in their order (the ones the catalog lacks left out). */
+  groupsOf(ids: readonly string[] | undefined): Group[] {
+    return known(ids, this.groupById());
+  }
+
+  /** The places of these ids, in their order (the ones the catalog lacks left out). */
+  placesOf(ids: readonly string[] | undefined): Place[] {
+    return known(ids, this.placeById());
   }
 
   /** The story's place in each cycle it belongs to. */

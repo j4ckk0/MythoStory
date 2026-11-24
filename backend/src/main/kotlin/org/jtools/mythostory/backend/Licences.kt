@@ -6,7 +6,7 @@ import org.jtools.mythostory.core.I18nText
 
 /** A piece of software or data MythoStory carries, and its licence (an SPDX identifier when it has one). */
 @Serializable
-data class Component(
+data class ThirdPartyComponent(
     val name: String,
     val version: String,
     val licence: String,
@@ -24,21 +24,21 @@ data class Component(
  * jar and among the Android app's resources alike. The Android app carries no JRE nor Piper: no embedded component.
  */
 @Serializable
-data class Licences(val embedded: List<Component>, val libraries: List<Component>) {
+data class Licences(val embedded: List<ThirdPartyComponent>, val libraries: List<ThirdPartyComponent>) {
     companion object {
         private val json = Json { ignoreUnknownKeys = true }
 
         fun load(): Licences = Licences(
-            embedded = resource("licences/embedded.json")?.let { json.decodeFromString<List<Component>>(it) }.orEmpty(),
+            embedded = resource("licences/embedded.json")?.let { json.decodeFromString<List<ThirdPartyComponent>>(it) }.orEmpty(),
             libraries = resource("licences/THIRD-PARTY.txt")?.let(::libraries).orEmpty(),
         )
 
         /** The license plugin's lines: "     (Licence) (Other licence) Name (group:artifact:version - url)". */
-        fun libraries(thirdParty: String): List<Component> =
+        fun libraries(thirdParty: String): List<ThirdPartyComponent> =
             thirdParty.lines().mapNotNull { line ->
                 val match = LINE.matchEntire(line.trim()) ?: return@mapNotNull null
                 val (licences, name, group, artifact, version, url) = match.destructured
-                Component(
+                ThirdPartyComponent(
                     name = name,
                     version = version,
                     licence = Regex("\\((.+?)\\)").findAll(licences).map { spdx(it.groupValues[1]) }.distinct().joinToString(" OR "),

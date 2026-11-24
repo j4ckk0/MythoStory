@@ -6,7 +6,7 @@ import { RouterTestingHarness } from '@angular/router/testing';
 import { App } from './app';
 import { routes } from './app.routes';
 import { Catalog, CatalogService } from './catalog/catalog';
-import { SessionService } from './catalog/session';
+import { SessionService } from './server/session';
 import { SpeechService } from './speech/speech.service';
 import { I18nService } from './i18n/i18n.service';
 import { en } from './i18n/en';

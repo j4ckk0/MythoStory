@@ -8,8 +8,8 @@ import { CatalogService } from '../catalog/catalog';
 import { I18nText } from '../i18n/i18n.service';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 
-/** A piece of software or data the application carries, and its licence (backend: Component). */
-export interface Component3rdParty {
+/** A piece of software or data the application carries, and its licence (backend: ThirdPartyComponent). */
+export interface ThirdPartyComponent {
   name: string;
   version: string;
   licence: string;
@@ -20,8 +20,8 @@ export interface Component3rdParty {
 
 /** What /api/licences lists: the embedded components (the JRE, Piper, its voices) and the server's libraries. */
 export interface Licences {
-  embedded: Component3rdParty[];
-  libraries: Component3rdParty[];
+  embedded: ThirdPartyComponent[];
+  libraries: ThirdPartyComponent[];
 }
 
 /** SPDX identifiers whose text spdx.org has: each licence links to it. */

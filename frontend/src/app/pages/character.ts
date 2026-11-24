@@ -1,6 +1,6 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CatalogService, Character, Group, Story } from '../catalog/catalog';
+import { CatalogService, Group, Story } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 
 import { FamilyTree } from '../family/family-tree';
@@ -22,7 +22,7 @@ export class CharacterPage {
   protected readonly loaded = computed(() => this.catalog.catalog() !== null);
   protected readonly character = computed(() => this.catalog.characterById().get(this.id()));
   protected readonly parents = computed(() =>
-    (this.character()?.parents ?? []).map((id) => this.catalog.characterById().get(id)).filter((c): c is Character => !!c),
+    this.catalog.charactersOf(this.character()?.parents),
   );
   protected readonly childCount = computed(() => this.catalog.childrenByCharacter().get(this.id())?.length ?? 0);
   protected readonly groups = computed(() => this.catalog.groupsByCharacter().get(this.id()) ?? []);

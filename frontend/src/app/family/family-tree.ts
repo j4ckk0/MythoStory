@@ -90,10 +90,7 @@ export class FamilyTree {
     const me = this.character().id;
     const groups = new Map<string, { others: Character[]; children: Character[] }>();
     for (const child of this.catalog.childrenByCharacter().get(me) ?? []) {
-      const others = (child.parents ?? [])
-        .filter((id) => id !== me)
-        .map((id) => this.catalog.characterById().get(id))
-        .filter((c): c is Character => !!c);
+      const others = this.catalog.charactersOf((child.parents ?? []).filter((id) => id !== me));
       const key = others.map((o) => o.id).sort().join('+');
       const group = groups.get(key) ?? { others, children: [] };
       group.children.push(child);
@@ -118,7 +115,7 @@ export class FamilyTree {
   private ancestors(character: Character, level: number, seen: Set<string>): AncestorTree {
     const parents =
       level < ANCESTOR_GENERATIONS && !seen.has(character.id)
-        ? (character.parents ?? []).map((id) => this.catalog.characterById().get(id)).filter((c): c is Character => !!c)
+        ? this.catalog.charactersOf(character.parents)
         : [];
     const path = new Set(seen).add(character.id);
     return { character, parents: parents.map((p) => this.ancestors(p, level + 1, path)) };

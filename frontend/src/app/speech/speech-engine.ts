@@ -1,4 +1,4 @@
-import { ServerVoice } from '../catalog/catalog';
+import { Voice } from '../catalog/catalog';
 import { I18nLanguage, I18nText } from '../i18n/i18n.service';
 
 /** A voice an engine offers for a language, which the settings let one choose: its id is the engine's own. */
@@ -42,7 +42,7 @@ export class ServerSpeechEngine implements SpeechEngine {
 
   constructor(
     /** The server's voices: /api/info's, known once it has answered. */
-    private readonly serverVoices: () => readonly ServerVoice[],
+    private readonly serverVoices: () => readonly Voice[],
     private readonly createAudio: (url: string) => HTMLAudioElement = (url) => new Audio(url),
   ) {}
 

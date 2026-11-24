@@ -1,6 +1,6 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CatalogService, Character } from '../catalog/catalog';
+import { CatalogService } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 import { CharacterChip } from '../shared/character-chip';
 import { Links } from '../shared/links';
@@ -20,7 +20,7 @@ export class GroupPage {
   protected readonly loaded = computed(() => this.catalog.catalog() !== null);
   protected readonly group = computed(() => this.catalog.groupById().get(this.id()));
   protected readonly members = computed(() =>
-    (this.group()?.members ?? []).map((id) => this.catalog.characterById().get(id)).filter((c): c is Character => !!c),
+    this.catalog.charactersOf(this.group()?.members),
   );
   protected readonly stories = computed(() => this.catalog.storiesByGroup().get(this.id()) ?? []);
 }

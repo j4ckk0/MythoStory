@@ -57,10 +57,7 @@ export class MapView {
   private readonly home = computed<ViewBox>(() => {
     const highlighted = this.catalog.storyById().get(this.highlight() ?? '')?.places ?? [];
     const shown = this.interactive() ? highlighted : this.places().map(({ place }) => place.id);
-    const points = shown
-      .map((id) => this.catalog.placeById().get(id))
-      .filter((p): p is Place => !!p)
-      .map((p) => [p.lon, p.lat] as [number, number]);
+    const points = this.catalog.placesOf(shown).map((p) => [p.lon, p.lat] as [number, number]);
     if (points.length) return fit(points, this.aspect(), 6, 0.45);
     return fit([[WHOLE_MAP.west, WHOLE_MAP.north], [WHOLE_MAP.east, WHOLE_MAP.south]], this.aspect(), 0, 0);
   });
@@ -75,7 +72,7 @@ export class MapView {
   /** Every place of the stories, once. */
   private readonly places = computed(() => {
     const ids = new Set(this.stories().flatMap((s) => s.places ?? []));
-    return [...ids].map((id) => this.catalog.placeById().get(id)).filter((p): p is Place => !!p).map((place) => ({ place }));
+    return this.catalog.placesOf([...ids]).map((place) => ({ place }));
   });
 
   /**
@@ -135,9 +132,8 @@ export class MapView {
       .map((story) => ({
         story,
         cycle: this.catalog.cycleOfStory().get(story.id)?.id ?? '',
-        points: (story.places ?? [])
-          .map((id) => this.catalog.placeById().get(id))
-          .filter((p): p is Place => !!p)
+        points: this.catalog
+          .placesOf(story.places)
           .map((p) => project(p.lon, p.lat).join(','))
           .join(' '),
         highlighted: story.id === this.highlight(),

@@ -1,6 +1,6 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CatalogService, Character, Group, Story } from '../catalog/catalog';
+import { CatalogService } from '../catalog/catalog';
 import { I18nPipe, I18nTextPipe } from '../i18n/i18n.pipe';
 import { I18nService } from '../i18n/i18n.service';
 import { MapView } from '../map/map-view';
@@ -11,6 +11,7 @@ import { GroupChip } from '../shared/group-chip';
 import { Links } from '../shared/links';
 import { Sources } from '../shared/sources';
 import { paragraphs } from '../shared/text';
+import { generationKey } from '../timeline/generation';
 
 /** A story: its place in its cycles, its summary, its characters and groups, its ancient sources and links to read more. */
 @Component({
@@ -29,10 +30,10 @@ export class StoryPage {
   protected readonly story = computed(() => this.catalog.storyById().get(this.id()));
   protected readonly paragraphs = computed(() => paragraphs(this.i18n.text(this.story()?.summary)));
   protected readonly characters = computed(() =>
-    (this.story()?.characters ?? []).map((id) => this.catalog.characterById().get(id)).filter((c): c is Character => !!c),
+    this.catalog.charactersOf(this.story()?.characters),
   );
   protected readonly groups = computed(() =>
-    (this.story()?.groups ?? []).map((id) => this.catalog.groupById().get(id)).filter((g): g is Group => !!g),
+    this.catalog.groupsOf(this.story()?.groups),
   );
   protected readonly cycles = computed(() => {
     const story = this.story();
@@ -45,12 +46,9 @@ export class StoryPage {
     return story?.places?.length ? [story] : [];
   });
 
-  /** The i18n key of a generation's label. */
-  protected generationKey(generation: number): string {
-    return generation === 0 ? 'timeline.generation.zero' : generation === 1 ? 'timeline.generation.one' : 'timeline.generation';
-  }
+  protected readonly generationKey = generationKey;
 
   protected readonly related = computed(() =>
-    (this.story()?.related ?? []).map((id) => this.catalog.storyById().get(id)).filter((s): s is Story => !!s),
+    this.catalog.storiesOf(this.story()?.related),
   );
 }
