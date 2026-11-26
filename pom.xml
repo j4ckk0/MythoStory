@@ -192,6 +192,21 @@
           <artifactId>maven-assembly-plugin</artifactId>
           <version>3.8.0</version>
         </plugin>
+        <!-- jtools-parent's licence plugin reads licence lists with Apache POI, which logs through Log4j's API and
+             finds no Log4j behind it ("ERROR StatusLogger Log4j2 could not find a logging implementation"): this
+             bridge, of the API version POI asks for, hands its messages to Maven's own log instead. Build only, never
+             shipped -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.logging.log4j</groupId>
+              <artifactId>log4j-to-slf4j</artifactId>
+              <version>2.21.1</version>
+            </dependency>
+          </dependencies>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
