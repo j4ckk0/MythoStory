@@ -144,12 +144,12 @@ curl -s -o zeus.wav "http://127.0.0.1:8090/api/speech?lang=en&voice=en-cori&text
 ## Build it yourself
 
 On Linux (x86_64), or on Windows with the same scripts as `scripts\windows\*.bat`; `curl`, `tar` and `unzip` at
-hand (on Windows, `jtools-1.6.1\install.bat --no-project` for the first step):
+hand (on Windows, `jtools-1.7.1\install.bat --no-project` for the first step):
 
 ```bash
-# once: JToolsFramework 1.6.1, the build's parent (jtools-parent), into ~/.m2 - it is not on Maven Central
-curl -fLO https://github.com/j4ckk0/JToolsFramework/releases/download/v1.6.1/jtools-1.6.1.zip
-unzip -q jtools-1.6.1.zip && jtools-1.6.1/install.sh --no-project
+# once: JToolsFramework 1.7.1, the build's parent (jtools-parent), into ~/.m2 - it is not on Maven Central
+curl -fLO https://github.com/j4ckk0/JToolsFramework/releases/download/v1.7.1/jtools-1.7.1.zip
+unzip -q jtools-1.7.1.zip && jtools-1.7.1/install.sh --no-project
 git clone https://github.com/j4ckk0/MythoStory.git && cd MythoStory
 scripts/linux/setup.sh                    # once: the JDK, Maven, Node.js, Piper and its voices into external/
 git config core.hooksPath .githooks       # once: scripts/linux/ci.sh runs before every push (git push --no-verify skips it)
